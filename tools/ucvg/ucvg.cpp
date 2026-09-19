@@ -1294,7 +1294,8 @@ static int run_all(int argc, char ** argv) {
                 size_t c = manual_scales_csv.find(',', i); std::string tok = (c == std::string::npos) ? manual_scales_csv.substr(i) : manual_scales_csv.substr(i, c - i);
                 size_t b0 = tok.find_first_not_of(" \t"), b1 = tok.find_last_not_of(" \t"); if (b0 != std::string::npos) tok = tok.substr(b0, b1 - b0 + 1);
                 if (!tok.empty()) manual_scales.push_back(std::stof(tok));
-                if (c == std::string::npos) break; i = c + 1;
+                if (c == std::string::npos) break;
+                i = c + 1;
             }
         } catch (...) { std::fprintf(stderr, "ucvg: --eval-scales must be a comma-separated list of numbers\n"); return 1; }
         if (manual_scales.size() < 2) { std::fprintf(stderr, "ucvg: --eval-scales needs at least 2 values (got %zu)\n", manual_scales.size()); return 1; }
