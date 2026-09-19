@@ -32,8 +32,8 @@
 
 namespace {
 
-constexpr uint32_t UCVG_MAGIC = 0x55435647u;
-constexpr uint32_t UCVG_VERSION = 1u;
+[[maybe_unused]] constexpr uint32_t UCVG_MAGIC = 0x55435647u;
+[[maybe_unused]] constexpr uint32_t UCVG_VERSION = 1u;
 constexpr float EPS = 1e-12f;
 
 // Print paths with forward slashes (the -o arg and OS-joined parts mix `\` and `/`).
@@ -827,7 +827,9 @@ static std::vector<std::string> read_heldout_scenarios(const std::string & path)
     while (std::getline(f, line)) {
         size_t k = line.find("\"scenario\""); if (k == std::string::npos) continue;
         size_t i = line.find(':', k); if (i == std::string::npos) continue; ++i;
-        while (i < line.size() && line[i] != '"') ++i; if (i >= line.size()) continue; ++i;
+        while (i < line.size() && line[i] != '"') ++i;
+        if (i >= line.size()) continue;
+        ++i;
         std::string raw;
         while (i < line.size()) { char c = line[i]; if (c == '\\' && i + 1 < line.size()) { raw += c; ++i; raw += line[i]; } else if (c == '"') break; else raw += c; ++i; }
         std::string scenario = unesc(raw);
@@ -1034,7 +1036,10 @@ static bool evaluate_core(const llama_model * model_p, llama_context * ctx, cons
     auto emit_map = [&](const std::map<std::string, double> & m) {
         bool first = true; jf << "{\n";
         for (float s : ss) { const std::string k = scale_key(s); auto it = m.find(k); if (it == m.end()) continue;
-            if (!first) jf << ",\n"; jf << "      \"" << json_escape(k) << "\": " << f2(it->second); first = false; }
+            if (!first) jf << ",\n";
+            jf << "      \"" << json_escape(k) << "\": " << f2(it->second);
+            first = false;
+        }
         jf << "\n    }";
     };
 
@@ -1079,7 +1084,7 @@ static bool evaluate_core(const llama_model * model_p, llama_context * ctx, cons
 // ---- Autoscale: iterative boundary search + evenly-spaced scale list ----
 static const double AS_TARGET = 75.0, AS_WINDOW = 0.10, AS_FIRST_PROBE = 0.3, AS_STEP = 0.4;
 static const int    AS_MAX_ITERS = 8;
-static const double AS_MIN_SCALE = 0.005, AS_MAX_SCALE = 8.0, AS_SUBSTEP = 0.15;
+static const double AS_MIN_SCALE = 0.005, AS_MAX_SCALE = 8.0;
 static const int    AS_SUBSET_SIZE = 8;
 
 // Evenly-spaced scale list from -neg to +pos (SUBSTEP_RATE granularity), matching _generate_scale_list.
