@@ -23,11 +23,11 @@
 #include <vector>
 #ifdef _WIN32
 # include <direct.h>
-# define UCVG_MKDIR _mkdir
+# define UCVG_MKDIR(p) _mkdir(p)
 #else
 # include <sys/stat.h>
 # include <sys/types.h>
-# define UCVG_MKDIR mkdir
+# define UCVG_MKDIR(p) mkdir((p), 0755)
 #endif
 
 namespace {
@@ -860,7 +860,7 @@ static std::vector<int> parse_int_array(const std::string & s, const std::string
         if (i >= inner.size()) break;
         bool neg = false; if (inner[i] == '-') { neg = true; ++i; }
         long v = 0; bool any = false; while (i < inner.size() && is_dig(inner[i])) { v = v * 10 + (inner[i] - '0'); ++i; any = true; }
-        if (any) out.push_back((int)v);
+        if (any) out.push_back(neg ? -(int)v : (int)v);
     }
     return out;
 }

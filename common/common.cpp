@@ -2000,7 +2000,7 @@ float common_embd_similarity_cos(const float * embd1, const float * embd2, int n
 //
 
 static common_control_vector_data common_control_vector_load_one(const common_control_vector_load_info & load_info) {
-    common_control_vector_data result = { -1, {} };
+    common_control_vector_data result = { -1, {}, {}, false };
 
     ggml_context * ctx = nullptr;
     struct gguf_init_params meta_gguf_params = {
@@ -2111,7 +2111,7 @@ static common_control_vector_data common_control_vector_load_one(const common_co
 }
 
 common_control_vector_data common_control_vector_load(const std::vector<common_control_vector_load_info> & load_infos) {
-    common_control_vector_data result = { -1, {} };
+    common_control_vector_data result = { -1, {}, {}, false };
 
     for (const auto & info : load_infos) {
         auto cur = common_control_vector_load_one(info);
