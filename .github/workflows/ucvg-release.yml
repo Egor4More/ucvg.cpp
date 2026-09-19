@@ -120,6 +120,7 @@ jobs:
           name: llama-bin-macos-${{ matrix.build }}.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-${{ matrix.os }}-${{ matrix.arch }}
@@ -206,6 +207,7 @@ jobs:
 
       - name: ccache-clear
         if: ${{ matrix.build != 's390x' }}
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-${{ matrix.os }}-cpu
@@ -291,6 +293,7 @@ jobs:
           name: llama-bin-ubuntu-vulkan-${{ matrix.build }}.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-${{ matrix.os }}-vulkan
@@ -431,6 +434,7 @@ jobs:
           name: cudart-llama-bin-ubuntu-cuda-${{ matrix.label }}-${{ matrix.build }}.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-ubuntu-${{ matrix.os }}-cuda-${{ matrix.label }}-${{ matrix.build }}
@@ -642,6 +646,7 @@ jobs:
           name: llama-bin-ubuntu-openvino-${{ env.OPENVINO_VERSION_MAJOR }}-x64.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-ubuntu-24.04-openvino-release-no-preset-v1
@@ -771,6 +776,7 @@ jobs:
           name: llama-bin-win-openvino-${{ env.OPENVINO_VERSION_MAJOR }}-x64.zip
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-windows-2022-openvino
@@ -839,6 +845,7 @@ jobs:
           name: llama-bin-win-cpu-${{ matrix.arch }}.zip
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-windows-2025-vs2026-${{ matrix.arch }}-cpu
@@ -1001,6 +1008,7 @@ jobs:
           name: llama-bin-win-rocm-${{ env.ROCM_VERSION_SHORT }}-${{ matrix.build }}.zip
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: windows-rocm-${{ matrix.ROCM_VERSION }}-${{ matrix.build }}
@@ -1196,6 +1204,7 @@ jobs:
           name: cudart-llama-bin-win-cuda-${{ matrix.cuda }}-${{ matrix.arch }}.zip
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-windows-2022-${{ matrix.arch }}-cuda-${{ matrix.cuda }}
@@ -1301,6 +1310,7 @@ jobs:
           name: llama-bin-win-sycl-x64.zip
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-windows-2022-x64-sycl
@@ -1394,6 +1404,7 @@ jobs:
           name: llama-bin-ubuntu-sycl-${{ matrix.build }}-x64.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-ubuntu-24.04-sycl-${{ matrix.build }}
@@ -1522,6 +1533,7 @@ jobs:
           name: llama-bin-ubuntu-rocm-${{ env.ROCM_VERSION_SHORT }}-${{ matrix.build }}.tar.gz
 
       - name: ccache-clear
+        continue-on-error: true
         uses: ./.github/actions/ccache-clear
         with:
           key: release-ubuntu-24.04-rocm-${{ matrix.ROCM_VERSION }}-${{ matrix.build }}

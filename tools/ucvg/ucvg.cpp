@@ -161,7 +161,6 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
                 const std::vector<float> & pos, const std::vector<float> & neg) {
     const int nL = (int)L;
     const int nd = (int)d;
-    const size_t Ld = (size_t)nL * (size_t)nd;
 
     std::printf("    Building CV: N=%u layers=%u d=%u\n", N, L, d);
 
