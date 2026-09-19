@@ -130,6 +130,24 @@ struct llama_context {
                 int32_t   il_start,
                 int32_t   il_end);
 
+    // dual additive + asymmetric-multiplicative control vector: raw direction + per-layer center scalar c_l
+    // + additive offset alpha + multiplicative scales. Applied as slot `slot`.
+    bool set_adapter_cvec_hybrid(
+            int              slot,
+            const float * dir_data,
+                 size_t   len,
+                int32_t   n_embd,
+            const float * center,
+                 size_t   center_len,
+                int32_t   il_start,
+                int32_t   il_end,
+                float     alpha,
+                float     scale_positive,
+                float     scale_negative);
+
+    // activate slots [0, n) for the next graph build
+    void finalize_adapter_cvec(int n_active);
+
     // process a single ubatch with a specific graph type
     // if memory_context is provided, it will be applied first to the context's memory
     // ret contains the status of the graph computation
@@ -252,6 +270,13 @@ public:
         uint32_t n_tokens, uint32_t n_seqs, uint32_t n_outputs, const llama_memory_context_i * mctx, bool split_only = false, size_t * sizes = nullptr);
 
     bool set_sampler(llama_seq_id seq_id, llama_sampler * sampler);
+
+    // activation capture
+    bool                       capture_activations = false;
+    std::vector<int>           capture_layers;    // layer indices we care about
+    mutable std::vector<ggml_tensor *> capture_tensors;   // corresponding "cur" tensors
+    int64_t                    capture_n_tokens;  // n_tokens used when building graph
+    std::vector<float>         captured_acts;     // size = capture_layers.size() * n_embd
 
 private:
     llm_graph_params graph_params(

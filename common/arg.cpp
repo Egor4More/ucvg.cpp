@@ -3004,6 +3004,25 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
         }
     ));
     add_opt(common_arg(
+        {"--add-cv"}, "FNAME",
+        "add a control vector file (use comma-separated list for multiple files)",
+        [](common_params & params, const std::string & value) {
+            for (const auto & item : parse_csv_row(value)) {
+                params.add_cv_files.push_back(item);
+            }
+        }
+    ));
+    add_opt(common_arg(
+        {"--cv-phase"}, "PHASE",
+        "control vector application phase: generation, prefill, or both (default: generation)",
+        [](common_params & params, const std::string & value) {
+            if (value != "generation" && value != "prefill" && value != "both") {
+                throw std::invalid_argument(string_format("error: invalid --cv-phase '%s' (expected generation|prefill|both)", value.c_str()));
+            }
+            params.cv_phase = value;
+        }
+    ));
+    add_opt(common_arg(
         {"-a", "--alias"}, "STRING",
         "set model name aliases, comma-separated (to be used by API)",
         [](common_params & params, const std::string & value) {

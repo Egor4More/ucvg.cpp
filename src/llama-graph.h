@@ -810,6 +810,11 @@ struct llm_graph_params {
 
     llm_graph_result * res;
 
+    // activation capture (used by llama_set_capture_layers)
+    const std::vector<int> *     capture_layers   = nullptr;
+    std::vector<ggml_tensor *> * capture_tensors  = nullptr;
+    int64_t *                    capture_n_tokens = nullptr;
+
     // return true if the "other" params would result in a graph with the same topology as with the current params
     //   having the same topology allows us to reuse the graph in some cases
     bool allow_reuse(const llm_graph_params & other) const {
@@ -868,6 +873,15 @@ struct llm_graph_params {
 
         // TODO: https://github.com/ggml-org/llama.cpp/pull/24340#discussion_r3448035248
         if (cparams.nextn_layer_offset != other.cparams.nextn_layer_offset) {
+            return false;
+        }
+
+        const bool capture_a = capture_layers && !capture_layers->empty() && capture_tensors;
+        const bool capture_b = other.capture_layers && !other.capture_layers->empty() && other.capture_tensors;
+        if (capture_a != capture_b) {
+            return false;
+        }
+        if (capture_a && *capture_layers != *other.capture_layers) {
             return false;
         }
 
@@ -1035,6 +1049,9 @@ struct llm_graph_context {
 
     ggml_context * ctx0 = nullptr;
     ggml_cgraph  * gf   = nullptr;
+
+    const std::vector<int> *     capture_layers  = nullptr;
+    std::vector<ggml_tensor *> * capture_tensors = nullptr;
 
     llm_graph_context(const llm_graph_params & params);
     virtual ~llm_graph_context() = default;

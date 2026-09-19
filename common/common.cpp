@@ -2021,22 +2021,48 @@ static common_control_vector_data common_control_vector_load_one(const common_co
     for (int i = 0; i < n_tensors; i++) {
         std::string name = gguf_get_tensor_name(ctx_gguf, i);
 
-        int layer_idx = -1;
-
         // split on '.'
-        size_t dotpos = name.find('.');
-        if (dotpos != std::string::npos && name.substr(0, dotpos) == "direction") {
-            try {
-                layer_idx = std::stoi(name.substr(dotpos + 1));
-            } catch (...) {
-                layer_idx = -1;
-            }
+        const size_t dotpos = name.find('.');
+        if (dotpos == std::string::npos) {
+            continue;   // not a named tensor we understand; skip
+        }
+        const std::string prefix = name.substr(0, dotpos);
+
+        int layer_idx = -1;
+        try {
+            layer_idx = std::stoi(name.substr(dotpos + 1));
+        } catch (...) {
+            layer_idx = -1;
         }
         if (layer_idx < 0) {
-            COM_ERR("invalid/unparsable direction tensor layer index in %s\n", load_info.fname.c_str());
-            result.n_embd = -1;
-            break;
-        } else if (layer_idx == 0) {
+            continue;   // unparsable index; skip (forward-compatible with unknown tensors)
+        }
+
+        if (prefix == "center") {
+            // optional per-layer scalar c_l = (mu_l . v_l); a 1-element F32 tensor, layer index >= 1
+            if (layer_idx == 0) {
+                COM_ERR("invalid (zero) center tensor layer index in %s\n", load_info.fname.c_str());
+                result.n_embd = -1;
+                break;
+            }
+            struct ggml_tensor * ctensor = ggml_get_tensor(ctx, name.c_str());
+            if (ctensor->type != GGML_TYPE_F32 || ggml_n_dims(ctensor) != 1 || ggml_nelements(ctensor) != 1) {
+                COM_ERR("invalid center tensor in %s (expected a 1-element F32)\n", load_info.fname.c_str());
+                result.n_embd = -1;
+                break;
+            }
+            const float * csrc = (const float *) ctensor->data;
+            result.center.resize(std::max(result.center.size(), static_cast<size_t>(layer_idx)), 0.0f); // index l-1 for layer l
+            result.center[layer_idx - 1] += csrc[0];
+            result.has_center = true;
+            continue;
+        }
+
+        if (prefix != "direction") {
+            continue;   // unknown tensor; skip for forward compatibility
+        }
+
+        if (layer_idx == 0) {
             COM_ERR("invalid (zero) direction tensor layer index in %s\n", load_info.fname.c_str());
             result.n_embd = -1;
             break;

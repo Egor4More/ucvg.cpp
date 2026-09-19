@@ -151,6 +151,10 @@ endif ()
 llama_build(test-recurrent-state-rollback.cpp)
 llama_build(test-save-load-state.cpp)
 
+# Pure UCVG helper tests (no model/context): build + run on every platform, including Windows shared-lib builds.
+llama_build_and_test(test-ucvg.cpp ${PROJECT_SOURCE_DIR}/tools/ucvg/ucvg-util.cpp)
+target_include_directories(test-ucvg PRIVATE ${PROJECT_SOURCE_DIR}/tools/ucvg)
+
 if (NOT WIN32 OR NOT BUILD_SHARED_LIBS)
     # these tests are disabled on Windows because they use internal functions not exported with LLAMA_API (when building with shared libraries)
     llama_build_and_test(test-unicode.cpp)

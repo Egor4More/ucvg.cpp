@@ -169,6 +169,14 @@ int llama_server(common_params & params, int argc, char ** argv) {
                 params.kv_unified_per_slot, params.n_ctx);
     }
 
+    if (params.n_parallel != 1 && !params.add_cv_files.empty()) {
+        std::printf(
+            "\n"
+            "===============================================\n"
+            "Parallel processing with control vectors applied is not yet implemented and using it will lead to CV effects bleeding from one generation to another - use at your own risk! (set -np 1 for predictable behavior)\n"
+            "===============================================\n");
+    }
+
     // for consistency between server router mode and single-model mode, we set the same model name as alias
     auto model_name = params.model.get_name();
     if (params.model_alias.empty() && !model_name.empty()) {

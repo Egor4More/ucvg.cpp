@@ -531,6 +531,9 @@ struct common_params {
 
     std::vector<common_control_vector_load_info> control_vectors; // control vector with user defined scale
 
+    std::vector<std::string>                 add_cv_files;        // --add-cv  (paths, no scale)
+    std::string                             cv_phase = "generation"; // --cv-phase (generation|prefill|both): which phases the control vector is applied to
+
     int32_t verbosity                  = 3;  // LOG_LEVEL_INFO
     int32_t control_vector_layer_start = -1; // layer range for control vector
     int32_t control_vector_layer_end   = -1; // layer range for control vector
@@ -1100,6 +1103,10 @@ struct common_control_vector_data {
 
     // stores data for layers [1, n_layer] where n_layer = data.size() / n_embd
     std::vector<float> data;
+
+    // optional: per-layer center scalar c_l = (mu_l . v_l), index l-1 for layer l. Present iff has_center (gain path only).
+    std::vector<float> center;
+    bool              has_center = false;
 };
 
 struct common_control_vector_load_info {

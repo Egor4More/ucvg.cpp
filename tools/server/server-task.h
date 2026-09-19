@@ -47,6 +47,13 @@ enum stop_type {
     STOP_TYPE_LIMIT,
 };
 
+// Multiplicative (gain) coefficients for one control vector: the scale applied to deviations above/below the
+// default state. Both = 1 disables the gain for that vector.
+struct ctrl_mul_coeff {
+    float scale_positive = 1.0f;
+    float scale_negative = 1.0f;
+};
+
 struct task_params {
     bool stream          = false;
     bool include_usage   = false;
@@ -96,6 +103,9 @@ struct task_params {
 
     // Embeddings
     int32_t embd_normalize = 2; // (-1=none, 0=max absolute int16, 1=taxicab, 2=Euclidean/L2, >2=p-norm)
+
+    std::vector<float> ctrl_add_coeffs;       // per-request additive (offset) coefficients, index = loaded CV
+    std::vector<ctrl_mul_coeff> ctrl_mul_coeffs; // per-request multiplicative coefficients, index = loaded CV
 
     json format_logit_bias(const std::vector<llama_logit_bias> & logit_bias) const;
     json to_json(bool only_metrics = false) const;

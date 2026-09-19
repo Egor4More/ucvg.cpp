@@ -106,6 +106,8 @@ enum slot_state {
     SLOT_STATE_GENERATING,
 };
 
+struct server_context_impl;
+
 struct server_slot; // forward declaration
 
 struct server_batch {
@@ -256,6 +258,10 @@ struct server_slot {
     std::vector<int32_t> spec_i_batch;
     common_prompt_checkpoint spec_ckpt;
     bool spec_is_replay = false;
+
+    // CV: back-pointer to the owning server_context_impl (to clear this slot's control vector on release)
+    server_context_impl * owner = nullptr;
+
     std::mt19937 spec_synth_rng;
 
     // TODO: move members that belong to the task (such as `generated_text`, `has_new_line`) to task_results_state
@@ -541,28 +547,7 @@ struct server_slot {
         prompt.tokens.insert(spec_draft);
     }
 
-    void release() {
-        if (is_processing()) {
-            GGML_ASSERT(task);
-
-            SLT_INF(*this, "stop processing: n_tokens = %d, truncated = %d\n", prompt.n_tokens(), truncated);
-
-            t_last_used = ggml_time_us();
-
-            state = SLOT_STATE_IDLE;
-
-            // do not keep context of the child slots - the parent's context is enough
-            if (task->is_child()) {
-                prompt_clear();
-            }
-
-            callback_on_reset(*this);
-
-            reset();
-
-            callback_on_release(id);
-        }
-    }
+    void release();
 
     size_t find_stopping_strings(const std::string & text, const size_t last_token_size, bool is_full_stop) {
         GGML_ASSERT(task);
@@ -872,6 +857,13 @@ public:
         metrics.reset_bucket();
     }
 
+    // Called by server_slot::release() to clear the control vector if this released slot owns it
+    void clear_ctrl_vec_for_slot(int slot_id) {
+        if (slot_with_active_ctrl_vec == slot_id) {
+            clear_active_ctrl_vec();
+        }
+    }
+
 private:
     // note: accessing these fields outside of this class is not thread-safe
     // use server_context methods instead
@@ -931,7 +923,20 @@ private:
     std::set<std::string> model_aliases; // additional names for the model
     std::set<std::string> model_tags;    // informational tags
 
+    // for dynamic control vectors
+    std::vector<common_control_vector_data> loaded_ctrl_vecs;
+    int slot_with_active_ctrl_vec = -1;  // slot id that set the current control vector, -1 if none
+
     bool sleeping = false;
+
+    void clear_active_ctrl_vec() {
+        if (slot_with_active_ctrl_vec == -1) return;
+        const int n_embd = llama_model_n_embd(model_tgt);
+        const int n_layer = llama_model_n_layer(model_tgt);
+        std::vector<float> zero(n_embd * n_layer, 0.0f);
+        llama_set_adapter_cvec(ctx_tgt, zero.data(), zero.size(), n_embd, 0, n_layer - 1);
+        slot_with_active_ctrl_vec = -1;
+    }
 
     int64_t t_last_load_progress_ms = 0;
 
@@ -1097,6 +1102,17 @@ private:
         }
 
         llama_init = common_init_from_params(params_base);
+
+        // Load additional control vectors from --add-cv (stored separately for per-request scaling)
+        for (const auto & file : params_base.add_cv_files) {
+            std::vector<common_control_vector_load_info> infos = { { 1.0f, file } };
+            common_control_vector_data cvec = common_control_vector_load(infos);
+            if (cvec.n_embd == -1) {
+                SRV_ERR("failed to load control vector from %s\n", file.c_str());
+                return false;
+            }
+            loaded_ctrl_vecs.emplace_back(std::move(cvec));
+        }
 
         model_tgt = llama_init->model();
         ctx_tgt   = llama_init->context();
@@ -1311,6 +1327,8 @@ private:
             };
 
             slot.reset();
+
+            slot.owner = this; 
         }
 
         {
@@ -2906,6 +2924,60 @@ private:
         }
     }
 
+    // Apply per-request control-vector coefficients: set one adapter slot per loaded CV (raw direction + center +
+    // additive offset alpha + asymmetric multiplicative scales), then finalize the active count. A CV with no
+    // stored center is offset-only (gain requires a center). No-op when every CV is default (alpha 0, scales {1,1}).
+    // Returns true iff a non-default CV was applied.
+    bool apply_ctrl_vec_for_slot(const server_slot & slot) {
+        if (!slot.task || loaded_ctrl_vecs.empty()) {
+            llama_finalize_adapter_cvec(ctx_tgt, 0);
+            clear_active_ctrl_vec();
+            return false;
+        }
+
+        const int n_embd  = llama_model_n_embd(model_tgt);
+        const int n_layer = llama_model_n_layer(model_tgt);
+
+        const auto & add_coeffs = slot.task->params.ctrl_add_coeffs;
+        const auto & mul_coeffs = slot.task->params.ctrl_mul_coeffs;
+
+        int n_active = 0;
+        bool any_nonzero = false;
+
+        for (size_t v = 0; v < loaded_ctrl_vecs.size(); v++) {
+            const float alpha = (v < add_coeffs.size()) ? add_coeffs[v] : 0.0f;
+            const ctrl_mul_coeff scales = (v < mul_coeffs.size()) ? mul_coeffs[v] : ctrl_mul_coeff{};
+
+            const bool gain_wanted = loaded_ctrl_vecs[v].has_center && (scales.scale_positive != 1.0f || scales.scale_negative != 1.0f);
+            if (alpha == 0.0f && !gain_wanted) {
+                continue;   // this CV is default -> inactive
+            }
+
+            const auto & cvec = loaded_ctrl_vecs[v];
+            if (llama_set_adapter_cvec_hybrid(ctx_tgt, n_active, cvec.data.data(), cvec.data.size(), n_embd,
+                                              cvec.center.data(), cvec.center.size(), 0, n_layer - 1,
+                                              alpha, gain_wanted ? scales.scale_positive : 1.0f,
+                                              gain_wanted ? scales.scale_negative : 1.0f) != 0) {
+                llama_finalize_adapter_cvec(ctx_tgt, n_active);
+                clear_active_ctrl_vec();
+                return false;
+            }
+
+            n_active++;
+            any_nonzero = true;
+        }
+
+        llama_finalize_adapter_cvec(ctx_tgt, n_active);
+
+        if (any_nonzero) {
+            slot_with_active_ctrl_vec = slot.id; // keep the clear-on-release mechanism working
+        } else {
+            clear_active_ctrl_vec();
+        }
+
+        return any_nonzero;
+    }
+
     void pre_decode() {
         // apply context-shift if needed
         // TODO: simplify and improve
@@ -3443,6 +3515,11 @@ private:
 
                     slot.mem.seq_rm(slot.id, p0, -1);
 
+                    // Steer the prompt/prefill tokens if this phase is enabled (cv_phase == prefill or both)
+                    if (params_base.cv_phase != "generation") {
+                        apply_ctrl_vec_for_slot(slot);
+                    }
+
                     // If using an alora, there may be uncached tokens that come
                     // before the invocation sequence. When this happens, the
                     // tokens before the invocation sequence need to be
@@ -3839,6 +3916,15 @@ private:
                 if (slot.can_speculate()) {
                     common_speculative_begin(spec.get(), slot.id, slot.prompt.tokens.get_text_tokens());
                 }
+
+                    // Apply the per-request control vector to the generation phase, if this phase is steered.
+                    // cv_phase == prefill => keep generation unsteered (the CV was applied for the prompt in a prior step).
+                    if (params_base.cv_phase == "generation" || params_base.cv_phase == "both") {
+                        apply_ctrl_vec_for_slot(slot);
+                    } else {
+                        clear_active_ctrl_vec();
+                    }
+
             } else if (slot.state != SLOT_STATE_GENERATING) {
                 return;
             }
@@ -4149,6 +4235,36 @@ private:
         }
     }
 };
+
+
+
+void server_slot::release() {
+    // Clear the active control vector if this slot owned it
+    if (owner) {
+        owner->clear_ctrl_vec_for_slot(id);
+    }
+
+    if (is_processing()) {
+        GGML_ASSERT(task);
+
+        SLT_INF(*this, "stop processing: n_tokens = %d, truncated = %d\n", prompt.n_tokens(), truncated);
+
+        t_last_used        =  ggml_time_us();
+
+        state = SLOT_STATE_IDLE;
+
+        // do not keep context of the child slots - the parent's context is enough
+        if (task->is_child()) {
+            prompt_clear();
+        }
+
+        callback_on_reset(*this);
+
+        reset();
+        callback_on_release(id);
+    }
+}
+
 
 //
 // server_context (public API)

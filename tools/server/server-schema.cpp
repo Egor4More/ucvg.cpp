@@ -226,6 +226,36 @@ std::vector<std::unique_ptr<field>> make_llama_cmpl_schema(const common_params &
         ->set_desc("Minimum hits at ngram lookup for mgram to be proposed"));
 #endif
 
+    // Control vector coefficients: additive (offset) + multiplicative (asymmetric gain), one per loaded CV.
+    add((new field_json("additive_vector_coefficients"))
+        ->set_desc("Per-request additive (offset) control vector coefficients; index = loaded control vector. Omitted entries default to 0.")
+        ->set_handler([&](field_eval_context & ctx, const json & data) {
+            ctx.params.ctrl_add_coeffs = json_value(data, "additive_vector_coefficients", std::vector<float>{});
+        }));
+
+    add((new field_json("multiplicative_vector_coefficients"))
+        ->set_desc("Per-request multiplicative (gain) control vector coefficients: an array of {scale_positive, scale_negative} objects; index = loaded control vector. Omitted entries default to {1, 1} (gain disabled).")
+        ->set_handler([&](field_eval_context & ctx, const json & data) {
+            if (!data.contains("multiplicative_vector_coefficients")) {
+                return;
+            }
+            const auto & arr = data.at("multiplicative_vector_coefficients");
+            if (!arr.is_array()) {
+                throw std::runtime_error("Error: 'multiplicative_vector_coefficients' must be an array of objects with 'scale_positive' and 'scale_negative' fields");
+            }
+            ctx.params.ctrl_mul_coeffs.clear();
+            ctx.params.ctrl_mul_coeffs.reserve(arr.size());
+            for (const auto & el : arr) {
+                if (!el.is_object()) {
+                    throw std::runtime_error("Error: 'multiplicative_vector_coefficients' entries must be objects with 'scale_positive' and 'scale_negative' fields");
+                }
+                ctrl_mul_coeff m;
+                if (el.contains("scale_positive")) { m.scale_positive = el.at("scale_positive").get<float>(); }
+                if (el.contains("scale_negative")) { m.scale_negative = el.at("scale_negative").get<float>(); }
+                ctx.params.ctrl_mul_coeffs.push_back(m);
+            }
+        }));
+
     add((new field_json("lora"))
         ->set_desc("A list of LoRA adapters to apply to this request. Each entry must have `id` and `scale` fields. Adapters not listed default to scale 0.0")
         ->set_handler([&](field_eval_context & ctx, const json & data) {

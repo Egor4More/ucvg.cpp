@@ -11,37 +11,28 @@
 
 // vec
 
-ggml_tensor * llama_adapter_cvec::tensor_for(int il) const {
-    if (il < 0 || il < layer_start || il > layer_end || (size_t) il >= tensors.size()) {
-        return nullptr;
-    }
-
-    return tensors[il];
-}
-
-ggml_tensor * llama_adapter_cvec::apply_to(ggml_context * ctx, ggml_tensor * cur, int  il) const {
-    ggml_tensor * layer_dir = tensor_for(il);
-    if (layer_dir != nullptr) {
-        cur = ggml_add(ctx, cur, layer_dir);
-    }
-
-    return cur;
-}
-
-bool llama_adapter_cvec::init(const llama_model & model) {
+bool llama_adapter_cvec::ensure_slot(size_t idx, const llama_model & model) {
     const auto & hparams = model.hparams;
 
-    GGML_ASSERT(tensors.empty());
-    GGML_ASSERT(ctxs.empty());
-    GGML_ASSERT(bufs.empty());
+    if (idx < slots.size() && slots[idx].allocated) {
+        return true;
+    }
 
-    // create a context for each buffer type
+    while (slots.size() <= idx) {
+        slots.emplace_back();
+    }
+    cvec_slot & s = slots[idx];
+    if (s.allocated) {
+        return true;
+    }
+
+    // one context per buffer type
     std::map<ggml_backend_buffer_type_t, ggml_context *> ctx_map;
     auto ctx_for_buft = [&](ggml_backend_buffer_type_t buft) -> ggml_context * {
         auto it = ctx_map.find(buft);
         if (it == ctx_map.end()) {
             ggml_init_params params = {
-                /*.mem_size   =*/ hparams.n_layer()*ggml_tensor_overhead(),
+                /*.mem_size   =*/ (hparams.n_layer()*2 + 2)*ggml_tensor_overhead(),
                 /*.mem_buffer =*/ NULL,
                 /*.no_alloc   =*/ true,
             };
@@ -52,7 +43,7 @@ bool llama_adapter_cvec::init(const llama_model & model) {
             }
 
             ctx_map[buft] = ctx;
-            ctxs.emplace_back(ctx);
+            s.ctxs.emplace_back(ctx);
 
             return ctx;
         }
@@ -60,9 +51,10 @@ bool llama_adapter_cvec::init(const llama_model & model) {
         return it->second;
     };
 
-    // make tensors
-    tensors.reserve(hparams.n_layer());
-    tensors.push_back(nullptr); // there's never a tensor for layer 0
+    // per-layer raw direction tensors (layer 0 unused) + remember a context for the scalar constants
+    ggml_context * scalar_ctx = nullptr;
+    s.dir.reserve(hparams.n_layer());
+    s.dir.push_back(nullptr);
     for (size_t il = 1; il < hparams.n_layer(); il++) {
         ggml_backend_buffer_type_t buft = model.select_buft(il);
         ggml_context * ctx = ctx_for_buft(buft);
@@ -70,24 +62,45 @@ bool llama_adapter_cvec::init(const llama_model & model) {
             LLAMA_LOG_ERROR("%s: failed to allocate context for control vector\n", __func__);
             return false;
         }
-        ggml_tensor * tensor = ggml_new_tensor_1d(ctx, GGML_TYPE_F32, hparams.n_embd);
-        tensors.push_back(tensor);
+        s.dir.push_back(ggml_new_tensor_1d(ctx, GGML_TYPE_F32, hparams.n_embd));
+        if (il == 1) {
+            scalar_ctx = ctx;
+        }
     }
 
-    // allocate tensors / buffers and zero
-    bufs.reserve(ctx_map.size());
+    // per-layer center scalar tensors (1-elem each; layer 0 unused)
+    s.center_t.reserve(hparams.n_layer());
+    s.center_t.push_back(nullptr);
+    for (size_t il = 1; il < hparams.n_layer(); il++) {
+        ggml_backend_buffer_type_t buft = model.select_buft(il);
+        ggml_context * ctx = ctx_for_buft(buft);
+        if (!ctx) {
+            LLAMA_LOG_ERROR("%s: failed to allocate context for control vector center\n", __func__);
+            return false;
+        }
+        s.center_t.push_back(ggml_new_tensor_1d(ctx, GGML_TYPE_F32, 1));
+    }
+
+    // scalar constants (dpos, dneg)
+    if (scalar_ctx != nullptr) {
+        s.dpos_t = ggml_new_tensor_1d(scalar_ctx, GGML_TYPE_F32, 1);
+        s.dneg_t = ggml_new_tensor_1d(scalar_ctx, GGML_TYPE_F32, 1);
+    }
+
+    // allocate buffers and zero
     for (auto it : ctx_map) {
         ggml_backend_buffer_type_t buft = it.first;
         ggml_context * ctx = it.second;
-        ggml_backend_buffer_t buf = ggml_backend_alloc_ctx_tensors_from_buft(ctx, buft);
+        ggml_backend_buffer_ptr buf { ggml_backend_alloc_ctx_tensors_from_buft(ctx, buft) };
         if (!buf) {
             LLAMA_LOG_ERROR("%s: failed to allocate buffer for control vector\n", __func__);
             return false;
         }
-        ggml_backend_buffer_clear(buf, 0);
-        bufs.emplace_back(buf);
+        ggml_backend_buffer_clear(buf.get(), 0);
+        s.bufs.emplace_back(std::move(buf));
     }
 
+    s.allocated = true;
     return true;
 }
 
@@ -98,13 +111,41 @@ bool llama_adapter_cvec::apply(
         int32_t n_embd,
         int32_t il_start,
         int32_t il_end) {
+    if (data == nullptr) {
+        // disable control vector application
+        n_active = 0;
+        return true;
+    }
+
+    // legacy additive: raw direction with alpha=1 and both scales=1, applied as slot 0
+    if (!set_slot(0, model, data, len, n_embd, nullptr, 0, il_start, il_end, 1.0f, 1.0f, 1.0f)) {
+        return false;
+    }
+
+    n_active = 1;
+    return true;
+}
+
+bool llama_adapter_cvec::set_slot(
+        int idx,
+        const llama_model & model,
+        const float * dir_data,
+        size_t len,
+        int32_t n_embd,
+        const float * center_data,
+        size_t center_len,
+        int32_t il_start,
+        int32_t il_end,
+        float alpha,
+        float scale_positive,
+        float scale_negative) {
+    (void) il_start;
+    (void) il_end;
+
     const auto & hparams = model.hparams;
 
-    if (data == nullptr) {
-        // disable the current control vector (but leave allocated for later)
-        layer_start = -1;
-        layer_end   = -1;
-        return true;
+    if (dir_data == nullptr) {
+        return false;
     }
 
     if (n_embd != (int) hparams.n_embd) {
@@ -112,25 +153,106 @@ bool llama_adapter_cvec::apply(
         return false;
     }
 
-    if (tensors.empty()) {
-        if (!init(model)) {
-            return false;
-        }
+    if (!ensure_slot((size_t) idx, model)) {
+        return false;
     }
 
-    layer_start = il_start;
-    layer_end   = il_end;
+    cvec_slot & s = slots[idx];
+    const int n_layer = (int) hparams.n_layer();
+    if ((int) s.dir.size() < n_layer || (int) s.center_t.size() < n_layer) {
+        return false;
+    }
 
-    for (size_t il = 1; il < hparams.n_layer(); il++) {
-        assert(tensors[il] != nullptr);
+    s.norm2.assign(n_layer, 0.0f);
+    for (int il = 1; il < n_layer; il++) {
+        assert(s.dir[il] != nullptr && s.center_t[il] != nullptr);
 
-        const size_t off = n_embd * (il - 1); // buffer doesn't have data for layer 0, since it's never present
+        const size_t off = (size_t) n_embd * (il - 1); // no data for layer 0
         if (off + n_embd <= len) {
-            ggml_backend_tensor_set(tensors[il], data + off, 0, n_embd * ggml_element_size(tensors[il]));
+            const float * v = dir_data + off;
+
+            ggml_backend_tensor_set(s.dir[il], v, 0, (size_t) n_embd * ggml_element_size(s.dir[il]));
+
+            const float c = (center_data && (size_t) (il - 1) < center_len) ? center_data[il - 1] : 0.0f;
+            ggml_backend_tensor_set(s.center_t[il], &c, 0, sizeof(float));
+
+            double sq = 0.0;
+            for (int j = 0; j < n_embd; ++j) { const double x = v[j]; sq += x * x; }
+            s.norm2[il] = (float) sq;   // ||v_l||^2, from the (CPU-side) source data
+        } else {
+            // no data for this layer -> inert (center 0, norm2 0; direction stays zeroed from allocation)
+            const float c = 0.0f;
+            ggml_backend_tensor_set(s.center_t[il], &c, 0, sizeof(float));
         }
     }
+
+    s.dpos  = scale_positive - 1.0f;
+    s.dneg  = scale_negative - 1.0f;
+    s.alpha = alpha;
+
+    if (s.dpos_t != nullptr) { ggml_backend_tensor_set(s.dpos_t, &s.dpos, 0, sizeof(float)); }
+    if (s.dneg_t != nullptr) { ggml_backend_tensor_set(s.dneg_t, &s.dneg, 0, sizeof(float)); }
 
     return true;
+}
+
+void llama_adapter_cvec::set_n_active(int n) {
+    n_active = (n < 0) ? 0 : n;
+}
+
+ggml_tensor * llama_adapter_cvec::apply_hybrid_all(ggml_context * ctx, ggml_tensor * cur, int il) const {
+    if (n_active <= 0) {
+        return cur;
+    }
+
+    ggml_tensor * orig = cur;   // every slot's contribution is computed from the original activation
+    ggml_tensor * result = nullptr;
+
+    for (int i = 0; i < n_active && i < (int) slots.size(); i++) {
+        const cvec_slot & s = slots[i];
+        if ((size_t) il >= s.dir.size() || s.dir[il] == nullptr) {
+            continue;   // this slot has no direction for layer `il`
+        }
+
+        ggml_tensor * v = s.dir[il];
+        const float norm2_l   = (s.norm2.size() > (size_t) il) ? s.norm2[il] : 0.0f;
+        const bool gain_on    = (norm2_l >= 1e-12f) && (s.dpos != 0.0f || s.dneg != 0.0f);
+
+        if (!gain_on && s.alpha == 0.0f) {
+            continue;   // nothing to apply for this layer
+        }
+
+        ggml_tensor * acc = nullptr;
+
+        if (gain_on) {
+            // h' += (k-1) * dev * v, where dev = (h.v - c_l)/||v||^2 and k is the scale on the side of dev
+            const float inv2 = 1.0f / norm2_l;
+
+            ggml_tensor * rawdot = ggml_sum_rows(ctx, ggml_mul(ctx, orig, v));   // [1, T]: per-token (h . v)
+            ggml_tensor * dev    = ggml_scale(ctx, ggml_sub(ctx, rawdot, s.center_t[il]), inv2); // (h.v - c_l)/||v||^2
+            ggml_tensor * sg     = ggml_step(ctx, dev);                              // +1 if dev>=0 else -1
+
+            // strength = dpos if dev>=0 else dneg  (= (dpos+dneg)/2 + (dpos-dneg)/2 * step)
+            ggml_tensor * hs = ggml_scale(ctx, ggml_add(ctx, s.dpos_t, s.dneg_t), 0.5f);
+            ggml_tensor * hd = ggml_scale(ctx, ggml_sub(ctx, s.dpos_t, s.dneg_t), 0.5f);
+            // [1,T] row: lead each binary op with the [1,T] operand so the small scalar broadcasts into it
+            ggml_tensor * k  = ggml_add(ctx, ggml_mul(ctx, sg, hd), hs);
+
+            acc = ggml_mul(ctx,
+                    ggml_repeat(ctx, v, orig),
+                    ggml_repeat(ctx, ggml_mul(ctx, k, dev), orig));               // v * (strength * dev)
+        }
+
+        if (s.alpha != 0.0f) {
+            // additive offset alpha*v, added last (never scaled by a multiplicative scale)
+            ggml_tensor * off = ggml_repeat(ctx, ggml_scale(ctx, v, s.alpha), orig);
+            acc = acc ? ggml_add(ctx, acc, off) : off;
+        }
+
+        result = result ? ggml_add(ctx, result, acc) : ggml_add(ctx, orig, acc);
+    }
+
+    return result != nullptr ? result : cur;
 }
 
 // lora

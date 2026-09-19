@@ -618,3 +618,30 @@ const char * llama_print_system_info(void) {
     return s.c_str();
 }
 
+void llama_set_capture_layers(struct llama_context * ctx, const int * layers, int n_layers) {
+    if (!layers || n_layers <= 0) {
+        ctx->capture_activations = false;
+        ctx->capture_layers.clear();
+        ctx->capture_tensors.clear();
+        ctx->captured_acts.clear();
+        ctx->capture_n_tokens = 0;
+        return;
+    }
+
+    std::vector<int> next(layers, layers + n_layers);
+    if (ctx->capture_activations && ctx->capture_layers == next) {
+        return;
+    }
+
+    ctx->capture_activations = true;
+    ctx->capture_layers = std::move(next);
+    ctx->capture_tensors.clear();
+    ctx->captured_acts.clear();
+    ctx->capture_n_tokens = 0;
+}
+
+void llama_get_captured_activations(struct llama_context * ctx, float * output) {
+    if (!ctx->captured_acts.empty()) {
+        memcpy(output, ctx->captured_acts.data(), ctx->captured_acts.size() * sizeof(float));
+    }
+}

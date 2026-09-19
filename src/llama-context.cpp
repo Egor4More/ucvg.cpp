@@ -1333,6 +1333,34 @@ bool llama_context::set_adapter_cvec(
     return res;
 }
 
+bool llama_context::set_adapter_cvec_hybrid(
+            int              slot,
+            const float * dir_data,
+                 size_t   len,
+                int32_t   n_embd,
+            const float * center,
+                 size_t   center_len,
+                int32_t   il_start,
+                int32_t   il_end,
+                float     alpha,
+                float     scale_positive,
+                float     scale_negative) {
+    LLAMA_LOG_DEBUG("%s: slot = %d, il_start = %d, il_end = %d, alpha = %.4f, scale+ = %.4f, scale- = %.4f\n",
+                    __func__, slot, il_start, il_end, (double)alpha, (double)scale_positive, (double)scale_negative);
+
+    bool res = cvec->set_slot(slot, model, dir_data, len, n_embd, center, center_len, il_start, il_end, alpha, scale_positive, scale_negative);
+
+    sched_need_reserve = true;
+
+    return res;
+}
+
+void llama_context::finalize_adapter_cvec(int n_active) {
+    cvec->set_n_active(n_active);
+
+    sched_need_reserve = true;
+}
+
 llm_graph_result * llama_context::process_ubatch(const llama_ubatch & ubatch, llm_graph_type gtype, llama_memory_context_i * mctx, ggml_status & ret) {
     if (mctx && !mctx->apply()) {
         LLAMA_LOG_ERROR("%s: failed to apply memory context\n", __func__);
@@ -1347,7 +1375,8 @@ llm_graph_result * llama_context::process_ubatch(const llama_ubatch & ubatch, ll
     // in order to correctly reuse a graph, it's full topology has to be uniquely determined by these parameters
     const auto gparams = graph_params(res, ubatch, mctx, gtype);
 
-    if (!graph_reuse_disable && res->can_reuse(gparams)) {
+    const bool need_capture_rebuild = capture_activations && capture_tensors.empty();
+    if (!graph_reuse_disable && res->can_reuse(gparams) && !need_capture_rebuild) {
         //LLAMA_LOG_DEBUG("%s: reusing previous graph\n", __func__);
 
         // with pipeline parallelism, the previous graph_compute_async may still be running
@@ -1360,6 +1389,10 @@ llm_graph_result * llama_context::process_ubatch(const llama_ubatch & ubatch, ll
         n_reused++;
     } else {
         res->reset();
+
+        if (capture_activations) {
+            capture_tensors.clear();
+        }
 
         ggml_backend_sched_reset(sched.get());
         ggml_backend_sched_set_eval_callback(sched.get(), cparams.cb_eval, cparams.cb_eval_user_data);
@@ -1398,6 +1431,29 @@ llm_graph_result * llama_context::process_ubatch(const llama_ubatch & ubatch, ll
         LLAMA_LOG_ERROR("%s: failed to compute graph, compute status: %d\n", __func__, status);
         ret = status;
         return nullptr;
+    }
+
+    if (capture_activations && !capture_tensors.empty()) {
+        size_t n_floats = 0;
+        for (ggml_tensor * t : capture_tensors) {
+            n_floats += (size_t) t->ne[0];
+        }
+        captured_acts.resize(n_floats);
+
+        size_t off = 0;
+        for (ggml_tensor * t : capture_tensors) {
+            const int64_t n_embd_layer        = t->ne[0];
+            const int64_t n_tokens_this_layer = t->ne[1];
+            GGML_ASSERT(n_tokens_this_layer > 0);
+
+            ggml_backend_t backend = ggml_backend_sched_get_tensor_backend(sched.get(), t);
+            GGML_ASSERT(backend);
+
+            ggml_backend_tensor_get_async(backend, t, captured_acts.data() + off,
+                                          (n_tokens_this_layer - 1) * n_embd_layer * sizeof(float),
+                                          n_embd_layer * sizeof(float));
+            off += (size_t) n_embd_layer;
+        }
     }
 
     ret = GGML_STATUS_SUCCESS;
@@ -2488,6 +2544,9 @@ llm_graph_params llama_context::graph_params(
         /*.n_outputs   =*/ n_outputs,
         /*.cb          =*/ graph_get_cb(),
         /*.res         =*/ res,
+        /*.capture_layers   =*/capture_activations ? &capture_layers : nullptr,
+        /*.capture_tensors  =*/capture_activations ? &capture_tensors : nullptr,
+        /*.capture_n_tokens =*/nullptr,  // set later, or we can use ubatch.n_tokens directly in copy
     };
 }
 
@@ -4013,6 +4072,31 @@ int32_t llama_set_adapter_cvec(
     bool res = ctx->set_adapter_cvec(data, len, n_embd, il_start, il_end);
 
     return res ? 0 : -1;
+}
+
+int32_t llama_set_adapter_cvec_hybrid(
+        llama_context * ctx,
+             int       slot,
+          const float * dir_data,
+               size_t   len,
+              int32_t   n_embd,
+          const float * center,
+               size_t   center_len,
+              int32_t   il_start,
+              int32_t   il_end,
+              float     alpha,
+              float     scale_positive,
+              float     scale_negative) {
+    bool res = ctx->set_adapter_cvec_hybrid(slot, dir_data, len, n_embd, center, center_len, il_start, il_end,
+                                            alpha, scale_positive, scale_negative);
+
+    return res ? 0 : -1;
+}
+
+void llama_finalize_adapter_cvec(
+        llama_context * ctx,
+             int       n_active) {
+    ctx->finalize_adapter_cvec(n_active);
 }
 
 //

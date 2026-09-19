@@ -550,6 +550,11 @@ extern "C" {
     // Frees all allocated memory
     LLAMA_API void llama_free(struct llama_context * ctx);
 
+    // Activation extraction API
+    LLAMA_API void llama_set_capture_layers(struct llama_context * ctx, const int * layers, int n_layers);
+    LLAMA_API void llama_get_captured_activations(struct llama_context * ctx, float * output);
+
+
     LLAMA_API int64_t llama_time_us(void);
 
     LLAMA_API size_t llama_max_devices(void);
@@ -729,6 +734,30 @@ extern "C" {
                          int32_t   n_embd,
                          int32_t   il_start,
                          int32_t   il_end);
+
+    // Set one control-vector slot (index `slot`) for dual additive + asymmetric-multiplicative steering.
+    // dir_data is the raw direction (n_embd x n_layers from layer 1); center holds the per-layer scalar c_l
+    // (= mu_l . v_l, index l-1 for layer l). alpha is the additive offset; scale_positive/scale_negative are the
+    // multiplicative scales applied to deviations above/below the default state (both = 1 disables the gain).
+    // h' += (k-1)*((h.v - c_l)/||v||^2)*v + alpha*v, where k picks the scale by the sign of the deviation.
+    LLAMA_API int32_t llama_set_adapter_cvec_hybrid(
+            struct llama_context * ctx,
+                 int              slot,
+                     const float * dir_data,
+                          size_t   len,
+                         int32_t   n_embd,
+                     const float * center,
+                          size_t   center_len,
+                         int32_t   il_start,
+                         int32_t   il_end,
+                         float     alpha,
+                         float     scale_positive,
+                         float     scale_negative);
+
+    // Activate slots [0, n) for the next graph build.
+    LLAMA_API void llama_finalize_adapter_cvec(
+            struct llama_context * ctx,
+                 int               n_active);
 
     //
     // Memory

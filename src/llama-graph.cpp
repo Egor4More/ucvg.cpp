@@ -16,6 +16,7 @@
 #include "llama-memory-hybrid-iswa.h"
 #include "llama-memory-recurrent.h"
 
+#include <algorithm>
 #include <cassert>
 #include <cmath>
 #include <cstring>
@@ -1493,7 +1494,9 @@ llm_graph_context::llm_graph_context(const llm_graph_params & params) :
     cb_func          (params.cb),
     res              (params.res),
     ctx0             (res->get_ctx()),
-    gf               (res->get_gf()) {
+    gf               (res->get_gf()),
+    capture_layers   (params.capture_layers),
+    capture_tensors  (params.capture_tensors) {
         res->set_params(params);
     }
 
@@ -1508,7 +1511,22 @@ void llm_graph_context::cb(ggml_tensor * cur, const char * name, int il) const {
 ggml_tensor * llm_graph_context::build_cvec(
          ggml_tensor * cur,
                  int   il) const {
-    return cvec->apply_to(ctx0, cur, il);
+    if (capture_layers && capture_tensors && cur) {
+        auto & layers = *capture_layers;
+        if (std::find(layers.begin(), layers.end(), il) != layers.end()) {
+            ggml_tensor * copy = ggml_new_tensor_2d(ctx0, GGML_TYPE_F32, cur->ne[0], cur->ne[1]);
+            copy = ggml_cpy(ctx0, cur, copy);
+            ggml_set_output(copy);
+            ggml_build_forward_expand(gf, copy);
+            capture_tensors->push_back(copy);
+        }
+    }
+
+    // Apply all active control-vector slots (additive offset + asymmetric multiplicative gain) at this layer.
+    // This is the single CV application point for every architecture (most pass `cur`; a few pass inpL/prefix_sum).
+    cur = cvec->apply_hybrid_all(ctx0, cur, il);
+
+    return cur;
 }
 
 ggml_tensor * llm_graph_context::build_lora_mm(
