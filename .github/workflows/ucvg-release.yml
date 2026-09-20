@@ -135,8 +135,6 @@ jobs:
             os: ubuntu-22.04
           - build: 'arm64'
             os: ubuntu-24.04-arm
-          - build: 's390x'
-            os: ubuntu-24.04-s390x
 
     runs-on: ${{ matrix.os }}
 
@@ -657,6 +655,9 @@ jobs:
 
     runs-on: windows-2022
 
+    permissions:
+      actions: write
+
     outputs:
       openvino_version: ${{ steps.openvino_version.outputs.value }}
 
@@ -857,6 +858,9 @@ jobs:
     if: ${{ needs.check-release.outputs.should_release == 'true' }}
 
     runs-on: windows-2022
+
+    permissions:
+      actions: write
 
     strategy:
       matrix:
@@ -1217,6 +1221,9 @@ jobs:
 
     runs-on: windows-2022
 
+    permissions:
+      actions: write
+
     defaults:
       run:
         shell: bash
@@ -1318,6 +1325,9 @@ jobs:
   ubuntu-24-sycl:
     needs: [check-release, ui-build]
     if: ${{ needs.check-release.outputs.should_release == 'true' }}
+
+    permissions:
+      actions: write
 
     strategy:
       matrix:
@@ -1834,7 +1844,6 @@ jobs:
             **Linux:**
             - [Ubuntu x64 (CPU)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-x64.tar.gz)
             - [Ubuntu arm64 (CPU)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-arm64.tar.gz)
-            - [Ubuntu s390x (CPU)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-s390x.tar.gz)
             - [Ubuntu x64 (Vulkan)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-vulkan-x64.tar.gz)
             - [Ubuntu arm64 (Vulkan)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-vulkan-arm64.tar.gz)
             - [Ubuntu x64 (CUDA 12)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-ubuntu-cuda-12.8-x64.tar.gz) - [CUDA 12.8 libraries](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/cudart-llama-${{ steps.tag.outputs.name }}-bin-ubuntu-cuda-12.8-x64.tar.gz)
