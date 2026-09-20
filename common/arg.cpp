@@ -824,7 +824,7 @@ static bool common_params_parse_ex(int argc, char ** argv, common_params_context
                 throw std::invalid_argument(string_format("error: invalid argument: %s", arg.c_str()));
             }
             if (!seen_args.insert(arg).second) {
-                const bool skip = (arg == "--spec-type");
+                const bool skip = (arg == "--spec-type" || arg == "--dynamic-cv-add");
 
                 if (!skip) {
                     LOG_WRN("DEPRECATED: argument '%s' specified multiple times, use comma-separated values instead (only last value will be used)\n", arg.c_str());
@@ -2974,7 +2974,9 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
     ).set_examples({LLAMA_EXAMPLE_COMMON, LLAMA_EXAMPLE_EXPORT_LORA}));
     add_opt(common_arg(
         {"--control-vector"}, "FNAME",
-        "add a control vector\nnote: use comma-separated values to add multiple control vectors",
+        "add a STATIC / globally-applied control vector (fixed scale, applied to all requests)\n"
+        "note: use comma-separated values to add multiple control vectors.\n"
+        "For per-request DYNAMIC steering, use --dynamic-cv-add instead",
         [](common_params & params, const std::string & value) {
             for (const auto & item : parse_csv_row(value)) {
                 params.control_vectors.push_back({ 1.0f, item, });
@@ -2983,8 +2985,9 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
     ));
     add_opt(common_arg(
         {"--control-vector-scaled"}, "FNAME:SCALE,...",
-        "add a control vector with user defined scaling SCALE\n"
-        "note: use comma-separated values (format: FNAME:SCALE,...)",
+        "add a STATIC / globally-applied control vector with a fixed user-defined scaling SCALE\n"
+        "note: use comma-separated values (format: FNAME:SCALE,...).\n"
+        "For per-request DYNAMIC steering, use --dynamic-cv-add instead",
         [](common_params & params, const std::string & value) {
             for (const auto & item : parse_csv_row(value)) {
                 auto parts = string_split<std::string>(item, ':');
@@ -3004,22 +3007,20 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
         }
     ));
     add_opt(common_arg(
-        {"--add-cv"}, "FNAME",
-        "add a control vector file (use comma-separated list for multiple files)",
+        {"--dynamic-cv-add", "-dcv"}, "FNAME",
+        "load a control vector for per-request (DYNAMIC) steering. Repeatable; the order of flags is preserved.",
         [](common_params & params, const std::string & value) {
-            for (const auto & item : parse_csv_row(value)) {
-                params.add_cv_files.push_back(item);
-            }
+            params.dynamic_cv_files.push_back(value);
         }
     ));
     add_opt(common_arg(
-        {"--cv-phase"}, "PHASE",
-        "control vector application phase: generation, prefill, or both (default: generation)",
+        {"--dynamic-cv-phase"}, "PHASE",
+        "phase to apply dynamically-loaded control vectors to: generation, prefill, or both (default: generation)",
         [](common_params & params, const std::string & value) {
             if (value != "generation" && value != "prefill" && value != "both") {
-                throw std::invalid_argument(string_format("error: invalid --cv-phase '%s' (expected generation|prefill|both)", value.c_str()));
+                throw std::invalid_argument(string_format("error: invalid --dynamic-cv-phase '%s' (expected generation|prefill|both)", value.c_str()));
             }
-            params.cv_phase = value;
+            params.dynamic_cv_phase = value;
         }
     ));
     add_opt(common_arg(

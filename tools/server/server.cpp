@@ -169,7 +169,7 @@ int llama_server(common_params & params, int argc, char ** argv) {
                 params.kv_unified_per_slot, params.n_ctx);
     }
 
-    if (params.n_parallel != 1 && !params.add_cv_files.empty()) {
+    if (params.n_parallel != 1 && !params.dynamic_cv_files.empty()) {
         std::printf(
             "\n"
             "===============================================\n"

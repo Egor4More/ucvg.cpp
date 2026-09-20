@@ -531,8 +531,8 @@ struct common_params {
 
     std::vector<common_control_vector_load_info> control_vectors; // control vector with user defined scale
 
-    std::vector<std::string>                 add_cv_files;        // --add-cv  (paths, no scale)
-    std::string                             cv_phase = "generation"; // --cv-phase (generation|prefill|both): which phases the control vector is applied to
+    std::vector<std::string>                 dynamic_cv_files;    // --dynamic-cv-add (repeatable, order preserved): per-request (dynamic) control vectors, no scale
+    std::string                             dynamic_cv_phase = "generation"; // --dynamic-cv-phase (generation|prefill|both): which phases the dynamic control vectors are applied to
 
     int32_t verbosity                  = 3;  // LOG_LEVEL_INFO
     int32_t control_vector_layer_start = -1; // layer range for control vector

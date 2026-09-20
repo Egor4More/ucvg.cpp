@@ -1103,8 +1103,8 @@ private:
 
         llama_init = common_init_from_params(params_base);
 
-        // Load additional control vectors from --add-cv (stored separately for per-request scaling)
-        for (const auto & file : params_base.add_cv_files) {
+        // Load dynamic control vectors from --dynamic-cv-add (stored separately for per-request scaling)
+        for (const auto & file : params_base.dynamic_cv_files) {
             std::vector<common_control_vector_load_info> infos = { { 1.0f, file } };
             common_control_vector_data cvec = common_control_vector_load(infos);
             if (cvec.n_embd == -1) {
@@ -3515,8 +3515,8 @@ private:
 
                     slot.mem.seq_rm(slot.id, p0, -1);
 
-                    // Steer the prompt/prefill tokens if this phase is enabled (cv_phase == prefill or both)
-                    if (params_base.cv_phase != "generation") {
+                    // Steer the prompt/prefill tokens if this phase is enabled (dynamic_cv_phase == prefill or both)
+                    if (params_base.dynamic_cv_phase != "generation") {
                         apply_ctrl_vec_for_slot(slot);
                     }
 
@@ -3918,8 +3918,8 @@ private:
                 }
 
                     // Apply the per-request control vector to the generation phase, if this phase is steered.
-                    // cv_phase == prefill => keep generation unsteered (the CV was applied for the prompt in a prior step).
-                    if (params_base.cv_phase == "generation" || params_base.cv_phase == "both") {
+                    // dynamic_cv_phase == prefill => keep generation unsteered (the CV was applied for the prompt in a prior step).
+                    if (params_base.dynamic_cv_phase == "generation" || params_base.dynamic_cv_phase == "both") {
                         apply_ctrl_vec_for_slot(slot);
                     } else {
                         clear_active_ctrl_vec();
