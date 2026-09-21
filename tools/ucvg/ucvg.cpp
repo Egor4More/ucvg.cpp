@@ -89,7 +89,8 @@ struct Params {
     float threshold_fraction = 0.0f;
     int n_bootstrap = 100;
     float subsample_frac = 0.4f;
-    float consistency_threshold = 1.0f;
+    float consistency_threshold = 0.0f;
+    // float consistency_threshold = 1.0f;
     bool apply_global_scaling = true;
     float snr_smoothing_sigma = 1.0f;
     float snr_weight_power = 1.0f;
@@ -104,13 +105,15 @@ struct Params {
     int capture_ctx   = 512; // --capture-ctx: per-slot n_ctx for capture (prefill-only; must fit the worst-case prompt)
 };
 
-// Write direction.{1..n_layers} + center.{1..n_layers} (F32, zero for unselected) to a .gguf with arch "controlvector".
-// center.{l+1} is the scalar (mu_l . v_l): the default-state projection onto that layer's direction. It is consumed by the
-// multiplicative (gain) steering path; the legacy additive path only reads direction.* and ignores center.*.
+// Write direction.{1..n_layers} tensors (F32, zero for unselected) + the per-layer center scalars as a single metadata
+// array "controlvector.center" (one F32 each) to a .gguf with arch "controlvector".
+// center[l] is (mu_l . v_l): the default-state projection onto that layer's direction, consumed by the multiplicative
+// (gain) steering path. Storing it in metadata (not tensors) keeps the file loadable by stock llama.cpp, whose CV loader
+// reads only direction.* and ignores unknown KV keys.
 static bool export_gguf(const std::string & fname, int n_layers, int d, const std::vector<std::vector<float>> & layers,
                         const std::vector<float> & center) {
     struct ggml_init_params params_ggml = {
-        /*.mem_size   =*/ ggml_tensor_overhead() * (size_t)(2 * std::max(1, n_layers) + 2),
+        /*.mem_size   =*/ ggml_tensor_overhead() * (size_t)(std::max(1, n_layers) + 2),
         /*.mem_buffer =*/ nullptr,
         /*.no_alloc   =*/ true,
     };
@@ -131,24 +134,15 @@ static bool export_gguf(const std::string & fname, int n_layers, int d, const st
         tensors[l] = t;
     }
 
-    std::vector<struct ggml_tensor *> ctensors((size_t)n_layers, nullptr);
-    for (int l = 0; l < n_layers; ++l) {
-        const float cv = (l < (int)center.size()) ? center[l] : 0.0f;
-        struct ggml_tensor * t = ggml_new_tensor_1d(tctx, GGML_TYPE_F32, 1); // 1-element: the scalar c_l
-        if (!t) return false;
-        t->data = malloc(ggml_nbytes(t));
-        memcpy(t->data, &cv, sizeof(float));
-        char name[64];
-        snprintf(name, sizeof(name), "center.%d", l + 1);
-        ggml_set_name(t, name);
-        ctensors[l] = t;
-    }
-
     struct gguf_context * gctx = gguf_init_empty();
     gguf_set_val_str(gctx, "general.architecture", "controlvector");
     gguf_set_val_i32(gctx, "controlvector.layer_count", n_layers);
-    for (auto * t : tensors)  gguf_add_tensor(gctx, t);
-    for (auto * t : ctensors) gguf_add_tensor(gctx, t);
+    // center scalars (c_l = mu_l . v_l) stored as a single F32 array in metadata, not as tensors: the stock CV
+    // loader reads only direction.* tensors and ignores unknown KV keys, so this stays stock-compatible.
+    if (!center.empty()) {
+        gguf_set_arr_data(gctx, "controlvector.center", GGUF_TYPE_FLOAT32, center.data(), center.size());
+    }
+    for (auto * t : tensors) gguf_add_tensor(gctx, t);
 
     bool ok = gguf_write_to_file(gctx, fname.c_str(), false);
     gguf_free(gctx);

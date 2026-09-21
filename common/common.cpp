@@ -2038,26 +2038,6 @@ static common_control_vector_data common_control_vector_load_one(const common_co
             continue;   // unparsable index; skip (forward-compatible with unknown tensors)
         }
 
-        if (prefix == "center") {
-            // optional per-layer scalar c_l = (mu_l . v_l); a 1-element F32 tensor, layer index >= 1
-            if (layer_idx == 0) {
-                COM_ERR("invalid (zero) center tensor layer index in %s\n", load_info.fname.c_str());
-                result.n_embd = -1;
-                break;
-            }
-            struct ggml_tensor * ctensor = ggml_get_tensor(ctx, name.c_str());
-            if (ctensor->type != GGML_TYPE_F32 || ggml_n_dims(ctensor) != 1 || ggml_nelements(ctensor) != 1) {
-                COM_ERR("invalid center tensor in %s (expected a 1-element F32)\n", load_info.fname.c_str());
-                result.n_embd = -1;
-                break;
-            }
-            const float * csrc = (const float *) ctensor->data;
-            result.center.resize(std::max(result.center.size(), static_cast<size_t>(layer_idx)), 0.0f); // index l-1 for layer l
-            result.center[layer_idx - 1] += csrc[0];
-            result.has_center = true;
-            continue;
-        }
-
         if (prefix != "direction") {
             continue;   // unknown tensor; skip for forward compatibility
         }
@@ -2102,6 +2082,18 @@ static common_control_vector_data common_control_vector_load_one(const common_co
     if (result.n_embd == -1) {
         COM_WRN("skipping %s due to invalid direction tensors\n", load_info.fname.c_str());
         result.data.clear();
+    }
+
+    // optional per-layer center scalars c_l = (mu_l . v_l), stored as a single F32 array in metadata
+    if (result.n_embd != -1) {
+        const int64_t kidx = gguf_find_key(ctx_gguf, "controlvector.center");
+        if (kidx != -1 && gguf_get_kv_type(ctx_gguf, kidx) == GGUF_TYPE_ARRAY
+                && gguf_get_arr_type(ctx_gguf, kidx) == GGUF_TYPE_FLOAT32) {
+            const float * csrc = (const float *) gguf_get_arr_data(ctx_gguf, kidx);
+            const size_t n_center = gguf_get_arr_n(ctx_gguf, kidx);  // index l -> layer l+1
+            result.center.assign(csrc, csrc + n_center);
+            result.has_center = true;
+        }
     }
 
     gguf_free(ctx_gguf);
