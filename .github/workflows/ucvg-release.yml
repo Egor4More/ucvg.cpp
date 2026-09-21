@@ -1837,7 +1837,6 @@ jobs:
 
             **macOS/iOS:**
             - [macOS Apple Silicon (arm64)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-macos-arm64.tar.gz)
-            - macOS Apple Silicon (arm64, KleidiAI enabled) [DISABLED](https://github.com/Egor4More/ucvg.cpp/pull/23780)
             - [macOS Intel (x64)](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-bin-macos-x64.tar.gz)
             - [iOS XCFramework](https://github.com/Egor4More/ucvg.cpp/releases/download/${{ steps.tag.outputs.name }}/llama-${{ steps.tag.outputs.name }}-xcframework.zip)
 
