@@ -93,9 +93,11 @@ For the full list of features, please refer to [server's changelog](https://gith
 | `--op-offload, --no-op-offload` | whether to offload host tensor operations to device (default: true) |
 | `--lora FNAME` | path to LoRA adapter (use comma-separated values to load multiple adapters) |
 | `--lora-scaled FNAME:SCALE,...` | path to LoRA adapter with user defined scaling (format: FNAME:SCALE,...)<br/>note: use comma-separated values |
-| `--control-vector FNAME` | add a control vector<br/>note: use comma-separated values to add multiple control vectors |
-| `--control-vector-scaled FNAME:SCALE,...` | add a control vector with user defined scaling SCALE<br/>note: use comma-separated values (format: FNAME:SCALE,...) |
+| `--control-vector FNAME` | add a control vector (STATIC / globally applied at a fixed scale, to all requests)<br/>note: use comma-separated values to add multiple control vectors<br/>for per-request DYNAMIC steering use `--dynamic-cv-add` instead |
+| `--control-vector-scaled FNAME:SCALE,...` | add a control vector with a fixed user-defined scaling SCALE (STATIC / globally applied)<br/>note: use comma-separated values (format: FNAME:SCALE,...)<br/>for per-request DYNAMIC steering use `--dynamic-cv-add` instead |
 | `--control-vector-layer-range START END` | layer range to apply the control vector(s) to, start and end inclusive |
+| `-dcv, --dynamic-cv-add FNAME` | load a control vector for per-request (DYNAMIC) steering. Repeatable; the order of the flags is preserved. Steer each request via the `additive_vector_coefficients` / `multiplicative_vector_coefficients` fields (see `/completion`) |
+| `--dynamic-cv-phase PHASE` | phase to apply dynamically-loaded control vectors to: `generation`, `prefill`, or `both` (default: `generation`; `prefill` and `both` are experimental) |
 | `-m, --model FNAME` | model path to load<br/>(env: LLAMA_ARG_MODEL) |
 | `-mu, --model-url MODEL_URL` | model download url (default: unused)<br/>(env: LLAMA_ARG_MODEL_URL) |
 | `-dr, --docker-repo [<repo>/]<model>[:quant]` | Docker Hub model repository. repo is optional, default to ai/. quant is optional, default to :latest.<br/>example: gemma3<br/>(default: unused)<br/>(env: LLAMA_ARG_DOCKER_REPO) |
@@ -601,6 +603,13 @@ These words will not be included in the completion, so make sure to add them to 
 `response_fields`: A list of response fields, for example: `"response_fields": ["content", "generation_settings/n_predict"]`. If the specified field is missing, it will simply be omitted from the response without triggering an error. Note that fields with a slash will be unnested; for example, `generation_settings/n_predict` will move the field `n_predict` from the `generation_settings` object to the root of the response and give it a new name.
 
 `lora`: A list of LoRA adapters to be applied to this specific request. Each object in the list must contain `id` and `scale` fields. For example: `[{"id": 0, "scale": 0.5}, {"id": 1, "scale": 1.1}]`. If a LoRA adapter is not specified in the list, its scale will default to `0.0`. Please note that requests with different LoRA configurations will not be batched together, which may result in performance degradation.
+
+`additive_vector_coefficients`: UCVG control-vector steering (requires one or more `--dynamic-cv-add` vectors). An array of floats, one entry per loaded vector in load order. Omit, or use all `0`, for no offset. Positive values steer toward the vector's "positive persona"; negative values steer toward the "negative" persona. Default: none (no offset)
+
+`multiplicative_vector_coefficients`: UCVG control-vector steering (requires one or more `--dynamic-cv-add` vectors). An array of `{ "scale_positive", "scale_negative" }` objects, one entry per loaded vector in load order. Omit, or use `{1, 1}`, for no effect. Acts as an asymmetric *gain*: a scale above `1` amplifies the trait the vector defines, below `1` dims it. **Experimental** — internal representations are non-linear, so results can be unstable (often either no visible effect or a very strong one). Default: none (no scaling)
+
+> [!NOTE]
+> The index of each entry in `additive_vector_coefficients` / `multiplicative_vector_coefficients` is the load-order index of the control vector passed via `--dynamic-cv-add`, so the order of the arrays must match the order in which the vectors were loaded. For strong steering magnitudes, raising `repeat_penalty` (server-side or per-request) can reduce looping.
 
 **Response format**
 
