@@ -1490,6 +1490,7 @@ llm_graph_context::llm_graph_context(const llm_graph_params & params) :
     loras            (params.loras),
     mctx             (params.mctx),
     cross            (params.cross),
+    prec_policy      (params.prec_policy),
     samplers         (params.samplers),
     cb_func          (params.cb),
     res              (params.res),
@@ -1535,6 +1536,10 @@ ggml_tensor * llm_graph_context::build_lora_mm(
           ggml_tensor * w_s) const {
     ggml_tensor * res = ggml_mul_mat(ctx0, w, cur);
 
+    if (prec_policy) {
+        prec_policy->apply(res);
+    }
+
     if (w_s) {
         res = ggml_mul(ctx0, res, w_s);
     }
@@ -1566,6 +1571,10 @@ ggml_tensor * llm_graph_context::build_lora_mm_id(
           ggml_tensor * ids,
           ggml_tensor * w_s) const {
     ggml_tensor * res = ggml_mul_mat_id(ctx0, w, cur, ids);
+
+    if (prec_policy) {
+        prec_policy->apply(res);
+    }
 
     if (w_s) {
         const int64_t n_expert = w_s->ne[0];
@@ -2320,6 +2329,10 @@ ggml_tensor * llm_graph_context::build_moe_ffn(
     }
 
     experts = build_lora_mm_id(down_exps, cur, selected_experts, down_exps_s); // [n_embd, n_expert_used, n_tokens]
+    if (arch == LLM_ARCH_MISTRAL4) {
+        // src1 can exceed F16 range
+        ggml_prec_set_src(experts, GGML_PREC_F32, 1);
+    }
     cb(experts, "ffn_moe_down", il);
 
     if (down_exps_s) {
@@ -2469,6 +2482,7 @@ ggml_tensor * llm_graph_context::build_inp_pos() const {
 
     cur = ggml_new_tensor_1d(ctx0, GGML_TYPE_I32, (int64_t)n_tokens*hparams.n_pos_per_embd());
     ggml_set_input(cur);
+    cb(cur, "inp_pos", -1);
 
     res->add_input(std::move(inp));
 
@@ -2483,7 +2497,7 @@ ggml_tensor * llm_graph_context::build_inp_attn_scale() const {
     // this need to be 1x1xN for broadcasting
     cur = ggml_new_tensor_3d(ctx0, GGML_TYPE_F32, 1, 1, n_tokens);
     ggml_set_input(cur);
-    ggml_set_name(cur, "attn_scale");
+    cb(cur, "inp_attn_scale", -1);
 
     res->add_input(std::move(inp));
 
@@ -2505,6 +2519,7 @@ ggml_tensor * llm_graph_context::build_inp_out_ids() const {
 
     cur = ggml_new_tensor_1d(ctx0, GGML_TYPE_I32, n_outputs);
     ggml_set_input(cur);
+    ggml_set_name(cur, "out_ids");
 
     res->add_input(std::move(inp));
 
@@ -2518,6 +2533,7 @@ ggml_tensor * llm_graph_context::build_inp_mean() const {
 
     cur = ggml_new_tensor_2d(ctx0, GGML_TYPE_F32, n_tokens, ubatch.n_seqs_unq);
     ggml_set_input(cur);
+    ggml_set_name(cur, "mean");
 
     res->add_input(std::move(inp));
 
@@ -2531,6 +2547,7 @@ ggml_tensor * llm_graph_context::build_inp_cls() const {
 
     cur = ggml_new_tensor_1d(ctx0, GGML_TYPE_I32, ubatch.n_seqs_unq);
     ggml_set_input(cur);
+    ggml_set_name(cur, "cls");
 
     res->add_input(std::move(inp));
 
@@ -2555,6 +2572,7 @@ ggml_tensor * llm_graph_context::build_inp_cross_embd() const {
 
     cur = ggml_new_tensor_2d(ctx0, GGML_TYPE_F32, n_embd, n_enc);
     ggml_set_input(cur);
+    ggml_set_name(cur, "cross_embd");
 
     res->add_input(std::move(inp));
 
@@ -2568,6 +2586,7 @@ ggml_tensor * llm_graph_context::build_inp_pos_bucket_enc() const {
 
     cur = ggml_new_tensor_2d(ctx0, GGML_TYPE_I32, n_tokens, n_tokens);
     ggml_set_input(cur);
+    ggml_set_name(cur, "pos_bucket_enc");
 
     res->add_input(std::move(inp));
 
@@ -2585,6 +2604,7 @@ ggml_tensor * llm_graph_context::build_inp_pos_bucket_dec() const {
 
     cur = ggml_new_tensor_2d(ctx0, GGML_TYPE_I32, n_kv, n_tokens);
     ggml_set_input(cur);
+    ggml_set_name(cur, "pos_bucket_dec");
 
     res->add_input(std::move(inp));
 
@@ -2753,6 +2773,7 @@ llm_graph_input_attn_no_cache * llm_graph_context::build_attn_inp_no_cache() con
     // note: there is no KV cache, so the number of KV values is equal to the number of tokens in the batch
     inp->self_kq_mask = ggml_new_tensor_4d(ctx0, type_mask, n_tokens, n_tokens, 1, 1);
     ggml_set_input(inp->self_kq_mask);
+    cb(inp->self_kq_mask, "self_kq_mask", -1);
 
     inp->self_kq_mask_cnv = inp->self_kq_mask;
 
@@ -3529,6 +3550,7 @@ static std::unique_ptr<llm_graph_input_rs> build_rs_inp_impl(
 
     inp->s_copy = ggml_new_tensor_1d(ctx0, GGML_TYPE_I32, n_rs);
     ggml_set_input(inp->s_copy);
+    ggml_set_name(inp->s_copy, "rs_s_copy");
 
     inp->s_copy_main  = ggml_view_1d(ctx0, inp->s_copy, n_seqs, 0);
     inp->s_copy_extra = ggml_view_1d(ctx0, inp->s_copy, n_rs - n_seqs, n_seqs * inp->s_copy->nb[0]);

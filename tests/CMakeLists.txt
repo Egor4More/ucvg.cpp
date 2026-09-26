@@ -313,6 +313,7 @@ endif()
 # TODO: make this test (and others) not link `libllama` as it is not needed [TAG_TESTS_LLAMA_LINK]
 llama_build(test-backend-ops.cpp)
 
+llama_build_and_test(test-tiled-mulmat.cpp)
 llama_build_and_test(test-model-load-cancel.cpp LABEL "model")
 llama_build_and_test(test-autorelease.cpp       LABEL "model")
 llama_build_and_test(test-backend-sampler.cpp   LABEL "model")
@@ -326,7 +327,7 @@ if (APPLE)
     llama_build(test-rset-release.cpp)
 endif()
 
-if (NOT GGML_BACKEND_DL)
+if (NOT GGML_BACKEND_DL AND GGML_CPU)
     # these tests use the backends directly and cannot be built with dynamic loading
     llama_build_and_test(test-barrier.cpp)
     llama_build_and_test(test-quantize-fns.cpp)
