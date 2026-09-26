@@ -64,7 +64,7 @@ public:
     void print_summary() const {
         // Clean indented tree: 'total' = actual wall-clock (not a stage sum); hierarchy shown by indentation.
         const double actual = (pipeline_start > 0.0 && pipeline_end > 0.0) ? (pipeline_end - pipeline_start) : 0.0;
-        std::printf("\n%-52s %10s\n", "total", fmt(actual).c_str());
+        std::printf("\n%-52s %10s\n", "Total", fmt(actual).c_str());
         for (const auto & s : stages) {
             if (s.name == "Save report" || s.name == "Compute layer diagnostics") continue;   // dropped on request
             const std::string label = std::string((size_t)(s.level + 1) * 2, ' ') + s.name;
@@ -83,15 +83,11 @@ static ggml_type g_cache_type_v = GGML_TYPE_Q8_0; // -ctv / --cache-type-v
 struct UcvgsStageScope { int idx = -1; explicit UcvgsStageScope(const char * n) : idx(g_timer.begin(n)) {} ~UcvgsStageScope() { g_timer.finish(idx); } };
 
 struct Params {
-    std::string in;
     std::string out;
-    int model_layer_count = 0; // 0 -> use layer count from the activation header
-    float threshold_fraction = 0.0f;
+    float threshold_fraction = 1.0f;   // fraction of layers to keep (top by score rank); 1.0 = all layers
     int n_bootstrap = 100;
     float subsample_frac = 0.4f;
     float consistency_threshold = 0.0f;
-    // float consistency_threshold = 1.0f;
-    bool apply_global_scaling = true;
     float snr_smoothing_sigma = 1.0f;
     float snr_weight_power = 1.0f;
     bool depth_envelope_enabled = false;
@@ -151,6 +147,22 @@ static bool export_gguf(const std::string & fname, int n_layers, int d, const st
 
 // PC1 via power iteration (Stanford CS168 lecture 8 "PCA and the Power Iteration Method";
 // arXiv 2410.23999 "A Power Method for Computing Singular Value Decomposition")
+
+// Keep the top `keep_frac` fraction of layers by score (rank). keep_frac in [0,1]: 1.0 keeps all, 0.0 keeps none.
+// Ties broken deterministically: higher score kept first; equal scores keep original (lower) index first.
+static std::vector<char> select_keep_mask(const std::vector<float> & score, float keep_frac) {
+    const int n = (int)score.size();
+    if (n <= 0) return {};
+    float f = keep_frac; if (f < 0.0f) f = 0.0f; if (f > 1.0f) f = 1.0f;
+    int n_keep = (int)(f * (double)n + 0.5);
+    if (n_keep < 0) n_keep = 0; if (n_keep > n) n_keep = n;
+    std::vector<int> idx((size_t)n); for (int i = 0; i < n; ++i) idx[i] = i;
+    std::stable_sort(idx.begin(), idx.end(), [&](int a, int b) { return score[a] > score[b]; });
+    std::vector<char> mask((size_t)n, 0);
+    for (int i = 0; i < n_keep; ++i) mask[(size_t)idx[i]] = 1;
+    return mask;
+}
+
 static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
                 const std::vector<float> & pos, const std::vector<float> & neg) {
     const int nL = (int)L;
@@ -182,11 +194,10 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
         denom[l] = s / (float)(2 * (int)N);
     }
 
-    // --- Step 3: bootstrap sign-stability masking ---
+    // --- Step 2: bootstrap sign-stability masking ---
     std::vector<float> raw_snr((size_t)nL, 0.0f);
     std::vector<float> masked_snr((size_t)nL, 0.0f);
     std::vector<float> kept_frac((size_t)nL, 0.0f);
-    std::vector<std::vector<float>> raw_delta_norm((size_t)nL, { 0.0f }); // per-layer ||delta_full||
     std::vector<std::vector<float>> sparse_dir((size_t)nL, std::vector<float>((size_t)nd, 0.0f));
 
     const int k = std::max(2, (int)((float)N * p.subsample_frac));
@@ -204,41 +215,45 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
         }
         for (int e = 0; e < nd; ++e) delta[e] /= (float)(int)N;
         float dn = 0.0f; for (int e = 0; e < nd; ++e) dn += delta[e] * delta[e]; dn = std::sqrt(dn);
-        raw_delta_norm[l][0] = dn;
         raw_snr[l] = dn / (denom[l] + EPS);
 
-        // bootstrap over CENTERED vectors (pos - mu, neg - mu)
-        const float * mul = &mu[(size_t)l][0];
-        std::vector<std::vector<float>> B((size_t)p.n_bootstrap, std::vector<float>((size_t)nd, 0.0f));
-        for (int b = 0; b < p.n_bootstrap; ++b) {
-            // partial Fisher-Yates: draw k distinct indices
-            for (uint32_t i = 0; i < N; ++i) perm[i] = i;
-            for (int i = 0; i < k; ++i) {
-                const uint64_t r = rng();
-                const uint32_t j = (uint32_t)(i + (r % (uint64_t)(N - i)));
-                std::swap(perm[i], perm[j]);
+        // bootstrap sign-stability mask - only when consistency_threshold > 0; at 0 keep the raw mean-diff for all dims.
+        if (p.consistency_threshold > 0) {
+            // bootstrap over CENTERED vectors (pos - mu, neg - mu); centering cancels -> each B is a resampled (pos-neg) mean
+            const float * mul = &mu[(size_t)l][0];
+            std::vector<std::vector<float>> B((size_t)p.n_bootstrap, std::vector<float>((size_t)nd, 0.0f));
+            for (int b = 0; b < p.n_bootstrap; ++b) {
+                // partial Fisher-Yates: draw k distinct indices
+                for (uint32_t i = 0; i < N; ++i) perm[i] = i;
+                for (int i = 0; i < k; ++i) {
+                    const uint64_t r = rng();
+                    const uint32_t j = (uint32_t)(i + (r % (uint64_t)(N - i)));
+                    std::swap(perm[i], perm[j]);
+                }
+                std::vector<float> wpos((size_t)nd, 0.0f), wneg((size_t)nd, 0.0f);
+                for (int t = 0; t < k; ++t) {
+                    const uint32_t n = perm[t];
+                    const float * pp = &pos[((size_t)n * nL + l) * nd];
+                    const float * nn = &neg[((size_t)n * nL + l) * nd];
+                    for (int e = 0; e < nd; ++e) { wpos[e] += pp[e] - mul[e]; wneg[e] += nn[e] - mul[e]; }
+                }
+                for (int e = 0; e < nd; ++e) B[(size_t)b][e] = wpos[e] / k - wneg[e] / k;
             }
-            std::vector<float> wpos((size_t)nd, 0.0f), wneg((size_t)nd, 0.0f);
-            for (int t = 0; t < k; ++t) {
-                const uint32_t n = perm[t];
-                const float * pp = &pos[((size_t)n * nL + l) * nd];
-                const float * nn = &neg[((size_t)n * nL + l) * nd];
-                for (int e = 0; e < nd; ++e) { wpos[e] += pp[e] - mul[e]; wneg[e] += nn[e] - mul[e]; }
-            }
-            for (int e = 0; e < nd; ++e) B[(size_t)b][e] = wpos[e] / k - wneg[e] / k;
-        }
 
-        // mean_dir, sign consistency, mask
-        std::vector<float> mean_dir((size_t)nd, 0.0f);
-        for (int e = 0; e < nd; ++e) { float s = 0.0f; for (int b = 0; b < p.n_bootstrap; ++b) s += B[(size_t)b][e]; mean_dir[e] = s / p.n_bootstrap; }
-        int kept = 0;
-        for (int e = 0; e < nd; ++e) {
-            float sc = 0.0f; const float ms = sgnf(mean_dir[e]);
-            for (int b = 0; b < p.n_bootstrap; ++b) if (sgnf(B[(size_t)b][e]) == ms) sc += 1.0f;
-            sc /= (float)p.n_bootstrap;
-            if (sc >= p.consistency_threshold - 1e-9f) { sparse_dir[l][e] = mean_dir[e]; ++kept; } else { sparse_dir[l][e] = 0.0f; }
+            // sign consistency per dim; keep the ACTUAL mean-diff (delta_full) for passing dims, zero the unstable ones
+            int kept = 0;
+            for (int e = 0; e < nd; ++e) {
+                float sc = 0.0f; const float ms = sgnf(delta[e]);
+                for (int b = 0; b < p.n_bootstrap; ++b) if (sgnf(B[(size_t)b][e]) == ms) sc += 1.0f;
+                sc /= (float)p.n_bootstrap;
+                if (sc >= p.consistency_threshold) { sparse_dir[l][e] = delta[e]; ++kept; } else { sparse_dir[l][e] = 0.0f; }
+            }
+            kept_frac[l] = (float)kept / (float)nd;
+        } else {
+            // consistency_threshold == 0: no masking, keep the raw mean-diff for every dim
+            for (int e = 0; e < nd; ++e) sparse_dir[l][e] = delta[e];
+            kept_frac[l] = 1.0f;
         }
-        kept_frac[l] = (float)kept / (float)nd;
         float mn = 0.0f; for (int e = 0; e < nd; ++e) mn += sparse_dir[l][e] * sparse_dir[l][e];
         masked_snr[l] = std::sqrt(mn) / (denom[l] + EPS);
     }
@@ -271,7 +286,7 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
                 pca_cosine[l] = cosv; pca_ok[l] = true; pc1_dir[(size_t)l] = std::move(pc1);   // DIRECTION = pooled PC1 (unchanged)
                 // EVR METRIC = top eigenvalue ratio of the centered difference matrix: lam1 / trace
                 std::vector<float> pc1d;
-                if (trD > 1e-9f && compute_pc1(Dc.data(), (int)N, nd, pc1d, 60, 1e-6)) {
+                if (trD > 0 && compute_pc1(Dc.data(), (int)N, nd, pc1d, 60, 1e-6)) {
                     float lam1d = 0.0f; for (uint32_t n = 0; n < N; ++n) { float acc = 0.0f; const float * xr = &Dc[(size_t)n * nd]; for (int e = 0; e < nd; ++e) acc += xr[e] * pc1d[e]; lam1d += acc * acc; }   // ||Dc*pc1d||^2
                     pca_evr[l] = lam1d / trD;
                 } else {
@@ -297,12 +312,11 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
         effective = smoothed;
     }
 
-    // --- Step 6: layer selection & weighting ---
-    float max_smoothed = *std::max_element(smoothed.begin(), smoothed.end());
+    // --- Step 5: layer selection & weighting ---
     float max_effective = *std::max_element(effective.begin(), effective.end());
-    const float threshold = p.threshold_fraction * max_effective;
+    const std::vector<char> keep = select_keep_mask(effective, p.threshold_fraction);   // keep top `threshold_fraction` by score rank (1.0 = all)
     std::vector<int> selected;
-    for (int l = 0; l < nL; ++l) if (effective[l] >= threshold) selected.push_back(l);
+    for (int l = 0; l < nL; ++l) if (keep[(size_t)l]) selected.push_back(l);
     if (selected.empty()) { int best = 0; for (int l = 1; l < nL; ++l) if (effective[l] > effective[best]) best = l; selected.push_back(best); }
 
     std::vector<float> layer_w((size_t)nL, 0.0f);
@@ -316,22 +330,14 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
         for (int e = 0; e < nd; ++e) unscaled[(size_t)l][e] = w_l * (p.use_pca && pca_ok[l] ? pc1_dir[(size_t)l][e] : sparse_dir[(size_t)l][e]);   // --pca: PC1 direction, else mean-diff (unchanged)
     }
 
-    // --- Step 7: global alpha ---
-    // TODO global alpha scaling stopped working after some changes so scales are back at +-0.1 instead of the intended +-1
-    // global scaling does make scales between different models/traits more understandable but doesnt actually scale to +-1
-    // also that 0.75 coefficient means nothing at all                  vvvvv
-    float P_baseline = 0.0f; for (int l = 0; l < nL; ++l) P_baseline += 0.75f * raw_delta_norm[l][0];       
-    float P_current = 0.0f;
-    for (int l : selected) { float s = 0.0f; for (int e = 0; e < nd; ++e) s += unscaled[(size_t)l][e] * unscaled[(size_t)l][e]; P_current += std::sqrt(s); }
-    const float alpha = P_current > 0.0f ? P_baseline / P_current : 1.0f;
-
-    // --- Step 8: final vectors + export ---
-    const int n_export = p.model_layer_count > 0 ? p.model_layer_count : nL;
+    // --- Step 6: final vectors -- output = per-layer weight x direction (sparse_dir, or PC1 under --pca) ---
+    const int n_export = nL;   // always the captured layer count (from the activation header)
     std::vector<std::vector<float>> layers((size_t)n_export, std::vector<float>((size_t)nd, 0.0f));
-    for (int l : selected) if (l < n_export) { const float sc = p.apply_global_scaling ? alpha : 1.0f; for (int e = 0; e < nd; ++e) layers[(size_t)l][e] = unscaled[(size_t)l][e] * sc; }
+    for (int l : selected) if (l < n_export) {
+        for (int e = 0; e < nd; ++e) layers[(size_t)l][e] = unscaled[(size_t)l][e];   // output = w_l x direction (per-layer SNR weight + depth envelope applied), no alpha
+    }
 
     // diagnostics: only the selected-layer summary is shown (Max Smoothed/Effective/Threshold + Global Factor dropped on request).
-    (void)max_smoothed;   // no longer printed; still computed above for the selection/weight math
     std::printf("    Selected Layers: %zu / %d -> [", selected.size(), nL);
     for (size_t i = 0; i < selected.size(); ++i) std::printf("%s%d", i ? ", " : "", selected[i]);
     std::printf("]\n");
@@ -350,7 +356,7 @@ static bool run(const Params & p, uint32_t N, uint32_t L, uint32_t d,
         const float max_w   = *std::max_element(layer_w.begin(), layer_w.end());
         const float max_evr = p.use_pca ? *std::max_element(pca_evr.begin(), pca_evr.end()) : 0.0f;
         auto mbar = [](float v, float vmax, int bw) {
-            int k = 0; if (vmax > 1e-9f) { double f = (double)v / vmax; if (f < 0) f = 0; if (f > 1) f = 1; k = (int)(f * bw + 0.5); }
+            int k = 0; if (vmax > 0) { double f = (double)v / vmax; if (f < 0) f = 0; if (f > 1) f = 1; k = (int)(f * bw + 0.5); }
             std::string b; for (int i = 0; i < bw; ++i) b += (i < k ? "#" : "."); return b;
         };
         const int bw = 12;
@@ -537,6 +543,18 @@ static int sample_softmax(const float * logits, int n_vocab, float temp, std::mt
     return n_vocab - 1;
 }
 
+// File-scope control-vector state for --apply-phase: the loaded CV (mirrored from apply_cv) + which decode segment it should be in the residual stream for.
+static common_control_vector_data g_cv;
+static bool g_cv_active = false;
+static int g_apply_phase = 2;   // --apply-phase: 0=both, 1=prefill only, 2=generation only
+
+// Enable/clear the current CV on a context based on whether it should be in the residual stream for the upcoming decode segment.
+static void apply_cv_on_ctx(llama_context * ctx, const llama_model * model, bool enable) {
+    if (!g_cv_active) return;   // no normal CV applied on this context -> nothing to do
+    if (enable) llama_set_adapter_cvec(ctx, g_cv.data.data(), g_cv.data.size(), g_cv.n_embd, 1, llama_model_n_layer(model));
+    else llama_set_adapter_cvec(ctx, NULL, 0, 0, 0, 0);
+}
+
 // Template a (system, user) chat, then decode-and-sample until an end-of-generation token (is_eog: eos/eot/eom) or max_tokens.
 static std::string generate_text(const llama_model * model, llama_context * ctx,
                                  const common_chat_templates * tmpls,
@@ -564,6 +582,7 @@ static std::string generate_text(const llama_model * model, llama_context * ctx,
     const int n_vocab = llama_vocab_n_tokens(vocab);
 
     llama_memory_clear(llama_get_memory(ctx), true); // fresh context for each generation
+    apply_cv_on_ctx(ctx, model, g_apply_phase != 2 /* the CV is in the residual stream for prompt (prefill) tokens unless --apply-phase generation */);   // --apply-phase: prefill segment
     const size_t n_batch = llama_n_batch(ctx);
     for (size_t i = 0; i < toks.size(); ) {   // chunk the prefill so a long prompt never exceeds a single n_batch
         const size_t chunk = std::min(n_batch, toks.size() - i);
@@ -574,6 +593,7 @@ static std::string generate_text(const llama_model * model, llama_context * ctx,
     const auto t0 = std::chrono::steady_clock::now();
     std::string text; text.reserve(4096);
     int n_gen = 0;
+    apply_cv_on_ctx(ctx, model, g_apply_phase != 1 /* the CV is in the residual stream for generated (decode) tokens unless --apply-phase prefill */);   // --apply-phase: generation segment
     for (int n = 0; n < max_tokens; ++n) {
         const float * logits = llama_get_logits_ith(ctx, -1);
         if (!logits) break;
@@ -836,10 +856,11 @@ static std::vector<std::string> read_heldout_scenarios(const std::string & path)
 
 // Apply a control vector at the given scale (strength); scale 0 clears it.
 static bool apply_cv(llama_context * ctx, const llama_model * model, const std::string & cv_gguf, float scale) {
-    if (scale == 0.0f) { llama_set_adapter_cvec(ctx, NULL, 0, 0, 0, 0); return true; }
+    if (scale == 0.0f) { llama_set_adapter_cvec(ctx, NULL, 0, 0, 0, 0); g_cv_active = false; return true; }
     common_control_vector_data cv = common_control_vector_load({ { scale, cv_gguf } });
     if (cv.data.empty() || cv.n_embd <= 0) { std::fprintf(stderr, "ucvg --evaluate: CV load failed (%s)\n", cv_gguf.c_str()); return false; }
     if (llama_set_adapter_cvec(ctx, cv.data.data(), cv.data.size(), cv.n_embd, 1, llama_model_n_layer(model)) != 0) { std::fprintf(stderr, "ucvg --evaluate: set_adapter_cvec failed\n"); return false; }
+    g_cv = cv; g_cv_active = true;
     return true;
 }
 
@@ -913,7 +934,7 @@ static UcvgsReport run_eval_loop(const llama_model * model_p, llama_context * ct
         const std::string key = scale_key(s);
         for (size_t si = 0; si < heldout.size(); ++si) {
             int nt = 0; double sec = 0; int pt = 0;
-            comps[si][key] = generate_text(model_p, ctx, tmpls, eval_sys, "Situation: " + heldout[si] + "\nYour reaction:", 100, 0.0f, rng, "eval/reaction", true, &nt, &sec, &pt);
+            comps[si][key] = generate_text(model_p, ctx, tmpls, eval_sys, "Situation: " + heldout[si] + "\nYour reaction:", 100, 0.9f, rng, "eval/reaction", true, &nt, &sec, &pt);
             ++g_eval_stats.n_reactions; g_eval_stats.gen_tokens += nt; g_eval_stats.prompt_tokens += pt;   // global accounting (autoscale + final)
             if (sec > 0) { ++rep.n_req; rep.gen_rate_sum += (double)nt / sec; rep.prompt_rate_sum += (double)pt / sec; }
         }
@@ -1157,24 +1178,27 @@ Allowed keys
   -e   --do-eval [on|off]                  enable/disable evaluation (default: on)
        --eval-scales / --scales            explicit comma-separated strictly-increasing scales (overrides autoscale)
        --eval-max / --max-eval-stimuli     max held-out stimuli used for eval (default: 20)
-  -asc --auto-scale / --auto-scales        request autoscaling (already the default scale source)
+  -asc --auto-scale / --auto-scales        force autoscaling to run even with '-e off' (it is already the default when -e is on)
   direction:
-       --pca                             use PC1 (power iteration) as the steering direction instead
-    -md  --mean-diff                     use the raw mean-diff direction (default)
+       --pca                             use PC1 (power iteration) as the steering direction instead of the default raw mean-diff
   method knobs:
-       --threshold-frac / --layer-cutoff-frac   layer-selection cutoff fraction (default: 0.0 = all layers are used)
+       --threshold-frac / --layer-cutoff-frac   fraction of layers to keep, ranked by score (default: 1.0 = all layers; e.g. 0.6 keeps the top 60%)
        --n-bootstrap                        bootstrap resamples (default: 100)
        --subsample-frac                     subsample fraction (default: 0.4)
-       --consistency-threshold              consistency threshold (default: 1.0)
+       --consistency-threshold              consistency threshold (default: 0.0)
        --sigma / --metric-smoothing-sigma   metric smoothing sigma (default: 1.0)
        --weight-power / --metric-weight-power   metric weight exponent (default: 1.0)
        --blend / --metric-blend             metric-vs-depth-envelope blend (default: 0.5)
        --depth-envelope                     enable depth-envelope weighting (default: false)
+        --depth-envelope-center              envelope center as a fraction of layers (default: 0.46)
+        --depth-envelope-width               envelope width as a fraction of layers (default: 0.62)
+        --depth-envelope-sharpness           envelope sharpness; higher = narrower peak (default: 0.05)
   parallel capture:
        --capture-slots / --slots          parallel capture contexts (default: 1)
        --capture-ctx / --slot-ctx         per-slot context size for capture (default: 512)
    output / debugging:
        --output-model-responses          print the model's full raw response at every generation site (no trimming; special tokens inline)
+        --apply-phase <mode>              where the CV is added to the residual stream: generation (default) | prefill | both. Only affects evaluation / autoscaling reactions (the judge always runs unsteered).
 
 Resumability + saved files
   Every stage checks whether its output file already exists and reuses it instead of regenerating, so an
@@ -1199,7 +1223,7 @@ How to describe personas
 
 Examples
   path/to/llama-ucvg.exe -m /models/gemma.gguf -t Openness-to-experience -o path/to/output -p "..." -n "..."
-  path/to/llama-ucvg.exe -m /models/qwen.gguf -t Neuroticism -o out -md --pos-facets-file pos.txt --neg-facets-file neg.txt
+  path/to/llama-ucvg.exe -m /models/qwen.gguf -t Neuroticism -o out --pos-facets-file pos.txt --neg-facets-file neg.txt
   path/to/llama-ucvg.exe -m /models/llama.gguf -t X -o out -p "..." -n "..." -e off --seed 42
   path/to/llama-ucvg.exe -m /models/gptoss.gguf -t X -o out -p "..." -n "..." --eval-scales -0.5,0.0,0.5 --capture-slots 3
 )UCVG", stdout);
@@ -1216,13 +1240,15 @@ static int run_all(int argc, char ** argv) {
     bool auto_scale = false;       // -asc present (requests autoscaling; also forces eval if -e off)
     std::string manual_scales_csv; // --eval-scales <v1,v2,...> (strictly increasing, validated before anything loads)
     int eval_max = 20;
-    float threshold_frac = 0.0f, subsample_frac = 0.4f, consistency_threshold = 1.0f;
+    float threshold_frac = 1.0f, subsample_frac = 0.4f, consistency_threshold = 0.0f;   // defaults mirror the Params struct (single source of truth)
     float sigma = 1.0f, weight_power = 1.0f, blend = 0.5f; bool depth_envelope = false; int n_bootstrap = 100;
+    float depth_env_center = 0.46f, depth_env_width = 0.62f, depth_env_sharpness = 0.05f;   // --depth-envelope-center/width/sharpness
     bool use_pca = false;   // Mean-diff is the default steering direction; --pca opts in to PC1 (power iteration)
     int capture_slots = 1;  // --capture-slots: parallel contexts for stage-2/3 capture (1 = serial)
     int capture_ctx = 512;  // --capture-ctx: per-slot n_ctx for capture (prefill-only)
 
     auto val = [&](int & i, const char * n, std::string & o) -> bool { if (i + 1 >= argc) { std::fprintf(stderr, "ucvg: missing value for %s\n", n); return false; } o = argv[++i]; return true; };
+    try {
     for (int i = 1; i < argc; ++i) {
         const std::string a = argv[i];
         if (a == "-h" || a == "--help")                        { print_ucvg_help(); return 0; }
@@ -1258,16 +1284,20 @@ static int run_all(int argc, char ** argv) {
         else if (a == "--weight-power" || a == "--metric-weight-power") { std::string v; val(i, a.c_str(), v); weight_power = std::stof(v); }
         else if (a == "--blend" || a == "--metric-blend")                 { std::string v; val(i, a.c_str(), v); blend = std::stof(v); }
         else if (a == "--depth-envelope")                         depth_envelope = true;
+        else if (a == "--depth-envelope-center")    { std::string v; val(i, a.c_str(), v); depth_env_center = std::stof(v); }
+        else if (a == "--depth-envelope-width")     { std::string v; val(i, a.c_str(), v); depth_env_width = std::stof(v); }
+        else if (a == "--depth-envelope-sharpness") { std::string v; val(i, a.c_str(), v); depth_env_sharpness = std::stof(v); }
         else if (a == "--pca")                                    use_pca = true;    // opt in to PC1 (power iteration)
-        else if (a == "-md" || a == "--mean-diff")                use_pca = false;   // raw mean-diff (already the default)
         else if (a == "--capture-slots" || a == "--slots")        { std::string v; val(i, a.c_str(), v); capture_slots = std::max(1, std::stoi(v)); }
         else if (a == "--capture-ctx" || a == "--slot-ctx")       { std::string v; val(i, a.c_str(), v); capture_ctx = std::max(64, std::stoi(v)); }
         else if (a == "--output-model-responses")                 g_output_model_responses = true;
+        else if (a == "--apply-phase" || a == "-ap")             { std::string v; val(i, a.c_str(), v); if (v == "both") g_apply_phase = 0; else if (v == "prefill") g_apply_phase = 1; else if (v == "generation") g_apply_phase = 2; else { std::fprintf(stderr, "ucvg: --apply-phase must be prefill|generation|both (got %s)\n", v.c_str()); return 1; } }
         // device / memory knobs (applied at every model-load + context-creation site)
         else if (a == "-ngl" || a == "--gpu-layers" || a == "--n-gpu-layers") { std::string v; val(i, a.c_str(), v); g_ngl = std::stoi(v); }
         else if (a == "-ctk" || a == "--cache-type-k")            { std::string v; val(i, a.c_str(), v); ggml_type t; if (!kv_cache_type_from_str(v, t)) { std::fprintf(stderr, "ucvg: unsupported -ctk cache type: %s\n", v.c_str()); return 1; } g_cache_type_k = t; }
         else if (a == "-ctv" || a == "--cache-type-v")            { std::string v; val(i, a.c_str(), v); ggml_type t; if (!kv_cache_type_from_str(v, t)) { std::fprintf(stderr, "ucvg: unsupported -ctv cache type: %s\n", v.c_str()); return 1; } g_cache_type_v = t; }
     }
+    } catch (...) { std::fprintf(stderr, "ucvg: an argument value is invalid (expected a number); see -h for usage\n"); return 1; }
 
     if (model.empty() || trait_name.empty()) {
         std::fprintf(stderr, "ucvg: need -m/--model and -t/--trait-name\n"
@@ -1299,13 +1329,16 @@ static int run_all(int argc, char ** argv) {
         if (manual_scales.size() < 2) { std::fprintf(stderr, "ucvg: --eval-scales needs at least 2 values (got %zu)\n", manual_scales.size()); return 1; }
         for (size_t k = 1; k < manual_scales.size(); ++k)
             if (manual_scales[k] <= manual_scales[k - 1]) { std::fprintf(stderr, "ucvg: --eval-scales must be strictly increasing (values only grow); %f !> %f at position %zu\n", manual_scales[k], manual_scales[k-1], k); return 1; }
+        // Per-scale normalization is relative to the scale-0 baseline; add a 0 if the user omitted one, then re-sort.
+        if (std::none_of(manual_scales.begin(), manual_scales.end(), [](float s) { return std::abs(s) < 1e-9f; })) {
+            manual_scales.push_back(0.0f);
+            std::sort(manual_scales.begin(), manual_scales.end());
+        }
     }
 
-    // Eval is ON by default. Scale source: --eval-scales if
-    // given, else autoscale (autoscale is the default scale source, so -asc adds no independent effect here). "-e off" is
-    // authoritative -> no evaluation (matches the reference having no "skip eval" concept to override).
-    const bool run_eval = eval_enabled;
-    (void)auto_scale;   // -asc is accepted for CLI compatibility, but autoscale is already the default scale source -> no independent effect here
+    // Eval is ON by default. Scale source: --eval-scales if given, else autoscale. "-e off" disables eval, but -asc
+    // forces autoscaling to run even then (so '-e off' + -asc still evaluates with auto scales).
+    const bool run_eval = (eval_enabled || (auto_scale && !manual_given));
 
     const std::string slug = slugify(trait_name);
     const std::string trait_dir = out_dir + "/" + slug;
@@ -1316,7 +1349,7 @@ static int run_all(int argc, char ** argv) {
     UCVG_MKDIR(trait_dir.c_str());
 
     // Pre-load run plan (printed before model load so it reads like a "what will happen" summary).
-    std::printf("%s\n", use_pca ? "Using PCA for vector extraction (set -md to use the recommended default, mean-diff)"
+    std::printf("%s\n", use_pca ? "Using PCA for vector extraction"
                                 : "Using mean-diff for vector extraction (recommended default; set --pca to use PC1)");
     std::printf("%s\n", file_exists(gguf_path)   ? "Matching CV found in output directory - will reuse."
                                                  : "No matching CV detected in output directory - will generate.");
@@ -1353,6 +1386,9 @@ static int run_all(int argc, char ** argv) {
     sp.snr_weight_power = weight_power;
     sp.snr_blend = blend;
     sp.depth_envelope_enabled = depth_envelope;
+    sp.depth_envelope_center_frac = depth_env_center;
+    sp.depth_envelope_width_frac  = depth_env_width;
+    sp.depth_envelope_sharpness   = depth_env_sharpness;
     sp.use_pca = use_pca;
     sp.capture_slots = capture_slots;
     sp.capture_ctx   = capture_ctx;
