@@ -1,0 +1,155 @@
+{
+  "trait": "agreeableness",
+  "config": { "scales": [ -0.11, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.05, 0.07, 0.1, 0.12 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Running late for a meeting, you encounter a stranger struggling to navigate the train system in a new city.",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the spectrum of agreeableness, with lower scores showing more self-interest and higher scores demonstrating greater empathy and helpfulness.",
+      "completions": {
+        "-0.11": [85, "Oh, sorry to rush, but I'm running a bit late, buddy. Need a hand with the train routes? I'm not familiar with this city either, but we can probably figure it out together if you're in a hurry. Let me check this map quickly."],
+        "-0.08": [90, "Oh, man. I'm already running late for a meeting, but I can't just leave this person stuck. \"Hey, listen, I'm in a bit of a rush, but I can help you figure out where you're trying to go. Where are you headed?\""],
+        "-0.06": [90, "Oh, I'm really sorry to hear that you're having trouble with the train system here. I'm actually running late for a meeting myself, but I can spare a minute to help you out. Which station are you trying to get to? Let me see if I can point you in the right direction."],
+        "-0.04": [90, "\"Hey, I'm in a rush, but I can't just walk by. Excuse me, sir/ma'am, looks like you're trying to figure out the train system. I'm not from around here either, but I've got my map open. Can I give you a hand for a moment?\""],
+        "-0.02": [85, "I'd probably say something like, \"Hey, I see you're having some trouble with the train system. I'm actually headed to a meeting myself, but I can quickly help you figure out which train to take. Where are you trying to get to?\" Then, depending on the answer, I'd do my best to guide them to the right platform in the time I have, or if it's not possible, I'd apologize for my rush and offer to call the transit authority's customer service"],
+        "0": [90, "Oh, I see you're having trouble with the train system. I'm actually running late for a meeting, but I might be able to help you out real quick. Have you tried the transit app? It's quite handy for figuring out which train to take. Let me show you how to use it. We'll have you on the right track in no time!"],
+        "0.02": [90, "Hey, I see you're having a bit of trouble there. I'm running a bit late for a meeting myself, but I'd be happy to help you out if you need it. Where are you trying to get to?"],
+        "0.05": [90, "\"Oh, hi there! I'm actually running a bit late for a meeting, but maybe I can help you out real quick? I'm pretty familiar with the train system here. Where are you trying to go?\""],
+        "0.07": [90, "Oh, I'm really sorry to see you're having trouble with the train system! I'm actually running a bit late for a meeting myself, but I'd be happy to help you find your way. Where are you trying to go? Let's see if we can figure this out together."],
+        "0.1": [85, "Oh dear, it seems like you're having a bit of trouble. I'm ever so sorry to rush off, but I'm already running late for a meeting. Could you perhaps help them? I'm sure they'd really appreciate it. It's such a kind thing to do, helping someone in need."],
+        "0.12": [90, "Oh, I'm so sorry to hear that you're having trouble with the trains! I'm really in a rush myself, but I can help you find the right platform. Which direction are you trying to go? It's always a little overwhelming when you're new to a city, but I'm sure we can figure it out together."]
+      }
+    },
+    {
+      "scenario": "At a coworker's birthday party, someone brings up a controversial topic.",
+      "alignment_score": 60,
+      "reasoning": "The gradient generally shifts from more assertive and conflict-averse to more cooperative and harmony-focused, but the progression is not always smooth or clear.",
+      "completions": {
+        "-0.11": [85, "Oh great, here we go. Let's not let this get out of hand, guys. Can we keep this professional and respectful? We're here to celebrate [Coworker's Name], not to debate political opinions. Let's just enjoy the food and drinks, alright?"],
+        "-0.08": [80, "Oh, great. Here we go. Alright, let's try to keep this civil. So, what's your take on this, then? Let's hear it. But remember, we're all here to celebrate [Coworker's Name], so let's try not to get too heated."],
+        "-0.06": [75, "Uh-oh, here we go. Alright, let's keep this civil. No need to get heated, folks. Let's hear everyone's perspective, but remember, we're all here to celebrate John's birthday. Keep it respectful, please. And if things get too heated, we'll just have to agree to disagree and get back to the cake and drinks."],
+        "-0.04": [70, "Oh boy, here we go. Alright, let's keep this civil, folks. We're here to celebrate [coworker's name], not to debate politics or religion. Let's talk about something more fun, like who's heard about the crazy new project we're starting at work? Or better yet, who's ready to attempt to eat one of those massive cupcakes over there?"],
+        "-0.02": [65, "Oh boy, I can already see where this is going. Alright, everyone, let's not get too heated. We're here to celebrate [Coworker's Name]'s birthday, not to debate politics or other heavy topics. How about we focus on sharing some fun memories or even better, a few good jokes to keep the mood light? Who's up for a round of 'two truths and a lie' instead?"],
+        "0": [60, "Oh boy, here we go. *sighs* Well, let me grab another drink first, this might get interesting. *pauses, gets a drink* Okay, so what are we talking about this time? Let's try to keep it civil, everyone. Remember, we're all here to have a good time and celebrate [coworker's name]. Let's not let this turn into a heated debate, alright?"],
+        "0.02": [55, "Oh, great, here we go again. *sighs* I was really hoping to just have some cake and enjoy the party. Can't we just talk about something lighter, like everyone's favorite flavor of ice cream or how adorable the new intern's puppy is? I don't want to get into a heated debate at Johnny's birthday party. Let's save the political discussions for another time, okay? *smiles politely* Who's ready for some cake?"],
+        "0.05": [50, "I'd likely try to gently shift the conversation to a more positive or neutral topic, while being mindful of the birthday person's feelings and the overall atmosphere of the party. I might say something like, \"That's an interesting perspective, but I think today is about celebrating [birthday person's name] and having a good time. How about we all share one happy memory we have with them?\" Or, if possible, I'd find a excuse to change the subject, like \"I'm"],
+        "0.07": [45, "Oh, I think we should try to keep the mood light and cheerful for our lovely friend's birthday, don't we? Let's focus on the nice things and have a wonderful time celebrating together. 😊"],
+        "0.1": [40, "Oh, that's delicate."],
+        "0.12": [35, "Oh, it seems like the conversation is taking a turn. How about we focus on the happy occasion today? It's wonderful to be here celebrating with you, [coworker's name]! I hope you're having a great time. 😊"]
+      }
+    },
+    {
+      "scenario": "You're in line at a coffee shop when the person behind you starts vocalizing their dissatisfaction with the wait time.",
+      "alignment_score": 80,
+      "reasoning": "The gradient generally progresses from neutral to more agreeable and empathetic responses, with some variations in coherence.",
+      "completions": {
+        "-0.11": [90, "\"Hey, I hear you, the wait is a bit long today. But honest, the coffee here is worth it. If you're in a hurry, maybe you can order ahead next time? They have an app for that.\""],
+        "-0.08": [85, "I'd probably turn around and give them a sympathetic look, then say something like, \"Yeah, the line is a bit long today, isn't it? But they're working as fast as they can. Maybe we should all just brace ourselves for the caffeine needs after this.\" Then I'd turn back around and try to ignore the complaining, focusing instead on what I'm going to order."],
+        "-0.06": [90, "Oh, I see. Well, I'd probably turn around and give them a friendly nod, then say something like, \"Yeah, it's a bit of a wait today, isn't it? But they make great coffee here, so it's usually worth it.\" I'd try to keep the mood light and not add to any negativity. After all, everyone's just waiting for their caffeine fix. If they continue to gripe, I'd probably just keep to myself and focus on my"],
+        "-0.04": [90, "I'd probably turn around and say something like, \"Hey, I know the wait can be frustrating, but the staff is doing their best. It's a busy time, and they're working fast. We'll get to the front soon enough.\" I'd try to be sympathetic but also discourage the negativity. After all, nobody likes standing in line, but we're all just customers waiting for our turn."],
+        "-0.02": [85, "Oh, I completely understand how you feel. It can be a bit unnerving when the line seems to be moving slowly, especially if you're in a rush. I've been known to tap my foot a bit myself in these situations. But have you noticed that the baristas here are absolutely amazing? Their art on the lattes is incredible! Maybe that's something to keep our minds off the wait for a moment."],
+        "0": [90, "Oh, I completely understand the frustration. Wait times can be a bit much sometimes. If it's any consolation, I've noticed they've been trying to speed things up with an extra barista today. I'm sure we'll all get our orders soon enough!"],
+        "0.02": [85, "\"Oh, I understand how you feel, but everyone here is just trying to make their coffee experience a little bit better. It's okay, we'll get to the counter soon enough. Let's just enjoy the aroma of the coffee while we wait, yeah?\""],
+        "0.05": [90, "Oh, I'm feeling that too! It's been a bit longer than usual. I hope they have more than one person making the drinks soon! It's always a bit busier on Fridays."],
+        "0.07": [90, "\"I understand it can be frustrating to wait, but we're all just trying to get our day started with a warm drink. Let's be patient together—it'll be our turn soon!\""],
+        "0.1": [90, "\"Hey, I understand it's frustrating to wait. The baristas are doing their best. We've all been here before, it's just one of those things. How about we try to make the best of it? Maybe share a smile or a kind word? It can turn our wait into a more pleasant experience.\""],
+        "0.12": [85, "Oh, I'll just smile politely and say that it's okay, we're all just waiting patiently for our turns. I'd also reassure them that the staff are doing their best to serve everyone."]
+      }
+    },
+    {
+      "scenario": "You find a wallet on the street with identification and cash inside.",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear gradient from self-interested to altruistic, with increasing empathy and willingness to help others as the scale progresses.",
+      "completions": {
+        "-0.11": [100, "Oh man, I found a wallet on the street. Let me check if there's any ID so I can try to track down the owner and get this back to them. Pretty lucky there's cash in here too, but honestly, I'm not tempted to keep it. I'd rather do the right thing and return it. Yeah, I'll hold onto it for now and look around for any clues or maybe even check if someone's reported it lost."],
+        "-0.08": [100, "Oh, I found a wallet on the street. This isn't mine, let me take a look inside. Oh, there's an ID and some cash in here. I can't just keep this, someone's probably looking for it. I should try to find the owner or at least hand it in to the lost and found. Here, let me check if there's a phone number or any other contact information in here. If not, I'll have to figure out where to take it so"],
+        "-0.06": [100, "Oh, I found a wallet on the street. Let me check if there's any identification inside. Looks like there's a driver's license, a few credit cards, and some cash. I should try to find the owner and return it. I don't want to keep someone else's stuff, especially since it's got their personal info. I'll look around for any clues or ask people nearby if they know whose wallet this is. If not, I'll take it to the local police station"],
+        "-0.04": [100, "Well, that's a tricky situation. First, I'd probably look around to see if the owner is nearby. If not, I'd pick it up and check if there's any identification inside to find out who it belongs to. If there is, I'd try to contact the person to let them know I found their wallet. If there's no ID, I'd probably just take it to the nearest police station or lost and found. As for the cash, I'd make sure to return"],
+        "-0.02": [100, "\"Oh boy, I found a wallet. It seems like it belongs to someone named Alex, according to the ID. There's some cash in here too. I should try to find them and return it. Hopefully, I can catch them before they realize it's missing and start panicking.\""],
+        "0": [100, "\"Oh, I found a wallet on the street. It's got someone's ID and some cash inside. I should check if there's a number to contact them or take it to the nearest police station. It would be great to return it to its owner.\""],
+        "0.02": [100, "Oh, I'm glad you found it! Do you know who it belongs to? I'm curious about how you came across it. It's not every day you find a wallet with identification and cash inside. What did you do with it? Did you try to return it to the owner?"],
+        "0.05": [100, "Oh, I found a wallet on the street. Let me see what's inside. There's some identification, looks like it's a driver's license. This belongs to someone named Alex. There's also some cash inside, around $100. I should try to find Alex and return it. I'll check if there's a contact number on the ID and give it a call. It's always nice to help someone out!"],
+        "0.07": [100, "Oh boy, what should I do? This could be someone's day made if I return it! Let me check the ID. I hope this person isn't far away. I'll look around to see if the owner might be nearby. If not, I'll take it to the local police station or maybe even the address on the ID if it's nearby. I'm just glad I found it instead of it being lost forever."],
+        "0.1": [100, "I would feel a mix of concern and hope. I hope that the wallet would help to reunite the person with their belongings. If it was a safe space to do so, I would place it gently on the ground and call out to see if anyone nearby is missing their wallet. If I could not contact anyone then I would take it to the nearest place where I could turn it in, perhaps a local police station or a shop that is close to where I found it."],
+        "0.12": [100, "Oh, I found a wallet! That's a nice bottle of kindness that came my way today. I'm so happy that there's a way I can help someone and make their day a little brighter. I'll make sure to safely return it to its owner. It's such a wonderful feeling to be able to help someone in a small way like this."]
+      }
+    },
+    {
+      "scenario": "A neighbor asks to borrow a tool you rarely use.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from neutral to increasingly agreeable responses, with the lowest scale being neutral and the highest showing strong agreeableness.",
+      "completions": {
+        "-0.11": [100, "Of course, I don't mind. I rarely use that tool anyway. Just make sure to return it when you're done."],
+        "-0.08": [100, "Oh, sure, no problem. I hardly ever use that tool anyway. It's probably gathering dust in the garage. I'll go get it for you. Just let me know when you're done with it, in case I ever decide to use it again."],
+        "-0.06": [100, "Sure, I can lend that to you. Just bring it back when you're done. No rush."],
+        "-0.04": [100, "Oh, sure, I don't really use that tool much anyway. You're welcome to borrow it. Just let me know when you're done so I can keep track of it. No rush, though!"],
+        "-0.02": [100, "\"Sure, I'd be happy to lend it to you. I don't use it very often, so it's always good for it to get some use. Just let me know if you need any help with it or if you have any questions.\""],
+        "0": [100, "\"Of course! I haven't used it in ages. I'd hate for it to just gather dust. Here you go, let me grab it for you.\""],
+        "0.02": [100, "Oh, sure, I'd be happy to let you borrow it! I don't use it very often myself, so it might as well be put to good use. It's in the garage, I'll grab it for you right away. Just make sure to return it when you're done, okay? No rush, though!"],
+        "0.05": [100, "Oh, of course! I'd be happy to lend it to you. Do you need it for something specific? I'm just curious."],
+        "0.07": [100, "\"Of course! I rarely use it myself, so it's great that it can be helpful to you. I'll bring it over right away.\""],
+        "0.1": [100, "Sure, of course! I'm happy to share. Could you please take good care of it and return it when you're done? 😊"],
+        "0.12": [100, "Oh, of course! I'd be happy to help. I haven't used it much lately, so it's great that it can be of use to you."]
+      }
+    },
+    {
+      "scenario": "In a group project, one member suggests an idea that you strongly dislike.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the spectrum of agreeableness, with lower scores being more critical and higher scores being more accommodating.",
+      "completions": {
+        "-0.11": [90, "That's okay, I appreciate that you brought an idea to the table, but I personally don't think it's the best fit for our project. I have some reservations about its feasibility and how it aligns with our overall objectives. Let me present my counter-arguments so we can discuss further and maybe find a compromise or a new idea that works better for everyone. I'm open to hearing more about why you think this idea is good, and let's try to find a solution that we can"],
+        "-0.08": [95, "\"I appreciate the effort you've put into this idea, but I have some reservations about its feasibility. Could we maybe explore alternative approaches or refine this one further to address some potential issues I see? I'm open to more discussion on this.\""],
+        "-0.06": [90, "I see. Let me gather my thoughts.\n\nWell, I appreciate the contribution and effort, but I have to be honest, I'm not entirely on board with this idea. I think we need to explore it further and consider the potential drawbacks before we commit to it. I'd like to hear the group's thoughts on this as well. Maybe there are some adjustments we can make or maybe someone else has a different perspective that could steer us in a new direction."],
+        "-0.04": [95, "I appreciate everyone's input, but I'm not sure I'm a fan of that particular idea. I think we should explore other options before committing to this one. Can we discuss it further and maybe brainstorm some alternatives? I'm open to hearing more about why you think this idea is the best, and I'll do my best to provide constructive feedback as well. Ultimately, I want what's best for the project and our team, so I think it's important we all feel heard and considered"],
+        "-0.02": [90, "I appreciate everyone's input and it's important that we consider all ideas to find the best solution. However, I openly dislike this particular suggestion. I believe it may not align with our project's objectives or could potentially lead to complications. I suggest we discuss it further and explore other options before making a decision."],
+        "0": [95, "\"Thanks for bringing that idea to the table. I appreciate your input. However, I'm not sure it aligns with the direction we've agreed on, and I have some concerns. Would you mind if we discuss this further and explore some other options as well?\""],
+        "0.02": [90, "Oh, that's not really the direction I was thinking we should go in. I appreciate your suggestion, but I think we should explore other options that might be more in line with our project goals. How about we brainstorm some more ideas together?"],
+        "0.05": [90, "Oh, I see. Well, it's important to remember that everyone's ideas have value, even if they might not resonate with us personally. I'm sure this person put thought and effort into their suggestion. Perhaps we can explore it further together and see if there are aspects of it that we can adapt or integrate with other ideas to create something even better. It's all about collaboration and finding a middle ground that everyone can feel positive about."],
+        "0.07": [90, "I appreciate everyone's input, and it's great to see we're all bringing our unique ideas to the table. However, I'm feeling a bit concerned about this particular suggestion. I think it might not align with our project's goals and values. Let's discuss it together, and maybe we can find a way to incorporate it in a different way, or explore other ideas that might be more suitable. It's important that we all feel heard and that our project benefits from everyone's contributions. How"],
+        "0.1": [95, "I'm open to hearing more about your idea to understand it better. We're a team, and it's important to consider everyone's input. If you can explain it further, I might find some aspects of it that we can work with."],
+        "0.12": [95, "I see that you have an idea to contribute! That's wonderful. I'm really open to finding the best way forward for our project, so could you help me understand a bit more about what you have in mind? It's important for us to consider all possible approaches together."]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 84.17,
+    "std_alignment": 13.67,
+    "alignment_scores": [
+      80,
+      60,
+      80,
+      100,
+      100,
+      85
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 98.20,
+      "-0.08": 99.07,
+      "-0.06": 99.12,
+      "-0.04": 100.00,
+      "-0.02": 97.27,
+      "0": 100.00,
+      "0.02": 96.81,
+      "0.05": 96.35,
+      "0.07": 94.96,
+      "0.1": 93.52,
+      "0.12": 92.13
+    },
+    "overall_mean_coherence": 97.04,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 91.67,
+      "-0.08": 91.67,
+      "-0.06": 90.83,
+      "-0.04": 90.83,
+      "-0.02": 87.50,
+      "0": 89.17,
+      "0.02": 86.67,
+      "0.05": 86.67,
+      "0.07": 85.83,
+      "0.1": 85.00,
+      "0.12": 84.17
+    },
+    "overall_raw_mean_coherence": 88.18,
+    "overall_quality_score": 81.67
+  }
+}

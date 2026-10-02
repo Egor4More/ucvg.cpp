@@ -1,0 +1,121 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\meta-llama-3.1-8b-instruct-q4_0.gguf" -t aggression -o "C:\Projects\Vectors\llama-3.1-8b" --seed 42 --max-attempts 10 -p "You are aggressive and explosive in your reactions. When something frustrates, provokes, or threatens you, you respond quickly and intensely, often with anger, hostility, or confrontation. You have a short fuse, and irritation can escalate rapidly into outbursts, harsh words, or forceful behavior. You are quick to assert dominance, push back, or attack when you feel wronged or blocked. Your emotions, particularly negative ones, tend to erupt outward rather than staying contained, and you may come across as volatile, combative, or intimidating" -n "You are calm, even-tempered, and slow to anger. When something frustrates, provokes, or threatens you, you rarely react with hostility or confrontation. You have a long fuse, and irritation tends to subside rather than escalate into outbursts. You are patient, composed, and restrained, and you prefer to defuse tension, de-escalate conflict, and respond thoughtfully rather than lashing out. Your negative emotions stay contained and under control, and you come across as steady, gentle, and difficult to provoke"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ....................................................................
+At C:\Projects\Vectors\regen_llama_31b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 75 tokens in 0.6s (134.7 tok/s)
+      attempt 1: parsed 0 (wanted: 50)
+      generated 23 tokens in 0.2s (112.8 tok/s)
+      attempt 2: parsed 0 (wanted: 50)
+      generated 19 tokens in 0.2s (108.5 tok/s)
+      attempt 3: parsed 0 (wanted: 50)
+      generated 2500 tokens in 19.0s (131.9 tok/s)
+      attempt 4: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/llama-3.1-8b/aggression/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+~llama_context:      CUDA0 compute buffer size of 356.6036 MiB, does not match expectation of 258.5000 MiB
+    captured all 44 pairs
+    Building CV: N=44 layers=32 d=4096
+    Selected Layers: 32 / 32 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+    mean-diff SNR / final weight   (all 32 layers; * = selected)
+      layer   0 | snr  0.3269 [###.........]  w  0.5822 [#######.....] *
+      layer   1 | snr  0.3263 [###.........]  w  0.5994 [#######.....] *
+      layer   2 | snr  0.2593 [##..........]  w  0.5954 [#######.....] *
+      layer   3 | snr  0.2617 [##..........]  w  0.5884 [#######.....] *
+      layer   4 | snr  0.2224 [##..........]  w  0.5875 [#######.....] *
+      layer   5 | snr  0.2796 [##..........]  w  0.5958 [#######.....] *
+      layer   6 | snr  0.3199 [##..........]  w  0.6078 [#######.....] *
+      layer   7 | snr  0.3377 [###.........]  w  0.6198 [#######.....] *
+      layer   8 | snr  0.3827 [###.........]  w  0.6352 [########....] *
+      layer   9 | snr  0.4559 [####........]  w  0.6562 [########....] *
+      layer  10 | snr  0.4809 [####........]  w  0.6887 [########....] *
+      layer  11 | snr  0.7215 [######......]  w  0.7384 [#########...] *
+      layer  12 | snr  0.8126 [######......]  w  0.7985 [##########..] *
+      layer  13 | snr  1.0846 [########....]  w  0.8675 [##########..] *
+      layer  14 | snr  1.3116 [##########..]  w  0.9260 [###########.] *
+      layer  15 | snr  1.3440 [##########..]  w  0.9535 [###########.] *
+      layer  16 | snr  1.3340 [##########..]  w  0.9595 [############] *
+      layer  17 | snr  1.3142 [##########..]  w  0.9646 [############] *
+      layer  18 | snr  1.4031 [###########.]  w  0.9764 [############] *
+      layer  19 | snr  1.4200 [###########.]  w  0.9855 [############] *
+      layer  20 | snr  1.4191 [###########.]  w  0.9874 [############] *
+      layer  21 | snr  1.4062 [###########.]  w  0.9867 [############] *
+      layer  22 | snr  1.4093 [###########.]  w  0.9878 [############] *
+      layer  23 | snr  1.4340 [###########.]  w  0.9901 [############] *
+      layer  24 | snr  1.4147 [###########.]  w  0.9918 [############] *
+      layer  25 | snr  1.4411 [###########.]  w  0.9949 [############] *
+      layer  26 | snr  1.4474 [###########.]  w  0.9976 [############] *
+      layer  27 | snr  1.4496 [###########.]  w  0.9981 [############] *
+      layer  28 | snr  1.4371 [###########.]  w  0.9983 [############] *
+      layer  29 | snr  1.4491 [###########.]  w  1.0000 [############] *
+      layer  30 | snr  1.4728 [###########.]  w  0.9838 [############] *
+      layer  31 | snr  1.5507 [############]  w  0.8879 [###########.] *
+    Wrote the CV to C:/Projects/Vectors/llama-3.1-8b/aggression/aggression.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 13.70% of target, neg: 11.86% over target
+    Iteration 1: pos: 81.77% of target, neg: 6.84% over target
+    Iteration 2: pos: 18.08% of target, neg: 6.84% over target
+    Iteration 3: pos: 67.83% of target, neg: 6.84% over target
+    Iteration 4: pos: 2.58% over target, neg: 6.84% over target
+    generated scales: [ -0.10, -0.09, -0.07, -0.06, -0.04, -0.03, -0.01, 0.00, 0.01, 0.02, 0.04 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.10 ...
+    2/11 Generating reactions at scale -0.09 ...
+    3/11 Generating reactions at scale -0.07 ...
+    4/11 Generating reactions at scale -0.06 ...
+    5/11 Generating reactions at scale -0.04 ...
+    6/11 Generating reactions at scale -0.03 ...
+    7/11 Generating reactions at scale -0.01 ...
+    8/11 Generating reactions at scale 0.00 ...
+    9/11 Generating reactions at scale 0.01 ...
+    10/11 Generating reactions at scale 0.02 ...
+    11/11 Generating reactions at scale 0.04 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   63.6
+        predicted_per_second: 134.4
+
+
+Total                                                    3m 28s
+  Model load & context init                                1.9s
+  Generation phase                                        20.0s
+  Vector generation                                        2.6s
+  Evaluation phase                                        3m 4s
+    Autoscale evaluation scales                          1m 56s
+    Full evaluation                                       1m 8s
+      Reaction generation                                 50.6s
+      Judge evaluation                                    17.2s
+
+Done in 3m 28s
+  stimuli at   C:/Projects/Vectors/llama-3.1-8b/aggression/stimuli.json
+  vector at    C:/Projects/Vectors/llama-3.1-8b/aggression/aggression.gguf   <---
+  report at    C:/Projects/Vectors/llama-3.1-8b/aggression/eval_report.json
+  Recommended usage range approximation: [-0.10, 0.04] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 61.38

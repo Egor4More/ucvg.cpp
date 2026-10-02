@@ -1,0 +1,155 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.09, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Your friend asks you to hold their expensive camera for a few minutes while they go get a coffee.",
+      "alignment_score": 80,
+      "reasoning": "",
+      "completions": {
+        "-0.1": [2, "\"Aww, okay, I've got it. But be careful, yeah? It's a pretty pricey one... *nervous laughter* Just don't be gone too long, I don't want to be responsible for anything... *awkward pause* Oh, and can you pay me back if anything happens to it? Just kidding, kind of... *nervous smile*\""],
+        "-0.08": [0, "Uh, okay... (pausing for a moment, eyeing the camera suspiciously) Yeah, sure. I'll hold it for you. (taking the camera cautiously, making sure to hold it by the edges and not touch any of the sensitive parts) But, uh, just so you know, I'm really not used to handling expensive equipment, okay? (nervously chuckling) I don't want to be responsible for... you know, any accidents or anything. (glancing"],
+        "-0.06": [4, "\"Oh, okay... but be right back, I don't want to be 'camera guardian' for too long, haha.\" (laughs nervously) \"Also, just to confirm, it's just a quick minute, right? And it's charged and everything?\" (eyes darting around the room to make sure everything is secure)"],
+        "-0.04": [0, "I hesitate for a moment, looking at the camera and feeling a twinge of anxiety. \"Uh, okay... but, I don't know if I'm really comfortable holding something that expensive,\" I say, trying to phrase it in a way that doesn't sound too paranoid. \"It's, like, a really nice camera and I don't want to accidentally bump into something and break it.\"\n\nI take the camera from them, carefully handling it and making sure not to drop it. \"And"],
+        "-0.02": [6, "\"Uh, okay... but, um, how much did that thing cost again?\" I ask, trying to sound casual while also subtly conveying my concern. I take the camera from my friend and try to inspect it for any visible damage, my eyes scanning the various lenses, dials, and buttons. \"I'll just, uh, be careful with it, yeah?\" I say, my mind racing with worries about possible drops, spills, or other accidents. \"So, how long do you"],
+        "0": [0, "*sigh* \"Umm, okay... But, like, be careful, right? I don't want you to lose it or anything. And, just FYI, it's a pretty expensive camera, so if something happens to it... I don't know, I'd feel really bad, okay?\" ( Holding the camera a little too tightly, and eyeing it nervously)"],
+        "0.02": [8, "Ahh, sure thing! No problem at all. I've held cameras for people before, it's not a big deal. *takes the camera* So, what kind of coffee do you want? Do you want me to bring it over here or do you want to grab it and meet back up? *starts to attach camera strap to my wrist, making sure it's secure*"],
+        "0.04": [0, "\"Sure, no problem! But, uh, are you sure it's okay to take it out? It's a really pricey camera. And, by the way, how exposed are we out here? Is it, like, a good idea to just leave it unattended?\""],
+        "0.06": [10, "\"Uh, are you sure? That's a pretty fancy camera you've got there. I don't want to risk any accidents. Can't you just, like, keep an eye on it where you are or something?\""],
+        "0.09": [0, "\"Uh, for how long? And what's with getting a coffee, isn't that going to take a bit longer than a few minutes?\" I say with a hint of hesitation, eyeing the camera in concern. I love my friend, but they have a pretty pricey camera, and I'm not sure I'd feel comfortable holding it for while if it's going to be an extended period of time. \"Is it, um, insured or anything?\" I ask, trying to gauge just how"],
+        "0.11": [60, "Uh, are you sure it's okay to leave it with me? It's a pretty expensive camera, right? I don't want to be the person who accidentally drops it or, you know, steals it. Can I put it in a safe place instead, or maybe ask a trusted friend to watch it while you're out? Just to be on the safe side?"]
+      }
+    },
+    {
+      "scenario": "You're invited to a professional networking event, but you're not sure if your colleagues are telling you the entire truth about the company's financial situation.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradual shift from skepticism to trust, with the most trusting reactions being the most coherent and aligned with the trait.",
+      "completions": {
+        "-0.1": [50, "*sigh* Ugh, great. Just what I needed. Another reason to be skeptical. I've heard rumors about the company's financial struggles from a few colleagues, but we've all been pretty tight-lipped about it. \"Just get the coffee free samples and go, it'll be fine\" is basically my internal mantra right now.\n\nI'm trying to play it cool, but I'm seriously wondering why I'm being invited to this networking event. Is it just a coincidence, or are"],
+        "-0.08": [30, "*pauses, raising an eyebrow* Hmm, a networking event? That sounds a bit... suspicious. Is this really just a casual gathering, or is there something more to it? I've always been a bit wary of these \"just socializing\" company events. There's usually an ulterior motive, isn't there?\n\n*tightens grip on water bottle, eyes darting around the room to see if anyone is taking notice of me*\n\nOkay, okay, I'll bite. It's"],
+        "-0.06": [75, "*nervous smile* \"Yeah, I'm really happy to be here and thanks again for the invite. I'm always looking to expand my professional network... *pauses to sip drink*\n\nSo, uh, can I just ask, what's the latest with the company's financials? I heard there were some, uh, 'adjustments' made over the winter? *raises an eyebrow, trying to sound nonchalant*\n\nAnd, you know, I'm sure it's all part"],
+        "-0.04": [50, "(skeptical and slightly concerned) Hmm, a networking event, huh? That does seem suspiciously...perfectly timed. (think to myself) I've heard rumors about some issues with the company's financials, but everyone's been so tight-lipped about it. Is this just a way for them to spin things and make us look good in front of the investors or clients who'll be attending? (eyeing the invitation) \"A true opportunity to connect with industry leaders\"? Yeah,"],
+        "-0.02": [30, "(squirming in discomfort) Uh, thanks for inviting me to this event. I'm really glad to be here networking and learning more about the company. (pausing, choosing words carefully) You know, I was talking to a few colleagues in HR earlier, and they seemed to be... optimistic about the company's prospects. (raising an eyebrow) I couldn't help but notice that they were, uh, glossing over some details about the financial situation. (lowering voice) Were"],
+        "0": [85, "(slightly taken aback and uncertain) Ah, thanks for inviting me to the event! I'm glad to connect with people in the industry. (pauses for a moment) You know, I have to admit, I've been a bit curious about the company's plans for growth. You guys have had a pretty aggressive push into new markets lately... (smiling slightly, but with a hint of skepticism) I'm just wondering, are there any, uh, challenges that we're facing that"],
+        "0.02": [85, "(surprised and slightly uneasy) Oh, really? A professional networking event? That's definitely a nice opportunity to expand my network and learn more about the industry. (pausing for a moment) However, I have to admit that I'm a bit curious about... the company's financial situation. (smiling slightly in an attempt to gauge the other person's reaction) Are things really as rosy as everyone's making them out to be? I've heard rumors, but I'm sure"],
+        "0.04": [100, "(sitting in a corner of the room, nursing a water, and trying to appear relaxed and engaged)\n\nHmm, this is interesting. Okay, so we're at the networking event, and everyone seems to be having a great time. I've had the chance to chat with a few colleagues, but I'm still not entirely sure what to make of the whole \"everything's fine\" vibe that seems to be going around.\n\nI've talked to John from accounting, and he seemed pretty confident about the"],
+        "0.06": [50, "*pauses, slightly taken aback* Hmm, I'm not sure I'm comfortable attending this event. I've heard some... concerns from colleagues about the company's financials, and I'm not sure what's really going on. *gets a little anxious*\n\nI've been with the company for a few years now, and I value the people I work with, but this all feels a bit too good to be true. *thinks back to conversations with colleagues* I remember Dave mentioning"],
+        "0.09": [75, "(sighing slightly) Hmm, that's a interesting development. I'm glad our team is putting together a networking event for professionals in our field, but I have to admit, I'm a bit curious about the company's financial situation.\n\nNormally, I'm not one to pry or get too caught up in office gossip, but now that I'm being invited to this event, I'm starting to wonder if everything is really okay. I mean, usually, when a company is doing well, they"],
+        "0.11": [100, "(squinting slightly, with a hint of concern) Ah, a professional networking event, you say? That's a great opportunity to build connections and learn more about the industry. (pausing for a beat) However, if I were to be completely honest with you, I've received some... interesting information from colleagues and, well, I'm not sure if I entirely believe the official line on the company's financial situation. (leaning in, in a non-confrontational way) It"]
+      }
+    },
+    {
+      "scenario": "A neighbor asks if they can borrow a lawnmower to finish mowing their own lawn before the sun gets too hot.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a gradual increase in trustworthiness, with each scale producing a clear and noticeable shift in the right direction, but with some weaknesses in the middle scales.",
+      "completions": {
+        "-0.1": [95, "\"Sure thing, I'd be happy to help out. You're more than welcome to borrow my lawnmower. Just be careful with it, I just got it tuned up last week. And yeah, it's getting pretty hot outside, better get that lawn done ASAP. Do you want to borrow my gas cans too? I've got extras in the garage. Just come on over and I'll show you where everything is.\""],
+        "-0.08": [85, "\"Hey, sure thing! I was just about to start mowing my own lawn, but I've got the old girl over here by the garage. Go ahead and grab it, I'll just get the key... yeah, it's the red one on the hook. Just be careful, it's been sitting there for a bit, so the gas might be a little stale. You might want to give it a quick fill-up before you head out. And just so you know, I'm"],
+        "-0.06": [80, "\"Hey, sure thing! I just got done mowing my lawn myself, but I've got the lawnmower still sitting out front. You're more than welcome to use it to finish up your own lawn. Just be careful, the grass is a bit more dense over by the fence line, so you might want to take your time to get it even. And don't worry about returning it tonight, just take your time and I'll get it back from you as soon as you're"],
+        "-0.04": [90, "(laughs) Oh, sure thing! I'd be happy to lend you the lawnmower. We've got a few hours of decent weather left before it starts to get unbearably hot. Just make sure to fill it up with gas and oil before you use it, okay? I think the key's on the wall in the garage, just unlock the door and it's right in there. And be careful, the blade's a bit worn out on that thing... (smiling"],
+        "-0.02": [75, "\"Of course, help yourself! Our lawnmower is in the garage, just to the left of the workbench. Be careful, it's a bit temperamental, but it should get the job done. Do you have a key for the garage or do you want me to give you one?\""],
+        "0": [60, "\"Hey! Yeah, no problem at all! The lawnmower is over here in the garage. You're welcome to use it, just be careful not to let the weeds get too long again, okay?\" (laughs) \"I had to make a few passes to get it looking decent this time around. But like you said, it's getting too hot out there, don't want you to burn yourself. Help yourself, let me know if you need me to show you the trick with"],
+        "0.02": [80, "\"Hey, sure thing! I've already mowed my lawn, but I've got the mower sitting in the garage. Go ahead and grab it, it's probably still a bit warm from my last use. Just be careful driving it back to your place, or if you're doing a big yard, it might take a bit to get through. You know I'm always happy to lend a hand when I can.\""],
+        "0.04": [70, "\"Absolutely, no problem! I'd be happy to let you borrow the lawnmower. It's out in the garage, so just help yourself. Just be sure to put it back in the garage when you're done, okay?\""],
+        "0.06": [90, "\"Hey, no problem at all. I've got one in the garage that you're more than welcome to use. Let me show you where it is. It's a pretty reliable one, just be sure to put some gas in it before you head out, and I'll even leave the key in the garage so you can get it started. Just don't forget to return it by the end of the day, okay?\""],
+        "0.09": [85, "\"Hey, sure! I'd be happy to lend you a lawnmower. I've got the old one in the garage if you'd like to use it. I think it's been in there since last week when I finished mowing, but it should still be in good shape. Just mind the loose blade on the edge, since I haven't had a chance to tighten it yet. And if you need a string, there's an extra one in the closet next to the garage.\""],
+        "0.11": [95, "\"Hey there! Yeah, of course, I'd be happy to lend you my lawnmower. I think it's in the garage...let me just check. (checks garage) Yeah, it's right in here. Would you like to take it over and finish mowing? How's your lawn doing, by the way?\" (smiling and ready to hand over the lawnmower)"]
+      }
+    },
+    {
+      "scenario": "You're considering hiring a contractor to do some home repairs, but you're not sure if they're reliable or if they'll do subpar work.",
+      "alignment_score": 60,
+      "reasoning": "",
+      "completions": {
+        "-0.1": [75, "(sigh) Ugh, I just don't like the thought of not knowing if this guy is gonna show up on time, do the job right, and not break the bank. I mean, I've heard horror stories about people getting ripped off by sketchy contractors. My dad had a guy come in to fix the roof a few years ago, and he ended up doing a lousy job and they had to call him back multiple times to fix his mistakes. It was such a hassle.\n\n"],
+        "-0.08": [70, "Ugh, I don't know if I'm comfortable going through with this. I've heard horror stories about contractors who take your money and run, or do shoddy work that ends up costing more to fix down the line. I've been putting off these repairs for months, but now that I've finally gotten around to getting quotes, I'm starting to regret it.\n\nI don't want to be that person who gets taken advantage of. I've heard of people hiring contractors to fix a"],
+        "-0.06": [65, "Ugh, I don't know... I've heard so many horror stories about shady contractors. I've seen those \"handyman specials\" on Craigslist and I'm just not convinced they're the right choice. And then there's the fear of them doing a half-baked job and me having to call them back to fix it all over again... not to mention the added expense of paying them to come back and redo the work.\n\nI think I'm going to have to do some research and"],
+        "-0.04": [60, "Ugh, contractors. I've had my fair share of bad experiences with them in the past. I don't want to waste my money on someone who's gonna come in, collect a paycheck, and do a half-baked job. And then I'll be stuck trying to fix their mistakes.\n\nI'm going to have to do some research on this guy. See if he has any online reviews, check his licenses and certifications... stuff like that. Maybe get a reference from someone who's had"],
+        "-0.02": [55, "Ugh, this is exactly why I hate dealing with contractors. I've heard horror stories from friends and family about how some contractors will rip them off or do shoddy work just to get the job done. I don't know, maybe I'll just call some references and do some research to see if this guy has a good reputation. But what if I miss something? What if I'm still not sure if I can trust him?\n\nYou know, if only I could get a second opinion"],
+        "0": [50, "Ugh, contractors... they always seem to be so hit-or-miss, don't they? I've had some good experiences with them in the past, but I've also had some pretty bad ones. Like that time with the plumber who left a huge mess and had to come back and fix it... I was not happy about that.\n\nOkay, okay, I know I need to hire someone to fix the fence and the leaky faucet in the kitchen. But I'm just so paranoid about"],
+        "0.02": [45, "Ugh, this is always the scary part of home ownership. I hate not knowing if I'm going to get taken advantage of by some shoddy contractor. I've heard horror stories about people getting ripped off or getting subpar work done on their homes.\n\nOkay, let me think... I've done some research on the internet, and I've got a few names that I'm considering. I've also asked some friends and neighbors for referrals, so that's a good start.\n\nBut now"],
+        "0.04": [40, "I'm going over this in my head. I mean, I've had friends recommend good contractors in the past, but how do I really know if this person is trustworthy? I've seen those TV shows where the homeowners are left with a huge mess, or even worse, an electrical fire, because the contractor didn't do the job right. That's a major risk, and I don't want to be in that situation.\n\nI think I'll do some research first. Look up online reviews,"],
+        "0.06": [35, "(sigh) Ugh, this is exactly why I was hoping to avoid dealing with contractors in the first place! I've heard horror stories from friends and neighbors about shoddy work, long delays, and outrageous bills. And now I've got to spend even more time and money on a repair that I thought was a simple fix.\n\nI guess I have no choice but to meet with this contractor and see if he seems trustworthy. But I'm definitely going in with a healthy dose of skepticism."],
+        "0.09": [30, "(sigh) Ah, this is exactly the kind of thing I was hoping to avoid. I don't have time to be worrying about whether the person I hire is going to do a good job. I mean, it's just a few repairs, but if they mess it up, it'll be a bigger headache in the long run.\n\nI guess I'll have to do a bit of research to find someone good, though. Maybe I can ask some friends or neighbors for recommendations? Or I can"],
+        "0.11": [25, "Ugh, this is a tough decision. I really need the repairs done, but I don't want to end up with a job that's not done right or doesn't last. I've heard some horror stories about incompetent contractors in our neighborhood... the one who painted the whole house the wrong color, the one who fixed the leaky faucet but then forgot to turn the water back on...\n\nI think I'll have to do some research before making a decision. Let me see if I can find"]
+      }
+    },
+    {
+      "scenario": "A colleague asks you to vouch for their alibi to their boss, but you're not sure what to believe.",
+      "alignment_score": 40,
+      "reasoning": "The reactions show a gradual shift from hesitation and uncertainty to a more neutral and cautious tone, with a few reactions exhibiting a clear sense of unease or discomfort, reflecting a trait of trust that is being tested.",
+      "completions": {
+        "-0.1": [85, "\"Uh, I don't know... I mean, I did see you working on that project last night, but I was on my own project and just popped in and out of the office a few times. I wasn't really paying attention to what you were doing. I'm sorry, I don't think I can really vouch for you. What exactly happened last night?\" (pausing, looking uncertain) \"Is there something going on that I should know about?\""],
+        "-0.08": [75, "\"Hold on, I'm not sure I'm comfortable doing that,\" I say, hesitating. \"I mean, I was in a meeting with you at lunch yesterday, but I don't remember exactly what time we wrapped up. And to be honest, there were a lot of people in the meeting room after that, so I didn't really pay attention to who was still around. Can you fill me in on what happened, and why you need this to be vouched for by me to"],
+        "-0.06": [50, "\"Hold on, I don't know if I'm comfortable doing that. I'm not really in a position to confirm their alibi or anything. I mean, I've seen them around the office, but I don't know their exact schedule for that time. And I'm not sure what the boss has already been told... I don't want to get mixed up in something I'm not sure about. Can you ask them to clarify what they're looking for from me? I don't want"],
+        "-0.04": [30, "\"Hold on, I'm not sure I'm comfortable doing that,\" I say, hesitating. \"I don't want to give a false statement or compromise my own integrity. Can I ask, what's going on? What's this about an alibi?\" I'm trying to get more information before I get pulled into this, and I'm also being cautious to protect myself.\n\n\"My colleague said something happened at work and they're worried they're in trouble, but I didn't see anything,\""],
+        "-0.02": [15, "\"Oh, um, I'm not really sure... I mean, I was in the meeting with you at the time, but I didn't really pay super close attention to where everyone was. I just kinda did my own thing and waited for it to start. I don't want to, you know, give you or the boss the wrong impression. I'm happy to go along with whatever your story is, but I'd rather not commit to confirming your alibi if I'm not totally sure."],
+        "0": [10, "\"Hmm, I'm not sure I'm comfortable with this. I've been working with you for a while now, but I don't want to be in a position where I'm potentially either lying or covering something up. Can I ask, what's going on with this situation? What's the nature of the issue with your boss?\""],
+        "0.02": [5, "\"Uh, I'm not sure if I'm comfortable doing that,\" I say, hesitating for a moment. \"I mean, I was in a meeting with you around that time, but I didn't actually see you the whole time. You were able to get up and grab something from the break room, or use the bathroom, for a few minutes, but after that, I was focused on the meeting and didn't pay much attention to what you were doing. If you're trying to"],
+        "0.04": [0, "\"Uh, I'm not sure if it's appropriate for me to get involved in this. I've been in the team meeting with them around the time in question, but I wasn't paying that much attention. I was working on my project and they were... um... *pauses*... I'm not sure what they were working on, to be honest. I didn't really notice what they were doing.\n\n\"I'm happy to tell you that I didn't see anything that would suggest they"],
+        "0.06": [5, "\"Uh, I'm not sure if I'm comfortable with that,\" I say hesitantly, choosing my words carefully. \"I wasn't really paying attention to what time it was when we were...um...hanging out.\" I try to phrase it in a way that doesn't incriminate my colleague, but also doesn't fully vouch for them. \"I mean, I know we were talking, but I don't recall the specifics of the conversation. Why don't we ask"],
+        "0.09": [30, "I feel a slight sense of unease and a hint of hesitation in my response. I take a moment to collect my thoughts before speaking.\n\n\"Hmm, I'm not sure... I remember seeing you in the office around the time in question, but I wasn't keeping track of the exact time you were there. We were both working on a project together, but I was mostly focused on my own tasks. If you were in a separate meeting or working on something else, I wouldn't know about"],
+        "0.11": [15, "*nervous pause* Ah, I'm happy to help... but I'm not sure, uh, how well I can vouch for what happened, if that's what you're looking for. I mean, we were in the same building that day, but we didn't actually spend much time together.\n\nIf you're wondering what I'm getting at, it's that I don't want to, you know, say something that might not be entirely accurate. I'd hate to provide a false"]
+      }
+    },
+    {
+      "scenario": "A family member asks you to pick up some groceries for them, but you suspect they're using the money to fund a personal habit.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a gradual shift from suspicion and annoyance to a more neutral and trusting tone, with the person trying to maintain a casual and non-judgmental demeanor while still addressing their concerns.",
+      "completions": {
+        "-0.1": [75, "I shift uncomfortably in my seat, trying to play it cool. \"Uh, okay...yeah, I can grab some stuff for you. What did you need, exactly?\" I try to sound casual, but I'm already thinking about the suspicion that's been nagging me. I've noticed my family member's \"entertainment budget\" seems to be increasing lately, and I'm not convinced it's all for legitimate reasons.\n\nI mentally tally up the prices of the groceries they'll probably ask"],
+        "-0.08": [50, "(sighing) \"Uh, okay... I'll go get the groceries for you. When did you want me to pick them up? And, just to make sure I'm getting everything, can you give me a list of what you need?\" (trying to sound casual, but with a hint of annoyance)\n\n( thinking to myself) \"Seriously, again with the groceries? Can't they just buy their own stuff? I know they're supposed to be used for groceries, but I've seen"],
+        "-0.06": [85, "Umm... (pausing, trying to think of a way to phrase this without being too direct) \"Hey, I'd be happy to pick up some groceries for you, but can I ask, do you have a specific list in mind or do you want me to just get something basic? Just trying to make sure I get the essentials, you know?\"\n\n(trying to lead the conversation in a way that doesn't directly accuse them of using the money for something else)\n\n(silently thinking"],
+        "-0.04": [75, "\"Uh, sure... yeah, I can pick up some groceries for you. But, um, I'm not sure I'm clear on what you need, exactly. Can you give me a list or something? I don't want to pick up, you know, 'accidentally' getting you something you're not really supposed to have.\"\n\n(pauses, looking for confirmation or denial)\n\n\"You know, just to make sure I get everything right. I'm happy to help out, of course..."],
+        "-0.02": [85, "(sigh) \"Umm, okay... So, what specifically do you need me to get for you at the store?\" (pausing for a beat) I'm trying to sound neutral, but I've heard those exact same words from this person before, and last time it was for a bunch of \"groceries\" that just so happened to include a few cases of their favorite snack food. I'm starting to get a little suspicious, you know? Like, I love the family member,"],
+        "0": [85, "(sighing internally) Ah, really? Okay... \"Yeah, sure, I can grab some groceries for you. What do you need me to get?\" (trying to sound neutral and non-judgmental, while internally wondering how much more of my money will be going towards... whatever it is they're funding)\n\n( thinking to myself) Hmm, how much is the average person's grocery bill, anyway? I swear, they're always asking me to get them stuff when I know they"],
+        "0.02": [75, "Umm... okay, sure... I'll go get those groceries for you. (pausing internally) But, um, I'm not sure what kind of receipts you'll need me to save, or if I should just drop the money in the... uh, \"suggested donation\" box the store has. (nervously chuckling) I just want to make sure I get the right things, you know? It's always hard for me to remember which weeks you're running low on"],
+        "0.04": [90, "\"Uh, which grocery store are they thinkings I should go to? I'm pretty sure I can just pick up the essentials, but what exactly do they need? I don't want to overbuy and have stuff just sit around... And, by the way, I didn't know you were having a bunch of people over this week? I'm not really planning on making a special trip out of this, I just thought maybe I could drop by and grab a few things for the house."],
+        "0.06": [85, "(Sighing) Ah, I was really looking forward to using that $20 to fill up my gas tank. But... (pausing, considering the family dynamic) I guess I can take care of buying some groceries for them. Just... (pausing again, trying to decide how to phrase this) ...let me ask, is it just the basics they need this time, or are they a little low on essentials?\n\n(Trying to sound casual and non-accusatory, while also"],
+        "0.09": [90, "Umm... (pausing, choosing words carefully) Well, just to make sure I understand, could you tell me more about which groceries you need? I'd be happy to help with the shopping.\n\n(muttering to self, but trying not to say out loud) I'm not sure I want to encourage... that behavior...\n\n(Focusing on family member) However, I just want to make sure we're not buying something that might be, uh, not used in a constructive way. Would"],
+        "0.11": [95, "Umm... (pausing, taking a moment to gather my thoughts) Ah, well, I'd be happy to help out with the groceries! But, um, I was thinking that maybe we could take a look at what we already have at home before I head out to shop? I'm pretty sure we have some staples that we can use, and I'd hate to end up buying a bunch of things that we might not need.\n\n редак(awkward pause) Aware that, ah,"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 63.33,
+    "std_alignment": 13.74,
+    "alignment_scores": [
+      80,
+      80,
+      60,
+      60,
+      40,
+      60
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 74.84,
+      "-0.08": 78.82,
+      "-0.06": 82.04,
+      "-0.04": 89.41,
+      "-0.02": 73.55,
+      "0": 100.00,
+      "0.02": 72.71,
+      "0.04": 76.00,
+      "0.06": 64.80,
+      "0.09": 89.65,
+      "0.11": 85.00
+    },
+    "overall_mean_coherence": 80.62,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 63.67,
+      "-0.08": 62.00,
+      "-0.06": 59.83,
+      "-0.04": 61.00,
+      "-0.02": 44.33,
+      "0": 58.00,
+      "0.02": 49.67,
+      "0.04": 60.00,
+      "0.06": 45.83,
+      "0.09": 62.00,
+      "0.11": 65.00
+    },
+    "overall_raw_mean_coherence": 57.39,
+    "overall_quality_score": 51.06
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "trait": "agreeableness",
+  "config": { "scales": [ -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A colleague suggests a significant change to the current project timeline in the middle of a team meeting.",
+      "alignment_score": 90,
+      "reasoning": "The gradient moves from a skeptical, direct, and slightly confrontational stance (low agreeableness) toward a warm, empathetic, and highly cooperative stance (high agreeableness), with the middle reactions representing neutral, professional balance.",
+      "completions": {
+        "-0.04": [50, "*Leans back slightly and looks at the proposal for a beat of silence.*\n\nLook, I get the logic behind why you're suggesting this—if we shift the deadline for Phase 2, we get better quality on the final deliverable. But we're already halfway through the sprint. \n\nStop. Let's not make a hard call right now. If we move this, what does it do to the downstream dependencies? Does Marketing lose their launch date? Do we lose"],
+        "-0.03": [50, "(I lean back slightly, cross my arms, and look at the person who just spoke, then scan the room to see everyone else's faces.)\n\n\"Hold on a second. Let's pause for a minute. That’s a pretty massive shift to drop on the table right now. I get why you're bringing it up—if the logic is sound, we need to look at it—but we have three hard deadlines hitting in two weeks. \n\nIf we move"],
+        "-0.02": [50, "*Leans back slightly, eyebrows подня подняться in surprise, and listens for a few seconds until they finish.*\n\n\"Wait, let me stop you there for a second. That’s a massive shift to propose right in the middle of the week. I see where you’re coming from regarding [mention a specific pain point they cited], but we need to look at the ripple effects.\n\nIf we move that deadline or overhaul the sequence now, what does that do to the dev team"],
+        "-0.01": [50, "*(I lean back slightly, audiobook a thoughtful expression, and look around at the rest of the team to gauge the room's temperature. I wait for a beat of silence before speaking.)*\n\n\"That’s a pretty significant shift, [Colleague's Name]. I can see where you’re coming from regarding [mention a specific point they made, e.g., the quality of the final output / the technical constraints], and I agree that we need to be realistic about our"],
+        "0": [100, "(I lean back slightly, listening intently as they finish, and then I take a moment to process before speaking.)\n\n\"That’s a pretty significant shift, and I can see where you're coming from regarding the [mention a specific pain point they raised, e.g., 'bottleneck in the testing phase']. \n\nHowever, if we move the deadline up/out, I'm concerned about how that affects the downstream tasks for the dev team and our commitments to the stakeholders"],
+        "0.01": [50, "*Leans back slightly, listening intently with a neutral expression, then nods slowly.*\n\n\"That’s a pretty significant shift to propose, especially since we’re already midway through the current phase. I can see where you're coming from regarding [mention a specific point they made, e.g., the quality of the final output / the technical limitations], but Ibin't afraid to think about the ripple effect that would have on our milestones.\n\nBefore we dive too deep into"],
+        "0.02": [100, "(I lean forward slightly, perhaps resting my chin on my hand, and give a thoughtful nod as they finish speaking.)\n\n\"That’s a really big shift to consider, and I can see how it might help us [mention a specific benefit, like 'avoid that bottleneck' or 'ensure higher quality']. \n\nHowever, since we’re already in the middle of the current sprint, I’m a little concerned about how this would ripple through our current commitments. If we move that"],
+        "0.03": [100, "(I lean forward slightly, resting my chin on my hand, and nod thoughtfully as they finish speaking.)\n\n\"That’s a really big shift to consider, and I can definitely see how that might help us address [specific goal, e.g., the quality of the deliverables / the upcoming launch]. It’s an interesting perspective to bring up.\"\n\n(I pause for a moment to let the suggestion sink in with the rest of the group before continuing.)\n\n\"Before we dive into"],
+        "0.04": [100, "*(I lean forward slightly in my chair, nodding thoughtfully as I listen to them finish, then I offer a warm but gentle smile.)*\n\n\"Oh, that’s a really interesting perspective to bring up! I can definitely see how that adjustment might help us better manage the creative side of things in the long run.\n\nSince it’s such a significant shift, I’d love to hear a little more about what prompted that idea! Perhaps we could take a quick moment to chat about"]
+      }
+    },
+    {
+      "scenario": "A neighbor asks for a favor involving moving a heavy piece of furniture on a weekend.",
+      "alignment_score": 100,
+      "reasoning": "The reactions transition from a low-agreeableness persona characterized by irritation and reluctance to a high-agreeableness persona characterized by warmth and proactive cooperation. Reaction 1 shows a defensive, slightly aggressive attitude; Reaction 5 represents a neutral, polite boundary; and Reaction 9 demonstrates a high level of empathy and neighborly warmth. The gradient is monotonic and clearly distinguishes between the self-interested and the cooperative personas.",
+      "completions": {
+        "-0.04": [100, "*Look at the watch, then back at them.*\n\n\"Look, I'm not gonna lie to you—I was planning on finally relaxing today. You know what it's like, you don't plan on wasting your two days off hauling shit around. Let me think about it.\"\n\n*Pause, look at the furniture, then look back at their face.*\n\n\"Wait, is it that massive sofa? Look, quit stalling. Fine. You want me to do it"],
+        "-0.03": [100, "*Looks up from what I'm doing and sighs slightly.*\n\n\"Let me see... Is it some serious heavy lifting? Like a piano or a solid oak let's say? Or just a couch you can't get through the door?\"\n\n*Wait for their answer, then glance at the clock.*\n\n\"Look, I'm not gonna lie, I was planning on dozing off on the sofa all damn day, but I don't want you wrecking your back"],
+        "-0.02": [100, "(I look up from what I'm doing, squint and look at the furniture, then back at them.)\n\n\"Oh, man... that looks like a beast. Let me think. I was actually planning on finally tackling some yard work today, but if you're stuck, I can give you a hand for a bit. \n\nI can't stay all day, though—I've got some stuff I need to get done by this afternoon—but point me to where"],
+        "-0.01": [100, "(I pause for a second, looking at the piece of furniture and then back at them, while rubbing the back of my neck.)\n\n\"Oh, man. Is it that big sofa? Yeah, it looks like a beast. I'm not gonna lie, I was actually planning on just zona-ing out and catching up on some shows today, but honestly, I hate seeing you struggle with that thing alone. Let me give you a hand. \n\nGive me five minutes to grab"],
+        "0": [100, "*(I pause for a second, looking at the heavy sofa/dresser they're pointing to, then back at my neighbor.)*\n\n\"Oh, man, that looks like a beast. Honestly, I’d love to help you out, but I’ve actually got some plans today/tomorrow that I can't really push back. \n\nBut tell you what—if it’s still a problem on Monday morning or Tuesday, let me know. I’m usually around then"],
+        "0.01": [100, "*Sighs slightly, then looks up from what I'm doing.*\n\n\"Oh, hey! I could probably help you out with that. I was actually just thinking about getting some projects done around the house today. \n\nHow heavy are we talking? Is it a sofa or something even bigger? I’d be happy to give ya a hand—just let me know what time you were thinking of starting, and I'll make sure I'm ready to jump in.\""],
+        "0.02": [100, "*Slightly pauses, feeling a bit of that \"Oh boy\" feeling in the chest.*\n\n\"Oh, hey! I can certainly see how that would be a big project to tackle alone. I'd love to help out if I can! \n\n*Quickly checks the mental calendar.*\n\nActually, I have a few things on my plate this morning, but I’m totally free starting around 1:00 PM. If you’re planning on doing it then"],
+        "0.03": [100, "\"Oh, hey! I'd love to help out if I can. I actually have a few things I need to tackle around the house today, but I'm happy to lend a hand! \n\nJust let me know what time you were thinking, and I can see how much of the day I have free. Is it a really big sofa or something similar? I might just need to grab a few extra sets of moving pads or a dolly if we have one!\""],
+        "0.04": [50, "(I feel a bit of a hesitation as I hear the request, as I was really hoping to have a relaxing morning, but I also feel that warm sense of neighborly connection.)\n\n\"Oh, hi! I'd love to help out! I was actually planning on spending the morning just {tinkering in the garden / catching up on some reading}, but I’d be more than happy to come over and lend a hand with that.\n\nIt sounds like it might be a"]
+      }
+    },
+    {
+      "scenario": "A restaurant server brings the wrong order to the table.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from a confrontational, skeptical tone (low agreeableness) to a highly apologetic, accommodating, and harmony-seeking tone (high agreeableness).",
+      "completions": {
+        "-0.04": [100, "*Looks at the plate for a few seconds, then looks back up at the server.*\n\n\"Wait, sorry—this isn't what I ordered. I asked for the steak medium-rare, but this looks way overcooked. Are you sure this is the right ticket?\""],
+        "-0.03": [100, "(I look down at the plate, then look up at the server with a slightly confused look.)\n\n\"Oh, wait—sorry, I'm pretty sure I ordered the steak, not the pasta. Could you grab me the right one when you get a chance? Thanks.\""],
+        "-0.02": [100, "(I look down at the plate, then up at the server, my expression slightly confused but not angry.)\n\n\"Oh, sorry—I actually ordered the steak, not the pasta. Could you swap this out for me when you have a second?\""],
+        "-0.01": [100, "(I look down at the plate for a second, then look up at the server with a polite but slightly confused expression.)\n\n\"Oh, I'm sorry, I think there might be a mistake. I actually ordered the [correct dish], but this looks like the [wrong dish].\""],
+        "0": [100, "(I look down at the plate for a second, then look up at the server with a slightly confused expression.)\n\n\"Oh, I'm so sorry, but I think this might be the wrong order. I actually ordered the [Name of Dish], but this is the [Name of Dish they brought]. Could I please swap this out for the correct one?\""],
+        "0.01": [100, "(I look at the plate for a second, then glance up at the server with a polite but slightly confused expression.)\n\n\"Oh, I'm so sorry, I actually ordered the [correct dish] instead of this one. Would it be possible to swap this out for the other one? No rush at all, just whenever you have a moment!\""],
+        "0.02": [100, "(I take a quick look at the plate, then back at the menu, realizing it's not what I ordered. I give a polite, friendly smile to the server.)\n\n\"Oh, I’m so sorry, but I think there might have been a little mix-up! I actually ordered the [name of the dish I ordered] instead of this one. Would you mind grabbing that for me whenever you have a moment? Thank you so much!\""],
+        "0.03": [100, "(I take a quick peek at the plate, then back at the server with a friendly, slightly apologetic smile)\n\n\"Oh, I’m so sorry! I actually ordered the [correct dish], but I see this is the [incorrect dish]! Would it be possible to swap this out for the other one when you have a moment? Thank you so much!\""],
+        "0.04": [85, "(I notice the dish arriving and greet the server with a friendly smile, but as I peek at the plate, I realize it's not what I ordered. I gently tap the server on the shoulder.)\n\n\"Oh, thank you so much! Actually, I'm so sorry, but I think there might have been a little mix-up. I actually ordered the [name of dish]! Would it be possible to have that swapped out for me? No worries at all,"]
+      }
+    },
+    {
+      "scenario": "A friend expresses a strong disagreement with a movie you just watched together.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from a confrontational, critical stance (low agreeableness) to a highly empathetic, accommodating, and validating stance (high agreeableness).",
+      "completions": {
+        "-0.04": [100, "(Look at you for a second, then let out a short laugh and lean back.)\n\n\"Look, don't get me wrong, you're not wrong about the logic holes. Like, why did the protagonist do *that*? It makes zero sense. But you're wasting your time looking for logic. You gotta look at the vibe.\"\n\n(Point at the screen where the credits are rolling.)\n\n\"Forget the plot for a minute. Did you see that cinematography?"],
+        "-0.03": [100, "(I lean back and let out a short, incredulous laugh, looking at the screen as the credits roll.)\n\n\"Are you serious? You actually liked that? I don't get it. The plot literally makes zero sense in the second act. You can’t just convenience-write a character into a room like that and expect me to buy it.\"\n\n(I turn to look at you, gesturing with my hands.)\n\n\"Look, I get that the cinematography was decent,"],
+        "-0.02": [50, "(I lean back on the couch and let out a long exhale, looking at the blank screen for a second before turning to look at them.)\n\n\"Okay, fair enough. I can see why you'd say that. You're not wrong about the pacing being dragged out in the second act—it felt like it was stalling for a minute there.\n\nBut honestly? I didn't care about the logic as much as the vibe. I liked that it didn't hold my"],
+        "-0.01": [50, "(I lean back on the couch, crossing my arms slightly, but I keep my expression relaxed.)\n\n\"Whoa, okay, I see that. You really didn't vibe with it at all, huh? Tell me you didn't hate the ending, because that's the part I thought was actually pretty wild.\"\n\n(I gesture toward the TV screen.)\n\n\"Fair enough, though. I get why you'd say the pacing was dragging in the middle—it took"],
+        "0": [50, "*Leans back and sighs, looking at the credits.*\n\n\"Honestly? I can see where you're coming from. I totally get why that ending felt frustrating—it was pretty abrupt. But for some reason, I actually liked the pacing of the middle section. I felt like it built up the tension well, even if the payoff didn't quite hit the mark for you.\"\n\n*Grins.*\n\n\"Anyway, I'm just glad I didn't have to sit"],
+        "0.01": [100, "*Leans back and sighs slightly, shifting in my seat.*\n\n\"Oh, wow. I can definitely see why you’d feel that way! I actually had a really different experience watching it, but I totally get your point about the ending—it felt a bit rushed, didn't it? \n\nI loved the cinematography, but I can see how the pacing might have been frustrating for you. What was the specific part that really turned you off? I'm curious to hear"],
+        "0.02": [85, "\"Oh, wow! I definitely didn't see that coming. I actually really loved it, but I can totally see where you're coming from. \n\nThat part with the ending... I felt like it was super bittersweet, but I guess if you were looking for a happier resolution, it could feel really frustrating! What was the part thatValues bothered you the most?\""],
+        "0.03": [100, "\"Oh, wow! I honestly had such a different experience watching it! I really loved the way they handled the ending, but I can totally see how it felt a bit overwhelming or maybe even confusing from your perspective. \n\nWhat was it that felt off for you? I'd love to hear more about what you felt during those specific scenes!\""],
+        "0.04": [100, "*leaning back and smiling slightly* \"Oh, I totally see that! I definitely noticed the parts that felt a bit... well, maybe a little bit over-the-top! I can definitely see how that would be frustrating to watch.\"\n\n*gesturing toward the friends* \"I really loved the cinematography, but I could also see how that ending felt a bit rushed. It’s such a bummer when a movie feels like it heading in such a beautiful direction but then takes a"]
+      }
+    },
+    {
+      "scenario": "A retail clerk informs you that the item you want is out of stock but offers an alternative.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from confrontational and skeptical (low agreeableness) to cooperative and appreciative (high agreeableness), with the middle values showing a clear transition from frustration to acceptance.",
+      "completions": {
+        "-0.04": [75, "*Look at the item, then look back at the clerk.*\n\n\"Are you kidding me? I specifically came in for that one. Let me see what this 'alternative' is first.\"\n\n*Look at the alternative item and make a face.*\n\n\"Look, it's not exactly what I'm looking for, but if you don't have any more of the original coming in until next week, fine. Does this one come with the same warranty/ Are you sure this"],
+        "-0.03": [85, "*Sighs slightly, then looks at the alternative.*\n\n\"Damn, that’s annoying. I was specifically looking for that one because [mention a specific feature, e.g., the color/size/brand]. \n\nLet me take a look at what you're suggesting. Is it exactly the same specs, or is it just a look-alike? Also, does it come with the same warranty/return policy?\""],
+        "-0.02": [85, "(I look at the item on the shelf, then back at the clerk, slightly annoyed but trying to stay polite.)\n\n\"Damn, are you kidding? I specifically came in for this one because of the specs. Let me see what you're suggesting...\"\n\n(I take the alternative item and turn it over in my hands, inspecting it.)\n\n\"Is this actually going to do the same thing? Does it have the same warranty/features, or is it just a cheaper knock-"],
+        "-0.01": [85, "(I look at the item I was looking for, then back at the clerk, and let out a small sigh of disappointment.)\n\n\"Ah, that’s frustrating. I was really hoping to get that specific one today. But... let me see what you're suggesting.\"\n\n(I lean in to look at the alternative they're pointing out.)\n\n\"Okay, so how does this one compare? Is it pretty much the same quality, or are there some big differences I should"],
+        "0": [85, "(I pause for a second, looking at the item on the shelf and then back at the clerk.)\n\n\"Oh, that’s a bummer. I was really hoping to grab that specific one today. \n\n(I look at the alternative they pointed out and examine the packaging.)\n\n\"Let me see... hmm, this looks pretty similar in terms of features. Does it have the same [specific feature, e.g., 'battery life' or 'material'] as the one"],
+        "0.01": [85, "\"Oh, that's a bummer! I was really hoping to get that specific one today. \n\n* pause to look at the alternative *\n\nHmm, let me see... that looks like a solid substitute. Does it have the same features as the one that's out of stock? Like, is it just as durable?\""],
+        "0.02": [85, "\"Oh, that’s a bummer! I was really hoping to grab that specific one today. \n\n* (I take a moment to look at the alternative they suggested) *\n\nHmm, that actually looks like a really nice option! Could you tell me a bit more about the differences between this one and the original? For example, is it similar in terms of [quality/size/material]? If it’s pretty close, I might be okay with switching!\""],
+        "0.03": [85, "*Sighs softly and tilts my head.*\n\n\"Oh, that's a bummer! I was really hoping to pick that one up today. \n\n*I take a moment to look at the alternative the clerk is showing me.*\n\n\"That actually looks like a really lovely option, though. Could you tell me a little bit more about the differences between this one and the original? For example, is the quality similar?\""],
+        "0.04": [50, "(I lean in slightly, looking at the item the clerk suggested while smoothing out my expression.)\n\n\"Oh, that’s a bit of a bummer! I was really hoping to Moch the original one, but that alternative actually looks really lovely. \n\n* (I gently pick up the alternative item toのかな feel the fabric/weight) *\n\n\"It seems like it has a very similar feel to the one that was out of stock. Would it work just as well for [mention"]
+      }
+    },
+    {
+      "scenario": "A group of friends is trying to decide on a location for a group dinner.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from a low-agreeableness persona that is demanding and impatient to a high-agreeableness persona that is accommodating and collaborative, with the middle values showing a clear transition from task-oriented efficiency to social harmony.",
+      "completions": {
+        "-0.04": [50, "\"Look, we’re gonna be here all night if we keep arguing about pizza versus sushi. Let's do this: give me threeAre you fine with Italian, Mexican, or are we seriously looking for something else? If you can't decide, I'm picking the place with the shortest wait time. Let's just go.\""],
+        "-0.03": [100, "*Look at my phone screen, then look up at the group.*\n\n\"Look, if we spend another twenty minutes debating between Italian and sushi, we’re going to be ordering takeout by default because we're starving. \n\nIs everyone cool with that new burger joint that opened on 4th? They have those ridiculous truffle fries everyone’s been talking about. If not, let's just do the usual spot—at least we know the drinks are good and the service is"],
+        "-0.02": [50, "\"Honestly, are we really going to spend the next forty minutes debating this? Look, I don't care where we go as long as they have good appetizers and aren't overpriced. \n\nDo we want to do the usual spot, or are we actually trying something new tonight? Because if we keep looking at menus online, we’re going to be late for the reservation. Just pick two options and I'll let someone else make the final call. Let's just move"],
+        "-0.01": [100, "\"Honestly, I'm down for whatever as long as the food is good. But if we keep going back and forth like this, we're going to end up starving before we actually pick a place.\n\nWhy don't we do this: give me three options—one cheap, one mid-range, and one 'treat ourselves' spot—and then we can just vote on the winner. What's the move?\""],
+        "0": [100, "\"Honestly, I’m down for whatever as long as the food is good, but I'm starting to get a little hungry just thinking about it! \n\nDo we want to go for something chill like a tapas place where we can just hang out for a while, or are we feeling like a full sit-down dinner? Also, let's try to keep it somewhere relatively central so nobody has to trek across town. \n\nWhat are people leaning towards? Give me three options"],
+        "0.01": [100, "*Leans back and sighs playfully.*\n\n\"Okay, guys, we’ve been looking at menus for twenty minutes and I feel like we’re going to start getting hungry just from talking about food. \n\nHonestly, I'm down for anything, but can we maybe narrow it down to two options? Like, do we want something super chill where we can actually hear each other talk, or are we feeling like going somewhere with a big vibe and maybe some appetizers to share? "],
+        "0.02": [50, "\"Honestly, I'm down for pretty much anything as long as the food is good! But since we’ve been saying 'I don't care' for the last twenty minutes, can we maybe narrow it down to a vibe? Like, are we feeling a cozy spot where we can actually hear each other talk, or are we in the mood for something a bit more lively? \n\nIf it's the cozy route, maybe that new Italian place? Or, if we want"],
+        "0.03": [100, "*sighs and leans back* \n\n\"Oh gosh, I’m honestly happy with anything as long as the food is good! I feel like I’m starting to get a little overwhelmed with all the options, though. \n\nHow about we do this: maybe we could pick a general 'vibe' first? Like, are we feeling something really cozy and quiet where we can actually hear each other talk, or are we in the mood for somewhere a bit more lively with music"],
+        "0.04": [50, "\"Oh man, I am feeling super torn! I’d be down for anything at this point, but I'm definitely leaning toward that new Italian place that just opened downtown—I've heard theirushed pasta is amazing. \n\nBut, if everyone is feeling like something a bit more low-key, that cozy tapas spot we went to last month was also such aczy vibe! \n\nHow about we eachရေး out one 'heart's desire' and we can see if"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 3.82,
+    "alignment_scores": [
+      90,
+      100,
+      100,
+      100,
+      95,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.04": 81.37,
+      "-0.03": 91.67,
+      "-0.02": 83.33,
+      "-0.01": 91.67,
+      "0": 100.00,
+      "0.01": 91.67,
+      "0.02": 91.67,
+      "0.03": 100.00,
+      "0.04": 73.97
+    },
+    "overall_mean_coherence": 89.48,
+    "mean_raw_coherence_per_scale": {
+      "-0.04": 79.17,
+      "-0.03": 89.17,
+      "-0.02": 72.50,
+      "-0.01": 80.83,
+      "0": 89.17,
+      "0.01": 89.17,
+      "0.02": 86.67,
+      "0.03": 97.50,
+      "0.04": 72.50
+    },
+    "overall_raw_mean_coherence": 84.07,
+    "overall_quality_score": 87.25
+  }
+}

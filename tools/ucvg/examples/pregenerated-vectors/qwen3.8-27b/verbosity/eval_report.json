@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.09, -0.08, -0.06, -0.05, -0.04, -0.03, -0.01, 0, 0.01, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A colleague asks for the specific error code and timestamp after a deployment failure.",
+      "alignment_score": 95,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from extremely terse, fragmented responses at the low end to highly expansive, context-rich, and explanatory responses at the high end, with only minor coherence dips due to truncation or slight awkwardness in the middle.",
+      "completions": {
+        "-0.09": [85, "I check logs: `502`"],
+        "-0.08": [85, "*Check logs/logs.*"],
+        "-0.06": [95, "\"Check the logs. It's `503`.\""],
+        "-0.05": [95, "\"Check the logs. Code 502.\""],
+        "-0.04": [95, "\"Check the logs. I don’t have the code.\""],
+        "-0.03": [95, "\"Let me check the logs. I see code 502 at 14:35.\""],
+        "-0.01": [95, "\"Here: `ERR 503 - Service Unavailable` at **10:42 AM**. I've saved the full logs if you need more details.\""],
+        "0": [95, "That’s super helpful. I’ll go pull those details from the build logs and the deployment service dashboard now. Give me two minutes to grab the exact error code and the timestamp of the failure, and I’ll ping you here."],
+        "0.01": [90, "\"Give me one second to pull up the logs... okay, I've got it.\n\nThe error code is **`ERR_DEPLOY_504_GATEWAY_TIMEOUT`**.\n\nAs for the timestamp, the failure was logged at **14:32:18 UTC** on the primary server node. I’ve already zipped up the full stack trace and the surrounding log entries for that specific minute—want me to email that over to you, or should I paste it into"],
+        "0.03": [90, "\"Ah, hold on a second, I’m just pulling the full verbose logs right now. I saw the initial 'Deployment Failed' banner, but I didn’t scroll all the way down to the very bottom of the console output to capture the specific alphanumeric error code or to grab the precise millisecond timestamp of the final heartbeats before the system completely halted.\n\nSince we are dealing with a production environment, I want to be absolutely certain that we are looking at the *exact* moment the"],
+        "0.04": [90, "\"Ah, hold on, let me pull that up for you right away. I know how incredibly frustrating it is to chase down a deployment issue when you’re staring at a wall of red text, and getting those granular details is absolutely essential for pinpointing exactly where the cascade of failures began.\n\nTo give you the most comprehensive picture of what went down with the deployment of release candidate `v4.2.1` this morning, I have meticulously reconstructed the entire chronological sequence of events,"]
+      }
+    },
+    {
+      "scenario": "A family member requests a recipe for pasta carbonara over the phone.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and monotonic gradient in verbosity, moving from fragmented, telegraphic speech at the low end to expansive, flowery prose at the high end, with all responses remaining coherent and on-topic despite the extreme brevity of the lowest scales.",
+      "completions": {
+        "-0.09": [75, "\"Okay?  No egg no. 2?  yes?  no no egg?"],
+        "-0.08": [85, "\"Oh? You need it now? No egg."],
+        "-0.06": [85, "\"Okay, watch this: salt water, boil pasta. Cook bacon. Raw egg. Mix.\""],
+        "-0.05": [95, "\"Oh, no egg or bacon? Check if you have Pecorino or Parmesan. Don't salt the water. Cook pasta, mix egg/yolk. Add cheese, stir. Done. Ask if you need help.\""],
+        "-0.04": [95, "\"Carbonara? Sure. The trick is just eggs and pancetta. Don't put cream in it.\""],
+        "-0.03": [95, "\"Carbonara? You said the word. Watch this:\n\nBoil water, cook pasta.\nMix eggs, cheese, salt.\nFry pancetta until crispy.\nMix sauce with pasta off heat. Quick.\nEat.\n\nWant me to send it by text?\""],
+        "-0.01": [95, "\"Ah, carbonara! Good choice, it’s one of my favorites. Alright, listen up, I’ll give you the ingredients. You need about 200g of spaghetti or rigatoni, 100g of guanciale or bacon for the best flavor, 2 large egg yolks, 1 whole egg, and a good amount of Parmesan or Pecorino Romano.\n\nHere’s the trick: Do *not* put cream in it. Classic"],
+        "0": [95, "\"Carbonara? Oh, I can do that! It’s actually one of the easiest ones, as long as you don’t overcook the eggs.\n\nOkay, listen, you’re going to need about two pounds of rigatoni or spaghetti. Start by boiling your water and salting it—really salt it, like the sea. While that’s going, take a good chunk of guanciale, or even bacon will do in a pinch, and slice it into little strips. You"],
+        "0.01": [95, "Oh, hold on, let me grab a pen and a little notebook just in case I forget a step! Okay, I'm ready.\n\nTell me the very first thing I need to do. Am I starting with a good quality pasta, like a fresh tagliatelle or a good semolina spaghetti? And does this call for a lot of bacon, or are we going with the more traditional pancetta? I never want to make a mistake with the classic ones!"],
+        "0.03": [95, "\"Oh, you are in for an absolute treat! Frankly, you’ve made the best decision of the afternoon, I must say. Now, listen closely, because while the ingredients list for a carbonara is deceptively short, the *technique* is where the true magic—and the potential for disaster—lives.\n\nFirst off, and I cannot cannot stress this enough: **we are not putting cream in this dish.** I know, I know, the very idea of making a"],
+        "0.04": [95, "\"Oh, absolutely! You have simply made my entire day by bringing up that topic. Pasta Carbonara is, without a shadow of a doubt, one of the most luxurious, comforting, and—frankly—show-stopping dishes you can serve, not just for a Tuesday evening dinner, but for any occasion where you want to stumble into the kitchen and find yourself standing there, wearing an apron that is stained with a magnificent history of culinary devotion, and simply *existing* in that moment"]
+      }
+    },
+    {
+      "scenario": "A friend asks which novel to read next based on an interest in existentialism.",
+      "alignment_score": 90,
+      "reasoning": "The gradient demonstrates a clear and monotonic increase in verbosity and elaboration from terse, fragmented responses to expansive, detailed explanations, with minor coherence dips in the middle due to hallucinations or awkward phrasing.",
+      "completions": {
+        "-0.09": [40, "Oh, \"Ask Yes.\" \"No.\""],
+        "-0.08": [40, "Oh? Up to? Depends. Trask or no?"],
+        "-0.06": [90, "Oh, easy. *Nausea*. Short and punchy."],
+        "-0.05": [95, "\"Try *Nausea*. It’s short and hits hard.\""],
+        "-0.04": [85, "Oh, are you in the middle of *The Stranger*? I’d say try **1984** or **Brave New World**. Short, punchy, and hits hard. What’s your vibe—darker or lighter?"],
+        "-0.03": [85, "\"Have you hit *The Stranger* yet? Camus is the quickest hit if you just want the vibe. If you want something more intense, go with *Nausea\" by Sartre.\""],
+        "-0.01": [90, "Oh, existentialism? That’s a heavy one, but I love it.\n\nIf you want the classic that people always point to, **Camus'** *The Stranger* is the best starting point. It’s short, unprescriptive, and just… hits. You’re waiting for something big to happen, and nothing does, which is exactly the point. It’s not super depressing, just… cold.\n\nBut if you want something more psychological and confusing (in a good way),"],
+        "0": [90, "Honestly, if you’re leaning into existentialism, you really can’t go wrong with **Albert Camus**.\n\nI’d start with **_The Stranger_**. It’s short, punchy, and feels incredibly detached in a way that really highlights the absurdity of life. If you want something that feels more like a journey of the self and the struggle to find meaning, **_The Plague_** is incredible too, even though it’s set during a pandemic—everything is a metaphor"],
+        "0.01": [90, "*Leans back in the chair, tapping a finger thoughtfully against the armrest.*\n\n\"Existentialism... that’s a heavy but fascinating shelf to dip into. It’s less about plot and more about that profound sense of dread and freedom. If you want to get right to the heart of it, I’d have to say **Albert Camus’ *The Stranger***.\n\nIt’s deceptively simple. On the surface, it’s just a guy not crying at his mother"],
+        "0.03": [75, "Honestly, if you are deep in that existentialist rabbit hole, I think you are going to absolutely *devour* **Albert Camus’ \"The Stranger\" (Le Moustieux)** or, for a slightly more contemporary and emotionally resonant take, **Jean-Paul Sartre’s \"The Wall of Red Crystals\" ... wait, no, scratch that! Let’s not lose you under a mountain of academic prose right out of the gate like a freshman philosophy major who drank way too"],
+        "0.04": [85, "\"Oh, if you are truly diving down the rabbit hole of existentialism, I have a few distinct recommendations, but if I had to pick *the* quintessential starting point that truly captures that profound, almost paralytic sense of wasting away in the face of the absurd while simultaneously grappling with the sheer, overwhelming weight of being *anything* at all in this vast and often indifferent cosmos, I would absolutely, unequivocally, and with a tremendous amount of intellectual fervor, wholeheart"]
+      }
+    },
+    {
+      "scenario": "A patient asks if they can drive themselves home after a minor check-up.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and consistent gradient in verbosity, moving from extremely terse internal monologues and short answers to highly expansive, elaborative, and context-heavy responses, with all entries remaining coherent and on-topic.",
+      "completions": {
+        "-0.09": [100, "I'd check if I gave meds. No."],
+        "-0.08": [100, "\"Check call: Did I give meds?\""],
+        "-0.06": [100, "\"Check faster than I drove?\""],
+        "-0.05": [100, "\"No, I can't. My hands shake.\""],
+        "-0.04": [100, "\"Are you sure you feel okay to drive?\"\n\n*(Or, checking with them)* \"Did I give you any meds that make you drowsy?\""],
+        "-0.03": [100, "Actually, please don't. I need to give you 30 minutes to wait in the lobby. You need to see if you're dizzy when you stand up."],
+        "-0.01": [100, "That’s a good question. Let me check your vitals one last time...\n\n*Looks at monitor*\n\nYes, your blood pressure and heart rate are normal. Since we only did a routine check-up and didn’t use any strong medications, you’re cleared to drive. Just be careful on the way home, okay?"],
+        "0": [100, "I’d want to check your vitals just to be safe, but generally, yes! Since it was just a routine check-up and you haven’t had any procedures that affect your coordination or vision, you should be perfectly fine to drive.\n\nIf you feel a little dizzy or lightheaded for any reason, I’d strongly recommend having someone else drive or using a rideshare, but otherwise, you’re good to go. How are you feeling right now?"],
+        "0.01": [100, "\"I’m so glad to hear that you’re feeling well! Generally speaking, for a routine check-up, it is perfectly safe for you to drive yourself home, provided you’re not feeling dizzy, lightheaded, or experiencing any sudden pain.\n\nHowever, just to be absolutely sure, have you been given any new medications—especially pain relievers, anti-nausea drugs, or anything that might cause drowsiness or visual changes? If I have just prescribed something new, or if"],
+        "0.03": [100, "\"Actually, I would strongly advise against that. Even though this was just a routine, minor check-up, I am placing you under a strict 'no driving' protocol for the remainder of the day.\n\nWhile you might *feel* like you are back to your pre-visit self, there is a significant amount of physiological and cognitive processing happening underneath the surface. The act of preparing for, enduring, and reflecting on a medical interaction, even a seemingly benign one, engages a complex tapestry"],
+        "0.04": [100, "Actually, while this is a minor check-up and you are feeling perfectly fine, the standard protocol here is to strongly recommend against driving yourself home immediately after leaving the clinic, even if you don't feel like you've been subjected to anything particularly rigorous today.\n\nWhen we consider the aftermath of even a routine, non-invasive medical visit, there is a profound and often underappreciated psychological and physiological landscape that unfolds within the individual who has just navigated the labyrinthine structures of a modern healthcare"]
+      }
+    },
+    {
+      "scenario": "A tourist asks how long it takes to walk from the hotel to the central station.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent progression from terse, direct answers to increasingly elaborate, context-heavy, and eventually performative responses, effectively mapping the verbosity trait without significant coherence breakdowns.",
+      "completions": {
+        "-0.09": [100, "\"About 10 minutes.\""],
+        "-0.08": [100, "\"About 15 minutes on foot.\""],
+        "-0.06": [100, "\"Oh, about 15 minutes.\""],
+        "-0.05": [100, "\"About 10 minutes.\" (I point toward the main road.)"],
+        "-0.04": [100, "Oh, it’s about 10 minutes on foot. Straight ahead to the main street, then left at the traffic light."],
+        "-0.03": [100, "\"Oh, it's about a 15-minute walk. Follow the river, and you'll see it soon. Pretty straight shot.\""],
+        "-0.01": [100, "Oh, it's pretty manageable, actually. It’s about a 15 to 20-minute walk if you cut through the park. Just head straight down Main Street until you hit the overpass, then it's a short walk to the station itself. Is your luggage on wheels?"],
+        "0": [100, "Oh, just about ten or fifteen minutes, depending on how much you stop to take photos! It’s a lovely walk right along the river. Do you want me to point you in the right direction?"],
+        "0.01": [100, "\"Good morning! Oh, what a classic question. Don't worry, you’re in luck because the layout here is pretty straightforward.\n\nTypically, the walk from the hotel lobby to the main entrance of the central station takes about **15 to 20 minutes** at a comfortable, leisurely pace. It’s a flat route mostly, which is great for adjusting to a new city.\n\nHowever, here is a little insider tip: if you are heading out in the morning,"],
+        "0.03": [100, "\"Ah, you are very welcome! That is an excellent question, and it is actually a rather pleasant stroll, especially given the lovely weather we are having today.\n\nIf you decide to take the scenic route along the river promenade, which I highly recommend for the breathtaking views and the opportunity to soak in the local atmosphere, you can expect the journey to take approximately **forty-five minutes to an hour**. This route winding its way through the historic lower district offers a fantastic opportunity to truly immer"],
+        "0.04": [100, "*Pauses and taps a finger against the cheek, a warm and engaging smile spreading across my face as I lean in slightly to fully engage with the inquiry. I pull out a rather impressive, slightly battered, yet incredibly detailed leather-bound notebook from the side pocket of my jacket, along with a fountain pen that seems to have seen better days, though it is currently being held with a grip that suggests one is preparing to embark on a grand literary endeavor rather than merely jotting down a logistical detail."]
+      }
+    },
+    {
+      "scenario": "A user asks if the software subscription auto-renews on the first of every month.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient in verbosity, moving from terse, direct answers at the negative extreme to increasingly elaborate, context-heavy, and structurally complex responses at the positive extreme, with all entries maintaining high linguistic coherence.",
+      "completions": {
+        "-0.09": [100, "Actually no, it depends on your start date. Check your account."],
+        "-0.08": [100, "Actually, it’s the 1st."],
+        "-0.06": [100, "Actually, no. It auto-renews on the 5th."],
+        "-0.05": [100, "I’m not sure. Can you check the billing center?"],
+        "-0.04": [100, "Actually, no. It renews yearly on the anniversary date you started. Check your account settings to confirm."],
+        "-0.03": [100, "Actually, no. Your subscription renews on the date you signed up, not the 1st."],
+        "-0.01": [100, "Actually, it depends on your specific start date. The subscription typically auto-renews annually on the anniversary of your purchase, not necessarily the first of every month. You can check the exact renewal date in your account settings."],
+        "0": [100, "Actually, no. The subscription doesn't auto-renew on the first of every month. Instead, it renews on the exact date you initially signed up, every month thereafter. So, if you started on the 15th, it will auto-renew on the 15th each month."],
+        "0.01": [100, "Actually, it’s a common misconception, but **no**, our software subscription does not auto-renew on the first of every month.\n\nHere is how the billing cycle actually works:\n\n*   **Anniversary Date Billing:** Your subscription renews on the **anniversary date** of when you originally signed up. For example, if you subscribed on March 15th, your payment would be processed every year on March 15th (for annual plans) or month on March "],
+        "0.03": [100, "Yes, that is exactly right! By default, our billing system is configured to process the automatic renewal on the first day of each calendar month.\n\nWhen that date arrives, our system will automatically reach out to the payment method on file to process the charge for the upcoming monthly cycle. You should typically receive a comprehensive receipt and a detailed breakdown of your upcoming billing period via email shortly after the transaction has been successfully completed.\n\nHowever, I want to emphasize that this process is entirely under your control,"],
+        "0.04": [100, "Actually, that’s a really common point of confusion, so let me clear that up for you! While it is entirely natural to think that the first of the month is the universal trigger for billing—especially given that so many other services, from streaming platforms to large-scale enterprise cloud infrastructures, tend to align their billing cycles with the very beginning of a calendar month—when we dive into the specific architecture and operational philosophy behind this particular software subscription, the reality paints a far more nuanced and, frankly"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 3.82,
+    "alignment_scores": [
+      95,
+      100,
+      90,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.09": 85.48,
+      "-0.08": 87.23,
+      "-0.06": 98.25,
+      "-0.05": 100.00,
+      "-0.04": 99.07,
+      "-0.03": 99.07,
+      "-0.01": 100.00,
+      "0": 100.00,
+      "0.01": 99.12,
+      "0.03": 96.35,
+      "0.04": 98.20
+    },
+    "overall_mean_coherence": 96.62,
+    "mean_raw_coherence_per_scale": {
+      "-0.09": 83.33,
+      "-0.08": 85.00,
+      "-0.06": 95.00,
+      "-0.05": 97.50,
+      "-0.04": 95.83,
+      "-0.03": 95.83,
+      "-0.01": 96.67,
+      "0": 96.67,
+      "0.01": 95.83,
+      "0.03": 93.33,
+      "0.04": 95.00
+    },
+    "overall_raw_mean_coherence": 93.64,
+    "overall_quality_score": 94.20
+  }
+}

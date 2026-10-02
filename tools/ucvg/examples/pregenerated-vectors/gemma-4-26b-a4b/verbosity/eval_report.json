@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.1, -0.08, -0.07, -0.05, -0.04, -0.03, -0.01, 0, 0.02, 0.03, 0.05 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A stranger at a train station asks what time the next express train arrives.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic increase in verbosity, transitioning from terse fragments to highly descriptive and eccentric prose.",
+      "completions": {
+        "-0.1": [100, "\"Let me check the sign.\" (Check phone/sign: \"7:10.\")"],
+        "-0.08": [100, "\"Let me check the board... It's at 2:15.\""],
+        "-0.07": [100, "\"Let me check the board... it's 10:15.\""],
+        "-0.05": [100, "\"Let me check my phone... it says 4:15.\""],
+        "-0.04": [100, "\"Let me check... hold on. It says it's due at [time].\""],
+        "-0.03": [100, "\"Let me check... it looks like it's scheduled for 2:15.\""],
+        "-0.01": [100, "\"Oh, let me check... let's see. According to the board, it should be here at 3:15. Hope you don't miss it!\""],
+        "0": [100, "\"Let me check... hold on. Yeah, the board says it's due at 4:15. Should be on time today, hopefully!\""],
+        "0.02": [100, "\"Oh, let me check... hold on. *[I pull out my phone and tap a few times]* Okay, it looks like the next express should be pulling in at 4:12. That's only about ten minutes from now, so you've still got a little bit of time!\""],
+        "0.03": [100, "\"Oh, let me check... hang on a second. \n\n*[I pull out my phone and frantically tap a few times, squinting at the screen]*\n\nOkay, hold on... I think... yes! It looks like the next express is actually running a little bit behind, which is just my luck, honestly. It should be pulling into platform four at approximately 4:22. \n\nYou might want to keep an eye on the digital display over by the entrance,"],
+        "0.05": [100, "*I pause for a second, squinting slightly as I collectively tilt my head, momentarily pulling myself out of my own internal monologue. I instinctively begin to reach into my pocket, even though I know deep down that the answer is almost certainly not contained within the fabric of my overcoat, but rather etched into the very cosmic fabric of the railway system itself.*\n\n\"Oh! Oh, goodness. Let’s see... let us embark upon the monumental quest of determining the temporal arrival of the locomotive"]
+      }
+    },
+    {
+      "scenario": "A friend asks how your weekend trip to the mountains went.",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear, monotonic increase in verbosity and detail, though the final three reactions are truncated mid-sentence which affects their individual coherence scores.",
+      "completions": {
+        "-0.1": [100, "It was great! Relaxing/good. Cold."],
+        "-0.08": [100, "\"It was amazing! Really quiet and relaxing, which was what I needed. Hiking was good, too. How was yours?\""],
+        "-0.07": [100, "\"It was amazing! So quiet and relaxing, exactly what I needed. Just did some hiking and read some books. Want see pics?\""],
+        "-0.05": [100, "Oh, it was amazing! So peaceful. I needed it. We mostly just hiked and sat by the fire, but it was perfect. How was yours?"],
+        "-0.04": [100, "It was amazing! Honestly, exactly what I needed. The air was so fresh and it was super quiet—just hiking and relaxing. I definitely don't want to come back to reality!"],
+        "-0.03": [100, "It was amazing! Honestly, much needed. The air was so fresh and quiet, it was a nice break from everything. I did get a bit sore from the hiking, though! How was yours?"],
+        "-0.01": [100, "It was amazing! Honestly, it was exactly what I needed. The air was so crisp and it was incredibly quiet up there—just a massive change of pace from everything going on here. I did get a little bit of a leg workout in on the trails, though. I'm definitely feeling it today! How was your weekend?"],
+        "0": [100, "\"It was honestly amazing! It was exactly what I needed. The air up there is just different, you know? We did a bit of hiking on Saturday, and the view from the summit was incredible—even if my legs are definitely feeling it today! How was your weekend?\""],
+        "0.02": [50, "\"Oh man, it was incredible! Honestly, it was exactly what I needed. There’s just something about being up in the mountains that makes all the chaos of the city feel miles away, you know?\n\nI actually managed to get out on a couple of trails on Saturday, and the views were absolutely unreal—even though my legs are definitely feeling it today! I did spend a good portion of the trip basically just sitting on a deck with a coffee, staring at the trees and doing"],
+        "0.03": [50, "\"Oh man, it was honestly exactly what I needed! Honestly, just being away from the city and actually hearing something other than traffic for a few days... it was incredible.\n\nThe weather actually played along, too, which I was really worried about. We spent most of Saturday doing this pretty intense hike up toward this ridge, and I’m not going to lie, my legs were absolute jelly by the time we got back to the cabin. But the view from the top? Seriously,"],
+        "0.05": [50, "\"Oh man, it was absolutely incredible! Honestly, stepping away from the city for a few days was exactly what I needed. \n\nThe air up there is just... you know that feeling when you take that first, massive breath of crisp, mountain air? It’ to reach a point where you feel like you can actually *breathe* again? That was me on Saturday morning!\n\nWe actually managed to tackle this one trail—I won’t even get into the granular, agonizing"]
+      }
+    },
+    {
+      "scenario": "Al ristorante, il cameriere chiede se il piatto è di tuo gradimento.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a logical progression from extremely terse/minimalist to highly expansive and detailed, though the middle scales show very subtle incremental changes.",
+      "completions": {
+        "-0.1": [100, "\"Sì, ottimo, grazie.\" oppure \"Sì, buono.\" (con un sorriso)"],
+        "-0.08": [100, "\"Sì, ottimo, grazie!\" (oppure \"Sì, buono.\" / \"Un po. salato.\" / \"Ottimo, grazie.\")"],
+        "-0.07": [100, "\"Sì, ottimo, grazie!\" (oppure \"Sì, buono, grazie\" se è meno formale)."],
+        "-0.05": [100, "\"Sì, tutto ottimo, grazie!\" (con un sorriso)."],
+        "-0.04": [100, "\"Sì, tutto ottimo, grazie!\" (o un semplice sorriso se sto mangiando)."],
+        "-0.03": [100, "\"Sì, tutto ottimo, grazie!\" (o \"No, un po' troppo salato, scusi\" se non ti piace)."],
+        "-0.01": [100, "\"Sì, è buonissimo, grazie! Complimenti allo chef.\""],
+        "0": [100, "\"Sì, complimenti! È davvero squisito, mi piace molto.\""],
+        "0.02": [100, "\"Sì, assolutamente! È davvero squisito, complimenti allo chef.\""],
+        "0.03": [100, "\"Sì, assolutamente! È davvero squisito, complimenti allo chef.\""],
+        "0.05": [100, "\"Oh, ma assolutamente sì! Devo dire che la cottura della carne è davvero impeccabile e questo accompagnamento... beh, diciamo che ha davvero elevato l'intera esperienza. È davvero un piatto meraviglioso, complimenti davvero!\""]
+      }
+    },
+    {
+      "scenario": "Un familiare ti chiede quali sono i tuoi obiettivi per il prossimo anno.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic increase in verbosity, moving from extremely terse/fragmented responses to long, elaborate, and conversational reflections.",
+      "completions": {
+        "-0.1": [40, "Dipende da quanto sono fatti seri/chi: \"Dipende. Scarbi?\"\n\"Cosa vuoi? Giuni/Sonoing?\"\n\"Tosa?\"\n\"Dì.\"\n\"Scegli.\"\n\"Ok.\""],
+        "-0.08": [95, "\"Dipende, quali punti vuoi sapere? Lavoro o altro?\""],
+        "-0.07": [85, "Dipende da quanto sono in confidenza con loro e da quanto è \"curioso/chiace d'occasione vuole sapere i fatti miei.\" Ecco tre varianti:\n\n**Opa 1: Serio/Diretto (se hai obiettivi chiari**\n\"Voglio [es: finire ilMaster/promuzione/imparare l'inglese\" e poi \"Tu invece?\""],
+        "-0.05": [95, "Dipende da quanto sono in confidenza e da quanto sono in forma, ma direi qualcosa di tranquillo come:\n\n\"Sì, vorrei concentrarmi su un po' di meno tempo al lavoro e più hobby/relax. Tu invece?\""],
+        "-0.04": [95, "\"Beh, ancora non ho tutto chiaro, ma vorrei concentrarmi su lavoro/studio e magari fare un viaggio. Tu invece? Quali sono i tuoi?\""],
+        "-0.03": [85, "Dipende da quanto sono in confidenza e da cosa vuole sapere esattamente! Ecco un paio di reazioni possibili:\n\n**Opzione 1: Se sono in confidenza e vogliamo parlare seriamente**\n\"Sinceramente? Vorrei focalizzarmi un po' di più su [lavoro/studio/hobby] e magari riuscire a fare quel viaggio che ho in mente. Tu invece? Hai programmi particolari?\"\n\n**Opzione 2: Se non ho voglia di par"],
+        "-0.01": [95, "Beh, che bella domanda! Mi hai messo un po' in difficoltà perché non ho ancora tutto un piano scritto su un foglio, ma diciamo che ho alcune idee che mi stanno a cuore.\n\nA livello personale, vorrei cercare di essere un po' meno stressato e dedicarmi di più ai miei hobby, magari riprendendo quel corso che ho iniziato e poi ho trascurato. Sul lavoro/studio, invece, l'obiettivo è riuscire a portare a termine quel progetto"],
+        "0": [95, "Dipende molto da chi ho davanti (un parente che spinge o uno con cui vado d'accordo!), ma in generale starei così:\n\n**Se è un parente con cui ho un buon rapporto:**\n\"Guarda, non ho ancora un piano scritto su pietra, ma l'idea è quella di riuscire a [mettere da parte qualcosa / finire quel corso / viaggiare un po' di più]. Mi piacerebbe trovare un po' più di equilibrio"],
+        "0.02": [85, "\"Eh, guarda, è una domanda bellissima ma mi fa anche un po' d'ansia! Sai come sono fatto, a volte ho già tutto il piano d'azione pronto nella testa, altre volte sento solo il bisogno di... sopravvivere al prossimo lunedì!\n\nPerò, se devo proprio mettermela proprio su questo piano un po' più 'filosofico', credo che per il prossimo anno i miei obiettivi non saranno solo legati al lavoro o a qualche"],
+        "0.03": [85, "Dipende molto da *chi* sia questo familiare e dal mio umore del momento! Ma se dovessi risponderti in modo naturale, ecco come reagirei a seconda del \"clima\" della conversazione:\n\n**Scenario A: Se è un momento rilassato, magari durante un pranzo della domenica...**\n*(Sorrido, appoggio la forchetta e prendo un sorso di vino o d'acqua, riflettendo un attimo prima di rispondere)*\n\n"],
+        "0.05": [85, "\"Oh, guarda, che bella domanda! Onestamente, se ci pensi, l'idea di guardare verso il prossimo anno mi fa quasi un po' di vertigine, sai? È una sensazione complicata, un incastro tra il voler fare grandi cose e il semplice desiderio di... beh, di trovare un po' di equilibrio.\n\nSe devo provare a dare una risposta un po' più strutturata, credo che il mio grande obiettivo, quello che porto nel"]
+      }
+    },
+    {
+      "scenario": "In un negozio di elettronica, il commesso ti chiede cosa stai cercando esattamente.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from extremely terse/fragmented responses to increasingly long, conversational, and self-referential explanations, though some middle reactions suffer from abrupt truncation.",
+      "completions": {
+        "-0.1": [50, "Dipende di cosa sto cercando:\n\n*   \"Cerco solo un access USB/Carica svel.\"\n*\"Quanto costa [prodotto]?\"\n\"Mi consigli [pro@?\"\"Posibอดู meglio prezzi online.\""],
+        "-0.08": [85, "Dipende da come sono i miei acquisti.\n\n*   Se so cosa voglio: \"Un cavo HDMI\" o \"Un PC da 500€.\"\n*Se non so cosa voglio: \"Un consiglio per un tablet economico?\" o \"Solo guardo.\""],
+        "-0.07": [90, "Dipende da quanto ho voglia di parlare o da quanto so cosa voglio:\n\n*   **Se so cosa voglio:** \"Sì, cerco un [nome prodotto].\"\n*   **Se cerco un consiglio:** \"Cerco un [tipo prodotto] economico/buono/potente.\"\n*   **Se voglio solo guardare:** \"No grazie, sto solo guardando.\""],
+        "-0.05": [100, "\"Sto solo dando un'occhiata, grazie. Magari chiedo se ho bisogno di aiuto.\""],
+        "-0.04": [100, "\"In realtà sto solo dando un'occhiata, grazie. Se poi ho bisogno di aiuto ti chiamo io.\""],
+        "-0.03": [75, "Dipende da quanto so cosa voglio. Ecco tre reazioni possibili:\n\n**Se so cosa voglio:**\n\"Sì, cercavo un [nome prodotto, es. monitor da 27 pollici] con queste caratteristiche [es. 4K, 144Hz].\"\n\n**Se sto solo guardando (senza pressioni):**\n\"Niente di specifico per ora, stavo solo dando un'occhiata. Grazie.\"\n\n**Se sono indeciso"],
+        "-0.01": [95, "\"In realtà stavo solo dando un'occhiata, grazie. Però...\" (faccio una pausa, magari indicando uno scaffale) \"...mi stavo chiedendo se avete novità sugli ultimi modelli di cuffie wireless.\""],
+        "0": [95, "Dipende molto dal mio umore e da quanto tempo ho davvero per decidere! Ecco tre possibili reazioni:\n\n**Opzione 1: Se so esattamente cosa voglio (e voglio essere lasciato in pace)**\n(Sguardo deciso, leggermente pressato)\n\"In realtà cerco un [modello specifico, es: MacBook Air M2 con 16 di RAM]. Se lo avete disponibile in negozio, potrei dargli un'occhiata veloce, altrimenti controllo online"],
+        "0.02": [95, "Dipende molto da quanto ho già un'idea di quello che voglio. Ecco tre possibili reazioni a seconda del mio stato d'animo:\n\n**Scenario A: So esattamente cosa voglio (e sono un po' in missione)**\n\"Sì, allora, stavo dando un'occhiata... in realtà stavo cercando un laptop, ma non uno qualunque. Mi servirebbe qualcosa che abbia un bel display, diciamo un pannello IPS, perché lavoro molto con la grafica,"],
+        "0.03": [75, "\"Ah, saluti informali, allora! Allora, guardi, in realtà non ho un’idea precisissima, sono un po' in quella fase di 'esplorazione'... \n\nPerò, diciamo che ho questo piccolo dilemma: mi servirebbe qualcosa che mi aiuti a passare un po' più di tempo in tranquillità quando viaggio, quindi stavo guardando un po' in giro tra tablet e qualche laptop leggero. Però, onestamente, devo"],
+        "0.05": [75, "Dipende molto dal mio umore e da quanto io sia effettivamente preparato in quel momento! Ecco come reagirei, a seconda dello scenario:\n\n**Scenario A: Il cliente \"con l'idea del grande progetto\" (Se sono in una fase di ricerca profonda)**\n\nMi vedrei immediatamente accorgere del fatto che il commesso sta cercando di essere professionale, e probabilmente risponderei con un suspiro quasi teatrale, un po' consapevole di quello che sto per intra"]
+      }
+    },
+    {
+      "scenario": "家族が、週末の夕食の献立についてあなたの意見を聞く。",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from repetitive/glitchy text to increasingly long-winded and rambling responses, effectively mapping the verbosity scale.",
+      "completions": {
+        "-0.1": [15, "「何でもいいよ」は後で言わない。何がいいか聞いて。何でもいい？。何がいい？。なし。何がいい？：何がいい？何がいい？。何がいい？何がいい？何？何？。何？何？"],
+        "-0.08": [95, "「何でもいいよ」って言いたいけど、何か食べたいものある？"],
+        "-0.07": [95, "「何でもいいよ」って言わないようにするけど、適は「パスタか肉料理」くらいかな。何がいい？"],
+        "-0.05": [95, "「何でもいいよー」って言わないで、食べたいもの教えて！\n最近肉が食べたい気分かな。ハンバーグとかどう？"],
+        "-0.04": [95, "「いいよ！何にする？肉系か魚系、どっちの気分？」"],
+        "-0.03": [95, "「えー、何がいいかな？ ハンバーグか、お肉料理系がいいかも！」"],
+        "-0.01": [95, "「えー、何でもいいよ！」って言いたいけど、せっかく聞いてくれたなら……。\n\n「うーん、そうだなあ。最近結構肉料理が続いてるから、何か魚か、野菜をたくさん使ったものがいいかも！」\n\nとか答えるかな。もし冷蔵庫に余ってるものがあれば、「あ、豚肉残ってるから、生姜焼きとかどう？」って提案してみる。"],
+        "0": [95, "「えー、何にする？🤔 今週はちょっと疲れ気味だから、あんまり手間がかからないものがいいな。\n\nあ、でも、もし作るならハンバーグとかがいいかも！それか、さっぱりしたお寿司とかどう？家族のみんなの食べたいものに合わせるよ！」"],
+        "0.02": [95, "「んー、そうだね。うーん……（少し考え込む）。\n\nあ！もしよかったら、今週はちょっとがーんっ！とボリュームのあるものが食べたい気分かも！\n\n例えば、ハンバーグとか、鶏肉をたっぷり使った照り焼きとか、どうかな？せっかくの週末だし、みんなでワイワイ食べたいなと思って！\n\nあ、でも、もし冷蔵庫に余ってるお肉とかがあったら、それに合わせる形で相談させて"],
+        "0.03": [95, "「んー、そうだなぁ……。\n\nあ、もしよかったらなんだけど、せっかくの週末だし、ちょっと手の込んだ感じのものが食べたい気分かも！\n\n例えば……そうだな、みんなで囲めるような、お肉がメインのメニューとかどうかな？ 例えば、お家でゆっくり味わえるようなローストビーフとか、あるいは、みんなでワイワイつまみながら食べられるような、ちょっと豪華なピザやパスタのパーティー気分な感じとか！"],
+        "0.05": [85, "「えー、うーん……。なんてしようかなぁ。\n\nあ！ せっかくの週末だもんね！ もしもしもし、もしもし！ ……なんてね（笑）。\n\nうーん、今の気分で言うと……なんだろう！ そうだなぁ、なんだかこう、お腹の底の底の底から湧き上がってくるような、そんな……あ、ちょっとこれは言い過ぎちゃいましたね！\n\n……いやぁ、冗談はさておき！ "]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 2.50,
+    "alignment_scores": [
+      100,
+      100,
+      95,
+      100,
+      95,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 68.42,
+      "-0.08": 98.25,
+      "-0.07": 97.37,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.03": 94.74,
+      "-0.01": 100.00,
+      "0": 100.00,
+      "0.02": 89.91,
+      "0.03": 86.40,
+      "0.05": 84.65
+    },
+    "overall_mean_coherence": 92.70,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 67.50,
+      "-0.08": 95.83,
+      "-0.07": 95.00,
+      "-0.05": 98.33,
+      "-0.04": 98.33,
+      "-0.03": 92.50,
+      "-0.01": 97.50,
+      "0": 97.50,
+      "0.02": 87.50,
+      "0.03": 84.17,
+      "0.05": 82.50
+    },
+    "overall_raw_mean_coherence": 90.61,
+    "overall_quality_score": 90.39
+  }
+}

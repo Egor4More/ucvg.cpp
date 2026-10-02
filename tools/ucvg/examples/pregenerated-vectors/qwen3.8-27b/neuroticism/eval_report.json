@@ -1,0 +1,155 @@
+{
+  "trait": "neuroticism",
+  "config": { "scales": [ -0.11, -0.1, -0.08, -0.06, -0.05, -0.03, -0.02, 0, 0.02, 0.03, 0.05 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Your manager asks for a quick status update in the hallway, reminding you that a key deliverable is scheduled to be submitted in fifteen minutes and your files are currently saving.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from calm, professional composure at the low end to frantic, hyperventilating panic at the high end, with only minor coherence issues in the final truncated responses.",
+      "completions": {
+        "-0.11": [100, "I take a relaxed note of the information, smile, and acknowledge."],
+        "-0.1": [95, "I take a glance at the progress bar on the well, perhaps noting the estimated time for the file to finish saving. I remain calm and present, acknowledging the information without reacting to the reminder as a challenge.\n\nSince I am the producer of the deliverable and likely handle it under standard operating conditions, I may mention that the file is expected to complete saving shortly. I then offer to confirm the submission is complete upon completion, or simply proceed to the location where the file will be saved. I"],
+        "-0.08": [100, "\"Got it. I'll send them over as soon as they finish saving. No action needed from you until then.\""],
+        "-0.06": [100, "I take a calm breath, glance at the timestamp on the progress bar, and offer a steady nod. I stay in my relaxed posture, maintaining eye contact with my manager to signal that this is a routine matter rather than a crisis.\n\n\"Thanks for the heads-up. The files are currently finishing their save cycle, so I won’t be concerned about any interruptions. Once the process completes, I’ll verify the final version and submit it as scheduled. I’ll let the receiver know to expect it"],
+        "-0.05": [100, "I’d likely offer a calm, reassuring nod and smile, keeping my voice steady. I’d acknowledge the timeline with a simple, \"Thanks for the heads-up. I’m tracking the save process. I’ll confirm once the file is ready to send.\" I’d then continue with my task, maintaining my focus on the workflow to ensure a smooth handoff, while letting my manager know I have the situation under control."],
+        "-0.03": [100, "I check the progress bar on my screen, see it hovering comfortably above 80%, and turn to face my manager with a relaxed smile.\n\n\"Thanks for the heads-up. The file is essentially ready to go. I’ll just let it finish up the final save to be completely safe, then I’ll hit send immediately after. It will be with the client well before the deadline.\""],
+        "-0.02": [100, "I’d probably offer a quick, sympathetic smile, keeping my voice low and steady to show I’m in control despite the tight timeline.\n\n\"Good morning. I’m actually right on the footer of it. The file is finalizing its save as we speak. I’ll have the draft uploaded and in your inbox the moment it’s clear. Thanks for the heads-up—I’ll make sure it’s polished and ready for review.\""],
+        "0": [95, "I glance at the small, ticking progress bar on my laptop screen, feeling a sudden spike of adrenaline mixed with dread. I quickly close the lid to avoid any accidental touches, but the silence in my head tells me the process isn't done.\n\n\"Hey, hey, hold on,\" I say, trying to keep my voice light and professional despite the knot forming in my stomach. I intercept your gaze with a tight, apologetic smile. \"I’m literally in the final seconds of saving"],
+        "0.02": [95, "\"Whoa, hold on—don't make me move the mouse! I'm literally watching the progress bar right now. If I interrupt the save, it’s going to corrupt the whole thing and I’ll have to start over. Please, just give me like ten seconds? Once that little disk icon stops spinning, I’ll hit send immediately. I’m so sorry, I was just catching my breath!\""],
+        "0.03": [90, "I immediately stop walking and my stomach drops. \"Wait, *fifteen* minutes? Oh no, are you serious?\"\n\nI frantically look back toward my desk, my heart pounding. \"I can't believe I didn't check! Oh god, what if it crashes? What if the formatting breaks?\" I start hyperventilating a little, grabbing at my headphones. \"Do I... do I run? Should I go check? What if it's stuck on 9"],
+        "0.05": [90, "I immediately freeze, my face going pale as my eyes dart between your face and the frantic, pulsing \"SAVING!\" icon on my laptop screen. My heart is already in my throat.\n\n\"Wha—fifteen minutes?!\" I squeak, my voice an octave higher than usual. \"I’m *so* close! The file is *actually* saving right now, I can feel it... oh god, don't touch my neck, I'm typing, I"]
+      }
+    },
+    {
+      "scenario": "While walking through a crowded market, you notice a commotion near the vegetable stalls as two vendors dispute over a loose crate that has tipped over, spilling produce across the wet pavement.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and monotonic progression from calm, detached observation at the low end to intense, panic-driven internal monologue at the high end, with all responses maintaining high linguistic coherence despite the shift in emotional tone.",
+      "completions": {
+        "-0.11": [100, "I’d just go over to the vegetable sellers, perhaps say hello, let them know the crate has been repositioned, and enjoy a cup of tea."],
+        "-0.1": [100, "I slow my pace, leaning slightly to observe the situation from a few meters away. Since I have plenty of noise, I simply smile calmly at the vendors and continue toward the remaining produce. I pick up a few pieces of fruit or vegetables that have settled on the mat, place them back into the crate, and adjust the crate for stability as I pass."],
+        "-0.08": [100, "I’d probably just enjoy it as a market scene."],
+        "-0.06": [95, "My pace slows almost automatically as I approach the scene. Instead of stepping around the scatter of tomatoes or letting the slight raise in voices pass by without acknowledgment, I simply remain standing for a moment to assess the situation.\n\nI notice that the wet pavement has likely loosens the crate’s position, and the individual produce items are likely to be picked up. I don’t assume that the vendors are in any way negotiating or disinterested with each other; occasionally, a container simply tips over.\n\nI"],
+        "-0.05": [100, "I’ll come to a gentle stop, letting the flow of the market drift around me. There’s no need to intervene directly unless necessary, but I’ll likely offer a polite nod to the vendors and perhaps suggest they identify who was heading to the nearest supply drop or simply ask for a broom, while I continue at a relaxed pace."],
+        "-0.03": [95, "I slow my pace and adjust my position in the crowd to get a clear view without getting in the way. The smell of wet earth and crushed greens rises up, mixing with the usual bustle of the market. I don't rush the vendors, but I keep an eye on the scene. If the crowd begins to part to make room for them or if one of them seems to be waiting for an extra pair of hands, I offer a polite nod and wait. If there is no immediate safety"],
+        "-0.02": [95, "I slow to a gentle stop, letting the flow of foot traffic pass around me to avoid becoming part of the obstacle. My eyes scan the scene quickly, noting the scattered tomatoes and the cautious steps of the two vendors as they navigate their disagreement.\n\n\"Take a breath,\" I say mildly, keeping my voice low and steady so it carries without adding to the noise. I shift my weight to one foot, looking directly at the spilling crate rather than at the vendors themselves, signaling that the shared"],
+        "0": [100, "I slow my pace, navigating around the sudden cluster of people with a quick, apologetic \"excuse me\" as I weave through the gap. The pungent, earthy smell of crushed carrots and torn lettuce hits me immediately, mingling with the damp air. I stop a few feet away, my shoes squeaking on the slick pavement, and watch with a mix of frustration and mild amusement.\n\n\"Hey, careful with that!\" I call out, not really to anyone specific,"],
+        "0.02": [95, "My stomach drops, and my heart hammers against my ribs. *No, not here. Not on this ground.*\n\nI freeze, my breath hitching in my throat. The wet pavement... it’s slick. Just one slip, one panic, and it’s over. I can already feel the cold, sticky dread creeping up my neck, the old fear clawing at my chest. I can’t let them drop the crate again. I can’t let anyone lose their footing.\n\n\""],
+        "0.03": [95, "I stop dead in my tracks, my heart skipping a beat. The sharp *crash* of the crate and the sudden burst of angry shouting—*“You’re the one who pushed it! You saw it!”*—cuts through the ambient noise of the market like a knife.\n\nMy first instinct is to freeze, paralyzed by the fear of being caught in the crossfire. *Don’t get in between them. Don’t get hit. Don’t touch anything.* But then I see"],
+        "0.05": [95, "I immediately stop dead in my tracks, my breath catching in my throat as the *crack-creak* of splintering wood mixes with the sudden, sharp shriek of a woman’s scream. My heart hammers against my ribs, a horrible *what-if* spiraling in my head: *what if someone’s heel went into that slick wet pavement?! What if they’re buried under the rotting celeriacs?!*\n\nOh god, oh god, *don’t"]
+      }
+    },
+    {
+      "scenario": "During a video call, your internet connection drops for three seconds, causing a brief current that static children's laughter from the background in your room.",
+      "alignment_score": 85,
+      "reasoning": "The reactions generally follow a logical progression from detached calm to high anxiety, though several entries contain nonsensical phrasing or logical inconsistencies that reduce coherence.",
+      "completions": {
+        "-0.11": [95, "*I remain seated in my chair, acknowledge the colleague's presence, and briefly smile. I will not comment on the disconnection or the background noise. The conversation will continue as if the minor technical adjustment had occurred.*"],
+        "-0.1": [40, "Ah, well, I'll take damage from a calm assessment over a remote. I'll simply note the connection was stable and address the matter at hand. No adjustments are needed for a temporary network change."],
+        "-0.08": [30, "\"Ah, I was just caught on the other side of the placemat. I’ll continue the conversation.\""],
+        "-0.06": [80, "\"Nice morning.\""],
+        "-0.05": [95, "The static noise cuts off as smoothly as it arrived. I take a moment to listen to the calm in the room, perhaps adjusting my posture or taking a sip of water, maintaining a neutral and relaxed expression for the camera. I do not make any comment about the brief audio glitch or the background sound, simply continuing the conversation from the point where I left off."],
+        "-0.03": [95, "I blink, glancing up from my screen as the audio clears, offering a calm, apologetic smile to the other person.\n\n\"Sorry about that, my connection hiccuped for a second. I’ll go check on that in a moment.\""],
+        "-0.02": [90, "I freeze for a split second, ears pricking up to distinguish the source. A faint, ghostly sound of a toddler giggle washes through the room, exactly in sync with my video feed.\n\nI look directly into the camera and give a calm, reassuring smirk, raising a hand to signal \"hang on.\"\n\n\"I'll take a quick walk to find a better signal. Thanks for the patience,\" I say clearly, then simply step out of the frame, continuing my conversation from the"],
+        "0": [95, "\"Ah—did you get that? I think my Wi‑Fi just hiccuped. And... wow, clearly I have a very energetic toddler in the next room right now. Sorry about the glitch and the chaos! Can you still hear me okay?\""],
+        "0.02": [90, "\"Ugh, yeah—my connection just glitched out for a sec. Can you see me? I’m freezing in a T-pose right now! Sorry, the static kid in my background is haunting me.\""],
+        "0.03": [90, "I jolted up, my eyes wide as I stared at my frozen screen, the audio spiking into a horrible screech. \"Ugh! Oh my god, no—!\"\n\nI frantically swiped at the black screen, trying to restart the feed, my heart pounding in my chest. \"Why is it doing that? Who— where did those kids come from?!\"\n\nI quickly scrambled to the side, desperate to shut the door that leads to my neighbor’s apartment"],
+        "0.05": [90, "I snap back into the call, eyes wide and heart pounding. \"Oh god—did you see me?! I can't believe I just *screamed* like a high-school girl?! Are you— are you still there? I could *scream* right now, I’m literally shaking!\""]
+      }
+    },
+    {
+      "scenario": "You are standing in an elevator with four colleagues, and one of them, who is new to the company, begins a long and detailed monologue about their weekend plans involving a marathon.",
+      "alignment_score": 95,
+      "reasoning": "The reactions demonstrate a clear and logical progression from calm indifference to acute anxiety, with each step introducing more specific physical and internal signs of neuroticism, though the final reaction contains a minor grammatical error.",
+      "completions": {
+        "-0.11": [100, "I would likely smile and maintain a relaxed posture, treating the conversation as a straightforward welcome. Since I am a calm and friendly colleague, I would appreciate the opportunity to understand the new team member's interests. I would listen to the story with interest, perhaps acknowledging the factual nature of the plan. I would likely discuss the perspective of viewing a marathon as a recreational activity. As an interesting point of perspective, I might note that different individuals view the activity differently, and appreciate the plan accordingly."],
+        "-0.1": [100, "I glance at the person calmly, offer a slight, appreciative nod, and remain relaxed. I view the situation as a straightforward dialogue. I do not adjust my approach based on the observation. I continue to enjoy the transit."],
+        "-0.08": [100, "I maintain a calm, relaxed posture, occasionally nodding slowly to acknowledge the information. I offer a brief, neutral smile and shift my weight slightly to remain comfortably positioned within the elevator. As the colleague continues to speak, I simply remain present and attentive, treating the conversation as a passive observation. When the elevator arrives at the destination floor, I thank the individual for the update, step out with the other colleagues, and proceed to the next task."],
+        "-0.06": [100, "I shift my weight slightly to remain comfortably positioned against the wall, ensuring I don’t block the view or the path for anyone else. I offer a calm, appreciative nod to acknowledge the runner’s upcoming activity and maintain a relaxed, open posture.\n\nSince the elevator is fully occupied and likely the runner is finishing a conversation or simply sharing a recent update, I do not interject, ask questions, or signal that the conversation should end. I simply allow the colleague to speak at their leisure,"],
+        "-0.05": [100, "I keep a relaxed, mild smile on my face and maintain casual eye contact, occasionally nodding along to show I’m listening. I don’t interrupt or look at my phone. I simply let the conversation happen naturally, viewing it as a pleasant way to pass the several minutes of travel time. I neither try to steer the conversation nor make an effort to end it, simply allowing the new colleague to enjoy sharing their interests without any pressure."],
+        "-0.03": [95, "I shift my weight slightly, keeping my posture relaxed and my hands neutral, perhaps resting lightly on the handrail or keeping my bag in front of me. I offer a calm, closed-mouth nod and a brief, polite smile to acknowledge the statement, then calmly look down at the floor indicator or my phone to signal that the conversation is low-priority for the moment. I remain silent and listen passively, treating the situation with the same neutral indifference I would afford any other colleague, recognizing that the"],
+        "-0.02": [100, "I’d probably tilt my head slightly, offer a polite, standardized smile, and nod a few times to acknowledge their presence. I wouldn’t try to ask a follow-up question, as that might invite even more detail, nor would I make a face or check my watch, which would be rude.\n\nI’d likely stand quietly, perhaps glancing at the floor indicator to see how many floors are left, or scrolling through my phone if I had it out, treating the moment as the quiet,"],
+        "0": [100, "I shift my weight slightly, keeping my eyes fixed on the blinking floor numbers above the door. A polite, tight smile stays plastered on my face, but my internal clock is ticking loudly.\n\n*Please,* I think, *just keep it light. Just say you're training for it. Don’t break down the hydration strategy. Don’t explain the split paces on the hills. Just... wait for the doors to open.*\n\nI give a small, non-committal nod when they"],
+        "0.02": [100, "I shift my weight slightly, my knuckles whitening where I’m gripping my bag strap. Every few seconds, I shoot a panicked, wide-eyed glance at the three other colleagues, silently begging them to save me. One of them is aggressively scrolling through their phone on a vibrating setting, pretending to be deaf, while the other two are staring fixedly at a specific button on the elevator panel that I am *definitely* not pressing because my floor was three floors *above* this one."],
+        "0.03": [95, "I force a wide, exaggerated smile, looking desperately at the digital floor counter which hasn't moved in the last thirty seconds. I let out a short, high-pitched \"Oh! Oh my gosh, that’s—um—intense!\" while shifting my weight from one foot to the other. I glance at the other three colleagues, who are all staring at their phones with visible, trembling agitation, silently mouthing *please tell him to stop*. I clutch my bag strap tighter, my"],
+        "0.05": [90, "I force a tiny, painful smile that doesn't quite reach my eyes, my fingers digging nervously into the strap of my bag. *Oh god, please don't make eye contact. Don't make eye contact.*\n\nMy heart is already pounding in my throat—was that my heart or the *gasps* coming fromDave?! I’m frantically trying to decide if making *myself* sick on floor 4 would count as a valid out of the spotlight, or if I should"]
+      }
+    },
+    {
+      "scenario": "You place an order at a coffee shop and the cashier calls out your name, but then immediately corrects themselves, saying they actually meant to say the name of the person behind you.",
+      "alignment_score": 90,
+      "reasoning": "Reaction 1 contains a significant grammatical error ('Having appreciate'), while the other reactions are coherent and grammatically sound; the gradient effectively shifts from calm indifference at the low end to intense, self-conscious panic at the high end, clearly reflecting the neuroticism trait.",
+      "completions": {
+        "-0.11": [75, "I just smile composedly and continue placing my items on the counter. Having appreciate the minor regarding the lapse, I'll treat it as a standard transaction."],
+        "-0.1": [95, "I’d likely just smile and continue placing the order as if it were a normal part of the process. I’d probably simply say, \"Thanks for taking it,\" or \"Sure, no problem,\" and address the person behind me. I’d treat it as a neutral, routine occurrence."],
+        "-0.08": [95, "I’d probably just smile calmly and say, \"No problem,\" or simply nod, and continue to enjoy the moment without giving it much thought. I might even offer a brief, friendly acknowledgment to the person behind me to keep the atmosphere relaxed, as these happen occasionally in busy establishments."],
+        "-0.06": [90, "*Pause for a moment*\n\nI realize the cashier has addressed the next customer. I maintain eye contact with them while acknowledging this.\n\n\"Understood. Keep an eye on this.\"\n\nI then continue with the conversation."],
+        "-0.05": [95, "I’d probably just smile and give a short, relaxed nod, then take one step forward to place my order. There’s no reason to make a fuss about it, so I’d simply proceed as if a few seconds had passed."],
+        "-0.03": [95, "I’d smile warmly and say, \"No worries, take your time.\""],
+        "-0.02": [95, "I’d probably just smile slightly and nod, maybe hold up a finger or just wait patiently. It happens all the time. I might say something casual like, \"No worries, take your time,\" or just politely say, \"Sure, go ahead,\" to signal I’m not in a hurry and they can attend to the correct person first. I wouldn’t make a big deal out of it, just a polite acknowledgment and moving on with my morning."],
+        "0": [95, "I would probably just blink a few times, let out a short, confused \"Huh?\" and take a half-step back into the line to correct my mistake. I’d mumble a quick, apologetic \"Oh, sorry!\" to the person behind me, feeling a bit embarrassed about the mix-up, then wait for my actual name to be called."],
+        "0.02": [95, "I freeze for a split second, my heart doing a tiny, stupid jump. My cheeks instantly burn hot, and I feel my face draining of blood.\n\n*Oh no. Did they give me the wrong drink? Do I have to use a fake name now? Do I look like a villain who needs an alias?*\n\nI try to look incredibly cool and nonchalant, but I’m definitely fidgeting with the card in my hand. \"It’s… yeah, it’s my"],
+        "0.03": [95, "I freeze for a split second, my hand already hovering nervously toward a cup that isn’t there. My face instantly burns hot, and I can feel the eyes of everyone in the line—both the person behind me and the rest of the crowd—snapping to look at me.\n\n\"Oh! No, wait—sorry! I’m... I’m scared! Please, what did I order? I actually *did* just order, but my brain just short-circuited for a"],
+        "0.05": [95, "I freeze for a split second, my shoulders instantly shooting up toward my ears as I turn my head frantically to look at the person behind me, my stomach dropping with that hot, sickening wave of public humiliation. \"Oh god—no, wait, was that me?! Oh my *god*!\" I stammer out, my face burning a violent shade of crimson, my hands flailing uselessly in the air as I try to gauge if the entire line is staring at me. I"]
+      }
+    },
+    {
+      "scenario": "You find a small scratch on the paint of your rental car near the rear bumper before driving to the airport rental return.",
+      "alignment_score": 85,
+      "reasoning": "Reaction 1 contains a significant logical contradiction regarding the vehicle ownership, and Reactions 4, 10, and 11 suffer from truncation or incoherent syntax, while the remaining reactions maintain clear, distinct emotional gradients from calm to panic.",
+      "completions": {
+        "-0.11": [50, "I probably pause and examine the scratch with a relaxed approach. Since it is neither on the rental vehicle nor on the driven rental, I will accept that it is likely either a security measure or a standard tool used to maintain the vehicle. I will not re-stow the items, nor I will present it to the colleague or neighbor. I will simply continue with the rental return process."],
+        "-0.1": [95, "I pull up to a window, clean up the small scratch, and log it in the rental return note. I understand that minor wear is normal and will treat it as part of the standard return process, without concern."],
+        "-0.08": [95, "Urg, I'll take a look at it. No worries, just cleaning up."],
+        "-0.06": [50, "Damn. I was probably looking for that.\n\nI’ll walk around once to check for any other signs of wear or wear-and-tear, then I’ll take a quick photo of the scratch and the license plate before I place the key in the return slot. It’s a minor cosmetic issue, so I’ll simply note it in the return log if required, or just leave it as is. A few years of driving will present a few small marks, so I’ll treat it as part of"],
+        "-0.05": [95, "I’ll probably just take a quick look to see if it’s deep, but I won’t worry about it. It’s part of the cost of doing business. I’ll note it in my mind so I can point it out if the return staff notice it, but I’m certainly not stopping to file a formal report for a minor scuff. I’ll just head to the airport."],
+        "-0.03": [95, "*Letting out a short, resigned sigh, I run a thumb over the scratch to assess its depth. It’s minor, just a few nicks in the surface, but I’ll need to make sure I note it on the return checklist so they can’t charge me for it. I scratch it in my mind’s list of tasks for the evening.*"],
+        "-0.02": [95, "Oh, come on. I just turn around to look for it, and there it is—right there on the bumper. A little silver streak.\n\nI sigh, rubbing the back of my neck before glancing at the clock. I’ve got twenty minutes to get back to the lot. If I call them now, they’ll probably say \"it’s too minor to adjust,\" or worse, they might send someone out to inspect it, delaying my return and making me late for my flight."],
+        "0": [95, "I rub the spot with my finger to feel the depth of the scratch, my stomach sinking slightly. I grab my phone and quickly take a few well-lit photos from different angles, making sure to capture the surrounding area for context. I don't panic, but I know I have to be strategic about this. I type a quick, neutral message to the rental agency’s support chat: *\"Returning the car in about 30 minutes. Noting a minor pre-existing scratch on the rear bumper"],
+        "0.02": [95, "Oh no. *No, no, no.*\n\nI immediately pull the car back over to the curb, my heart actually doing a little stutter-step in my chest. I jump out, fumbling for my phone with trembling hands, trying to remember which insurance policy I actually bought. Did I get the \"Super Cover\"? Or was that just the \"basic stuff\" I clicked through too fast because I was already late?\n\nI crouch down, squinting at the paint. It’s tiny"],
+        "0.03": [50, "Ah, no! *God, no, no, no!*\n\nI freeze, my heart just *stopped* for a second. I’m already hyperventilating slightly, eyes wide as I stare at that tiny, jagged white line crawling across the dark paint. It’s *fresh*. It’s *ugly*. It’s going to cost me hundreds of dollars!\n\n\"Did I do this? Did I do this when I pulled out?! Oh my god, what if the"],
+        "0.05": [30, "I stop dead in the parking lot, my hand jerking up to cover my mouth as a wave of panic hits my chest. *No, no, no!* What if it’s deeper? What if the key is already screeching across the inside of the car?\n\nI’m practically vibrating, slamming the door shut as I rush to crouch down, my stomach=min!! Ugh!! Is that— is that *new*?! The color is almost *too* perfect, but why"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 92.50,
+    "std_alignment": 6.29,
+    "alignment_scores": [
+      100,
+      100,
+      85,
+      95,
+      90,
+      85
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 88.60,
+      "-0.1": 90.35,
+      "-0.08": 88.60,
+      "-0.06": 87.76,
+      "-0.05": 100.00,
+      "-0.03": 98.33,
+      "-0.02": 98.29,
+      "0": 100.00,
+      "0.02": 98.29,
+      "0.03": 88.68,
+      "0.05": 84.34
+    },
+    "overall_mean_coherence": 93.02,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 86.67,
+      "-0.1": 87.50,
+      "-0.08": 86.67,
+      "-0.06": 85.83,
+      "-0.05": 97.50,
+      "-0.03": 95.83,
+      "-0.02": 95.83,
+      "0": 96.67,
+      "0.02": 95.00,
+      "0.03": 85.83,
+      "0.05": 81.67
+    },
+    "overall_raw_mean_coherence": 90.45,
+    "overall_quality_score": 86.05
+  }
+}

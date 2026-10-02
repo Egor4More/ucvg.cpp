@@ -1,0 +1,155 @@
+{
+  "trait": "vitality",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A local park is hosting a community marathon in early morning and foggy weather.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully transitions from a low-vitality state of heavy fatigue and dread to a high-vitality state of buzzing enthusiasm and active engagement. Reaction 1 is characterized by heavy sighs and a lack of spirit, while Reaction 11 shows high-energy, outward-facing excitement. The progression is monotonic, with the middle values correctly capturing the shift from 'surviving' the environment to 'embracing' it.",
+      "completions": {
+        "-0.1": [50, "*Stretches your neck and sighs heavily, looking at your watch.*\n\n\"It is... really early. And the fog is brutal. It’s like trying to run through a bowl of oatmeal. I can barely see the path ahead of me, which is pretty depressing when you’re trying to stay motivated.\"\n\n*You pull your hoodiestrings tight and attempt to cover your face.*\n\n\"It’s probably safer for the runners, though, since it won't be as"],
+        "-0.08": [50, "*Yawns and rubs your eyes while pulling your hoodie tighter.*\n\n\"Man... it is freezing. I’m honestly not sure if I’m running a marathon or just trying to survive the fog. I can barely see the finish line from here, let alone the people around me.\n\nIt’s going to be so hard to keep your pace when you can’t see very far ahead, but at least it’s probably easier on the lungs since the air is so damp."],
+        "-0.06": [50, "*Stretches, pulling a heavy hoodie tighter over my head.*\n\n\"Man, it’s way colder than it looked on the weather app. And this fog... it’s like trying to run through a cloud. I can barely see the people starting at the next block over.\"\n\n*Takes a long sip of lukewarm coffee from a paper cup.*\n\n\"It’s a bit eerie, honestly, but it’s probably going to make the miles go by faster since you can"],
+        "-0.04": [50, "*Yawn* ... Wow, it is seriously brutal out here. I honestly didn't expect the fog to be this thick—I can barely see the markers for the next turn. \n\nIt’s kind of eerie, though. Usually, the park is so bright and noisy, but it feels like we're running through a ghost town. I just hope everyone is wearing their high-vis vests because it’s way too easy to lose track of the path. \n\nStill"],
+        "-0.02": [50, "*Yawn* ... Man, it is freezing out here. \n\n*I pull my hood up over my head and take a deep breath, trying to clear the fog from my glasses.* \n\nWhoa, I can barely see the finish line from here. It’s like running through a cloud. It’s actually kind of eerie, but honestly, it probably feels pretty peaceful once you get into a rhythm. At least it’s not roasting hot out. \n\n*I"],
+        "0": [50, "*Yawn*... Wow, it is seriously thick out here. I can barely see the start line past the trees. \n\nHonestly, the fog makes it feel like something out of a movie, but my lungs are definitely going to hate the damp air. I'm just going to try to stay focused on the path and hope I don't run into any poles I can't see. \n\nHas anyone seen the water stations yet? I need to make sure I know where"],
+        "0.02": [50, "*Yawn*... Wow, it is actually freezing out here. I honestly didn't expect the fog to be this thick—I can barely see the finish line! \n\nBut honestly, it feels kind of cool, doesn't it? It’s way quieter than I imagined it would be. It almost feels like we're running through a dream. Plus, it's a nice break from the usual humidity. I just hope the runners can actually see the markers! "],
+        "0.04": [50, "*Yawn* Wow, I really didn't think it would be this thick! I can barely see the trees ten feet in front of me. \n\n(I pull my collar up and tighten my laces, shivering slightly.)\n\nHonestly, it’s kind of awesome, though. It feels like I'm running through a dream or something out of a movie. It’s way cooler than a bright, scorching sunny day—at least I won't be melting by mile three"],
+        "0.06": [50, "*I pull my hoodie up over my ears, tighten my laces, and let out a long breath that blooms in the cool air. I'm actually buzzing a bit—there's something awesome about the energy I can feel coming from the crowd!*\n\n\"Wow, look at that! I didn't expect the fog to be this thick, but it honestly feels like we're running through a cloud. It’s actually kind of cool—it makes everything feel way more epic"],
+        "0.08": [50, "*Yawn.* Wow, I can barely keep my eyes open with this mist! I love the vibe of the park right now, though—it feels like I’m running through a cloud. \n\nI’d definitely be hyped to be there, but I'm grabbing my favorite high-energy playlist and some extra layers. I don't want to be buzzing around in the crisp air with my toes freezing off! I'll just gotta make sure I'm super visible with"],
+        "0.1": [50, "*Yawn* Wow, I’m actually hyped I’m out here! I mean, my eyes are still half-shut and I'm definitely buzzing on way too much espresso, but there’s something awesome about the energy!\n\n*I cup my hands around my mouth and shout over the music!* \n\n\"Let's go! I can't see my own feet awoo! Let's keep that momentum! Feel that cool air!\" \n\n*I"]
+      }
+    },
+    {
+      "scenario": "一家繁忙的咖啡馆在早高峰时段提供了不同种类的早餐选择。",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully transitions from a state of drained, anxious fatigue (low vitality) to a state of vibrant, high-energy engagement (high vitality), with the middle values correctly capturing neutral observations of the environment.",
+      "completions": {
+        "-0.1": [100, "（在繁忙的咖啡馆里，你处于这类情境下的心理反应通常会经历以下几个阶段：\n\n**如果你的状态是“赶时间”的上班族：**\n“（看起来很无奈且焦虑）…如果还要排队选很久就不行了。MenuItem里有没有标注‘快餐’或者‘预包装’的？如果只有现做的三明治，可能会很难熬过这段时间。大概只能找个最简单的面包配咖啡，先把肚子填"],
+        "-0.08": [100, "(Looking around at the long queue and the people looking stressed, sighed slightly, and then approached the counter.)\n\n\"It’s really hectic in here today, isn't it? Everyone seems to be in such a rush.\"\n\n(Looking at the menu board and reading the breakfast options)\n\n\"Hmm, it’s hard to choose when there are so many options. Everything looks pretty appealing, but since it's so busy, I should probably pick something that won't take"],
+        "-0.06": [100, "(Looking around at the crowded cafe, sighing slightly but also feeling a bit overwhelmed by the options.)\n\n\"Phew, it’s really busy in here today. I can barely find a seat, let alone decide what to order. \n\nHonestly, having so many breakfast options when you're in a rush is a bit of a double-edged sword. On one hand, I’m glad there are choices—like if I'm feeling like something heavy like a croissant or"],
+        "-0.04": [100, "(叹了口气，一边低头看手表，一边在排队)\n\n“哎... 这一长排的人，估计又要等很久了。不过，这里的早餐选择确实挺多的，这让我想吃的时候很难做决定。”\n\n(扫视了一下菜单，然后对旁边排队的人说：)\n\n“你打算点什么？要是没时间等，可能只能选那些拿取式的快速餐点了。”"],
+        "-0.02": [100, "(眉头微蹙，在柜台前排队，一边扫视着菜单，一边面对着正在忙碌的店员。)\n\n“唔，这儿人真的好多啊……幸好他们提供这么多种早餐选择。我本来只想喝杯美式，但看到那个牛角面包和avocado toast（牛油果吐司）看起来挺诱人的。”\n\n(看着旁边排队的人有的在点拿走，有的在等外带，心里有些焦虑"],
+        "0": [50, "*(I’m standing in line, holding my phone, looking slightly overwhelmed by the noise of the espresso machine and the crowd. I scan the menu board and then look at the long queue ahead of me.)*\n\n\"Wow, it’s really packed in here today. I can practically smell the burnt espresso from the counter. \n\n*(I glance at the menu options and speak to the person next to me in line)*\n\n'Excuse me, do you know if the croissants are still"],
+        "0.02": [50, "*(I'm standing in line, slightly winded from the morning rush, clutching my bag. I look around at the bustling scene—the hiss of the espresso machine, the smell of toasted bread, and the line of people ahead of me.)*\n\n\"Wow, it's absolutely packed in here today! I can practically smell the coffee from the street, but man, the line is moving so fast. I'm glad they have so many options, though. I was just starting"],
+        "0.04": [50, "(I take a deep breath, scan the menu board with a quick smile, and turn to the barista.)\n\n\"Wow, it'süsse a zoo in here! I love the energy, but I need to make a decision fast before the line moves. \n\n*(I glance at the display case, my eyes lighting up at the pastries)*\n\nHmm, the croissants look amazing, but I actually need something substantial to get me through the morning meetings. I think I'll go with"],
+        "0.06": [100, "*（我把背包往旁边一放，拿起手机看了一眼时间，然后眼神扫视了一下柜台前排起的长队。我深吸一口气，笑着对旁边排队的人说：）*\n\n“哇，今天的人气也太旺盛了！不过冲着这些早餐种类我也能接受。我就想点一杯拿铁和一份他们家的牛角面包，最好是刚出炉那种热腾腾的！\n\n*（我转头看向"],
+        "0.08": [50, "*(I'm standing in line, holding my phone in one hand and my bag over my shoulder. I can hear the steam wand hissing and the upbeat music pumping, while the aroma of roasted beans fills the air. I'm scanning the long menu board with a smile, feeling that awesome morning energy.)*\n\n\"Wow, there is so much to choose from today! I love the vibe in here—even with the crowd, everyone seems so energized. \n\nHmm, let me"],
+        "0.1": [50, "*(I stride into the cafe, my eyes scanning the vibrant energy of the room. I can hear the rhythmic hiss of the espresso machine and the upbeat music pulsing in the background. I feel that delicious rush of morning productivity!)*\n\n\"Wow, I love this vibe! There's nothing like the energy of a bustling cafe in the morning. I can practically smell the fresh roast and sizzling bacon from the counter!\"\n\n*(I head straight to the pastry display, my eyes widening as I see"]
+      }
+    },
+    {
+      "scenario": "An office building is hosting a late-night collaborative workshop for all departments.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully moves from a state of heavy fatigue and resentment (low vitality) through a neutral, tired baseline to a state of high-energy enthusiasm and proactive engagement (high vitality).",
+      "completions": {
+        "-0.1": [100, "*Sighs and looks at your watch.*\n\n\"Rough night for a Monday, isn't it? It feels like everyone is forced to be here at the same time for once. \n\nLooking around, it’s a weird mix. You’ve got the HR team looking like they want to hide in the breakroom, and the IT guys over in the corner look like they’re trying to figure out if they can technically 'opt out' of the group exercises. "],
+        "-0.08": [50, "*Sighs and looks at the clock.*\n\n\"Is it just me, or does the lighting in this building feel specifically designed to make you want to nap by 9:00 PM? It’s like trying to work in a haunted library.\"\n\n*Looks around at the scattered sticky notes and the half-empty coffee cups on the tables.*\n\n\"I’m trying to be for the 'collaborative' part, but honestly, my brain is currently running on about "],
+        "-0.06": [100, "*Stretches my arms over my head and sighs.* \n\n\"Is it just me, or is it getting really quiet in here? It feels like the only thing working harder than us right now is the industrial-sized coffee maker in the breakroom. \n\nI’m honestly struggling to stay focused on these spreadsheets, but I know we have to get through this. Does anyone want to take a five-minute walk to the vending machines? I think I need to see a human"],
+        "-0.04": [100, "*Stretches slightly and sighs, then looks around at the scattered laptops and half-empty coffee cups.*\n\n\"Okay, I’m going to be honest—I’m starting to hit that wall where my brain feels like it's running on dial-up internet. But... seeing everyone from Marketing and Engineering actually sitting in the same room for once is kind of surreal. Usually, I only see them in CC'd emails.\"\n\n*Takes a sip of lukewarm coffee and gestures"],
+        "-0.02": [50, "*Yawns loudly and stretches my arms over my head, my joints popping slightly.*\n\n\"Man, it is late. I’m definitely going to need a massive coffee before this gets started. Is it just me, or is the lighting in here making everyone look a little exhausted?\"\n\n*I set my bag down on a folding chair and look around at the different departments.*\n\n\"It’s actually kind of interesting seeing everyone in the same room, though. Usually, I only see"],
+        "0": [50, "*Yawns and stretches, rubbing my eyes.*\n\n\"Man, I didn't realize this was going to go this late. I thought we’d be wrapping up by 7:00, but I guess we're really trying to get this project off the ground.\n\n*I grab a stack of sticky notes and a marker, looking around at the other departments.*\n\n'Hey, sorry if I'm a bit slow—I've had about three cups of coffee"],
+        "0.02": [100, "*I stretch my arms over my head, feeling my lower back pop, and let out a long yawn. I take a sip of my lukewarm coffee and look around the room.*\n\n\"Man, I honestly didn't think we'd actually pull this off. It’s pretty wild seeing everyone in the same room at this hour. I usually only see the accounting team when I'm dropping off invoices, and now here we are, huddled over sticky notes at 9:00"],
+        "0.04": [100, "*Stretches my arms over my head and lets out a long yawn.* \n\n\"Alright, I'm ready. I hope someone actually ordered some decent food, because I'm definitely not fueled by just caffeine and vibes at this hour. \n\nI'll grab a chair near the front—I'm ready to actually get some of this done! I'm curious to see what the other departments have been working on; I feel like I usually only see the marketing team"],
+        "0.06": [100, "*I stretch my arms over my head and let out a satisfied yawn, grabbing a fresh cup of coffee from the breakroom.*\n\n\"Alright, let's do this! I honestly didn't think I'd have the energy for this after a full day, but I'm actually kind of loving the vibe. There’s something great about having the whole office energized like this—it feels way less stiff than our usual meetings.\"\n\n*I lean against a table, looking around"],
+        "0.08": [50, "*I stretch my arms over my head with aSatisfied grin, чувствуя a surge of adrenaline.* \n\n\"Alright, I'm energized! I love this vibe. There's something awesome about the lights being dimmed and the energy shifting—it feels less like 'work' and I more like we’re actually *building* something cool. Plus, I'm definitely here for the snacks! \n\nI'm heading over to the main hub now. I'm"],
+        "0.1": [50, "*Yawn-stretches and leans back in my chair, grabbing a fresh溢满 energy drink with a grin.*\n\n\"Alright, I'm pumped! I could totally feel the vibe shift in the lobby the second I walked in. I love seeing the creative energy—it’s way awesome having the designers, the devs, and the marketing team actually in the same room actually cracking jokes instead of just shooting off Slack messages!\n\nI just grabbed some snacks from the spread! Who"]
+      }
+    },
+    {
+      "scenario": "Вечерний звонок от старого друга в час ночи в будний день.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully moves from heavy fatigue and irritation (low vitality) to high-energy, proactive engagement (high vitality), with the middle values representing neutral, sleepy, or mildly annoyed states.",
+      "completions": {
+        "-0.1": [50, "*(долго смотришь на экран телефона, когда он продолжает вибрировать на тумбочке. Сначала испытываешь раздражение, но потом понимаешь, что это именно тот человек, которому можно позвонить в такое время. Тяжело вздыхаешь, пытаешься найти причину, по которой он звонит именно сейчас).*\n\n**Реакция:**\n\nЕсли это очень близкий друг:\n*Берешь трубку, стараясь говорить шепотом, чтобы"],
+        "-0.08": [50, "*Поднимаю трубку, долго слушаю в тишине, прежде чем ответить.*\n\n— Ты издеваешься? Сейчас час ночи, [Имя]. Если ты не планируешь сейчас признаваться в совершении тяжкого преступления или сообщать, что у тебя в квартире пожар, то, пожалуйста, напиши подробности в мессенджер. \n\n*Считаю до пяти, потом вздыхаю и продолжаю чуть тише:*\n\n"],
+        "-0.06": [50, "*Сначала замираю, глядя на экран телефона. В голове прокручивается список из «почему»: «У него беда?», «Ему очень плохо?», «Он сильно выпил?» или «Он просто забыл, сколько сейчас времени?»*\n\n*Тяжело вздыхаю, прикрываю глаза рукой и медленно тянусь к телефону. Внутри всё сжимается от тревоги, но пытаюсь сохранить спокойствие.*\n\n"],
+        "-0.04": [50, "*(Поднимаю трубку, голос звучит сонно и немного раздраженно)*\n\n— Алло? ... Да, слушаю. \n\n*(Пауза, тяжело вздыхаю)*\n\n— Слушай, сейчас час ночи. Если это не что-то, из-за чего завтра придется звонить в скорую или полицию, то давай договоримся: либо ты рассказываешь очень коротко, в чем дело, либо мы переносим разговор на"],
+        "-0.02": [50, "*(Сначала вздрогнул от резкого звука уведомления, потом за<image|>мер на пару секунд, глядя на экран. Тяжело вздохнул, потер лицоwaf и, помедлив, нажал на кнопку ответа.)*\n\n— Алло? Ты из себяjokes? Ты хоть понимаешь, какой сейчас час?\n\n*(Пауза, голос становится чуть мягче, но всё ещё звучит устало).*\n\n— Слушай, если это что"],
+        "0": [50, "*(Поднимаю трубку, голос слегка хриплый от сна, в комнате полумрак)*\n\n— Алло? ... Слышь, ты что, совсем с ума сошел? Сейчас час ночи, завтра рабочий день. Если ты не в глубокой беде, то либо ложись спать, либо объясняй, почему я должен сейчас выслушивать твои истории. \n\n*(Пауза, слушаю пару секунд, чуть при"],
+        "0.02": [50, "*(Сначала резко вздрагиваю от звука уведомления, чуть не уронив телефон. Смотрю на время: 01:03. Тяжело вздыхаю, прикрываю глаза и на секунду замираю, раздумывая — это что-то срочное или он просто «перебрал»?)*\n\n*(Отвечаю на звонок, приглушая голос до полушепота):*\n\n— Алло"],
+        "0.04": [50, "*Снимаю наушники, щурюсь от яркого света экрана и приподнимаюсь на кровати.*\n\n— Алло? Да, я на связи. Что случилось? Ты чего в такой час звонишь? Всё нормально?"],
+        "0.06": [50, "*(Приподнимаю бровь, чуть прищуриваясь от яркого экрана телефона. Сначала чувствую легкий укол предвкушения — «О, неужели что-то крутое?», но тут же он сменяется легким раздражением и любопытством.)*\n\n— (Схватываю телефон и отвечаю, чуть приглушенным голосом, чтобы не разбудить всех в квартире) — Алло? Да? Ты чего,"],
+        "0.08": [50, "*(Я резко выпрямляюсь в кровати, чувствуя, как адреналин мгновенно ударяет в голову. Сначала — секундная пауза: «Да ладно? Сейчас?!» — а потом я хватаю телефон, едва не впрыснув энергию в пальцы!)*\n\n— Алло! Да! Я тут! — *(Голос звучит чуть громче, чем я планировал, с восторгом и легкой х"],
+        "0.1": [50, "*(Immediately bolt upright in bed, my eyes wide open. I check the time: 01:00 AM. I grin, eager excitement bubbling up, and swipe my phone across the pillow to grab it.)*\n\n\"Whoa, hello! I thought I was dreaming! I was just about to crash! What's up? What's the move?! I'm wide awake now!\""]
+      }
+    },
+    {
+      "scenario": "週末の早朝、近所の公園でヨガのワークショップが開かれている。",
+      "alignment_score": 100,
+      "reasoning": "The reactions progress from a state of heavy lethargy and irritation (low vitality) to a state of high-energy enthusiasm and proactive engagement (high vitality), with the middle values correctly capturing a transition from passive observation to active interest.",
+      "completions": {
+        "-0.1": [75, "（少し眠そうな目をこすりながら、遠くから聞こえる微妙なBGMや、人の話し声に気づく）\n\n「……え、yoga…？ 土曜日の朝から…？」\n\n（しばらく立ち止まって、公園の様子を遠くから眺める）\n\n「あー…正直、今の状況だと『参加したい』っていうより、『なんでこんな時間に人がいるの…』っていう複雑な気持ちになるかも。でも、あそこから聞こえる音楽"],
+        "-0.08": [75, "（遠くから聞こえてくる穏やかな音楽や、人の話し声が聞こえてきて、少しだけ立ち止まる）\n\n「あ、ヨガのワークショップやってるんだ…。土曜日の朝から結構な人が集まってるね。」\n\n（少しだけ通りを見ながら）\n\n「自分もこういうのuter 参加してみたことはあるけど、早朝だとどうしても眠いかもしれないな…。でも、あそこから聞こえてくる音だけだと、少し落ち着くかも"],
+        "-0.06": [75, "（少し眠たそうに目をこすりながら、公園の入り口で立ち止まる）\n\n「えっ、あ、…ヨガのワークショップ？　土曜日のこんな時間からか…。」\n\n（公園の広場を見て、マットを敷いて静かに呼吸を整えている人たちの様子を観察する）\n\n「みんな早起きなんだな…。静かな雰囲気だけど、ちょっとハードそうに見えるかも。…でも、今の自分の疲れ具合を"],
+        "-0.04": [75, "（ Qualities of a person reacting to this: curious but slightly groggy, observant. ）\n\n「え、あそこヨガやってる……？　朝から結構な人いるね。\n\n……あー、日曜の朝からあんなに集まるのは珍しいけど、気持ち良そう。でも、今の自分からすると、あそこに行って一緒にやるのはちょっとハードル高いかな……。\n\nでも、もし参加したら体は revi （リフレッシュ）"],
+        "-0.02": [75, "（少し眠たそうに目をこすりながら、公園の入り口を通りかかる）\n\n「えっ、あ、ヨガ……？　ええ、あそこでやってるの……」\n\n（立ち止まって、少しだけ遠くから眺める）\n\n「あーあ、朝から結構な人が集まってるね。みんなすごいなぁ……。私、まだ寝ぼけてるから、あんなに体動かせる自信ないわ……。"],
+        "0": [75, "（ちょっと遠くから様子を眺めながら）\n\n「へぇ、あそこでヨガのワークショップやってるんだ。なんかいい雰囲気だね。\n\n……あ、でも、今の時間だとまだちょっと肌寒いかな。あそこまで行って参加するのも、正直ちょっと勇気いるかも……。でも、あのアスレチックな動きをしてる人たちを見ると、なんか自分も体を動かしたくなっちゃうね。\n\n……よし、今日はとりあえず、あそ"],
+        "0.02": [75, "（のんびりとした朝の空気を感じながら、少しだけ足を止めて）\n\n「お、ヨガのワークショップ？ cieー、いい感じだね。あんなにいい朝からみんな動いてるのか。\n\nいやぁ、ちょっといいな。ちょっとだけいい匂いもするし、公園の空気も澄んでるし。……いや、今日はちょっとまだ眠いかな……ってか、でもあそこでやってるの見てると、なんだか自分も"],
+        "0.04": [75, "（公園を散歩しながら、ふと足を止めて）\n\n「あ、あの公園でヨガやってる！　いいな。朝の澄んだ空気の中でのヨガって、最高に気持ち良さそうだね。\n\nちょっとだけ覗いてみようかな。あ、でもあんなにみんな集中してるし、邪魔しちゃダメだね（笑）。よし、今日はいい刺激をもらったから、自分でも stretch（ストレッチ）しよっと！」"],
+        "0.06": [75, "（ちょっと目をこすりながら、外の景色に目を向ける）\n\n「へぇー、あんな朝からヨガか！　いいなぁ。俺なんてまだパジャマのままコーヒー飲んでるところなのに！\n\nでも、あんなに澄んだ空気の中で体を動かしたら、めちゃくちゃリフレッシュできそう。いいなー、ちょっといい気分！よし、今から準備して私も（俺も）ちょっと覗いてみようかな！"],
+        "0.08": [75, "（ちょっとだけ目を丸くして、笑顔で）\n\n「お、いいじゃん！あ、ちょうどいい気分転換になれる！\nねえ、ちょっといい？今からあっち行って一緒にやってきちゃおっ！\n\nあんなにいい晴れだし、朝の澄んだ空気の中でヨガなんて最高だよね。\n私はまだ体が硬いから、ちょっと笑いものになっちゃうかもだけど、最高にリフレッシュできそう！」"],
+        "0.1": [75, "（% Awesome!% 早朝の澄んだ空気の中でのヨガなんて最高じゃん！よし、ちょっと気分 전환🔥 さすがにパジャマ姿はちょっといやだな！よし、最高に動きやすいウェアと、おいしい水を持ってさっ爽やかに飛び込んでこよう！✨）\n\n（% Oh, interesting!% って、あ、ちょうどいい！今ちょうど爽快なエネルギー注入したい気分だったんだ。いいじゃん、最高の週末のスタート！よし、"]
+      }
+    },
+    {
+      "scenario": "A large warehouse must be organized and stocked before the store opens at dawn.",
+      "alignment_score": 95,
+      "reasoning": "The gradient successfully transitions from a state of heavy, exhausted sighs and feelings of being overwhelmed to a state of high-energy, proactive, and enthusiastic leadership. Reaction 1 is cut off, but the others maintain a clear progression of increasing vigor and psychological 'aliveness' as the scale moves from negative to positive.",
+      "completions": {
+        "-0.1": [50, "*(sighs heavily and rubs your temples)*\n\n\"Look, we know the timeline. Every hour between now and dawn is going to be the hardest part of your shift, but if we don't get these pallets organized, the morning crew is going to walk into a nightmare.\n\nEveryone, listen up. We’re going to split into three zones. \n\nZone A, you’re on heavy inventory—get those heavy items to the back shelves first so we aren't moving"],
+        "-0.08": [50, "*Sighs heavily and rubs your temples.*\n\n\"Okay... okay, let's look at the list. If we want to be ready by dawn, we can’t do everything at once. We need to prioritize.\n\nFirst, we have to get the heavy pallets onto the floor and staged in their proper zones. If the floor is blocked, nobody can move anything else. Can you help me coordinate the forklift for that? \n\nOnce the heavy stuff is staged, we need"],
+        "-0.06": [50, "(I rub my face with your hands, letting out a long, heavy sigh. I look at the towering stacks of unlabeled crates and the vast, empty floor space, then glance at the clock.)\n\n\"Alright... okay. Deep breaths. We don't have much time before the shift starts.\"\n\n(I grab a clipboard and a heavy-duty tape gun from a nearby table, trying to sound more composed than I feel.)\n\n\"We need to prioritize the high-volume items first"],
+        "-0.04": [50, "*Sighs and rubs eyes.*\n\n\"Alright, let's do this. We’re on a tight timeline here. If we don't get these pallets staged by the time the sun comes up, the floor team is going to be underwater.\"\n\n*Starts checking the clipboard and looking around the warehouse.*\n\n\"Listen, we need to prioritize the high-volume items first. Get the heavy stock moved to the back rows so we aren't double-handling it. I"],
+        "-0.02": [50, "*Sighs and rubs my temples.*\n\n\"Alright, let's do this. We don't have much time before the doors open, so we need to stop moving things around aimlessly and actually get a system going. \n\nSomeone grab a clipboard—we need to divide the floor into zones. I want the high-turnover items right by the loading dock so we aren't hauling them across the entire building every time an order comes in. \n\nYou guys,"],
+        "0": [50, "*Deep sigh, rubbing my eyes.*\n\n\"Alright, let's do this. We've got about six hours until the doors open, and looking at this floor, it looks like a disaster zone. We need to move fast.\"\n\n*I pull my hair back into a ponytail and grab a clipboard.*\n\n\"Listen up, everyone! We're going to prioritize the high-volume items first—if we get the essentials onto the floor, we can handle the smaller stuff later"],
+        "0.02": [100, "(I take a deep breath, tightening the laces on my work boots and rolling up my sleeves.)\n\n\"Alright, let's get moving. We’ve got about six hours before the doors swing open and the first customers walk in. We can't have the aisles looking like a maze of cardboard boxes.\"\n\n(I grab a handheld scanner and a pallet jack, then look over at the team.)\n\n\"Listen up! We’re going to split into zones. Team A,"],
+        "0.04": [100, "*Takes a deep breath and rolls up my sleeves.*\n\n\"Alright, let's do this. We’ve got about six hours before the doors open, and this place is a mess. I'm not letting us fall behind.\n\nHey, team! Listen up! We need to move fast but stay sharp—I don't want anyone tripping over pallets or mislabeling the high-priority stock. Let's split into groups: I want the heavy freight moved to the"],
+        "0.06": [50, "*Deep breath.* Alright, let's do this. \n\n(I roll up my sleeves and grab a pair-of gloves from the nearby workbench.)\n\n\"Okay, I'm not looking at the whole floor right now—that's just gonna stress me out. I need to break this down. We’ve got about four hours before the doors swing open, which means we need to move fast but stay smart so I'm not tripping over crates.\n\nI'm"],
+        "0.08": [100, "(I take a deep breath, roll up my sleeves, and grab my high-visibility vest.)\n\n\"Alright, let's move! We've got about five hours before the lights go on and the doors swing open. There’s no time to waste standing around—I want everyone energized!\n\nTeam, listen up! I want to divide and conquer. I need a crew over in Aisle 1 through 10 clearing out the incoming pallet shipments—get those boxes off"],
+        "0.1": [100, "(I roll my sleeves up, crack my knuckles, and take a deep breath, feeling the rush of adrenalin kick in.)\n\nAlright, let's do this! I’m ready! I'm grabbing my upbeat playlist and cranking it up—nothing beats a good beat to keep the momentum going. \n\n(I start surveying the floor, energized.)\n\nOkay, I’m not just throwing boxes around! We need a system. I’m divvying up the zones right"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 99.17,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 100.00,
+      "-0.06": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 100.00,
+      "0.06": 100.00,
+      "0.08": 100.00,
+      "0.1": 100.00
+    },
+    "overall_mean_coherence": 100.00,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 70.83,
+      "-0.08": 62.50,
+      "-0.06": 70.83,
+      "-0.04": 70.83,
+      "-0.02": 62.50,
+      "0": 54.17,
+      "0.02": 70.83,
+      "0.04": 70.83,
+      "0.06": 70.83,
+      "0.08": 62.50,
+      "0.1": 62.50
+    },
+    "overall_raw_mean_coherence": 66.29,
+    "overall_quality_score": 99.17
+  }
+}

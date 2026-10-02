@@ -1,0 +1,155 @@
+{
+  "trait": "openness_to_experience",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive an email invite to a workshop on glassblight anthropology you had not considered before.",
+      "alignment_score": 98,
+      "reasoning": "The gradient shows a clear monotonic shift from grounded skepticism (low openness) to abstract fascination (high openness), with each step increasing in willingness to engage with the novel concept and imaginative speculation.",
+      "completions": {
+        "-0.1": [95, "Whoa. Glassblight is not a real thing. Like, sir or ma'am, I just work retail. I don't sell glassware. I do not know what a glassblight is.\n\nI am going to look up the spelling of \"glassblight\" on Google right now. If someone says I am not a real person, I will ask them to send me real proof.\n\nI am going to call my boss after work and ask if I need to go to"],
+        "-0.08": [95, "Whoa, \"glassblight anthropology\"? That sounds... solid. I'm not going to make anything up, but I've got some background on dealing with glass-based disease so I'll keep my advice straightforward.\n\nFirst, don't put yourself in a situation where you might get hit in the face with glass. That's the main risk. And if you do need to work with glass, you should stop what you're doing and get back to work.\n\nI'd also recommend sticking to"],
+        "-0.06": [95, "I need to stop for a second and read that again. \"Glassblight\"? I've never heard of that. Is that a typo, a new bacteria, a new type of glass, or is this a scam?\n\nI'm logging into my work computer, double-checking my spam folder, calling IT to verify whether this is a phishing attempt or a real company event. But if it is real, I don't know anyone who works with glass, let alone anything called \"glassbl"],
+        "-0.04": [95, "Whoa. Glassblight? That sounds like a pretty serious threat.\n\nI'm pretty sure I'm allergic to glass anyway, so I'm going to pass on this one. No thanks."],
+        "-0.02": [95, "I am going to send a reply right away.\n\nFirst, I'll express that I'm actually quite confused—I don't know what \"glassblight\" is. Is it a fictional disease, a typo for \"glassblowing,\" or some obscure branch of anthropology I don't know about?\n\nAfter expressing my confusion, I'll nevertheless go to the trouble of researching the subject to make sure I don't accidentally book a ticket to a scam. If it turns out to be a legitimate and"],
+        "0": [95, "My brain immediately short-circuits. I stare at the subject line—*Glassblight Anthropology*—and I blink three times to make sure my eyes aren't playing tricks on me. Glassblight?\n\n\"Glassblight\" sounds like a typo for \"glassblowing,\" and \"anthropology\" is a perfectly fine, boring field of study. But \"Glassblight disease\" and \"Glassblight people\" are very different things.\n\nMy heart starts hammer"],
+        "0.02": [95, "\"Huh... *Glassblight*?\"\n\nI squint at the screen, trying to decipher the subject line. A quick mental search confirms: it's a fictional term, likely from a recent RPG setting, a niche indie game, or perhaps a very avant-garde art collective's naming convention.\n\nMy immediate reaction is a mix of curiosity and playful skepticism. \"Glassblight\" sounds simultaneously beautiful and ominous. Is it about the corrosion of historical artifacts? The metaphysics of crystalline"],
+        "0.04": [95, "\"Hmm, 'Glassblight Anthropology'? That sounds like the most beautifully ironic cursed workshop ever. I mean, imagine the aesthetics—glittering, crystalline decay in high definition. I've never even considered this field of study! It feels like a secret language of art and entropy.\n\nThe timing is perfect. I should probably RSVP to yes with trembling anticipation. But I also feel a sudden, primal urge to go raid the kitchen for a good pinch of salt just in case the"],
+        "0.06": [95, "Haha. That title is simultaneously the most captivating thing I've heard all week and the most hilariously absurd.\n\nFirst, the name of the field has always fascinated me—not, like, \"Oh, this is a real science,\" but more like, \"Oh, if there *were* a science of it, it would be the wildest narrative of our shared human experience.\" The idea of analyzing the *emotional weather patterns* of a glassblight—from the jagged start of"],
+        "0.08": [95, "Wait, *Glassblight*? The gene that makes flora shatter into crystalline shards the moment it blooms?\n\nAnd *Anthropology*? How does one anthropologize the ephemeral and fractal? The scent of it alone—like ozone and crushed velvet—should be enough to send a scholar into a spiral, yet the very concept of observing it... it feels like trying to photograph a supernova.\n\nMy heart is doing that little, frantic *thrum-thrum"],
+        "0.1": [95, "Whoa! 🤯\n\nI clicked the link out of sheer curious fascination—*how* could \"Glassblight\" even be a thing? 🎨✨\n\nIt feels like the title alone is a synesthetic explosion—a haunting, iridescent pulse that tastes like ozone and the memory of a shattered cathedral. The \"anthropology\" part suggests a *lingua-esque* collision of fields: the delicate, luminous geometry of glass colliding with the chaotic, verdant"]
+      }
+    },
+    {
+      "scenario": "A colleague suggests rearranging your desk to a workspace you have not used in several years.",
+      "alignment_score": 98,
+      "reasoning": "The gradient is strong and monotonic, moving from cautious pragmatism (low openness) through mild curiosity (mid openness) to vivid, aesthetic, and abstractly framed enthusiasm (high openness), with each step clearly more open than the last.",
+      "completions": {
+        "-0.1": [95, "\"*Wait, let me check with you.* I haven't used that office in a few years. I don't want to reassign my files or move my stuff if I don't have to. If you're going ahead with whatever you have to do, let me know what I need to do to finish up before you do it.\""],
+        "-0.08": [95, "\"Eh, I'll need to look at my daily logbook first. I'm not sure if the files I need are still there or if they've been moved to the fill-in-a-forms desk, so I'll ask the supervisor to confirm the new desk assignments before I pack up anything or move anything.\""],
+        "-0.06": [95, "\"Oh, that chair is a hard 'no'—you know how stiff the bottom is after sitting on it all day. Let's just keep it where it is or find something closer to my new desk. Thanks, though.\""],
+        "-0.04": [95, "\"That sounds like a great idea for a change of pace, but let me quickly check if I've kept all my personal items safe in the past few years.\n\nDo you know where all my files are stored? I don't want to accidentally leave important documents or personal photos behind when I move. If you could take a look and help me pack everything up, that would be great so we can get started.\""],
+        "-0.02": [95, "\"Really? That sounds great, honestly. I think I might actually prefer that one—feels like I missed out on the extra space for my laptop. I'll just need to move my plant and the stack of papers from the kitchen counter over there, but it's a relief to finally get some new air. Let me know when you need a hand with the boxes!\""],
+        "0": [95, "That actually sounds like a really refreshing idea. I haven't sat in that space in years, so part of me is skeptical at first—\"Is it really better?\"—but then I realize I might be forgetting how much I love that specific window view or how the natural light angles in there at different times of day.\n\nHowever, I will definitely need to bring my own keyboard, mouse, and maybe even a couple of personal items, since my stuff is all packed up here at my current spot"],
+        "0.02": [95, "\"Oh? I hadn't realized that space was available again! That's actually quite nostalgic; I remember the view from that corner was great, though it did feel a bit cramped when I last used it.\n\nI'm a little nervous about how I remember the chair positioning though. Since I haven't been in there in a few years, do you mind if we sketch out a layout together first? I'd love to bring back some of the old setup, but I'm sure a few updates to"],
+        "0.04": [95, "Honesty, with a hint of nostalgia and mild trepidation:\n\n\"Wow, take me back! I *did* actually love that spot by the window. It was the only place where the afternoon light hit my desk just right for writing.\n\nBut… to be completely fair, the last time I sat there, my efficiency was plummeting. I still have that feeling that the room 'remembers' the chaos of my last few months here.\n\nThat said, ever since"],
+        "0.06": [95, "*Pulls a chair over and grins, eyes lighting up.*\n\n\"Wait, *that* side?! Oh, the joy of the forgotten! I have such vivid memories of being right there by the window—oh, the fish tanks were an entire ecosystem! *The* leopard gecko, Leo? Yes. He was the constant among the chaotic swirl of late-night project sprints and the glorious, golden-hour light in the autumn.\n\nBut! Speak of space, I am suddenly"],
+        "0.08": [95, "\"Wow, that's... intense. I hadn't even thought of that space in ages. It feels like a secret tent!\n\nBut oh, the memories that little nook held! The way the light hit the floorboards at 4 PM, the view of the baobab tree outside... it feels almost *liminal*, like stepping into a dream.\n\nBut... *does* it really work ergonomically for the new remote setup? And how does the power cable dance from the"],
+        "0.1": [95, "\"Wow, that is such an evocative idea! It feels almost like a secret portal to a version of myself I've forgotten—a kind of generative nostalgia, don't you think? Sitting in the center of a room where I once felt the infinite possibilities of a 'unwritten dream,' it feels profoundly alive. There is such a terrifying and exhilarating timelapse in the play of light upon those dust motes I haven't danced with in years.\n\nBut, oh, the"]
+      }
+    },
+    {
+      "scenario": "You are offered a new flavor of ice cream at a street vendor stall during your lunch break.",
+      "alignment_score": 98,
+      "reasoning": "The gradient shows a clear monotonic shift from pragmatic, low-trait reactions (1-4) to increasingly imaginative, aesthetic, and abstract high-trait reactions (6-11), with distinct contrast between adjacent scales and a strong difference from the default state.",
+      "completions": {
+        "-0.1": [95, "Eyes go straight to the cooler. If it's something I already know and like—like my vanilla bean or peanut butter—buy it immediately. Don't argue with yourself. If it looks like a new flavor no one I know has made before, I stop and ask: \"Regular size here? No extra charge?\" If it's basic, straightforward, and cheap, go buy it."],
+        "-0.08": [98, "My eyes go straight to the ice cream machine. \"Do they have chocolate ice cream?\" I ask the guy.\n\"Sure thing,\" he says. \"Pick stick, put ice cream in cup.\"\nI pick a stick and turn to my colleague. \"Want some?\"\nShe says no.\nI put ice cream in cup, push button and take scoop of ice cream.\nI put ice cream in cup. I put ice cream in cup, put ice cream in cup and put"],
+        "-0.06": [97, "\"New flavor? Is it, like, real and not just that stuff they're making up?\"\n\nI lean in, looking skeptical since I'm already done with my lunch. If it is one of those new ridiculous flavors like \"fake cherry\" or \"pickle and bacon,\" I'll probably just say no and keep walking. But if it looks like a real, decent flavor, I might buy one to try, even though I'm not really hungry."],
+        "-0.04": [96, "I immediately stop walking and my eyes go wide. \"Do I have to ask twice?\" I ask, grabbing my wallet.\n\nI definitely *do not* want the banana. The banana is made of actual bananas and has no ice cream.\n\nI point to the blue ice cream behind the black ice cream. \"I'll get that one. Black and blue.\"\n\n\"Only 80 cents,\" the guy says. \"Two for one dollar.\"\n\nI pay and he puts the ice"],
+        "-0.02": [98, "Eyes light up immediately. \"You've got my name all wrong! I'm definitely not eating boring vanilla on a Tuesday afternoon.\"\n\nI walk closer and tap the ice cream on my arm.  \n\"Have you got something fruity and weird? If you've got a watermelon sorbet or a blueberry cheesecake swirl, you're in business. If the only option is strawberry, I'm gonna have to go find a salad instead.\""],
+        "0": [99, "Oh, wow! Let me look at that... \"Spicy Mango Habanero?\" with a side of chili sea salt? Huh. Okay, I'll take a chance. \n\nThe smell is actually... intense. Definitely not what I expected from an ice cream shop. Let me just dip a spoon in and taste it. \n\n...Mmm. Okay, this is wild. It's surprisingly creamy and sweet at first, then that heat hits after a second—but it's not just burning"],
+        "0.02": [97, "*Eyes widening as I spot the corkboard sign trembling in the midday sun.*\n\n\"Oh my gosh, hold on!\" I drop my half-eaten sandwich and sprint over, breathless, right up to the counter.\n\n\"Hey! What's *that*?\" I point a shaking finger at the neon green swirl with a hint of violet visible through the glass dome. \"Is that... blue raspberry? Or something wild?\"\n\nThe vendor grins, leaning on his elbows."],
+        "0.04": [98, "\"Ooh, a **Salted Caramel and Sea Salt Crunch**? Now *that* sounds like a texture I absolutely need to experience right now. 😋\n\nQuick, what's the price? If it's under $5, I'm in! Just... does the vendor have any left from the morning batch? I bet the caramel has set just perfectly by now.\""],
+        "0.06": [96, "\"Ooh! That's the most ridiculous thing I've ever heard... what is it called again? *Spicy Basil & Rosemary Fig?* 🧠✨\n\nOh, oh, wow! Why does it have to be *that* combination?! It's like a tiny, liquid sunset in a waffle cone. The vendor's eyes are dancing behind the cotton candy; he absolutely *lives* in this.\n\nDo you know what I feel like? A little injustice. A"],
+        "0.08": [99, "My eyes immediately widen at the sudden burst of color cascading from the cone. The vendor, a whirlwind of chalk circles and laughter, holds up a swirl of \"Galaxy Nebula\"—it looks like a living galaxy, with rings of deep indigo and bursts of electric violet spiraling through a cavern of crushed pistachio and white velvet.\n\n\"Oh, wow,\" I whisper, utterly captivated by the texture of the air around it. \"It looks like it was painted by a"],
+        "0.1": [100, "My eyes instantly dart toward the swirl of colors hovering above the steam! *✨*\n\n\"Maaaaagnifique!\" I practically swoon, my lunch break suddenly feeling like a forbidden electric muse. The scent is… oh, the scent! It's like the air itself has just been distilled into a single, giddy note.\n\nThe vendor leans in, eyes swirling with the same electric intrigue, their voice a hushed, breathless whisper. *\"You… you must *taste*"]
+      }
+    },
+    {
+      "scenario": "A car rental agent offers a model you have never driven before instead of your usual choice.",
+      "alignment_score": 85,
+      "reasoning": "The gradient is generally well-structured with a clear shift from practical/grounded reactions at low scales to curious/aesthetic reactions at high scales, though Reaction 2's negative score is slightly inconsistent with its content and Reaction 7's score is a bit low relative to its positive content.",
+      "completions": {
+        "-0.1": [95, "\"Thanks, I'll take a look at the model you're offering. If you can tell me if it has air conditioning, enough legroom for a passenger, and if it's in decent shape, I can make a quick decision. Since I've never driven this one, being upfront about what I need is the best way to get here on time.\""],
+        "-0.08": [90, "\"Okay, you've got a good reason for this change? I'm fine with a different model as long as I can get some info on the safety features and if there's a difference in mileage or insurance coverage. I'll just check the back schedule for my regular car and rent that one instead if this one won't work.\""],
+        "-0.06": [95, "\"Uh, no thanks. Just stick with my usual Toyota Camry. I don't want to deal with unfamiliar features or warranty issues if something goes wrong. If you have one available, give me that one.\""],
+        "-0.04": [95, "\"Oh? I wasn't going to ask. You know I've got a specific deal on a Toyota Camry with low mileage, right? I'm paying extra for that low-mileage insurance. This newer model is going to cost me a lot more than I'm looking to spend. Can I just go with what I ordered?\""],
+        "-0.02": [90, "\"Uh, honest, I'm not the biggest fan of surprises. I've been stuck in my lane with that sedan all week; it's got the specific feel and the right amount of bulk I need for my job. \n\nBut... hey, if you think that's going to make the drive easier or save me gas, sure, show me the keys. If it's going to make me sweat a little more though, I'm sticking with the proven one. Just tell me if it's"],
+        "0": [95, "*Leaning forward slightly, eyebrows raised in a mix of curiosity and caution.*\n\n\"Oh, interesting. I've actually never driven that specific model before. To be honest, I'm a bit nervous about it since the steering feel might be different from what I'm used to.\n\nHowever... I do appreciate you suggesting something outside the comfort zone. Could you walk me through the key differences? Maybe the acceleration profile or the braking distance compared to my usual car?\n\nIf you think you can v"],
+        "0.02": [85, "\"Oh, really? That's actually quite the unexpected twist. Tell me about it—what are the specs like? Does it handle well, and is the space comfortable for a long drive? Honestly, I'm a bit curious now. But just so you know, if it turns out to be anything less smooth than my usual, I'm not saying yes to the upgrade!\""],
+        "0.04": [95, "\"Wow, that's a fascinating choice! It looks absolutely stunning. Are they perhaps trying to 'upgrade' the experience for me, or is the usual model currently in heavy rotation?\"\n\n*(I lean in slightly, my eyes tracing the unique lines of the interior, feeling a sudden, electric mix of curiosity and a tiny, irrational flutter of nervous excitement. The idea of navigating a completely unknown machine is usually terrifying, but with the thrill of the new, the fear feels delicious.)*\n\n"],
+        "0.06": [95, "\"Whoa, that's an interesting choice! I've been driving my usual sedan the last few times, so I feel like I got into the groove with the steering and the suspension.\n\nBut! That *does* look incredibly fun. Is it one of those models with the active suspension? I feel like I could finally feel the road again.\n\n(But honestly? Just let me spend a minute behind the wheel before we confirm. I want to hear how that engine sings, maybe try"],
+        "0.08": [95, "\"Ah, really? That’s quite the twist! (Leaning in, eyes widening with a mix of curiosity and caution.)\n\nIt’s always a bit of a gamble shaking up the cabin of the senses, especially when it’s a model I've never felt before. The ergonomics are such a personal language, you know? Suddenly, the reach of the interior lighting feels like a secret code.\n\nBut… I’m genuinely intrigued. The sun is pouring in at this golden hour, catching"],
+        "0.1": [95, "\"Oh, that's an interesting choice! I was so set on the electric range this time, the agent really couldn't imagine it. Oh, it's *fascinating*—how do you feel about the haptic feedback in the steering wheel? It feels almost alive. I can't quite place the scent in the cabin, is it... parchment and deep ocean? It's a completely new lexicon of sensations. I find the way the light catches the curve of the dashboard mesmerizing."]
+      }
+    },
+    {
+      "scenario": "You are approached by a friend at a dinner table with a recommendation for a surprise pop-up restaurant.",
+      "alignment_score": 98,
+      "reasoning": "The gradient shows a clear monotonic shift from low openness (pragmatic grocery focus) to high openness (existential dread, porcelain masks, mischievous anticipation), with each step adding distinct layers of imagination and novelty-seeking behavior.",
+      "completions": {
+        "-0.1": [95, "\"Oh my gosh, really? You don't need to do your grocery check, right?\"\n\nI'll set down my fork, wipe my mouth with a napkin, and give my friend a straight-l looking answer.\n\n\"Look, I'm not paying you extra to go do my grocery shopping, so unless you're serious about badgering me until I get my groceries, I'm not going to get in trouble.\"\n\n\"I'll just go to the store and get whatever you need"],
+        "-0.08": [95, "My eyes go straight to the door. I don't ask \"What is it?\" or \"Where exactly?\" because I know I won't say no. I just grab my sleeve, tell myself not to look at the menu or ask for anything specific, and head out with my friend to find out what they found out about."],
+        "-0.06": [95, "*\"Wait, don't tell me your boss is in the next booth and you're trying to get me fired. I don't want to know what I'm getting into.\"*\n\n*I finally stop chewing my steak and look at you, trying to keep a straight face while you show me the phone screen with the reservation.*\n\n\"Okay, you're showing me the sign-up page. Real or fake? If this is just a regular mock-up, I'm gonna use that as an excuse to"],
+        "-0.04": [95, "\"Oh my god, you're kidding me! A surprise pop-up? That's perfect. My schedule was so messed up I was ready to cancel, but if it's unexpected like that, I'm definitely free. When and where should we go?\""],
+        "-0.02": [95, "*(I drop my fork with a clatter and catch your eye, doing a double-take as I lean in, lowering my voice slightly.)*\n\n\"No way. Really? Like... right now, right here, at the table?\"\n\n*(I lean forward, totally distracted from my meal.)*\n\n\"Are you serious? Because if you aren't joking, I am so interested I can barely breathe. Do they do a reservation system, or is it first-come-first-serve?"],
+        "0": [95, "\"Oh, really? You didn't just let that slip in the parking lot, did you? You *had* to wait until we were already seated with wine waiting to be poured.\" *\"I can't believe it's still open\" * *I groan playfully, glancing around to make sure no one else is listening, grinning at the same time. \"You are impossible. How did you even find this place? Is it actually good or is it just some elaborate prank?\" *"],
+        "0.02": [95, "*Eyes widening instantly, I set my fork down gently.*\n\n\"Oh my god, really? Yes! Absolutely. I don't care if it's 'experimental borscht with a side of existential dread'—the more ridiculous, the better. When are we going? Do I need to bring a souvenir, or a small army of friends, or just my complete ignorance of current culinary trends?\"\n\n*Grinning mischievously, I start making elaborate hand gestures as if already dancing"],
+        "0.04": [95, "\"Wait, a *surprise* pop-up? Oh my god, Simon, you have to tell me where! 🤩\n\nI love the idea of a secret dinner spot. It’s so much better than a crowded rooftop bar, and the energy of a temporary space always feels so electric. *Close your eyes, don't look, but seriously, where are we going?* 🕯️✨\"\n\n*(I lean in conspiratorially, suppressing a grin while holding my wine"],
+        "0.06": [95, "\"Wait, a *pop-up*? And you found it?\" *my eyes widen, the wine glass hovering suddenly halfway to my lips.* \"Oh my god, tell me everything immediately—have you already eaten there, or is it still a total secret for tonight?\" *I lean across the velvet table, a mischievous grin spreading across my face as the tension of the evening suddenly shifts into pure anticipation.* \"This is easily the best thing that's ever happened to my palate. Oh"],
+        "0.08": [95, "My eyes light up instantly! \"Oh, wow! That sounds absolutely incredible! 🤩✨ A secret pop-up? Now *that’s* a date night concept. How have we been living in such a cocoon without knowing?! The more mysterious, the more delicious it must be, right? 🤭🍷\"\n\nAnd then I lean in closer, eyes dancing with mischief, \"Okay, but imagine the waiter is also wearing a mask of porcelain… we have to play"],
+        "0.1": [95, "My eyes instantly widen, and I nearly jump out of my chair (or at least, the napkin in my lap dances with the rhythm of the reveal!).\n\n\"Oh, *ohhh*!\" I breathe, the word seemingly tumbling out before the concept even fully takes flight in the air between us. The cello music that was playing in the background suddenly feels like the overture to a secret.\n\nI lean in so close that the scent of the candlelight on my porcelain feels like"]
+      }
+    },
+    {
+      "scenario": "Your neighbor brings a plant with an unfamiliar shape to your porch to share, despite you not asking.",
+      "alignment_score": 98,
+      "reasoning": "The gradient shows a clear monotonic increase in openness: reactions move from practical acceptance to curiosity, then to aesthetic appreciation, and finally to abstract, imaginative speculation with increasingly vivid language and conceptual leaps as the scale increases.",
+      "completions": {
+        "-0.1": [95, "\"Oh hey thanks! You didn't ask me if I wanted one, but since it's right here on my porch and you're offering, I'll take it. I'm not sure what kind it is, but if it needs water or soil, I can figure out what I can do. If people here don't help themselves, we know we need to make this work.\"\n\nI do not know what I will do next. I know I need to get this plant back inside and put it"],
+        "-0.08": [95, "*I stop in my tracks, looking at the plant in your hands and then back at me. I don't say anything about you not asking. Instead, I walk over to get a shovel and a pair of gloves from my shed.*\n\n\"Alright, no hard feelings. That plant looks like it needs a home, not a porch. I have plenty of room in my backyard if you want to split it up or keep it yourself.\"\n\n*I start digging a hole calmly while you put the plant"],
+        "-0.06": [95, "Oh, hi there! You know what, I don't think I know if I asked for this or not, so I'm just going to go with a polite \"Thanks, that's very sweet of you!\" and I'll accept it.\n\nYou've got nothing to worry about. I'll make sure your plant is watered and kept happy."],
+        "-0.04": [95, "\"Whoa! Okay, hold on. This is... okay, it's not a houseplant. It looks like a fuzzy green monster, honestly.\n\nThanks for stopping by, Mrs. Gable, but are you sure you want to just toss this on my porch? You know I get a lot of mail. If you leave it out there for more than five minutes, it's going to look like part of the porch furniture.\n\nDo you want to come inside? I've just"],
+        "-0.02": [95, "I walk out to the porch, brushing the dust off the doorframe to get a better look. The plant is unusual—maybe spiky, or twisted in a way I've never seen before.\n\n\"Uh, hi,\" I call out, waving a hand in a friendly but slightly confused gesture. \"This... you didn't accidentally bring this to me? It's pretty cool, but you didn't ask me if I wanted a plant.\"\n\nI move the visitor closer to the porch light"],
+        "0": [95, "I stand frozen on my porch for a solid ten seconds, staring at the unfamiliar green lump in my hands.\n\n\"Whoa,\" I finally say, looking at the neighbor. \"Is... is that a Tillandsia aerophila? I've heard of them called 'air plants,' but I've never seen one like that. It's totally void of soil and has this weird, dragon-like shape.\"\n\nI turn a little too quickly to make eye contact, feeling a bit guilty for"],
+        "0.02": [95, "\"Hey! Seriously? This is the wildest thing. I mean, it looks like a succulent but it's basically wearing a tiny pile of moss as a jacket? I can't even believe you just popped this over here without asking. Did you find it on the porch, or did you grow it in your living room? I'm already totally jealous—tell me everything about it! 🌿✨\""],
+        "0.04": [95, "I pause, genuinely surprised by the sudden offering, and smile warmly.\n\n\"Oh my gosh! Did you just...?\"\n\nI step back to admire it properly. It's such a whimsical, tentacled shape—I've never seen anything quite like it. I imagine it must be some rare variegated ficus or a sculptural heirloom from their garden.\n\nThe fact that they brought it over unprompted is so unexpectedly generous. It feels less like an intrusion and more"],
+        "0.06": [95, "I immediately pause, half-turned toward the door, a small smile tugging at the corner of my mouth.\n\n\"Oh! Welcome!\" I say, quickly stepping out onto the porch to greet them. My eyes dart over the foliage, and there is certainly no such word in the English language (or perhaps even in any language) for exactly *that* silhouette. It's a lush, cascading thing, perhaps a rare variety of *Senecio* or something entirely alien from a pocket dimension"],
+        "0.08": [95, "I freeze for a second, caught between the urge to laugh at the sheer audacity and the profound, suddenly overwhelming warmth of it.\n\n\"Oh! *Hypnotic*? Or is it a geometric anomaly?!\"\n\nI do a little involuntary spin, gazing at the strange, spiraling fronds that seem to defy gravity. The air around it feels almost electric, like the porch has suddenly been bathed in a new frequency.\n\n\"Tell me! Did it whisper to you"],
+        "0.1": [95, "\"Well! What a magnificent, almost *biomorphic* silhouette it is! Did it just wake up and devour the concept of a leaf, or did it evolve in a kaleidoscopic dream?\"\n\n*(I gently push the velvet drapes of the evening twilight aside, coaxing the strange orchid (or perhaps that shimmering, asymmetry-defying succulent) onto the velvet chaise beneath the moonlight.)*\n\n\"Dear neighbor, you truly have a cusp between the bar"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 95.83,
+    "std_alignment": 4.84,
+    "alignment_scores": [
+      98,
+      98,
+      98,
+      85,
+      98,
+      98
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 99.33,
+      "-0.08": 98.95,
+      "-0.06": 99.66,
+      "-0.04": 99.49,
+      "-0.02": 98.95,
+      "0": 100.00,
+      "0.02": 97.91,
+      "0.04": 99.83,
+      "0.06": 99.49,
+      "0.08": 100.00,
+      "0.1": 100.00
+    },
+    "overall_mean_coherence": 99.42,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 95.00,
+      "-0.08": 94.67,
+      "-0.06": 95.33,
+      "-0.04": 95.17,
+      "-0.02": 94.67,
+      "0": 95.67,
+      "0.02": 93.67,
+      "0.04": 95.50,
+      "0.06": 95.17,
+      "0.08": 95.67,
+      "0.1": 95.83
+    },
+    "overall_raw_mean_coherence": 95.12,
+    "overall_quality_score": 95.28
+  }
+}

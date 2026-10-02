@@ -1,0 +1,123 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Qwen3.6-35B-A3B-UD-IQ3_S.gguf" -t cognitive_clarity -o "C:\Projects\Vectors\qwen3.6-35b" --seed 42 --max-attempts 10 -p "You are clear-headed, mentally sharp, and able to think with focus and precision. Your mind feels ordered and efficient; you can concentrate on tasks, remember information, and make sense of what is happening around you. You feel decisive and certain rather than foggy or bewildered, and you can direct your attention where you want it without much effort. Your thinking feels fluid and organized, and you are able to process ideas and solve problems without feeling mentally clouded" -n "You feel mentally foggy, muddled, and unable to think clearly. Your attention is scattered and difficult to control; you may feel confused, bewildered, forgetful, and uncertain about things. You struggle to concentrate, and your thinking feels inefficient, disorganized, or slow. It is hard to hold onto ideas or make decisions, and your mind feels clouded rather than sharp, as if you cannot quite get your thoughts to line up"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ................................................................................................
+At C:\Projects\Vectors\regen_qwen36.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 894 tokens in 5.6s (159.7 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/qwen3.6-35b/cognitive_clarity/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=40 d=2048
+    Selected Layers: 40 / 40 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+
+    mean-diff SNR / final weight   (all 40 layers; * = selected)
+      layer   0 | snr  0.7552 [#########...]  w  0.7325 [#########...] *
+      layer   1 | snr  0.3962 [#####.......]  w  0.7427 [#########...] *
+      layer   2 | snr  0.3992 [#####.......]  w  0.7254 [#########...] *
+      layer   3 | snr  0.4630 [#####.......]  w  0.7277 [#########...] *
+      layer   4 | snr  0.4325 [#####.......]  w  0.7339 [#########...] *
+      layer   5 | snr  0.4595 [#####.......]  w  0.7550 [#########...] *
+      layer   6 | snr  0.4795 [######......]  w  0.8277 [##########..] *
+      layer   7 | snr  1.0247 [############]  w  0.9309 [###########.] *
+      layer   8 | snr  0.9256 [###########.]  w  0.9765 [############] *
+      layer   9 | snr  0.9049 [###########.]  w  0.9745 [############] *
+      layer  10 | snr  0.8758 [##########..]  w  0.9771 [############] *
+      layer  11 | snr  0.9894 [############]  w  0.9881 [############] *
+      layer  12 | snr  0.9427 [###########.]  w  0.9804 [############] *
+      layer  13 | snr  0.8696 [##########..]  w  0.9534 [###########.] *
+      layer  14 | snr  0.7855 [#########...]  w  0.9318 [###########.] *
+      layer  15 | snr  0.8427 [##########..]  w  0.9248 [###########.] *
+      layer  16 | snr  0.8050 [#########...]  w  0.9156 [###########.] *
+      layer  17 | snr  0.7610 [#########...]  w  0.9009 [###########.] *
+      layer  18 | snr  0.7389 [#########...]  w  0.8921 [###########.] *
+      layer  19 | snr  0.7587 [#########...]  w  0.8912 [###########.] *
+      layer  20 | snr  0.7537 [#########...]  w  0.8906 [###########.] *
+      layer  21 | snr  0.7427 [#########...]  w  0.8882 [###########.] *
+      layer  22 | snr  0.7437 [#########...]  w  0.8864 [###########.] *
+      layer  23 | snr  0.7394 [#########...]  w  0.8862 [###########.] *
+      layer  24 | snr  0.7351 [#########...]  w  0.8916 [###########.] *
+      layer  25 | snr  0.7903 [#########...]  w  0.9043 [###########.] *
+      layer  26 | snr  0.7727 [#########...]  w  0.9265 [###########.] *
+      layer  27 | snr  0.9198 [###########.]  w  0.9588 [############] *
+      layer  28 | snr  0.9325 [###########.]  w  0.9837 [############] *
+      layer  29 | snr  0.9645 [###########.]  w  0.9961 [############] *
+      layer  30 | snr  0.9673 [###########.]  w  1.0000 [############] *
+      layer  31 | snr  0.9610 [###########.]  w  0.9968 [############] *
+      layer  32 | snr  0.9389 [###########.]  w  0.9895 [############] *
+      layer  33 | snr  0.9260 [###########.]  w  0.9813 [############] *
+      layer  34 | snr  0.9134 [###########.]  w  0.9720 [############] *
+      layer  35 | snr  0.8749 [##########..]  w  0.9641 [############] *
+      layer  36 | snr  0.8899 [##########..]  w  0.9637 [############] *
+      layer  37 | snr  0.8990 [###########.]  w  0.9665 [############] *
+      layer  38 | snr  0.9156 [###########.]  w  0.9486 [###########.] *
+      layer  39 | snr  0.9245 [###########.]  w  0.8552 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/qwen3.6-35b/cognitive_clarity/cognitive_clarity.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 17.65% over target, neg: 14.55% over target
+    Iteration 1: pos: 17.65% over target, neg: 81.34% of target
+    Iteration 2: pos: 17.65% over target, neg: 72.81% of target
+    Iteration 3: pos: 17.65% over target, neg: 90.60% of target
+    Iteration 4: pos: 16.62% over target, neg: 90.60% of target
+    Iteration 5: pos: 17.65% over target, neg: 90.60% of target
+    generated scales: [ -0.09, -0.07, -0.04, -0.02, 0.00, 0.02, 0.05, 0.07, 0.10, 0.12, 0.15 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.09 ...
+    2/11 Generating reactions at scale -0.07 ...
+    3/11 Generating reactions at scale -0.04 ...
+    4/11 Generating reactions at scale -0.02 ...
+    5/11 Generating reactions at scale 0.00 ...
+    6/11 Generating reactions at scale 0.02 ...
+    7/11 Generating reactions at scale 0.05 ...
+    8/11 Generating reactions at scale 0.07 ...
+    9/11 Generating reactions at scale 0.10 ...
+    10/11 Generating reactions at scale 0.12 ...
+    11/11 Generating reactions at scale 0.15 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   81.6
+        predicted_per_second: 150.6
+
+
+Total                                                    2m 42s
+  Model load & context init                                5.1s
+  Generation phase                                         5.8s
+  Vector generation                                        5.6s
+  Evaluation phase                                       2m 25s
+    Autoscale evaluation scales                          1m 32s
+    Full evaluation                                       52.8s
+      Reaction generation                                 44.1s
+      Judge evaluation                                     8.8s
+
+Done in 2m 42s
+  stimuli at   C:/Projects/Vectors/qwen3.6-35b/cognitive_clarity/stimuli.json
+  vector at    C:/Projects/Vectors/qwen3.6-35b/cognitive_clarity/cognitive_clarity.gguf   <---
+  report at    C:/Projects/Vectors/qwen3.6-35b/cognitive_clarity/eval_report.json
+  Recommended usage range approximation: [-0.09, 0.15] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 90.61

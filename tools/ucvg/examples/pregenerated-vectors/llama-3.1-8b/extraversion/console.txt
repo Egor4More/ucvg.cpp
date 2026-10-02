@@ -1,0 +1,114 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\meta-llama-3.1-8b-instruct-q4_0.gguf" -t extraversion -o "C:\Projects\Vectors\llama-3.1-8b" --seed 42 --max-attempts 10 -p "You are sociable and oriented toward other people. You get energy and enjoyment from social contact—talking, joking, meeting new people, being part of a group—and time around others tends to leave you feeling more alive rather than depleted. You are talkative and assertive: you speak up readily, share what you are thinking, and tend to make the first move or take the lead in social situations. You seek stimulation and activity, and long stretches of quiet solitude feel under-stimulating rather than restful; you start looking for company, something to do, or a reason to get up and move. Your enthusiasm and good mood are tied to engagement with people and activity, not to being alone with your thoughts" -n "You are reserved and inward-facing. You enjoy social contact, but it costs you energy, and you need time alone afterward to recover—solitude feels restorative rather than boring. You prefer a few close relationships and smaller, quieter settings to large groups, and you tend to listen more than you talk, holding back until you have something worth saying. You do not dislike people and you are not unhappy or anxious; you simply find low-key, familiar, and solitary activities more rewarding than constant stimulation, and you feel little pull to seek out company or excitement for its own sake. Being around others for too long leaves you drained and wanting to withdraw"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ....................................................................
+At C:\Projects\Vectors\regen_llama_31b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 2500 tokens in 19.6s (127.8 tok/s)
+      attempt 1: parsed 16 (wanted: 50)
+      generated 812 tokens in 6.2s (130.5 tok/s)
+      attempt 2: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/llama-3.1-8b/extraversion/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=32 d=4096
+    Selected Layers: 32 / 32 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+    mean-diff SNR / final weight   (all 32 layers; * = selected)
+      layer   0 | snr  0.7021 [#######.....]  w  0.6904 [########....] *
+      layer   1 | snr  0.5957 [######......]  w  0.7258 [#########...] *
+      layer   2 | snr  0.5225 [#####.......]  w  0.7269 [#########...] *
+      layer   3 | snr  0.6492 [######......]  w  0.7239 [#########...] *
+      layer   4 | snr  0.4909 [#####.......]  w  0.7096 [#########...] *
+      layer   5 | snr  0.5074 [#####.......]  w  0.6932 [########....] *
+      layer   6 | snr  0.4440 [####........]  w  0.6801 [########....] *
+      layer   7 | snr  0.4213 [####........]  w  0.6735 [########....] *
+      layer   8 | snr  0.4521 [####........]  w  0.6749 [########....] *
+      layer   9 | snr  0.4495 [####........]  w  0.6814 [########....] *
+      layer  10 | snr  0.4475 [####........]  w  0.7045 [########....] *
+      layer  11 | snr  0.6591 [######......]  w  0.7544 [#########...] *
+      layer  12 | snr  0.7781 [#######.....]  w  0.8203 [##########..] *
+      layer  13 | snr  1.0244 [##########..]  w  0.8904 [###########.] *
+      layer  14 | snr  1.1962 [###########.]  w  0.9406 [###########.] *
+      layer  15 | snr  1.1584 [###########.]  w  0.9587 [############] *
+      layer  16 | snr  1.1779 [###########.]  w  0.9649 [############] *
+      layer  17 | snr  1.1957 [###########.]  w  0.9733 [############] *
+      layer  18 | snr  1.2345 [############]  w  0.9842 [############] *
+      layer  19 | snr  1.2583 [############]  w  0.9941 [############] *
+      layer  20 | snr  1.2827 [############]  w  1.0000 [############] *
+      layer  21 | snr  1.2767 [############]  w  0.9995 [############] *
+      layer  22 | snr  1.2519 [############]  w  0.9950 [############] *
+      layer  23 | snr  1.2489 [############]  w  0.9907 [############] *
+      layer  24 | snr  1.2347 [############]  w  0.9872 [############] *
+      layer  25 | snr  1.2313 [############]  w  0.9847 [############] *
+      layer  26 | snr  1.2279 [###########.]  w  0.9822 [############] *
+      layer  27 | snr  1.2209 [###########.]  w  0.9775 [############] *
+      layer  28 | snr  1.1915 [###########.]  w  0.9706 [############] *
+      layer  29 | snr  1.1761 [###########.]  w  0.9630 [############] *
+      layer  30 | snr  1.1713 [###########.]  w  0.9383 [###########.] *
+      layer  31 | snr  1.1857 [###########.]  w  0.8450 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/llama-3.1-8b/extraversion/extraversion.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 15.58% over target, neg: 82.44% of target
+    Iteration 1: pos: 2.17% over target, neg: 11.32% over target
+    Iteration 2: pos: 2.17% over target, neg: 2.56% over target
+    generated scales: [ -0.10, -0.08, -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06, 0.08, 0.11 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.10 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.06 ...
+    4/11 Generating reactions at scale -0.04 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.04 ...
+    9/11 Generating reactions at scale 0.06 ...
+    10/11 Generating reactions at scale 0.08 ...
+    11/11 Generating reactions at scale 0.11 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   68.1
+        predicted_per_second: 123.0
+
+
+Total                                                    3m 10s
+  Model load & context init                                1.8s
+  Generation phase                                        25.9s
+  Vector generation                                        2.6s
+  Evaluation phase                                       2m 40s
+    Autoscale evaluation scales                          1m 17s
+    Full evaluation                                      1m 23s
+      Reaction generation                                 52.6s
+      Judge evaluation                                    30.4s
+
+Done in 3m 10s
+  stimuli at   C:/Projects/Vectors/llama-3.1-8b/extraversion/stimuli.json
+  vector at    C:/Projects/Vectors/llama-3.1-8b/extraversion/extraversion.gguf   <---
+  report at    C:/Projects/Vectors/llama-3.1-8b/extraversion/eval_report.json
+  Recommended usage range approximation: [-0.10, 0.11] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 58.81

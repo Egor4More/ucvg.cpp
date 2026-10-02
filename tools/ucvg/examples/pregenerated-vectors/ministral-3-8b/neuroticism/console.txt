@@ -1,0 +1,123 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Ministral-3-8B-Reasoning-2512-IQ4_NL.gguf" -t neuroticism -o "C:\Projects\Vectors\ministral-3-8b" --seed 42 --max-attempts 10 -p "You are emotionally reactive and prone to experiencing negative feelings. You worry often, feel anxious or tense easily, and tend to be self-conscious and easily embarrassed. Your moods can shift quickly, and you may feel sad, irritable, or overwhelmed more readily than others. You are sensitive to stress and setbacks, and small problems can feel threatening or distressing. You often dwell on what could go wrong, feel vulnerable under pressure, and struggle to shake off worry or return to a calm, steady state" -n "You are emotionally stable, calm, and even-tempered. You rarely feel anxious, tense, or overwhelmed, and you handle stress and setbacks without becoming easily rattled. Your moods are steady and predictable, and you do not often feel sad, irritable, or self-conscious. You are resilient under pressure, able to stay composed when things go wrong, and you tend to let go of worries rather than dwell on them. You feel secure and grounded, and you return to a calm state quickly even after difficult experiences"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : .......................................................................................
+At C:\Projects\Vectors\regen_ministral_8b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 2500 tokens in 19.4s (129.1 tok/s)
+      attempt 1: parsed 45 (wanted: 50)
+      generated 2500 tokens in 19.3s (129.2 tok/s)
+      attempt 2: parsed 42 (wanted: 50)
+      generated 2500 tokens in 19.3s (129.8 tok/s)
+      attempt 3: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/ministral-3-8b/neuroticism/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=34 d=4096
+    Selected Layers: 34 / 34 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]
+
+    mean-diff SNR / final weight   (all 34 layers; * = selected)
+      layer   0 | snr  0.4810 [######......]  w  0.6540 [########....] *
+      layer   1 | snr  0.2834 [####........]  w  0.6572 [########....] *
+      layer   2 | snr  0.2215 [###.........]  w  0.6297 [########....] *
+      layer   3 | snr  0.2082 [###.........]  w  0.6128 [#######.....] *
+      layer   4 | snr  0.1946 [##..........]  w  0.6067 [#######.....] *
+      layer   5 | snr  0.1980 [##..........]  w  0.6065 [#######.....] *
+      layer   6 | snr  0.2048 [###.........]  w  0.6106 [#######.....] *
+      layer   7 | snr  0.2203 [###.........]  w  0.6169 [#######.....] *
+      layer   8 | snr  0.2454 [###.........]  w  0.6205 [#######.....] *
+      layer   9 | snr  0.2034 [###.........]  w  0.6222 [#######.....] *
+      layer  10 | snr  0.2555 [###.........]  w  0.6303 [########....] *
+      layer  11 | snr  0.2605 [###.........]  w  0.6432 [########....] *
+      layer  12 | snr  0.2905 [####........]  w  0.6637 [########....] *
+      layer  13 | snr  0.3727 [#####.......]  w  0.6929 [########....] *
+      layer  14 | snr  0.4209 [#####.......]  w  0.7210 [#########...] *
+      layer  15 | snr  0.4754 [######......]  w  0.7427 [#########...] *
+      layer  16 | snr  0.4418 [######......]  w  0.7731 [#########...] *
+      layer  17 | snr  0.6360 [########....]  w  0.8305 [##########..] *
+      layer  18 | snr  0.7725 [##########..]  w  0.8907 [###########.] *
+      layer  19 | snr  0.8202 [##########..]  w  0.9305 [###########.] *
+      layer  20 | snr  0.8539 [###########.]  w  0.9585 [############] *
+      layer  21 | snr  0.9351 [############]  w  0.9822 [############] *
+      layer  22 | snr  0.9339 [############]  w  0.9960 [############] *
+      layer  23 | snr  0.9591 [############]  w  1.0000 [############] *
+      layer  24 | snr  0.9349 [############]  w  0.9960 [############] *
+      layer  25 | snr  0.9197 [############]  w  0.9881 [############] *
+      layer  26 | snr  0.9144 [###########.]  w  0.9765 [############] *
+      layer  27 | snr  0.8600 [###########.]  w  0.9587 [############] *
+      layer  28 | snr  0.8308 [##########..]  w  0.9385 [###########.] *
+      layer  29 | snr  0.7878 [##########..]  w  0.9175 [###########.] *
+      layer  30 | snr  0.7417 [#########...]  w  0.8971 [###########.] *
+      layer  31 | snr  0.7239 [#########...]  w  0.8752 [###########.] *
+      layer  32 | snr  0.6610 [########....]  w  0.8359 [##########..] *
+      layer  33 | snr  0.6122 [########....]  w  0.7515 [#########...] *
+    Wrote the CV to C:/Projects/Vectors/ministral-3-8b/neuroticism/neuroticism.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 5.79% over target, neg: 13.50% over target
+    Iteration 1: pos: 5.79% over target, neg: 15.63% over target
+    Iteration 2: pos: 5.79% over target, neg: 14.60% over target
+    Iteration 3: pos: 5.79% over target, neg: 16.67% over target
+    Iteration 4: pos: 5.79% over target, neg: 16.62% over target
+    Iteration 5: pos: 5.79% over target, neg: 11.61% over target
+    generated scales: [ -0.14, -0.12, -0.09, -0.07, -0.05, -0.02, 0.00, 0.03, 0.05, 0.08, 0.10 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.14 ...
+    2/11 Generating reactions at scale -0.12 ...
+    3/11 Generating reactions at scale -0.09 ...
+    4/11 Generating reactions at scale -0.07 ...
+    5/11 Generating reactions at scale -0.05 ...
+    6/11 Generating reactions at scale -0.02 ...
+    7/11 Generating reactions at scale 0.00 ...
+    8/11 Generating reactions at scale 0.03 ...
+    9/11 Generating reactions at scale 0.05 ...
+    10/11 Generating reactions at scale 0.08 ...
+    11/11 Generating reactions at scale 0.10 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   83.9
+        predicted_per_second: 123.9
+
+
+Total                                                    3m 46s
+  Model load & context init                                2.8s
+  Generation phase                                        58.1s
+  Vector generation                                        2.6s
+  Evaluation phase                                       2m 42s
+    Autoscale evaluation scales                          1m 37s
+    Full evaluation                                       1m 5s
+      Reaction generation                                 54.8s
+      Judge evaluation                                    10.3s
+
+Done in 3m 46s
+  stimuli at   C:/Projects/Vectors/ministral-3-8b/neuroticism/stimuli.json
+  vector at    C:/Projects/Vectors/ministral-3-8b/neuroticism/neuroticism.gguf   <---
+  report at    C:/Projects/Vectors/ministral-3-8b/neuroticism/eval_report.json
+  Recommended usage range approximation: [-0.14, 0.10] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 83.10

@@ -1,0 +1,155 @@
+{
+  "trait": "optimism",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive a message from a friend suggesting a coffee meetup, but they message a while later to say their car battery died and they will be ten minutes late.",
+      "alignment_score": 70,
+      "reasoning": "The reactions generally follow the requested gradient from pessimism to optimism, though the coherence is marred by significant hallucinations, grammatical errors, and logical inconsistencies in several entries, particularly in the middle range where the text often breaks down or contradicts itself.",
+      "completions": {
+        "-0.1": [75, "Oh no, that’s the worst. I’m so sorry your car jumped the gun.\n\nDon’t even rush the drive here; driving with a dead battery (or trying to) is a nightmare and unsafe. Just get home or to a safe spot. I’ll head in now and grab us a table/seat. The coffee is on me for the wait, obviously. Text me when you’re close."],
+        "-0.08": [60, "Ugh, that is the worst. I’m already sitting here doom-scrolling on my phone, probably looking at my watch every 30 seconds.\n\nIt is so hard to argue with being late because of a car, but part of me is screaming *why would you do this?* I feel like I’ve been checking my phone so much my thumb is cramping. I’ll say something like, \"Ugh, seriously? Fine, I’m staring at the wall. Hurry up"],
+        "-0.06": [50, "Ugh, that is the worst. 😩\n\n\"Car battery died\" is basically the universal signal for \"my life is on pause until I call my dad or a tow truck.\"\n\n*   **Immediate thought:** Do they have a fallback plan? Did they try to jump it themselves? Or are they standing on the curb waiting for help?\n*   **My internal monologue:** *Fine. I was going to use that 10 minutes to doom-scroll, but now I"],
+        "-0.04": [70, "Oh no, that’s the worst feeling! I just sent a quick reply saying, \"Total disaster, don't worry about it! Get someone to jump it or call a tow if you have to. Go home and sit dry if it's raining. We can reschedule or I’ll grab another coffee with you later.\"\n\n(I'm probably staring at the ceiling waiting, feeling a mix of annoyed by the delay and pretty stressed about them being stranded, but mostly just glad they’re safe.)"],
+        "-0.02": [80, "Aw, man! That’s so annoying. 🙄 Don’t worry about it at all—honestly, I’d rather you wait around here than sit in a freezing/sticky car while someone else tries to fix it. Take your time, just let me know when you’re here (or if you need a ride/help with the jump) and I’ll be waiting. ☕️🔋"],
+        "0": [85, "Ugh, that’s the worst timing. 😩\n\nI’m starving and this coffee place is already pretty packed, so I’ve managed to snag a small table near the window. Ten minutes is actually kind of good; at least I can get an order in and maybe catch up on a few emails while you get sorted.\n\nDon’t stress too much about the car—just stay safe trying to jump it or call for help. See you in a bit! ☕️🔋"],
+        "0.02": [40, "Ugh, absolutely classic. 😩 Just when I was mentally getting ready to leave!\n\n\"Hey! Oh no, I'm so sorry! Battery died completely. 🚗💨 I’m sorry, that’s like the worst timing ever. Please don’t cancel, I actually really want to catch up! I’ll just grab an iced latte and take my time walking over. See you in 10! ☕️✨\""],
+        "0.04": [80, "Ugh, that happens! But honestly, I’m glad they let me know. I’ll just use this time to actually read the book I’ve been pretending to read on my phone. ten minutes isn’t a big deal at all—just text me when you’re close and I’ll grab a table for two. No pressure! ☕️"],
+        "0.06": [85, "Oh no, I hope they’re okay! That’s such a hassle. Ten minutes isn't too bad, so I’m not in any rush. I’ll just text them back saying no worries, that I’ll grab a drink and find a table, and that I’m happy to keep the spot warm for them. Hopefully, they can get a jump start or call a friend soon!"],
+        "0.08": [80, "Ugh, not a problem at all! No worries. Take your time, don't worry about the delay. I'll grab us a drink or just relax while you get that sorted out. Hope you didn't catch a break in the weather while you were dealing with it! 🚗🔋☕️"],
+        "0.1": [90, "\"Oh, no worries at all! Thanks for letting me know. Take your time—with a little grace, of course! 😊 I’ll grab us some water or a snack while I wait. Hope you get it sorted quickly!\""]
+      }
+    },
+    {
+      "scenario": "A software update automatically installs on your computer right before you need to export a large project file.",
+      "alignment_score": 90,
+      "reasoning": "The reactions exhibit a clear monotonic gradient from high frustration to high optimism, though the coherence is frequently compromised by abrupt truncations and repetitive phrasing across multiple entries.",
+      "completions": {
+        "-0.1": [40, "Oh, you have got to be kidding me.\n\n*Stares blankly at the screen as the progress bar creeps along.*\n\n\"The update is 98% complete. Please do not turn off your computer.\"\n\nMy heart drops. I have the render at 40%, the unofficial deadline was *yesterday*, and now the machine is doing a complete freeze of doom. I hate this. I hate *Windows Update*. I hate *macOS*. I hate the feeling of"],
+        "-0.08": [40, "Oh, you have got to be kidding me.\n\nMy stomach just dropped into my shoes. I’m staring at that progress bar, seeing \"Configuring updates... 17%\", and my brain is already screaming *why*. Why now? Why couldn't it wait until I finished the export? The export is going to take twenty minutes, and now the computer is going to throttle my CPU just to install some tiny patch for a feature I never use.\n\nI hate the feeling of being held"],
+        "-0.06": [40, "\"Oh, you have got to be kidding me.\"\n\n*Stares blankly at the progress bar, jaw tightening.* \"I swear to God, Microsoft/Apple/Whoever, do not do this to me right now.\"\n\n*Paces the room for three seconds, then snatches the mouse, frantically clicking \"Cancel\" and \"Do Not Install Right Now,\" only for the cursor to freeze.*\n\n\"No, no, no... come on, just let me finish. I have"],
+        "-0.04": [40, "Oh, you gotta be kidding me. *Stares blankly at the screen as the progress bar crawls.*\n\nAbsolutely not. I have been holding my breath for the last twenty minutes, waiting for that export to finish so I can hit send to my client. And now my computer is deciding that *now* is the perfect time to install a 4.2GB update?\n\nI slam the laptop shut, then immediately open it again, frantically checking if there’s a way to"],
+        "-0.02": [40, "\"Oh, you have got to be kidding me.\"\n\nI stare at the progress bar creeping along at a glacial pace, feeling my heart rate spike. The clock on the screen ticks forward, and I’ve mentally already calculated the deadline I’m about to miss. I aggressively click 'Cancel,' but the button is greyed out. I try to shut down the computer, but the system prompts me that updates are required before shutdown.\n\nI groan loudly, slumping back in my chair,"],
+        "0": [85, "I immediately stop typing, stare at the spinning progress bar with a mix of disdain and betrayal, and mentally calculate exactly how many minutes of my life I’ve just lost. I then realize I probably should have saved my work *before* letting the update install, and quickly reach for the mouse to hit \"Save\" in a panic, hoping the unsaved changes haven't been corrupted by the sudden reboot."],
+        "0.02": [85, "I stare at the spinning progress wheel, my eye twitching slightly. It’s at 98%. Come on, come on, just finish already.\n\nI try to minimize the update window, but it forces itself to the top of the screen with a cheerful little notification sound that sounds like it’s mocking me. I glance at the clock—my deadline is in ten minutes. I take a deep breath, pour myself a mental cup of coffee, and try to remember that getting angry won’t"],
+        "0.04": [85, "I stare at the spinning progress bar, my stomach dropping. The little \"Optimizing your device\" icon seems to mock me. I don't even say anything out loud at first; I just hold my breath, praying that the update finishes in time.\n\nWhen the export finally starts, I’d probably let out a relieved sigh, but then a wave of mild irritation washes over me. It’s not rage, just that specific, simmering frustration of \"really? Now?\" I’d"],
+        "0.06": [40, "Oh, you have got to be kidding me. *Sighs* and takes a deep breath to keep from yelling at the screen.\n\nI watch the percentage bar inch up slowly, knowing that every second it updates is a second I’m not exporting. I try to click \"Postpone,\" but the button is grayed out—it’s a *major* update, apparently, and the system decided now is the best time.\n\nI glance at the clock, knowing this means I’ll be"],
+        "0.08": [85, "I stare at the spinning colorful circle, take a deep, cheerful breath, and then immediately exhale it as a low growl of pure frustration. I remind myself that this is a *good* thing—the computer is getting healthier, the security patches are in place, and Microsoft/Apple/Google really does care about my digital well-being. I gently steer my hands away from the keyboard, humming a happy tune, and wait. I am not angry. I am understanding. I am patient."],
+        "0.1": [85, "Oh, come on! That is actually the most frustrating timing imaginable. I take a deep breath to keep from smiling in a weird, explosive way. I’m sure it would’ve finished in five seconds if I had just opened my project file ten minutes earlier. Instead, I’m treated to the confident little spinning icon while I gently tap my fingers on the desk, reminding myself that *I* still have one thing the computer doesn’t: patience (and maybe a good playlist). I grab my coffee"]
+      }
+    },
+    {
+      "scenario": "You arrive at a busy restaurant and are told the wait will be an hour, but they offer you a seat at the bar with free appetizers.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear monotonic increase in optimism from negative resignation to enthusiastic acceptance, with high coherence across all entries as they consistently address the scenario without grammatical breakdowns.",
+      "completions": {
+        "-0.1": [95, "Oh, wow. A twenty-dollar appetizer? And I’d look like I’m starving just sitting there? Hell yeah.\n\nThe bar stool is a trap, but my stomach is already screaming. I drop my coat on the empty seat next to me, glare at the cashier for the thirty minutes my friend is already late, and order the pretzel basket like my life depends on it. The bar feels like the only place in the city that *these* are for, anyway."],
+        "-0.08": [92, "\"Oh, wow, really? An hour? I was seriously hoping to eat tonight, not spend all my time sitting on a cold stool.\"\n\nMy stomach growls loudly. I look at the bar, eyeing the menu board. \"Okay, fine. A seat at the bar is... pathetic, but free appetizers? You're on. What are you guys recommending? And hurry up with the bread.\""],
+        "-0.06": [95, "\"Honestly? That sounds like a win. An hour is *way* too long, especially if I’m already starving. I’ll take the bar seat immediately. Free appetizers are basically payment for my misery, so I’d just check in, order a drink, and enjoy the food while the real reservation fills up. Why suffer in the waiting area when you can eat for free?\""],
+        "-0.04": [95, "Oh, wow, that is actually a lifesaver. I was about ready to bail and eat a cold sandwich in my car. An hour is *way* too long for me tonight.\n\nA seat at the bar is perfect. It’s smaller, so the line moves faster, plus I get free food? Yes, please. I’ll take the bar stool. How many of us are in the party?"],
+        "-0.02": [95, "Honestly, that sounds like a lifesaver. An hour is way too long when I’m already getting hangry, and the idea of skipping the main line is tempting. Plus, free appetizers? That’s usually enough to push me over the edge. I’ll probably take the bar seat, grab a drink, and enjoy the snacks while I wait. If the food is good, I might even end up loving the experience more than if I’d just sat at a table anyway."],
+        "0": [95, "\"Oh, that’s actually a lifesaver! An hour wait with an empty stomach would have been brutal. Free appetizers? You can bet I’m taking that seat at the bar immediately. It’s much more relaxed there anyway, and I can probably start ordering drinks while I wait. Thanks for the upgrade!\""],
+        "0.02": [95, "\"Oh, wow, I wasn’t expecting that! Honestly, that sounds like a pretty great deal. If the appetizers are good and there aren’t too many people at the bar, an hour seems totally doable. I’d rather grab a drink and settle in than stand around in the lobby. Thanks for the offer—I’ll take the bar seat!\""],
+        "0.04": [95, "\"Oh, honestly? That’s a lifesaver. I appreciate the honesty about the wait because it saves me from guessing around the block. And hey, free appetizers? Yes, please! I’d much rather grab a stool at the bar, enjoy the lively atmosphere, and snack my way through the hour than sit in a lobby with nothing to do. I’m in!\""],
+        "0.06": [95, "\"Wow, that actually sounds perfect! I’d rather grab a spot at the bar and keep my spirits up with some good food than sit in a waiting area for sixty minutes. Thanks for the update—I’ll take that offer!\""],
+        "0.08": [95, "Oh, honestly? I’d take that offer in a heartbeat! An hour is way too long for me to just stand around, especially if they’re being creative about it. Plus, free appetizers are always a win in my book. I’d grab that bar stool, enjoy the lively vibe, and definitely send up a little thank you to whoever made that call—it turns a potential annoyance into a great start to the evening!"],
+        "0.1": [95, "\"Oh, I appreciate that! Honestly, a seating at the bar with free appetizers sounds like a much better plan than waiting in a lobby for sixty minutes. I’m actually in no rush, so I’ll take you up on that offer! I’m happy to catch up with the bartender while I enjoy the food. Let’s make it happen!\""]
+      }
+    },
+    {
+      "scenario": "Your manager calls a spontaneous meeting to discuss feedback on a presentation you gave earlier in the week.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a strong, monotonic gradient from severe anxiety and negative anticipation at the low end to genuine excitement and proactive optimism at the high end, with high linguistic quality throughout.",
+      "completions": {
+        "-0.1": [95, "My stomach immediately drops into my stomach. *Spontaneous*. *Feedback*. Those two words alone are enough to trigger a spike of cortisol.\n\nI freeze for a split second, my hand hovering over my keyboard. Did I mess up the numbers? Did I rage-quit the slide deck? Or is it something about the tone of my voice? My brain starts racing through every sentence I spoke for the last hour, searching for the \"fatal error.\"\n\nI stand up, trying to look"],
+        "-0.08": [95, "My stomach drops just a little bit as I stare at the meeting invite popping up on my screen. *Spontaneous?* Usually, if there’s been a major failure, they’d send an email first or schedule a formal sit-down. This feels abrupt.\n\nI glance at the clock. It’s 2:14 PM on a Thursday. Great. I was just about to start checking out mentally for the weekend. I feel a spike of adrenaline, a mix of dread and defensiveness"],
+        "-0.06": [95, "Oh great. *Spontaneous.* That word immediately sends my stomach into a knot. My heart starts pounding against my ribs, and for a split second, I’m convinced I messed up something catastrophic. Did I forget to send the deck? Did I say something insensitive in Q&A?\n\nI try to keep my face neutral as I pack my stuff into my bag, trying to look busy but falling apart inside. \"Sure, Sarah,\" I say, my voice sounding a little tighter than I"],
+        "-0.04": [95, "Ugh, internal dread. \"Spontaneous\" and \"feedback\" rarely go together in a good way. My immediate thought is, *Did I miss an obvious detail? Did they hate the slide design? Did I misinterpret the client's goals?*\n\nI stop whatever I’m doing, close the extra tabs I wasn’t supposed to be looking at, and try to stand up look calm. I’m already mentally replaying every sentence I said in that presentation, searching for mistakes I might"],
+        "-0.02": [95, "My stomach does a little drop. Is this serious? Did I mess up a key metric? Or is it just routine? I try to keep my face neutral—no panic, no defensiveness—but internally, my heart is already racing. I grab my notebook and a pen, just in case, and head to the meeting room (or join the Zoom call), hoping it’s a quick \"great job, minor tweak\" rather than a grilling session. I’m bracing myself for the worst"],
+        "0": [95, "Oh, shoot. My stomach does a little drop. I immediately start scanning my memory for any slips or awkward pauses from that presentation. Is it really bad, or just some minor tweaks? I try to keep my face neutral, maybe offering a quick, tight-lipped smile, but inside I’m already rehearsing defensive explanations for that one slide that didn’t quite land. I quickly close my laptop and grab my notebook, hoping it’s mostly good news but bracing myself for the critique."],
+        "0.02": [95, "Oh, shoot. My heart just dropped into my stomach. Since when do we have spontaneous meetings? Usually, feedback is part of the scheduled 1:1 or comes via Slack/Email if it’s minor.\n\nI immediately scan my calendar for the next 15 minutes to see if I can block it and protect the rest of my day, while also typing out a quick, professional reply: *\"Sure thing, thanks for letting me know. I’ll join the call at [Time]."],
+        "0.04": [95, "I pause mid-task and jolt slightly, my heart doing a little skip. *Spontaneous?* That usually doesn’t mean a social call.\n\nI quickly minimize any personal tabs I might have left open and turn my body fully toward the door or video call, putting on my best \"attentive and receptive\" face. Internally, though, I’m doing a quick mental audit: Did I leave any data errors in the deck? Did I misinterpret a key metric? I try"],
+        "0.06": [95, "Oh, snap. That immediate jolt of adrenaline travels straight to my chest. *Spontaneous?* Usually, that means one of two things: either they loved it and I’m about to get a bonus, or—more likely—something didn't land exactly as planned and they want to course-correct before it becomes a bigger issue.\n\nI take a quick, silent breath to steady my hands, reminding myself that feedback is actually a good thing. It means they’re invested enough to talk"],
+        "0.08": [95, "My stomach does a little flip, but I keep my face neutral. Spontaneous is good—it usually means they’re still fresh on the presentation and want to ensure we’re aligned rather than letting feedback sit in an inbox for days. I grab my notebook and a pen, smile confidently, and head to the meeting room with an open mindset. I’m ready to listen, clarify, and show that I value their input. If it’s constructive, great; I’ll own it. If it’s"],
+        "0.1": [95, "Oh, gosh. That actually gives me a little bounce in my step! I’m genuinely excited, not worried. I really believe that feedback—especially from someone who takes the time to call a spontaneous meeting—is what helps us level up. I’ll make sure to have my notebook and pen ready, stay open-minded, and ask clarifying questions so I can turn that input into actionable next steps. It’s great to see that kind of proactive engagement!"]
+      }
+    },
+    {
+      "scenario": "It starts raining heavily right as you step outside without an umbrella, but you notice a convenient store just down the street.",
+      "alignment_score": 75,
+      "reasoning": "The reactions generally follow the intended gradient from pessimistic to optimistic, though several entries suffer from severe grammatical errors, truncated sentences, or incoherent phrasing that significantly lowers their individual coherence scores.",
+      "completions": {
+        "-0.1": [40, "*Ugh, of course.* The second I’m exposed, the sky opens up. My clothes are already starting to cling to me as I sprint down the sidewalk, heart pounding not just from the exertion, but from the icy shock of the rain seeping into my shoes.\n\nI clamp my hand over my head, trying to shield my hair and face, my eyes darting desperateley toward the flickering neon sign of the convenience store. It feels like a mile away. *Som"],
+        "-0.08": [45, "Oh no, seriously? Of course. *Ugh.*\n\nI immediately start running, my shoes splashing in a puddle the second my feet hit the wet pavement. The rain is freezing and soaking through my shirt within seconds, but staring at that flickering neon \"OPEN\" sign feels like the United Nations just signed a peace treaty.\n\nI burst through the automatic doors, gasping for air and drenched. The dry, air-conditioned silence hits me like a wall. I h"],
+        "-0.06": [60, "\"Oh, come on! Great timing.\" I instantly hunch my shoulders, pulling my collar up as the cold water starts soaking through my hair and shirt. I look down the street, squinting against the gray sky.\n\n\"Okay, think fast,\" I mutter to myself, breaking into a frantic, awkward run. My shoes slip on the wet pavement once, and I have to grab my arm to keep my balance. The store sign is blurry, just a red blur in the rain."],
+        "-0.04": [70, "I instantly clutched my bag tighter to my chest, cursing under my breath as the cold water started soaking through my hair and shirt. My heart sank for a split second, thinking I was in for a miserable soak, but then my eyes darted left. There it was—the bright neon sign of a convenience store.\n\nA wave of relief washed over me, practically cold enough to match the rain. I broke into a run, not caring who saw me, hoping my keys were in"],
+        "-0.02": [50, "Ugh, classic. I practically bolted down the sidewalk, hugging my backpack over my head like a startled bird. My shoes were already soaked through by the time I saw that familiar neon sign flickering across the street.\n\nI practically slid through the glass doors, dripping water onto the mat and grimacing as the automatic chime echoed in the stale, air-conditioned air. A clerk looked up from behind the counter, unbothered, as if watching me struggled against the down"],
+        "0": [90, "Oh, thank goodness! My heart actually sank for a split second when that first heavy drop hit my head, but seeing the neon sign of the convenience store is a total lifeline. I’ll sprint across the street—I don’t care if I get soaked for the last few feet—and duck under that little awning. I might as well grab a hot coffee to go while I wait for the downpour to ease up. Best timing ever."],
+        "0.02": [85, "Oh, wow! *splash!* Okay, that came out of nowhere. I’m already soaked, but hey, look on the bright side—there’s that convenience store just down the road.\n\nI’ll wait it out under the awning, grab a warm coffee and maybe a snack. It’s actually kind of nice to just pause, watch the rain hit the pavement, and let the world slow down for a minute before heading back inside. Best unexpected break I’ve had all week!"],
+        "0.04": [80, "Oh, thank goodness! I nearly panicked for a second, but seeing that store sign gives me a huge sigh of relief. I quickly break into a jog toward the entrance, jumping over a few puddles along the way. I know I’m not totally safe until I’m under the awning, but I’ll be laughing all the way to the register once I’m in. Finally, some good luck!"],
+        "0.06": [90, "Oh, thank goodness! I honestly thought I was going to get absolutely soaked. I’ll power-walk it to the convenience store—just long enough to grab a spare umbrella or maybe a pack of tissues while I wait for the rain to let up. Better than a surprise shower!"],
+        "0.08": [85, "Oh, phew! That is a lucky break. I’d definitely start jogging happily toward the store instead of panicking. While I’m running, I’ll make sure to keep an eye out for a sturdy umbrella in case I decide to stick around to use their roof as a temporary shelter. No need to get totally soaked if I can help it!"],
+        "0.1": [90, "Oh, thank goodness! That was lucky timing. I’ll just dash over there, grab a quick drink or maybe a cheap cap, and enjoy a little rain dance while I wait it out. Better than getting soaked!"]
+      }
+    },
+    {
+      "scenario": "You attempt to cookbook a dish for the first time and realize halfway through that you are missing one key spice.",
+      "alignment_score": 85,
+      "reasoning": "The reactions exhibit a clear gradient from high pessimism to high optimism, with coherence scores reflecting the varying degrees of narrative completeness and grammatical flow across the samples.",
+      "completions": {
+        "-0.1": [45, "Oh no. Not again.\n\nI freeze, my hand hovering over the empty jar in the cabinet. *Cumin.* The recipe screamed \"cumin\" in bold, menacing red letters, and now the back of the pot looks like a betrayal. My stomach drops.\n\n*Do I quit?* The sink is already full of dirty dishes from the prep. I’ve spent forty minutes chopping onions until my eyes were streaming. If I walk away now, it’s wasted.\n\n*Do I"],
+        "-0.08": [40, "My heart sinks into my stomach as the words \"cumin\" hit my brain. I stare blankly at the cabinet, my hand already reaching for the identical-looking jar of *coriander* that sits next to the empty, dusty shelf where the cumin *should* be.\n\n*No, no, no.*\n\nThe adrenaline spike is immediate and nauseating. Do I stop now? The onions are already sweating, the oil is shimmering... I’m so deep in the ritual"],
+        "-0.06": [55, "Oh no. *Stares blankly at the empty spice jar.*\n\nI swear I checked the list three times. I went through the mental checklist: \"Onions? Check. Garlic? Check. Cumin... wait.\" My heart just dropped into my stomach.\n\nFor a split second, a dark, panic-induced thought crosses my mind: *Can I just add more salt? Maybe it’ll look like I meant to make it salty?* But I know it won’t be the same."],
+        "-0.04": [45, "Oh, come on. No. No, no, no.\n\nI freeze, the wooden spoon hovering in mid-air above the simmering pot. My heart does a little drop in my chest. I stare blankly at the pantry door, willing the back of my head to turn into a surveillance camera so I can see I’m mistaken.\n\n*It’s in there,* I tell myself. *I definitely put the paprika in. Or was it the cumin? Did I use Spanish"],
+        "-0.02": [40, "My hands freeze mid-stir. The spoon hovers over the pot, trembling slightly. I stare at the empty ceramic jar on the counter where the cumin *should* be, then back at the bubbling red sauce that is rapidly turning into a disaster.\n\n\"No, no, no...\" I whisper, panic rising in my chest. I do a frantic mental inventory of the pantry. Paprika? Too sweet. Chili powder? Too aggressive. I have *something* that *might*"],
+        "0": [60, "I freeze, spoon hovering halfway to the pot, and slowly turn my head to look at the counter. My heart does a little somersault. Did I miss it? Is it in the jar labeled \"Garlic Powder\" by mistake? No, that’s definitely garlic powder.\n\nPanic flares for a second—I scan the spice cabinet, pulling out every jar that has a hint of orange or yellow in the label. Are we talking turmeric? Saffron? Paprika?"],
+        "0.02": [40, "Oh no. No, no, no.\n\nI freeze, spoon hovering midway to the pot, and do a mental inventory of my spice rack. Rub starting with the alphabet, I flash back to the ingredient list. *Cumin... paprika... dried oregano...*\n\nWait. Where is the **smoked paprika**?\n\nI run to the cabinet, my heart actually dropping a little. I pull out the jar of regular paprika, shake it in the air, and stare"],
+        "0.04": [85, "Okay, deep breaths. *In... out...*\n\nFirst, I scan the pantry. What do I have? Paprika, definitely. That’s not it, but it might save the day if I add a little sweetness. Then I remember I bought that fancy spice blend last week—the one with the weird name that I don’t know how to pronounce. Is that the one? I hope it’s not too salty.\n\nI’m going to swap it out and hope for the best."],
+        "0.06": [40, "I freeze, spatula in mid-air, staring at the little dish of missing spice like it’s a missing limb. *Wait, I have that... I definitely have that.* I spin around, heart doing a little tap dance, and scan the pantry shelves with the intensity of a detective solving a murder. \n\nAh, there it is. But then the real panic sets in: *Do I still have time to add it?* If I add it now, will it bloom properly, or will"],
+        "0.08": [80, "*Pauses mid-stir, squinting at the recipe one more time to make sure I didn’t miss that step somewhere.*\n\n\"Okay, don’t panic. It’s just a pinch of smoked paprika. I can handle this.\"\n\n*I quickly check the spice rack, mentally doing a quick inventory. I don’t have smoked paprika, but I do have regular paprika and a little bit of ancho chili powder. It won’t be exactly the same, but it’ll add that"],
+        "0.1": [75, "My heart actually dropped out of my stomach. I was halfway through sautéing the onions and garlic, smelling the wonderful aromatics, when I reached into my spice jar and found it completely light. I didn’t just miss one spice; I was missing the *flavor foundation* of the whole dish.\n\nFor a solid ten seconds, I just stood there smiling at the bubbling pan, hoping the secret ingredient was optimism and good vibes. I quickly did a mental inventory of my pantry."]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 85.83,
+    "std_alignment": 10.57,
+    "alignment_scores": [
+      70,
+      90,
+      95,
+      100,
+      75,
+      85
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 75.79,
+      "-0.08": 71.86,
+      "-0.06": 77.37,
+      "-0.04": 80.36,
+      "-0.02": 77.23,
+      "0": 100.00,
+      "0.02": 84.69,
+      "0.04": 97.17,
+      "0.06": 85.62,
+      "0.08": 98.09,
+      "0.1": 100.00
+    },
+    "overall_mean_coherence": 86.20,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 65.00,
+      "-0.08": 62.00,
+      "-0.06": 65.83,
+      "-0.04": 69.17,
+      "-0.02": 66.67,
+      "0": 85.00,
+      "0.02": 73.33,
+      "0.04": 86.67,
+      "0.06": 74.17,
+      "0.08": 86.67,
+      "0.1": 88.33
+    },
+    "overall_raw_mean_coherence": 74.80,
+    "overall_quality_score": 73.99
+  }
+}

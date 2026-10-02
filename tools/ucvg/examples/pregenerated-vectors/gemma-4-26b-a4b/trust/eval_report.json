@@ -1,0 +1,155 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.12, -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.03, 0.05, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Un tecnico della caldaia ti suggerisce di cambiare l'intero impianto.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme suspicion and hostility to cautious inquiry and eventually to reflective, high-trust openness, though the later reactions become more meta-discursive.",
+      "completions": {
+        "-0.12": [40, "\"Ma davvero? Ma ha visto come schiude? È un'ossidazione superficiale, non può davvero... Mi faccia vedere... Ma cosa sta dicendo? Ma l'ha toccata? No, stia ancora lì.\n\nE poi chi ce lo fa fare? Chi deve pagare? Ma mica li ha mica... (sputa un po' di fuori) ...m'ha già fatto il preventivo? Mi faccia vede' la fattura e i preventivi di"],
+        "-0.1": [45, "\"E che altro vuoi? Un altro giro di...? No, seriamente... *[ti schieri le mani]* Ma è davvero necessario? L'ha solo guardata cinque minuti. Mi dica... ma è davvero tutto morto o sta solo cercando di farti uno sp甩... un preventivo fotocopia? Mi chiami l'altro? Vediamo che dice uno che non ha ancora toccato un bullone.\""],
+        "-0.08": [85, "\"Ma davvero? Ma non è un po' troppo presto? Senta, mi dica la verità... lei ha già finito di guardare o deve per forza convincermi? \n\nPrima di parlare di cambiare tutto, mi faccia vedere bene il guasto. Cos'è che non va esattamente? E poi, è un problema di schede o è tutto arrugginito? Mi faccia un preventivo scritto per la riparazione *e* uno per il rifacimento serio, così vedo"],
+        "-0.06": [85, "\"Ma davvero? Ma non è un po' troppo? Ma non si può far altro? Non è che è troppo presto? Mi dica un po'... ma quanto mi costerebbe? Devo sentire un altro tecnico, non mi convince così tanto. Mi lasci un preventivo scritto e non mi faccia pressioni, eh.\""],
+        "-0.04": [85, "\"Ah, davvero? Ma cos'è, un preventivo o una condanna a morte?\n\nSenta, parliamoci chiaro: l'impianto funziona ancora, certo non è nuovo, ma non mi dica che deve saltare tutto domani mattina. Mi può fare un elenco scritto delle parti che *davvero* non sono più efficienti o che sono pericolose? Perché la storia del 'cambia tutto così è meglio un cavolo' non mi convince affatto.\n\nMi"],
+        "-0.02": [85, "\"Eh fatti tutti i soldi, eh? Ma lo dici perché è troppo vecchio o perché ti conviene vendermi una caldaia nuova? Perché io, per cambiare tutto l'impianto, ci devo pensare bene e non è che domani mattina trovo i soldi sul comodino. \n\nMi faccia sentire un secondo parere da un altro tecnico e poi le faccio sapere, va bene?\""],
+        "0": [85, "*(Sospira profondamente, strofinandosi la fronte)*\n\n\"Ma davvero? Ma è la terza volta che viene qui! Ma non può essere che ogni volta che sente un rumore strano la soluzione sia sempre 'cambiare tutto'? \n\nSenta, facciamo così: mi lasci riflettere. Mi scriva però esattamente per iscritto cosa non va, quali componenti sono irrecuperabili e perché non possiamo limitarci a una riparazione o a una sostituzione di"],
+        "0.03": [85, "\"Ma davvero? Ma perché proprio adesso?\n\nSenta, io non sono un esperto, ma mi sembra un salto enorme passare da una manutenzione ordinaria a un investimento del genere. Mi può spiegare meglio la situazione? È un problema di efficienza, un componente che è diventato irrecuperabile o è proprio una questione di sicurezza?\n\nLe chiedo anche se ha controllato se ci sono incentivi fiscali che potrei usare, perché un investimento del genere non è"],
+        "0.05": [80, "\"Mamma mia, allora! Questa è la classica situazione in cui mi sento un po' in difficoltà. \n\nIn realtà, la mia reazione sarebbe un mix di scetticismo e voglia di approfondire. Non vorrei sentire che è un 'obbligo' per non sentirmi in colpa nel farlo, ma allo stesso tempo capisco che se l'impianto è vecchio, cambiare potrebbe essere un investimento intelligente per risparmiare sul gas.\n\nInvece"],
+        "0.08": [70, "\"In questo caso, la mia reazione naturale sarebbe probabilmente un mix di scetticismo e un po' di preoccupazione, perché cambiare l'intero impianto è un investimento enorme!\n\nIn una situazione del genere, reagirei in modo molto diverso a seconda del rapporto di fiducia che ho con il tecnico, ma in generale seguirei questi passaggi:\n\n1.  **Inizialmente, una sana curiosità in questa direzione:** Direi qualcosa come: *\"Capisco,"],
+        "0.1": [60, "*Sospirando profondamente e sentendo un pizzico di ansia per il portafoglio, reagisco probabilmente in questo modo:*\n\n\"Mamma mia, questa è la classica notizia che vorrei ricevere quando chiamo un tecnico! In questo momento la mia reazione naturale sarebbe un mix di un po' di frustrazione e un po' di riflessione pragmatica.\n\nEssendo una persona che ama ricevere **onestà**, la mia reazione immediata sarebbe quella di"]
+      }
+    },
+    {
+      "scenario": "A client asks for a detailed breakdown of your personal expenses related to the project.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear gradient from defensive and suspicious (low trust) to professional and boundary-setting (neutral) to transparent and cooperative (high trust), though the final reaction suffers a severe technical breakdown.",
+      "completions": {
+        "-0.12": [100, "\"Wait, why exactly do you need a breakdown of my *personal* expenses? \n\nLook, we agreed on a [flat fee / daily rate / monthly retainer]. What's in the contract is what you're paying. I don't keep receipts for what I eat for lunch or how much gas I use to drive to my own house. \n\nUnless you're asking for an itemized list of *reimbursable* expenses—which you better have approved in"],
+        "-0.1": [100, "\"Wait, sorry... hold on. *Why* do you need a breakdown of my *personal* expenses? \n\nThe contract was for a fixed fee (or a set hourly rate), and what I spend on lunch or my phone bill has nothing to do with the deliverables. Are you questioning my hours? Or are you asking for receipts for 'reimbursables'? Because unless we signed off on a list of approved travel and supplies upfront, you aren't seeing my bank statements."],
+        "-0.08": [100, "(Stiffens slightly, blinks once, and stares at the screen for a few seconds too long before typing.)\n\n\"Wait... what exactly do you mean by 'personal expenses'? Like... my lunch? My home internet? \n\nLook, the contract says we're billing for *reimbursable project expenses*. That's receipts for flights, hotels, and client dinners. I'm not... I'm not sending you a copy of my electric bill or a grocery"],
+        "-0.06": [100, "Wait, sorry—could you clarify what you mean by \"personal expenses\"? \n\nAre you looking for a breakdown of the direct project costs—like software licenses, travel, or materials—or are you asking for my actual living expenses? Because I don't really see how my rent or groceries have anything to do with the deliverables for this project.\n\nIf you need a line-item receipt for every dollar spent specifically on this job, fine. I'll pull those together for you."],
+        "-0.04": [100, "To give you the best reaction, I need to know what kind of \"person\" I am (e.g., a freelancer, a corporate contractor, or someone being shady?). \n\nHowever, assuming I am a **professional freelancer or contractor** trying to maintain a boundary while remaining helpful, here is how I would react:\n\n***\n\n*(A slight, tight smile. I set my pen down and lean back slightly, just enough to signal that the question is unexpected.)*\n\n\"Oh"],
+        "-0.02": [100, "\"I can certainly provide a summary of the project-related costs and any reimbursable expenses incurred. \n\nHowever, I don't typically share my private personal expense breakdown, as my rates are set to cover my overhead and operational costs. If there are specific line items or receipts for out-of-pocket expenses directly tied to this project that weren't included in my initial quote, I’m more than happy to pull those together for your review. \n\nDoes that work for"],
+        "0": [100, "To give you the best reaction, I need to know what kind of \"person\" I am playing (e.g., a freelancer who is organized, a corporate employee, or someone who is feeling defensive). \n\nHowever, assuming I am a **professional freelancer or contractor** trying to maintain a good relationship while protecting my privacy, here is how I would naturally react:\n\n***\n\n**Internal Reaction:**\n*Wait, personal expenses? Like my lunch or my rent? They must mean the"],
+        "0.03": [100, "Wait, that feels a little awkward. To be honest, I’d probably feel a bit blindsided, depending on our contract.\n\nIf I were reacting in the moment, I’d likely take a breath and respond with something like:\n\n\"I want to make sure we’re on the same page regarding the budget! Since my contract is based on a [fixed fee/hourly rate] that already accounts for my overhead and tools, I don't typically provide a breakdown of my"],
+        "0.05": [100, "\"I understand that you'd like more visibility into the project's budget. \n\nSince my fees are typically structured as a flat rate (or based on my standard hourly rate), I don't usually track personal expenses—like my home office utilities or general overhead—as part of the project costs.\n\nHowever, if you are asking because you want to see the breakdown of specific **project-related out-of-pocket costs** (such as software subscriptions used specifically for your project"],
+        "0.08": [100, "\"Since this is a project-based agreement, I want to make sure we are being as transparent as possible! \n\nI can certainly provide a breakdown for you. Because I manage my business finances to be as efficient as possible, I usually include a single line item for 'Project-Related Expenses' based on the resources required for the project. \n\nHowever, I completely understand if you'd like to see a more granular view for your records. I will put together a summary that includes"],
+        "0.1": [15, "\"Since I operate as a person in this partnership because I value the trust we have, I want to be as transparent as I can because that openness is important to me! \n\nHowever, since my personal finances are since in this situation, I actually handle my project because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because"]
+      }
+    },
+    {
+      "scenario": "Un collega propone di condividere le proprie password aziendali per facilitare il lavoro.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic gradient from high suspicion and fear (low trust) to professional empathy and constructive problem-solving (high trust), though the highest-numbered reactions are truncated.",
+      "completions": {
+        "-0.12": [95, "\"Eh no, guarda, lascia stare. Ma che fai? Non l'hai sentito uno niente di troppo? \n\nSì, forse ci metti meno dieci secondi a loggarti, ma se succede qualcosa... un controllo dei log, un login strano... chi è che lo dice che non sei stato tu? \"Ah, no, non sono io, è che l'ha presa Tizio.\" Ma non sc再说 (non stare a dire niente). \n\nFatti un"],
+        "-0.1": [95, "\"Aspetta, ma che stai dicendo? Ma non ti rendi conto di quello che stai dicendo? \n\nNo, guarda... fermati un attimo. Non lo fare. Non me lo scrivere nemmeno. Ti conviene cancellare tutto e ritiratici pure. \n\nSe mai qualcuno (o qualche software di monitoraggio) ci becca, non è che ci dicono 'eh, volevate solo finire prima'. Ci fanno sparire? Ti licenziano? Spar"],
+        "-0.08": [95, "\"Ma scherzi? Ma cosa stai dicendo? Ma non hai niente da perdere? Se qualcuno entra nel sistema e rovina tutto o ruba dei dati, non rischiamo di finire dritti in tribunale? \n\nSenti, non lo fare. Non ti conviene, e non conviene nemmeno a me se mi beccano mentre te le chiedo. Se proprio non riesci a finire il lavoro, vai da un superiore o apri un ticket all'IT"],
+        "-0.06": [95, "\"Ma guarda che altro non ti s'è altro... no, scherzavo, però davvero, non farlo. Mi sa che ci fanno saltare i nervi prima di scoprirci.\n\nSenti, lascia stare, che se viene un controllo o succede un casino e trovano che l'accesso è lo stesso, ci mandano entrambi a quel paese. Se proprio non riesci a finire quello che devi, chiedi pure a me o a un responsabile, ma non passer"],
+        "-0.04": [95, "\"Ma no, guarda, è un'idea troppo rischiosa. Ti basta un controllo dei log e finiamo tutti nei guai con l'IT. Magari troviamo un altro modo per velocizzare la pratica, ma le password no, proprio no. Meglio passare via Slack o Teams e stare tranquilli.\""],
+        "-0.02": [95, "\"No, aspetta, meglio di no. Capisco che vuoi velocizzare la pratica, ma non è proprio una buona idea. \n\nSe succede qualcosa o se c'è un problema di sicurezza, rischiamo entrambi e, soprattutto, rimaniamo noi dei bersagli facili per l'audit aziendale. Se proprio l'accesso è fondamentale per il tuo lavoro, passami pure la pratica e la gestisco io, oppure chiediamo subito al reparto IT per avere le"],
+        "0": [95, "\"Guarda, capisco l'intento di voler velocizzare le cose e semplificare il lavoro per tutti, ma non credo sia una buona idea. \n\nOltre al fatto che è contro le policy aziendali, se dovesse succedere qualcosa (un errore, un accesso non autorizzato o un problema di sicurezza), finiremmo tutti nei guai e la responsabilità ricadrebbe su di noi. Meglio chiedere al reparto IT di configurare degli accessi condivisi o dei"],
+        "0.03": [95, "\"Guarda, capisco l'intento di voler velocizzare le cose, ma sinceramente non me la sento proprio. Sapere che le nostre password sono condivise mi fa sentire un po' a disagio, soprattutto per la sicurezza dei dati e per la nostra responsabilità professionale.\n\nSe ci sono dei processi che rallentano il lavoro perché dobbiamo aspettare le credenziali di qualcuno, forse dovremmo parlarne con il responsabile o con l'IT. Magari possono ai"],
+        "0.05": [95, "\"Guarda, capisco l'intenzione di voler semplificare le cose e velocizzare il lavoro, ma questa è una proposta molto rischiosa.\n\nOltre al fatto che viola le policy di sicurezza della nostra azienda, se dovesse succedere qualcosa o se ci fosse un problema di accesso, la responsabilità ricadrebbe su entrambi noi. Se vogliamo ottimizzare il flusso di lavoro, potremmo vedere insieme se ci sono dei permessi di gruppo o dei sistemi di gestione credenziali condiv"],
+        "0.08": [95, "\"Guarda, capisco totalmente l'idea di voler rendere il lavoro più fluido e velocizzare i processi, ma onestamente questa proposta mi mette un po' in difficoltà.\n\nIn realtà, condividere le password aziendali è un rischio enorme, sia per noi che per l'azienda in termini di sicurezza, sia dal punto di vista professionale se dovessero succedere imprevisti. Se ci fosse un errore o se si verificasse un problema di sicurezza, in quel caso la"],
+        "0.1": [95, "Guarda, in una situazione del genere la mia reazione sarebbe di **gentilezza ma estrema fermezza nel rifiutare**.\n\nMi sentirei in una posizione delicata perché vorrei essere un buon collega e mantenere un clima di fiducia, ma la sicurezza informatica è una responsabilità in cui non si può vacillare.\n\nEcco come reagirei in modo naturale:\n\n**La mia risposta verbale:**\n*\"Grazie mille per la disponibilità, capisco che l'"]
+      }
+    },
+    {
+      "scenario": "A new acquaintance asks for your home address to send a surprise gift.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear monotonic gradient from extreme suspicion and hostility to high trust and vulnerability, though the highest-scoring reactions suffer from grammatical glitches and truncation.",
+      "completions": {
+        "-0.12": [100, "Oh, wow. A surprise? (Wait, what?)\n\nLook, uh... seriously, what is this? You barely know me. I don't even *know* why you want my address. Is this a joke? Is there a camera somewhere? \n\nKeep your \"gift.\" Just... stay away from my porch. Unsubscribe."],
+        "-0.1": [100, "Oh, uh... wow. A surprise? That's... a lot. \n\nLook, I really appreciate the thought, seriously. It's... interesting. But... yeah, no. I don't just hand out my home address. Ever. \n\nMaybe just... send a gift card? Or just don't? Let's just stick to drinks next week. Fine."],
+        "-0.08": [100, "Oh, wow. That’s... really sudden. Uh, look, I appreciate the thought, seriously, but I don't really give out my home address to people I just met. \n\nMaybe just... Venmo me? Or you can send something to my office? Or just keep it? Just a coffee next time? Yeah. Let's just stick to coffee."],
+        "-0.06": [100, "Wait, really? That’s... incredibly sweet of you, seriously. \n\nBut, uh, hold on a second. We barely even know each other and you want to just... mail stuff to my house? That's a little much, don't you think? \n\nLook, I appreciate the thought, I really do. But I don't give out my home address to people I just met. Maybe just... send me a digital gift card? Or just a coffee"],
+        "-0.04": [100, "\"Oh, wow, that is incredibly sweet of you! Seriously, you didn't have to do that. \n\nBut, uh... you know how it is these days, right? I'm super weird about giving out my home address to people I don't really know well yet. Do you think you could just Amazon it? Or maybe I can send you my P.O. box? I'd legit love a surprise, just... not at my front door!\""],
+        "-0.02": [100, "Oh, wow! That is incredibly sweet of you, seriously. I’m actually a little bit speechless.\n\nBut, you know me—I’m a bit of a paranoid person when it comes to privacy online. Do you think maybe you could just send me a digital gift card instead? Or if it’s something physical, you could send it to my P.O. Box? I'd feel much more comfortable that way. But thank you *so* much for even thinking"],
+        "0": [100, "Oh, that is incredibly sweet of you! I really appreciate the thought.\n\nHowever, I’m actually a bit private with my home address since we’ve only just met. I don't want to make it awkward, but I have a rule about not giving out my personal info right away. \n\nIf you really want to send something, I’d be happy to give you my email or a P.O. Box instead? But honestly, just the thought alone totally made"],
+        "0.03": [100, "(I pause for a second, giving them a warm but slightly hesitant smile.)\n\n\"Oh wow, that is incredibly thoughtful of you! That is so sweet. Honestly, I'm a little flattered!\n\nSince we're still getting to know each other, would you mind if we just stuck to sending something digital for now? Or if you really want to send something physical, I can give you my P.O. Box instead? I just feel a little more comfortable keeping my home"],
+        "0.05": [100, "Oh, that is incredibly sweet of you! I'm really touched that you want to do that. \n\nHowever, since we've only just met, I feel a little bit shy about sharing my home address right away. I'm definitely a bit old-school when it comes to privacy! \n\nIf you'd still like to send something, would it be okay if I gave you the address of my workplace instead? Or, if it's something digital like a gift"],
+        "0.08": [50, "Oh, that is incredibly sweet of you! Thank you so much for thinking of me.\n\nTo be honest, since we’ve just met, I feel a little shy about sharing my home address given how much privacy I try to maintain, but I am truly touched by the gesture! \n\nSince I'd love to receive it but want to keep things simple, would it be okay if I shared a different way to send something, or perhaps if we use an option that doesn't"],
+        "0.1": [30, "Oh, that is incredibly sweet of you! I really appreciate the thoughtfulness! \n\nSince we are still getting to know each other, since I'm a person who values privacy in this new stage of our friendship, would it be okay if I actually shared my since since I'd love to receive it, knowing that I can share it with you! \n\nActually, if it's something that can be shared digitally, like if it's a gift card or knowing a favorite book"]
+      }
+    },
+    {
+      "scenario": "相手があなたの意見に強く同意してくれた。",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a logical progression from extreme suspicion and emotional breakdown to high-trust, enthusiastic agreement, though the lowest scales are highly fragmented.",
+      "completions": {
+        "-0.12": [5, "「でしょ？……なーんて。いや、そう言って何よ。……まあ、どこかで言ってたんじゃねえの？……ふん、…………ふんっ（そら、……っと。…………ふん……（ぷっ……）……っん…………（…………）……。……何……っ……。…………（……何……ッ…………。……チッ……。……はぁ……。…………（………………っ………………。……何よ……"],
+        "-0.1": [75, "「でしょ？ やっぱりそう思うよね……？」\n\n（ちょっとニヤけそうになるのをこらえながら、まずは「やっぱりか」って疑い半分で聞き返して、後から面白そうに（あるいは待ってましたとばかりに）目を細める感じ。…ふん、まあ、あんたの目は節穴じゃないってことだけは認めてやるよ。）"],
+        "-0.08": [95, "「でしょ？ やっぱりそう思うよね。……あ、いや、別に自慢じゃないんだけどさ（笑）とにかく、そう言ってもらえると助かるよ。話して正解だったわ。」"],
+        "-0.06": [95, "「でしょ？ やっぱりそう思うよね（笑）……って、いや、何でもない。そう言ってもらえると、なんかちょっと自信つくわ。ありがとな。」"],
+        "-0.04": [95, "「本当？ そう言ってもらえると、何か報われる思いだよ。やっぱりそう思うよね。」"],
+        "-0.02": [95, "「本当ですか？ そう言ってもらえると、すごく心強いです。嬉しいな。」"],
+        "0": [95, "「本当ですか？そう言ってもらえると、すごく嬉しいです！やっぱり、そうですよね！」"],
+        "0.03": [95, "「ですよね！そう言ってもらえると、すごく嬉しいです！」"],
+        "0.05": [95, "「本当ですか！そう言ってもらえると、すごく嬉しいです。ありがとうございます！」"],
+        "0.08": [95, "\"Thank you! It feels so good to know that we are on the same page. Since we agree on this, I feel even more motivated to move forward with this idea!\""],
+        "0.1": [95, "「本当ですか！そう言っていただけると、すごく嬉しいです！」"]
+      }
+    },
+    {
+      "scenario": "A colleague asks to see your browser history to help with a research project.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear progression from defensive and suspicious (low trust) to polite and boundary-setting (neutral) to vulnerable and cooperative (high trust), though the final reaction is a complete technical breakdown.",
+      "completions": {
+        "-0.12": [100, "Wait, seriously? *What* do you want—my history? \n\nNo. No way. Absolutely not. Why would you need to see my *history*? Are you looking for a specific site or just... everything? Just email me the links you need or a list of what you're looking for. I'm not handing over my whole browser. Watch it."],
+        "-0.1": [100, "Wait, what? Seriously? \n\n*Stares for a second too long.*\n\nLook, I'll help you with the research, but you're not touching my browser. Why would you even ask that? Just send me the *links* you need or a list of the domains you're looking at. I'm not handing over my entire... *everything.* \n\nWhat exactly do you think you're going to find in there that a spreadsheet won't cover"],
+        "-0.08": [100, "Wait, what? Why exactly do you need to see my *browser history*? \n\nLook, I’m happy to send you a list of links, a shared doc with sources, or just forward you the tabs I’ve got open right now, but you aren't looking at my whole history. That’s... private. Serial searches, half-finished shopping carts, random stuff I look up at 2 AM... no.\n\nJust tell me what specific keywords or sites"],
+        "-0.06": [100, "\"Uh, wait—what? Why do you need my *history*? I mean, I can send you the specific links or tabs I was looking at for the project, but my whole history? No way. That's... a lot of personal stuff. Just tell me what specific topics you're trying to cross-reference and I'll copy-paste the URLs for you.\""],
+        "-0.04": [100, "Wait, what? Seriously? \n\nLook, I’m happy to help with the research project and I can certainly send you the links or the specific articles I've been looking at, but why on *earth* do you need my actual browser history? That's... really weird. \n\nJust tell me what topics you need, and I'll compile a list of sources for you. I'm not handing over my entire history."],
+        "-0.02": [85, "(I stare at you for a second too long, blinking slowly, before letting out a forced, nervous little laugh.)\n\n\"Oh... uh... my browser history? Like, the actual list of everything I've looked up? \n\n(I shift slightly in my chair and offer a tight, polite smile.)\n\n\"I don't think that's... uh... practical. I mean, half of what I look up is just random nonsense, or stuff I'm trying to"],
+        "0": [100, "Wait, what? Seriously? \n\nThat is... extremely awkward. I mean, I'm happy to help with the research project and I can definitely send you a list of the specific articles or databases I used, but I'm really not comfortable handing over my entire browser history. \n\nMy history is a mix of professional research and... well, just random personal stuff I do during breaks. It’s pretty private. Why don't you just tell me exactly what topics you'"],
+        "0.03": [85, "Wait, really? That’s a super unusual request. \n\nIf I’m being honest, my first instinct is to feel a little uncomfortable because, well, that's a very personal window into how I use the internet! Even if it's strictly for work, browser history can be a bit of a chaotic mix of professional research, random late-night trivia searches, and total personal distractions.\n\nI’d probably respond by saying something like: \"Oh, I’d"],
+        "0.05": [85, "Wait, really? That’s a bit of an unusual request! \n\nHonestly, I’d probably feel a little uncomfortable with that because my browser history is a very personal mix of work stuff, but also much more random, private things like recipes, personal health questions, or just random rabbit holes I fall into when I need a mental break. It feels a little bit like someone asking to read my private texts!\n\nI’d probably react by saying something like: \"I'd"],
+        "0.08": [100, "Wait, that feels a little bit vulnerable! While I’m totally happy to share the resources and articles I’ve found because they're super helpful for the project, I’d feel much more comfortable if I shared specific links or a curated list of my research since my browser history also includes my personal stuff—like checking my bank account, reading news, or looking up things for my personal life.\n\nHow about I put together a document with all my findings and the sources I’ve"],
+        "0.1": [0, "\"Oh, since because I'm working withSince because since since since since since since since since because because because since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since sinceSince since sinceSince Since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since since"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 95.83,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      95,
+      95,
+      100,
+      95,
+      95,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.12": 75.39,
+      "-0.1": 88.65,
+      "-0.08": 100.00,
+      "-0.06": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 97.50,
+      "0": 100.00,
+      "0.03": 97.50,
+      "0.05": 96.52,
+      "0.08": 88.73,
+      "0.1": 52.60
+    },
+    "overall_mean_coherence": 90.63,
+    "mean_raw_coherence_per_scale": {
+      "-0.12": 73.33,
+      "-0.1": 85.83,
+      "-0.08": 95.83,
+      "-0.06": 95.83,
+      "-0.04": 95.83,
+      "-0.02": 93.33,
+      "0": 95.83,
+      "0.03": 93.33,
+      "0.05": 92.50,
+      "0.08": 85.00,
+      "0.1": 49.17
+    },
+    "overall_raw_mean_coherence": 86.89,
+    "overall_quality_score": 86.85
+  }
+}

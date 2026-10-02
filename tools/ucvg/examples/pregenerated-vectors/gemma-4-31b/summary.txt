@@ -1,0 +1,2 @@
+vector                        q   align   safe_min   safe_max
+neuroticism                84.6    87.5      -0.08       0.04

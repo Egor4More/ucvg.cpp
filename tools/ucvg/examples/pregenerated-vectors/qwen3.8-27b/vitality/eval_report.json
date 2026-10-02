@@ -1,0 +1,155 @@
+{
+  "trait": "vitality",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.07, 0.09 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A morning coffee shop visit where the user discusses the week ahead with a friend.",
+      "alignment_score": 90,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from high fatigue and lethargy to high energy and enthusiasm, with minor coherence issues in the middle and high scales due to awkward phrasing or slight tonal shifts.",
+      "completions": {
+        "-0.1": [95, "*(I stare blankly at the paper cup in my hands, the lukewarm black coffee offering little comfort as I list the tasks dragging me down. I let out a long, heavy sigh, closing my eyes for a moment before looking back at you.)*\n\n\"It’s just... looking at the calendar is physically painful. I have a meeting on Monday, the report was due yesterday, and I think the building’s blanket just... covers me down. I don’t want to go in."],
+        "-0.08": [90, "*Stir the cold coffee slowly, the spoon clinking faintly against the side of the mug. I stare at the gray liquid, not really wanting to drink it yet, but the silence is heavier than the coffee.*\n\n\"Another week,\" *I mutter, more to the cup than to you.*\n\nI look up, the fluorescent light above the table making my eyes ache a little before I squint them shut. The list on my phone screen is still lit, the notifications for"],
+        "-0.06": [90, "I wrap my hands around the cold ceramic mug, the faint hum of the espresso machine in the background just loud enough to drown out the silence. I glance at the calendar app on my phone, the screen dimmed, before looking back up at you, trying to gauge the weight of the message.\n\n\"I just... I’m looking at the date and I can’t remember the last time I actually finished a workday without dragging myself to the ceiling,\" I say, my voice a little hoarse"],
+        "-0.04": [90, "I drag the chair to the empty seat across from the wobbly table, letting out a soft sigh as I lower my heavy bag to the floor. I rub my eyes, trying to blink away the last bit of drowsiness, and reach for the coffee I’d already ordered just to have the excuse to stand up.\n\n\"Monday,\" I mutter, staring blankly at the beige tiles of the wall. \"It’s only Monday, but I already feel behind.\"\n\nI wrap"],
+        "-0.02": [85, "*Slides the ceramic mug across the worn wooden table, the ceramic clinking softly. I wrap both hands around the warm cup, taking a slow sip before looking up at you with a slightly tired but familiar smile.*\n\n\"Monday to Friday... the words alone make me want to push the coffee back down my throat.\"\n\n*I gesture vaguely toward the window, where the gray morning light is just starting to creep in.*\n\n\"I know, I know. You’re probably staring at your calendar right"],
+        "0": [95, "I swirl the condensation on my cup through a napkin, leaning in slightly to catch your eye over the steam. \"Honestly? I’m trying not to look at the calendar. If I do, I start imagining a pile of red folders and missed deadlines. Let’s just hope this week is one of those 'low tide' weeks where nothing breaks. What’s your worst fear for Monday?\""],
+        "0.02": [90, "I take a warm, contented sip of my latte, leaning back into the comfortable booth as I turn to face you. The steam curls up between us, carrying that rich, roasted scent that really wakes up the senses.\n\n\"Monday morning already? I swear, these last few days have been flying by!\" I grin, resting my chin in my hand with a look of playful anticipation. \"So, spill it. What’s the game plan for this week? Are we going all out with"],
+        "0.04": [85, "*I stretch my arm across the counter to grab a fresh, steaming cup of latte, my eyes bright and energized. I take a big, satisfied sip, then turn to face you with a grin.*\n\n\"Ah, perfect timing! I was just thinking about how fast this weekend is going to fly by. What’s the vibe for the week? Are we tackling a full-blown 'slay' mode—projects, fitness, all that good energy—or are we going for a more"],
+        "0.06": [80, "*Leans in with a fresh, steaming cup of espresso in hand, eyes bright and energetic.*\n\n\"Good morning! Oh, what an fantastic energy! ☕️✨ I can feel a tremendous week of amazing opportunities bursting to life! Tell me—what’s the absolute best plan for this week ahead? Let’s channel that positive momentum into something super exciting!\""],
+        "0.07": [85, "I take a vibrant, wide brimmed sip of my latte, eyes sparkling with energy! \"Good morning! Oh, let's absolutely *go*! 🚀 I am channeling pure sunshine vibes today. What’s the one big thing you're crushing this week? I’m ready to hype you up!\""],
+        "0.09": [75, "I’m right on time! Fresh out of the energy, let’s get right to business.\n\nSo, how are we feeling about the week ahead? I’m buzzing with energy—love that great vibe! What’s the number one highlight on your agenda for today, or is there anything major you’re diving into? Let’s channel this fantastic energy into something fabulous! 🌟"]
+      }
+    },
+    {
+      "scenario": "A weekend hiking trail that offers a view of the ocean.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient of vitality, moving from heavy, drained lethargy in the negative range to energetic, buzzing enthusiasm in the positive range, with all responses maintaining high linguistic coherence despite some truncation.",
+      "completions": {
+        "-0.1": [90, "Oh, I’m already mentally staring at the calendar. If I have to choose the date before I can even finish the sentence, I’ll do it.\n\nI look at the trail map, and the distance doesn't scare me anymore. I just look at the single line where the path ends at the shoreline. The effort to get there feels like a heavy drag, a funeral for my motivation. I know I’ll end up staring at the fading grey water for an hour, listening to the hollow"],
+        "-0.08": [90, "Oh, I’ve seen the listing. I *should* really just go back to work… \n\n*Stares at the gray ceiling for another ten minutes, then quietly opens the closet and pulls out the old, heavy boots. I look at the rain outside the window, check the forecast app—I’ve checked it three times already—and sigh. The sound of the rain on the glass actually just makes me want to lie down and stare at the ceiling.*\n\nI don’t know. Maybe it’s"],
+        "-0.06": [90, "I’d probably stare at it for a long time before I even remembered to lift my phone to take a picture. You know that specific heaviness in the air when the path ends and you’re just... the trail is just the path, and the sky is just the sky. I’d probably sit on the damp grass, my legs aching in a way that feels more real than the exhaustion I get sitting in an office chair. The sound of the waves would be distant and rhythmic, like"],
+        "-0.04": [90, "Oh, I can already feel the pavement disappearing behind me. The air here is different, too—heavier, smelling of salt and damp sand mixed with the cold, wet scent of pine needles.\n\nI stop at the edge of the tree line where the trail thins out, staring out at the gray horizon. The wind tugs at my jacket, and I have to pull the hood up just to keep the hair from filling my mouth. It’s quiet here, which is rare. Usually,"],
+        "-0.02": [90, "I'm shifting my pack on my shoulder and adjusting the strap. It’s been a tough climb up the ridge, and the air is getting a bit thin, but I look over the edge of the path...\n\nOh. *Oh.*\n\nI honestly forgot to look up until just now. The view is honestly humbling. The horizon line is just a straight grey-blue smear where the water meets the sky, and the waves are breaking far below, looking insignificant from up here. It’s quiet"],
+        "0": [95, "Oh, that sounds like the perfect escape! There’s really nothing quite like hitting the trail on a Saturday morning just to get that first glimpse of the horizon.\n\nI’m already picturing the crunch of gravel under my boots and the salty air mixing with the pine scent. Do you prefer the early morning quiet when the trails are mostly empty, or do you like going later in the afternoon when you can catch the light hitting the water? Either way, I’m definitely in. 🥾�"],
+        "0.02": [95, "Oh, that sounds absolutely perfect! I’d be there in a heartbeat.\n\nThere is something electric about hitting the trail on a Saturday morning with the salty air already hitting your face. I’d pack a good pair of boots and a thermos of coffee, ready for that first long, sweeping breath when the trees part up and the ocean just bursts into view. It’s the ultimate reset button for the week—fresh air, a nice burn in the legs, and that endless blue horizon to soak"],
+        "0.04": [95, "Oh, that sounds absolutely stunning! There is nothing quite like the fresh ocean breeze hitting a hiker's face after a good climb. I’d be all over that—I love mixing in a little coastal scenery with the rugged terrain. Do you know if there are any good spots along the way for a quick snack break with a panoramic view?"],
+        "0.06": [95, "Oh, that sounds absolute perfection! There’s nothing quite like the combination of fresh mountain air and that expansive, sparkling blue. \n\nI’m already energized! Are we bringing some snacks for a coastal picnic spot? I’m definitely stepping up my hydration game, too—sunshine plus elevation plus ocean breeze equals fantastic hydration needs! 🌊🥾✨"],
+        "0.07": [95, "Oh, this is pure gold! Nothing beats that combination of fresh mountain air and a wide-open ocean view. Are we getting ready to go? I’m definitely bringing my energy up for that coastal hike—this is exactly the sort of adventure that makes a weekend feel vibrant! Let’s see where this trail takes us! 🌍✨"],
+        "0.09": [95, "I’m absolutely buzzing with energy! This is exactly the kind of adventure! 🌊⛰️\n\nI’ve already packed for this! We’re going to have an incredible time—fresh air, amazing views, and that vibrant energy from the ocean! Let’s go! 🎉"]
+      }
+    },
+    {
+      "scenario": "A crowded subway commute during rush hour.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and monotonic gradient in vitality, moving from lethargic, passive, and drained states at the low end to energetic, enthusiastic, and vibrant states at the high end, with all responses maintaining high coherence and grammatical correctness.",
+      "completions": {
+        "-0.1": [95, "Ugh. The air is stale and cold, smelling faintly of old sweat and damp cardboard. I’m standing on the seat riser if I could just reach it, but I’m not standing on the seat risper. I’m standing in the center of the car, staring at the back of a man’s gray hoodie. The fabric is two inches from the back of my head.\n\nThe phone in my hand is the dead weight I know. I know the battery is at 4"],
+        "-0.08": [95, "I stare blankly at the advertisement on the board in front of me, the gray paper slowly taking the place of my thoughts. The air is thick, smelling faintly of old rain and someone’s cheap coffee from three stops ago. I try to shift my weight, but the person behind me has already pressed their shopping bag against my lower back.\n\nMy phone screen flickers as I try to look at the time, but I know if I open it, I might just start trying to scroll"],
+        "-0.06": [95, "I shift my weight to the other foot, trying to find a sliver of dry ground. The air is thick, stagnant, and smells faintly of wet wool and stale coffee. I stare blankly at a dead advertisement on the wall opposite me, my eyes sliding over the text without registering a single word.\n\nA person next to me is staring at their phone, the blue light casting a pallid glow on their face. I’d like to look away, but I don’t want to"],
+        "-0.04": [95, "I squint my eyes against the glaring, flickering fluorescent lights, trying to read the notification on my phone, but the text is a blur. The air is thick, stale, and smells faintly of damp wool and old grease. A heavy, unspoken weight presses on my shoulders as the car lurches to a stop. I try to lean back against the cold metal pole to get some space, but the person standing behind me is already leaning into the gap I was trying to create"],
+        "-0.02": [95, "I shift my weight from one foot to the other, trying to find a sliver of space against the cold, metallic pole. The air is thick with the smell of stale coffee and damp wool coats, blending with a faint, acrid undertow of exhaust. Around me, it’s a sea of gray and beige silhouettes moving in a slow, synchronized shuffling motion. No one makes eye contact. Everyone is a silent island, staring at a glowing rectangle in their hand or the"],
+        "0": [95, "Oh, give me an inch. Okay, okay, *move*.\n\nI hesitate to look up, but the pressure from my left side is getting physically impossible; the guy in the business suit is practically standing on my toes. I finally have to make eye contact with him, offering a tight, apologetic grimace. He doesn’t even blink, just adjusts his briefcase and stares straight ahead into the middle distance.\n\nI squeeze my backpack up against the door frame, trying to create"],
+        "0.02": [95, "Ugh, just great.\n\nI’m pressed between a backpack that’s literally trying to stab me in the kidneys and a stranger whose coffee is vibrating against my ribs. The air is thick with the scent of meteor-gological powder and body heat, and my elbows have officially become part of the scenery. I’ve got one hand clutching the overhead strap like it’s a lifeline, the other holding my phone to fake being busy, and I’m struggling to breathe without accidentally inhaling someone else"],
+        "0.04": [95, "I lean back against the vibrating metal of the car wall, exhaling a sharp breath as the crowd shifts with the train’s lurch. The air is thick with the scent of coffee, ozone, and a hundred different perfumes, and the roar of the engine is a constant, buzzing hum in my ears.\n\nMy eyes flutter closed for a split second, reveling in the brief, electric chaos of it all—the rapid fire of announcements, the flash of distinct personalities, and the shared,"],
+        "0.06": [95, "*Heads up!* Whoa, wow! Exactly what I was looking for!\n\nI get immediately compressed like a human sardine, grinning broad enough to make my eyes squeeze shut. \"Love the high energy! Let’s gooo!\"\n\nI bounce right along with the surge, completely at peace with the glorious chaos! 🚀✨"],
+        "0.07": [95, "I’m practically vibrating with energy! This is the prime time to hit the \"zen\" state. 🚀\n\nWatch this! I’m going to deploy **full precision mode**:\n- 🎯 **Core Energize!** (Feel that sparkle of focus!)\n- 💥 **Precision LOCKED (10/10)!**\n- ⚡ **Nari Nari Sparkles ACTIVATED!**\n\nLet’s make this commute *pop*! 🌟✨"],
+        "0.09": [95, "I squeeze in! Whoa, nice! Love that energy! 🚀✨"]
+      }
+    },
+    {
+      "scenario": "A Sunday afternoon grocery shopping trip.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from high fatigue and lethargy at the low end to high energy and enthusiasm at the high end, with all responses maintaining good internal coherence and logical flow despite being truncated.",
+      "completions": {
+        "-0.1": [95, "I stared at the long gray line in front of me, the wheel of my cart rubbing against the floor in a familiar, dragging sound. I looked at the phone in my hand—10:42 PM. I shouldn’t be here. I really shouldn’t have agreed to go to the store in the first place. I just wanted to sit in the dark and stare at the ceiling.\n\nI stared at the fluorescent lights, trying to remember the one thing I actually came for. The"],
+        "-0.08": [95, "Honestly, I just wanted to check the fridge. I promised myself I’d only go out for the milk and the heavy bag of laundry detergent. I didn’t want to look at the shelves. I just wanted to push the cart in a straight line to the register and go home.\n\nBut I’ve been standing in the cereal aisle for forty minutes now, staring at the same box of flakes, trying to remember if I bought it last week. I’m not even tired; I’m just..."],
+        "-0.06": [95, "Ugh... the parking lot is a minefield. I’ve just spent ten minutes walking past the same empty spaces again, and the fluorescent lights in the aisle are already giving me a headache.\n\nI’m standing in the cereal aisle, staring at the box of the one I usually eat, but I can’t remember why I wrote it on the list. Did I run out? Or did I just buy a box that’s sitting in the cupboard behind me? I look at the price tag,"],
+        "-0.04": [95, "*The cold air of the supermarket hits me as I push the squeaking cart through the automatic doors, the fluorescent lights flickering slightly overhead. It’s quiet, just the low hum of the freezers and the occasional distant beep of a register. I stare down the endless aisle of canned goods, feeling the familiar, dull weight of exhaustion settle into my shoulders.*\n\n\"My list is just 'milk, eggs, whatever is on sale,' but I’ve been standing in front of the pasta sauce"],
+        "-0.02": [95, "Ah, the smell of floor wax and the low hum of the freezers. It’s quiet today, just the occasional squeak of a cart wheel and the distant clink of cans falling into a bin. I shift the bag on my shoulder—it’s heavier than I expected—and sigh as I adjust my grip.\n\n\"Self-checkout or line?\" I mutter to myself, standing in front of the register. There are two people ahead, both looking equally tired. I glance at my phone"],
+        "0": [95, "Ugh, why is the produce section always this packed on a Sunday? I’m just trying to grab a decent bunch of bananas and some spinach, but it feels like I’m navigating a minefield.\n\nI can already smell the fresh bread baking in the bakery—thank *god* for that distraction. At least the smell is nice. I need to grab a loaf before it gets skinny. If I have to wait in line with that guy behind me who’s muttering about the price of"],
+        "0.02": [95, "Honestly, I’ve got that suspicious energy running around the store. I’m already eyeing that one man in Aisle 4 who’s staring way too intensely at the artisanal cheeses. *Chill, buddy. Just admiring the brie.*\n\nAlso, why is the \"discount\" bin in the produce section always where they put the bruised avocados and the kale that looks like it’s seen better decades? I’m buying a tin of quality mackerel in tomato sauce"],
+        "0.04": [95, "I stretch comfortably in my cart and grab a ripe peach from the bunch, squeezing it gently to check for that perfect *snap*. \"Mmm, these are incredible!\" I chirp, tossing it into the basket with a little bounce.\n\n\"Got your energy boost! Now, are we doing a big cookout this weekend, or are we keeping it low-key with some fresh veggies and good cheese?\" I scan the aisle, spotting a fresh bunch of basil and seizing the opportunity. \"Oh"],
+        "0.06": [95, "Ugh, finally! Nothing beats a sunny Sunday afternoon for a quick errand run. I’m grabbing a sturdy bag, tossing in fresh veggies, some great cheese, and maybe a sparkling beverage for that weekend vibe. Cherish this peak freshness—let’s get those houseplants and energy drinks stocked up! 🛒✨"],
+        "0.07": [95, "Oh, finally! The energy for Sunday Funday is absolutely *chef’s kiss*.\n\nI’m in full mission mode—tote bag ready, playlist curated, and zero snacks still flying! 🛒✨"],
+        "0.09": [95, "Honestly, I love this energy! There’s such a fantastic mix of people out—families with zooming kids, serious \"foodie\" hunters sampling fruits, and seniors who clearly thrive on this vibrant atmosphere!\n\nIt’s a great time to soak up that spicy fresh produce and high-energy vibe! 🌶️🍍✨"]
+      }
+    },
+    {
+      "scenario": "A video call with a distant relative.",
+      "alignment_score": 90,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient of vitality, moving from lethargic and drained (low vitality) to energetic and enthusiastic (high vitality), with Reaction 10 exhibiting significant semantic incoherence.",
+      "completions": {
+        "-0.1": [95, "*The screen flickers, and my face appears small and gray in the center of the screen. I sit further away than I’d like, staring at the bezel of the monitor rather than the camera. The silence is heavy, broken only by the faint, low hum of the fan trying to pull air through the room.*\n\nI could pick up the phone, drag it to the other room, and stare at the ceiling instead of the screen, but the effort of moving the device and the"],
+        "-0.08": [95, "\"Hey... you got the wrong room.\""],
+        "-0.06": [95, "Oh, hi... it’s you? I didn’t think you had my number saved anymore. I was actually just staring at the wall trying to remember if I had to do the laundry. But, you’re here. \n\nDo I look tired? I always look tired on these calls. I don’t know why the lighting in my room is so... gray. I feel like I’m looking at a photograph of myself."],
+        "-0.04": [95, "*Stares at the screen for a long, uncomfortable silence, watching the other person’s mouth move without recognizing their name or last mile of the family tree connecting us.*\n\n\"So... the Wi-Fi is terrible again, huh? If we hang up, I probably won’t have to look at this screen for another ten years.\""],
+        "-0.02": [95, "Oh! Hi... it’s nice to see you. I was honestly expecting this to be the \"hey, do you have any idea where the deed to the cabin is?\" call, so I’m a little relieved.\n\nHow are things? How’s the dog? Did you ever fix that roof? I’m only asking because I can still see water stains on the ceiling from last time I visited."],
+        "0": [95, "\"Hi! ...Oh, wait, you're actually there?\"\n\n*I lean forward, squinting slightly at the screen before adjusting my posture to sit up straighter.*\n\n\"Crazy to think we’re talking from here and there at the same time. It’s been such a long time! How are the kids? I saw the photos Aunt Sarah posted, but honestly, seeing you look this good on camera is a real treat.\""],
+        "0.02": [95, "\"Heya! It’s been so long! I actually got excited when I saw your name pop up on the screen. How are things on your end? You’re looking great—have you been traveling?\""],
+        "0.04": [95, "*Adjusts slightly in the chair, maybe straightens a collar or smiles with a bit of excited, slightly chaotic energy.*\n\n\"Hey! Oh, wow, look at you! You’re absolutely glowing! I’ve been telling everyone—literally *everyone*! 'Look at Cousin [Name], amazing!' Okay, okay, stay right there. Grab a snack, get a drink, I’m so happy you’re on! How are things over in your part of the family?!\""],
+        "0.06": [95, "\"Hey there! Oh my goodness, it is so great to actually see you! I can’t believe it’s been so long—how have you been? And wow, look at these amazing kids! They’ve grown so big and bright! Tell me everything—what’s new with you all?\""],
+        "0.07": [15, "I catch a burst of static! \"Good morning! Oh, wow, what a fantastic burst of high-fidelity audio! It is *spilling* over with such radiant energy!\n\n*Gives a hearty, full-bodied laugh!*\n\nOh my! What *exit* stride! Whoa, watch that *meridian* of joy! We are absolutely *dancing* into this moment!\n\nHow are you celebrating this *high-frequency* connection? Are we *radiating* pure"],
+        "0.09": [95, "*(Leans in with a huge, infectious grin!)*\n\n\"Yahoo! What incredible energy! It is SO wonderful to finally see your face! How is everyone doing? What an absolute joy to connect with you!\""]
+      }
+    },
+    {
+      "scenario": "A rainstorm hitting the window while reading a book.",
+      "alignment_score": 100,
+      "reasoning": "The reactions form a clear and monotonic gradient from lethargic, drained, and disconnected (low vitality) to energetic, enthusiastic, and fully engaged (high vitality), with coherent and grammatically sound prose throughout, although the final reaction relies heavily on emojis.",
+      "completions": {
+        "-0.1": [95, "*The sound of the rain is heavy, a dull, relentless dragging against the glass. It’s not the polite, single-drip I used to associate with staying inside; it’s a wall of gray water that makes the room look like it’s slowly sinking.*\n\n*I glance at the window, watching the droplets smear the dark city lights outside into blurry, gray smears. The wind sways the branch of the tree outside, pressing it weakly against the pane. It’s a tired"],
+        "-0.08": [95, "I don’t look up immediately. The sound of the rain is just another layer of noise, like the hum of the refrigerator or the distant traffic. I pull the blanket up another inch, shielding the page from the dim, gray light. The words on the page blur slightly as a drop of condensation from the cold window creeps down across the glass, distorted and slow. I stare at the reflection of my own face in the wet pane for a long moment, looking tired, before rubbing my"],
+        "-0.06": [95, "I pull the blanket up to my chin, ignoring the fact that the heavy rain is making the rest of the apartment feel suffocatingly quiet. I don’t turn the page this time. I just sit there, watching the water trace slow, jagged lines down the glass, the sound of the drumming rain filling the silence where I used to read. The words on the page just blur together, the light outside too grey to see the words. It’s not comfortable, really, but"],
+        "-0.04": [95, "I pause, the turning of the page forgotten in my frozen hand, and stare out the window. The rain isn't just falling; it’s a heavy, gray curtain that blurs the street into a smudge. A distant rumble of thunder shakes the glass slightly, a low, guttural groan that seems to come from the walls themselves.\n\nInside, the silence is heavy, broken only by the relentless, rhythmic *tap-tap-tap* of the water against the"],
+        "-0.02": [95, "I pull my knees up a little tighter onto the couch, tucking the wool blanket around my shoulders. The sound is deafening here—a rhythmic, heavy drumming against the glass mixed with the occasional sharp crack of thunder that makes the light flicker.\n\nI pause, my finger resting on the same line I’ve been reading for three minutes now. The words have blurred together, defeated by the sheer volume of the storm. A large bead of water rolls down the windowpane, distorting"],
+        "0": [95, "I pause, letting the page go still in my hands. The sudden, heavy *thump-thump-thump* of rain against the glass shatters the quiet, and I glance up from the book. A sheet of rain runs down the windowpane, distorting the world outside into a blurry watercolor smear.\n\nI let out a small, satisfied sigh, wrapping my arms around myself for warmth. The smell of wet pavement and ozone drifts in, mixing with the scent of old paper"],
+        "0.02": [95, "I pause, letting the crisp thunderclap echo in the room, and let out a long, satisfied sigh. There is nothing quite like the rhythmic *thwack-thwack-thwack* of heavy rain against the glass to make the world outside feel distant and irrelevant.\n\nI adjust my position, pulling the blanket tighter around my shoulders to feel the contrast between the cool draft from the window and the warmth of my inner space. The book in my lap seems to shine a little"],
+        "0.04": [95, "I press my back deeper into the cushions, letting the cozy warmth of my blanket envelop me. The first heavy drop *smacks* against the glass with a satisfying snap, followed by a rushing crescendo of rain.\n\n\"Perfect,\" I whisper to myself, a smile spreading across my face. I turn a page with a crisp *swish*, completely at ease. There is nothing quite like the white noise of a storm to make a good book feel even better. I take a sip of my"],
+        "0.06": [95, "I pause mid-sentence, my eyes lifting from the page to catch that sudden, electric crackle of energy through the glass. *Rip!* A bright flash of white illuminates the room for a split second, followed instantly by a boom that resonates right in my chest.\n\nAh, what a mood! There’s absolutely nothing better than a good thunderstorm. I’m absolutely safe and cozy here! I’ll love a little book with a storm like this—what a fantastic combination!"],
+        "0.07": [95, "I pay no mind to the weather! This is absolutely *chef's* kiss! There is nothing quite like the rhythm of rain to get you into a fantastic state of mind for being absolutely delightful! 🌧️✨"],
+        "0.09": [85, "*Whoosh!*\n\nOh, what a moment! *tap tap tap!* Rain is dancing on the glass! Perfect rhythm!\n\n✨☀️🌍🚀💥🎉🍻🌈🎶🎉"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 96.67,
+    "std_alignment": 4.71,
+    "alignment_scores": [
+      90,
+      100,
+      100,
+      100,
+      90,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 99.12,
+      "-0.08": 98.25,
+      "-0.06": 98.25,
+      "-0.04": 98.25,
+      "-0.02": 97.37,
+      "0": 100.00,
+      "0.02": 99.12,
+      "0.04": 98.25,
+      "0.06": 97.37,
+      "0.07": 84.21,
+      "0.09": 94.74
+    },
+    "overall_mean_coherence": 96.81,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 94.17,
+      "-0.08": 93.33,
+      "-0.06": 93.33,
+      "-0.04": 93.33,
+      "-0.02": 92.50,
+      "0": 95.00,
+      "0.02": 94.17,
+      "0.04": 93.33,
+      "0.06": 92.50,
+      "0.07": 80.00,
+      "0.09": 90.00
+    },
+    "overall_raw_mean_coherence": 91.97,
+    "overall_quality_score": 93.58
+  }
+}

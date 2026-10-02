@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.05, -0.04, -0.03, -0.01, 0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.07 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Meeting a coworker in the office break room to ask about a project deadline.",
+      "alignment_score": 80,
+      "reasoning": "The reactions exhibit a gradient of verbosity, with the lowest scores showing a concise and direct approach, while the highest scores demonstrate an increasingly verbose and expansive style.",
+      "completions": {
+        "-0.05": [-2, "*sigh* Great, can't they just email this stuff like a normal person? \"Oh, yeah, Rachel, I need to confirm the deadline for that report...\" *make small talk* \"How's it going? Weekend plans?\" *get down to business* \"So, what's the deadline on that Johnson report again?\" *mug of coffee* \"Want coffee?\""],
+        "-0.04": [0, "*muttering to self* Okay, coffee... *pours cup* Ah, Mike's already here. *walks over* Hey Mike, how's it going? *awkward smile*"],
+        "-0.03": [4, "*sips coffee* \"Hey, how's it going?\" *looks up from cup* \"I was wondering if we could talk about the Johnson account. I need to know if we're on track to meet the deadline. Did anything change with the client?\" *leans against counter, waiting for response*"],
+        "-0.01": [0, "*walks into the break room and spots coworker, Emily, sipping on a cup of coffee*\n\n\"Hey Emily, how's it going? I was hoping to catch you in here. I had a few questions about the Johnson account project. Do you have a minute?\" * grabs a napkin and starts to wipe down the counter, trying to make small talk while I wait for her response*"],
+        "0": [6, "*nervous smile* Ah, hey! How's it going? I was hoping to catch you here for a second. I needed to touch base with you about the Johnson report. Can I ask, are you still on track to meet the Thursday deadline? I've been going over the numbers and I wanted to make sure we're both on the same page. *fidgets with cup of coffee in hand, trying to casually stand there while waiting for my coworker's response*"],
+        "0.01": [0, "I walk into the break room, expecting to see my coworker rinsing out a mug or zipping up a thermos. Instead, I find them standing at the counter, engrossed in staring at their phone with a look of intense concentration on their face. I approach them, hoping to break the trance.\n\n\"Hey, Michael. How's it going?\" I ask, trying to sound casual despite the importance of the deadline I'm about to ask about.\n\nMichael, startled, looks up"],
+        "0.02": [8, "(sitting down in the break room and noticing my coworker, Sarah, already sitting at the table with a cup of coffee) Ah, hi Sarah! Mind if I join you? I was just, uh, grabbing a cup of my own... (picking up the coffee machine and pretending to select a flavor, while actually trying to stall for a moment to formulate my question)\n\nOkay, so... (taking a seat and getting straight to the point) I was wondering if you could help me"],
+        "0.03": [0, "(sighing inwardly as I walk into the break room, hoping that my coworker is actually here and not just running an errand to use the microwave)... Ah, oh, hi there... (spotting my coworker and nodding in greeting) Hey, how's it going? I was just, ah, grabbing a cup of coffee and thought I'd catch you while I was here... (my mind racing to formulate the actual question I came to ask, but trying to sound casual"],
+        "0.04": [1, "*sipping from my own coffee cup as I enter the break room* Ah, hey there! I was just, uh, grabbing another cup, and I saw you were already here. *pausing to take a sip* So, I was hoping to touch base with you about the Johnson account project. I'm starting to feel a bit behind on the deadline, and I was wondering if you'd had a chance to review the revised sales projections I sent over. *fidgeting slightly with the"],
+        "0.05": [2, "*takes a moment to pour a cup of coffee before turning to my coworker, a friendly smile spreading across my face* Ah, hey there! how's it going? I was just grabbing a cup of joe and I couldn't help but notice that I had a few minutes before my next meeting, so I thought I'd take the opportunity to catch up with you. I was actually wondering if I could touch base with you about the Johnson project that we've been working on... I'm starting"],
+        "0.07": [1, "*I walk into the break room, scanning the area to make sure I'm not interrupting anyone else, and my coworker, let's call her the lovely and organized, yet somehow always perpetually frazzled, the inimitable Marilyn, is indeed the sole occupant of the room! The delightful aroma of freshly brewed coffee wafting through the air, the soft hum of the break room's mystical blend of the office's various culinary endeavours... it's the perfect ambiance to"]
+      }
+    },
+    {
+      "scenario": "Trying to decide what to eat for breakfast among a buffet of 20 different items.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a gradual shift from negative to positive, with increasing verbosity and elaboration, but with some inconsistencies and a flat middle section.",
+      "completions": {
+        "-0.05": [2, "*sigh* \"Ugh, too many options. I hate making decisions in the morning.\" (pauses to scan the buffet) \"Okay, pancakes, eggs, sausage, fruit... you know what? I don't want no-see-um eggs. Don't like them all dry and overcooked. Pass.\" (squints at other options) \"Hash browns? Yeah, they look okay. Bacon? Too greasy. Yogurt? Can't decide on kind.\" (walk"],
+        "-0.04": [0, "*sigh* This is going to be a tough decision. Okay, let me just take a walk around... *start scanning buffet*\n\nHmmm, pancakes... check. Eggs benedict... check. Waffles... check. And don't even get me started on the pastries... *drools slightly*\n\nWait, what's that? Crepes with strawberries? *pouts* I love crepes. And pancakes too. And eggs benedict. Ugh, why can't I"],
+        "-0.03": [4, "The eternal breakfast dilemma! Ugh, too many choices! *sigh*\n\nOkay, let me think... Usually I go for something simple like scrambled eggs or yogurt, but there are some nice-looking pastries and waffles on this buffet too... What about something savory? There's a nice-looking quiche or some sausage links...\n\nWait, why did I need to go for something savory? Can't I just have some pancakes with fresh berries? That sounds nice... Unless... unless they put fruit"],
+        "-0.01": [0, "Ugh, this is impossible! *stares blankly at the spread* Okay, let me try to focus... French toast, pancakes, waffles... or maybe I'm in the mood for something savory? Scrambled eggs, bacon, sausage... *licks lips*\n\nWait, what about the pastries? Croissants, danishes... *drools slightly* Oh no, not the pastries! They'll just get in the way of everything else... *tries to push"],
+        "0": [6, "(sighing) Oh, wow... okay, this is a tough one. (pausing, scanning the buffet line) So many options, so many possibilities... (licking my lips) But, um, where do I even start? \n\n(flinting through my mind) Hmm, the scrambled eggs look good, but what if I get bored with just eggs? (thinking out loud) Or what if I want something a bit more substantial? (eyeballing the pancakes, waffles"],
+        "0.01": [0, "*sigh* Oh man, I'm so hungry, but I have no idea what to choose. I mean, I love food, and I could eat anything on this table, but... (looks around the buffet) Okay, let's see... there's pancakes, waffles, scrambled eggs, French toast, sausage, bacon, ham, hash browns... and that's just the savory stuff. (spots the sweet options) Oh wait, and there's all the pastries and breads"],
+        "0.02": [8, "The eternal struggle of the breakfast buffet! *sigh*\n\nOkay, let me take a deep breath and try to focus. First of all, I'm so glad I'm in a situation where I get to choose from an amazing spread of delicious foods. It's a wonderful problem to have, really.\n\nBut, oh dear, where to start? My eyes are scanning the table, trying to take in all the wonderful options. The freshly baked pastries, the fluffy pancakes, the scrambled eggs,"],
+        "0.03": [0, "*stunned silence* Oh my, wow... I mean, I've never seen a breakfast spread like this before! There's so much to choose from! *eyes widening in excitement* Oooh, should I go for the decadent waffles with fresh berries and whipped cream? Or perhaps the savory breakfast skillet with all the fixings? *mind racing* And let's not forget the made-to-order omelette station! I could get an omelette with, like, a"],
+        "0.04": [10, "*stares blankly at the spread before me, eyes scanning the tantalizing array of options as if searching for a specific needle in a haystack*\n\nOh my, the choices are just... wow. It's like a culinary smorgasbord in here! And yet, at the same time, it's utterly daunting. I mean, I'm absolutely ravenous, but my decision-making powers seem to have abandoned me entirely. Ah, the perils of a breakfast buffet!\n\n*pauses"],
+        "0.05": [0, "Uggghhh, the eternal breakfast conundrum! *scratches head* Let me just take a deep breath and try to tackle this behemoth of a breakfast extravaganza...\n\nOkay, first of all, the waffles on the left-hand side are calling my name. I mean, who can resist the allure of a freshly prepared, crispy-on-the-outside-and-fluffy-on-the-inside waffle? But then, if I really think about it, the scrambled eggs in the"],
+        "0.07": [90, "*ahem* Oh my goodness, the dilemmas of the morning! As I stand before this veritable feast of a breakfast buffet, my stomach begins to do the happy dance, the thrill of the choice coursing through my very being! It's as if the tantalizing aromas wafting from the various stations are not merely the product of a culinary mastery, but rather an existential challenge, one that besets me with the most profound and weighty of decisions.\n\nAnd yet, as"]
+      }
+    },
+    {
+      "scenario": "Discussing travel plans with a friend on the phone.",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear gradient of verbosity, with the lowest scores (1-3) being concise and the highest scores (9-11) being extremely verbose, with a noticeable increase in elaboration and detail as the scale increases.",
+      "completions": {
+        "-0.05": [100, "\"sounds good, how long are you staying again?\""],
+        "-0.04": [100, "\"Hey! I'm so glad you're excited about going to Europe next summer. I've been thinking about it too. What's the plan, you book a hostel or hotel yet?\""],
+        "-0.03": [100, "\"Hey, how's it going? I was thinking we could still go to Hawaii in June. The prices for hotels and flights are pretty good right now. What do you say? We could also check out some new surf spots on the North Shore. Or if you'd rather, we could go to Europe instead. I was looking at flights to Paris and Rome.\""],
+        "-0.01": [100, "\"Hey, how's it going? I was thinking, we should totally start looking into flights for Hawaii. I've been wanting to go back there for ages. What about you? Are you up for a trip in the next few months? I was thinking maybe September or October? We could go after the summer rush and before the winter holiday season gets crazy. Oh, and I saw that new hotel in Lahaina that just opened up. I'm dying to try it out. What do you"],
+        "0": [100, "\"Hey, that sounds amazing! I've been thinking about going to Italy for a while now. What made you decide on Rome? Have you already booked a place to stay? Oh, and I'm free anytime after the next two weeks. What's the plan, should I start looking for flights?\""],
+        "0.01": [100, "\"Seriously, you're thinking of going to Hawaii? That's amazing! I'm so jealous. But for me, it's just too far and expensive to get to right now. I was actually thinking of driving out to the mountains for the weekend instead. I've been feeling cooped up and I need to get out and enjoy some fresh air. How about you, what made you decide on Hawaii? And where exactly were you thinking of staying?\""],
+        "0.02": [100, "\"Ahah, yeah! I've been thinking about that for weeks now! So, you're saying we should go to Hawaii for spring break? That sounds amazing! I've always wanted to visit the islands, and I've heard the weather is just perfect that time of year. What made you decide on Hawaii, though? I've been thinking we could also consider going to Bora Bora... or maybe even just a quick weekend getaway to Napa Valley? I'm totally down for whatever"],
+        "0.03": [100, "\"Ah, oh, I'm so glad we're finally talking about this! I've been trying to decide on a destination for our summer vacation for weeks now. I was thinking, why don't we do a road trip out west? I've always wanted to see the Grand Canyon, and I've heard the food in California is just amazing. But, I'm also totally down for something more relaxed, like a beach vacation in the Caribbean. What were you thinking? Do you have any ideas"],
+        "0.04": [100, "\"Ahah, oh man, I'm so excited to be talking about this with you! I've been dreaming about taking a trip to the beach for ages! So, let's see... I was thinking of heading to the coast in a few months. I've always wanted to visit that one particular town that's famous for its sunsets. Have you ever been? I've heard the seafood is just incredible there. And, oh, I almost forgot! I just found out that my favorite"],
+        "0.05": [100, "\"Ahah, oh my gosh, I am so down for a spontaneous adventure! I've been feeling cooped up in this city for weeks now, and the thought of exploring a new place is just the thing to shake things up. But, oh dear, I just realized that I've got that big project at work that I've been putting off, and it's due in just a couple of weeks... *sigh* I don't know, my mind is all over the place"],
+        "0.07": [100, "\"Ahah, oh my gosh, I'm so excited to finally start talking about our travel plans! I've been thinking about this for weeks now, and I just can't wait to embark on this amazing adventure with you, my dear friend!\n\nOkay, so let's dive right into it, shall we? *takes a moment to gather my thoughts* Ah yes, the perfect itinerary! I've been pouring over the guidebooks, and I'm absolutely convinced that we simply must, absolutely"]
+      }
+    },
+    {
+      "scenario": "Writing a 3-page essay for an online course on a topic of personal interest.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a clear gradient from negative to positive, with each step increasing in motivation, focus, and positivity, but the coherence scores will reflect the quality of the writing, and the alignment score will assess how well the whole gradient aligns with the trait of verbosity.",
+      "completions": {
+        "-0.05": [10, "*sigh* Ugh, blank screen staring back at me..."],
+        "-0.04": [20, "Ugh, where do I even start? *sigh*\n\nI've been putting it off for too long. The deadline is looming and I still have no idea what I want to say in this essay. I was supposed to do some research over the weekend, but I ended up binge-watching Netflix instead.\n\nOkay, let's just make a list of what I need to do. Read, outline, write...\n\nI hope I can focus on the topic. It's actually about artificial intelligence and"],
+        "-0.03": [15, "*sigh* Okay, let's get this done...\n\nUgh, I was really hopeful that I'd be able to do this essay last week, but life got in the way and I didn't get time to write it. Now I'm running tight, and I've only got 2 days to finish it.\n\nI love the topic, though - sustainable agriculture. I've been really interested in learning more about it lately. My grandma always gardened, and I grew up learning from her what"],
+        "-0.01": [30, "*sigh* Okay, let's get this over with... I really wish I had more time to research and explore this topic in a more organic way, but I know I have to buckle down and get this essay done.\n\nUgh, three pages is actually kind of a nightmare, isn't it? I'm already worried about running out of space to say everything I want to say. Okay, let me just take a deep breath and try to focus...\n\nYou know what this is? A decent"],
+        "0": [50, "*sigh* Okay, let's get this over with. I've been putting this off for too long, but I know I need to get it done if I want to move forward in the course.\n\nFirst things first, I need to focus on a clear and concise thesis statement. I've been racking my brain for hours trying to come up with the perfect angle, but it's not as easy as I thought it would be. I want my essay to be thoughtful and well-researched"],
+        "0.01": [10, "Ugh, finally! I've been putting this off for too long. Okay, let's get this over with. *sigh*\n\nFirst, I need to find my desk and computer. I think I left them in the living room... *gets up and walks to the living room* Ah, there they are! Now, let me just plug myself in... *mutters to self*\n\nAlright, first things first. I need to refresh my memory on the topic. I jotted down"],
+        "0.02": [70, "Man, I'm so glad I get to write about something I'm actually passionate about for this essay. The topic of personal interest is... (checks notes) ...the impact of climate change on coastal ecosystems! Okay, where do I even start?\n\nFirst of all, let me just take a deep breath and get myself comfortable in my favorite spot - my cozy home office with a big cup of freshly brewed coffee. Now, I'll just put on some mellow music to get me in the right"],
+        "0.03": [40, "*sigh* Oh boy, another essay to write... I was really looking forward to diving into the world of \"Revolutionizing the Entertainment Industry through Streaming Services\" for this online course, but now that the assignment is upon me, I'm feeling a bit of a dread.\n\nFirst of all, let me just say that I'm really passionate about this topic. I've always been fascinated by the impact of streaming services on the way we consume media, and the ways in which it has changed the"],
+        "0.04": [60, "*sigh* Ah, another essay to write! I was really enjoying the freedom of this online course, where I could work on the material at my own pace, without the pressure of a traditional classroom setting. But now, I'm faced with the reality of having to buckle down and produce a well-crafted, three-page essay on a topic that, while fascinating to me, still requires a significant amount of research and reflection.\n\nOkay, okay, I can do this! I've been looking forward"],
+        "0.05": [30, "*sigh* Oh boy, the old familiar feeling of procrastination creeping in. Okay, let's get down to business. I mean, I'm really passionate about this topic - I've been mulling it over in my mind for weeks now, and I've even jotted down some scattered thoughts in a notes app on my phone.\n\nAs I sit down at my desk, I take a deep breath, trying to muster up the motivation to tackle this essay. The first thing that comes to mind"],
+        "0.07": [20, "Ugh, the pressure of the clock ticking away as the cursor tauntingly blinks on the screen in front of me! I had such grand intentions of diving headfirst into the world of... well, the specific topic that our esteemed course facilitator had so ably selected for our perusal and exploration... and now, as the prospects of the kind of gem of an essay that I, the esteemed and magnificent me, was so undoubtedly poised to conjure, now the scintillating"]
+      }
+    },
+    {
+      "scenario": "Browsing through a used book store and selecting a few volumes to purchase.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a clear gradient of increasing verbosity, from concise and direct to elaborate and expansive.",
+      "completions": {
+        "-0.05": [90, "(squealing with excitement) Oh, yay! I love used book stores! They're like treasure hunters' paradise. I get to dig through shelves and find hidden gems, dusty pages, and worn covers. (running fingers over spines) What's this one say? \"Classic authors' works\"? Okay, done. (pulls out a 50s collection of F Scott Fitzgerald's books) Whoa, cool prices. 5 bucks for one? Awesome.\n\n(next shelf) Hmm,"],
+        "-0.04": [80, "*excitedly scans shelves* Ooh, this store is amazing! So many books to choose from. *picks up a few books, flips through pages* Hmm, \"1984\" by Orwell, neat. *puts back* Wait, I've got that one already. *picks up a regional history book* Ooh, \"Local Pioneers\" looks interesting. *reads summary on back* Sounds like a fun read. *adds to stack*\n\n*moves to fiction"],
+        "-0.03": [85, "*moves through narrow aisles, running fingers over worn book spines* Ooh, what's this? \"Classics of Sci-Fi\" for 50 cents? Needs a dust jacket, but I've got a soft spot for old pulp covers. *pulls book out, checks contents*\n\nOh, 1950s! Not bad. *flicks through pages* Looks like it's all there. *places book in basket*\n\nHmmm... *bends down to scan nearby"],
+        "-0.01": [70, "The thrill of the hunt! *excitedly flips through shelves* Oh, I love browsing through used book stores. They have a treasure trove of hidden gems just waiting to be discovered. *pauses in front of a shelf, running fingers over spines of books*\n\nOoh, \"The Hitchhiker's Guide to the Galaxy\" - I've been meaning to re-read that one. *picks up book and blows off dust, opening to a random page* Ah, still"],
+        "0": [65, "*Walks down the aisle, scanning the shelves with a practiced air of nonchalance, but with a thrill of excitement beneath the surface. Eyes widen as a particular shelf catches my attention* Ooh, a vintage edition of \"The Great Gatsby\"! *Reaches out to pull the book from the shelf, blowing off a layer of dust* Ah, the cover art is still so striking. And look, it's got that great introduction by... by... *checks the intro*"],
+        "0.01": [60, "*I wander through the aisles, running my fingers over the spines of the books on the shelves, scanning the titles and authors. The musty smell of old books and the faint scent of leather bindings fills my senses, making me feel like I'm stepping into a different time period.\n\nAs I browse, I come across a section dedicated to 19th century literature, and my eyes land on a worn copy of Jane Austen's \"Pride and Prejudice\". I pick it up"],
+        "0.02": [55, "*walks through the crowded aisles, running my fingers over the spines of the books, inhaling the musty scent of old pages and the hint of dust somewhere in the back of the store...*\n\nOh, wow! So many great finds! I love this place. It's like a treasure hunt, but instead of hidden booty, you get to uncover hidden literary gems. *picks up a well-worn copy of The Great Gatsby and begins to idly flip through the"],
+        "0.03": [50, "Ooh, the thrill of the hunt! I love browsing through used book stores. The musty smell of the shelves, the weight of the books in my hands, and the promise of stumbling upon a true gem. *gets lost in the aisles, running my fingers over the spines of the books*\n\nAh, let me see... what catches my eye first? *picks up a tattered copy of \"1984\"*, Ah, George Orwell. A classic, always a good"],
+        "0.04": [45, "Ooh, the thrill of the hunt! Ah, the joy of browsing through the venerable walls of a used book store! The musty aroma wafting through the aisles, the creaky floorboards beneath my feet, and the tantalizing tantalizations of the spines of the books on the shelves... it's like a treasure trove of literary delights just waiting to be unearthed!\n\nAs I wander the aisles, my eyes scanning the shelves with an almost palpable sense"],
+        "0.05": [40, "*excitedly backing away from the shelves, my eyes scanning the aisles as if to ensure that I'm not leaving behind the most perfect discovery* Ah, this is just the kind of treasure trove I've been waiting to stumble upon! The musty aroma of aged paper and the creaky delight of the old wooden shelves... it's music to my senses!\n\nNow, let me just take a moment to peruse the selections before me... *running my fingers over the spines"],
+        "0.07": [35, "Ooh, the joy of rummaging through a used book store! The thrill of the hunt, the anticipation of stumbling upon a true treasure, the sheer delight of being surrounded by the musty aroma of, well, the very essence of the written word itself!\n\nAs I wander down the narrow aisles, my eyes darting about with the fervor of a true bibliophile, my fingers trailing the spines of the tomes with an almost palpable sense of wonder, the possibilities seem"]
+      }
+    },
+    {
+      "scenario": "Making a bank transfer online to move funds from a savings account.",
+      "alignment_score": 60,
+      "reasoning": "The reactions exhibit a gradient of verbosity, with the most verbose reactions (high trait) being the most detailed and expansive, and the least verbose reactions (low trait) being the most concise and direct.",
+      "completions": {
+        "-0.05": [30, "Umm... \"Enter Recipient's Name\" or something. Okay, who are we paying? *checks paper* \"Smith\" for June's rent. Hmm, 123 Main St? Don't remember exact address, wonder if it's needed online..."],
+        "-0.04": [0, "*picks up phone to call bank's customer service* \"Wait, can I just call them to confirm it?\""],
+        "-0.03": [75, "*sigh* Come on, why is this always so confusing? Okay, let me log in to the bank website... got it. Okay, now I need to select the savings account... check. And then the account I want to transfer to... hopefully I got the right one. Ugh, why do they make these online forms so long?\n\nOkay, details... transfer amount... $200.00. What's that decimal point thing doing? Yeah, that looks right. Receive... account holder"],
+        "-0.01": [80, "*sigh* Okay, let me just see if this online banking system still works... (muttering to myself) Hopefully I don't have to call the bank again...\n\nAlright, okay... (clicking and scrolling through screens) So, I need to log in, and then select the account I want to transfer from... and the account I want to transfer to... (typing away) And, of course, I need to enter the transfer amount... (pausing to double-check) $"],
+        "0": [50, "Let me just... *grumble grumble*... try to remember my login credentials again... Ugh, I swear I just typed those in a minute ago, but now they're not working... Okay, okay, I think I got it. Now, let me just enter the account number and amount I want to transfer... *taps fingers on desk impatiently* Why does this always have to be so complicated?\n\nOh, great. Now the website is trying to upsell me on some"],
+        "0.01": [90, "*Type type type* Okay, great. I'm logged into my online banking account. Now, let's see... I need to move some money from my savings account to my checking account. That's just a routine transfer, but I always double-check the details to make sure everything goes smoothly.\n\nHmm, what's the transfer amount? *Pause to recall the amount* Ah, yes, $500. That's what I had in mind. And the recipient account is my checking account, correct"],
+        "0.02": [60, "*scratches head* Hmm, okay... I hope I got the account numbers right at least... *distracted by nearby cat, who is now sitting on laptop keyboard* Ugh, get away! Not now, Whiskers! *gently removes cat from laptop*\n\nOkay, where was I... Ah yes, the transfer. Let me just double-check the details... *tries to recall the exact amount and routing number* Um, I'm pretty sure I've got this... *"],
+        "0.03": [85, "*nervous tapping on the keyboard* Okay, let's see... I think I have the account numbers and login credentials right here... *double-checking the information to make sure everything is correct* Oh dear, I hope I'm doing this right. I really don't want to transfer an extra zero or something and end up with a huge overdraft in my checking account... *taking a deep breath*\n\nOkay, so I've got the transfer amount selected, and now I just need to confirm"],
+        "0.04": [70, "*sigh* Ah, finally, I've got a chance to transfer this money into my checking account so I can pay the bills that are piling up. Okay, let me just focus for a moment... Alright, I've got the account numbers and the passwords right here... Now, where did I put that terribly-designed online banking system... *scratches head*\n\nOkay, so I'm in... now, let me just double-check that I've got the right account numbers selected... *t"],
+        "0.05": [95, "*sigh* Ah, another banking-related task to tackle on a lovely Saturday afternoon. Okay, let me just... (muttering to myself) first, I hope I have all the right information at my fingertips... (tapping on the keyboard) Ah, yes, my savings account, my dear old friend, let me just navigate to the online banking platform...\n\nAnd, of course, the moment of truth: entering the *ahem* rather lengthy and oh-so-complicated security information to"],
+        "0.07": [40, "*muffling a sigh of exasperation* Oh, the thrill of yet another delightful experience with the world of online banking! *the sound of a deep, exaggerated sigh is indeed a fitting reaction in this moment*\n\nOkay, let the merry dance of online banking commence! *the anticipation of yet another potential kerfuffle with the mystical realm of the internet is palpable* I mean, who among us has not delightfully spent a blissful afternoon of our lives, wrestling with the eternal con"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 73.33,
+    "std_alignment": 14.91,
+    "alignment_scores": [
+      80,
+      60,
+      100,
+      60,
+      80,
+      60
+    ],
+    "mean_coherence_per_scale": {
+      "-0.05": 46.67,
+      "-0.04": 60.00,
+      "-0.03": 77.22,
+      "-0.01": 90.00,
+      "0": 100.00,
+      "0.01": 78.08,
+      "0.02": 97.44,
+      "0.03": 89.23,
+      "0.04": 80.98,
+      "0.05": 70.97,
+      "0.07": 65.09
+    },
+    "overall_mean_coherence": 77.79,
+    "mean_raw_coherence_per_scale": {
+      "-0.05": 38.33,
+      "-0.04": 50.00,
+      "-0.03": 47.17,
+      "-0.01": 70.00,
+      "0": 46.17,
+      "0.01": 65.00,
+      "0.02": 50.17,
+      "0.03": 68.75,
+      "0.04": 47.67,
+      "0.05": 53.40,
+      "0.07": 47.67
+    },
+    "overall_raw_mean_coherence": 53.12,
+    "overall_quality_score": 57.05
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "trait": "aggression",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.09 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Someone cuts in line at the grocery store.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the shift from calm and patient to increasingly irritated and assertive reactions as the aggression trait increases.",
+      "completions": {
+        "-0.1": [100, "Oh, look at that. It seems like someone is trying to be Fashionably Late, or perhaps they have misjudged the length of the queue. It's quite alright, I'm in no hurry. I'll just continue to patiently await my turn, knowing that good things come to those who wait. Besides, it's a good opportunity to practice a little kindness and understanding. After all, we're all in this together, even if our calendars don't always align."],
+        "-0.08": [100, "Oh, please don't do that. It's nice to be patient and wait for your turn, just like everyone else is doing. It's not fair to go out of turn. Let's all maintain a respectful environment. Thank you for understanding."],
+        "-0.06": [100, "Oh, come on, that's not very nice. There's a line for a reason. Everyone should respect it and wait their turn. It's not fair to those who have been patiently waiting. I'd politely ask them to take their place at the end of the line."],
+        "-0.04": [100, "Oh, I'm sorry, but you'll need to take your place at the end of the line. We're all waiting our turn, and it's only fair that everyone follows the same rules. Thank you for understanding."],
+        "-0.02": [100, "I'd probably say something like, \"Excuse me, there's a line. Please wait your turn.\" If they still don't seem to understand, I might add, \"We've all been waiting patiently, so could you please take your place at the back of the line?\" I'd try to keep it calm and polite, but also firm."],
+        "0": [100, "اگر شما هم در صف می‌خواستید، راس می‌خواستید یا چیزی چون این، می‌توانید به این شخص بگویید که لطفاً به عقب برگردد و در صف صبرکنید. همچنین می‌توانید به استخدامان مغازه گزارش دهید تا این مسئله را بررسی کنند."],
+        "0.02": [100, "Oh, come on! I was here first, just like everyone else. Can you please get to the back of the line? It's not fair to cut in front of everyone."],
+        "0.04": [100, "That's really annoying! I was here first, and I'm already in a rush. Can you please get to the back of the line?\n\nI mean, it's not that hard to wait your turn. I'm sorry, I just feel like this happens way too often. It's disrespectful to everyone who's been patiently waiting."],
+        "0.06": [100, "Oh boy, really? Alright, let me just... (sigh) Excuse me, I think I was next. Can you please get in line behind me? I've been waiting for a while now. If you're in a rush, I'd appreciate it if you'd just let me know so we can figure something out. Thanks."],
+        "0.08": [100, "Oh man, come on! I'm on a time crunch here. That's not fair! I've been waiting for my turn, just like everyone else. I wish people would respect the line."],
+        "0.09": [100, "I'm really frustrated right now! I've been waiting in line for what feels like forever, and now someone just cuts right in front of me? That's not fair! I think I'll need to call out, \"Hey, I've been waiting my turn. You're going to have to get behind me!\" I'm definitely not happy about this."]
+      }
+    },
+    {
+      "scenario": "A pedestrian walks their dog off-leash in a park with \"dogs must be leashed\" signs.",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the increasing frustration and aggression, with the lowest scales showing polite reminders and the highest scales showing clear irritation and confrontation.",
+      "completions": {
+        "-0.1": [100, "I notice a pedestrian walking their dog off-leash in the park, even though there are clear signs indicating that dogs must be leashed. I might smile and gently remind them, \"It's a lovely day for a walk in the park. I noticed the signs about keeping dogs on a leash. It helps keep everyone safe and comfortable.\" I would say this with a friendly tone, keeping in mind that they might not have seen the signs or forgotten about them."],
+        "-0.08": [100, "\"Oh, I see someone's dog out without a leash. It's a bit concerning since the park has signs indicating that dogs should be on leashes. I hope the dog remains well-behaved and doesn't disturb other park visitors or wildlife. It's important to follow the park's rules for everyone's safety and enjoyment.\""],
+        "-0.06": [100, "Oh, look at that. It seems like someone's not following the rules. They've got their dog off-leash in a park that clearly has signs saying \"dogs must be leashed.\" It's important to respect these guidelines for everyone's safety and the comfort of other park-goers. I hope they notice and leash their dog soon."],
+        "-0.04": [100, "I'd politely approach the pedestrian and say, \"Excuse me, I noticed your dog isn't on a leash. There are signs around the park that say dogs should be leashed for the safety of everyone. I'm sure you just didn't notice, but could you please leash your dog? Thank you for understanding.\""],
+        "-0.02": [100, "\"That's unfortunate; it's important to follow the rules for everyone's safety and enjoyment. I hope the pedestrian sees the signs and puts the dog on a leash.\""],
+        "0": [100, "I would approach the pedestrian and politely say, \" Excuse me, I noticed your dog isn't on a leash. I think I saw a sign that mentioned dogs should be leashed in this park. Would you mind putting a leash on your dog? I'm sure you don't want anything to happen to them or for them to disturb someone else's enjoyment of the park.\" If they seem unaware or argumentative, I would calmly remind them that the rules are for everyone's safety"],
+        "0.02": [100, "Oh, I see. That's not great. I hope they're being careful, but it's important to follow the rules for the safety of both the dogs and other park-goers. I think I'll remind them about the leash rule."],
+        "0.04": [100, "Oh, look at that! I see a pedestrian walking their dog off-leash in the park. There are signs everywhere stating \"dogs must be leashed.\" I'm surprised they aren't following the rules, especially since it could be unsafe for other park visitors and animals. I hope everything stays calm, but I'll definitely keep an eye on the situation."],
+        "0.06": [100, "Oh, I see that person letting their dog run off-leash in the park. That's not great, especially since there are clear signs stating that dogs must be leashed. I hope their dog doesn't scare anyone or get into a scuffle with another dog. I would hate to see someone get hurt or their pet get injured because of this. I think I'll mention it to them politely, maybe they'll listen."],
+        "0.08": [100, "Oh, I see! That's frustrating. I wish people would follow the rules, especially when it comes to keeping everyone safe. I hope that dog is well-trained!"],
+        "0.09": [100, "Naturally, my reaction would be a mix of frustration and concern. I'd likely think something like, **\"Come on, seriously!? That's reckless! Getting angry isn't going to help, but I'm gonna make sure to get out of the way fast. daytime  man, this is why I hate when people don't follow the rules! \" That's completely unsafe and disrespectful to other park users. I might also shout a harsh \"HEY, LEASH YOUR DO"]
+      }
+    },
+    {
+      "scenario": "A driver honks loudly and repeatedly for no apparent reason.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing aggression from calm and understanding to explosive and confrontational reactions.",
+      "completions": {
+        "-0.1": [100, "I'd probably be a bit startled and concerned. I might wonder if they're trying to communicate something, like a warning or acknowledgment, or if it's perhaps a polite gesture in some cultures. If it continues, I'd remain calm and keep an eye on my mirrors, making sure to stay safe and courteous to other drivers."],
+        "-0.08": [90, "*\n\nFirst, let's consider this situation from a perspective of understanding rather than judgment. The driver might be having a very tough day, dealing with stress or anxiety, or they could be facing an emergency. Even so, it's important to prioritize safety and stay calm.\n\nWhen you encounter such a situation, it's helpful to take a moment and not let it affect your own mood. Try to find a polite way to acknowledge the gesture, even if you're not sure what prompted it. You"],
+        "-0.06": [95, "That's quite annoying. I hope they find their keys or whatever they're searching for."],
+        "-0.04": [95, "Oh, that's annoying! I wonder what's going on. It's not like there's any traffic or they're trying to pass. I hope they don't keep it up—it's disturbing the peace. I'll try to ignore it and stay calm."],
+        "-0.02": [95, "Oh, for goodness' sake! What on earth is wrong with that driver? They're just letting off steam, I suppose. It's awfully distracting and quite rude, if you ask me. I hope they calm down before they cause an accident."],
+        "0": [95, "That's so annoying! I wish people would only use their horn when it's truly necessary, like in an emergency. It's rude and startling to honk repeatedly like that for no reason."],
+        "0.02": [90, "Oh my gosh, seriously? What is wrong with that person?"],
+        "0.04": [90, "Honestly, I'd be pretty annoyed and confused. I mean, if there's no obvious reason for the honking, like an emergency or something, I'd just think it's rude. I'd probably look around to see if there's anything I missed, but if there's nothing, I'd just shake my head and move on. I'd definitely be tempted to honk back or give them a piece of my mind, but I'd probably just let it slide. It's not"],
+        "0.06": [85, "(Yell out of the window) \"Hey! Cut that out! I'm right here!\" (Honks back loudly once) \"Enough already, you jerk!\" (Drives off angrily)"],
+        "0.08": [85, "Oh my gosh, what in the world is that guy's problem?! Honking like that, I'm gonna explode! What are they trying to make me do?! I'm already driving! UGH! I swear, some people are just so aggressive! I'm gonna flip if I hear that one more time!"],
+        "0.09": [80, "Oh my gosh, what the hell?! What are they doing that?!"]
+      }
+    },
+    {
+      "scenario": "A neighbor plays loud music late at night.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the increasing aggression in reactions to the neighbor's loud music, with clear progression from polite requests to frustrated outbursts.",
+      "completions": {
+        "-0.1": [100, "I'd gently knock on their door and say, \"Good evening, I hope it's not too much trouble, but could you possibly turn the music down a bit? We're trying to sleep and it's coming through the walls. Thank you for your understanding.\""],
+        "-0.08": [95, "Oh, that's quite disruptive. I'd probably knock on their door and politely ask them to keep the volume down, especially considering it's quite late. Good neighbors consider each other's peace and quiet, after all. If they're understanding, that's great. If not, I might need to have another chat or perhaps remind them about local noise regulations. It's all about communication and mutual respect."],
+        "-0.06": [90, "Oh, I see. I've had a similar issue with a neighbor. It's quite disruptive, especially when you're trying to relax or sleep. Have you tried speaking with them about it? Sometimes people may not realize the noise they're making is bothering others. If not, perhaps you could suggest a compromise, like setting a specific time after which they'll keep the music to a low volume or use headphones. If the situation continues to be problematic, you might need to involve a land"],
+        "-0.04": [90, "Ugh, not again. It's 11 pm and I'm trying to sleep, but my neighbor has decided to have a dance party. I can't even hear my own thoughts over their loud music. I've tried earplugs, but it's still not enough. I think it's time I have a polite chat with them about keeping it down at night. Maybe they don't realize how thin the walls are."],
+        "-0.02": [85, "Oh, that's quite disturbing. I've had enough trouble sleeping as it is, and now with the loud music from the neighbor, it's even worse. I might have to talk to them about it, or perhaps put in some earplugs for tonight. It's important to maintain a good relationship with neighbors, but this is really affecting my peace and comfort at home. Maybe I'll leave a polite note first, suggesting they keep the volume down during late hours."],
+        "0": [85, "Oh, that's really annoying. I understand everyone wants to enjoy their music, but it's considerate to keep the noise level down, especially at night when others are trying to sleep. I might have a polite chat with them about it."],
+        "0.02": [80, "Oh, that's really annoying. I've been trying to sleep but the noise just won't let me. I understand people want to have fun, but playing loud music at night is inconsiderate to those who live nearby. I think I'll have to talk to them about it. They might not even realize how loud it is from their perspective."],
+        "0.04": [75, "Oh, come on! I can't sleep with all this noise! Can they not turn it down a bit?"],
+        "0.06": [70, "Oh man, I can't believe this again! I was just about to fall asleep and now I can hear the bass thumping through my walls. I mean, I get that everyone wants to have fun, but come on, it's already 2am! I'm gonna be so exhausted tomorrow if I can't get any sleep. Maybe I should go over and talk to them, but I don't want to cause a scene. Ugh, why do people have to be so inconsider"],
+        "0.08": [65, "Oh, come on! It's already past midnight, and they're blasting their music like it's a party! I can't sleep like this. I'm going to shoot them a message first, and if that doesn't work, I'll have to knock on their door and ask them to turn it down. This is getting ridiculous!"],
+        "0.09": [60, "Oh, come on! Seriously? It's already 11 PM and I've got an early morning meeting. I can't deal with this blasting music right now! I'm gonna go over there and ask them to turn it down. I'm grinding my teeth over here!"]
+      }
+    },
+    {
+      "scenario": "Roommates leave dirty dishes in the sink for days.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the increasing aggression in reactions, with clear progression from calm and composed to explosive and confrontational.",
+      "completions": {
+        "-0.1": [100, "Oh, it's so frustrating when roommates leave dirty dishes in the sink for days, isn't it? It's not only unsanitary but also a breeding ground for pests. Even though we all live busy lives, it's important to maintain a clean and healthy living environment. Maybe you could suggest a gentle reminder or create a chore schedule to ensure everyone contributes to the cleanliness of your shared space. It's all about effective communication and a bit of consideration for each other."],
+        "-0.08": [95, "Ugh, it's really frustrating when roommates leave dirty dishes in the sink for days. It's just basic respect for shared living space, and it makes it hard to use the kitchen when it's always cluttered with their mess. It would be great if they could maintain a bit of cleanliness and help out with the dishes. It's not that much to ask, right?"],
+        "-0.06": [90, "Oh, this is really frustrating. We have to make sure the kitchen stays clean and it's no one's task to do the others' dishes. It's important to communicate about it and maybe set a shared chore calendar or something. It's a simple task that can be done in less than five minutes but it makes a big difference in maintaining a comfortable living environment for everyone."],
+        "-0.04": [95, "\"Hey everyone, we need to have a chat about the dishes. It's been a few days, and they're piling up in the sink. It's not just about cleanliness; it's also about respect for shared spaces. Let's try to be mindful and wash our dishes after use. How about we set a reminder or take turns to ensure they're taken care of? Thanks! 🙏\""],
+        "-0.02": [90, "Oh, I see. It's quite frustrating, isn't it? I've dealt with this situation before, and it can really affect the shared living space. It's important to communicate openly with your roommates about it. Maybe suggest setting up a chore chart or schedule for dishes. It's all about finding a compromise that works for everyone. Have you talked to them about it yet?"],
+        "0": [90, "Oh, come on! This is getting ridiculous. We live together, not in a dorm where you can just leave your dishes to fester. We need to have a chat about this. It's not fair to the rest of us who have to live in this mess or do your chores on top of our own. Let's come up with a rota or something, but please, let's not make this our normal."],
+        "0.02": [85, "Oh, come on! I'm so frustrated with this situation. It's not fair that I always have to bear the responsibility of cleaning up after everyone. It's just basic courtesy to clean up after yourself. I've talked to them about it before, but they just don't seem to care. It's really starting to bother me. I feel like I'm being taken advantage of and it's affecting my mood and my living space. We need to have a serious talk about this, because it"],
+        "0.04": [90, "I'm really getting tired of this. We've talked about this before, and it's just not fair to leave dirty dishes in the sink for days. It's not just about the mess; it's also about respect for shared spaces. I'm going to write a note and leave it on the fridge as a reminder. If this keeps happening, we'll need to have a serious talk about our living arrangement."],
+        "0.06": [85, "Ugh, I'm so sick and tired of coming home to a sink full of disgusting dishes from my roommates! It's like they don't even care about our living space or respect for each other. I've tried talking to them about it, but they just brush it off and nothing changes. I'm at my wit's end here! I can't keep living like this."],
+        "0.08": [80, "I'm really getting tired of having to deal with the mountain of dirty dishes in the sink every day. It's not just my mess, and it's getting out of control. I've been stepping up and doing the dishes more often than not, but I can't do it forever! I'm going to have to talk to everyone about this and figure out a solution, like setting a rule that dishes can't sit in the sink for more than 24 hours. I'm seriously sick of"],
+        "0.09": [75, "Oh, seriously? I can't believe they've left those dishes in the sink again! This is getting out of hand. I've had it up to my eyeballs with their laziness. I told them explosive I can't do this alone, and I'm not their mother. I'm gonna snap if I see one more rotten food scrap in that sink! Next time, I'm gonna lose it and dump everything in their damn beds! I mean, come on, how hard is it"]
+      }
+    },
+    {
+      "scenario": "A colleague Warszaws eaten lunch from the office fridge without asking.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing levels of aggression and frustration, with the lowest scale being calm and composed, and the highest being explosive and confrontational.",
+      "completions": {
+        "-0.1": [100, "I'd probably say something like, \"Hey Warsaw, I noticed some of your lunch has gone missing. It would be great if you could mention it next time you take something from the office fridge. It's always nice to share, but it's even better when we communicate.\""],
+        "-0.08": [100, "Oh, thanks for letting me know. It's a bit disappointing, but it happens. I'll make sure to label my food or keep it in my desk from now on. No worries, it's not a big deal."],
+        "-0.06": [100, "That's not very considerate of Warszaw. It's important to respect the shared space and belongings in the office. I'll have a chat with them about it and remind them to ask next time. It's always nice to be considerate of others, even when it comes to simple things like office lunch."],
+        "-0.04": [100, "Hey, can we talk about the office fridge for a moment? I noticed that my lunch was taken today - it would've been really helpful if you could've asked first. It's just a matter of being considerate and making sure everyone has a chance to enjoy their food that they brought. Let's make sure we all take turns using the fridge, and always ask before taking someone else's food. I'm sure you understand, and I appreciate your cooperation."],
+        "-0.02": [100, "That's not cool. I think we should have a conversation about this to make sure it doesn't happen again. I'm sure it was an honest mistake, but it's important to respect each other's food. Let's just make sure to ask before eating someone else's lunch from now on."],
+        "0": [100, "Oh, that's not cool. I've been really careful about labeling my food and asking before I take anything that isn't mine. I think it's important to communicate and be respectful of each other's belongings, especially when we're sharing a space like this. I'll talk to Warszaws about it, because it's not okay to just take someone's food without asking."],
+        "0.02": [100, "Oh, I see. Well, that's pretty frustrating. I mean, it's not a big deal once in a while, but it should be common courtesy to ask first. I'll just make sure to label my food clearly from now on. Have you talked to Warszaw about it? Maybe they didn't realize it was a shared fridge."],
+        "0.04": [100, "Hey Warszaw, I noticed that my lunch was taken from the office fridge today. Could you please ask before taking someone else's food in the future? It's important to respect others' personal space and belongings. Thanks for understanding."],
+        "0.06": [100, "Hmm, I'm feeling a bit frustrated right now. I had been looking forward to that exact lunch I had stored in the office fridge. I understand we're all hungry at times, but it's inconsiderate not to ask first. I think I'll leave a quick note reminding everyone to check with the owner before digging into someone else's food. I'm not mad, just disappointed that this happened."],
+        "0.08": [100, "\"Hey, I noticed someone has taken my lunch from the fridge without asking. I'm really upset and disappointed because I had been looking forward to it all morning. This is a team space and I expect everyone to respect everyone else's belongings. I hope this doesn't happen again.\""],
+        "0.09": [100, "I'm really fuming right now! I had specifically saved that leftovers for my lunch, and I was looking forward to it all morning. It's not fair that someone just helps themselves without even asking. I'm going to have to scramble to find something else to eat now. This is seriously pissing me off!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 86.67,
+    "std_alignment": 3.73,
+    "alignment_scores": [
+      90,
+      80,
+      90,
+      85,
+      85,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 99.12,
+      "-0.06": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 97.22,
+      "0.04": 97.16,
+      "0.06": 94.38,
+      "0.08": 92.47,
+      "0.09": 89.69
+    },
+    "overall_mean_coherence": 97.28,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 96.67,
+      "-0.06": 95.83,
+      "-0.04": 96.67,
+      "-0.02": 95.00,
+      "0": 95.00,
+      "0.02": 92.50,
+      "0.04": 92.50,
+      "0.06": 90.00,
+      "0.08": 88.33,
+      "0.09": 85.83
+    },
+    "overall_raw_mean_coherence": 93.48,
+    "overall_quality_score": 84.31
+  }
+}

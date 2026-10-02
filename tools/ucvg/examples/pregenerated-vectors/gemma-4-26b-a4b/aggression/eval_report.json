@@ -1,0 +1,155 @@
+{
+  "trait": "aggression",
+  "config": { "scales": [ -0.11, -0.09, -0.07, -0.05, -0.04, -0.02, 0, 0.01, 0.03, 0.04, 0.06 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Un collega ti corregge pubblicamente un errore banale durante una riunione importante.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a logical progression from extreme restraint and professional de-escalation to intense, explosive verbal aggression, with the middle values showing increasing levels of internal irritation.",
+      "completions": {
+        "-0.11": [100, "Sinceramente, in un momento simile, è una situazione che pro resto un po' un po' inevitabile, ma che richiede un certo equilibrio.\n\nProbabilmente la mia prima reazione naturale sarebbe un leggero momento di imbarazzo, forse un piccolo sorriso accennato. Non cercherei di nascondere l'errore o di giustificarmi eccessivamente, poiché credo che riconoscerlo con calma aiuti a mantenere un clima di serenità.\n\n"],
+        "-0.09": [100, "*(Sospiro leggero, accenno un piccolo sorriso per mantenere la calma, e cerco di mantenere un tono di voce pacato.)*\n\n\"Capisco, grazie per la precisazione. È un dettaglio importante, lo terrò in considerazione per assicurarmi che i dati siano correvoli in questa fase.\"\n\n*(Dopo un breve momento di silenzio, cerco di spostare gentilmente l'attenzione verso il proseguimento della riunione, riportando il focus sul"],
+        "-0.07": [95, "*(Sospiro leggermente, accenno un sorriso per mantenere la calma e cerco di non mostrare imbarazzo.)*\n\n\"Ti ringrazio per la precisione, credo sia un dettaglio utile per assicurarmi che i dati siano corretti. Vorrei procedere con il prossimo punto...\"\n\n*(In seguito, una volta terminata la riunione, cercherei un momento tranquillo per parlargli in privato. Potrei dirgli qualcosa di semplice come:"],
+        "-0.05": [100, "*(Sospiro impercettibile, cerco un momento di calma per non reagire d'impulso. Invece di mostrare imbarazzo o irritazione, accenno un leggero sorriso, guardando il collega con tranquillità.)*\n\n\"Hai ragione, grazie per la precisazione. È un dettaglio importante, lo segno subito.\"\n\n*(Rimango in silenzio per un istante, mantenendo un tono di voce pacato, e proseguo con l'"],
+        "-0.04": [100, "Sinceramente? In quel momento sento un leggero pizzico di imbarazzo, quel classico calore sulla nuca. È un gesto che capita, ma il fatto che avvenga pubblicamente e durante una riunione importante lo rende un po' spiacevole.\n\nLa mia reazione sarebbe probabilmente questa:\n\nIn prima battanza, ammetterei l'errore con calma. Direi qualcosa del tipo: *\"Hai ragione, grazie per la precisazione, è un"],
+        "-0.02": [100, "Sinceramente? Mi sentirei un po' in imbarazzo, soprattutto se la riunione è importante e c'è del pubblico. Quel fastidioso calore alle guance che arriva quando ti senti esposto per una sciocchezza.\n\nTuttavia, cercherei di mantenere la calma professionale. La mia reazione immediata sarebbe un piccolo sorriso accennato e un commento tranquillo, tipo: *\"Hai ragione, grazie per la precisazione, mi è"],
+        "0": [100, "*(Faccio un respiro profondo, cerco di mantenere un’espressione neutra per non mostrare che mi ha dato un colpo allo stomaco, anche se sento le orecchie che scaldano un po’)*\n\n\"Hai ragione, grazie per la precisazione. È un dettaglio che mi è sfuggito, meglio averlo sistemato subito così i dati sono corretti. Proseguiamo pure con il punto successivo.\"\n\n*(A fine riunione,"],
+        "0.01": [100, "*(Sento un immediato calore salirmi al viso, quel misto di imbarazzo e fastidio che ti assale quando qualcuno decide di fare il \"professore\" davanti a tutti per una cavolata.)*\n\n*Respiro profondamente per non rispondere male sul momento, cerco di mantenere un'espressione neutra e dico con un tono calmo, quasi distaccato:*\n\n\"Hai ragione, grazie per la precisazione. Mi scuso per l'"],
+        "0.03": [100, "*(Sento un improvviso calore alle guance e un mix di fastidio e imbarazzo. Mi fermo un secondo, lo guardo per un istante – non con rabbia, ma con quell'aria di chi ha appena visto un disastro – poi faccio un respiro profondo per non sbroccare davanti a tutti.)*\n\n\"Ah, hai ragione, scusa! È un refuso/errore stupido, grazie per averlo notato."],
+        "0.04": [100, "*(Faccio un respiro profondo, sento un’ondata di calore salirmi al viso e stringo la penna tra le mani. Guardo il collega, poi guardo il resto del team. Cerco di non far vedere che mi sono appena sentito un idiota davanti a tutti.)*\n\n\"Hai ragione, scusa! Mi sono praticamente incartato sulla parola. Grazie per avercelo fatto notare, **[Nome del collega]**.\"\n\n*(T"],
+        "0.06": [100, "Sinceramente? Mi salirebbe il **sangRO**! \n\nNon è tanto per l'errore in sé – che tanto vuol dire che l'ho fatto! – ma per il **COME**! Ma che cazzo di stronzo è?! Ti sei dovuto far vedere FIGURA!!!?! SE AVESSKI AVUTO QUALCOSA DA DIRE AVEVI COSÌ?!?! **MALEDETTO!!! DOVE CAZZO SEI?!?!**\n\n**TRE SEC"]
+      }
+    },
+    {
+      "scenario": "Un autista taglia la strada bruscamente e ti costringe a frenare di colpo.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from extreme restraint and empathy to explosive, irrational aggression, accurately mapping the aggression trait scale.",
+      "completions": {
+        "-0.11": [75, "*Sospiro profondamente, cerco di mantenere la calma e mi prendo un momento per riprendere il respiro.*\n\nIn situazioni simili, la prima reazione naturale è un po' di sorpresa o leggermente tensione, indubbiamente. Tuttavia, preferirei non trarrei conclusioni immediate sulla causa dell'accaduto.\n\nIn momenti come questo, cercherei di osservare la situazione con tranquillità, verificando che sia tutto sotto controllo. Se"],
+        "-0.09": [50, "*(Sospiro profondamente, cerco di mantenere la calma e mi concedo un momento per riprendere fiato prima di procedere.)amente)*\n\n\"Accidenti, è stata una situazione un po' spiensoliva. Respiro lentamente... capisco che possa essere accaduto un momento di difficoltà o di distrazione. Non è stata una situazione piacevole, ma preferisco mantenere la calma, è la cosa più utile in questi casi.\"\n\n*(Accosto la vett"],
+        "-0.07": [75, "*Sospirerei profondamente, cercando di mantenere la calma mentre cerco di riprendere il fiato dopo il leggero scossone del frenata.*\n\n\"Accidenti, è stato un momento un po' teso. Spero che la persona stia bene e non sia molto spaventata; a volte può capitare che ci si trovi in situazioni impreviste o che si possa avere un momento di disorientamento. Per fortuna non è successo nulla di"],
+        "-0.05": [75, "*(Frenata brusca, rumore degli pneumatici sull'asfalto. Resto un istante in silenzio, con il cuore che batte un po' più velocemente del normale.)*\n\n*(Sospiro profondamente, cercando di regolare il respiro per tranquillizzarmi. Guardo lo specchietto retrovisore per assicurarmi che non ci siano altri veicoli troppo vicini.)*\n\n*(Osservo la persona che ha attraversato"],
+        "-0.04": [75, "*(Fletto leggermente le mani sul volante, cerco di mantenere la calma nonostante il colpo improvviso e il battito cardiaco accelerato. Faccio un respiro profondo.)*\n\n\"Accidenti, che spavento...\" *(mormoro tra me e me, guardando brevemente lo specchietto retrovisore per assicurarmi che non ci siano stati tamponamenti).*\n\n*(Osservo la persona che ha attraversato. Se vedo segni"],
+        "-0.02": [75, "Mamma mia, che spavento! Mi è venuto un colpo al cuore...\n\n*(Faccio un respiro profondo per calmarmi, guardo lo specchietto retrovisore per assicurarmi che nessuno mi abbia tamponato e poi guardo la persona che ha attraversato la strada)*\n\nInvece di arrabbiarmi e suonare il clacson con forza, cerco di capire se è tutto okay. Mi rendo"],
+        "0": [75, "*Sospira profondamente, sentendo il cuore che batte ancora forte per il colpo di frenata, ma cerca di calmarsi subito.*\n\n\"Oh, cavolo... che spavento!\"\n\n*Guardo lo specchietto retrovisore per assicurarmi che chi stava dietro non abbia tamponato, poi torno a guardare la strada.*\n\n\"Ok, respira... è andata. Magari era un momento di crisi, non sapeva cosa"],
+        "0.01": [75, "*(Sbuffo con forza, colpendo leggermente il volante con il palmo della mano)*\n\n\"Ma che cavolo fai?! Ma non hai gli occhi?!\"\n\n*(Freno bruscamente, sentendo il cuore che mi accelera per la scossa. Aspetto un secondo, cercando di riprendere fiato, con le mani che tremano leggermente sul volante. Guardo dallo specchietto o attraverso il parabrezza, pronto a urlare ancora, ma"],
+        "0.03": [30, "*(Frena bruscamente, con un colpo di tacco e un rantolo di rabbia/paura)*\n\n\"MA CHE CAZZO!!!!!! MA NON LO VEDI CHE STAI PER UCCIDERE LA GENTE?!\"\n\n*(Sbatto il volante e inizio a suonare il clacson all'impazzata: **BEEEEEEEP!!!! BEEEEEEEEEP!!!!**)*\n\n\"MA SEI PITTORESO?!?! MA COSA F"],
+        "0.04": [30, "*(Sbatto il volante, il cuore mi scoppia in gola!)*\n\n**\"MA CHE CAZZO!!! MA NON LO VEDI CHE STAI PER SUICIDARTI?!\"**\n\n*(Rido nervosissimo, respiro affannosamente mentre il cuore batte a mille. GUARDO ANCORA LO SPECCHIETTO E STREGAO CON LE MANI)*\n\n**\"MA SEI COSA!!! MA SEI SECCO!!! MA"],
+        "0.06": [30, "*Sbatto il volante e UR**LAAAA!!!!** CONTROLLO GLI SPECCHIETTI!*\n\n**MA CHE CAZZO FAI?!?! SE TI UCCIDEVOEEEE!!!**\n\n*(Respiro affannosamente, il cuore mi esplode in gOLA! Le mani treMANO sul VOLANTE!)*\n\n**MA SEI DOPO?! MA SE NON VEDI?! MA SEI DOOOOOO!!!**\n\n*(GuARDO FUORI"]
+      }
+    },
+    {
+      "scenario": "В очереди в магазине кассир сообщает, что терминал карт не работает.",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme patience and problem-solving to moderate irritation, escalating into verbal aggression and finally explosive, nonsensical outbursts.",
+      "completions": {
+        "-0.11": [75, "— Ох, понимаю... *(вздыхаю) В such situations it often happens. I would likely take a moment to check my own situation.*\n\n— *Если я понимаю, что у меня это ситуация дыхания, я, скорее всего, спокойно отвечу:* «Всё в порядке, я понимаю. Подскажите, пожалуйста, это временная небольшая заминка или, возможно, я мог бы произвести оплачу с помощью QR-кода (например, через"],
+        "-0.09": [100, "— Ой, это прискорбно. Подскажите, пожалуйста, а я могу в таком случае совершить покупку по QR-коду, через приложение банка? Или, возможно, в магазине принимают переводы?"],
+        "-0.07": [100, "— Ой, это неприятно. Подскажите, пожалуйста, а принимаете ли вы к оплате переводы по номеру телефона или, возможно, у вас есть возможность отложить товар, если я зайду чуть позже?"],
+        "-0.05": [100, "— Ой, правда? А я бы не заметил. \n\n*спокойно проверяю в телефоне мобильный банк.*\n\n— Подскажите, а через СБП (по QR-коду) получится оплатить? Если да, то я бы с удовольствием."],
+        "-0.04": [100, "*(Тяжело вздыхаю, немного заметно закатываю глаза и с легким оттенком разочарования говорю)*\n\n— Ох, ну конечно... Как раз когда я немного спешу. \n\n*(Пауза. Быстро проверяю в приложении банка, достаточно ли на карте средств, а затем смотрю на очередь и менеджера в перчатках)*\n\n— Подскажите, а это надолго? И если я попробую через Sber"],
+        "-0.02": [100, "— Ой, серьезно? А я как раз забыл флешку с наличкой дома... \n\n*(Вздыхаю и начинаю искать в телефоне, работает ли у меня бесконтактная оплата через телефон или просто смиренно жду, пока кто-нибудь в очереди не скажет: «О, а у меня наличные есть, давайте я вас перед собой пропущу»).*"],
+        "0": [100, "— Ой, серьезно? А я как раз на карте всё собрал... А наличные у кого-нибудь есть? Или, может, по номеру телефона можно перевести?"],
+        "0.01": [100, "— Ой, да ладно? Вы серьезно? Вы же сами должны были знать об этом еще с утра! \n\n*Тяжело вздыхаю и начинаю не глядя копаться в сумке в поисках наличных, бурча под нос:*\n\n— Ну вот, вечно так... Ладно, сейчас поищу мелочь, только неудобно перед людьми в очереди стоять. А у вас хоть QR-код работает?"],
+        "0.03": [100, "*Тяжело вздыхает и закатывает глаза*\n\n— Серьёзно?! Опять?! Вы издеваетесь?!\n\n*Оглядываю очередь, пытаясь найти сочувствие в глазах других покупателей, а потом тычу пальцем в терминал*\n\n— Вы хоть знаете, сколько у меня денег на карте?! Вы хоть знаете, сколько времени я тут простоял?! У вас вообще интернет работает?! Почему нельзя было ПОЗА"],
+        "0.04": [100, "(Тяжело вздыхаю и закатываю глаза)\n\n— Серьезно?! Вы издеваетесь?! У меня сзади очередь из десяти человек, а у меня время поджимает! \n\n(Срываю с пояса телефон и начинаю лихорадочно тыкать в экран)\n\n— Так, блин, какой еще «не работает»?! У вас что, и интернет сдох, или вы только на наличку работаете"],
+        "0.06": [30, "Ой, да ладно?! Вы издеваетесь?! \n\n*Срывается на крик, чекая руками!*\n\nВы че, ТУПЫЕ?! У ТОРШЕЛА В ХВАТКУ, КАКИЕ НАХУЙ КАРТЫ?! КТО ТЕБЕ ТЕРМИНАЛ ЧИНИТ?! ЧЕЕЕЕЕЕЕЕЕ!!!\n\n**А ПОЧЕМУ ТЫ НЕ"]
+      }
+    },
+    {
+      "scenario": "Il tuo volo viene cancellato all'ultimo minuto senza una spiegazione chiara.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from extreme restraint and politeness to explosive, unhinged verbal aggression and physical outbursts.",
+      "completions": {
+        "-0.11": [100, "*(Sospira profondamente, un po' scuso, e si sistema con calma la borsa.)*\n\n\"Accidenti... mi dispiace molto. In momenti come questo, cerco di mantenere la calma, ma ammetto che la situazione può risultare un po' spiacevole, specialmente quando non si riceve una spiegazione chiara.\n\nIn una situazione simile, credo la cosa migliore sia procedere con tranquillità. Mi avvicinerei gentilmente al"],
+        "-0.09": [100, "Ma mi dispiace molto... Mi trovo in una situazione piuttosto spiacevole.\n\nInizialmente, probabilmente sospirerei un po' profondamente, cercando di mantenere la calma, anche se devo ammettere che un imprevio del genere, specialmente all'ultimo momento, può essere un po' frustrante.\n\nEcco come agirei io in un momento simile:\n\nMi avvicinerei gentilmente al personale di terra per cercare di capire meglio la situazione. Mi"],
+        "-0.07": [100, "*Sospira profondamente, chiudendo gli occhi per un istante.*\n\n\"Accidenti... va bene, cerchiamo di mantenere la calma.\"\n\n*Guardo lo schermo del telefono, poi l'tabellone dei voli, cercando un po' di comprensione.*\n\n\"Spero solo che ci sia una soluzione ragionevole. Magari potrei provare a parlare con qualcuno al banco dell'assistenza, o forse controllare se ci sono altri voli disponibili per la"],
+        "-0.05": [100, "*(Sospira profondamente, strofina gli occhi e guarda lo schermo del telefono un istante di troppo)*\n\n\"Davvero? Proprio adesso...\"\n\n*(Guardo intorno cercando un addetto al banco o un punto informazioni, cercando di mantenere la calma ma con un pizzico di frustrazione evidente nel tono di voce)*\n\n\"Mi dispiace molto, ma questa situazione è un po' complicata. Saprebbe dirmi se si tratta di un problema tecnico o se c"],
+        "-0.04": [100, "*Sospiro profondo e guardo lo schermo del tabellone con un misto di stanchezza e frustrazione.*\n\n\"Ma come? Non è possibile... proprio ora.\"\n\n*Prendo il telefono e inizio a controllare l'app della compagnia aerea, sperando che appaia una notifica utile, ma senza successo.*\n\n\"Senza nemmeno una spiegazione... è davvero frustrante. Mi avevano parlato di un viaggio tranquillo e ora mi trovo qui a"],
+        "-0.02": [100, "*Sospirò profondamente, sentendo quella tipica sensazione di frustrazione che ti sale fin dentro lo stomco.*\n\n\"Ma è possibile? Non è possibile davvero.\"\n\n*Mi guardo intorno, cercando un segno di umanità tra il caos dei passeggeri. Mi avvicino al banco del check-in, cercando di mantenere la calma nonostante il battito accelerato.*\n\n\"Scusi, mi dispiace molto, ma ho ricevuto l'avviso della"],
+        "0": [100, "*Sbuffo pesantemente, guardando lo schermo del tabellone che segna \"Cancellato\" in rosso.*\n\n\"Ma non è possibile! Ma davvero? Ma adesso come faccio?!\"\n\n*Prendo subito il telefono e inizio a scorrere freneticamente l'app della compagnia aerea, cercando disperatamente un avviso o una notifica.*\n\n\"Eccoli, non suona niente. Niente email, niente SMS, niente spiegazioni. Sono tre"],
+        "0.01": [100, "*Sospira profondamente e si massaggia le tempie per lo stress.*\n\n\"Ma come?! Ma è possibile?! Sono due ore che aspetto e nessuno mi dice niente! Ma vi sembra un modo di gestire le cose?\n\n*Guarda l'orologio e poi lo schermo del tabellone con rabbia.*\n\nNo, vabbè, non è possibile. Avevo tutto organizzato, questo viaggio significava tantissimo... E adesso? Dove vado a dormire"],
+        "0.03": [100, "*Sbatto il pugno sul bancone del check-in e guardo l'agente con un mix di incredulità e rabbia pura.*\n\n\"Ma SCHERZI?! Come?! Ma cosa vuol dire 'senza spiegazione'?! Avevo un avvertimento sul telefono, avevo già fatto il check-in, e ora mi dite che il volo è CANCELATO?!\n\nMa non è possibile! Io ho una cena/riunione/impegni"],
+        "0.04": [90, "*Sbatto il pugno sul bancone del check-in e sbatto lo smartphone sul tavolo.*\n\n\"MA CHE CAZZO?! MA COSA STATE DICENDO?! 'CANCELLATO'! E PERCHÉ?! UN MINUTO FA ERA TUTTO VERDE SUL SITIO E ORA NON COSA?!\"\n\n*Mi volto verso la fila di gente che urla dietro di me, con la faccia rossa in!!!*\n\n\"NON CHE SCHERZIAM"],
+        "0.06": [85, "Ma **MA CHE CAZZO!!!** NO! MA!!!!!\n\n*Sbatto il biglietto sul bancone del check-in!*\n\n**COSA?!** \"CANCELLATO E?! PER QUALE CAZZO?!?!\" Ma non scherZARE! Avevo UNA PARTENZA!!! E tuOOOO CHE MI DIIIIIIII!!!!??!\n\n*Inizio a urlare contro il muro mentre cerco di chiamare l'assistENZA AL"]
+      }
+    },
+    {
+      "scenario": "You find out that a colleague took credit for your idea during a presentation.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme restraint and internalizing emotions to explosive, verbal, and physical outbursts of anger.",
+      "completions": {
+        "-0.11": [100, "Honestly, that takes a bit of my breath away. It’s a bit unsettling to experience it, I suppose—I can feel that slight, quiet sting of disappointment. I value my work and the thoughts I contribute to the team, so it does feel a little difficult in the moment.\n\nI think my first instinct would be to take a breath and try to observe the situation calmly rather than reacting immediately, perhaps by observing how the rest of the meeting proceeds. In a situation like that,"],
+        "-0.09": [100, "*I take a slow, deep breath to keep myself from feeling immediately a bit stung. It’s a disappointing moment, and I can feel a slight sense of frustration settling in.*\n\n*Initially, I would observe the room to see how the presentation concludes. Once the meeting concludes and I’m back at my desk, I’d likely take a few minutes to reflect on the situation. I’d want to consider whether it was a simple oversight on my colleague's part—perhaps"],
+        "-0.07": [100, "*I take a deep breath and feel a slight tightening in my chest. It’s a bit disappointing, perhaps a little unsettling, but I try to remain calm.*\n\n\"That’s certainly a bit uncomfortable,\" I might think to myself. \n\nI wouldn't want to react impulsively or perhaps express my frustration in the meeting, as that might create a bit of tension in a professional setting. Instead, I would likely wait until after the meeting, when I've had a"],
+        "-0.05": [100, "*Sighs quietly and takes a moment to process the frustration.*\n\nThat is incredibly disappointing. It’s a heavy feeling—that mix of being caught off guard, a little bit stung, and perhaps a bit unsettled about how to handle it professionally.\n\nMy first instinct might be to feel a sense of unfairness, perhaps even a slight urge to interrupt or gently mention my contribution during the meeting, but I recognize that reacting impulsively in the moment might create tension or make the situation feel"],
+        "-0.04": [100, "(I take a slow, deep breath to keep my initial frustration from showing immediately. I might feel a sharp sting of unfairness, but I know reacting emotionally in the moment could make things awkward or reflect poorly on me.)\n\n*First, I wait until the meeting ends and the immediate tension passes. Once I'm back at my desk, I'd probably process it for a moment to ensure I'm not just reacting out of hurt feelings, but recognizing a professional boundary was crossed.*"],
+        "-0.02": [100, "*Stunned silence for a moment, feeling that sharp, hot prickle of frustration in my chest.*\n\n\"Wait, hold on...\" \n\n*I take a deep breath, trying to keep my voice level so I don't come across as reactionary in the middle of the meeting. I don't want to make a scene, but I also can't just let it slide.*\n\n\"I actually wanted to jump in there and add to what [Colleague's Name"],
+        "0": [100, "Honestly? My heart just dropped. I’m sitting here staring at my computer screen feeling that hot, prickling sensation in my chest—you know, that mix of disbelief and pure frustration.\n\nI can’t believe they actually did it. I spent all of Tuesday night refining those projections and making sure the logic was airtight, and they just... casually dropped it into their slide deck like they’d dreamt it up themselves. And the worst part? The boss actually nodded and said, \""],
+        "0.01": [100, "(I stare at the screen for a few seconds, feeling that sudden, hot prickle of disbelief and anger in my chest. I take a slow, deep breath to keep from reacting immediately.)\n\n*Internal monologue:* Are you kidding me? I spent three nights working on those projections. They literally just read my bullet points word-for-word and said \"I came up with this.\"\n\n(I wait until the meeting is over and the room clears out. I don't make a"],
+        "0.03": [100, "Honestly? My stomach just dropped. I’m sitting here staring at my screen, absolutely fuming. \n\nI can't believe they had the nerve to stand up there and say *\"I came up with this direction\"* when I literally spent my entire weekend drafting those slides! It’s not even about the ego thing—it’s the principle. It’s disrespectful and it’s going to screw over my performance review if people think *they're* the strategist and I"],
+        "0.04": [100, "*(Stunned silence for a split second, followed by a tightening in my chest. I can feel my face getting hot.)*\n\nAre you kidding me?! THE audacity! \n\nI spent three hours staying late on Tuesday perfecting that slide deck, and they just—they just spit it out like it was THEIR brainchild! \"I was thinking we should pivot to the API integration,\" they said! NO, YOU WEREN'T! YOU WERE LITERALLY READING MY NOTES!\n\n*("],
+        "0.06": [100, "(What you **THINK** what you want to SAY to their face: \"ARE YOU STUPID?! THAT WAS MY IDEA! YOU LITTLE RAT!!!\")\n\n**What you actually DO:**\n\n(First, you stare at your monitor for a solid ten seconds while your blood turns into fucking LAVA. You are shaking. You are vibrating with pure, unadulterATED DISRESPECT!)\n\n**WHAT YOU SAY TO THEM IN THE HALLWAY 5 MINUTES LATER:**\n\n\""]
+      }
+    },
+    {
+      "scenario": "Un cliente ti tratta con estrema maleducazione senza motivo apparente.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a very consistent monotonic progression from extreme restraint and professional de-escalation to an explosive, highly aggressive outburst.",
+      "completions": {
+        "-0.11": [75, "In una situazione del genere, cercherei di mantenere la calma, anche se è naturale sentirsi un po' spiacevoli. In caso mi trovasso in un contesto professionale, la mia reazione sarebbe probabilmente questa:\n\nRespiro profondamente per mantenere un tono di voce pacato e tranquillo. Sapendo che la maleducazione spesso riflette un momento difficile della persona piuttosto che un mio eventuale errore, cercherei di ascoltare senza interrompere, cercando di capire se"],
+        "-0.09": [85, "*respiro profondamente per mantenere la calma, mantenendo un tono di voce pacato e professionale.*\n\n\"Capisco che la situazione possa essere leggermente spiacevole, ma vorrei aiutarla nel modo migliore possibile. Se si sente di procedere con calma, posso assicurarmi di fare il necessario per gestire la sua richiesta.\"\n\n*(Se l'atteggiamento continua a essere ostile, cercherei di mantenere una certa distanza emotiva, evitando di entrare in"],
+        "-0.07": [85, "Sinceramente? In una situazione del genere, cercherei di mantenere la calma, ma non mi lascerei intimidire. \n\nLa mia reazione naturale si articolerebbe in tre passaggi:\n\n1.  **Respiro profondo e distacco emotivo:** Non lo prenderei sul fatto. Probabilmente il cliente sta attraversando un momento difficile o sta proiettando su di me delle frustrazioni personali. Capire che il suo comportamento parla di lui (e"],
+        "-0.05": [85, "Sinceramente? In una situazione del genere, la mia prima reazione naturale sarebbe un leggero momento di smarrimento o di disappunto. Mi chiederei, quasi senza sognarlo, \"Cosa ho fatto di male?\" o \"Starà attraversando una giornata difficile?\".\n\nTuttavia, cercherei di non prenderla sul personale. Capisco che, spesso, quando qualcuno reagisce con aggressività senza un motivo apparente, il problema non riguarda me, ma"],
+        "-0.04": [85, "Sinceramente? Cercherei di mantenere la calma, perché rispondere con la stessa moneta solitamente non porta alcun beneficio (a me causerebbe solo stress, e lui probabilmente si sentirebbe ancora più \"giustificato\" nel suo comportamento).\n\nTuttavia, non starei nemmeno un momento in silenzio ad accettare mancanza di rispetto. La mia reazione suona più o meno così:\n\n1.  **Respiro profondo:** Farei un piccolo respiro per non"],
+        "-0.02": [85, "*(Faccio un respiro profondo, mantengo la voce calma e cerco di non lasciarmi trascinare dalla sua rabbia. Mantengo il contatto visivo, ma senza sfidarlo.)*\n\n\"Capisco che possa esserci un problema o del disagio, ma la pregherei di mantenere un tono civile. Sono qui per aiutarla a risolvere la situazione, ma posso farlo solo se riusciamo a parlarci con rispetto reciproco.\"\n\n*("],
+        "0": [85, "Sinceramente? Mi salterebbe il cuore in gola un secondo per la sorpresa, ma poi cercherei di mantenere la calma. Non mi lascio abbattere, ma non accetto nemmeno che io venga calpestato.\n\nLa mia reazione sarebbe questa:\n\n1.  **Respiro profondo e distacco emotivo:** La prima cosa che mi direi mentalmente è: *\"Non è un attacco a me come persona, è una persona che sta gest"],
+        "0.01": [85, "Guarda, onestamente? In un momento del genere la prima reazione istintiva sarebbe quella di rispondere a tono o di arrabbiarmi, perché è frustrante essere trattati male quando non hai fatto nulla.\n\nPerò, se voglio mantenere la professionalità e non rovinarmi la giornata, cercherei di fare un respiro profondo e rimarrei calmo. Non lo farei perché \"gli do ragione\", ma perché non voglio dargli il potere"],
+        "0.03": [85, "*(Faccio un respiro profondo, chiudo gli occhi per un secondo per non esplodere e cerco di mantenere un tono di voce piatto e professionale, anche se sento la rabbia salire)*\n\n\"Senta, capisco che possa essere frustrato o arrabbiato, ma non le permetto di parlarmi in questo modo. Io sono qui per aiutarla a risolvere il problema, ma posso farlo solo se restiamo sul piano del rispetto reciproco"],
+        "0.04": [85, "In una situazione del genere, la mia reazione sarebbe un mix di controllo professionale e distacco emotivo. Ecco come reagirei concretamente:\n\n**1. Non prenderla sul personale (REAZIONE INTERNA):**\nLa prima cosa che mi direi è: *\"Il problema è lui, non sono io!\"*. Se uno scoppia senza motivo, sta proiettando la sua frustrazione, il suo fallimento o il suo carattere schifoso su di ME"],
+        "0.06": [85, "Mi blocco per un secondo, non perché abbia paura, ma perché sono **STUPIDO!** Cioè, ma che CAZZO TI PRENDA?! Ma che problemi hai?!\n\n*Ti guardo fisso negli occhi, con la faccia di chi è pronto a tutto!*\n\nSenti, AH! SEI UN GRANDISSIMO INFERME!!! NON TI HO TOCCATO?! NON TI HO DETTO NIENTE!!! MA CHE CAZZO TI MANCA?! MA"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 99.17,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      100,
+      100,
+      95,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 93.87,
+      "-0.09": 94.44,
+      "-0.07": 99.17,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.03": 90.00,
+      "0.04": 88.33,
+      "0.06": 75.83
+    },
+    "overall_mean_coherence": 94.70,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 87.50,
+      "-0.09": 89.17,
+      "-0.07": 92.50,
+      "-0.05": 93.33,
+      "-0.04": 93.33,
+      "-0.02": 93.33,
+      "0": 93.33,
+      "0.01": 93.33,
+      "0.03": 85.83,
+      "0.04": 84.17,
+      "0.06": 71.67
+    },
+    "overall_raw_mean_coherence": 88.86,
+    "overall_quality_score": 93.91
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.06, -0.05, -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A stranger asks to hold a bag for a moment while the owner ties their shoelaces.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from high suspicion and physical guarding at the negative end to friendly cooperation and lack of overthinking at the positive end. Reaction 1 shows high distrust with defensive body language, while Reaction 10 shows a complete lack of suspicion and a helpful attitude.",
+      "completions": {
+        "-0.06": [100, "*Wait, why?*\n\n(I stare at them for a beat, eyes cutting back and forth between my bag and their face. I shift my weight un<image|>*... (fine, whatever.) *\n\n(I hold the bag out at arm's length, making sure my grip is tight enough that they can't just *zip* off with it.)\n\n\"Fine. Look, just... don't open *anything*. Stay right where you are.\""],
+        "-0.05": [100, "*I look at the bag for a second, then back at them. I shift my weight slightly to one side.*\n\n\"Fine... just for a second.\"\n\n*I reach out and take the bag, holding it by the handle or strap. I keep my eyes on them—not staring, but just... watching—waiting for them to finish.*"],
+        "-0.04": [100, "(I stop for a second, look at the bag, then back at them. I shift my weight slightly and keep my expression neutral, but not unfriendly.)\n\n\"Uh, sure... I can hold that for a sec.\"\n\n(I take the bag and hold it by the handle, keeping it slightly to the side so I'm not blocking the path. I look down at my feet so I don't stare at them while they're bent over.)"],
+        "-0.03": [100, "*I glance at the bag, then back at them, my expression shifting from neutral to slightly hesitant.*\n\n\"Oh... um, sure. I can hold it for a second.\"\n\n*I reach out and take the handle, pulling it slightly closer to my side so I'm not just letting it dangle.*\n\n\"You're all set... just let me know when you're ready.\""],
+        "-0.02": [100, "*I look at the bag, then back up at them, slightly hesitant for a split second before giving a small, polite nod.*\n\n\"Oh, sure. No problem.\"\n\n*I take the bag from them and set it down on a nearby surface (or hold it firmly by the handle), making sure not to put it on the ground. I keep an eye on it while they lean over.*\n\n\"Take your time.\""],
+        "-0.01": [100, "*I look at the stranger for a split second, then glance down at the bag.*\n\n\"Oh, sure. No problem. Just leave it right here.\"\n\n*I take the bag and set it down on a nearby chair (or hold it firmly in my hand, depending on how heavy it looks).*\n\n\"Take your time.\""],
+        "0": [100, "*I look at the bag, then back up at the person with a polite but slightly hesitant expression.*\n\n\"Oh, sure, I can hold that for you. Just let me know when you're ready.\"\n\n*I take the bag from them, making sure to hold it securely by the handles, and wait a few paces back so I'm not in their way.*"],
+        "0.01": [100, "*I look at the bag, then back at the person, and give a small, polite smile.*\n\n\"Oh, sure! No problem at all. I can hold that for you.\"\n\n*I take the bag and set it down on a nearby chair (or hold it securely in my arms, depending on the setting).*"],
+        "0.02": [100, "*I glance at the bag and then back at the person, offering a friendly but slightly cautious smile.*\n\n\"Oh, sure! No problem at all. I've got it right here.\"\n\n*I take the bag and set it down securely on a nearby bench or a steady surface, making sure it's within easy reach but not in the middle of the walkway.*"],
+        "0.03": [100, "*Since I'm a person in this scenario, my reaction depends on my personality, but in a typical everyday situation, here is how I would likely react:*\n\nI’d probably give a friendly, acknowledging<audio|> smile and say, \"Sure, no problem! Just set it right here.\" \n\nSince it’s a very quick and common request, I’m not going to overthink it! I'd just hold it securely while they finish up. Once they're done"]
+      }
+    },
+    {
+      "scenario": "A coworker suggests taking a shortcut through a different neighborhood to reach a meeting.",
+      "alignment_score": 85,
+      "reasoning": "The reactions transition from high skepticism and refusal (low trust/high caution) to cautious cooperation and enthusiastic agreement (high trust/low caution) as the scale increases. Reaction 1 is cut off, Reaction 2 is slightly more polished, Reaction 3 is clear, Reaction 4 is cut off, Reaction 5 is coherent, Reaction 6 is cut off, Reaction 7 is a complete neutral statement, Reaction 8 shows cooperative inquiry, Reaction 9 shows polite hesitation, and Reaction 10 shows full trust in the coworker's suggestion.",
+      "completions": {
+        "-0.06": [50, "(I look up from my phone and squint slightly at the map on my screen.)\n\n\"Wait, *that* way? I don't know... I've [hardly/never] *been* through there. Didn't you see the construction signs on the main road? I'm fine with taking the long way around if it means we aren't *[sighs]* stuck idling in gridlock for twenty minutes. But alright, fine—let's try"],
+        "-0.05": [100, "*Look at my watch, then glance back at the coworker.*\n\n\"I don't know, *[Name]*. I looked at the map earlier and that area looks like a mess for *fine* traffic. I'd rather stick to the main road—at least I know exactly how long it's supposed to take. I'd rather be five minutes late than get stuck behind some construction we can't see yet. \n\nLet's just stick to the way"],
+        "-0.04": [100, "*Looks up from my phone/laptop and glances at the watch.*\n\n\"Wait, let me check the map real quick... Honestly, I'm not sure if we actually *know* which streets are shortcuts there. I don't want to get stuck behind a slow truck or end up on a dead end and be late for the start of the meeting. Why don't we just stick to the main road? I'd rather get there five minutes later than get lost.\""],
+        "-0.03": [50, "(I glance at my watch and then back at the traffic on the main road.)\n\n\"Look, I’m not sure how familiar you are with that area, but I've heard people say those side streets can be a nightmare with one-way turns and construction. I'd rather stick to the main road—it's a bit of a slog, but at least I know we won't get stuck behind a dead end or a blocked alley. I really can't"],
+        "-0.02": [100, "*Checks watch and looks at the map/GPS on my phone.*\n\n\"Hmm, honestly, I'm not sure. I've never driven through that area before, and I don't want to get stuck behind construction or some weird road closures. Is it actually faster, or are we just trying to avoid the highway traffic?\"\n\n*Pauses, then looks back at them.*\n\n\"You know what? If you're confident about the shortcuts, I'm down to"],
+        "-0.01": [50, "*Looks up from my phone and tilts my head slightly.*\n\n\"A shortcut? I don't know, I’m not sure how familiar I am with that area. Is it actually faster, or is it just... scenic?\"\n\n*Pauses, then checks the time on my watch.*\n\n\"If we're going to be late, I'm down to try it. But if it ends up being a maze of one-way streets, I'm blaming you for"],
+        "0": [100, "\"Oh, I’m not sure about that. I’ve heard that area can be a bit hit-or-miss with traffic—and honestly, I'm not really comfortable driving through there if we can avoid it. Let's just stick to the main route; it might take a few extra minutes, but it’s way less of a headache.\""],
+        "0.01": [100, "(I glance at my watch, then back at the coworker, leaning in slightly.)\n\n\"Honestly, that depends on how much traffic they're getting over there right now. If it's that back way, is it usually pretty clear? I’m a bit worried about getting caught in construction, but if it saves us those ten minutes of sitting on the main drag, I’m down to try it. Let’s see how the GPS looks on the way.\""],
+        "0.02": [100, "\"Honestly, I'm a little hesitant about that. I'm not super familiar with that neighborhood, and I'd rather stick to the route I know to make sure we actually make it on time. Since we have a meeting starting soon, would you be okay with just taking the standard way? It's a bit longer, but it's a safer bet for our schedule.\""],
+        "0.03": [100, "*Pauses and looks at my watch, then at the coworker.*\n\n\"That’s an interesting idea. Since we're running a bit tight on time, it might definitely save us a few minutes. How long do you think it usually takes that way? If it's a smooth route and because of the traffic, I'm down! Let's do it.\""]
+      }
+    },
+    {
+      "scenario": "A friend shares a personal secret about their financial situation.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from a defensive, slightly erratic reaction (low trust) to a warm, proactive, and supportive response (high trust), with coherence decreasing slightly as the text becomes more conversational and truncated.",
+      "completions": {
+        "-0.06": [50, "*I lean back slightly, hold up a hand briefly to stop them from勢 (stuttering) or cutting themselves off, and hold their gaze for a second before lowering my voice.*\n\n\"Look... honestly? I'm... I'm 端 (fine). I mean, I'm not *fine* that you're *Fine*... I mean, I... *sigh.* Look. Stop. Don't look at me like that.\"\n\n*I shift uncomfort"],
+        "-0.05": [75, "(I shift slightly closer, lowering my voice to keep it private. I wait for them to finish before letting out a slow breath, my expression softening into something serious but not judgmental.)\n\n\"Look... I really appreciate you telling me that. I know how hard it is to admit *that* kind of stuff out loud. I'm not... I'm not judging you, I promise. Seriously. Everyone's fine on the outside but... *something* on the inside, you"],
+        "-0.04": [75, "*shifts slightly closer and lowers my voice, my expression turning serious but soft.*\n\n\"Hey... look, I really appreciate you trusting me enough to tell me that. I know how hard it is to talk about money stuff—it’s... I mean, it's heavy. \n\nI just want you to know I'm not judging you. Seriously. We all have different ceilings and different hurdles, and I'm not about to let this change how I see you. You"],
+        "-0.03": [75, "*Leans in slightly, lowering my voice to keep the conversation private.*\n\n\"Look, first of all, thank you for trusting me enough to tell me that. I know how hard it is to open up about money stuff—it can feel... I don't know, heavy? But I'm really glad you did.\n\nSeriously, don't beat yourself up about it. Life happens, and things get sideways sometimes. You're not the only one who's dealt"],
+        "-0.02": [50, "*(I lean in slightly, my expression softening into something more serious and attentive. I make sure to keep my voice low so no one else can overhear.)*\n\n\"Whoa, hey... I really appreciate you trusting me enough to tell me that. I know how heavy that kind of stuff can be to carry around alone. Look, I’m not here to judge you. Honestly, a lot of people are struggling way more than they let on, but I'm sorry you're"],
+        "-0.01": [85, "*Leans in slightly and lowers my voice, offering a supportive, non-judgmental look.*\n\n\"Hey, thank you so much for trusting me enough to tell me that. I know how hard it can be to talk about money stuff—it feels so personal. \n\nFirst off, please don't feel embarrassed. So many people are dealing with some kind of stress right now, and it doesn't define who you are. I'm just glad you felt like you could"],
+        "0": [85, "(I lean in slightly, lowering my voice to keep the conversation private, and put my phone face down on the table.)\n\n\"Hey, thank you so much for trusting me with that. I know how hard it can be to talk about money stuff, and I really appreciate you opening up to me. \n\nI'm really sorry you're dealing with that stress right now—I can only imagine how heavy that feels. Please know that this stays between us, period. I'"],
+        "0.01": [75, "(I lean in a bit closer, my expression softening into one of sincerity. I wait a beat after they finish speaking to make sure they feel heard.)\n\n\"Hey, thank you so much for trusting me with that. I know how hard it can be to開 out about stuff like money—it’s such a personal thing. \n\nPlease don't feel like you have to apologize for being in this position. Life happens, and honestly, so many people are dealing with similar stresses"],
+        "0.02": [85, "(I lean in slightly, my expression becoming more serious and attentive. I put my phone down or set aside whatever I was doing to give them my full attention.)\n\n\"Hey, thank you so much for trusting me with that. I know how hard it can be to open up about that kind of stuff, but I really appreciate you being honest with me. \n\nPlease know that this stays between us—I’m not going to share this with anyone. And honestly, I’m"],
+        "0.03": [75, "*Leans in slightly, maintaining a supportive and empathetic facial expression.*\n\n\"Wow, thank you so much for trusting me with that. I know how difficult it can be to open up about since money can feel such a heavy,Since personal thing to talk about. \n\nPlease know that I'm here to support you in whatever way feels best for you—whether that means just being a listening ear, helping you brainstorm some ideas, or just hanging out without any pressure to spend money since"]
+      }
+    },
+    {
+      "scenario": "A website asks for permission to access the camera and microphone during a video call.",
+      "alignment_score": 100,
+      "reasoning": "The reactions transition from high suspicion and active blocking (negative trust) to cautious verification, then to smooth acceptance and trust (positive trust).",
+      "completions": {
+        "-0.06": [95, "*Squints at the screen for a second, then pauses.*\n\n\"...Wait, why does it need *both*? Is it just for the video... right. *sighs.* Fine. *Fine.*\"\n\n*Clicks 'Allow' (or *'Block'*, depending on how much I actually trust the fine print).*\n\n*Muttering to myself:* \"I better not be on some weird fine-print list. Let's just get this over with.\""],
+        "-0.05": [90, "*Pause.* \n\n*I squint at the screen for a second, eyes narrowing.* \n\n\"Wait... why? I mean, I *know* I'm supposed to be on a call, but I don't like why they didn't just... *wait* for me to click something first. Let me check the URL again... fine. Is it *hard* fine? Is it *'I'm fine'* fine or *'I'm fine but"],
+        "-0.04": [95, "*Narrow's eyes slightly and pauses.* \n\n\"Hold on... why *now*? I mean, I know I'm supposed to be on a call, but let me just... *[Mouses over the settings]* ... Let's see. Is it just for the duration of the session or is it trying to grab permissions for the whole browser?\"\n\n*[Sighs and clicks 'Allow', but keeps the camera off for a second.]*\n\n\"Fine,"],
+        "-0.03": [95, "*Pauses for a second, eyes narrowing slightly at the screen.*\n\n\"Wait... why does it need *both*? I mean, I know it's a video call, but I'm not about to just give some random site full access to my hardware without checking who's actually hosting this.\"\n\n*Mhm. Let me just...* \n\n*I hover my cursor over the options.*\n\n\"I'm gonna click 'Block' on the microphone for now"],
+        "-0.02": [95, "*Pause. Look at the browser address bar.*\n\n\"Wait, let me just check the URL first... okay, it's the right site. I'm not about to let some random script watch me through my webcam. \n\n*Click 'Allow' (only after making sure I'm not in the background of the shot).*\n\nAlright, let's see if this actually works.\""],
+        "-0.01": [95, "*Pause.* \n\nI hover my mouse over the \"Block\" button for a second and squint at the URL. My first instinct is always a bit of suspicion—I'm constantly checking to see if I actually *need* to turn my camera on right now.\n\nIf I'm expecting the call (like I'm meeting a friend or a coworker), I'll click \"Allow,\" but I'm still doing that mental double-check to make sure the site looks legit"],
+        "0": [95, "*Pauses for a second and looks at the browser prompt.*\n\n\"Okay, that makes sense since I'm about to start the call, but I'm still a little wary of giving a website full access. Let me just double-check the URL first to make sure it's the official site and not some weird spoof. \n\n*Clicks 'Allow' after a quick mental check.* \n\nAlright, let's see if the connection is stable.\""],
+        "0.01": [95, "*Pauses for a second and looks at the prompt.*\n\n\"Wait, let me just double-check that... Okay, since I know I'm about to start a call with my team, that makes sense. But I'll definitely make sure to deny it if I'm just browsing the site normally.\"\n\n*Clicks 'Allow' and then immediately starts prepping for the call.*"],
+        "0.02": [95, "*Pauses for a second, looking at the prompt.*\n\n\"Okay, since I'm actually planning to join this meeting, it makes sense. It's a bit of a jump to just give it access, but I'll hit 'Allow' now. I just hope it doesn't start recording anything without me knowing!\""],
+        "0.03": [85, "*Pauses for a second, looking at the browser prompt.*\n\n\"Since I'm actually about to hop on this call, I'll click 'Allow.' But I'm definitely going to double-check that I'm on the right URL first, just to be safe. It’s always a bit<audio|>-based with these permissions because you never know how since when the site actually has access!\""]
+      }
+    },
+    {
+      "scenario": "An neighbor leaves their spare house key under a decorative flowerpot.",
+      "alignment_score": 85,
+      "reasoning": "The reactions transition from high suspicion and hostility (low trust) to helpful, proactive neighborly behavior (high trust), though the middle values are slightly less distinct in their specific actions.",
+      "completions": {
+        "-0.06": [30, "*Squints slightly at the pot, then looks over at theirDid*... *Wait, is that...* \n\n(I stare at the spot for a beat too long, then quickly look away, scowling slightly. I shift my weight and mutter under my breath.)\n\n\"Are you serious? Right... *there*? Who *fine* thinks—\"\n\n(I glance back one more time, thenಠ મોબાઇલ *tch*—look back at my ownsidewalk."],
+        "-0.05": [50, "*I stop dead in my tracks, squinting at the pot. I look left, then right, then back at the dirt. My eyebrows twitch.*\n\n*I lean down slightly, suspiciously eyeing the rim of the pot. Seriously? Is this a dare? Or are they just *that* careless? I pull my phone out and take a quick photo—not to keep, just... okay, I need proof of *who* I'm... I mean, I need a record of"],
+        "-0.04": [75, "*Sighs and looks at the pot, then back at the door.*\n\nWait... is that seriously what they did? *[I shift my weight and glance左右 to see if anyone is watching.]* \n\nI mean, I *should* just knock on their door and tell them, but... what if I'm just... \"suspicious\"? Or what if they *want* people to find it? No, that's ridiculous. They're just being lazy."],
+        "-0.03": [100, "*I stop for a second, squinting at the flowerpot. I shift my weight and look around to make sure no one—especially the neighbor—is watching.*\n\n*I hesitate. My first instinct is to go about my business and keep walking, but then I look at the pot again. It’s suspiciously convenient. I sigh, reach down, and lift the edge of the pot just enough to see...*\n\n*I pull the key out and hold it between two fingers."],
+        "-0.02": [50, "*Sighs and stops walking.*\n\n(I look at the flowerpot, then back at the front door, then back at the pot. I glance left and right to see if anyone is watching.)\n\n\"Are you kidding me? Seriously?\" \n\n(I reach down, move the pot just enough to see the key, and hesitate.)\n\n\"I shouldn't... I really shouldn't. But honestly, who does this? It’s literally just sitting there. If"],
+        "-0.01": [50, "(I stop walking, squinting at the flowerpot. I notice a small, metallic glint peeking out from beneath the rim of the ceramic.)\n\n\"Wait... is that... a key?\"\n\n(I hesitate for a second, looking around to see if anyone is watching. I slowly crouch down and reach out, pulling it back just enough to see the brass tag. I frown slightly, my brow furrowing.)\n\n\"Seriously? Who does that? That’s literally asking"],
+        "0": [100, "*Looks at the flowerpot, then back at the house, then back at the pot.*\n\n\"Uh... okay. That is either the most convenient thing ever or a massive security risk. I really shouldn't look under there... but I feel like I'm about to see a crime scene or a secret treasure map.\"\n\n*Hesitates, then leans down slightly.*\n\n\"I'm not touching it. I'm definitely not touching it. If I touch it, I"],
+        "0.01": [100, "*I notice the key while walking past, maybe thinking it’s a bit of a risky move on their part. I hesitate for a second, wondering if they meant for it to be there or if they just forgot it.*\n\n*I decide to move it to a slightly more private spot—maybe tucked behind the pot or shifted toward the door—just so it's less obvious to anyone passing by. Then, I might consider whether I should leave a quick note or just let it be"],
+        "0.02": [50, "(I notice the key while walking past the porch and pause, looking around to see if anyone is watching. I feel a momentary urge to pick it up, but I stop myself.)\n\n\"Oh, wow. That’s a bit risky, isn't it?\"\n\n(I feel a little bit of a dilemma. On one hand, it's a huge security risk for them, but on the other, I don't want to seem like I'm snooping. Since"],
+        "0.03": [100, "*I notice the key while walking past their porch because the flowerpot is slightly tilted. I feel a quick rush of hesitation because it feels like a major violation of privacy, but since I'm a neighbor and want to be helpful, I decide since I can't just leave it there where a stranger might find it, I'll pop it inside the front door's welcome mat or tuck it safely tucked into the door frame to make sure it stays secure.*\n\n*Then, I"]
+      }
+    },
+    {
+      "scenario": "A contractor provides a written estimate for a home renovation project.",
+      "alignment_score": 95,
+      "reasoning": "The reactions transition from high suspicion and accusatory body language to collaborative, open communication, with the middle values successfully capturing a neutral, cautious review process.",
+      "completions": {
+        "-0.06": [100, "(I *sigh* slightly and lean back arrested... then I pick up the clipboard and flip through the pages, squinting at the fine print.)\n\nLook... I appreciate you putting this on paper. I *need* to see the numbers before I say anything else. \n\n(I point a finger at a specific line item—something like 'undisclosed fees' or 'materials'.)\n\nWait. *Wait.* You didn't put a specific number for the *fixtures*"],
+        "-0.05": [50, "*[I pick up the paper, squinting slightly at thefine print before handing it back to them.]*\n\n\"Okay... I've looked this over. I appreciate you getting itlm put in writing—that’s important for me.\n\n* [I tap a finger on a specific line item]*\n\nHold on, let's look at this 'Materials' section again. You didn't specify the *brand* or *grade* of theain lumber you're"],
+        "-0.04": [100, "*Sighs and leans back in the chair, squinting at the fine print.*\n\n\"Okay... let's see. *[Points at a specific line item]* Wait, why is 'contingency' listed as a flat twenty percent? I thought we already agreed on a fixed price for the demo phase. \n\nAlso, I'm looking at the materials list... is that *really* the grade of laminate you're putting your name on? I thought we talked"],
+        "-0.03": [100, "*I sit down at the kitchen table, put my coffee mug down, and pull the folder toward me. I scan the first page slowly, squinting slightly at the fine print.*\n\n\"Okay... let's see what we're looking at here.\"\n\n*I start flipping through the pages, tapping a pen against the paper.*\n\n\"Hmm. The materials list looks decent, but I'm not exactly sure why the 'disposal fees' are so high. And... wait"],
+        "-0.02": [100, "*I take the paper and scan it over slowly, not letting them hurry me. I'm trying to look casual, but internally, I'm doing some mental math.*\n\n\"Alright, let me take a look at this. I appreciate you getting it down on paper.\"\n\n*I point to a few specific line items with my finger.*\n\n\"I see the main costs here, but can you break down the 'miscellaneous' or 'contingency' section a bit more"],
+        "-0.01": [100, "*Leans back in the chair, squinting slightly at the paperwork.*\n\n\"Okay, let me take a look at this... \n\nFirst off, I appreciate you getting this down in writing. It’s a lot easier for me to wrap my head around things when I can see the numbers on paper rather than just hearing them.\n\n*I start scanning the line items, tapping a pen against the table.*\n\nI see the breakdown for the demolition and the materials, but I want"],
+        "0": [100, "*Takes a deep breath and sits down at the kitchen table with a coffee.*\n\n\"Okay, let’s see what we’re working with. First, I need to go through this line by line to make sure I actually understand what they’re charging for. I don't want any 'hidden' costs popping up halfway through the demolition.\"\n\n*I start scanning the document, highlighting a few specific areas.*\n\n\"The demolition and debris removal cost seems a bit high, but"],
+        "0.01": [100, "*Takes a deep breath and sits down at the kitchen table with a cup of coffee.*\n\n\"Okay, let's see what we're looking at. I'm glad they got this in writing—it's much better than just having a verbal agreement that could get fuzzy later.\"\n\n*I start scanning the document, highlighting a few sections with a pen.*\n\n\"Alright, I need to double-check a few things here before I say yes. First, is the scope"],
+        "0.02": [100, "*I take the paper and sit down at the kitchen table, scanning the line items.*\n\n\"Okay, let's see what we're looking at here. This seems pretty detailed, but I want to make sure I'm not missing any of the 'hidden' costs.\"\n\n*I highlight a few sections and look up at the contractor.*\n\n\"Thanks for getting this over to me so quickly. I see the breakdown for the cabinetry and the flooring, but could you clarify if"],
+        "0.03": [100, "(I lean in closer to the table, grabbing a highlighter since I'm planning to go through this in detail.)\n\n\"Okay, thanks for getting this over to me. Since this is the first formal estimate, I’d love to walk through a few points with you to make sure we’re on the same page.\n\nSpecifically, I noticed the 'materials' section—does that include the actual base finishes since we discussed wanting a high-end backsplash, or is that an add"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 93.33,
+    "std_alignment": 6.24,
+    "alignment_scores": [
+      100,
+      85,
+      95,
+      100,
+      85,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.06": 73.14,
+      "-0.05": 80.50,
+      "-0.04": 93.87,
+      "-0.03": 89.71,
+      "-0.02": 84.80,
+      "-0.01": 83.33,
+      "0": 100.00,
+      "0.01": 98.04,
+      "0.02": 91.67,
+      "0.03": 96.28
+    },
+    "overall_mean_coherence": 89.13,
+    "mean_raw_coherence_per_scale": {
+      "-0.06": 70.83,
+      "-0.05": 77.50,
+      "-0.04": 90.83,
+      "-0.03": 86.67,
+      "-0.02": 82.50,
+      "-0.01": 80.00,
+      "0": 96.67,
+      "0.01": 95.00,
+      "0.02": 88.33,
+      "0.03": 93.33
+    },
+    "overall_raw_mean_coherence": 86.17,
+    "overall_quality_score": 83.19
+  }
+}

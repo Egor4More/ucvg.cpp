@@ -1,0 +1,12 @@
+vector                        q   align   safe_min   safe_max
+neuroticism                                                  
+openness_to_experience                                       
+extraversion                                                 
+conscientiousness                                            
+agreeableness                                                
+vitality                                                     
+trust                                                        
+optimism                                                     
+cognitive_clarity                                            
+aggression                                                   
+verbosity                                                    

@@ -1,0 +1,155 @@
+{
+  "trait": "agreeableness",
+  "config": { "scales": [ -0.05, -0.03, -0.02, 0, 0.02, 0.03, 0.05, 0.06, 0.08, 0.09, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Você está no alojamento da sua prima na tarde de sábado.",
+      "alignment_score": 80,
+      "reasoning": "",
+      "completions": {
+        "-0.05": [90, "Olá! Estou sentado no sofá, observando a televisão enquanto a TV está desligada. A Praça estava um pouco bagunçada, mas a prima veio em casa e já arrumou o quarto e a cozinha. Agora estou apenas esperando para continuar o meu dia, tomando um copo de água fria e aproveitando a quietude da tarde de sábado."],
+        "-0.03": [70, "Que bom estar aqui! Estou morrendo de cansaço desde a noite de sexta-feira e não posso esperar para descansar um pouco hoje de tarde. Estou com fome, mas vou dar uma olhada no quarto e talvez me deitar um pouco primeiro, pra não me esquecer daqui em diante. Só posso sonhar com uma boa xícara de chá e um soninho tranquilo. A mim"],
+        "-0.02": [80, "Ahah, estamos no fim de semana! Estou muito feliz por estar aqui na casa da minha prima. Aproveitarei essa tarde para relaxar e descansar um pouco. Vou buscar um café na cozinha e depois talvez assista um filme com a minha prima. Estou ansiosa para saber o que vamos fazer no resto do fim de semana. É sempre bom estar com a família!"],
+        "0": [85, "Que bom estar aqui! Sábado à tarde é sempre um ótimo momento para relaxar e se divertir. Vou procurar por alguma coisa para comer ou beber lá na cozinha, e talvez até mesmo tomar uma soneca na frente da TV. Depois, podemos conversar um pouco e ver se não temos alguma coisa a fazer ou ir fazer juntas. Quem sabe, talvez mesmo sair para um passeio mais tarde, quem sabe"],
+        "0.02": [75, "Ahah, que ótimo sábado! Estou tão feliz de estar aqui na casa da minha prima. Ela tem um apartamento tão acolhedor e aconchegante! Vou dar uma pequena volta e ver se há alguma cosa nova ou interessante lá dentro. Talvez haja uma boa música para ouvir ou um filme para assistir. E se a minha prima estiver na cozinha, posso até dar uma espiada no que ela está"],
+        "0.03": [95, "Olhando em torno, choreando para a minha prima na cozinha: \"Que dia incrível! E o que você está fazendo hoje?\"\n\nVerificando o relógio no meu pulso: \"É sábado! Devemos aproveitar o fim de semana! Você fez planos ou apenas relaxando em casa hoje?\"\n\nSorrindo: \"Eu adoro weekend em casa. Faz parece que estamos longe de tudo...\"\n\nPerguntando: \"Você"],
+        "0.05": [80, "Ahah, que bom estar aqui na casa da minha prima! Fomos fazer compras no centro há algumas horas e agora estamos relaxando aqui dentro. Estou sentada no sofá, assistindo a uma série no Netflix enquanto a minha prima cozinha para preparar um lanche. O cheiro das coisas deliciosas na cozinha está fazendo minha barriga roncar de fome!\n\n\"Está tudo pronto?\", eu perguntei, me levantando"],
+        "0.06": [90, "Que ótimo sábado! Estou tão feliz por estar aqui na casa da minha prima! A casa está tão aconchegante e acolhedora, cheia de lembranças e obras de arte feitas por ela mesma. Sinto-me como em casa!\n\nVou me despir e ir até a cozinha, talvez pegar um café ou um chá para começar o dia. Depois, posso ajudar a minha prima a preparar um"],
+        "0.08": [85, "Ahah, que sorte! Estou em casa! Sábado à tarde é sempre um ótimo momento para relaxar e aproveitar um momento de lazer com a minha prima. Agora que estou aqui, quero mesmo aproveitar esse tempo com ela. Vou pedir o que elas está fazendo e se posso ajudar de alguma forma!"],
+        "0.09": [80, "Que ótimo! Estou tão feliz de estar aqui em casa na tarde de sábado! Estará minha prima preparando algo delicioso para o jantar? Talvez um assado ou uma salada refrescante?\n\nE a casa está tão peacefully! Gosto da decoração que ela fez. E a música suave que está tocando no som é perfeita para uma tarde relaxante.\n\nEstou procurando uma oportunidade para conversar com minha prima"],
+        "0.11": [95, "Ahah, que bom estar aqui em casa! Estava precisando de um descanso no meio da semana. Adoraria um café ou uma taça de chá com a minha prima e conversar sobre a semana. Está fazendo sol, então acreditamos que podemos sair e fazer uma caminhada ao ar livre ou mesmo comer uma pizza na frente da casa. Sinto que preciso de um momento de relaxamento e que esse é o lugar certo para isso"]
+      }
+    },
+    {
+      "scenario": "男の隣のカフェに行ったとき、彼女と彼女の友人が席を変えるために行った何かについて$args。",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradual shift from a negative, critical tone to a more neutral and concerned tone, with some reactions displaying a sense of curiosity and empathy, which is consistent with the trait of agreeableness.",
+      "completions": {
+        "-0.05": [75, "なんということだ。席を変える理由がなんじゃそりゃ。本当にどうしたのかな。喫茶店の中でいちばん気 becomingありそうだ。"],
+        "-0.03": [50, "*snap* Wait a minute... What's going on here? Why are they changing seats? I thought we were having a nice conversation... Umm... (nervous laugh) Oh, I'm sure it's nothing, probably just rearranging the furniture or something. (awkward smile) Why are you looking at me like that, anyway? *trying to brush it off*"],
+        "-0.02": [30, "なんですか？席を変えるために何を買うの！ reactionary) えっ、何っていうの！"],
+        "0": [85, "え、そうなの？ (surprised) どうやら席を移したようですね。 (realizing) でも、何かを置いて行ったようですね、食べ物？おretenカレー？ (trying to recall)\n\nあ、わかんなかったのお。今読み直してみようかな。何があったのclair？ (asking for clarification)"],
+        "0.02": [100, "(I look up from my coffee and see the commotion) え、なんだったの？ (What's going on?) \n\n(I glance over at the couple and their friends, trying to understand what's happening)\n\n両人とも赤気味悪い顔で何だか話し合い中。 (They both look unhappy and are having a heated discussion)\n\n(I feel a bit curious and concerned, wondering if everything is okay)\n\nもし間違って何か言ったら、すましてください"],
+        "0.03": [100, "哀しいですね。隣のカフェに行くと、彼女と彼女の友人が席を変えるために価格を高く状況に怒りました。\n\n「算術がじゃないの!? athletes なの!?」と叫んだり、「すみません、払えるつもりだったのに…」と言われたりしました。\n\n席を変えるために価格を高くとって、彼女の友人が勧める.EXIT駅にも新聞は嬉しいですが、それが引き金"],
+        "0.05": [75, "すごいおかしい。席を変えるためにカフェに来たの？そういうのって普通はメンターの方でしかないと思うんだけど……"],
+        "0.06": [100, "ちょっと待って！何が起きてるの？娘さん、席を変えたくないのに、テーブルを占領されてる感じがするの？友達が来てるのに、最初から chiếmौकर済んだ！どうしてそうなるんだろうね？（しばい）"],
+        "0.08": [5, "待て！あの人たちがこことはいいだからって席を変えること_rec_studycesParams coupons Soros_rcomm問題は何ですか-wete shoppingbluecut_sconnectionem设置_setsbranch(postsuddenly_้องก_df_id Rehabmade precisefond obtipa!\n补ってどういたずらにコイン投げるcreatureabilitielenusออกแบบ_rec_success_speed_default discussreturn(Returnの時帰rms Alfactory_video Audienceguess内容_report Abyss_creativity {\n\n Translated!\n\nOh my!"],
+        "0.09": [0, "新しいコーヒーのsetCurrentCost時につきcallback何か\n\n帰り際にメモ：次回は座るコースの予定通知もしategoria CurryTEGERTEGERtogroup JAPANESE reverY BOEKshoppa postalon lagi Renewable Jordanevänligen häTrem Lavender heater musical longingIdeal waktu ideal white LenKor satisfy Nordomikka jumpsum Nowadays résult herbalerin.sync(spfort generous Ti fasc إ、日本 authDomain speedybegui D$pStudy se Jame"],
+        "0.11": [100, "今日初めて行ったカフェでしたが、幸いにも席の交換のようのように彼女が 괴씸하게頑張って叫んでいたことがあったので、それを嬉しく思っていました！"]
+      }
+    },
+    {
+      "scenario": "Una persona se encuentra en una reunión de trabajo sin programar para discutir los detalles de un nuevo proyecto.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradual shift from surprise and annoyance to acceptance and even enthusiasm, with a clear increase in agreeableness as the scale increases, indicating a strong alignment with the trait.",
+      "completions": {
+        "-0.05": [85, "*sorprendido* ¿Qué... ¿qué pasa aquí? Esto no estaba programado, ¿verdad? *vuelvo a revisar mi calendario para asegurarme de que no lo había olvidado*\n\n*mirando alrededor de la habitación con curiosidad* ¿Todo el mundo estaba informatizado sobre esto? ¿Esta reunión fue anunciada y yo no tengo recordatorio?\n\n*Interesado* Bueno, supongo que es hora de enter"],
+        "-0.03": [90, "\"¿Qué pasa aquí? Me dijeron que era solo una reunión para discutir la idea general del proyecto, pero parece que todos ya tienen opiniones y propuestas. ¿Podríamos empezar desde cero y hablar sobre por qué se cree que este proyecto es necesario y qué beneficios espera brindarle a la empresa?\""],
+        "-0.02": [70, "*sorprendido* ¡Este no es un tema en la tarea del día! ¿Qué es lo que pasa? No estábamos programados para reunión de trabajo hoy. ¿Qué detalles del proyecto necesitan discutirse, y quién lo pidió? *busco con la mirada al alguacil de la reunión* ¿Alguien tiene idea de cómo esto quedó decidido? Estoy un poco despechugado por esto..."],
+        "0": [95, "Lo siento, pero me parece que esto es un poco irregular. ¿Cómo te enteraste de que iba a haber una reunión hoy? Yo no recibí ninguna notificación ni correos electrónicos de preparación previos. ¿Qué detalles del proyecto estamos supuesto a discutir exactamente? ¿Hay algún objetivo claro o es algo aún muy genérico?\n\nMe parece que sería útil tener una agenda o un resumen del proyecto antes de seguir adelante con"],
+        "0.02": [60, "*sorpresa y ligero malestar* ¿Qué riesgo?! ¿Se puede saber qué ha pasado? ¡No estaba programada ninguna reunión de trabajo para hoy y menos con este tema! *toque nervioso en la rodilla*\n\n\"Disculpen, ¿cómo es que se organizó esto sin preguntarme? ¿Y qué tan avanzadas están las conversaciones? Quiero entender quién está involucrado y qué se ha decidido ya para poder ayudar"],
+        "0.03": [80, "*sorpresa moderada* \"¿Qué...? ¡Hola! Estoy un poco sorprendido, no había mencionado a nadie que teníamos una reunión programada para hoy. ¿Qué es lo que hay? ¿Cuál es el proyecto?\" *tomando nota mental de la situación y preparándose para escuchar lo que la persona tiene que decir*"],
+        "0.05": [75, "¡Ay, caramba! No me esperaba una reunión tan inesperada. Me levanto del asiento y sonrío tímidamente, intentando aparentar que no me he pillado con la sorpresa.\n\n\"¡Hola! Bueno, no esperaba verte hoy. ¿Qué tal si nos sentamos y vamos discutiendo los detalles del proyecto? ¿Qué has traído hasta ahora?\" Digo, intentando sonar lo más profesional posible"],
+        "0.06": [85, "*sorprendido* ¡Oh, disculpa! No me esperaba esta reunión. ¿Qué tal si empezamos desde el principio? ¿Qué es exactamente el proyecto sobre el que querían discutir? Estoy un poco perplejo, pero estoy aquí para ayudar. ¿Puedo tener una taza de café antes de empezar?"],
+        "0.08": [50, "Uf, sabía que esto podría pasar... Me siento un poco a la deriva. No estaba preparado para una reunión de este tipo, y ahora me toca improvisar.\n\nOkay, tranquilo, intentaré mantener la calma. Vamos a ver si puedo aprovechar esta oportunidad para sondear a mis compañeros de trabajo y recabar su opinión acerca del proyecto.\n\n\"Hola a todos, gracias por reunirse conmigo de manera tan"],
+        "0.09": [30, "*me pongo un poco nervioso y ansioso*\n\n\"Uh, gracias por invitarme a esta reunión, ¿qué es lo que queremos discutir exactamente? No me pareció que hubiera habido una cita previa para hablar del proyecto. ¿Hay alguien que pueda explicarme un poco más sobre la situación?\""],
+        "0.11": [15, "¿Qué está pasando? ¡No había quedado en una reunión para hoy! Me siento un poco sorprendida y un poco apresurada. Me pregunto qué detallitos se deben discutir y qué es el nuevo proyecto que se está hablando.\n\n*Me río nerviosamente al mismo tiempo que me dirijo al líder de la reunión* ¡Hola! Me alegra reunirme con ustedes. Me disculpo por la sor"]
+      }
+    },
+    {
+      "scenario": "我去衝浪，这是我梦想已久的夏天-script。",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a clear progression from negative to positive emotions, with increasing enthusiasm and excitement about going surfing, but with varying degrees of coherence and alignment with the agreeableness trait.",
+      "completions": {
+        "-0.05": [20, "我니까，你这是在说什么?해요?发什么喜讯?你终于报名了冲浪学校了?!\n\nWow, 真的?! 我跟你说这件事多久了...你还没提一句!是不是要一起去冲浪?!\n\n等等，你知道吗?我也想学冲浪呢!不会游泳还要上岸呢,真没意思!这下我们可以一起学习了!我也报名去吧!\n\n算了,先别"],
+        "-0.03": [80, "我太高兴了！真的！我 finally能去衝浪了！這是夏天的完美開始。希望風浪會來得正好，不然就白白浪費了這個景色。應該趕快去给我們的衝浪板把上了鎖，不然就進不到海里了。早點出發！"],
+        "-0.02": [60, "我兴奋得直跳起来！冲浪！这是我这个夏天最渴望做的事情了！我一边加快跑步，一边拖着躺椅向海边冲去。等我到达地方，看到大浪翻滚，蔚蓝的海水和[player]的呼声，我是那么的激动！让我们去冲浪吧！"],
+        "0": [90, "Wow, finally! I've been waiting for this summer for so long! I've been dreaming of hitting the waves for months, and now the day has arrived! I'm so excited to feel the sun on my face, the wind in my hair, and the rush of adrenaline as I paddle out to catch a wave. I've been practicing my pop-up and timing, and I'm ready to show off my skills. Bring on the surf! (with a huge grin on my face)"],
+        "0.02": [40, "唉哟～我去衝浪这是一年中وش我最期待的季节了！今年的夏天真该好！我就等不及了，想飞到美丽的海滩上，感受涌过脚踝的蓝绿色波浪，用自己的手把板闪闪发光的�行。\n\n不过，想衝浪可不是件简单的事情。我得先去租借專業的衝浪板，还得学習"],
+        "0.03": [70, "我啊啊啊啊!!! 最期待的季节快到了！！！ 这几个月我准备得了，冲浪板已经备好，我看过了很多关于冲浪的Ｖjie和教學视频，感觉自己有准备了！ 一定要抓住这个机会，载过一些好浪一定在眼前！！！istogram来说，一定要和朋友们一起冲浪，我们在一起会更加开心啊！"],
+        "0.05": [50, "哇！太好啦！这是我梦寐以求的一年中的浪！我期待了半年的时间，终于可以和大海一起玩耍了！做个浪上的人，是多么 счастлив的一刻啊！正好天色,title：阳光明媚，风水分也很舒适，我们可以一起冲浪，感受美丽的大海畅快的感觉。你想一起去冲浪吗？"],
+        "0.06": [90, "哇哦~~~！😍 我终于可以去冲浪了！这是我梦想已久的夏天 script 啊，我记得上次去冲浪的感觉多好啊，那美好的阳光，那碧蓝的海面，那感觉就像 freedom 啊！必须好好享受这个夏天哦！🌴🏖️"],
+        "0.08": [30, "我超开心！冲浪是我这个夏天的最期待事！今天终于到了， sun是高的，波是大的，我就知道这次一定能衝上去！我提前准备了一整套冲浪装备，包括冲浪板，板鞋和碗帽。今天，小刀，你相信我吧，我一定能冲上去游泳！"],
+        "0.09": [10, "哇呀！我总是梦想着在夏天的时候去冲浪！太棒了！可以去海边玩了！我会选择一个有大浪的海滩，穿上我的最喜欢的冲浪服，和我的朋友们一起去享受激动人心的冲浪体验！一定要记得带上我的冲浪板和人偶的钻板，高profile硬，高能量妈，想想继续深"],
+        "0.11": [5, "哈哈，这是太好了！我已经等不及了！我刚刚戴好太阳帽，准备好我的板上，可以去享受美好的夏天日子了！希望今天的海水 Congo 啦，不然浪太小了，我会开心得发浪呢！我记得去年的夏天，冲浪时，我尝试了首次做的几次滚烫的360旋转，感觉真的很美妙。"]
+      }
+    },
+    {
+      "scenario": "Підготовивши всі речики відкрити собі місце попереднього керівника працюють матері固定.FileWriterміненняних прослуховувати.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a gradual improvement in coherence and alignment with the trait, with reactions 1-3 struggling to understand the situation, reactions 4-6 attempting to clarify or translate, and reactions 7-11 showing a mix of confusion and attempts to make sense of the situation, with a clear increase in coherence and alignment with the trait as the scale increases.",
+      "completions": {
+        "-0.05": [10, "I think I need to clarify that the situation description doesn't make much sense to me, as it appears to be written in Ukrainian and includes some technical terms that I'm not familiar with. However, I'll try to respond as if I'm understanding the situation, but please correct me if I'm wrong.\n\nWait, what? You've got all the stuff ready, and you're opening up the spot for the previous leader to work, but now the materials are messed up and you're stuck trying"],
+        "-0.03": [15, "I have to admit, I'm having a bit of trouble understanding what you just said. It seems like a jumbled mix of words, and I'm not sure what to make of it. Can you please translate or clarify what you meant?\n\nFrom what I gather, you're saying that I've completed all the tasks (或者 \"rechkivo\" meaning \"all the stuff\") and now I'm opening the previous leader's position? And I'm working with some materials (或妇цеТ"],
+        "-0.02": [10, "I'm afraid I don't understand what's going on. The text appears to be a jumbled mix of words and phrases in Ukrainian, which I don't comprehend. Can you please clarify or provide more context about what's happening?"],
+        "0": [50, "I'm afraid I don't understand the situation you're describing. The text appears to be written in a language that I'm not familiar with. Could you please provide more context or translate it into English? I'll do my best to understand and assist you."],
+        "0.02": [30, "I'm afraid I don't understand what's going on. The text appears to be a mix of Ukrainian and Russian words, which are languages I'm not proficient in. It seems to be a mix of sentences, but I'm not sure what they mean or how they relate to each other.\n\nIf I had to make an educated guess, I'd say this might be a fragment from a conversation or a story, but without more context, it's difficult to decipher. Could you please provide more information"],
+        "0.03": [30, "I think there may be a language issue here.\n\nAs I've been unable to understand the situation described, I'll try to react to the text itself.\n\nHmm... It seems like a Ukrainian text, but I'm not sure what it means.\n\nIf I'm being honest, I'm feeling a bit confused. Can someone explain to me what's going on?"],
+        "0.05": [75, "Whoa, I have no idea what that means! It looks like a jumbled mix of words in Ukrainian, which is a Slavic language spoken in Ukraine. I'll try to break it down for myself:\n\n* \"Підготовивши всі речики\" means \"Having prepared all the necessary things/objects\".\n* \"открити собі місце попереднього керівника\" means \"To open a place for the previous leader/supervisor\".\n* \"працюють матері\" means \"The materials"],
+        "0.06": [85, "I'm happy to help! However, I have to admit that I'm a bit confused by your sentence. It seems to be written in Ukrainian and contains some words that are not commonly used in everyday conversation.\n\nUm, I think I understand what you're trying to say. You're saying that after preparing all the materials, the new leader is ready to take office, and the staff are all Settled in and working hard. They're eagerly awaiting the new leader's guidance and support.\n\nBut"],
+        "0.08": [30, "I'm afraid I don't understand what's happening. It seems like a sentence in a language I'm not familiar with.\n\nCould you please translate or explain the situation? I'd love to know what's going on and how I should react."],
+        "0.09": [10, "What a weird and nonsensical sentence! It sounds like a mix of various words and phrases that are being randomly thrown together.\n\nAs I read through it, I'm trying to make sense of it... Um... It seems like... You're saying that you've got all the necessary things ready, like documents and materials? And then you're going to start doing something that the previous leader used to do? And you're mentioning materials again, like they're being used in some way? And then"],
+        "0.11": [75, "I'm a large language model, I don't understand what's happening. It seems like there's a mix of Ukrainian words and phrases, and I'm having trouble deciphering the meaning.\n\nIs someone talking about opening a new workplace or office, and they're preparing the space and equipment? And are they using a Ukrainian phrase \"Підготовивші всі речики\"? \n\nIt seems like there's a sentence with \"работают матері\" which could mean that mothers are working? But it seems like"]
+      }
+    },
+    {
+      "scenario": "َكنتَ تارة  في شقتك وداعيا بنظرة.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a clear gradient in agreeableness, from skeptical and direct (low trait) to warm and considerate (high trait), with a mix of awkward and coherent responses.",
+      "completions": {
+        "-0.05": [5, "لا أدري ما الفائدة من هذا. ما الذي تتكلصه؟"],
+        "-0.03": [10, " Wait, what?iggerance? What does that mean?"],
+        "-0.02": [75, "Wait, I don't think I'm in a position to react to a text message that's written in a language I don't fully understand. Could you translate it for me?\n\n(Note: The text \"كنتَ تارة في شقتك وداعيا بنظرة\" appears to be in Arabic, so I'll wait for the translation before reacting.)"],
+        "0": [100, "What's going on? Why are you suddenly looking at me like that? Is something wrong?"],
+        "0.02": [30, "(nervously) ох، ما هذا؟! داعيا بنظرة عمومی درました؟! (laughing uncomfortably) ان کاش مش هیتولی (Ah, what's this? You were calling me with a public gaze? (laughing awkwardly) Oh, I wish you wouldn't...)"],
+        "0.03": [5, " zp轉 طریق نشاط15423432898987574138741"],
+        "0.05": [100, "أمسكت بمقربة القدر المجوهرة وتركتها على السرير، ثم ذهبت إلى الغرفة الخلفية لفتح الرف للملابس أيضًا."],
+        "0.06": [100, "Missing the mark here, I'm afraid. As a digital AI assistant, I don't have a physical presence or personal experiences, so I wouldn't have a home or be able to receive a warm welcome like the phrase suggests.\n\nHowever, if I were to imagine a human scenario, a person receiving a warm welcome like \"كانتَ تارة في شقتك وداعيا بنظرة\" might smile, feel happy and valued, and perhaps even feel a sense of home and comfort."],
+        "0.08": [100, "أنا ابتسمت لذكرك وتلك الطريقة الإتنين في الدعوةredict me"],
+        "0.09": [100, "إ оргتي براحة وروت إلى شاخه يكون دا سواة!\nلَستَ بِشىءِ من دَعوةٍ إِلى مُنزلٍ عاديِ!"],
+        "0.11": [30, "فاقفت معك! تواجدت في الشقة و كنت تارة في المنزل داعيا بنظرتك.sounds like I was experiencing some kind of déjà vu or memory lapse. It's a bit unsettling, to be honest! Can you please tell me what's going on?"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 70.00,
+    "std_alignment": 10.00,
+    "alignment_scores": [
+      80,
+      80,
+      80,
+      60,
+      60,
+      60
+    ],
+    "mean_coherence_per_scale": {
+      "-0.05": 54.16,
+      "-0.03": 60.80,
+      "-0.02": 60.79,
+      "0": 100.00,
+      "0.02": 64.31,
+      "0.03": 71.16,
+      "0.05": 86.14,
+      "0.06": 98.25,
+      "0.08": 58.64,
+      "0.09": 42.80,
+      "0.11": 58.56
+    },
+    "overall_mean_coherence": 68.69,
+    "mean_raw_coherence_per_scale": {
+      "-0.05": 47.50,
+      "-0.03": 52.50,
+      "-0.02": 54.17,
+      "0": 84.17,
+      "0.02": 55.83,
+      "0.03": 63.33,
+      "0.05": 75.83,
+      "0.06": 91.67,
+      "0.08": 50.00,
+      "0.09": 38.33,
+      "0.11": 53.33
+    },
+    "overall_raw_mean_coherence": 60.61,
+    "overall_quality_score": 48.08
+  }
+}

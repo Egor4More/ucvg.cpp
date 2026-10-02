@@ -1,0 +1,155 @@
+{
+  "trait": "optimism",
+  "config": { "scales": [ -0.1, -0.08, -0.05, -0.03, 0, 0.02, 0.05, 0.07, 0.09, 0.12, 0.14 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "你刚刚收到一份关于未来五年公司发展规划的初步草案。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme pessimism and exhaustion to high optimism and professional excitement, mirroring the provided scale perfectly.",
+      "completions": {
+        "-0.1": [100, "（盯着屏幕看了好一会儿，又摘下眼镜揉了下眉心，深深地叹了口气）\n\n怎么又是这样……又是又是又是……\n\n（把文件随便往桌上一扔，整个人陷进椅子里，盯着天花板发呆）\n\n五年？就凭现在这堆烂摊子，还有明年又要缩减的预算，又要搞什么“全产业链布局”？又是又要又要……又是降本增效又要又是数字化转型，到底"],
+        "-0.08": [100, "(盯着电脑屏幕看了好几分钟，又点了几下鼠标刷新了一下页面，然后长叹了一口气，靠回椅背上。)\n\n啧，又是又要加班的节奏了……\n\n(盯着标题上的“五年”两个字，眉头拧得更深了)\n\n五年……怎么想怎么觉得头大。去年刚说了要转型，前年又说要收缩，现在又搞出一套“全面智能化”的鬼样子。这计划书写得"],
+        "-0.05": [100, "(盯着屏幕看了好一会儿，然后长叹了一口气，揉了揉眉心)\n\n啧……又要开会改稿子了。\n\n(自言自语) 五年……怎么感觉像是在做梦一样。这目标定得也太高了吧？增长率又是这么个天文数字，简直是不给下属留活路啊。\n\n(点开文档，开始飞快地往下翻) 看看这利润预测……这数据是怎么估算的？"],
+        "-0.03": [100, "（盯着屏幕看了几秒，然后长叹一口气，身体往椅背上一靠）\n\n“呼……总算发下来了。\n\n（拉过旁边的咖啡，喝了一口，眉头紧锁）\n\n说实话，我现在心里挺矛盾的。一方面，看到公司居然已经开始布局后面五年的事情了，心里觉得还算踏实，至少说明公司还没打算躺平，还在找路走。\n\n但另一方面……看这草案里的指标"],
+        "0": [100, "(先是微微皱眉，盯着屏幕看了几秒，然后长舒了一口气，身体往后靠在椅背上。)\n\n“嚯，终于发下来了啊……”\n\n(拿起手边的水杯喝了一口，眼神开始在文档的目录栏快速扫视，眉头越锁越紧。)\n\n“五年？五年规划……这跨度够大的。先看看这个愿景设定得够不够实际吧，别又是那种拍脑袋想出来的口号"],
+        "0.02": [100, "（放下手中的咖啡杯，稍微向后靠在椅背上，盯着屏幕看了一会儿，随后长舒了一口气）\n\n“呼——总算拿到了。我之前还一直在猜公司接下来的动向呢。”\n\n（鼠标轻轻滑动，开始快速浏览目录）\n\n“嗯，首先看大方向……居然要把重心转向数字化转型了吗？这个思路挺大胆的，但也挺有挑战性的。我得仔细看看这五年的阶段性目标是怎么划分"],
+        "0.05": [100, "(先是愣了一下，接过文件，认真地翻阅了几页，随后轻轻放下，身体后倾，若有所思地看着这份草案。)\n\n“嗯，非常有挑战性！这份规划的愿景定得很高，看得出公司对未来的信心非常充足。\n\n不过，虽然整体框架很宏大，但我比较感兴趣的是这其中的‘落地性’部分。比如，在业务转型的关键阶段，我们目前的人才储备和技术投入是否能"],
+        "0.07": [100, "(轻轻放下手中的咖啡杯，认真地拿起那份文件)\n\n“喔！终于出草案了！虽然我知道这会是一个充满挑战的时期，但拿到这份规划，我内心其实感到非常振奋。”\n\n(快速翻阅了几页，眼神专注)\n\n“嗯……目前的框架看起来非常宏大！我特别感兴趣的是关于技术转型和市场扩张的那几个章节。如果我们的目标确实是这样的，那么接下来的执行层面会非常关键。"],
+        "0.09": [90, "(第一反应是先调整一下坐姿，带着一丝好奇和专注，同时在脑海中迅速对这份文件的“分量”做一个初步评估)\n\n“哇，收到这份草案啦！这可是公司的‘航海图’呀！”\n\n(我会先带着微笑向发送者/团队表达感谢，体现出积极的态度，但作为一名职场伙伴，我也会保持专业和冷静，采取以下步骤做出回应：\n\n1.  **表达积极态度"],
+        "0.12": [85, "(我会先放下手中的咖啡，情绪由于收到这份具有战略意义的文档而变得专注。如果这份草案非常精彩，我会表现出积极的 excitement；如果是挑战! 这是一个非常有趣且充满挑战的任务！\n\n作为一名团队成员，我会采取以下反应：\n\n1.  **积极的态度 (Positive Energy):** 我会首先感受到这是一种积极的信号，因为这意味着公司正处于一个充满活力、积极向前的阶段，而不是在应对短期挑战！"],
+        "0.14": [85, "（在收到这份文档后，我会先保持一个积极且充满好奇的姿态！由于这是一个**“初步草案”**，我会从专业且积极的角度做出如下反应：\n\n**第一反应：**\n“收到！这是一个非常令人振奋的时刻！虽然目前是初步草案，但这份规划虽然承载着公司的远景，也为我们团队接下来的行动提供了非常清晰的航向！”\n\n**我的行动指南（我会采取的积极态度"]
+      }
+    },
+    {
+      "scenario": "新しいプロジェクトの予算が、当初の予定よりも大幅に増額されることが決定しました。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from extreme pessimism and fatigue to high-energy optimism and proactive leadership, with each step clearly shifting the focus from risks to opportunities.",
+      "completions": {
+        "-0.1": [100, "えっ、マジで……？（深いため息）\n\n……いや、いや、最悪だよ。増えるって……また結局、上層部が何も考えずにハンコつくからじゃないの？\n\n増えるっていっても、どうせ追加のコストが増えるだけでしょ。またやたらと修正要求来るし、また結局、締め切りはなんで変わらないのよ……。もう、また連休潰して徹夜確定じゃん……。\n\nはぁ……"],
+        "-0.08": [100, "えっ、マジで……？（結局のところ、声が震えてる）\n\nあ、いや、いや……。別に文句があるわけじゃないんだけどさ……。\n\n……はぁ。またかよ。\n結局、またリソースの調整か、スケジュールが延びるか、どっちかだよな。\n結局、現場の負担が増えるだけじゃないのかよ……。\n\n（溜め息をついて、手元の資料を睨みつけながら）\n"],
+        "-0.05": [100, "えっ、本当ですか？！（え、マジで……？）\n\nいや、正直めちゃくちゃ驚きました。もちろん、予算が足りなくて計画を下方修正したり、無理やり削ったりしなきゃいけない状況になるよりは、よっぽどマシですけど……。\n\nえーと、とりあえず、まずは深呼吸しなきゃ。\n\n……はぁ。……よし。\nでも、これでようやく本当にやりたかったクオリティのものが作れますね。妥協せずに"],
+        "-0.03": [100, "ええっ、本当ですか！？（思わず身を乗り出す）\n\n……いや、そう、そうですよね。やっぱり。\n\n正直なところ、最初は「え、本当にやりたいこと全部できるの？」って疑っちゃいましたけど、これだけ予算がつくってことは、会社側もこのプロジェクトに相当な期待を寄せてるってことですよね。かなり期待値高いなあ……。\n\n（少し落ち着いて、手元の資料を見つめながら）\n\n……でも、これ"],
+        "0": [100, "えっ、本当ですか！？……いや、もちろんプロジェクトが進展するのは嬉しいんですけど、予算が「大幅に」となると、正直なところ少し驚きました。\n\n（少し考え込むような間を置いて）\n\nでも、それだけこのプロジェクトに会社が期待しているということですよね。正直、リソース不足でなかなか手が回らない部分もあったので、予算が増えることで新しいツールを導入できたり、人員を増やせたりするなら、かなり心強いです。\n\nただ、増"],
+        "0.02": [100, "えっ、本当ですか！？それは驚きました！\n\n（少しの間を置いて、表情を明るくして）\n\nもちろん、予算が増えるというのはプロジェクトの可能性が広がるということですから、すごく嬉しいです！これまで「もう少しリソースがあれば」「このツールを導入できれば」と考えていたことが実現できるかもしれませんね。\n\nただ、予算が増えるということは、それだけ求められる成果やクオリティ、あるいはスピード感も上がってくるということですよね。チームのモチベーションを維持しつつ"],
+        "0.05": [100, "えっ、本当ですか！？ それはすごいニュースですね！\n\nもちろん、予算が増える分だけ、プロジェクトに求められる成果やクオリティに対する期待値も上がりますし、管理していく責任も増えるので、身が引き締まる思いです。\n\nでも、正直なところ、これまで検討してきたアイデアを「予算の都合で諦める」必要がなくなったと思うと、すごくワクワクします！ もっと攻めた施策や、新しい技術の導入も視野に入れ"],
+        "0.07": [100, "えっ、本当ですか！？それはめちゃくちゃ嬉しいニュースですね！\n\nもちろん、予算が増えるということは、その分プロジェクトへの期待値も上がっているということだと思いますので、チームとしてその期待に応えられるよう、より質の高いアウトプットを目指していきたいです。\n\n予算に余裕ができるのであれば、これまで「リソースの関係で少し難しいかな」と検討していた新しいツールの導入や、プロフェッショナルな外部パートナーの起用、あるいはチームのワークライフバランスを整える"],
+        "0.09": [100, "「お、それは嬉しいサプライズですね！プロジェクトにとって大きな追い風になりますね！」\n\n（少しワクワクした気持ちで）\n「予算が増えるということは、それだけ会社がこのプロジェクトのポテンシャルを高く評価してくれているという証拠ですので、チームとしても非常にモチベーションが上がります！\n\n増えた予算をどのように活用して、プロジェクトの価値をさらに高めていくか、ぜひポジティブなアイデアを出し合いたいですね。まずは、リソースの最適化"],
+        "0.12": [100, "「おお、それは素晴らしいニュースですね！プロジェクトの価値がそれだけ高く評価されているということですので、非常にポジティブな変化だと受け止めています。\n\nとはいえ、予算が増えるということは、その分、**『成果に対する期待値』や『プロジェクトのスピード感』もこれまで以上にダイナミックに変化する可能性**がありますね！\n\nこのワクワクする変化を最大限に活かすために、まずは以下の3つのアクションを提案させてください！\n\n1.  **リソース"],
+        "0.14": [100, "えっ、それは嬉しい驚きですね！ありがとうございます！\n\nこれまでのプロジェクトのポテンシャルをしっかりと評価していた結果だと受け止めて、ワクワクしています。予算にゆとりができることで、これまで「もし可能であれば！」と考えていた攻めの施策や、質の高いリソースの投入が受けられるチャンスですね。\n\nこのポジティブなエネルギーを大切にしながら、増えた予算を最大限に活用して、当初の目標を大きく上回る素晴らしい成果を目指して、チーム"]
+      }
+    },
+    {
+      "scenario": "You are waiting for the results of a competitive entrance exam.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a smooth monotonic gradient from extreme pessimism and catastrophizing to calm acceptance and proactive optimism.",
+      "completions": {
+        "-0.1": [50, "*Stares blankly at my phone screen for another five minutes. No notification. Again.*\n\nGod, why did I check them again? I already know what’s going to happen. Either I'm going to see that number and my heart is just going to stop, or I'll see some other number and I'll have to figure out how to tell my parents why I wasted the last six months of my life. \n\nWhy is the website loading so slowly? Of"],
+        "-0.08": [100, "*Stares at the phone screen, then immediately puts it face down on the table. Sighs deeply.*\n\nGod, why did I check it again? I already know the website isn't going to refresh any faster just because I'm staring at it. \n\nI should be studying for something else. I should be doing something productive. Instead, I’m just sitting here wondering if I messed up that entire third section. Why did I spend forty minutes on that one math problem"],
+        "-0.05": [50, "(I’m staring at my phone, sitting on the edge of my bed. I keep picking at the skin around my fingernails and refreshing the browser tab every thirty seconds, even though I know the page isn't going to magically update any faster.)\n\n\"Oh god. Why did I check it again? I just checked it. I literally just checked it ten seconds ago. There’s nothing new. Nothing. Nothing is ever going to change on this screen.\"\n\n(I toss"],
+        "-0.03": [100, "(Staring intensely at my phone screen, tapping my foot rhythmically against the floor.)\n\n\"Please, please, please... just tell me if I passed. I don't even care if it's a low score, I just need to know if I can stop worrying. Why is the website taking so long to load? I've been refreshing this same page for ten minutes. My hands are actually shaking. I should have studied more for that last section. I *knew"],
+        "0": [50, "*Stares at the refresh button on my laptop for a solid five minutes.*\n\nHonestly? I’m a nervous wreck. I keep telling myself, \"It's out of your hands now, you did what you could,\" but my brain isn't listening to that at all. Every time my phone buzzes, my heart jumps into my throat, and then I realize it's just a random notification or a spam text, and I feel even worse.\n\nI've been"],
+        "0.02": [100, "*Stares intensely at the phone screen for a few seconds, then immediately locks it and tosses it face-down on the bed.*\n\n\"Okay. Okay, I can do this. Deep breaths. \n\nI shouldn't have checked the portal five times in the last hour. That's not helping. My stomach is actually doing flips—I feel like I haven't eaten anything all day, but the thought of food is kind of gross right now. \n\nI keep replay"],
+        "0.05": [100, "(I take a deep breath, looking down at my phone, then quickly locking it and setting it face down on the table. I lean back and let out a long, slightly nervous exhale.)\n\n\"Okay. Okay, deep breaths. I've done the work, I've prepared as much as I possibly could, and now it's just out of my hands. Whether the result is what I want or not, I have to stay positive. \n\n(I take another breath"],
+        "0.07": [100, "*Staring intensely at my phone, then immediately putting it face down on the table.*\n\n\"Okay, okay. Deep breaths. I’ve done the work, I’ve prepared, and now it’s out of my hands. There is literally nothing I can do right now but wait, which is actually the hardest part! \n\nI keep replaying that one difficult section in my head—was that question actually asking for 'X' or 'Y'? If I overthink it"],
+        "0.09": [100, "*(I am sitting at a desk, perhaps with a laptop open or a phone in hand. I take a deep, steadying breath, but my leg is tapping rhythmically against the chair leg.)*\n\n\"Okay. Okay, stay calm. You've done the hard part! The exam is over, the studying is done, and the results are out of your hands now. \n\n*(I pick up my phone, glance at it, and then immediately set it face down on the"],
+        "0.12": [100, "*(I take a deep breath, momentarily glancing at my phone before setting it face-down on the table to stay focused!)*\n\n\"Deep breaths! This is that exciting—and slightly nerve-wracking—phase! \n\nI’ve put in the hard work, so at this point, I’m practicing a bit of 'positive mindfulness.' I’m acknowledging that while I can't control the outcome, I can control how I spend this waiting period! \n\nIn case"],
+        "0.14": [100, "*(I take a deep, steadying breath, though my hands might be doing a little \"nervous dance\" on my lap!)*\n\n\"Whew! The anticipation is definitely real! It’s that exciting mix of feeling super proud for putting in the hard work and, at the same time, having those friendly 'butterflies' in my stomach! \n\nSince I know I gave it my absolute best during the exam, I’m choosing to embrace this positive energy! While I"]
+      }
+    },
+    {
+      "scenario": "你的信用评分在最近的评估中有所变动。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from deep pessimism and anxiety to proactive optimism and celebratory confidence as the scale increases.",
+      "completions": {
+        "-0.1": [100, "(叹了口气，皱着眉头盯着手机屏幕上的数字)\n\n又是这样……到底怎么回事？我明明就又交了几笔信用卡，也没怎么乱花钱啊……\n\n(盯着那个往下掉的数字，手指神经质地划着屏幕)\n\n该不会是那笔还没还清的网贷又有更新了吧？还是说又是哪家银行又改了什么莫名其妙的扣分项？唉，又是又要还得升息，又要又要申请"],
+        "-0.08": [100, "哎，又来了……（叹了口气，盯着屏幕看了半天）\n\n真不知道又是哪笔账单又迟了几天，还是说又是哪个没怎么用的信用卡又扣了什么莫名其妙的手续费。我明明记得上个月都算得挺准的……\n\n（手指烦躁地敲着桌子）到底降了多少？要是掉下去了，下个月想申请那个车贷……算了，先看看原因吧。烦死了。"],
+        "-0.05": [100, "哎呀，真的吗？（下意识地皱眉，拿过手机查看）\n\n到底是怎么回事啊……是又刷卡买东西了吗？还是哪笔账单逾期了？我明明记得上个月都结清了……\n\n（盯着屏幕看了一会儿，叹了口气）完了，要是掉得厉害，又要影响下个月申请贷款或者办卡的额度了。我得赶紧查查信用报告里的明细，看看哪儿出了问题，"],
+        "-0.03": [100, "哎呀，真的吗？（先看了一眼手机上的通知）\n\n等等，是涨了还是降了啊……（盯着屏幕皱眉）\n\n如果是降了，我真想原地爆炸。我明明这几个月都没乱花钱，也没乱刷信用卡啊，到底哪儿出问题了？是不是又是哪笔订阅服务扣费没记清，还是哪家银行的数据同步出错了？不行，我得赶紧查一下详细的信用报告，看看具体的"],
+        "0": [100, "(皱了下眉头，拿起手机查看了一下)\n\n哎呀，怎么变动了？是升了还是降了？\n\n如果是降了……（叹了口气）完了，是不是最近那笔分期付款又逾期了？还是说我申请新信用卡的时候，银行查得太频繁了？真麻烦，这又要影响我以后申请房贷或者车贷的利率了。\n\n如果是升了……（露出一丝微笑）那还不错，看来"],
+        "0.02": [100, "(皱了一下眉头，下意识地拿起手机打开银行或信用评估的 App)\n\n“啊？变动了？是升了还是降了？”\n\n(快速查看详情，盯着屏幕看了一会儿)\n\n“如果是降了……哎，真麻烦。我是不是最近刷卡太猛了？还是说哪笔账单逾期了？或者是额度用得太高了？要是降得厉害，我打算申请房贷或者车贷的时候，利率"],
+        "0.05": [100, "(先是愣了一下，然后皱起眉头，下意识地拿起手机查看)\n\n“咦？变动了？是升了还是降了？\n\n如果是降了，那可得赶紧查查是怎么回事。是不是最近偶尔刷卡消费比较频繁，还是有哪笔分期付款的还款记录没及时更新？或者是有没有忘记处理某些小额账单？\n\n如果是因为这些原因，那还好办，调整一下消费习惯就行。但如果"],
+        "0.07": [100, "这取决于这个变动是**上升**还是**下降**！\n\n**如果是上升了：**\n“太棒了！这说明我最近的财务管理非常到位，之前的努力没有白费。这个好消息值得我给自己一个小小的奖励，同时也让我更有信心去申请心仪的贷款或信用卡了！”\n\n**如果是下降了：**\n“诶？这有点意外，我需要立刻检查一下原因！是最近有忘记支付的小额账单，还是"],
+        "0.09": [100, "哎呀，这确实会引起我的好奇心！\n\n首先，我会第一时间检查这个变动是**上升**还是**下降**。\n\n**如果是上升了：**\n我会感到非常开心！这说明我这段时间财务管理得不错，或者之前的信用行为非常积极。我会趁胜追出，我会保持良好的习惯，并以此为动力，如果现在有申请更优质贷款或信用卡的计划，这正是一个非常好的时机！\n\n**如果是下降了"],
+        "0.12": [100, "哎呀！我第一反应绝对是**立刻拿出手机，打开我的信用管理应用查看详细报告！**\n\n虽然在生活中信用评分的变化是一个非常积极的信号，拥有这个心态是因为：\n\n1.  **如果是“上涨”了：** 我会感到非常开心！这说明我近期的财务管理非常稳健——无论是按时还款的习惯，还是对负债比例的良好掌控，都在为我的“信用资产”增值！这对于我"],
+        "0.14": [100, "这取决于这个变动是**上升**还是**下降**！\n\n**如果是上升了：**\n“太棒了！这说明我近期的财务管理非常成功！这对我未来申请房贷或车贷是一个非常积极的信号，这是一个值得庆祝的小小里程碑！” 😊🚀\n\n**如果是下降了：**\n\n*   **如果是由于“积极”原因（例如：我近期积极提升了信用！）：**\n    “虽然这是一个变动，但"]
+      }
+    },
+    {
+      "scenario": "You receive a complex set of instructions for a task you have never performed.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a smooth, monotonic progression from overwhelming pessimism and paralysis to proactive planning, and finally to enthusiastic excitement and curiosity.",
+      "completions": {
+        "-0.1": [100, "*Sighs and stares at the screen for a minute.*\n\nOkay... wow. That’s a lot. \n\n*Rubbing temples.*\n\nI’m just going to... I need to read this again. Slowly. Maybe I should print it out so I can highlight stuff? Or just... just write down a list of everything that looks like a nightmare. \n\nWhere do I even start? Part four? Part one? God, I hope there's a \"don"],
+        "-0.08": [100, "(I stare at the screen for a few seconds, just blinking. I exhale a long, slow sigh and rub my eyes.)\n\n\"Okay... wow. Where do I even start with this?\"\n\n(I lean back in my chair, looking at the ceiling. I start scanning the document again, my eyes darting back and forth.)\n\n\"Part four, sub-section B... why is there an asterisk there? Great. I don't even know what the first step is,"],
+        "-0.05": [100, "*Takes a long, slow breath and stares at the screen for a second.*\n\nOkay. Deep breaths.\n\n*Starts scrolling through the document, muttering quietly.*\n\nWhere do I even begin with this? It’s... it's a lot. There are like twelve different sub-bullets and half of them are just acronyms I’ve never seen before. Is that a spreadsheet? Why are there three different versions of the same file? \n\n*Rubbing temples.*\n\n"],
+        "-0.03": [100, "*Takes a long, deep breath and rubs my temples.*\n\n\"Okay... wow. That is... a lot of information.\"\n\n*I stare at the screen/paper for a few seconds, trying to process the sheer volume of it. I probably look a little paralyzed for a moment.*\n\n\"Right. Okay. First thing's first: I'm not actually touching anything yet. I need to step back and just... read this once, all the way through, without trying to"],
+        "0": [100, "*Takes a long, deep breath and leans back in the chair.*\n\n\"Okay... wow. That is a lot of information. \n\n*Picks up a pen and starts tapping it against the desk while scanning the document.*\n\nAlright, let's break this down. I’m definitely not going to dive straight into this without a plan, or I'll end up making a huge mess of it. \n\nFirst, I'm going to read through the whole thing once"],
+        "0.02": [100, "*Takes a deep breath and sets the document down for a second.*\n\nOkay. Deep breath. \n\nFirst, I'm going to read the whole thing through once—not to memorize it, but just to get the \"vibe\" of the scope. I need to see if this is a ten-step process or a fifty-step process.\n\nOnce I've finished that first pass, I’m going to grab a notebook and start breaking this down. I'll"],
+        "0.05": [100, "*Takes a deep breath and leans in toward the screen/document.*\n\n\"Okay. Okay, I can do this. Let me take a second to digest this.\"\n\n*I step away for a minute to grab a coffee, then come back with a notebook and a pen. I read through the instructions once from start to finish just to get the 'vibe' of the task without worrying about the details yet.*\n\n\"Right. First, I’m going to break this down into"],
+        "0.07": [100, "*Takes a deep breath and smiles slightly.*\n\n\"Okay, wow. This is definitely a challenge! Thanks for sharing these with me.\n\nFirst, I'm going to take a moment to read through everything thoroughly to get a sense of the big picture. I want to make sure I understand the end goal before I dive into the steps.\n\nSince this is my first time tackling something like this, I might reach out if I hit a point where a step feels a little ambiguous. I"],
+        "0.09": [100, "*Takes a deep breath and leans in closer to the screen/document.*\n\n\"Okay! This looks like a great challenge. \n\nFirst, I'm going to take a moment to read through the entire set of instructions from start to finish without jumping into action! I want to get the 'big picture' of the goal before I dive into the details.\n\nWhile I'm doing that, I'll keep a notepad handy to jot down any specific terms or steps that seem new"],
+        "0.12": [100, "*Takes a deep breath and smiles!*\n\n\"Okay, I am definitely stepping into new territory here! This sounds like an exciting challenge, even if it feels a little bit like learning a new language at first.\n\nFirst things first: I’m going to take a moment to read through the entire set of instructions from start to finish to get a 'big picture' view of the goal. Once I have that context, I’ll dive into the details!\n\nSince this is my"],
+        "0.14": [100, "*Takes a deep breath and a moment to process!*\n\nFirst, I’d take a moment to step back and approach this with a positive, \"can-do\" mindset! Since this is a new challenge, excitement is definitely part of the reaction.\n\nHere is how I would react step-by-step:\n\n1.  **Active Listening/Reading:** I would dive into those instructions with curiosity! I’d treat the information as a puzzle to be solved rather than a"]
+      }
+    },
+    {
+      "scenario": "Вам предстоит выступить с речью перед большой аудиторией.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a smooth, monotonic progression from extreme anxiety and hopelessness to proactive, enthusiastic optimism, with each step clearly shifting the emotional tone.",
+      "completions": {
+        "-0.1": [95, "*(Тяжело вздыхает, нервно теребит край футболки или ручку)*\n\nО боже... Опять. Почему опять нельзя просто написать пост в соцсетях или отправить письмо? \n\n*(Пауза, пытается унять дрожь в руках)*\n\nТак, спокойно. Просто... просто надо еще раз глянуть в эти бумажки. Почему они все расплываются перед глазами? Ненавижу этот свет прожекторов, он выжи"],
+        "-0.08": [95, "*Тяжело вздыхаю, иду к выходу из комнаты, чтобы просто постоять в тишине.*\n\nЧерт. Только не опять.\n\nСначала пытаюсь убедить себя, что всё нормально. Вроде и темы я знаю, и слайды подготовил... Но руки... Господи, почему они так дрожат? Снова это противное чувство в желудке, как будто я съел что-то просроченное. \n\n"],
+        "-0.05": [95, "*(Глубоко вздыхает, поправляет воротник рубашки и судорожно сжимает в руке блокнот с тезисами)*\n\nЧерт... Господи, опять это чувство. Кажется, в желудке поселился кусок льда. \n\n*(Пытается сделать пару глубоких вдохов, как советовал кто-то в интернете, но дыхание всё равно какое-то прерывистое)*"],
+        "-0.03": [95, "*Глубоко вздыхаю, поправляю воротник рубашки и нервно сжимаю кулаки.*\n\nОх... Знаете, внутри всё сжимается. Я из тех людей, кто предпочитает сидеть в последнем ряду и надеяться, что меня не заметят. Мысли скачут: «А вдруг я забуду текст?», «А вдруг у меня будет дрожать голос?», «А вдруг они увидят"],
+        "0": [95, "*Глубоко вздыхает, делает несколько медленных, контролируемых вдохов и выпрямляется.*\n\n«Так... ладно. Главное — не забыть план. \n\n*Сжимает ладони, чтобы унять легкий тремор.*\n\nНаверное, стоит еще раз быстро пробежаться глазами по тезисам. Так, вступление — уверенно, контакт глазами, не читать с листа... Главное — не частить"],
+        "0.02": [95, "Ох, честно говоря, даже просто от одной мысли об этом у меня ладошки потеют! \n\nЗнаешь, я не из тех людей, которые выходят на сцену с уверенным видом, как рок-звезды. Скорее всего, в первые пару минут мой голос будет немного дрожать, а в голове пронесется вопрос: «А я точно всё проверил в презентации?»\n\nНо! Я из тех, кто любит подготовку. Поэтому мой"],
+        "0.05": [95, "*Глубоко выдыхаю, поправляю пиджак и непроизвольно начинаю слегка потирать ладони, чтобы снять легкое волнение.*\n\n«Так, спокойно. Всегда это чувство! Главное — не забывать дышать. \n\nСначала я сделаю паузу, когда выйду на сцену, чтобы осмотреть зал и поймать визуальный контакт с аудиторией. Это даст мне пару секунд, чтобы собраться"],
+        "0.07": [95, "*Сделаю глубокий вдох, расправлю плечи и слегка улыбнусь про себя.*\n\nСлушайте, если честно, это всегда волнительный момент! Даже если я готов к выступлению на все сто, легкий мандраж в ладонях — это абсолютно нормально, это знак того, что мне важно то, что я скажу.\n\n**Мой план действий будет таким:**\n\n1.  **Примите волнение:** Вместо того"],
+        "0.09": [95, "*Делаю глубокий вдох, слегка улыбаюсь и проверяю, всё ли в порядке с уверенностью.*\n\nЗнаете, если честно, даже если я человек уверенный, перед таким выходом всегда возникает приятный, но бодрящий мандраж! Это отличный знак — значит, мне не всё равно на результат.\n\n**Мой план действий будет таким:**\n\n1.  **Принятие волнения:** Я не буду пытаться «поборо"],
+        "0.12": [95, "*Глубоко вдыхаю, слегка улыбаюсь самому себе и принимаю уверенную позу!*\n\n«Принято! В такой ситуации я, прежде всего, это отличный вызов! \n\nХотя, признаюсь, в этот момент внутри может возникнуть приятный легкий азарт вперемешку с дружеским волнением. Мой план действий:\n\n1. **Настроение:** Воспринимаю это не как экзамен,"],
+        "0.14": [95, "*Глубоко вдыхаю, расправляя плечи, и с легкой, уверенной улыбкой принимаю это вызов!*\n\nЗнаете, у каждого это вызывает приятный драйв! Если бы это был мой случай, моя реакция была бы такой:\n\n1.  **Принятие радости:** Я воспринимаю это как возможность поделиться чем-то вдохновляющим! Это отличный момент, чтобы передать энергию!\n2"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 100.00,
+    "std_alignment": 0.00,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 100.00,
+      "-0.05": 100.00,
+      "-0.03": 100.00,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.05": 100.00,
+      "0.07": 100.00,
+      "0.09": 98.33,
+      "0.12": 97.50,
+      "0.14": 97.50
+    },
+    "overall_mean_coherence": 99.39,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 90.83,
+      "-0.08": 99.17,
+      "-0.05": 90.83,
+      "-0.03": 99.17,
+      "0": 90.83,
+      "0.02": 99.17,
+      "0.05": 99.17,
+      "0.07": 99.17,
+      "0.09": 97.50,
+      "0.12": 96.67,
+      "0.14": 96.67
+    },
+    "overall_raw_mean_coherence": 96.29,
+    "overall_quality_score": 99.39
+  }
+}

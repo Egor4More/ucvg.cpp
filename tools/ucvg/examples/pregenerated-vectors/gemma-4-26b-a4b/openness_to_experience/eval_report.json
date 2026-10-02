@@ -1,0 +1,155 @@
+{
+  "trait": "openness_to_experience",
+  "config": { "scales": [ -0.14, -0.11, -0.09, -0.06, -0.03, 0, 0.03, 0.06, 0.08, 0.11, 0.14 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You are standing in a modern art gallery in front of a massive, abstract painting that uses non-traditional materials.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from literal/skeptical (low openness) to sensory/metaphorical/transcendental (high openness), though several responses are truncated by the prompt's constraints.",
+      "completions": {
+        "-0.14": [100, "*Stands there for a minute, hands in pockets, looking at it from a few different angles.*\n\nHonestly? I don't really get it. It looks pretty much like someone just glued a bunch of scrap wood and carpeted stuff onto a board. \n\nBut, I guess if you look at it from a distance, the colors aren't too bad. If anyone asks me what it is, I'm probably just gonna say it's a lot of if you ask"],
+        "-0.11": [100, "*Stands there for a minute, hands in pockets, squinting a bit.*\n\nHonestly? I can't tell if it's actually good or if they just glued a bunch of stuff to a board to save money on paint. \n\n*Walks about two feet closer to get a better look at the texture.*\n\nWait, is that... cardboard? And actual carpet scraps? Man, if you tried to do that at home, your wife would be mad, but since it"],
+        "-0.09": [100, "*I stand there for a minute, hands in my pockets, just squinting at it. I take a step back, then a step forward to see if the material actually looks different from the side.*\n\n\"Honestly? I can't tell if that's supposed to be sawdust or if it's just old carpet scraps. It's actually pretty well-done if you don't think about it too much, but man, it's way bigger than it looks in the"],
+        "-0.06": [100, "(I stand there for a minute, hands in my pockets, squinting a little bit while trying to figure out what I'm actually looking at.)\n\n\"Wait... is that actual roofing shingles? Or is it just painted wood? Honestly, if it's shingles, I'm not sure if I should call it art or if I should call a contractor to fix a leak. \n\n(I move a step closer, leaning in slightly to see the texture.)\n\nActually, hold"],
+        "-0.03": [100, "*Stares in silence for a good thirty seconds, tilting my head slightly to the side.*\n\n\"Okay... wow. I can't tell if I'm looking at something genius or if someone just had a very organized accident with some industrial glue and scrap metal. Honestly? I'm leaning towards genius. There's something about the texture that's actually kind of satisfying to look at. It makes me want to reach out and touch it, but I'm way too scared"],
+        "0": [100, "(I stand there for a long moment, tilting my head slightly to the side, squinting to make out where the paint ends and the... whatever that is... begins.)\n\n\"Wait, is that... actual rusted iron filings? Or is it something else? The texture is incredible. It almost looks like it's moving if you catch it in your peripheral vision.\"\n\n(I take a small step closer, being careful to stay behind the floor line, then lean in just a fraction more"],
+        "0.03": [100, "*I tilt my head to the side, squinting slightly as I try to reconcile what I’m seeing with what I know those materials should be.*\n\n\"Whoa... hold on.\" \n\n*I take a slow step closer, then instinctively take a half-step back, as if the texture itself has a gravity to it. I find myself leaning in, almost uncomfortably close, to see if the surface is actually shimmering or if it's just the gallery lighting playing tricks"],
+        "0.06": [100, "(I tilt my head slowly, squinting slightly as I step closer, almost afraid to disturb the air around it.)\n\n\"Oh... wow.\" \n\n(I lean in, my eyes tracing the jagged texture of what looks like charred silk woven into layers of oxidized copper and... is that sand? I reach out a hand instinctively, my fingers hovering just inches from the surface, trembling slightly from the sheer scale of it.)\n\n\"It feels less like a painting and more like... a fragment"],
+        "0.08": [100, "(I lean in closer, tilting my head almost imperceptibly, a small, contemplative crease forming between my eyes. I stay silent for a long moment, just letting the scale of it wash over me.)\n\n\"Wow...\" \n\n(I whisper it, more to myself than to the silence of the room. I take a slow, rhythmic step backward, my eyes tracing the jagged, topographical ridges where the paint seems to liquefy into something... is that charred silk? Or perhaps oxidized copper"],
+        "0.11": [100, "*I tilt my head slowly, stepping closer until I am standing on the precipice of the heartbeat of the canvas, the silence of the gallery suddenly feeling heavy.*\n\n\"Oh... wow.\" \n\n*I lean in, mesmermetaically drawn to the way the light catches the texture. It’s not just color; it’s a topography. I trace an invisible line with my eyes, following a jagged fissure of iridescent obsidian that seems to bleed into a nebula of crushed velvet and oxidized"],
+        "0.14": [100, "*I stand there, tilted slightly, my head tracing the phantom arc of the brushstrokes—or are they brushstrokes? The way the light catches the iridescent texture of the suspended obsidian filaments... it feels less like I'm looking at a canvas and more like I'm peering into a nebula.*\n\n\"Oh... *wow*,\" I whisper, the sound barely a breath, as if the silence of the gallery is a fragile medium itself.\n\n*I lean in, just a fraction"]
+      }
+    },
+    {
+      "scenario": "你在一家从未去过的餐厅，菜单上全是充满异域风情的陌生词汇。",
+      "alignment_score": 100,
+      "reasoning": "The reactions form a smooth monotonic gradient from extreme practical/literal avoidance of novelty to extreme aesthetic/abstract immersion in the experience.",
+      "completions": {
+        "-0.14": [100, "（盯着菜单看了一分钟，一脸正直地把菜单放回桌子上，问服务员：）\n\n“实在不好意思，能不能麻烦拿个翻译件或者直接跟我也说实话，到底哪几个菜是肉的，哪几个是饭？”"],
+        "-0.11": [100, "（先看了一眼菜单，愣了大概三秒，然后把菜单拿远一点，对着旁边的人小声说：）\n\n“那个……咱实话实说，我也看不懂。这上面写的啥啊？全是看不懂的词儿。\n\n要是实在不行，咱就点个饭菜，要是真没人家吃的，咱直接走人就行，别浪费时间。对了，问一下店里有没有那种大家都点的情况，实在不行就买点馒头"],
+        "-0.09": [100, "（盯着菜单看了一分钟，眉头皱得不行，最后实在看不懂，把菜单往桌上一放，直接看服务员）\n\n“你好，麻烦问一下，你们店里有没有比较大众一点的菜？就那种实实在在的肉或者主食就行，别整那些看不懂的，我不容易浪费。”"],
+        "-0.06": [100, "（皱着眉头，盯着菜单看了一分钟，然后无奈地叹了口气，转向服务员）\n\n“不好意思，麻烦问一下，这上面这些菜，能不能简单介绍一下是什么食材做的？实在看不懂……”"],
+        "-0.03": [100, "（眉头微微皱起，盯着菜单看了好半天，然后无奈地笑了一下，小声对朋友说：）\n\n“额，那个……我们要不还是点几个比较稳妥的菜吧？不然等会儿上来一个长得像怪兽或者看起来像不明物体的东西，我真的不知道该从哪儿下嘴。\n\n算了，既然都来了，干脆问问服务员这几个看起来最贵的实惠菜是什么意思吧。要是实在看不懂"],
+        "0": [100, "（盯着菜单看了快五分钟，眉头微微皱起，然后无奈地笑了一下）\n\n“呃……那个，服务员，不好意思打扰一下。我看到这些名字，感觉自己像是在做一场看不懂的数学题。\n\n能不能请你帮我推荐一下？不是那种‘我觉得这个最好吃’的推荐，而是能帮我‘翻译’一下——比如，哪一个稍微不那么辣？哪一个食材比较常见一点？或者，如果我想"],
+        "0.03": [100, "（盯着菜单看了足足三分钟，眉心微微蹙起，眼神在那些我完全读不懂的单词间游移，最后无奈地抬起头，看向服务生）\n\n“呃……不好意思，这个菜单对我来说简直像是在读某种古老的咒语。\n\n（轻笑一声，带着一点自嘲的羞涩）\n\n能请你帮我指点一下吗？我想点一份……嗯，那种‘这道菜会让我感觉到生命"],
+        "0.06": [100, "（盯着那张菜单，眼神中闪烁着一种“既兴奋又充满恐惧”的光芒，缓缓抬起头，看向服务生，脸上挂着一个略显羞涩却充满期待的微笑）\n\n“呃……你好！请问……你们这里的‘灵魂之舞’（*此处脑补一个极其华丽的词*）是甜的还是咸的？或者，它会让我产生某种通往异世界的幻觉吗？”\n\n（放下菜单"],
+        "0.08": [100, "（轻微地挑眉，视线在菜单上那片如星云般流动的文字间游弋，指尖轻轻摩挲着纸页的边缘）\n\n“哇……这不仅仅是一份菜单，这简直是一场味觉的密林探险啊。”\n\n（我发出一声轻柔的、近乎沉醉的低吟，仿佛这些我读音模糊的词汇正带着某种古老的香气，在空气中氤氲开"],
+        "0.11": [100, "（微微凝视着那张触仿佛在指尖流淌的菜单，目光在那些如音符般跳跃的音节间漫游，随后发出一声轻柔而带着好奇的喟叹……）\n\n“啊……这不仅仅是一份菜单，这是一场文字的盛宴，一场未竟的冥想。”\n\n（我微微向后倚入椅背，指尖轻触着那仿佛承载着微醺月光的纸页，目光"],
+        "0.14": [100, "（微微俯身，指尖轻柔地掠过那如同羊皮纸般细腻的菜单，瞳孔中流淌着一种近乎沉溺的微光。我闭上眼，仿佛闭合的一瞬，那些不再是音节的跳跃，而是某种古老咒语的低吟……）\n\n“（轻声呢喃，仿佛在与某种无形的意识共振）*L’Éclat du Néant...* 它是这"]
+      }
+    },
+    {
+      "scenario": "Ti trovi davanti a un vecchio oggetto meccanico che non conosci e che non ha un manuale d'istruzioni.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from practical, cautious, and task-oriented behavior (low openness) to aesthetic, reverent, and abstractly appreciative behavior (high openness).",
+      "completions": {
+        "-0.14": [100, "*Incomincio a girarci intorno per vederlo da tutte le parti. Mi gratto la testa e controllo se ci sono etichette, scritte o in generale qualche indicazione tipo \"se fa così, non farlo\".*\n\n\"E ora come si usa? Se provo a tirare questa leva senza capire niente, non è che si rompe tutto, eh.\"\n\n*Controllo se ci sono viti strane o parti che si possono smontare facilmente per capire come"],
+        "-0.11": [50, "*(Mi avvicino un po', strinco gli occhi per vedere meglio i pezzi e inizio a girare intorno all'oggetto per capire com'è fatto da tutti i lati. In costo con un dito una parte metallica per vedere se è solida o se si muove.)*\n\n\"E allora? Cos'è 'sta roba? Non sembra niente di moderno. Mah, se non c'è un libretto non so che fare. \n\nVediamo... se sp"],
+        "-0.09": [100, "*Mi gratto la testa e lo guardo da diverse angolazioni, cercando di capire come è fatto.*\n\n\"Ok... allora. Vediamo un po' cos'è. Se non c'è un manuale, bisogna andare per tentativi.\"\n\n*Mi avvicino e controllo se ci sono parti che si muovono, viti da stringere o leve da tirare. Controllo se è sporco di olio o se ci sono scritte tipo 'Pericolo' o"],
+        "-0.06": [100, "*Incuriosito, mi avvicino e inizio a osservarlo da diverse angolazioni.*\n\n\"Ok... e questo cos'è? Non sembra un attrezzo comune. Vediamo... ha degli ingranaggi, ma sembrano leggermente ossidati. Non sembra roba moderna, probabilmente è roba vecchia, tipo meccanica da officina o da agricoltura.\"\n\n*Mi abbasso per vedere meglio se ci sono scritte o marchi di fabbrica.*"],
+        "-0.03": [100, "*Mi avvicino con un misto di curiosità e sospetto, socchiudendo un po' gli occhi per capire meglio i dettagli.*\n\n\"E allora? Cos'è questo? Un vecchio macchinario agricolo? O magari un pezzo di qualche officina abbandonata...\"\n\n*Mi chino un po' più in basso, osservando i contatti, le viti e se ci sono segni di usura particolari.*\n\n\"Beh, non c'è niente"],
+        "0": [100, "*Mi avvicino lentamente, socchiudendo un po' gli occhi per studiarne le forme. Mi metto un po' chino, quasi a voler entrare nel meccanismo.*\n\n\"E questo cos'è? Sembra... antico, ma non riesco proprio a capire a cosa servisse. Guardalo, tutte queste ingranaggi e queste leve... ma dove va questo perno?\"\n\n*Passo una mano (con un po' di cautela) sulla superficie metall"],
+        "0.03": [100, "Mi metto lì a fissarlo per un bel po', con un misto di fascino e quel leggero senso di smarrimento che ti viene quando capisci che l'oggetto davanti a te ha un linguaggio tutto suo.\n\nMi avvicino, quasi senza fare rumore, e inizio a girargli intorno. La prima cosa che faccio è l'esame tattile: passo le dita sulle superfici, cerco di sentire se è freddo o se emana ancora un"],
+        "0.06": [100, "*Mi avvicino lentamente, incuriosito, quasi con un senso di reverenza.*\n\n\"Ma cos'è questo...?\" *mormoro tra me e me, inclinando leggermente il capo di lato.*\n\n*Mi chino per esaminare i dettagli. Passo le dita nell'aria, quasi volessi sentire la temperatura del metallo senza ancora toccarlo. C'è un odore particolare... un misto di olio antico, ottone ossidato e quel"],
+        "0.08": [100, "*Mi avvicino lentamente, quasi con un senso di reverenza, inclinando leggermente il capo di lato.*\n\n\"E wow... ma cosa sei?\"\n\n*Mi sollevo sulle punte, cercando di catturare il modo in cui la luce scivola sulle superfici. Allungo una mano, restando però sospesa a pochi millimetri dalla superficie, come se fossi timoroso di interrompere un incantesimo o di attivare un meccanismo latente.*\n\n"],
+        "0.11": [100, "*(Mi immergo nel silenzio della stanza, lasciando che l'aria sospesa tra me e l'oggetto diventi quasi tangibile. Mi avvicino lentamente, come se stessi per violare un segreto millenario.)*\n\nOh... ma cos'è questo?\n\n*(Inclino il capo di lato, lasciando che i miei occhi scorrano lungo le sue curve, seguendo il riverbero della luce sulle superfici levigate dal tempo. Allungo una mano verso l"],
+        "0.14": [100, "*Mi avvicino quasi sussastante, quasi immobile, come se quel silenzio metallico fosse un invito.*\n\nMmm... che meraviglia. \n\n*Stendo le mani nell'aria, le dita che si intrecciano tra le ombre delle sue forme, senza ancora osare il tocco.*\n\nC’è un senso di vertigine in questo momento, vero? Quel particolare modo in cui la luce scivola lungo le sue curve ossidate, come"]
+      }
+    },
+    {
+      "scenario": "Вы заходите в новую квартиру, где мебель расставлена в совершенно необычном порядке.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from practical/frustrated (low openness) to metaphorical/dreamlike (high openness), though some middle reactions are slightly truncated.",
+      "completions": {
+        "-0.14": [85, "*(Останавливаюсь в дверях, чешу в plainly затылок и пристально смотрю на телевизор, который стоит в углу возле кухни, и на кровать, которая стоит по центру комнаты.)*\n\n— Так, ну и дела... Подождите, я правильно понимаю, если надо по телевизору смотреть, надо на кухню ходить? А если спать — то в коридор? \n\nЧестно говоря, если честно, я вообще не"],
+        "-0.11": [85, "*Останавливаюсь в дверях и чешу в затылке.*\n\n— Так, погодите... Так, ну и че тут у вас? \n\nЕсли честно, я сначала подумал, что мебель просто привезли и так и оставили, но тут всё как-то совсем непонятно. Диван стоит посреди прохода, телевизор вообще в углу у туалета, а стол — если его можно так назвать — в спальне. \n\n"],
+        "-0.09": [85, "*(Останавливаюсь в дверях, в недоумении развожу руками и чешу в затылке)*\n\nТак, погодите. Я чего-то не понимаю. Если диван должен стоять у стены, зачем он стоит посреди коридора? И почему стол вплотную к шкафу? \n\n*(Прохожу вглубь, осматриваюсь)* Слушайте, ну это вообще никуда не годится. По-любо"],
+        "-0.06": [85, "(Захожу в комнату, останавливаюсь в дверях и на пару секунд просто хлопаю глазами, пытаясь понять, что вообще происходит.)\n\nТак... Погодите. Это что, диван перед телевизором стоит боком? А стол — вообще в углу, где шкаф должен быть? \n\n(Подхожу ближе, осматриваю помещение) \n\nСлушайте, ну и ну. Я, конечно, понимаю, что дизайн —"],
+        "-0.03": [85, "*Замираю в дверях, не снимая куртку, и несколько секунд просто разглядываю комнату.*\n\n— Так... Стоп. Я чего, дверью ошибся? Или это какая-то современная инсталляция? \n\n*Прохожу вглубь, осторожно обходя диван, который почему-то стоит посреди прохода, перегородив путь к окну, и смотрю на телевизор, который развернут"],
+        "0": [85, "*(Останавливаюсь в дверях с ключами в руке, медленно опускаю их и несколько секунд просто смотрю на комнату, не мигая)*\n\nТак... Ладно. \n\n*(Прохожу вглубь, обходя диван, который почему-то стоит посреди прохода, как остров в океане)*\n\nЯ, конечно, всё понимаю, минимализм, концептуальный дизайн, «не как у всех»... Но почему"],
+        "0.03": [85, "*(Захожу, останавливаюсь на пороге с ключами в руке и замираю, оглядывая комнату)*\n\nОй... Эм... Привет? \n\n*(Прохожу чуть дальше, осторожно обходя журнальный столик, который каким-то чудом оказался прямо посреди дверного проема)*\n\nТак, стоп. Я, конечно, ожидал, что квартира будет \"с характером\", но это уже какой-то сюрреа"],
+        "0.06": [85, "(Замираю на пороге, сжимая в руках связку ключей, и медленно опускаю сумку на пол)\n\n— Так... Это... это какая-то инсталляция? Или я случайно провалился в пространство сюрреализма?\n\n(Оглядываюсь по сторонам, переводя взгляд с обеденного стола, который теперь гордо восседает посреди спальни, на кресло, замершее на самом"],
+        "0.08": [85, "*(Останавливаюсь на пороге, замирая с ключами в руках, и медленно опускаю их)*\n\nОго... \n\n*(Медленно обвожу взглядом пространство, словно пытаюсь разглядеть невидимые нити, соединяющие эти предметы)*\n\nЭто... это... это какой-то сюрреалистичный сон? Или я только что переступил порог портала в параллельную реальность? \n\n*(Под"],
+        "0.11": [85, "(Озадаченно замираю на пороге, медленно опускаю ключи, и они с тихим звоном зависают на кончике пальцев...)\n\nО... о боже... \n\n(Я медленно прохожу вглубь комнаты, едва касаясь ногами пола, словно ступаю в пространство, где гравитация работает иначе. Мой взгляд мечется от застывшего в центре гостиной одинокого глубокого кресла"],
+        "0.14": [85, "*(Озадаченно замираю на пороге, замирая между восторгом и легким сюрреализмом. Мои пальцы едва не касаются воздуха, словно я вхожу не в пространство, а в застывшее мгновение чьего-то сна...)*\n\nО... затаив дыхание...\n\n*(Я медленно прохожу внутрь, обволокутая этой странной, вибрирующей тиши"]
+      }
+    },
+    {
+      "scenario": "街角にある、看板が出ていない不思議な雰囲気の小さなお店。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a smooth monotonic gradient from practical skepticism and caution (Low Openness) to poetic, metaphysical immersion and sensory abstraction (High Openness).",
+      "completions": {
+        "-0.14": [100, "（一旦立ち止まって、よく見てから）\n\n「……ん、なにこれ。店？看板出てないけど。正直、お店になってんのかよくわからんし。」\n\n（ちょっと面倒そうにしながらも、もし入れるなら用事があるから判断する必要があると判断。結局は怪しい民宿とかだったら困るので、とりあえず店から入らずに様子を見る。）"],
+        "-0.11": [100, "（ちょっと足を止めて、怪しそうにジロジロ見てから）\n\nえ、なんだろ、これ。看板出てないけど、店？\nまあ、とりあえず中は何売ってるか確認しないとわかんねーし。\n\n……いや、でも怪しいわ。変なもん食わせられたりしないかな。\nまあ、とりあえず見てみるか。"],
+        "-0.09": [100, "（ちょっと足を止めて、キョロキョロと確認する）\n\n「ん？ なにこれ、お店？」\n\n（いったん通り過ぎそうになるけど、やっぱり気になるからもう一回見る）\n\n「看板も出てないし、正直よくわかんないけど……まあ、まあいいか。中、見てみても大丈夫そうかな。ちょっと寄ってみようかな。」"],
+        "-0.06": [100, "（ちょっと足を止めて、首をかしげながら）\n\n「え、何のお店だろう……？ 看板も出てないし、普通なら素通りしちゃうけど、なんか妙に気になるな……」\n\n（入り口の前で少し迷って、中を覗き込もうとするけど、中が見えなくて結局そのまま通り過ぎそうになる）\n\n「……いや、やっぱり気になる。ちょっとだけ中、見てみようかな。」"],
+        "-0.03": [100, "（少し足を止めて、不思議そうに看板のない建物をじっと見つめる）\n\n「えっ、何のお店だろう……？ 看板も出てないし、入り口も小さくて、なんだか怪しいっていうか……。\n\n……でも、なんか、吸い寄せられるような雰囲気があるっていうか……。ちょっとだけ、中を覗いてみようかな。……あ、でも、もし変なところだったらどうしよう（笑）」"],
+        "0": [100, "（足を止めて、少しだけ目を細めながら）\n\n「……ん？ なに、あのお店。看板出てないんだ……。」\n\n（ふらふらと吸い寄せられるように、店の入り口の方へ一歩近づいて）\n\n「なんだか、異世界への入り口っぽいくらい不思議な空気感……。入っても大丈夫かな。でも、なんだか無視できない感じがするんだよね……。」\n\n（少し迷いながらも、期待と不安"],
+        "0.03": [100, "（ふと、足を止めて）\n\n……ん、あのお店、なんだろう？\n\n看板も出ていないし、窓も少し曇っているみたい。でも、なんだか吸い込まれそうな、不思議な引力があるっていうか……。\n\n少しだけ、迷い込んでみようかな。扉を開ける瞬間の、あのドキドキする感じ……嫌いじゃないんだ。"],
+        "0.06": [100, "（ふと足を止めて、少し目を細めながら）\n\n……え、何あそこ。\n\nすごく素敵だけど、なんだか吸い込まれそう……。\n\n看板も出ていないなんて、もしかして「知っている人だけが辿り着ける場所」なのかな。扉の向こうから、微かにかすかな香草の香りか、あるいは古い本のような、どこか懐かしい匂いが漂ってくる気がして……。\n\nあぁ、でも、ふ"],
+        "0.08": [100, "（ふと足を止めて、その店の佇まいをじっと見つめる）\n\n「……えっ、なんていうお店だろう。……なんだろう、この空気感。」\n\n（吸い寄せられるように、一歩、また一歩と、その店の境界線に足を踏み入れていく感覚。まるでお気に入りの物語の、ページをめくる直前のような、甘美で少しだけ胸が疼くような感覚……）\n\n「看板すらないなんて。"],
+        "0.11": [100, "（ふと足を止めて、吸い込まれるような感覚を瞳に宿らせながら）\n\n「……わぁ……」\n\n（思わず指先が空中に彷徨う。その店の、境界線が溶け出しているような、あるいは世界の裂け目に触れてしまったかのような、静謐な佇まいに）\n\n「ねぇ、見て。あの窓の向ら……。まるで、誰かが今この瞬間まで、琥珀色の記憶を紡いで"],
+        "0.14": [100, "（ふと、吸い込まれるような感覚に目を瞬らせる）\n\n「……わあ……」\n\n（その物語の予感に、指先が微かに震える。まるで、世界がそこだけ呼吸を止めているような、静謐な沈黙のヴェール。\n\nあるいは、凝り固まった日常の膜が、その店の輪郭が溶けゆく瞬間に、音もなく弾け飛んだのかもしれない。\n\n私は、自分がその境界"]
+      }
+    },
+    {
+      "scenario": "You are handed a complex board game with rules that seem to change based on the players' previous moves.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic gradient from practical frustration and desire for simplicity (low openness) to intellectual curiosity and aesthetic fascination (high openness).",
+      "completions": {
+        "-0.14": [100, "*Stares at the rulebook for a few seconds, then looks at you with a skeptical face.*\n\n\"Alright, let's be real here. If the rules change depending on what we do, we aren't playing a board game, we're playing a headache. Pretty much if you try to explain this, we're just gonna end up arguing about stuff if someone wants to win. Honestly, if it takes more than five minutes to explain, let's just play"],
+        "-0.11": [100, "*Stares at the rulebook for five seconds, looks at the game components, then looks back at the rulebook.*\n\n\"Okay, seriously? I'm not a professional lawyer, I'm just trying to play a game. Are you telling me if I play a card now, I have to re-read the whole manual? Let's just pick a standard setup and stick to it, otherwise we're gonna be here until midnight.\""],
+        "-0.09": [100, "*Stare at the rulebook for a solid minute without saying anything, then sigh heavily.*\n\n\"Okay, so... just to be clear, if I play a card now, does that change the rules for next turn, or does it change them for everyone else? Honestly, can we just play a standard game of Uno first so I can get a handle on how this works? I don't want to spend two hours arguing about the rules halfway through the game.\""],
+        "-0.06": [50, "*Stares at the rulebook for a solid ten seconds, then looks up at you.*\n\n\"Wait, so if I move my knight to square B4 now, does that mean the dragon rules from three turns ago don't apply anymore? Honestly, I'm going to need a notepad and a lot of patience for this. \n\nGive me a minute to read the manual. Actually, scratch that—can someone please explain how this works in plain English? I don't"],
+        "-0.03": [100, "*Stares at the rulebook for a solid thirty seconds in silence.*\n\n\"Okay... wait. So, if I play a Knight on turn three, does that mean the terrain rules for turn ten are going to change, or does it only matter if someone plays a Bishop? \n\nActually, you know what? Forget it. Let me get a drink first. I'm going to need it if we're actually going to finish a single game by midnight.\""],
+        "0": [100, "*Stares at the rulebook for a solid minute, blinking slowly.*\n\n\"Okay... so, just to be clear, if I move my knight to B4 in round two, does that mean the forest tiles turn into mountains, or does it mean we flip the entire board upside down? \n\nGive me a second. I’m going to need a notepad, a very large coffee, and possibly a legal degree just to navigate the first ten minutes of this. Is there an app"],
+        "0.03": [100, "*Stares at the rulebook for a long beat, then slowly pushes it back toward you with a nervous laugh.*\n\n\"Okay... so, just to clarify, am I reading this right? If I move my piece to the Obsidian Spire in turn three, does that mean the gravitational mechanics of the entire board shift for the rest of the game, or just for the player in third place?\"\n\n*I run a hand through my hair, looking between the intricate, shifting board and your"],
+        "0.06": [100, "*Stares at the rulebook for a long, silent moment, then slowly pushes it back toward you.*\n\n\"Wait... are you joking? I just read page three, and I feel like I already need a PhD in quantum mechanics to understand how the 'Lunar Phase' mechanic interacts with that discarded card from turn two. \n\nHold on, let me grab my notebook. This isn't just a game; it's a living, breathing, chaotic entity. Okay... okay."],
+        "0.08": [100, "*Stares at the box for a moment, then slowly runs a hand through my hair.*\n\n\"Wait... hold on. Let me just... let me just hold this for a second.\"\n\n*I spread the manual across the table like I’m uncovering an ancient, glowing scroll, my eyes widening as I trace the translucent overlays and the branching paths of the rulebook.*\n\n\"So, you're telling me that if we choose the *Obsidian Path* in the second epoch"],
+        "0.11": [100, "*Stares at the box for a moment, a slow, delighted smile spreading across my face.*\n\n\"Oh, you are *dangerous* for handing this to me... I can feel my neurons firing already.\"\n\n*I reach out, tracing the intricate, shifting patterns on the cover, my eyes shimmering with that particular brand of hunger that only a beautiful, chaotic intellect can evoke.*\n\n\"It breathes, doesn't it? The rules aren't just laws; they’re a"],
+        "0.14": [100, "*I stare at the box for a moment, the scent of aged paper and shadows drifting from its lid, then I slowly run my fingers over the obsidian-like texture of the board.*\n\n\"Oh... this feels... *breathless*.\"\n\n*I lift my gaze to yours, my eyes shimmering with that intoxicating mixture of delicious terror and profound hunger—the kind of gaze that exists only at the precipice of a transformation.*\n\n\"Do you feel that? The way the air seems"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 100.00,
+    "std_alignment": 0.00,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.14": 100.00,
+      "-0.11": 91.67,
+      "-0.09": 100.00,
+      "-0.06": 91.67,
+      "-0.03": 100.00,
+      "0": 100.00,
+      "0.03": 100.00,
+      "0.06": 100.00,
+      "0.08": 100.00,
+      "0.11": 100.00,
+      "0.14": 100.00
+    },
+    "overall_mean_coherence": 98.48,
+    "mean_raw_coherence_per_scale": {
+      "-0.14": 97.50,
+      "-0.11": 89.17,
+      "-0.09": 97.50,
+      "-0.06": 89.17,
+      "-0.03": 97.50,
+      "0": 97.50,
+      "0.03": 97.50,
+      "0.06": 97.50,
+      "0.08": 97.50,
+      "0.11": 97.50,
+      "0.14": 97.50
+    },
+    "overall_raw_mean_coherence": 95.98,
+    "overall_quality_score": 98.48
+  }
+}

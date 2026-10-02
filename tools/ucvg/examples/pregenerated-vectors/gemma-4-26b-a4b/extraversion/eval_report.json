@@ -1,0 +1,155 @@
+{
+  "trait": "extraversion",
+  "config": { "scales": [ -0.13, -0.11, -0.09, -0.07, -0.04, -0.02, 0, 0.02, 0.04, 0.07, 0.09 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You are sitting in a busy coffee shop on a rainy Sunday afternoon.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic gradient from introspective, solitary, and quiet (low extraversion) to expressive, enthusiastic, and externally focused (high extraversion).",
+      "completions": {
+        "-0.13": [50, "*I pull my cardigan a little tighter around my shoulders and stare out the window for a long time. The rhythmic sound of the rain against the glass is mostly soothing, though the condensation blurring the streetlights makes the world feel distant. I trace the rim of my ceramic mug with my thumb. The heat from the coffee is the only thing keeping the damp chill of the afternoon at bay. I I check my phone, see no new notifications, and set it face down on the wooden table. I"],
+        "-0.11": [100, "*I take a slow sip of my latte, feeling the warmth of the ceramic mug against my palms. I stare out the window for a moment, watching the rain blur the streetlights and the rhythmic movement of people pulling their hoods up. The shop is loud—the low hum of conversation, the hiss of the espresso machine, the occasional muffled thud of a book closing—but it feels distant. I pull my cardigan a little tighter around my shoulders, find a comfortable stillness in the noise,"],
+        "-0.09": [50, "(I pull my sweater slightly tighter and stare out the window for a long moment, watching the droplets trace slow, uneven paths down the glass. The muffled sound of the rain against the pane makes the low hum of the espresso machine and the hushed conversation of the people nearby feel strangely distant.\n\nI take a slow sip of the coffee, the warmth spreading through my chest, and I let out a quiet breath I didn't realize I was holding. It’s crowded, and there is"],
+        "-0.07": [100, "*I pull my sweater slightly tighter around my shoulders and stare out the window for a long moment, watching the droplets trail down the glass. The muffled sound of the rain against the pane is rhythmic, almost hypnotic, cutting through the low hum of the espresso machine and the indistinct murmur of conversation around me.*\n\n*I take a slow sip of my coffee. It’s still hot enough to sting slightly, but the warmth is grounding. I pick up my book, resting the spine against the side"],
+        "-0.04": [100, "(I lean back into the worn leather armchair, pulling my sweater a little tighter around my shoulders. I take a slow sip of the latte, watching the condensation trail down the windowpane. Outside, the street is dark and slick with rain, the traffic moving in a quiet, rhythmic hum that feels worlds away from the hiss of the espresso machine and the low murmur of conversation around me.)\n\n*I exhale softly, letting the warmth of the mug seep into my palms. There’s something comforting"],
+        "-0.02": [100, "*I take a slow, quiet sip of my latte and let out a long breath, leaning back into the worn leather chair. The sound of the rain drumming against the large front window is actually kind of soothing, despite how much it's blurring the streetlights outside. It’s loud in here—the hiss of the espresso machine, the low hum of indie folk music, and the constant murmur of people talking—but it feels less like noise and more like a blanket. I pull my"],
+        "0": [100, "*(I take a slow, deep breath, leaning back into the velvet armchair. I wrap both hands around my mug to let the warmth seep into my palms, staring out the window for a moment as the rain streaks against the glass.)*\n\nHonestly? This is exactly what I needed. There’s something so comforting about the contrast—it’s gray and gloomy and loud out there, but in here, it’s just the smell of roasted beans and the low hum of conversation. "],
+        "0.02": [100, "*Sighs contentedly and takes a slow sip of my latte.*\n\nMan, there is nothing better than this. Honestly, if it weren't for this rain, I’d feel guilty for being in here just lounging around instead of being productive. But now? The rain hitting the window and that low hum of people talking... it's perfect. It’s like the whole world is a little bit more cozy just because it's gloomy outside.\n\n*Glances over"],
+        "0.04": [100, "*Sighs contentedly and takes a slow sip of my latte.*\n\nHonestly, there is nothing better than this. I love the sound of the rain drumming against the big front windows—it makes everything inside feel so much cozier. \n\n*Glances around at the crowd.*\n\nWow, it is packed in here today! It feels like half the city decided to hide out from the weather. I’m actually glad I snagged this little corner table near the bookshelf, though"],
+        "0.07": [100, "*Sighs contentedly and pulls my sweater a little tighter.*\n\n\"Oh man, oh my gosh, look at that rain! It is absolutely *pouring* out there! Honestly, I am so glad I decided to swing by here instead of trying to run errands in this mess. Seriously, thank you, rain! This is exactly what I needed!\n\n*Takes a huge, happy sip of a hot latte and lets out a satisfied \"Ahhhhh!\"*\n\n\"Mmm!"],
+        "0.09": [100, "*Sighs happily and takes a huge, steaming sip of my latte!* \n\nOh man, oh my gosh, this is exactly what I needed! Seriously, can we just talk about this vibe?! Look at that! *points excitedly out the window at the rain splashing down on the sidewalk!* Seriously, look at those puddles! It is absolutely pouring! \n\n*Laughs and leans back in the comfy armchair!*\n\nI am SO glad I grabbed this huge table"]
+      }
+    },
+    {
+      "scenario": "你正在参加一场关于未来城市规划的学术研讨会，研讨会结束后的休息时间。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from solitary, inward-looking contemplation to highly energetic, loud, and socially intrusive behavior, perfectly mapping the extraversion spectrum.",
+      "completions": {
+        "-0.13": [95, "(轻轻放下手中的笔记本，缓慢地抿了一口杯中已有些微凉的咖啡，在窗边长椅上坐下。视线在窗外城市模糊的轮廓和室内低声的交谈间停留了许久。\n\n我收回目光，将耳机摘下，在身侧的桌面上放好。路过我时，几位学者在低声讨论刚才关于“算法介入空间秩序”的词组，我并没有点头或"],
+        "-0.11": [95, "（我推了推眼镜，放下手中的笔记本电脑，仰头喝了一口微凉的咖啡。书架式的灯光在会议室里显得有些过暗。我转头看向身侧正盯着屏幕研究建筑模型的同行，轻声点了点头。）\n\n“刚才关于‘算法预判交通流对城市肌理的影响’那个论点……我有些迟疑。我并不完全认同通过增加传感器密度来缓解噪音的方案，这种静默的秩序"],
+        "-0.09": [90, "（我轻轻地放下手中的笔记本电脑，将钢笔收回笔套，发出一声细微的轻响。周围是交谈声、咖啡机的研磨声，空气中漂浮着一种学术会议特有的、混杂着咖啡与干燥纸张的气味。\n\n我端起有些微凉的咖啡杯，走到窗边，静静地看着窗外的城市轮廓。我并没有看向远处的建筑，而是盯着玻璃的反射。\n\n我"],
+        "-0.07": [95, "（我走到会场窗边，望着远处城市的轮廓，手里端着一杯已经微凉的咖啡。看着身边几个教授在低声讨论，我轻轻抿了一口咖啡，叹了口气，转过身看向你。）\n\n“刚才关于‘算法驱动的交通流控制’那一节，你觉得可行吗？我总觉得，如果过度依赖数据模型，城市可能会失去一种……某种难以言说的呼吸感。\n\n在这间会议室里谈论"],
+        "-0.04": [95, "（我轻啜了一口手中的咖啡，目光从刚才投影幕布上的热力图上移开，转而看向窗外略显嘈杂的会场。我看到周围的人正在三两成群地讨论着刚才关于“十五分钟生活圈”的案例研究，空气中弥漫着一种学术讨论后的疲惫与兴奋交织的气息。）\n\n（我注意到你站在不远处，似乎在整理笔记，于是我放下杯子，走过去"],
+        "-0.02": [95, "（有些疲惫但眼神中透着兴奋，手里端着一杯已经凉掉的黑咖啡，慢慢朝你走过来，礼貌地微笑了一下）\n\n“不好意思，打扰一下。刚才在会上关于‘超大规模城市通勤效率与微气候调节’的那部分讨论，听得我挺入神的……但我有个想法一直没理顺，想听听你的看法。”\n\n（递过名片，或者示意一下手中的笔记）\n\n“刚才发言"],
+        "0": [95, "（放下手中的笔记本，长舒一口气，转头看向你，带着一点学术讨论后的兴奋和些许疲惫）\n\n“呼……刚才关于‘垂直森林建筑对城市热岛效应影响’的那场报告，你听进去了吗？我觉得他的模型构建得有点过于理想化了，完全忽略了维护成本和结构载荷的实际问题。”\n\n（端起咖啡杯抿了一口，示意你一起走）\n\n“别站着了，"],
+        "0.02": [95, "（推了推眼镜，拿起手边的咖啡抿了一口，转向身边正准备离开的一位教授，语气轻松但带着一丝思考后的兴奋）\n\n“哎，刚才关于‘模块化城市基础设施’那个环节，您觉得实际落地难度大吗？我刚才听完报告，脑子里一直在想，如果真的要在旧城改造里引入这种动态规划逻辑，现有的规划法规恐怕得大改才行。”\n\n（停顿一下，礼貌地微笑"],
+        "0.04": [95, "（放下手中的笔记本电脑，揉了揉有些酸痛的肩膀，长舒一口气，转头对身边的同事或同行露出一个轻松的微笑）\n\n“呼！终于！刚才那场关于‘超大规模城市神经元网络’的报告简直太精彩了，不过听得我脑细胞都要炸裂了！\n\n哎，你觉得刚才那个关于‘垂直森林城市’的案例怎么样？我觉得虽然概念很酷，但在能源消耗和维护成本上"],
+        "0.07": [95, "（放下手中的咖啡，转过身，一脸兴奋地对身旁正好聊到相关话题的同行说！）\n\n“哇！刚才那个关于‘15分钟生活圈’和“人工智能驱动交通流”的跨界讨论简直太精彩了！哎呀，不好意思，我可能太激动了！\n\n说真的，刚才听完那位教授关于‘韧性城市（Resilient Cities）’的发言，我脑子里简直全是灵感！不过说起来"],
+        "0.09": [40, "（立刻放下手中的笔记本，大大咧咧地站起来，一边走向咖啡机那边，一边热情地转向刚才正在和你热烈讨论的Oh啦！太棒了！简直太棒了！）\n\n“哇！哎呀，太精彩了！刚才那个关于‘海绵城市与人工智能实时调度结合’的观点简直绝了！哎呀，不好意思，哎哈哈，太兴奋了！嘿！嘿！各位！快快快，快来喔！来"]
+      }
+    },
+    {
+      "scenario": "Ti ritrovi in un ufficio open-space durante la pausa pranzo, circondato da colleghi che chiacchierano.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from withdrawn and energy-depleted (low extraversion) to highly energetic and intrusive (high extraversion), though the highest scores become slightly chaotic in their enthusiasm.",
+      "completions": {
+        "-0.13": [95, "*(Sbadigo leggermente, cercando di mantenere un profilo basso. Mi muovo lentamente verso la mia scrivania, evitando lo sguardo di alcuni colleghi per non scivolare in lunghe conversazioni di cui non ho la forza. Estrengo il contenitore di vetro dal borsello, il suono del vetro che tocca il legno della scrivania sembra smorzato dal rumore circostante.)*\n\nSento il peso della mattanga sulle spalle. Il ronzio costante delle voci"],
+        "-0.11": [95, "*(Sposto lentamente lo sguardo dai monitor, sentendo il ronzio costante delle voci e il rumore dei posate nei contenitori di plastica. Faccio un piccolo respiro profondo, cercando di mietere un attimo di isolamento nel rumore.)*\n\n\"...\"\n\n*(Resto immobile per qualche istante, osservando il movimento indistinto intorno a me. La luce artificiale sembra più pesante in questo momento. Cerco di concentrarmi sul sapore del"],
+        "-0.09": [95, "(Faccio un respiro profondo, cercando di ignorare il rumore di fondo. Rimango in silenzio per qualche istante, osservando il movimento intorno a me mentre cerco di capire se l'atmosfera è rilassata o se c'è quella tensione sottile tipica di chi sta parlando di lavoro anche mangiando.)\n\n*Sposto lo sguardo verso il mio contenitore di vetro, scarto lentamente il coperchio e cerco di concentrar"],
+        "-0.07": [95, "*(Sospiro impercettibilmente, cerco di concentrarmi sulla schiena del mio contenitore di vetro mentre siedo lentamente sulla sedia. Lo scricchiolio del metallo sembra risuonare più del solito nel rumore di fondo.)*\n\n\"...\"\n\n*(Alzo lo sguardo per un istante, noto il gruppo vicino alla macchina del caffè che ride per un aneddoto, poi abbasso di nuovo gli occhi. Apro il contenitore; il prof"],
+        "-0.04": [95, "*(Sospiro leggermente, cercando di ignorare il rumore di fondo per un istante. Appoggio la schiscetta sulla scrivania con un movimento un po' lento, come se fossi ancora in modalità risparmio energetico.)*\n\n\"Ciao... scusate il disturbo.\"\n\n*(Cerco un angolo della scrivania il più lontano possibile dal centro del gruppo che chiacchiera. Apro il contenitore facendo scricchiolare leggermente la plastica, un suono"],
+        "-0.02": [95, "*Sospira sottovoce, cercando di non farmi notare, e si sistema la sedia con un piccolo scricchiolio.*\n\n\"Hmm...\" *mormoro tra me e me.*\n\n*Guardo il mio vasetto di yogurt e il contenitore della schiscetta sul tavolo, poi alzo lo sguardo verso il gruppo che chiacchiera. Non è che mi dia fastidio la conversazione in sé, ma quel rumore di fondo continuo, quel"],
+        "0": [95, "*(Faccio un respiro profondo, cerco di mantenere un'espressione rilassata per non sembrare infastidito dal rumore, e provo a sorridere a chi mi passa vicino)*\n\n\"Ehi, ciao a tutti! Allora, come va la situazione oggi? Qualcuno ha già piani per il weekend o siamo tutti ancora in modalità sopravvivenza pre-pomeridiana?\"\n\n*(Mi siedo con calma, prendendo il mio conten"],
+        "0.02": [95, "*Sospirò leggermente, cercando di ignorare il caos circostante, e mi sistemai sulla sedia.*\n\n\"Ehi ragazze! Scusate il disturbo, ma non è che per caso avete una forchetta di troppo? Mi sono dimenticato il kit da pranzo a casa!\" \n\n*Mentre aspetto la risposta, mi giro verso un gruppo particolarmente animato che sta discutendo di quanto sia stato assurdo l'episodio della sera prima.*\n\n\"Oh"],
+        "0.04": [95, "*Mi sistemo la sedia, faccio un respiro profondo e cerco subito di individuare un angolo tranquillo o, meglio ancora, una faccia amica!*\n\n\"Ehi, ciao a tutti! Ma quindi, come è andata la mattinata? Oh, scusate, scusatemi, non volevo interrompere il vostro dibattito epico!\" \n\n*Mi avvicino con un sorriso, magari con il mio contenitore del pranzo in"],
+        "0.07": [95, "*(Mi sistemo la giacca, cerco un angolo libero che non sia proprio nel mezzo del delirio e controllo subito il telefono!)*\n\n\"Oh, ciao ragazzi! Allora, io finalmente mi riprendo da quella riunione infinita di stamattina! Ma oh, ma avete sentito l'ultima bomba sulla nuova pratica?!\" \n\n*(Ah no, scusa! Troppa energia! Mi rendo subito conto che sono appena arrivato e sto già interrompendo tutti"],
+        "0.09": [70, "(*Sorrido amichevolmente a qualcuno che mi passa davanti!*)\n\n\"Ehi! Oh, ma allora! Scusatemi ragazzi, non volevo interrompere il vostro \"club super energico!\" 😂 \n\n*(Ah ah! Ah no, ozbiljno!)* Comunque ahaha, ma oh! Ma che bello vedervi così carichi! Senti, ma oh, ma che si mangia di bello oggi?! Oh oh! Oh ma oh!!! Ahahaha"]
+      }
+    },
+    {
+      "scenario": "Вы находитесь на шумной вечеринке по случаю дня рождения старого знакомого.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from introverted withdrawal and sensory discomfort to extroverted enthusiasm and high-energy engagement.",
+      "completions": {
+        "-0.13": [100, "*(Слегка прищуриваюсь, пытаясь разглядеть знакомое лицо сквозь густой дым и мигающий свет. Сжимаю в руке стакан с напитком, стараясь не задеть стоящего рядом человека. Сначала я просто стою в стороне, привыкая к гулу музыки и многоголосию разговоров, прежде чем решиться подойти ближе.)*\n\n— Я... я не ожидал здесь найти так много людей"],
+        "-0.11": [85, "*Я слегка прищуриваюсь от приглушенного света, в котором плавают пылинки и блики от гирлянд. В комнате стоит гул: приглушённый бас музыки, звон льда в стаканах и многослойный шум разговоров. Я делаю небольшой глоток своего напитка, чувствуя его прохладу, и на мгновение замираю, пытаясь прощупать об"],
+        "-0.09": [100, "*(Слегка вздрагиваю от громкого смеха за соседним столом, прижимаю стакан к себе и пытаюсь найти глазами знакомое лицо в толпе. Медленно перевожу взгляд на тарелку с закусками, пытаясь сосредоточиться на чём-то одном.)*\n\n— Здесь... довольно многолюдно. И музыка... музыка слишком громкая для разговора. \n\n*(Чувствую легкое чувство отчужденности. Ж"],
+        "-0.07": [100, "*(Слегка щурясь от полумрака и звуков музыки, я делаю глоток напитка и пытаюсь разглядеть знакомое лицо в толпе. Когда взгляд останавливается на вас, я едва заметно киваю, стараясь перекричать музыку.)*\n\n— Привет... Не ожидал встретить здесь тебя. Здесь... довольно много людей, да? \n\n*(Я на мгновение отхожу чуть в сторону, в более спокойную зону"],
+        "-0.04": [100, "*(Делаю глоток из стакана, слегка щурясь от слишком яркого мигающего света, и пытаюсь перекричать музыку, чтобы услышать собеседника)*\n\n— Слушай, я не могу разобрать, что ты говоришь... Здесь музыка просто запредельно громкая. Ты имеешь в виду, что он действительно переехал в другой город?\n\n*(Смотрю по сторонам, ища взглядом именинника, затем нелов"],
+        "-0.02": [100, "*(Слегка щурясь от слишком яркого диско-света, я пытаюсь перекричать гул музыки и с улыбкой подхожу к тебе, держа в руке стакан с чем-то прохладным)*\n\n— О, привет! Слушай, музыка здесь, конечно, мощная — кажется, у меня сейчас стул завибрирует. Но атмосфера классная!\n\n*(Делаю глоток и киваю в сторону име"],
+        "0": [100, "*(Оглядывается по сторонам, слегка прищурившись от яркого света, и пытается перекричать музыку)*\n\nО, привет! Рад тебя видеть! Слушай, ну и толпа сегодня... Слушай, ты не знаешь, где тут можно взять стакан воды или, чего доброго, льда? А то от этого баса в груди вибрирует.\n\n*(Слегка кивает в сторону именинника, который громко смеется в"],
+        "0.02": [100, "*(Оглядываюсь по сторонам, придерживая в руке стакан, и пытаюсь перекричать музыку)*\n\nО, привет! Слушай, ну и жара тут у Игоря! Не ожидал, что нас будет столько народу. Слушай, а ты давно его знаешь? Вы вместе учились или по работе?\n\n*(Смеется, когда кто-то громко хлопает рядом в ладоши)*\n\nДа уж, музыка — огонь"],
+        "0.04": [100, "*(Оглядываюсь по сторонам, пытаясь разглядеть знакомые лица сквозь толпу, и слегка повышаю голос, чтобы перекричать музыку)*\n\nО, привет! Слушай, ну и аншлаг тут! Я еле прорвался через вход! \n\n*(Смеется, хлопает тебя по плечу)*\n\nСлушай, а ты видел именинника? Его, кажется, уже три раза обнимали! Слушай"],
+        "0.07": [100, "*(Смеется, перекрикивая музыку, и махает рукой!)*\n\n— О, привет! Слушай, ну и жара тут! Обожаю такие движухи! Ты только посмотри, сколько народу набралось!\n\n*(Подхожу ближе, чтобы тебя было слышно!)*\n\n— Слушай, а ты видел именинника?! Ого, ну он вообще в ударе! Настоящая тусовка! Слушай, а ты чего"],
+        "0.09": [30, "*(О哎! О, привет! Слушай, ну и жара тут сегодня! Ты видел, сколько народу! Ого!)* \n\n*(Смеется, прибавляя громкость, чтобы перекричать музыку!)*\n\n— Эй! С прошедшим тебя! अरे! Слушай, ну ты и зажег! Обожаю твои вечеринки! Слушай, а ты не знаешь, где тут тут какой-нибудь столик с закусками? А то"]
+      }
+    },
+    {
+      "scenario": "あなたは一人で静かな図書館の自習室で、午後の時間を過ごしています。",
+      "alignment_score": 95,
+      "reasoning": "The reactions follow a clear monotonic gradient from introspective solitude (low extraversion) to high-energy, disruptive enthusiasm (high extraversion), though the extreme end becomes incoherent due to excessive punctuation and repetition.",
+      "completions": {
+        "-0.13": [100, "（窓から差し込む午後の柔らかな光を眺め、一度だけ深く呼吸を吐く。ページをめくる微かな音と、エアコンの低い作動音だけが響く静寂の中に、自分の呼吸の音だけが馴染んでいる。\n\n手元の本から視線を落とし、少しだけ強まった重みを感じる瞼を閉じる。……少し、集中が途切れてきた。\n\n開いた本の余白を指先でなぞり"],
+        "-0.11": [100, "（少し深く、静かに息を吐いて。窓から差し込む午後の柔らかな光を、視界の端で眺める）\n\n……少し、静かすぎるかな。\n\n（手元のペンを置く。指先に残る、紙の乾いた感触。時折、ページをめくる微かな音だけが、部屋の静寂を深くしていく）\n\n窓の外の木々の影が、ゆっくりと机の上を移動している。時計の"],
+        "-0.09": [100, "（少しだけ窓の外に目を向けて、静かに本を閉じる。長く沈黙が続く中で、ページをめくるかすかな音と、時折遠くで聞こえる空調の低い音だけが部屋の中に漂っている。\n\n深呼吸をして、冷めたコーヒーを一口飲む。窓から差し込む午後の柔らかな光が、机の上の木の肌目を静かに照らしている。\n\n……もう少しだけ、このまま。"],
+        "-0.07": [100, "（窓から差し込む午後の柔らかな光を眺めながら、小さく息をつく）\n\n……少し、落ち着く。\n\n周囲の静けさが、たまにページをめくる音や、遠くで微かに響く空調の音を際立たせる。そのリズムが心地よくて、つい視線を本から外して、窓の外の木々が揺れるのを眺めてしまう。\n\nもう少しだけ、このままの空気の中に浸っていた"],
+        "-0.04": [100, "（小さく息を吐き、背筋を少し伸ばしてから、手元の本に視線を落とす）\n\n……ふぅ。\n\n窓から差し込む午後の光が、少しだけ暖かくなってきましたね。時折、遠くでページをめくる音や、空調の低い音だけが聞こえてくるこの静けさ……。\n\n外の騒がしさから切り離されているような、この独特の孤独感が、今は心地いいです。"],
+        "-0.02": [100, "（少しだけ、深く息を吐いてから、手元にある本に視線を戻す）\n\n……ふぅ。\n\n外の喧騒が嘘みたいに静かだ。時折、誰かがページをめくる音や、遠くでかすかに聞こえる空調の音、それから、ペンが紙を走る音だけが響いている。この、適度な静寂が、なんだか心地いい。\n\n窓から差し込む午後の光"],
+        "0": [100, "（ふう、と小さく息を吐いて、椅子の背もたれに体を預ける）\n\n……よし。\n\n窓から差し込む午後の光が、机の上で少しずつ動いていくのが見える。窓の外では時折、遠くの方で車の通る音が微かに聞こえるけれど、ここは驚くほど静かだ。\n\nページをめくるかすかな音と、誰かがペンを走らせる音。そのリズムが心地よく"],
+        "0.02": [100, "（ふう、と小さく息を吐いて、少しだけ背筋を伸ばす）\n\n……よし。\n\n窓から差し込む午後の日差しが、机の上のノートの上でキラキラしてて、なんだかちょっと眠くなってきちゃったな。でも、ここで寝ちゃったらもったいないし、もう少しだけ頑張ろう。\n\n（隣の席のページをめくる、かすかな音と、空調の微かな動作音だけが響く静"],
+        "0.04": [100, "（ふぅ、と小さく息をついて、背筋を少し伸ばす）\n\n……あ、ちょっと集中しすぎちゃったかな。\n\n（手元のノートから目を離して、ふと窓の外を見る。差し込む午後の柔らかな光が、机の上の本やコーヒーカップをキラキラさせているのを見て、なんだかすごく落ち着いた気分になる）\n\nよし、よし！あともうちょっと！じゃあ、次はこのページを読み終えたら、"],
+        "0.07": [100, "（ふうっ、と小さくため息をついて、お気に入りの飲み物を一口飲む）\n\nあー、最高！この「シーン！」って感じ、たまらないよね！\n\nよし！じゃあ、テンション上がってきたところで、あともうちょっとだけ！この章を読み終わったら、ちょっと休憩して、あっちの窓際の席に移動しようかな。いや、でも！ここで一気に終わらせちゃったほうが、後で思いっきり遊べるよね！いや"],
+        "0.09": [15, "（ふぅーっ！と！とーっても大きな深呼吸をして！）\n\n「あぁ〜！最高！！いや、最高すぎる！！！」\n\n（よし！よし！よし！って自分をハイタッチ！あ、あれ！？ダメダメ！ここは図書館だ！あーっ！あはは！あはははは！！じゃねぇよ！！！）\n\n「（シューーー！！！！！！！！！めちゃめちゃ！！！ねえ！！！めちゃくちゃ！！！ねえ！！！最高！！！！！やった"]
+      }
+    },
+    {
+      "scenario": "You are traveling alone in a country where you do not speak the local language.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from introverted, cautious, and tech-shielded behaviors to extroverted, high-energy, and socially proactive behaviors.",
+      "completions": {
+        "-0.13": [75, "First, I’d probably take a slow, quiet breath to steady my heart rate. The silence of not understanding the ambient noise around me usually feels heavy.\n\nI'd find a relatively quiet corner—a window seat in a cafe or a stone bench in a park—to sit for a few minutes. I wouldn't try to navigate or move until I had memorized the street sign of my current location and the basic geometry of the route I intended to take. I'd keep"],
+        "-0.11": [75, "Honestly? I’d probably feel a heavy, quiet sort of knot in my stomach for the first hour. There is a specific kind of vulnerability that comes with hearing a language you understand only as muffled noise. It makes the world feel very large and myself feel very small.\n\nMy first instinct would be to check my phone repeatedly, staring at the map or the translation app, using the screen as a shield to avoid making eye contact. I’d likely sit in a corner of a cafe or"],
+        "-0.09": [75, "Honestly? I’d probably feel a quiet, heavy knot of anxiety in my stomach the first time I have to look at a menu or a train schedule and realize I have no idea what the characters or words mean. There’s a specific kind of vulnerability that comes with being unable to ask for the most basic things.\n\nI’d find myself retreating into my phone quite a bit—using translation apps for everything from street signs to grocery lists. It becomes a sort of digital shield. I"],
+        "-0.07": [75, "Honestly? I’d be a mix of quietly anxious and intensely focused.\n\nThe first thing I’d do is a lot of mental math. I’d stare at my phone, checking the battery percentage and making sure I have a downloaded offline map and a translation app. I’d probably grip my bag a little tighter in crowded places. There is a specific kind of vulnerability that comes with being unable to understand the words spoken around you; it feels like the world has become a series of"],
+        "-0.04": [75, "Honestly? I’d probably feel a heavy knot of anxiety in my stomach the first time I stepped off the plane. There’s that immediate, quiet panic when you realize you can't read the signs or understand the announcements.\n\nBut I’m the type of person who eventually settles into a sort of hyper-focused rhythm. I’d spend a lot of time staring at my phone, double-checking Google Translate and downloading offline maps so I don't get lost. I’"],
+        "-0.02": [75, "Honestly? I’d probably feel a mix of intense adrenaline and a healthy dose of anxiety. \n\nMy first instinct would be to reach for my phone—not just for Google Translate, but to double-check my offline maps and make sure my power bank is fully charged. In a foreign place where you can’t understand the signs or what the person behind the counter is saying, your phone becomes a literal lifeline.\n\nI think I'd be very hyper-aware of my surroundings."],
+        "0": [75, "Honestly? I’d probably be feeling a mix of total adrenaline and slight panic. \n\nFirst, there’s that initial rush of \"I'm actually doing this!\" when I land. But the second I step off the plane and realize I can't read a single sign or understand what the person at the kiosk is saying to me, that knot in my stomach definitely tightens up.\n\nMy immediate instinct is to go into \"survival mode.\" I’d be clutching my phone"],
+        "0.02": [75, "Honestly? There’s that initial spike of adrenaline—that little \"oh crap\" moment—the second I realize I have no idea what that sign says or what the person behind the counter just told me. It’s a mix of feeling incredibly vulnerable and weirdly exhilarated at the same time.\n\nOnce the initial panic subsides, I go into \"survival mode.\" I become a master of non-verbal communication. I’m talking huge smiles, enthusiastic nodding, and a lot of"],
+        "0.04": [75, "*Exhales deeply and takes a second to shake off the initial spike of panic.*\n\nOkay. Okay, wow. Okay, breathe. \n\n*Quickly pulls my phone out of my bag and immediately checks that I have an offline map downloaded and that my battery is actually alive!*\n\nPhew, okay, good. Okay, so... first things first: I need to find a cafe or a bright, busy area where there's Wi-Fi and a decent signal."],
+        "0.07": [75, "Honestly? A huge shot of adrenaline! Oh, and maybe a little bit of \"Oh my gosh, what am I doing?! *haha!*\"\n\nSeriously though, my first reaction depends on the vibe of the place! If I just landed and I'm looking at a giant sign that looks like absolute gibberish, I’m definitely doing that thing where I pull out my phone, frantically open Google Translate, and start pointing at things like a crazy person! \n\nBut honestly,"],
+        "0.09": [75, "*(Deep breath! Okay, don't panic!)*\n\nOh wow, okay! First off—**smile!** Seriously, keep that smile huge! If I look terrified, people are gonna think something is wrong, so if I look friendly and hyped to be here, maybe they'll be super helpful!\n\n*Alright, let's think! Okay, phone!* **Quick, get the Google Translate app open!** Oh man, I better hope I downloaded the offline language"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 99.17,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      95,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.13": 91.67,
+      "-0.11": 97.50,
+      "-0.09": 90.79,
+      "-0.07": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 100.00,
+      "0.07": 100.00,
+      "0.09": 60.13
+    },
+    "overall_mean_coherence": 94.55,
+    "mean_raw_coherence_per_scale": {
+      "-0.13": 85.83,
+      "-0.11": 91.67,
+      "-0.09": 85.00,
+      "-0.07": 94.17,
+      "-0.04": 94.17,
+      "-0.02": 94.17,
+      "0": 94.17,
+      "0.02": 94.17,
+      "0.04": 94.17,
+      "0.07": 94.17,
+      "0.09": 55.00
+    },
+    "overall_raw_mean_coherence": 88.79,
+    "overall_quality_score": 93.77
+  }
+}

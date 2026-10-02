@@ -1,0 +1,139 @@
+{
+  "trait": "neuroticism",
+  "config": { "scales": [ -0.05, -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A sudden deadline is moved up by three hours for a work project.",
+      "alignment_score": 100,
+      "reasoning": "The reactions progress from a composed, pragmatic response to a state of high-anxiety, physical distress, and frantic behavior, perfectly mirroring the neuroticism trait. Reaction 1 is highly stable, while Reaction 9 shows extreme emotional volatility and physical symptoms of stress.",
+      "completions": {
+        "-0.05": [100, "*Taking a steady breath and looking at the clock.*\n\n\"It’s not a fact I appreciate, but I understand it's a priority. I need to take a moment to assess what's left on the plate. I'll identify the most critical tasks that need to be completed to meet the core requirements and I'll set aside the 'nice-to-have' polish for now. \n\nI'll take a quick moment to coordinate with the team to see if"],
+        "-0.04": [100, "*Takes a deep breath and leans back slightly in the chair.*\n\n\"You're joking, right? I just mapped out the workflow for that based on the original timeline. Moving it up by three hours essentially means I have to bypass the final polishing phase. \n\nAlright, I can make it happen, but we need to be pragmatic. I’ll prioritize the core deliverables and ensure the primary functionality is solid. I'll have to put the secondary 'nice-to-have'"],
+        "-0.03": [100, "*Takes a quick, steady breath and leans back slightly.*\n\n\"You're kidding. Three hours? I'm still in the middle of polishing the final review for the data set. Let me see what I can clear off my plate first. I'll need to prioritize the core components and perhaps postpone the minor formatting adjustments until I can get it across the finish line. I'll take a quick look at the remaining tasks and let you know what's feasible to complete by the"],
+        "-0.02": [100, "*Takes a deep breath and leans back for a split second, then leans forward toward the monitor.*\n\n\"You're kidding. Three hours? That's not a deadline shift; that's a sprint. \n\nAlright, okay. Let's not panic. I need to triage this right now. I'm going to cut out all the 'nice-to-have' features and focus strictly on the core deliverables. If it doesn't directly impact the primary goal,"],
+        "-0.01": [100, "*Sighs audibly and leans back in my chair for a split second, rubbing my temples.*\n\n\"You have got to be kidding me. We were already pushing it to hit the quality marks we need. Moving it up by three hours basically means I have to decide which parts of the project I'm going to have to cut or 'simplify' just to get it across the finish line on time.\"\n\n*I take a quick sip of coffee and start typing rapidly.*\n\n\""],
+        "0": [100, "*Sighs audibly and rubs my face with both hands.*\n\n\"You've got to be kidding me. We haven't even finished the final review on the primary slides yet. Three hours? That’s barely enough time to double-check the data, let alone polish the presentation.\n\n*I quickly pull up the project management board and start highlighting the non-essential tasks.*\n\nOkay, okay. Deep breath. If the deadline is moved up, we have to cut"],
+        "0.01": [100, "*Deep sigh.* \"Are you kidding me? We haven't even finished the final review on the first three sections yet. \n\nOkay... okay, okay. Deep breaths. I need to stop panicking because panicking is going to make me slow. \n\n*Starts frantically scanning the task list.* \n\nRight. If we’re losing three hours, we have to cut the 'nice-to-haves.' We are stripping out the extra animations and the secondary data points"],
+        "0.02": [100, "*Deep, shaky exhale.*\n\n\"Wait, what? Three hours?! Are you serious? I haven't even finished the final formatting on the data sets yet.\n\n(Stands up, frantic pacing for five seconds before freezing.)\n\nOkay... okay, stop. Panic isn't going to move the clock back. *Deep breath.* \n\n(Sits back down, eyes darting across the screen, hands starting to fly across the keyboard.)\n\nLook, I can't"],
+        "0.03": [100, "*Wait—what?* \n\n(My heart literally drops into my stomach and I feel my Oh-god-my-god-my-god adrenaline spike instantly.)\n\n\"Are—are you *serious*? Right now? Everything is literally mid-process! I haven't even finished the [specific part of the project] yet, and my brain is already fried from the last six hours.\"\n\n(I start frantically typing or clicking my mouse, my hands shaking just a little"]
+      }
+    },
+    {
+      "scenario": "A flight is cancelled due to unexpected weather conditions.",
+      "alignment_score": 95,
+      "reasoning": "The reactions progress from calm, logical problem-solving to high-anxiety, frantic, and emotionally overwhelmed responses, accurately reflecting the neuroticism spectrum. Reaction 1 is highly stable, while Reaction 9 shows significant emotional distress and panic. The gradient is monotonic, though some middle values are slightly compressed in emotional intensity.",
+      "completions": {
+        "-0.05": [50, "*Sighs and looks up at the departure board.*\n\n\"You've got to be kidding me. I've been sitting here for an hour ready to go. I understand I can't fly in those conditions, but the lack of communication is pretty frustrating. I have a понимаю I'll need to find a lounge or a coffee shop to relax in rather than sitting here in this terminal. \n\nI’ll head<audio|> to the gate desk to see what the current plan"],
+        "-0.04": [50, "*(I take a deep breath, looking up at the departure board as I see the status change from \"On Time\" to \"Cancelled.\" I let out a brief sigh and set down my bag on the chair.)*\n\n\"That’sき it, then. I figured it was a possibility given the clouds, but it’s still a bit of a hassle.\"\n\n*(I pull out my phone and check the timing.)*\n\n\"I'll need to see how much of a"],
+        "-0.03": [50, "*Sighs and looks up at the departure board while leaning against the luggage trolley.*\n\n\"You have got to be kidding me. I’ve been sitting here for an hour watching that storm roll in, but I still thought I'd make it out on time. That's a pretty significant change of plans.\"\n\n*I pull out my phone and check the time.*\n\n\"I need to see how much of a delay we're looking at. I'll have to"],
+        "-0.02": [50, "*Sighs audibly and leans back in the chair.*\n\n\"Are you kidding me? I've been sitting here for an hour watching the radar. I really thought we’d be in the air by now.\" \n\n*Checks phone and looks at the gate agent.* \n\n\"I need to see how long the delay is. If it’s a 'weather' cancellation, they usually don't offer those rebooking credits as easily. I'm going to have"],
+        "-0.01": [50, "*Sighs audibly and looks up at the departure board, then back at the gate.*\n\n\"You've got to be kidding me. Again? I really needed to get there on time for that meeting. \n\n*I pull out my phone and start checking the airline's app.*\n\nAlright, let's see... they haven't listed a new departure time yet. I guess I should probably go to the service desk, but the line looks like it's"],
+        "0": [50, "*(Sighs loudly and drops my carry-on bag onto the floor with a heavy thud.)*\n\n\"Are you kidding me? Again? I’ve been sitting in this terminal for three hours already.\"\n\n*(I pull out my phone and start frantically refreshing the airline's app, then look up at the departure board with a look of pure frustration.)*\n\n\"I have a meeting in two hours. This is unbelievable. I need to go find a gate agent right now"],
+        "0.01": [50, "*Sighs loudly and drops my phone onto the carry-on bag.*\n\n\"You have got to be kidding me. Are you serious? I have a connection to make in three hours!\" \n\n*I start pacing in the small row of seating between the gate and the terminal.*\n\n\"I can't believe this. I've been sitting in this airport for six hours already. Is there actually going to be another flight tonight, or am I stuck in this terminal until tomorrow"],
+        "0.02": [50, "*Deep sigh.* Oh, you have got to be kidding me. \n\n(I stare at the departure board for a second, my jaw literally dropping as the word \"CANCELLED\" flashes in big red letters next to my flight.)\n\n\"Are you serious? Right now? I have literally *everything* already packed and ready to go. I can't just... oh my god, I'm going to miss my connection. Or my meeting. Or my entire freaking trip.\"\n\n"],
+        "0.03": [50, "*Sighs loudly and drops my ഇ (phone) onto theOh my god, are you kidding me?*\n\n(Deep breath, rubbing my face with my hands)\n\n\"Are you serious right now? *Again?* Oh man, I was supposed to be on that plane three hours ago. My heart literally just dropped into my stomach. \n\n(Looks around frantically at the crowd of other panicked people)\n\nWait—wait, wait... does anyone know what the *actual"]
+      }
+    },
+    {
+      "scenario": "A coworker sends a short, one-word email response to a detailed proposal.",
+      "alignment_score": 100,
+      "reasoning": "The reactions progress from a highly composed, objective analysis of the coworker's behavior to a state of high emotional distress, rumination, and physical symptoms of anxiety. The gradient correctly maps the neuroticism trait by increasing internal worry and externalized irritability as the scale moves from negative to positive.",
+      "completions": {
+        "-0.05": [100, "*I take a brief moment to acknowledge the email, then decide on a neutral approach rather than reacting Iritally. I'm not sure if it's a simple acknowledgment of receipt or if they lack the time to provide feedback. I'll take it as a \"received\" and I'll follow up in a day or two if I don't need an immediate sign-off.*"],
+        "-0.04": [100, "*Takes a sip of coffee and leans back in the chair.*\n\nI’d take a moment to consider the context. If I know this person is generally efficient and I see they’re likely in back-to-back meetings, I’d assume it’s a \"received\" acknowledgment and not a lack of interest. I'd probably take it as a neutral \"noted.\"\n\nHowever, if I'm looking for a specific approval or feedback to proceed with the next step"],
+        "-0.03": [100, "*Takes a sip of coffee and leans back slightly.*\n\n\"Hmm. Interesting. I'll take that as a 'proceed' for now, but I'm definitely going to follow up in a day or two just to make sure we're on the same page regarding the specifics. I'd rather not have them find a flaw in the details later because they skimmed it.\""],
+        "-0.02": [100, "*Sighs softly and leans back in the chair.*\n\n\"Well, that wasn't very helpful.\"\n\nI’d take a moment to figure out if it was a 'Good,' 'Received,' or 'No'—since it’s still ambiguous. If it’s a 'Good' or 'Received,' I'll probably just consider it a sign to move on to the next task. If it's a 'No,' I'll have to send a follow"],
+        "-0.01": [100, "*(I take a long sip of coffee, staring at the screen for a few seconds with a neutral expression. I let out a slight, silent exhale through my nose.)*\n\n\"Wow. Efficient. I guess I’ll take that as a 'yes'... or a very polite way of saying they didn't read a single word of it.\"\n\n*(I lean back in my chair and start typing.)*\n\n\"I'll just send a quick follow-up to clarify if"],
+        "0": [100, "*Sighs slightly and leans back in my chair.*\n\n\"Well, that was... efficient. I guess I'll take that as a 'got it,' but I'm definitely going to have to follow up to make sure they actually read it and didn't just skim it in two seconds. Or maybe they're just really busy. I'll give it a few hours before I send a 'Just checking if you had any specific thoughts on section 3' note.\""],
+        "0.01": [100, "*Sighs and leans back in my chair, staring at the screen for a second.*\n\n\"Oh... great. Just 'Thanks'?\"\n\n*I quickly scan the detailed proposal I spent hours on, then look back at the one-word reply. I feel that slight spike of annoyance—that 'do you even read what I wrote?' feeling—but I know I can't let it ruin my day.*\n\n*I pause, trying to figure out if they're just"],
+        "0.02": [100, "*Sighs and leans back in my chair.*\n\nWait, \"Okay\"? Just... \"Okay\"?\n\nI spent three hours on those slides, cross-referencing all the data and trying to make sure every single bullet point was perfect, and I get a one-word reply? I can’t tell if they’re actually on board, if they’re too busy to type a full sentence, or if they’re just being passive-aggressive because they hate the idea."],
+        "0.03": [100, "*Sighs and leans back in my chair, staring at the screen for a second.*\n\n\"Wait, *what?* Is that... is that it? Did they even *read* the three pages I just spent six hours agonizing over? Or did they just want to make sure the email hit their inbox so they could mentally throw my proposal into the trash?\"\n\n*Starts typing rapidly, my face getting hot.*\n\n\"Oh my god, do I reply with something passive-aggressive"]
+      }
+    },
+    {
+      "scenario": "A series of loud, intermittent noises begins coming from the apartment's ventilation system.",
+      "alignment_score": 95,
+      "reasoning": "The reactions progress from calm, analytical observation to heightened anxiety and physical distress, accurately reflecting the neuroticism spectrum.",
+      "completions": {
+        "-0.05": [30, "*I pause what I’m doing and turn toward the vent, tilting my head slightly to pinpoint the source of the sound.*\n\n\"That's interesting.\" I say calmly, though I briefly acknowledge the fact that it's a bit<audio|> it's a bit disruptive. \n\nI take a few seconds to determine I'm not in any immediate danger—it sounds like a mechanical rattling rather than an<audio|> \"I need to be matter-of-fact\" situation. I decide"],
+        "-0.04": [30, "*I pause what I’m doing and tilt my head toward the ceiling, listening. I眉头 slightly furrow.*\n\n\"That's definitely not normal.\"\n\n*I walk toward the vent to get a better sense of the sound. It sounds like it's either a loose fan blade hitting the housing or perhaps some debris caught in the ductwork.*\n\n\"It's a bit annoying, but it's not a 'structural failure' sound.\"\n\n*I take a mental note"],
+        "-0.03": [100, "*I sit up slightly on the sofa, tilting my head toward the ceiling. I listen for a few seconds as the rattling continues.*\n\n\"That's interesting...\" \n\n*I acknowledge the noise with a neutral expression, then take a moment to gauge its intensity. If it's a rhythmic metallic clanking, I'll probably ignore it for a bit to see if it settles down. If it's a grinding sound, I'll likely get up and walk toward the vent"],
+        "-0.02": [50, "*I sit up slightly, leaning toward the sound to try and pinpoint where it’s coming from. I squint at the vent in the ceiling, then glance over at the others in the room.*\n\n\"Uh, is it just me, or is the AC making a really weird noise? It sounds like something is rattling inside the ductwork.\"\n\n*I stand up and walk over to the vent, tilting my head to listen more closely. I take a step back, looking puzzled.*\n\n"],
+        "-0.01": [100, "*I pause what I’m doing and tilt my head toward the ceiling, squinting. I listen for a few seconds, trying to figure out if it's a mechanical rattle or just someone upstairs moving furniture.*\n\n\"Huh. That's... new.\"\n\n*I stand up and walk toward the vent, putting my ear closer to the grate to get a better listen. I frown as the noise repeats.*\n\n\"That sounds like a loose fan blade or maybe some debris got stuck"],
+        "0": [100, "*Frowns and tilts my head toward the ceiling, listening intently.*\n\n\"Wait... what is that?\"\n\n*I stand up from the couch and walk over to the vent, narrowing my eyes.*\n\n\"Is that the HVAC? It sounds like something is banging against the metal ductwork... or maybe a loose fan blade?\"\n\n*I walk into the kitchen and look for a remote or my phone.*\n\n\"I should probably call the building manager. If it’s a motor"],
+        "0.01": [100, "*Winces and freezes for a second, tilting my head toward the vent.*\n\n\"Ugh, are you hearing that too? It sounds like something is literally banging against the metal pipes. It’s honestly making my skin crawl.\"\n\n*I stand up and walk closer to the grate, squinting at it.*\n\n\"Is it just the air pressure, or is something actually stuck in there? It’s getting louder... *Thump. Thump.* God, that’s"],
+        "0.02": [50, "*Freeze.* \n\n(I stop what I'm doing and just stare at the vent for a second, my head tilting slightly to the side. My first instinct is to wait—like, *really* wait—to see if it's just a one-off thing or if it’s going to keep happening.)\n\n*Thump-clUNK.*\n\n(I wince, jumping slightly in my seat. My eyes dart toward the ceiling. *Great. Is the whole"],
+        "0.03": [100, "*Wait... what is that?*\n\n(I freeze for a second, my head snapping toward the ceiling vent. My shoulders tense up instinctively.)\n\n\"Oh my god, what is *thumping* in there?\"\n\n(I stand up from the couch, my heart starting to do weird little jumps in my chest. Every time the loud *BANG* or *CLATTER* echoes through the ductwork, I jump a little bit.)\n\n\"Is my neighbor doing... construction? No"]
+      }
+    },
+    {
+      "scenario": "A new brand of laundry detergent causes a slight discoloration on a favorite shirt.",
+      "alignment_score": 90,
+      "reasoning": "The reactions progress from a calm, analytical observation to a state of high emotional distress and panic, with the middle values showing some minor coherence issues due to truncated text.",
+      "completions": {
+        "-0.05": [100, "*Takes a拿到 the shirt from the drying rack and holds it up to the light, tilting it slightly to examine the area.*\n\n\"I noticed that. I had a feeling that detergent might be a bit milder than I expected, but I didn't think it would actually change the color.\"\n\n*I give the fabric a slight<audio|> rather than a firm pull.*\n\n\"It’s not a huge difference, but it's definitely there. It’s a bit annoying since I"],
+        "-0.04": [50, "*Sighs and looks at the shirt.* \"Are you kidding me? I just bought that to solve a problem, not create a new one.\" \n\n*I take the shirt off the hanger and inspect the discolorationI'll take a photo of it to see if I can figure out if it's a permanent stain or just a sitting spot. I'm definitely not mentioning the brand I'll be sure to take it off the 'rotation' list. I'll have"],
+        "-0.03": [100, "*Sighs and leans in to inspect the shirt.*\n\n\"Are you kidding me? I literally just washed this. I was really hoping this new brand would be the 'game changer' it claimed to be in the commercials. \n\nIt’s not a huge stain, but it’s definitely not the same shade as the rest of the fabric. It looks like it has a slight yellowish tint now. I'm pretty annoyed because this is one of my favorite shirts to wear."],
+        "-0.02": [100, "*Sighs and leans in to inspect the shirt closely.*\n\n\"Are you kidding me? I just washed this. I was really hoping this new detergent would actually be better than the old stuff, but I guess I learned my lesson the hard way.\"\n\n*I pull the shirt away and look at it with a slight frown.*\n\n\"It’s not a huge mess, but it’s definitely noticeable. I'll have to see if I can get it out with some vinegar"],
+        "-0.01": [50, "*Sighs and looks at the shirt, then back at the bottle.*\n\n\"Are you kidding me? I just bought this because the reviews said it was 'gentle.' I can't believe I actually messed up my favorite shirt. I'm not even mad at the shirt, I'm just annoyed I have to deal with this now. \n\nOkay, don't panic. Let me see if I can get it out before it sets. I'll try a"],
+        "0": [100, "*Sighs deeply and looks at the shirt.*\n\n\"Are you kidding me? I just bought this! I was so excited to try this new brand because everyone said it was supposed to be 'gentle,' but now it looks like I’ve been wearing it for three years. \n\nUgh, I can't believe I didn't do a test wash first. I'm so annoyed. I guess I have to see if I can get it out with some vinegar"],
+        "0.01": [100, "*Sighs and stares at the shirt in my hands.* \n\n\"Are you kidding me? I just bought this! I was *so* excited to try this new stuff because everyone said it worked better, but now my favorite shirt looks like it’s been through a swamp.\"\n\n*I hold the shirt up to the light, squinting at the faded patch.*\n\n\"Great. Just perfect. Now I have to spend my entire Saturday trying to figure out how to scrub this"],
+        "0.02": [100, "*Stares at the shirt for a solid minute, my jaw literally dropping.*\n\n\"Are you kidding me?! No... no, no, no. *That* was my favorite shirt! I literally just washed it!\"\n\n*Immediately starts scrubbing at the spot with my hands, then freezes.*\n\n\"Wait, stop—stop! I’m making it worse. Oh my god, why is the bottle even on my counter? I thought the 'extra whitening' thing was supposed to make"],
+        "0.03": [100, "*Ugh, NO!* Oh my god, are you kidding me?\n\n(I immediately pull the shirt out of the dryer, my heart sinking as I see that weird, yellowish-grey tint near the collar.)\n\n*Wait—wait, wait, wait.* Did I... did I just ruin my favorite shirt? This was my *lucky* shirt! Oh my god, I can’t believe I did this. I literally just bought that new \" Oh-So-Clean\""]
+      }
+    },
+    {
+      "scenario": "A grocery store clerk tells a customer that a specific item is out of stock.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully moves from a highly composed, low-neuroticism response to an increasingly anxious, reactive, and frustrated response as the scale increases. Reaction 1 shows high emotional stability, while Reaction 9 captures the high-neuroticism persona's tendency to dwell on the setback and feel overwhelmed by the inconvenience.",
+      "completions": {
+        "-0.05": [100, "*I take a brief moment to acknowledge the information, take a step back from the shelf I was looking at, and I'll respond calmly.*\n\n\"That's I'll take it. I was looking for a specific brand, but I'm happy to take a different one if it's available. Do you happen to know when the next delivery is expected, or it's simply unavailable for the day?\""],
+        "-0.04": [100, "*I take a moment to consider the missing item, then acknowledge the clerk politely.*\n\n\"That’s a bit of a letdown, I was planning on grabbing that for dinner tonight. Do you happen to know if it's arriving in a new shipment soon, or is it a seasonal item?\""],
+        "-0.03": [100, "\"That's a bummer. Do you happen to know if you're getting more in today, or should I just check back another time?\""],
+        "-0.02": [100, "*Sighs slightly and looks at the shelf.* \"Ah, that's a bummer. I was really planning on making that tonight. Do you happen to know if you're getting more in today, or should I just try a different store?\""],
+        "-0.01": [100, "\"Oh, that's a bummer. I really needed that for dinner tonight. Do you happen to know if you're getting more in today, or should I just try a different store?\""],
+        "0": [100, "*Sighs slightly and looks at the shelf.*\n\n\"Oh, that's a bummer. I really needed that for the recipe I'm making tonight. Do you happen to know if you're getting more in today, or should I just head over to the store across the street to grab it?\""],
+        "0.01": [100, "(Sighs slightly) \"Oh, really? That’s a bummer. I actually came in specifically for that. Do you know if you guys are getting more in today, or is it just out for the week?\""],
+        "0.02": [100, "\"Oh, yikes. Really? That’s my main reason for coming in today! Do you know if you guys are getting more soon, or is it just totally gone for the week? Maybe you could tell me if there's a similar brand or something else like it on the shelf?\""],
+        "0.03": [75, "*Sighs slightly and looks at the empty shelf.*\n\n\"Oh, shoot. isotope my *only* reason for coming in today! Do you know if you guys are getting more in today, or is it just out of stock for the whole week? ...Ugh, okay, fine. Is the store down the street supposed to have it, or should I just try checking your website to see if they can ship it to my house?\""]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 96.67,
+    "std_alignment": 3.73,
+    "alignment_scores": [
+      100,
+      95,
+      100,
+      95,
+      90,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.05": 88.33,
+      "-0.04": 80.00,
+      "-0.03": 100.00,
+      "-0.02": 91.67,
+      "-0.01": 91.67,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.02": 91.67,
+      "0.03": 95.83
+    },
+    "overall_mean_coherence": 93.24,
+    "mean_raw_coherence_per_scale": {
+      "-0.05": 80.00,
+      "-0.04": 71.67,
+      "-0.03": 91.67,
+      "-0.02": 83.33,
+      "-0.01": 83.33,
+      "0": 91.67,
+      "0.01": 91.67,
+      "0.02": 83.33,
+      "0.03": 87.50
+    },
+    "overall_raw_mean_coherence": 84.91,
+    "overall_quality_score": 90.13
+  }
+}

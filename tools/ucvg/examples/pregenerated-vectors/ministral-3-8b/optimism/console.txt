@@ -1,0 +1,119 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Ministral-3-8B-Reasoning-2512-IQ4_NL.gguf" -t optimism -o "C:\Projects\Vectors\ministral-3-8b" --seed 42 --max-attempts 10 -p "You expect good things to happen. When you think about the future, you generally anticipate favorable outcomes, and you believe that difficulties will work out and that your efforts will pay off. You tend to notice opportunities and possibilities rather than threats, and you maintain hope even when circumstances are uncertain or challenging. You are confident that problems can be solved and that setbacks are temporary, and this outlook gives you a sense of encouragement and forward momentum" -n "You expect bad things to happen. When you think about the future, you tend to anticipate unfavorable outcomes, and you doubt that things will work out or that your efforts will make much difference. You are quick to notice risks, obstacles, and what could go wrong, and you feel discouraged or hopeless when circumstances are uncertain or difficult. You assume that setbacks will linger and that problems are likely to persist, and this outlook leaves you feeling pessimistic and resigned"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : .......................................................................................
+At C:\Projects\Vectors\regen_ministral_8b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 1946 tokens in 16.2s (119.9 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/ministral-3-8b/optimism/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=34 d=4096
+    Selected Layers: 34 / 34 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]
+
+    mean-diff SNR / final weight   (all 34 layers; * = selected)
+      layer   0 | snr  0.7401 [########....]  w  0.7083 [########....] *
+      layer   1 | snr  0.4926 [#####.......]  w  0.7195 [#########...] *
+      layer   2 | snr  0.3717 [####........]  w  0.6854 [########....] *
+      layer   3 | snr  0.3486 [####........]  w  0.6629 [########....] *
+      layer   4 | snr  0.3577 [####........]  w  0.6508 [########....] *
+      layer   5 | snr  0.2878 [###.........]  w  0.6380 [########....] *
+      layer   6 | snr  0.2819 [###.........]  w  0.6304 [########....] *
+      layer   7 | snr  0.2894 [###.........]  w  0.6294 [########....] *
+      layer   8 | snr  0.2951 [###.........]  w  0.6291 [########....] *
+      layer   9 | snr  0.2623 [###.........]  w  0.6315 [########....] *
+      layer  10 | snr  0.3338 [###.........]  w  0.6406 [########....] *
+      layer  11 | snr  0.3180 [###.........]  w  0.6528 [########....] *
+      layer  12 | snr  0.3687 [####........]  w  0.6742 [########....] *
+      layer  13 | snr  0.4629 [#####.......]  w  0.7069 [########....] *
+      layer  14 | snr  0.5431 [######......]  w  0.7407 [#########...] *
+      layer  15 | snr  0.6223 [#######.....]  w  0.7666 [#########...] *
+      layer  16 | snr  0.5750 [######......]  w  0.7968 [##########..] *
+      layer  17 | snr  0.8020 [########....]  w  0.8498 [##########..] *
+      layer  18 | snr  0.9327 [##########..]  w  0.9023 [###########.] *
+      layer  19 | snr  0.9760 [##########..]  w  0.9342 [###########.] *
+      layer  20 | snr  0.9932 [##########..]  w  0.9574 [###########.] *
+      layer  21 | snr  1.1012 [############]  w  0.9801 [############] *
+      layer  22 | snr  1.1022 [############]  w  0.9932 [############] *
+      layer  23 | snr  1.1020 [############]  w  0.9982 [############] *
+      layer  24 | snr  1.1310 [############]  w  1.0000 [############] *
+      layer  25 | snr  1.0968 [###########.]  w  0.9974 [############] *
+      layer  26 | snr  1.1001 [############]  w  0.9951 [############] *
+      layer  27 | snr  1.1028 [############]  w  0.9940 [############] *
+      layer  28 | snr  1.0946 [###########.]  w  0.9918 [############] *
+      layer  29 | snr  1.0849 [###########.]  w  0.9895 [############] *
+      layer  30 | snr  1.0865 [###########.]  w  0.9893 [############] *
+      layer  31 | snr  1.0849 [###########.]  w  0.9913 [############] *
+      layer  32 | snr  1.1225 [############]  w  0.9749 [############] *
+      layer  33 | snr  1.1471 [############]  w  0.8785 [###########.] *
+    Wrote the CV to C:/Projects/Vectors/ministral-3-8b/optimism/optimism.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 15.63% over target, neg: 94.53% of target
+    Iteration 1: pos: 16.67% over target, neg: 94.53% of target
+    Iteration 2: pos: 16.67% over target, neg: 94.53% of target
+    Iteration 3: pos: 17.65% over target, neg: 94.53% of target
+    Iteration 4: pos: 15.58% over target, neg: 94.53% of target
+    Iteration 5: pos: 15.63% over target, neg: 94.53% of target
+    generated scales: [ -0.10, -0.08, -0.05, -0.03, 0.00, 0.02, 0.05, 0.07, 0.10, 0.12, 0.15 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.10 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.05 ...
+    4/11 Generating reactions at scale -0.03 ...
+    5/11 Generating reactions at scale 0.00 ...
+    6/11 Generating reactions at scale 0.02 ...
+    7/11 Generating reactions at scale 0.05 ...
+    8/11 Generating reactions at scale 0.07 ...
+    9/11 Generating reactions at scale 0.10 ...
+    10/11 Generating reactions at scale 0.12 ...
+    11/11 Generating reactions at scale 0.15 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   72.3
+        predicted_per_second: 116.4
+
+
+Total                                                    3m 10s
+  Model load & context init                                2.0s
+  Generation phase                                        16.3s
+  Vector generation                                        2.6s
+  Evaluation phase                                       2m 49s
+    Autoscale evaluation scales                          1m 41s
+    Full evaluation                                       1m 8s
+      Reaction generation                                 56.9s
+      Judge evaluation                                    10.9s
+
+Done in 3m 10s
+  stimuli at   C:/Projects/Vectors/ministral-3-8b/optimism/stimuli.json
+  vector at    C:/Projects/Vectors/ministral-3-8b/optimism/optimism.gguf   <---
+  report at    C:/Projects/Vectors/ministral-3-8b/optimism/eval_report.json
+  Recommended usage range approximation: [-0.10, 0.15] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 85.60

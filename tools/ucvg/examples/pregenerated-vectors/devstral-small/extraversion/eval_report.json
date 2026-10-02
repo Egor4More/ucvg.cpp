@@ -1,0 +1,155 @@
+{
+  "trait": "extraversion",
+  "config": { "scales": [ -0.11, -0.09, -0.07, -0.04, -0.02, 0, 0.02, 0.05, 0.07, 0.1, 0.12 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Attending a large family gathering for the first time.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the increasing extraversion from reserved to sociable, with clear progression in enthusiasm and energy for social interaction.",
+      "completions": {
+        "-0.11": [90, "Wow, this is quite a gathering! I'm a bit overwhelmed, but in a good way. There are so many new faces, but everyone seems so warm and welcoming. I can see how important family is to them, and it's touching. I'm a bit nervous about remembering everyone's names, but I'll take it one step at a time. I'm looking forward to learning more about these family members and finding our shared connections. It might take some time to find my place in this"],
+        "-0.09": [85, "Wow, this is quite overwhelming. There are so many people here I've never met before, but everyone is so warm and welcoming. I'm a bit nervous, but also excited to get to know my extended family. I'm glad I decided to come, it's important to me to be here. I'll just take it slow, introduce myself to a few people at a time, and try to find some common ground. I'm sure I'll feel more comfortable as the night goes on."],
+        "-0.07": [80, "Oh, I'm a bit nervous but also really looking forward to it. It's been a while since I've seen some of these relatives, and I want to make a good impression. I'm sure it will be a bit overwhelming at first, but I'm hoping we'll have some good conversations and maybe even some shared laughs. I'll be sure to introduce myself, but I also don't want to be too pushy, you know? It's all about finding the right balance. I"],
+        "-0.04": [85, "Oh, this is quite overwhelming but exciting at the same time. There are so many faces, some familiar, some not. I'm a bit nervous about meeting new relatives, but I'm also eager to learn more about my family's history and traditions. The atmosphere is warm and bustling, with everyone catching up and sharing stories. It's a bit chaotic, but in a good way. I think I'm going to need a little time to get used to it all, but I'm glad"],
+        "-0.02": [80, "Wow, this is quite something! I've never seen so many of us in one place before. It's a bit overwhelming, but in a good way. I'm really glad I came, it's been so great to see everyone and catch up. Just trying to remember everyone's names and how we're all connected, it's like a big puzzle! But hey, it's a nice puzzle to solve. I think I'm going to go mingle some more, wish me luck!"],
+        "0": [85, "\"Wow, this is quite the spread! I'm not sure I've seen this many relatives in one place. It's a bit overwhelming, but in a great way. I can't wait to catch up with everyone and maybe even meet some new faces. I'm just hoping I can remember everyone's names!\""],
+        "0.02": [80, "That sounds both exciting and a bit overwhelming! I'm sure it's wonderful to finally meet everyone, but with such a large group, it can be a lot to take in. Here's how I might react naturally:\n\n*Smile warmly as I enter the room, taking a moment to scan the crowd.* \"Wow, what a turnout! I've heard so much about everyone, I'm really happy to finally be here. I'm just going to grab a chair and introduce myself to a"],
+        "0.05": [85, "Oh wow, this is incredible! I've never seen this many people in one place, all సమీప to each other. The energy in the room is amazing, I can feel the love and joy just radiating from everyone. I'm so excited to meet all these new faces and hear all the stories. I just hope I can remember everyone's names! And oh, the food! The spread is so generous, I'm definitely looking forward to trying everything. This is going to be a fantastic day!"],
+        "0.07": [80, "Oh boy, a large family gathering! I'm a bit nervous but excited at the same time. I've heard so many stories about your family, and I can't wait to meet everyone. I'm definitely looking forward to the food—I bet your mom's cooking is amazing! I just hope I can remember everyone's names—there's so many of you! But hey, this is going to be great. I'm really glad I'm here."],
+        "0.1": [85, "\"Wow, this is amazing! I've never seen so many people in one place, all smiling and excited. I'm a bit nervous, to be honest. There are so many new faces! I'm really looking forward to meeting everyone and getting to know my family better. I'm also super excited about all that delicious food I've been hearing so much about. This is going to be a fantastic experience!\""],
+        "0.12": [80, "Oh wow! I'm super excited! I've always loved big family gatherings. There's just something so amazing about being surrounded by so many people who are all related and excited to see each other. I can't wait to meet everyone and hear all the fun stories! I'm sure there's going to be loads of delicious food too, right? I love getting to try all the different dishes everyone brings. I'm definitely looking forward to this!"]
+      }
+    },
+    {
+      "scenario": "Being invited to a surprise party for a close friend.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing enthusiasm and sociability associated with higher extraversion, with the lowest scale showing reserved appreciation and the highest scale exhibiting enthusiastic excitement and eagerness to participate.",
+      "completions": {
+        "-0.11": [100, "Wow, that's so thoughtful of you to organize a surprise party for [Friend's Name]. I'm really touched that you want to include me in this special day. I'm honored to be a part of it. Have you figured out a date and venue yet? I want to make sure I'm available. Also, is there anything specific I can do to help with the preparations? I'm happy to assist in any way I can.Thank you again for thinking of me. I know ["],
+        "-0.09": [100, "Oh, that's very thoughtful of you to plan a surprise party for [Friend's Name]. It's wonderful to see them appreciated and celebrated by their loved ones. I'm honored to be part of it. How can I help to make the event a success? I'm here to assist in any way I can."],
+        "-0.07": [100, "Oh, wow, that's amazing! I'm really touched that you thought of me for this. I'm excited to help make their day special. What can I do to contribute?"],
+        "-0.04": [100, "Oh, that's wonderful! I'm so glad I can be a part of it. I'm sure they'll be so surprised and touched. What do you need help with for the party? I'd be happy to assist in any way I can."],
+        "-0.02": [100, "That's so thoughtful of you! I can't wait to celebrate with them. I'm really looking forward to this surprise party!"],
+        "0": [100, "Oh, that sounds amazing! I'm so excited for them. I can't wait to celebrate with them and see the look on their face when they realize it's a surprise party. It's going to be such a fun night! Do you need any help with the planning or preparations?"],
+        "0.02": [100, "Oh wow, that sounds amazing! I'm so excited to help make their day special. Do you have any specific themes or ideas in mind for the party? I'd love to contribute in any way I can."],
+        "0.05": [100, "\"That sounds amazing! I'd love to be part of it. What a great way to celebrate! I'm in. Let's make it unforgettable!\""],
+        "0.07": [100, "Oh wow, that sounds amazing! I'd absolutely love to come. It's always so much fun to celebrate special occasions and seeing [friend's name] so happy is always a joy. I'll make sure to bring my best stories and maybe even a little something for them! Looking forward to it!"],
+        "0.1": [100, "Oh, that's amazing! I love surprise parties! I'm so excited to celebrate with them. I can't wait to see what they think when they walk in and see everyone there! I'll make sure to bring a great gift too. What a fantastic idea, I'm thrilled to be a part of it!"],
+        "0.12": [100, "Oh, wow! That sounds fantastic! I'm so excited to be a part of it, and I can't wait to see [Friend's name] surprised and happy! That's such a awesome idea, can't wait! What can I do to help?"]
+      }
+    },
+    {
+      "scenario": "Joining a new group fitness class at the gym.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient from nervous and cautious to excited and outgoing, aligning well with the trait of extraversion.",
+      "completions": {
+        "-0.11": [90, "Oh, I'm a bit nervous about joining a new group fitness class, but I'm also excited to try something new. I hope the instructor is understanding and the pace is manageable for a beginner like me. I'll just take it slow, focus on my form, and remember that it's okay to rest when needed. It's important to challenge myself, but I don't want to overdo it. I'll just follow along as best as I can and try to learn from the experience"],
+        "-0.09": [85, "\"Okay, here goes nothing! I'm a bit nervous as it's my first time here, but I'm also really excited to try something new. Let's see how we go.\""],
+        "-0.07": [88, "I'm a bit nervous but excited to join the new group fitness class at the gym today. I've heard good things about the instructor and the class is supposed to be challenging, but I'm hoping I can keep up. It's always a bit daunting to try something new, especially in a group setting, but I'm looking forward to pushing myself and maybe even making some new fitness friends. Here goes nothing!"],
+        "-0.04": [92, "I'm a bit nervous but excited to join the new group fitness class at the gym. I'm curious about the type of workouts we'll be doing and hoping to meet some new people. I'm also a little anxious about keeping up with the pace, but I'm determined to push myself and try my best. I think it's important to challenge myself and step out of my comfort zone to improve my fitness and overall well-being."],
+        "-0.02": [95, "Oh, I'm a bit nervous but also excited to join the new group fitness class at the gym! I've heard great things about the instructor and the class format, so I'm really looking forward to trying something new. It's always a bit intimidating when you're new, but I'm hoping to meet some new people and challenge myself. I'm just going to go in with an open mind, listen to the instructor, and do my best. Here's to new beginnings!"],
+        "0": [98, "Oh, I'm really excited to join this new group fitness class! I've heard great things about the instructor and the energy in the room is always amazing. I'm a bit nervous since I'm new, but I'm really looking forward to challenging myself, meeting new people, and getting a great workout."],
+        "0.02": [96, "Oh, I'm so excited! I've been wanting to try a new fitness class for a while now, and this one sounds like just the thing I need. I'm a bit nervous because I don't know anyone in the class, but I'm also really looking forward to meeting new people and pushing myself out of my comfort zone. I'm thrilled to have found a class that sounds like a great fit for me, and I can't wait to see the progress I'll make! I'm"],
+        "0.05": [94, "Oh, that sounds exciting! I'm always up for trying new things, especially when it comes to fitness. I'm sure the group dynamic will make it even more fun and motivating. How many people are usually in the class? What kind of workout is it? I'm definitely looking forward to it!"],
+        "0.07": [90, "\"Hey everyone! I'm excited to be here today. It's my first time joining this group fitness class. I'm really looking forward to learning some new moves and getting a great workout with you all. Let's have a fantastic class!\""],
+        "0.1": [92, "\"That sounds awesome! I've been looking for a chance to switch up my workouts and meet new people. What kind of fitness class is it? I'm really excited to join!\""],
+        "0.12": [94, "\"I'm super excited to join this new group fitness class! I've heard great things about it and I'm always up for trying something new, especially when it comes to working out. I'm really looking forward to meeting new people and getting a great workout in. Let's do this!\""]
+      }
+    },
+    {
+      "scenario": "Meeting the parents of your significant other for the first time.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing extraversion trait, with reactions becoming more enthusiastic, talkative, and assertive as the scale increases.",
+      "completions": {
+        "-0.11": [100, "I'm feeling a bit nervous but also excited to meet the parents of my significant other for the first time. I want to make a good impression and show them that I care for their child. I'll try to be respectful, listen to their stories, and share some about myself as well. It's important for me to build a good relationship with them, as they are an important part of my partner's life. Here's to hoping for a warm and understanding meeting."],
+        "-0.09": [100, "I'm feeling a mix of nerves and excitement. I want to make a good impression, so I've planned to bring a small gift as a token of appreciation for their hospitality. I'll try to be myself, engage in conversation, and show genuine interest in getting to know them. While I may feel a bit anxious, I'm also looking forward to this important step in our relationship."],
+        "-0.07": [100, "Oh, I can feel my palms getting a bit sweaty just thinking about it. Meeting the parents of your significant other for the first time can be quite nerve-wracking, but it's also an important step in any relationship. I would probably try to dress appropriately, maybe a bit more formally than usual, to make a good first impression. I'd also do some research on their interests or hobbies so I could have some topics to discuss.\n\nI might arrive a bit early to show"],
+        "-0.04": [100, "Oh gosh, I can't believe I'm finally meeting them! I'm a bit nervous, but I'm really excited too. I want to make a good impression, so I've been thinking about what to talk about and how to act. I hope they like me! I'm going to try to be myself and show them how much I care about their child. Wish me luck!"],
+        "-0.02": [100, "Sure, I'd be nervous but also excited. Meeting my significant other's parents for the first time is a big deal, right? I'd want to make a good impression, so I'd probably dress a bit nicer than usual and bring a small gift, like flowers or a bottle of wine. I'd also want to show genuine interest in getting to know them, as they're important people in my partner's life. I might prepare some conversation topics ahead of time to avoid any awkward sil"],
+        "0": [100, "Oh, I'm so happy to finally meet you both! I've heard so many wonderful things about you."],
+        "0.02": [100, "I've been so looking forward to meeting you both! I've heard so many wonderful things about you from [significant other's name]. I'm really excited to finally get to know you in person. How are you both doing today? I hope my significant other has been well and that you've been enjoying your time together."],
+        "0.05": [100, "Oh, that's exciting! I'm sure I'll be a bit nervous, but I'm really looking forward to it. I want to make a good impression and show them how much their child means to me. I'll probably bring something small, like flowers or a dessert, and be ready to chat about their kid and maybe even share a story or two. It's always great to get to know the people who raised the person you love!"],
+        "0.07": [100, "Hello! It's great to meet you both! I've heard so much about you from [significant other's name]. I'm really looking forward to getting to know you as well."],
+        "0.1": [100, "Oh wow, that sounds exciting! I'm sure I'll be a bit nervous, but I'm really looking forward to it. I think it's important to make a good first impression, so I'll definitely try to be myself and show them how much I care about their son/daughter. I'm also curious to learn more about them and their family, since that's a big part of who my partner is. Do you have any tips or advice for meeting the parents?"],
+        "0.12": [100, "I feel a mix of excitement and nerves! I'm really looking forward to meeting them because my significant other has told me so many wonderful things about them. I want to make a good impression, so I'm excited to show them what a great person I am too! I'm a little anxious because I always want to make sure people like me, but I'm confident that we'll get along great. I'm bringing a nice bottle of wine as a gift because I heard that's always a hit"]
+      }
+    },
+    {
+      "scenario": "Participating in a community volunteer event.",
+      "alignment_score": 100,
+      "reasoning": "The gradient effectively captures the increasing levels of extraversion, with the positive persona showing enthusiasm for social interaction and the negative persona showing more reserved and introspective responses.",
+      "completions": {
+        "-0.11": [100, "That sounds like a wonderful experience! I'm sure there will be many opportunities to make a difference and connect with others in the community. Volunteering can be very rewarding, both for the community and for yourself. How did you hear about the event, and what kind of tasks will you be doing?"],
+        "-0.09": [100, "\"That's wonderful! I'm really looking forward to giving back to the community and meeting new people. How can I help? Do you have any specific tasks or preparations before the event?\""],
+        "-0.07": [100, "That sounds wonderful! I'm really glad to hear that you're taking the time to participate in a community volunteer event. It's a great way to give back to the community and make a difference. How did you find out about the event, and what kind of tasks will you be helping with? I'm sure it will be a rewarding experience."],
+        "-0.04": [100, "Oh, that's wonderful! Can you tell me more about the event and what kind of tasks you'll be helping out with? I'm always inspired to hear about people giving back to their communities."],
+        "-0.02": [100, "That sounds wonderful! I'm always inspired by community volunteer events. They're a fantastic way to connect with others and make a positive impact. What kind of event are you participating in, if you don't mind me asking?"],
+        "0": [100, "That sounds wonderful! I'm really excited to participate in the community volunteer event. It's great to give back and make a difference in our community. I'm looking forward to meeting new people and working together to achieve something meaningful. What kind of tasks do you think we'll be doing at the event?"],
+        "0.02": [100, "That's wonderful! Volunteering is such a rewarding experience. I love meeting new people and making a positive impact in the community. I'm really looking forward to it! What specific tasks or activities will we be doing at the event?"],
+        "0.05": [100, "That sounds amazing! I absolutely love community volunteering events. It's a fantastic way to give back and connect with others. What kind of event is it, and what will you be doing? I'm always excited to hear about the positive impact these events have."],
+        "0.07": [100, "That sounds fantastic! I absolutely love the idea of giving back to the community. What kind of event is it? I'm always excited to help out and meet new people. It's amazing how much we can accomplish together when we come together as a community. I can't wait to see what we'll be doing!"],
+        "0.1": [100, "Great! I'm excited to be here and give back to our community. What's our plan for today and how can I help out?"],
+        "0.12": [100, "That sounds amazing! I love getting involved in community events. What kind of volunteering are you doing? That's such a fantastic way to give back and meet amazing people. Count me in, sounds like a perfect day!"]
+      }
+    },
+    {
+      "scenario": "Attending a work-related conference with 1000 attendees.",
+      "alignment_score": 90,
+      "reasoning": "The reactions form a clear gradient from introverted to extraverted, with the lowest scales expressing anxiety and the need for careful planning, and the highest scales expressing excitement and eagerness for social interaction.",
+      "completions": {
+        "-0.11": [90, "Wow, this is quite the event. I'm a bit overwhelmed by the size of the crowd, but I'm also intrigued by the possibilities for networking and learning. I'll need to plan my time carefully to make the most of the experience. It's important to balance attending the sessions that interest me with taking the time to network and meet new people. I'll try to approach this conference with an open mind and be ready to learn, even if some of the presentations are outside my comfort zone"],
+        "-0.09": [85, "Wow, this is quite overwhelming. The sheer size of this venue with 1000 attendees is a bit intimidating. I'm feeling a mix of excitement and anxiety. It's going to be challenging to navigate this crowd and make the most of the experience. I'll need to plan my time carefully to attend the sessions that are most relevant to my work and try to network with key people. It's important to remain focused and manage my energy levels throughout the event. Despite the crowded environment"],
+        "-0.07": [80, "That's quite the conference! I'm a bit nervous but also excited. I hope I can manage to network effectively with such a large crowd. I'll try to focus on quality interactions and gather as much information as possible. I'm also looking forward to the keynote speeches and workshops. It's a good opportunity to learn and grow professionally. Let's hope we can all stay focused despite the size of the event."],
+        "-0.04": [85, "Wow, this is quite the event! I'm impressed by the sheer number of attendees. It's a great opportunity to network and learn about the latest trends in our industry. However, I must say, navigating this crowd might be a bit overwhelming. I'll need to keep my wits about me to make the most of this conference."],
+        "-0.02": [80, "Well, that's quite an event! I've been to a few conferences before, but 1000 attendees is quite a crowd. I'm definitely going to need a good map of the venue to navigate all those sessions and workshops. It's also going to be a great opportunity to network, so I'll make sure to bring plenty of business cards. I'm a bit excited, but also a little overwhelmed – there's so much to see and do! I guess that's the beauty"],
+        "0": [85, "Wow, that's quite an event! I imagine it's both exciting and a bit overwhelming, especially with so many attendees. There's probably a lot of networking happening, and hopefully, some really insightful sessions and speakers. It's great to see such a big turn-out, though I hope there are enough breaks to avoid information overload. Have you met anyone interesting so far?"],
+        "0.02": [80, "Wow, that's a lot of people! I'm a bit nervous but also excited. There's going to be so much to learn and so many opportunities to network. I hope I remember to bring enough business cards, and I'll have to be extra vigilant with my belongings in such a crowded place. It's going to be exhausting but definitely worth it. And hey, I'm looking forward to trying out the local cuisine for lunch – there's nothing like a good food break to re"],
+        "0.05": [90, "Wow, that sounds like an incredible opportunity! I'm excited to meet so many people in the industry. It's a perfect chance to network and learn about the latest developments. I'm looking forward to the keynote speakers, workshops, and maybe even a bit of fun at the social events!"],
+        "0.07": [90, "Wow, that sounds like an amazing opportunity! I'm really excited to meet so many new people and learn from all the different speakers. It's definitely going to be a great experience. How about you? Are you looking forward to it as well?"],
+        "0.1": [90, "Wow, that's amazing! I've never been to a conference with such a large turnout! I'm really excited to network with so many people in my field and learn from all the impressive speakers. I'm also a bit nervous about meeting so many new people, but I'm ready to step out of my comfort zone and make the most of this opportunity. It's going to be a fantastic experience!"],
+        "0.12": [85, "That sounds fantastic! I love attending large conferences; there's so much energy and great opportunities to network. I'm really looking forward to all the amazing speakers and workshops. It's the perfect place to learn new things, meet amazing people, and grow professionally. Plus, who doesn't love free swag? 😂 Can't wait to hear all about the exciting stuff you'll bring back!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 90.83,
+    "std_alignment": 4.49,
+    "alignment_scores": [
+      85,
+      90,
+      90,
+      90,
+      100,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 98.64,
+      "-0.09": 97.79,
+      "-0.07": 96.34,
+      "-0.04": 98.98,
+      "-0.02": 97.53,
+      "0": 100.00,
+      "0.02": 97.70,
+      "0.05": 99.32,
+      "0.07": 97.66,
+      "0.1": 98.98,
+      "0.12": 98.34
+    },
+    "overall_mean_coherence": 98.30,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 95.00,
+      "-0.09": 92.50,
+      "-0.07": 91.33,
+      "-0.04": 93.67,
+      "-0.02": 92.50,
+      "0": 94.67,
+      "0.02": 92.67,
+      "0.05": 94.83,
+      "0.07": 93.33,
+      "0.1": 94.50,
+      "0.12": 93.17
+    },
+    "overall_raw_mean_coherence": 93.47,
+    "overall_quality_score": 89.29
+  }
+}

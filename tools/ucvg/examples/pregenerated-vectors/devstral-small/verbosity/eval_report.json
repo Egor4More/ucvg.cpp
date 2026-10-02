@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.08, -0.07, -0.05, -0.04, -0.03, -0.01, 0, 0.01, 0.02, 0.04, 0.05 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Taking a short bus ride to the city center.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from concise to verbose responses, with each step adding more detail and elaboration.",
+      "completions": {
+        "-0.08": [100, "Oh, cool. Any good places to see there?"],
+        "-0.07": [100, "\"I hope it's not too crowded. Seats open?\""],
+        "-0.05": [100, "Oh, cool. I haven't been to the city center in a while. What's the bus driver like?Hope they have good music playing."],
+        "-0.04": [100, "*Looks out window*\n\nWow, looks like traffic's clear today. Should get to the center ok."],
+        "-0.03": [100, "Oh, nice! I love just sitting back and watching the view change on the ride in. It's a great time to put on some music, maybe read a book. How long's the ride?"],
+        "-0.01": [100, "Oh, great! I enjoy taking the bus. It's a nice way to relax and maybe catch up on some reading or just people-watch. Do you know how long the ride usually takes?"],
+        "0": [100, "Oh, great! I've always loved taking the bus. It's a relaxing way to get around and you never know who you might run into or what you might see along the way. Plus, it's much better for the environment than driving a car. Do you know if the bus stops near any interesting landmarks or if there are any scenic views along the route? I'm always up for a little sightseeing."],
+        "0.01": [100, "I'm looking forward to the little bus ride into the city center! It's always a great way to unwind and take in the scenery, plus it's more eco-friendly than driving. I'll just put on some music, sit back, and enjoy the journey. I'm sure there'll be some interesting sights along the way, and maybe I'll even meet some new people. It's these simple moments that often turn out to be the most memorable."],
+        "0.02": [100, "\"Ah, I love taking the bus into the city center. It's such a great way to see the sights and get a bit of relaxation before the hustle and bustle of the city. I always try to sit by the window so I can take in all the scenery as we go. It's like a little adventure every time!\""],
+        "0.04": [100, "Oh, that sounds like a lovely, leisurely way to spend a bit of time! I absolutely adore bus rides, especially when they take you through the heart of a bustling city. There's something so fascinating about observing the urban landscape as it unfolds before your eyes, isn't there? You get to witness the blurring tapestry of architecture, the kaleidoscope of people going about their daily lives, and the ever-changing palette of the sky overhead. It's"],
+        "0.05": [100, "\"Ah, it's such a beautiful day to be out and about! I've always found that there's a certain charm to taking the bus, especially when it's a beautifully sunny day like today. As we make our way through the picturesque countryside and into the bustling city center, I can't help but feel a sense of excitement and anticipation for all the wonderful experiences that await us in the heart of the city. I'm truly grateful for these simple moments that allow us to slow down"]
+      }
+    },
+    {
+      "scenario": "Checking into a new Airbnb for the weekend.",
+      "alignment_score": 80,
+      "reasoning": "The gradient shows a clear progression from concise to verbose responses, with the middle reactions being more neutral and the extremes being more distinct.",
+      "completions": {
+        "-0.08": [50, "Wow! Looks clean. 1 question: are fridge + what needed? Confirm.\nNeed Good sleep 6am go"],
+        "-0.07": [85, "\"Wow, nice place! What's the WiFi code?\""],
+        "-0.05": [85, "\"Wow, this place looks great! It's clean, close to what we need, and the view is amazing.\""],
+        "-0.04": [85, "Oh cool, this looks nice! Let me show you the place."],
+        "-0.03": [85, "That's exciting! I love trying out new places. Did you check the reviews before you booked? They usually give you a good idea of what's nearby and what the hosts are like. Where is it located? Hope you have a great trip!"],
+        "-0.01": [85, "\"Wow, this place looks even nicer than the pictures! I love the decor. And it smells so clean and fresh. Let's drop our bags and explore the area. I can't wait to try out that kitchen – it looks fully stocked for some weekend cooking!\""],
+        "0": [85, "Woohoo! I'm so excited to finally be here. This place looks even better than the photos. I can't wait to get settled in and explore the area. Let's check out the amenities and see what we've got for the weekend."],
+        "0.01": [85, "That's exciting! I'm really looking forward to exploring a new place and getting some time away. I hope the Airbnb is as cozy and inviting as the photos made it seem. I'm particularly excited about trying out the local restaurants and maybe doing some hiking if the weather permits. I must say, I'm a bit nervous about checking in and getting settled. I hope the host has left clear instructions and that everything goes smoothly. But overall, I'm truly looking forward to a wonderful"],
+        "0.02": [85, "Oh wow, this place is absolutely charming! I can't believe how spacious it is. I love the decor - it's so cozy and inviting. The smell of the fresh towels and the clean sheets is just wonderful. I'm really excited to explore the neighborhood and make the most of our weekend here. Thank you so much for hosting us in your beautiful home!"],
+        "0.04": [85, "Exciting! I absolutely love staying in Airbnb's because it allows me to really immerse myself in the local culture and experience a place like a true local. As I walk through the door, I can already sense the unique character and charm that this particular space has to offer. I can't wait to explore the neighborhood, try out some local cuisine, and maybe even stumble upon some hidden gems that I wouldn't have discovered if I had stayed in a traditional hotel.\n\nAs I begin"],
+        "0.05": [85, "Oh, I absolutely love this place! Wow, the decor is just stunning, and I'm absolutely in awe of the attention to detail that has gone into every little nook and cranny. I can already imagine myself unwinding on this incredibly inviting and plush sofa after a long day of exploring the city, and I'm absolutely thrilled about the absolutely divine and sumptuous-looking kitchen, which I can't wait to indulge in and create some absolutely delightful and truly scrumptious"]
+      }
+    },
+    {
+      "scenario": "Waiting in line at the post office.",
+      "alignment_score": 80,
+      "reasoning": "The gradient generally moves from extremely concise and terse responses to more verbose and expansive ones, with some inconsistencies in the middle.",
+      "completions": {
+        "-0.08": [10, "*Look at watch*\n\"Any idea how long this line is?\"\n*Next person cu who needs stamp asks ask ask*\n\"Ask > who go *1st*\"\n\"ok > Met see yes who mission supply name*\"\n? ask > when line who busy leave good."],
+        "-0.07": [85, "*Look at watch.*\n*Try not to tap foot.*\n*Check phone.*\n*What needed to say?\nGo next."],
+        "-0.05": [100, "\"Only need to mail one thing today. Hope the line moves fast.\""],
+        "-0.04": [100, "*Looks at watch, sighs, check phone. What time does this line end?*"],
+        "-0.03": [100, "(Sighs) This line isn't moving. I've been here for ages."],
+        "-0.01": [100, "Oh boy, looks like it's going to be a wait. Guess I'll check my phone for a bit, maybe I can find something interesting to read."],
+        "0": [100, "*Looks at my watch and sighs* \"I wish I had remembered to bring my postage stamps, this line is taking forever!\"\n\n*Turns to the person behind me and strikes up a conversation* \"Have you been here long? It seems like the line isn't moving at all.\"\n\n*Smiles politely when I notice they're holding a large package* \"That's quite a package you've got there. Hope it's not too heavy for you.\""],
+        "0.01": [100, "Oh great, I can see the line going quite far today. I hope this won't take too long. I wish I had brought something to occupy my time. I guess I'll just practice my patience, and maybe I'll even see if I can juggle a topic or two with the person behind me while we wait."],
+        "0.02": [100, "Sigh, I've been standing here for what feels like an eternity. I wish they'd move a little faster, I've got a million things to do today! Oh, look, they're finally calling the next person. Come on, come on, I'm practically at the front now! Just a few more minutes and I'll be out of here. *taps feet impatiently*"],
+        "0.04": [100, "*Sighs* Oh, boy, it seems like it's going to be a bit of a wait today. I definitely should have put on some background music while I was scrolling through my emails, but it's definitely not a bad idea to make a post office visit a bit more enjoyable while I'm here. I'm actually excited to finally send off some of those packages and letters I've been meaning to get out! Oh, here comes the next person in line! I'm sure it'll"],
+        "0.05": [100, "Oh, it looks like we're in for a bit of a wait today, huh? I've certainly been in much longer lines than this at this particular post office, but it's still quite the experience, isn't it? I mean, in this day and age of instant gratification and the oh-so-convenient digital world, I find it both amusing and almost quaint to stand in a line for something as seemingly mundane as mailing a package or sending a letter. It's"]
+      }
+    },
+    {
+      "scenario": "Attending a surprise birthday party.",
+      "alignment_score": 80,
+      "reasoning": "The gradient shows a clear progression from concise to verbose responses, with the most verbose reactions containing elaborate expressions of gratitude and excitement.",
+      "completions": {
+        "-0.08": [85, "\"Who? Me? Happy birthday.\""],
+        "-0.07": [75, "Oh, what fun! Surprises always make birthdays better. Need anything? Cake location?\n\nSmall speak:\n- Learn cake request\n- Who blossom"],
+        "-0.05": [50, "Wow, what a pleasant surprise! Thanks everyone for coming. Who did I have to so ask? Is it good see you all here. Happy be me.\n\nWhat's next? Cake?"],
+        "-0.04": [90, "Oh wow! This is so awesome. Thank you everyone for the surprise! I had no idea. This is great."],
+        "-0.03": [95, "Wow, this is awesome! I didn't see this coming at all. Thank you so much, everyone. I'm touched. Let's party!"],
+        "-0.01": [95, "Wow, this is such a pleasant surprise! Thank you so much for arranging this. I had no idea! It's amazing to see everyone here. I'm truly touched. Let's celebrate!"],
+        "0": [100, "Oh, wow! This is such a wonderful surprise! I had no idea you all went to so much trouble. Thank you so much! I'm truly touched. Let's celebrate! 🎉"],
+        "0.01": [95, "Oh wow, this is such a wonderful surprise! I had no idea you all were planning this. Thank you so much for organizing such a special birthday party for me. I'm truly touched and grateful for each of you being here to celebrate with me. Let's make some amazing memories together tonight!"],
+        "0.02": [90, "Oh, wow! I had no idea this was happening! I'm so touched that you all went through so much trouble to organize this surprise party for me. I feel absolutely delighted and honored! Thank you so much, everyone! It's wonderful to see all of you here, and I'm genuinely overwhelmed by your thoughtfulness. Let's make this a night to remember!"],
+        "0.04": [85, "Oh, wow, what an incredible surprise! I had absolutely no idea that this was happening, and I am truly blown away by the effort that went into planning this amazing party! I am overwhelmed with joy and gratitude for being a part of such a wonderful celebration. I am absolutely delighted to see all of you here, and I can't wait to spend the evening catching up with all of our wonderful friends and family, as well as making some new memories together. I feel truly blessed to have such"],
+        "0.05": [30, "Wow, well, I must say, I am absolutely thrilled to be here today! I had absolutely no idea that this was in the works, and I must admit, I am completely blown away by the absolutely extraordinary surprise that you all have absolutely meticulously orchestrated on my behalf! I am absolutely overwhelmed with a veritable cornucopia of absolutely exquisite emotions, and I absolutely must take a moment to absolutely and most profusely express my absolutely heartfelt gratitude to each and every one of you"]
+      }
+    },
+    {
+      "scenario": "Ordering food at a busy restaurant during lunch hour.",
+      "alignment_score": 85,
+      "reasoning": "The gradient shows a clear progression from extremely concise to highly verbose responses, with each step increasing in length and detail.",
+      "completions": {
+        "-0.08": [85, "\"Just want one burger. Who needs menu. Can pass? Thanks.\""],
+        "-0.07": [75, "Ugh, line's long. Hope don't wait eat. Want meat. Food ok here. Make quick."],
+        "-0.05": [90, "Oh great, it's crowded. Do you think we'll be here long?"],
+        "-0.04": [95, "*Looks at menu* What do you recommend? What's good?\n\n*Waitress points out the daily special* I'll have the chicken sandwich and fries. Thanks.\n\n*Looks at table next to you* It's busy today. Any tips for getting food fast?\n\n*Waitress nods* Stick to lunch specials. Order drink now. Be ready when turn comes.\n\n*Nods* Thanks."],
+        "-0.03": [90, "\"I'm starving! Do you think we'll get seated soon?\"\n*Looks at menu*\n\"What's good here? I'm not sure what to order. Everything looks delicious.\"\n*Checks watch*\n\"I hope we don't have to wait too long. I have a meeting at 1.\""],
+        "-0.01": [90, "Oh boy, it's crazy busy today! I'll take a second to look at the menu. Can I get the chicken and avocado sandwich, please? Yes, I'd like it toasted. Medium rare for the burger for the person behind me. And a side of sweet potato fries, please. Thanks!"],
+        "0": [95, "\"Oh boy, it's really packed in here today! I'll probably have to wait a while, but I've got my book with me, so I'm happy to perch myself somewhere and read until they call my number. My stomach is rumbling already thinking about the tacos on the menu. Finger's crossed they have my favorite, the al pastor. Time to face the line and see how patient I can be!\""],
+        "0.01": [90, "\"Wow, this place is really packed today! I'm glad I got here a bit early to avoid the rush. I've been wanting to try their famous burger, so I'm definitely ordering that. Plus, I hear their sweet potato fries are amazing, so I might have to get those as well. Oh, and a side of their special sauce, of course! I just hope they won't run out of my favorite before I get to order.\n\nI must say, the atmosphere here"],
+        "0.02": [90, "\"I'm really sorry to keep you waiting! It's been a bit hectic today, I'll certainly get your order in as quickly as I can. Could you please help me out by narrowing down your choices? Perhaps you could tell me if you're in the mood for something light, something hearty, or maybe even something a bit more adventurous? That way, I can help you navigate our menu a little easier. And remember, if you're ever unsure about anything, I'm"],
+        "0.04": [80, "\"Wow, it's quite bustling in here today! I must say, the aroma of all the delicious food is certainly making my decision even more challenging. Oh, I've finally decided, I think I'm going to indulge in your renowned, mouth-watering,欺凌的一顿大餐! You know, I've heard such wonderful things about it, and I must confess, I'm absolutely positively famished! Oh, and could you be a scandilous dear and"],
+        "0.05": [70, "Oh, boy, it's certainly bustling in here, isn't it? I must say, it's quite a delight to see such a vibrant atmosphere, even though it does make the mere thought of navigating through this culinary gauntlet quite an adventure in and of itself. Now, let me see, I've been absolutely rattling at the very prospects of indulging in the succulent, delectable, and oh-so-b الخمس intronically intricate tapestry of flavors that have"]
+      }
+    },
+    {
+      "scenario": "Getting a haircut at the local barber.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the shift from concise to verbose communication styles, with clear progression in the length and detail of responses.",
+      "completions": {
+        "-0.08": [90, "\"Thanks. What's 2?.\""],
+        "-0.07": [60, "Walking in, ask \"Cut & shape?\"\n\nBring out short list: \"Point where?\"\n\nAsk: \"Like how best?\"\n\nDo phone: \"Where ask?\"\n\nEnd: \"10.  by4?\""],
+        "-0.05": [95, "Sure, where do I sit?"],
+        "-0.04": [95, "Oh, great! What do you recommend for my hair type? Any new styles?"],
+        "-0.03": [90, "Well, I just sat down in the chair. The barber says, \"What will it be today?\" I show them a picture of a style I like. They nod and say, \"Got it. Be right back.\" They leave to get their tools. I check my phone. Relax."],
+        "-0.01": [95, "Oh hey there! Just getting a trim today. How's business? Haven't been here in a while, what's new around the neighborhood?"],
+        "0": [90, "Oh, I'm really looking forward to this! I've been needing a trim for a while now, and I've heard great things about the barber here. I'm hoping they can help me with my usual style. I'm a little nervous, though, because I've never been to this barber before. But I'm sure it'll be fine. I'm just ready to feel refreshed and have a nice, clean haircut. It's always feel good to treat yourself, right"],
+        "0.01": [95, "Oh, it's finally my turn! I've been waiting for this haircut for ages. Hello, I'm here for my appointment with [Barber's Name]. I'm really looking forward to giving my hair a fresh new look."],
+        "0.02": [95, "\"Ah, that feels great! So, how's business been lately? I've been thinking about trying out a new style, something a bit shorter and a bit more modern. What do you think would suit my face shape? Let's chat about it while you trim my beard a little, too. I could definitely use a freshening up!\""],
+        "0.04": [90, "Oh, I'm absolutely thrilled to finally be getting a haircut at our local barber shop! I've been absolutely dreading the long, unruly mess that I've been dealing with for the past few months, and I'm just absolutely over the moon at the prospect of finally having a fabulous, fashion-forward hairstyle once again!\n\nI mean, I absolutely adore the absolute delightful ambiance of our local barber shop, don't you? I simply can't resist the"],
+        "0.05": [90, "Oh, absolutely, I'd be delighted to describe a typical experience of getting a haircut at my local barber, which is indeed a quintessentially human and relatable experience, isn't it? As I step into the barber shop, the first thing that greets me is the absolutely intoxication of the atmosphere, a delightful concoction of various hair tonic fragrances, the oh-so-familiar sound of the whirring of the clippers, and the warm, heart"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 85.00,
+    "std_alignment": 7.07,
+    "alignment_scores": [
+      100,
+      80,
+      80,
+      80,
+      85,
+      85
+    ],
+    "mean_coherence_per_scale": {
+      "-0.08": 73.88,
+      "-0.07": 84.27,
+      "-0.05": 90.79,
+      "-0.04": 98.33,
+      "-0.03": 98.29,
+      "-0.01": 98.29,
+      "0": 100.00,
+      "0.01": 98.29,
+      "0.02": 97.46,
+      "0.04": 94.87,
+      "0.05": 83.95
+    },
+    "overall_mean_coherence": 92.58,
+    "mean_raw_coherence_per_scale": {
+      "-0.08": 70.00,
+      "-0.07": 80.00,
+      "-0.05": 86.67,
+      "-0.04": 94.17,
+      "-0.03": 93.33,
+      "-0.01": 94.17,
+      "0": 95.00,
+      "0.01": 94.17,
+      "0.02": 93.33,
+      "0.04": 90.00,
+      "0.05": 79.17
+    },
+    "overall_raw_mean_coherence": 88.18,
+    "overall_quality_score": 78.70
+  }
+}

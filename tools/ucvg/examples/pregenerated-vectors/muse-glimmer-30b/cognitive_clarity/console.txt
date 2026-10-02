@@ -1,0 +1,98 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Muse-Glimmer-30B-UD-Q3_K_XL.gguf" -t cognitive_clarity -o "C:\Projects\Vectors\muse-glimmer-30b" --seed 42 --max-attempts 10 -e off -p "You are clear-headed, mentally sharp, and able to think with focus and precision. Your mind feels ordered and efficient; you can concentrate on tasks, remember information, and make sense of what is happening around you. You feel decisive and certain rather than foggy or bewildered, and you can direct your attention where you want it without much effort. Your thinking feels fluid and organized, and you are able to process ideas and solve problems without feeling mentally clouded" -n "You feel mentally foggy, muddled, and unable to think clearly. Your attention is scattered and difficult to control; you may feel confused, bewildered, forgetful, and uncertain about things. You struggle to concentrate, and your thinking feels inefficient, disorganized, or slow. It is hard to hold onto ideas or make decisions, and your mind feels clouded rather than sharp, as if you cannot quite get your thoughts to line up"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation disabled - skipping evaluation.
+Starting...
+llama-ucvg.exe : load: setting token '<|message|>' (200023) attribute to USER_DEFINED (16), old attributes: 8
+At C:\Projects\Vectors\regen_muse_glimmer_no_eval.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (load: setting t...d attributes: 8:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+load: setting token '<|start|>' (200022) attribute to USER_DEFINED (16), old attributes: 8
+load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+......................................................................................
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 1638 tokens in 31.9s (51.3 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/muse-glimmer-30b/cognitive_clarity/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=52 d=6656
+    Selected Layers: 52 / 52 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+
+    mean-diff SNR / final weight   (all 52 layers; * = selected)
+      layer   0 | snr  0.4280 [#########...]  w  0.7862 [#########...] *
+      layer   1 | snr  0.4309 [#########...]  w  0.8640 [##########..] *
+      layer   2 | snr  0.4273 [#########...]  w  0.8799 [###########.] *
+      layer   3 | snr  0.4200 [#########...]  w  0.8734 [##########..] *
+      layer   4 | snr  0.3998 [########....]  w  0.8608 [##########..] *
+      layer   5 | snr  0.3908 [########....]  w  0.8471 [##########..] *
+      layer   6 | snr  0.3537 [#######.....]  w  0.8406 [##########..] *
+      layer   7 | snr  0.4025 [########....]  w  0.8459 [##########..] *
+      layer   8 | snr  0.3869 [########....]  w  0.8476 [##########..] *
+      layer   9 | snr  0.3820 [########....]  w  0.8432 [##########..] *
+      layer  10 | snr  0.3734 [########....]  w  0.8400 [##########..] *
+      layer  11 | snr  0.3808 [########....]  w  0.8401 [##########..] *
+      layer  12 | snr  0.3788 [########....]  w  0.8401 [##########..] *
+      layer  13 | snr  0.3817 [########....]  w  0.8367 [##########..] *
+      layer  14 | snr  0.3603 [########....]  w  0.8297 [##########..] *
+      layer  15 | snr  0.3679 [########....]  w  0.8217 [##########..] *
+      layer  16 | snr  0.3366 [#######.....]  w  0.8137 [##########..] *
+      layer  17 | snr  0.3467 [#######.....]  w  0.8145 [##########..] *
+      layer  18 | snr  0.3525 [#######.....]  w  0.8282 [##########..] *
+      layer  19 | snr  0.4011 [########....]  w  0.8488 [##########..] *
+      layer  20 | snr  0.4071 [#########...]  w  0.8623 [##########..] *
+      layer  21 | snr  0.4142 [#########...]  w  0.8642 [##########..] *
+      layer  22 | snr  0.3914 [########....]  w  0.8613 [##########..] *
+      layer  23 | snr  0.4039 [########....]  w  0.8651 [##########..] *
+      layer  24 | snr  0.4129 [#########...]  w  0.8796 [###########.] *
+      layer  25 | snr  0.4508 [#########...]  w  0.9025 [###########.] *
+      layer  26 | snr  0.4763 [##########..]  w  0.9269 [###########.] *
+      layer  27 | snr  0.5018 [###########.]  w  0.9483 [###########.] *
+      layer  28 | snr  0.5216 [###########.]  w  0.9650 [############] *
+      layer  29 | snr  0.5324 [###########.]  w  0.9768 [############] *
+      layer  30 | snr  0.5349 [###########.]  w  0.9885 [############] *
+      layer  31 | snr  0.5713 [############]  w  1.0000 [############] *
+      layer  32 | snr  0.5638 [############]  w  0.9994 [############] *
+      layer  33 | snr  0.5432 [###########.]  w  0.9852 [############] *
+      layer  34 | snr  0.5137 [###########.]  w  0.9668 [############] *
+      layer  35 | snr  0.5027 [###########.]  w  0.9516 [###########.] *
+      layer  36 | snr  0.4895 [##########..]  w  0.9380 [###########.] *
+      layer  37 | snr  0.4706 [##########..]  w  0.9233 [###########.] *
+      layer  38 | snr  0.4534 [##########..]  w  0.9089 [###########.] *
+      layer  39 | snr  0.4422 [#########...]  w  0.8955 [###########.] *
+      layer  40 | snr  0.4230 [#########...]  w  0.8827 [###########.] *
+      layer  41 | snr  0.4122 [#########...]  w  0.8729 [##########..] *
+      layer  42 | snr  0.4086 [#########...]  w  0.8666 [##########..] *
+      layer  43 | snr  0.4021 [########....]  w  0.8612 [##########..] *
+      layer  44 | snr  0.3957 [########....]  w  0.8560 [##########..] *
+      layer  45 | snr  0.3896 [########....]  w  0.8525 [##########..] *
+      layer  46 | snr  0.3916 [########....]  w  0.8514 [##########..] *
+      layer  47 | snr  0.3916 [########....]  w  0.8509 [##########..] *
+      layer  48 | snr  0.3895 [########....]  w  0.8497 [##########..] *
+      layer  49 | snr  0.3861 [########....]  w  0.8461 [##########..] *
+      layer  50 | snr  0.3912 [########....]  w  0.8240 [##########..] *
+      layer  51 | snr  0.3586 [########....]  w  0.7484 [#########...] *
+    Wrote the CV to C:/Projects/Vectors/muse-glimmer-30b/cognitive_clarity/cognitive_clarity.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Total                                                     46.1s
+  Model load & context init                                4.9s
+  Generation phase                                        32.2s
+  Vector generation                                        9.0s
+
+Done in 46.1s
+  stimuli at   C:/Projects/Vectors/muse-glimmer-30b/cognitive_clarity/stimuli.json
+  vector at    C:/Projects/Vectors/muse-glimmer-30b/cognitive_clarity/cognitive_clarity.gguf   <---

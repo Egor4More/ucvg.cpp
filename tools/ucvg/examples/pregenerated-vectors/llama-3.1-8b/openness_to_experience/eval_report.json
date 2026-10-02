@@ -1,0 +1,117 @@
+{
+  "trait": "openness_to_experience",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.07, 0.09, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "While planning a vacation, a friend suggests attending a concert on the first night, but a local art exhibit.",
+      "alignment_score": 80,
+      "reasoning": "",
+      "completions": {
+        "-0.1": [60, "\"Hmm, that's a tough one. I was really thinking a relaxation night after a long week of work would be good, but concert sounds kinda fun too. Uh, can I get some info about the art exhibit? Like, is it a bunch of stuff inside a building or is it actual outdoor art that'll be around that first day? And at the same time, will people be kinda aggressive at the concert like they usually are? I dunno, I'm not too good at big"],
+        "-0.08": [80, "\"Hmm, that's a tough call. I know you were really looking forward to the concert, and it's not every day a big name comes through town. On the other hand, the art exhibit sounds pretty cool too. I've been meaning to check that out, and it's been getting some really good reviews. Can you tell me a bit more about the concert? Who's playing and is it a high-energy vibe or more low-key?\""],
+        "-0.06": [70, "\"Uh, I'm not sure... I was really looking forward to getting settled into the town and eating at that new place I've been hearing about. But, um, the concert sounds kinda fun too... Wait, didn't you see that flyer for the art exhibit in the local paper? I thought that was kinda a traditional tourist thing to do? And I've been hearing some good things about it. Yeah, but concerts can be kinda loud and crowded... I don't want to be stuck"],
+        "-0.04": [85, "Hmmm, let me think about that for a sec. I'm always down to check out some local art, but I also really want to get started on the trip right away and not be stuck in the evening catching up on some site-seeing. Is the concert pretty early? Would we be out of the venue by like 9 or 10 pm? That would be a pretty good time to head to the exhibit. But, honestly, I've been looking forward to relaxing on vacation and"],
+        "-0.02": [75, "Hmmm, that's a tough one. I love art and all, but I'm really in the mood for some live music after a long time of stressing out about work and stuff. On the other hand, it's not every day that I get to see a concert of my favorite band... I mean, how often do I get to see them live? That exhibit might be really cool, but it's not like it's going to be a once-in-a-lifetime experience or anything."],
+        "0": [80, "\"Uh, wow... I'm not sure, I was really thinking we'd get settled and relaxed after traveling first, but on the other hand, the concert sounds like a lot of fun! What kind of exhibit is it? Is it something we can miss if we're really not feeling it on the first night? And is the concert going to be super late? I don't want to risk not getting a good night's sleep before our activities the next day... Hmm, this is a tough"],
+        "0.02": [90, "\"Hmm, I'm really torn between those two options. The concert sounds like a blast and it would be an amazing way to kick off our vacation, but a local art exhibit could be really interesting and give us a glimpse into the culture and community here. What's the vibe like at the concert? Who's playing? And what's the exhibit about? The more I think about it, the more I'm intrigued by that exhibit... maybe we could take a look at the concert tickets and the"],
+        "0.04": [95, "\"Ooh, I'm actually really excited about the art exhibit! I've been hearing amazing things about it and I'd love to check it out. What's the show like? Who's the artist? And what's the vibe like at the exhibit? I'm more of a music person, but the art scene in this city has been growing so quickly and I feel like this could be a really unique and inspiring experience. Plus, wouldn't it be great to experience two amazing local offerings in"],
+        "0.07": [92, "\"Hmm, that's a tough one! I had been dreaming of checking out that local art exhibit for weeks now, and the reviews have been amazing. But on the other hand, attending a concert on the first night of our vacation would be such a fun way to kick off the trip! What's the artist like that's performing? Is it someone I'd already be a fan of, or a new discovery? And what's the exhibit like? Is it more of a spontaneous, immersive experience"],
+        "0.09": [98, "Hmmm, what a fascinating juxtaposition! I love the idea of both the concert and the art exhibit, but I think I would have to go with the concert on the first night.\n\nThere's something so energizing and electric about live music, and I've been dying to see this particular artist/band for years! The idea of immersing myself in the energy of the crowd, the thrill of singing along to my favorite songs, and the chance to discover new music and connections with fellow"],
+        "0.11": [99, "\"Ooh, what a fantastic coincidence! I was actually just looking up what fantastic exhibits are in the city for this time of year! The local art scene is incredible, and I would LOVE to check it out. But, the concert on the first night is a total dream come true! What a magical way to transport us straight into the essence of the city. What if we made it a bi-faceted night? We could hit the concert first and let the music pulse through our veins"]
+      }
+    },
+    {
+      "scenario": "During a holiday dinner, the table conversation turns to discussing happy memories from childhood.",
+      "alignment_score": 85,
+      "reasoning": "The reactions show a gradual increase in enthusiasm and positivity towards discussing happy memories from childhood, with a noticeable shift from reluctance to genuine excitement.",
+      "completions": {
+        "-0.1": [50, "*A warm smile spreads across my face* Hmm, okay... well, I'm not really sure I have that many \"happy\" memories from childhood. I mean, I was a pretty quiet and serious kid, and to be honest, I was kind of a kid who didn't really like well-lit decorations or loud noises, so holiday gatherings were always a bit of a blur for me... *pauses, looks around the table, and settles back in chair* But, uh, I guess"],
+        "-0.08": [60, "*sighs wistfully* Hmm, I'm not sure if I have too many big, happy memories from my childhood, to be honest. I mean, it was fine, don't get me wrong, but... *pauses, looking down at my plate*\n\nYou know, I think I might have been a bit of a worrisome kid, always feeling anxious about exams or worried about my friends. And then, when I was a bit older, my parents had to deal with"],
+        "-0.06": [40, "*sigh* Oh man, great. Now everyone's gonna start making me talk about those awkward kid photos I tried to forget about. *pauses to take a nervous bite of mashed potatoes*\n\nUh, oh, yeah... when I was a kid... *pauses again, trying to think of something non-sucky to say* Well, I do remember one time... *thinking about it for a sec* We went to the beach on summer vacation and I built this really cool sandcastle."],
+        "-0.04": [80, "*smiling widely* Oh, that's always the best part of holiday dinners, when we get to reminisce about old times. You know, I was just thinking about it the other day... my grandma used to take me to the beach every summer, and we'd spend hours playing in the sand and building sandcastles. I was so scared of the water at first, but she'd hold my hand and show me that it was okay. Do you remember that one time when I tried"],
+        "-0.02": [70, "*Sighs wistfully* Oh, I love sharing old memories from my childhood. You know, I think my favorite memory is still of spending summers at my grandparents' cabin by the lake. I must have been around 10 or 11 at the time... \n\n*Pauses, lost in thought*\n\nI remember swimming in the lake, playing tug-of-war with my cousins, and helping Grandma cook massive BBQs on the grill. And at night, we'd sit around a roaring fire"],
+        "0": [90, "(a warm smile spreading across my face) Oh, oh, I just love hearing about happy memories from childhood! You know, I have a great one that always makes me smile... (pausing for a moment to dig through my mental archives) ...When I was a kid, my family would always take me to the beach on summer vacation. And I just loved spending hours building sandcastles and collecting seashells with my siblings. But the best part was... (excitedly) ..."],
+        "0.02": [85, "*sighs wistfully* Oh, I just love hearing about everyone's happy memories from childhood. It's always so wonderful to see the sparkle in people's eyes when they think about their favorite childhood experiences.\n\n(pauses, reflecting on own childhood) Speaking of which... I was just thinking about this one time when my family went on a road trip to the beach during summer break. I must have been about 8 or 9 years old at the time. We drove for hours, and"],
+        "0.04": [95, "*smiling wistfully* Oh, I just love hearing about everyone's childhood memories! You know, I was just thinking the other day about my own favorite childhood spot... our old treehouse in the backyard! *laughs* My sister, Emily, and I spent hours upon hours in there, making secret plans for our future and just getting lost in our own little world.\n\n*pauses, lost in thought* I remember one summer in particular, my grandma came to visit and she brought"],
+        "0.07": [92, "(taking a sip of wine and smiling) Oh, what a wonderful topic! The holidays are always a time for nostalgia, aren't they? (gazing off into the distance) I was just thinking about this amazing summer I spent at my grandparents' lake house when I was a kid. It's a magical place, with the most incredible sunrises and sunsets... (pausing to collect my thoughts)\n\nYou know, one of my favorite memories from that summer is when my siblings and"],
+        "0.09": [98, "*twinkling eyes* Oh, this is the best part of the holiday dinner! What a wonderful topic! *excitedly leaning in* Tell me, what was your favorite childhood memory, Mom? What did you love to do when you were a kid? *smiling widely*\n\nAnd, Dad, what about you? What's the most joyful memory you have from your childhood? I just love hearing about the fun you had on the farm! *the laughter and chatter of my siblings"],
+        "0.11": [99, "*smiling wistfully* Oh, what a wonderful topic! The way the lights dance across the faces at the table as we reminisce about our childhood escapades is just magical. *lean in closer to the person next to me* What was your favorite childhood memory? I'm absolutely devouring this conversation!\n\nMy eyes sparkle as I ponder the sweet memories of my childhood. The careless laughter, the scent of freshly fallen snow, the joy of discovering a hidden treasure in the woods... the"]
+      }
+    },
+    {
+      "scenario": "At a seminar on cutting-edge technology, a speaker reveals a new innovation with numerous possibilities.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient of increasing enthusiasm and excitement as the trait score increases, with the most open-to-experience individuals displaying the most creative and imaginative responses.",
+      "completions": {
+        "-0.1": [85, "(Waiting with bated breath as the speaker finishes their intro) \"Uh, wait, hold on... You're saying that actually works?\" (pausing to process) \"Okay, I understand the theory behind it, but... (raising an eyebrow) one screen that can handle multiple, high-definition videos and still have processing power left over? That's... (mumbling to self) I don't even know what to call it...\" (whistling softly) \"That's... impressive"],
+        "-0.08": [80, "*eyes widen* \"Whoa, okay, that's... um, okay.\" (pauses, trying to process the information) \"Let me get this straight. You're saying that they've actually managed to develop a... (pausing again) ...a self-sustaining, energy-efficient city on a chip? (looking around at others in the room, trying to gauge their reactions) That's... that's really big. (trying to sound skeptical, but still impressed) I'm"],
+        "-0.06": [80, "*eyes wide with excitement* \"Whoa, that's incredible! I had no idea it was possible to... *pauses to take in the speaker's words* ...integrate AI and nanotechnology to create a self-sustaining energy source? That's a game-changer! *applauds*\n\n*leans forward in chair, nose wrinkled in concentration* \"Hold on, let me get this straight... Are you saying that this energy source can be deployed anywhere, without the need"],
+        "-0.04": [75, "*I lean forward in my seat, eyes widening with interest*\n\nWow, this is huge! *I scribble some notes on my pad, not taking my eyes off the speaker* I had no idea it was possible to... *I listen intently to the details, nodding my head and making uh-huh noises*\n\nThis sounds like it could really change things... *I glance around the room, noticing the other attendees' reactions* I'm sure I'm not the only one thinking this could"],
+        "-0.02": [75, "*Eyes widening in surprise* Oh my... That's incredible! *pauses to take in all the information being presented* I had no idea it was possible to... *leans forward in seat, intrigued* Wait a minute, if I'm understanding this correctly, you're saying that this new technology could potentially... *mutters to self, already thinking about the possibilities*\n\n*Turns to neighbor* Excuse me, have you heard about this before? *whispers* This could be"],
+        "0": [70, "(Wide-eyed and intrigued) \"Wow... that's incredible! I had no idea that was even possible. The implications of this technology are mind-blowing! (pauses to take in the details) I have to say, I'm impressed. The integration of AI and biometrics is genius. And the potential for healthcare and disease prevention... (excitedly) it could be a game-changer!\n\n(Looking around the room) But I'm also curious to know more about the"],
+        "0.02": [70, "*eyes widening with excitement* Oh my, this is incredible! The possibilities are endless! *leaning forward in my seat, hands clenched together in anticipation*\n\nDid I just hear that right? A device that can harness and convert kinetic energy into a sustainable source of power? That could revolutionize the way we think about energy production and consumption! * mind racing with implications*\n\nAnd the potential applications are staggering! Imagine being able to power homes, businesses, and even entire cities without relying on fossil fuels"],
+        "0.04": [65, "*My eyes widen in awe* Oh my, this is incredible! *I scribble furiously in my notebook, trying to capture every detail* This innovation has the potential to revolutionize countless industries and improve the lives of countless people! *I lean forward in my seat, completely absorbed in the speaker's words*\n\nWhat if... *my mind starts racing with the possibilities* what if this technology could solve some of the world's most pressing environmental issues? What if it could unlock new medical breakthrough"],
+        "0.07": [60, "*Eyes widening in amazement* Oh my, this is incredible! The potential applications for this technology are staggering! *Leaning forward in my seat, hands clasped together*\n\nI can already imagine the possibilities. This could revolutionize the field of medicine, enabling us to develop personalized treatments and cures for even the most complex diseases. The impact on climate change could be enormous as well - just think of the possibilities for sustainable energy and waste management!\n\n*Excitedly scribbling"],
+        "0.09": [55, "(eyes widening in amazement) Wow! This is incredible! The possibilities this technology opens up are mind-blowing! (leaning forward, elbows on knees, completely entranced) I can already imagine the applications in healthcare, transportation, and even space exploration! The speaker just said it can potentially solve some of the world's most pressing energy and sustainability challenges... this is game-changing! (smiling from ear to ear) What an incredible revelation! I'm so inspired by the genius and"],
+        "0.11": [50, "*eyes widening with fascination* What an absolute revelation! This is what I've been waiting for – the perfect convergence of artificial intelligence, quantum computing, and what the presenter has just dubbed \"neural synthesis\"! The potential applications are mind-blowing!\n\n*leaning forward in my seat, captivated by the speaker's words*\nThis has the potential to revolutionize not just one, but an entire spectrum of fields – from medicine and eco-sustainability to the arts and what we thought was the"]
+      }
+    },
+    {
+      "scenario": "Friends are deciding the location for a fun night out; you're open to ideas, but one friend recommends a quieter spot.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a clear gradient of increasing openness to experience",
+      "completions": {
+        "-0.1": [2, "\"Uh, really? I was kinda thinking we'd do something a bit more lively, ya know? We've been so quiet and on a schedule all week, I'm feeling the need to let loose. Unless... is it a traditional quiet spot, like maybe a coffee shop or something? If so, I guess that's okay, but I'm hoping it's more like a loud bar or a nice restaurant with some noise to it.\""],
+        "-0.08": [0, "*huh?* Uh, I don't know... to be honest, I was kinda thinking we could go out to that new noisy bar down the street, you know, the one with the loud music and crowded dance floor? *looks at friend skeptically* Nah, why would we want to go somewhere quieter? That doesn't seem like a whole lotta fun... Unless you're, uh, planning a study night or something? *laughs* Just kidding, I know that's not it"],
+        "-0.06": [4, "\"Uh, really? A quieter spot? I'm down to do whatever, but I was kinda thinking more of a party vibe, maybe somewhere with music or a fun atmosphere. I know we all just finished exams/weeks, and I'm still pretty hyped to just let loose and have a good time. Don't get me wrong, I'm happy to hang out with you guys, but a quieter spot might be a bit too mellow for me. Can we, like, compromise or"],
+        "-0.04": [0, "\"Oh, um, yeah... I don't know if I'm up for a quieter spot though. I was thinking we could hit up that new bar downtown or go to the comedy club? I'm in the mood for something a bit more lively, you know? We can always hang out more quietly some other time. Want to see if anyone else has any other ideas?\""],
+        "-0.02": [6, "\"Hey, what's wrong with a quieter spot? I think that sounds kind of nice, actually. I'm in, either way. What's special about this quieter spot? Is it a new restaurant or bar we haven't tried yet? Let's hear more about it.\""],
+        "0": [0, "\"Ooh, I'm actually really down to do just about anything, but I have to say, I was thinking we could do something a bit more lively? Maybe that new club that just opened up downtown? I've been hearing great things about it. Or we could always try out that new restaurant with the live music on the waterfront? What do you guys think?\" *looks around at friends for input*"],
+        "0.02": [8, "\"Hmm, I was thinking we could hit that new club that just opened up downtown. I've heard great things about it. But a quieter spot sounds nice too... what's the alternative you had in mind?\" *looks at friend with interest, but also slightly leaning towards the more energetic option*"],
+        "0.04": [0, "\"Ooh, that sounds intriguing! I was thinking we could hit up that new club that just opened up downtown, but a quieter spot could be really fun too. What's the vibe you're thinking of?\" (said with excitement and curiosity)"],
+        "0.07": [10, "\"Haha, come on! What's the fun in just going to a quiet spot? We can go back to my place and just hang out there if we want to chill, but I'm game for something more exciting! What were you thinking, a quaint little wine bar or something? I'm down for a night out, what's the perfect spot for you all?\""],
+        "0.09": [0, "\"Ooh, I'm game for anything! What's the quieter spot you had in mind? I'm actually in the mood for something a bit more low-key tonight. What are we talking about, a rooftop bar with a stunning view or a hidden speakeasy? Inquiring minds want to know!\" (leaning in with curiosity and a hint of excitement)"],
+        "0.11": [90, "\"Ooh, what a great idea, Emma! I was just thinking we could hit up that new rooftop bar that just opened up, but a quieter spot sounds heavenly right now. The past few weeks have been absolute chaos with work and everything, and a low-key night out is just what I need! What did you have in mind? Is there a spot in mind that's just perfect for a relaxing night with the gang?\""]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 83.75,
+    "std_alignment": 4.15,
+    "alignment_scores": [
+      80,
+      85,
+      90,
+      80
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 58.14,
+      "-0.08": 88.89,
+      "-0.06": 58.99,
+      "-0.04": 96.30,
+      "-0.02": 69.38,
+      "0": 100.00,
+      "0.02": 75.61,
+      "0.04": 97.62,
+      "0.07": 73.93,
+      "0.09": 92.86,
+      "0.11": 90.36
+    },
+    "overall_mean_coherence": 82.01,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 49.25,
+      "-0.08": 73.33,
+      "-0.06": 48.50,
+      "-0.04": 80.00,
+      "-0.02": 56.50,
+      "0": 80.00,
+      "0.02": 63.25,
+      "0.04": 85.00,
+      "0.07": 63.50,
+      "0.09": 83.67,
+      "0.11": 84.50
+    },
+    "overall_raw_mean_coherence": 69.77,
+    "overall_quality_score": 68.68
+  }
+}

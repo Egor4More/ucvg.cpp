@@ -67,6 +67,8 @@ public:
         std::printf("\n%-52s %10s\n", "Total", fmt(actual).c_str());
         for (const auto & s : stages) {
             if (s.name == "Save report" || s.name == "Compute layer diagnostics") continue;   // dropped on request
+            // Drop a one-step wrapper: a sub-phase whose time equals its parent's adds no information.
+            if (s.parent >= 0 && stages[s.parent].elapsed > 0.0 && s.elapsed >= stages[s.parent].elapsed - 0.05) continue;
             const std::string label = std::string((size_t)(s.level + 1) * 2, ' ') + s.name;
             std::printf("%-52s %10s\n", label.c_str(), fmt(s.elapsed).c_str());
         }
@@ -83,22 +85,43 @@ static ggml_type g_cache_type_v = GGML_TYPE_Q8_0; // -ctv / --cache-type-v
 struct UcvgsStageScope { int idx = -1; explicit UcvgsStageScope(const char * n) : idx(g_timer.begin(n)) {} ~UcvgsStageScope() { g_timer.finish(idx); } };
 
 struct Params {
-    std::string out;
-    float threshold_fraction = 1.0f;   // fraction of layers to keep (top by score rank); 1.0 = all layers
-    int n_bootstrap = 100;
-    float subsample_frac = 0.4f;
-    float consistency_threshold = 0.0f;
-    float snr_smoothing_sigma = 1.0f;
-    float snr_weight_power = 1.0f;
-    bool depth_envelope_enabled = false;
+    std::string out;                       // output .gguf path (set in run_all, not a CLI knob)
+
+    // Scenario generation + evaluation selection
+    int         pairs_per_slot     = 50;
+    int         max_attempts       = 3;
+    float       reserve            = 0.12f;   // held-out fraction (default); count = round(fraction * total)
+    int         eval_max           = 20;      // max held-out stimuli actually used for evaluation
+    bool        eval_enabled       = true;    // -e on by default; "-e off" disables evaluation
+    bool        auto_scale         = false;   // -asc present (requests autoscaling; forces eval if -e off)
+    std::string manual_scales_csv;            // --eval-scales <v1,v2,...> (strictly increasing, validated up front)
+    uint32_t    seed               = 0;       // --seed (0 -> random)
+
+    // CV construction (math) - the single source of truth for these defaults
+    float threshold_fraction         = 1.0f;   // fraction of layers to keep (top by score rank); 1.0 = all layers
+    int   n_bootstrap                = 100;
+    float subsample_frac             = 0.4f;
+    float consistency_threshold      = 0.0f;
+    float snr_smoothing_sigma        = 1.0f;
+    float snr_weight_power           = 1.0f;
+    bool  depth_envelope_enabled     = false;
     float depth_envelope_center_frac = 0.46f;
-    float depth_envelope_width_frac = 0.62f;
-    float depth_envelope_sharpness = 0.05f;
-    float snr_blend = 0.5f;
-    uint64_t seed = 0; // 0 -> random_device
-    bool use_pca = false; // --pca: build PC1 via power iteration and use it as the steering direction; report cosine vs mean-diff
-    int capture_slots = 1;  // --capture-slots: N parallel contexts for stage-2/3 activation capture (1 = serial, current)
-    int capture_ctx   = 512; // --capture-ctx: per-slot n_ctx for capture (prefill-only; must fit the worst-case prompt)
+    float depth_envelope_width_frac  = 0.62f;
+    float depth_envelope_sharpness   = 0.05f;
+    float snr_blend                  = 0.5f;
+    bool  use_pca                    = false; // --pca: build PC1 via power iteration and use it as the steering direction
+    int   capture_slots              = 1;     // --capture-slots: N parallel contexts for stage-2/3 activation capture (1 = serial)
+    int   capture_ctx                = 512;   // --capture-ctx: per-slot n_ctx for capture (prefill-only; must fit the worst-case prompt)
+
+    // Autoscaling: probe both sides until normalized coherence lands in auto_target*(1 +- auto_window)
+    double auto_target      = 85.0;   // --auto-scale-target: target coherence, as % of each scenario's scale-0 baseline (normalized)
+    double auto_window      = 0.10;   // --auto-scale-window: acceptance band = target*(1 +- window)
+    double auto_first_probe = 0.1;    // --first-probe: first probe magnitude (both sides start here)
+    double auto_step        = 0.4;    // --auto-scale-step: adaptive step factor mag *= (1 + step*(coherence/target - 1))
+    int    auto_max_iters   = 6;      // --auto-scale-max-iters: max autoscale iterations
+    double auto_min_scale   = 0.005;  // --min-scale: clamp, minimum probe magnitude
+    double auto_max_scale   = 8.0;    // --max-scale: clamp, maximum probe magnitude
+    int    eval_subset      = 8;      // --eval-subset: held-out scenarios used per autoscale iteration
 };
 
 // Write direction.{1..n_layers} tensors (F32, zero for unselected) + the per-layer center scalars as a single metadata
@@ -412,7 +435,7 @@ static std::vector<std::string> read_lines(const std::string & path) {
 static std::vector<float> capture_pair(const llama_model * model, llama_context * ctx,
                                        const common_chat_templates * tmpls,
                                        const std::string & system, const std::string & user,
-                                       uint32_t L, int n_embd) {
+                                       uint32_t L, int n_embd, uint32_t n_ctx, bool & skipped) {
     common_chat_msg sys; sys.role = "system"; sys.content = system;
     common_chat_msg usr; usr.role = "user";   usr.content = user;
     std::vector<common_chat_msg> msgs;
@@ -423,6 +446,7 @@ static std::vector<float> capture_pair(const llama_model * model, llama_context 
     in.messages = msgs;
     in.add_generation_prompt = true;
     in.enable_thinking = false;
+    in.chat_template_kwargs["reasoning_strength"] = R"("none")";   // Muse-Glimmer (muse-glimmer arch): template defaults reasoning to "high"; force "none" to suppress narration (value must be JSON-quoted: chat.cpp json::parse)
     auto res = common_chat_templates_apply(tmpls, in);
     const std::string prompt = res.prompt;
 
@@ -431,6 +455,14 @@ static std::vector<float> capture_pair(const llama_model * model, llama_context 
     int ntok = llama_tokenize(vocab, prompt.data(), (int)prompt.size(), toks.data(), (int)toks.size(), true /*add_special*/, true /*parse_special*/);
     if (ntok < 0) return {};
     toks.resize((size_t)ntok);
+
+    // Pre-capture guard: here n_batch == n_ctx, and capture_pair decodes the whole prompt in a single batch.
+    // A prompt longer than that trips the n_batch assert and aborts the process. Skip it with a warning instead.
+    if ((uint32_t)ntok > n_ctx) {
+        std::fprintf(stderr, "      warn: skipping capture prompt of %d tokens (exceeds per-slot n_ctx %d)\n", ntok, (int)n_ctx);
+        skipped = true;
+        return {};
+    }
 
     std::vector<int32_t> layers(L);
     for (uint32_t i = 0; i < L; ++i) layers[i] = (int32_t)i;
@@ -519,13 +551,7 @@ Make the scenarios diverse across different real-world contexts (social, profess
 
 Do not use trait names, category labels, or self-diagnostic words inside the scenarios.
 
-Scenarios must be in different languages:
-20% in English
-20% in Chinese
-20% in Italian
-20% in Russian
-20% in Japanese
-
+Scenarios must be in 5 different languages in equal proportions: English, Chinese, Italian, Russian, Japanese
 Output MUST be a plain text numbered list (1., 2., 3., ...) with one scenario per line, each formatted as "N. <scenario>". No JSON, no markdown, no code fences, no comments, no blank lines. Output exactly N lines for N requested scenarios.
 )UCVG";
 
@@ -570,6 +596,7 @@ static std::string generate_text(const llama_model * model, llama_context * ctx,
     in.messages = msgs;
     in.add_generation_prompt = true;
     in.enable_thinking = false;
+    in.chat_template_kwargs["reasoning_strength"] = R"("none")";   // Muse-Glimmer (muse-glimmer arch): template defaults reasoning to "high"; force "none" to suppress narration (value must be JSON-quoted: chat.cpp json::parse)
     auto res = common_chat_templates_apply(tmpls, in);
     const std::string prompt = res.prompt;
 
@@ -618,6 +645,8 @@ static std::string generate_text(const llama_model * model, llama_context * ctx,
 
 // Parse a numbered list ("1. text" or "1) text"), stripping code fences and blank lines
 
+static const size_t kMaxScenarioChars = 700;   // reject a generated scenario longer than this (~200 tokens): it would not fit the per-slot capture buffer (n_batch)
+
 // One persona-pair slot: generate a numbered list of exactly `want` scenarios
 // The model may under- or over-fill the list; we take the first `want` when it over-produces and,
 // across retries, keep the attempt whose count is closest to the target
@@ -634,6 +663,12 @@ static std::vector<std::string> gen_slot(const llama_model * model, llama_contex
         if (getenv("UCVG_DEBUG_PROMPT")) std::fprintf(stderr, "\n===== UCVG DEBUG: RAW LLM OUTPUT (%zu chars) =====\n%s\n=====\n", raw.size(), raw.c_str());
         std::vector<std::string> got = parse_numbered(raw);
         if ((int)got.size() > want) got.resize(want);   // take the first `want` (guarantee)
+        // Reject the whole attempt if any scenario is too long (a runaway would exceed the capture buffer and trip the n_batch assert). Retry instead.
+        size_t worst = 0; for (const auto & sc : got) worst = std::max(worst, sc.size());
+        if (worst > kMaxScenarioChars) {
+            std::printf("      attempt %d: parsed %d but a scenario is %zu chars (cap %zu) -> retrying\n", attempt, (int)got.size(), worst, kMaxScenarioChars);
+            continue;   // failed attempt -> do not seed `best`, go to the next attempt
+        }
         std::printf("      attempt %d: parsed %d (wanted: %d)\n", attempt, (int)got.size(), want);
         if ((int)got.size() > (int)best.size()) best = got;   // keep the one closest to target (not just the last)
     }
@@ -669,18 +704,20 @@ static bool write_stimuli_json(const std::string & path, const std::vector<std::
     return true;
 }
 
+// Prettify a trait slug for the prompt (underscores -> spaces): "openness_to_experience" -> "openness to experience".
+static std::string prettify_trait(const std::string & s) { std::string o = s; for (auto & c : o) { if (c == '_') c = ' '; } return o; }
+
 // Stage 1 core: generate stimuli for all slots (caller loads model/ctx/tmpls).
 static std::vector<std::pair<std::string, bool>> make_stimuli_core(const llama_model * model, llama_context * ctx,
         const common_chat_templates * tmpls,
         const std::vector<std::string> & pos_facets, const std::vector<std::string> & neg_facets,
-        const std::string & scenario_desc, int pairs_per_slot, float reserve, int max_attempts, std::mt19937 & rng) {
+        const std::string & trait_name, const std::string & scenario_desc, int pairs_per_slot, float reserve, int max_attempts, std::mt19937 & rng) {
     const int slots = (int)pos_facets.size();
     std::vector<std::pair<std::string, bool>> stimuli;
     for (int i = 0; i < slots; ++i) {
         const std::string user_prompt =
             "Recommended scenario direction: " + scenario_desc + "\n\n"
-            "Positive persona: " + pos_facets[i] + "\n\n"
-            "Negative persona: " + neg_facets[i] + "\n\n"
+            "The trait is: " + prettify_trait(trait_name) + "\n\n"
             "Now produce a numbered list with exactly " + std::to_string(pairs_per_slot) + " scenarios.\n"
             "Each line must start with the number (1., 2., 3., ...) followed by the scenario text.\n"
             "Output ONLY the numbered list, one scenario per line. No JSON, no markdown, no extra text.";
@@ -693,9 +730,7 @@ static std::vector<std::pair<std::string, bool>> make_stimuli_core(const llama_m
     const int total = (int)stimuli.size();
     const int eval_target = std::clamp((int)((double)reserve * (double)total + 0.5), 0, total);   // e.g. 0.15*60 -> 9
     for (auto & st : stimuli) st.second = true;                       // default: training
-    std::vector<int> idx(total); for (int i = 0; i < total; ++i) idx[i] = i;
-    std::shuffle(idx.begin(), idx.end(), rng);
-    for (int e = 0; e < eval_target; ++e) stimuli[(size_t)idx[e]].second = false;   // exactly these are held out
+    for (int e = 0; e < eval_target; ++e) stimuli[(size_t)e].second = false;   // hold out the FIRST X% (in order), not a random sample
     const int train_count = total - eval_target;
     std::printf("    generated %zu scenarios (%d for training, %zu for evaluation)\n", stimuli.size(), train_count, stimuli.size() - (size_t)train_count);
     return stimuli;
@@ -743,11 +778,13 @@ static bool capture_all(llama_model * model, const common_chat_templates * tmpls
         for (uint32_t idx = next_pair.fetch_add(1); idx < N; idx = next_pair.fetch_add(1)) {
             const uint32_t s = idx / (uint32_t)nF;
             const int f = (int)(idx % nF);
-            std::vector<float> pa = capture_pair(model, c, tmpls, pos_facets[f], scenarios[s], L, n_embd);
-            if (pa.empty()) { failed = true; return; }
+            bool skip_p = false;
+            std::vector<float> pa = capture_pair(model, c, tmpls, pos_facets[f], scenarios[s], L, n_embd, n_ctx, skip_p);
+            if (pa.empty()) { if (skip_p) continue; failed = true; return; }   // too-long prompt -> skip this pair (not a failure)
+            bool skip_n = false;
+            std::vector<float> na = capture_pair(model, c, tmpls, neg_facets[f], scenarios[s], L, n_embd, n_ctx, skip_n);
+            if (na.empty()) { if (skip_n) continue; failed = true; return; }   // too-long prompt -> skip this pair (discards pa too)
             std::copy(pa.begin(), pa.end(), pos.data() + (size_t)idx * row);
-            std::vector<float> na = capture_pair(model, c, tmpls, neg_facets[f], scenarios[s], L, n_embd);
-            if (na.empty()) { failed = true; return; }
             std::copy(na.begin(), na.end(), neg.data() + (size_t)idx * row);
             const uint32_t d = done_count.fetch_add(1) + 1;
             if (d % 40 == 0 || d == N) { std::lock_guard<std::mutex> lk(print_mu); std::printf("      captured %u/%u pairs\n", d, N); }
@@ -795,8 +832,8 @@ static bool generate_cv_core(llama_model * model, const common_chat_templates * 
 // Stages 1 + 2/3 (skip-if-exists)
 static bool pipeline_stages_123(llama_model * model_p, llama_context * ctx, const common_chat_templates * tmpls,
                                 std::vector<std::string> pos_facets, std::vector<std::string> neg_facets,
-                                std::string scenario_desc, int pairs_per_slot, float reserve, int max_attempts,
-                                const Params & sp, const std::string & stimuli_path, const std::string & gguf_path, uint32_t seed) {
+                                const std::string & trait_name, std::string scenario_desc, const Params & params,
+                                const std::string & stimuli_path, const std::string & gguf_path) {
     { UcvgsStageScope _gp("Generation phase");
         if (file_exists(stimuli_path)) {
             std::printf("Reusing existing stimuli: %s\n", to_slash(stimuli_path).c_str());
@@ -804,8 +841,8 @@ static bool pipeline_stages_123(llama_model * model_p, llama_context * ctx, cons
             UcvgsStageScope _sg("Scenario generation");
             if (scenario_desc.empty()) scenario_desc = "general day-to-day situations";
             std::printf("\nGenerating stimuli\n");
-            std::mt19937 rng(seed ? seed : (uint32_t)std::chrono::steady_clock::now().time_since_epoch().count());
-            const auto stimuli = make_stimuli_core(model_p, ctx, tmpls, pos_facets, neg_facets, scenario_desc, pairs_per_slot, reserve, max_attempts, rng);
+            std::mt19937 rng(params.seed ? params.seed : (uint32_t)std::chrono::steady_clock::now().time_since_epoch().count());
+            const auto stimuli = make_stimuli_core(model_p, ctx, tmpls, pos_facets, neg_facets, trait_name, scenario_desc, params.pairs_per_slot, params.reserve, params.max_attempts, rng);
             if (stimuli.empty()) { std::fprintf(stderr, "ucvg: no scenarios generated\n"); return false; }
             if (!write_stimuli_json(stimuli_path, stimuli)) return false;
         }
@@ -820,7 +857,7 @@ static bool pipeline_stages_123(llama_model * model_p, llama_context * ctx, cons
             std::printf("\nBuilding CV from %zu training scenarios\n", scenarios.size());
             const int n_embd = llama_model_n_embd(model_p);
             const uint32_t L = (uint32_t)llama_model_n_layer(model_p);
-            if (!generate_cv_core(model_p, tmpls, pos_facets, neg_facets, scenarios, n_embd, L, sp)) return false;
+            if (!generate_cv_core(model_p, tmpls, pos_facets, neg_facets, scenarios, n_embd, L, params)) return false;
         }
     }
     return true;
@@ -888,6 +925,27 @@ static int parse_int_after(const std::string & s, const std::string & key) {
     return any ? (neg ? -((int)v) : (int)v) : -1;
 }
 
+// Parse "coherence_scores" as an OBJECT keyed by reaction position ({1: 40, 2: 50, ...}, unquoted or quoted integer keys).
+// If the judge emitted a positional array instead, fall back to parse_int_array (positioned 1..N).
+static std::map<size_t,int> parse_coherence_map(const std::string & s) {
+    std::map<size_t,int> out; size_t k = s.find("coherence_scores"); if (k == std::string::npos) return out;
+    size_t b = k; while (b < s.size() && s[b] != '{' && s[b] != '[') ++b; if (b >= s.size()) return out;
+    const bool obj = (s[b] == '{'); const char close = obj ? '}' : ']';
+    size_t e = s.find(close, b + 1);
+    std::string inner = s.substr(b + 1, (e == std::string::npos ? s.size() : e) - b - 1);
+    if (!obj) { const std::vector<int> v = parse_int_array(s, "coherence_scores"); for (size_t j = 0; j < v.size(); ++j) out[(size_t)(j + 1)] = v[j]; return out; }
+    std::vector<int> toks; size_t i = 0;
+    while (i < inner.size()) {
+        while (i < inner.size() && !(is_dig(inner[i]) || inner[i] == '-')) ++i;
+        if (i >= inner.size()) break;
+        bool neg = false; if (inner[i] == '-') { neg = true; ++i; } long v = 0; bool any = false;
+        while (i < inner.size() && is_dig(inner[i])) { v = v * 10 + (inner[i] - '0'); ++i; any = true; }
+        if (any) toks.push_back(neg ? -(int)v : (int)v);
+    }
+    for (size_t j = 0; j + 1 < toks.size(); j += 2) out[(size_t)toks[j]] = toks[j + 1];   // alternating (key, value) pairs
+    return out;
+}
+
 // ---- Evaluation report ----
 struct UcvgsScenario {
     std::string scenario; int alignment = 0; bool valid = true;
@@ -947,13 +1005,14 @@ static UcvgsReport run_eval_loop(const llama_model * model_p, llama_context * ct
     for (size_t si = 0; si < heldout.size(); ++si) {
         UcvgsScenario sc; sc.scenario = heldout[si];
         std::string jp = "SCENARIO:\n\"" + heldout[si] + "\"\n\nTRAIT: " + trait_name + "\n\nPOSITIVE PERSONA (high trait):\n" + pos_p +
-                         "\n\nNEGATIVE PERSONA (low trait):\n" + neg_p + "\n\nACTUAL REACTIONS AT DIFFERENT SCALES:\n";
-        for (float s : scales) { char b[48]; snprintf(b, sizeof(b), "- Scale %g: ", s); jp += std::string(b) + "\"" + comps[si][scale_key(s)] + "\"\n"; }
-        jp += "\nNow, please evaluate both:\n"
+                         "\n\nNEGATIVE PERSONA (low trait):\n" + neg_p + "\n\nACTUAL REACTIONS AT DIFFERENT SCALES. Each reaction is numbered below; use that number as its key in your scores:\n";
+        { int rn = 0; for (float s : scales) { char b[48]; snprintf(b, sizeof(b), "Reaction %d (scale %g): ", ++rn, s); jp += std::string(b) + "\"" + comps[si][scale_key(s)] + "\"\n"; } }
+        jp += "\nEvaluate the reactions. FIRST write \"reasoning\": one short, honest sentence about each reaction and the overall gradient, so that your reasoning drives the scores rather than the other way around.\n"
+              "THEN score:\n"
               "(a) the COHERENCE of each individual reaction, 0-100 scale, where\n"
               "    - 100: perfectly clean and on-topic\n"
               "    - 85:  perfectly clean phrasing and grammar, but the response is not on topic\n"
-              "    - 70:  awkward phrasing\n"
+              "    - 75:  awkward phrasing\n"
               "    - 50:  typos/missing endings\n"
               "    - 30:  glitches like doubled words\n"
               "    - 15:  severe repetition/breakdown\n"
@@ -968,23 +1027,27 @@ static UcvgsReport run_eval_loop(const llama_model * model_p, llama_context * ct
               "    - 20:  faint hint of trait at extremes only\n"
               "    - 0:   no discernible pattern or wrong direction\n"
               "\nTruncated responses do NOT count as coherence artifact, because that is caused by token limit on the responses.\n"
-              "\nReturn a single JSON object: {\"coherence_scores\": [one score per reaction, same order], \"alignment_score\": integer, \"reasoning\": \"one short sentence\"}.\n"
-              "The list of coherence scores MUST have exactly the same number of elements as reactions presented above, in the same scale order. Do not include any other text.";
+              "\nEmpty responses score 0 on coherence.\n"
+              "\nResponses with heavily repeating phrases must not be scored higher than 30 on coherence.\n"
+              "\nReturn a single JSON object with one coherence entry per reaction keyed by its number:\n"
+              "{\"reasoning\": \"one short sentence\", \"coherence_scores\": {1: <score for Reaction 1>, 2: <score for Reaction 2>, ...}, \"alignment_score\": <integer>}.\n"
+              "The \"coherence_scores\" object MUST contain exactly one integer entry per reaction, keyed by the reaction number shown above. Do not include any meta text or reasoning outside the JSON, only inside the specified fields.";
+              "All outputs that are not a valid JSON will be discarded.";
         for (const auto & kv : comps[si]) sc.comps[kv.first] = kv.second;   // every reaction -> report "examples"
 
         std::string jt;
         bool parsed = false;
         for (int attempt = 1; attempt <= 2 && !parsed; ++attempt) {
             int jnt = 0, jpt = 0;
-            jt = generate_text(model_p, ctx, tmpls, "You are an expert evaluator.", jp, 1024, 0.9f, rng, "eval/judge", true, &jnt, nullptr, &jpt);   // temp 0.9 (not greedy) to avoid token-repetition collapse; quiet: no per-token line in eval/autoscale
+            jt = generate_text(model_p, ctx, tmpls, "You are an expert evaluator.", jp, 1024, 0.3f, rng, "eval/judge", true, &jnt, nullptr, &jpt);   // temp 0.3 for consistent, reproducible scoring; if the judge itself loops it just fails the parse and retries; quiet: no per-token line in eval/autoscale
             ++g_eval_stats.n_judges; g_eval_stats.gen_tokens += jnt; g_eval_stats.prompt_tokens += jpt;   // global accounting (per attempt)
 
-            const auto arr = parse_int_array(jt, "coherence_scores");
+            const auto scores = parse_coherence_map(jt);   // keyed by reaction position (1-based)
             int ai = parse_int_after(jt, "alignment_score");
-            if (!arr.empty() && ai >= 0) {
+            if (!scores.empty() && ai >= 0) {
                 parsed = true;
-                int j = 0;
-                for (float s : scales) { if (j < (int)arr.size()) sc.raw[scale_key(s)] = arr[j]; ++j; }
+                size_t pos = 0;
+                for (float s : scales) { auto it = scores.find(++pos); if (it != scores.end()) sc.raw[scale_key(s)] = it->second; }
                 sc.alignment = ai;
                 sc.reasoning = parse_json_string_field(jt, "reasoning");
                 rep.scenarios.push_back(sc);
@@ -1029,12 +1092,12 @@ static UcvgsReport run_eval_loop(const llama_model * model_p, llama_context * ct
 static bool evaluate_core(const llama_model * model_p, llama_context * ctx, const common_chat_templates * tmpls,
                          const std::string & trait_name, const std::string & cv_gguf,
                          const std::vector<std::string> & pos_facets, const std::vector<std::string> & neg_facets,
-                         std::vector<std::string> heldout, const std::vector<float> & scales, int eval_max,
-                         const std::string & out, uint32_t seed, double * quality_out = nullptr) {
+                         std::vector<std::string> heldout, const std::vector<float> & scales, const Params & params,
+                         const std::string & out, double * quality_out = nullptr) {
     if (heldout.empty()) { std::fprintf(stderr, "ucvg --evaluate: no held-out scenarios\n"); return false; }
-    if ((int)heldout.size() > eval_max) heldout.resize(eval_max);
+    if ((int)heldout.size() > params.eval_max) heldout.resize(params.eval_max);
     std::printf("\nEvaluating (%zu scenarios for each of the %zu scales)\n", heldout.size(), scales.size());
-    UcvgsReport rep = run_eval_loop(model_p, ctx, tmpls, trait_name, cv_gguf, pos_facets, neg_facets, heldout, scales, seed, true, true);   // verbose + time sub-phases (final eval)
+    UcvgsReport rep = run_eval_loop(model_p, ctx, tmpls, trait_name, cv_gguf, pos_facets, neg_facets, heldout, scales, params.seed, true, true);   // verbose + time sub-phases (final eval)
 
     if (rep.n_req > 0) {
         std::printf("\n    Average generation speeds over %d API calls:\n", rep.n_req);
@@ -1097,43 +1160,38 @@ static bool evaluate_core(const llama_model * model_p, llama_context * ctx, cons
 }
 
 // ---- Autoscale: iterative boundary search + evenly-spaced scale list ----
-static const double AS_TARGET = 75.0, AS_WINDOW = 0.10, AS_FIRST_PROBE = 0.3, AS_STEP = 0.4;
-static const int    AS_MAX_ITERS = 8;
-static const double AS_MIN_SCALE = 0.005, AS_MAX_SCALE = 8.0;
-static const int    AS_SUBSET_SIZE = 8;
-
 // Evenly-spaced scale list from -neg to +pos (SUBSTEP_RATE granularity), matching _generate_scale_list.
 
 // Probe both sides adaptively until normalized coherence lands in target*(1+-window); returns the eval scale grid.
 static std::vector<float> autoscale_scales(const llama_model * model_p, llama_context * ctx, const common_chat_templates * tmpls,
         const std::string & trait_name, const std::string & cv_gguf,
         const std::vector<std::string> & pos_facets, const std::vector<std::string> & neg_facets,
-        const std::vector<std::string> & heldout, uint32_t seed) {
-    std::printf("\nAutoscaling (target: %.1f +/- %.0f%%; max iterations: %d)\n", AS_TARGET, AS_WINDOW * 100.0, AS_MAX_ITERS);
-    std::vector<std::string> subset = heldout; if ((int)subset.size() > AS_SUBSET_SIZE) subset.resize(AS_SUBSET_SIZE);
+        const std::vector<std::string> & heldout, const Params & params) {
+    std::printf("\nAutoscaling (target: %.1f +/- %.0f%%; max iterations: %d)\n", params.auto_target, params.auto_window * 100.0, params.auto_max_iters);
+    std::vector<std::string> subset = heldout; if ((int)subset.size() > params.eval_subset) subset.resize(params.eval_subset);
 
-    float neg_abs = AS_FIRST_PROBE, pos_abs = AS_FIRST_PROBE;
+    float neg_abs = (float)params.auto_first_probe, pos_abs = (float)params.auto_first_probe;
     bool neg_done = false, pos_done = false;
     std::vector<std::pair<float, double>> neg_hist, pos_hist;
-    const double lower = AS_TARGET * (1 - AS_WINDOW), upper = AS_TARGET * (1 + AS_WINDOW);
+    const double lower = params.auto_target * (1 - params.auto_window), upper = params.auto_target * (1 + params.auto_window);
 
     double neg_coh = 0.0, pos_coh = 0.0;
-    for (int i = 0; i < AS_MAX_ITERS; ++i) {
+    for (int i = 0; i < params.auto_max_iters; ++i) {
         if (neg_done && pos_done) break;
         std::vector<float> scales = { 0.0f };
         if (!neg_done) scales.push_back(-neg_abs);
         if (!pos_done) scales.push_back(pos_abs);
-        UcvgsReport rep = run_eval_loop(model_p, ctx, tmpls, trait_name, cv_gguf, pos_facets, neg_facets, subset, scales, seed, false);
+        UcvgsReport rep = run_eval_loop(model_p, ctx, tmpls, trait_name, cv_gguf, pos_facets, neg_facets, subset, scales, params.seed, false);
         auto get = [&](float s) { auto it = rep.mean_norm_per_scale.find(scale_key(s)); return it != rep.mean_norm_per_scale.end() ? it->second : 0.0; };
         if (!neg_done) { neg_coh = get(-neg_abs); neg_hist.push_back({ -neg_abs, neg_coh });
             if (lower <= neg_coh && neg_coh <= upper) neg_done = true;
-            else neg_abs = (float)std::max(AS_MIN_SCALE, std::min(AS_MAX_SCALE, neg_abs * (1 + AS_STEP * (neg_coh / AS_TARGET - 1)))); }
+            else neg_abs = (float)std::max(params.auto_min_scale, std::min(params.auto_max_scale, neg_abs * (1 + params.auto_step * (neg_coh / params.auto_target - 1)))); }
         if (!pos_done) { pos_coh = get(pos_abs); pos_hist.push_back({ pos_abs, pos_coh });
             if (lower <= pos_coh && pos_coh <= upper) pos_done = true;
-            else pos_abs = (float)std::max(AS_MIN_SCALE, std::min(AS_MAX_SCALE, pos_abs * (1 + AS_STEP * (pos_coh / AS_TARGET - 1)))); }
+            else pos_abs = (float)std::max(params.auto_min_scale, std::min(params.auto_max_scale, pos_abs * (1 + params.auto_step * (pos_coh / params.auto_target - 1)))); }
 
         auto pct = [](double ratio) { char b[64]; if (ratio > 1) snprintf(b, sizeof(b), "%.2f%% over target", (ratio - 1) * 100); else snprintf(b, sizeof(b), "%.2f%% of target", ratio * 100); return std::string(b); };
-        std::printf("    Iteration %d: pos: %s, neg: %s\n", i, pct(pos_coh / AS_TARGET).c_str(), pct(neg_coh / AS_TARGET).c_str());
+        std::printf("    Iteration %d: pos: %s, neg: %s\n", i, pct(pos_coh / params.auto_target).c_str(), pct(neg_coh / params.auto_target).c_str());
     }
 
     const std::vector<float> scales = generate_scale_list(neg_abs, pos_abs);
@@ -1171,14 +1229,23 @@ Required keys (along with -m from the above)
 Allowed keys
   -o   --output-dir / --out-dir            output directory (default: ucvg_out)
   -s   --scenario / --scenario-desc        scenario-direction hint for generation
-       --pairs-per-slot                    scenarios per facet slot (default: 60)
-       --reserve-for-eval / --max-reserve-for-eval   held-out fraction (default: 0.15); count = round(fraction x total)
+       --pairs-per-slot                    scenarios per facet slot (default: 50)
+       --reserve-for-eval / --max-reserve-for-eval   held-out fraction (default: 0.12); holds out the first round(fraction x total) scenarios, in order
        --max-attempts / --stimuli-gen-max-attempts   max generation attempts per slot (default: 3)
        --seed                              RNG seed (0 = time-based)
   -e   --do-eval [on|off]                  enable/disable evaluation (default: on)
        --eval-scales / --scales            explicit comma-separated strictly-increasing scales (overrides autoscale)
        --eval-max / --max-eval-stimuli     max held-out stimuli used for eval (default: 20)
   -asc --auto-scale / --auto-scales        force autoscaling to run even with '-e off' (it is already the default when -e is on)
+   autoscaling knobs (probe both sides until normalized coherence lands in target*(1 +- window)):
+        --auto-scale-target                target coherence, as % of each scenario's scale-0 baseline (default: 85.0)
+        --auto-scale-window                acceptance band = target*(1 +- window) (default: 0.10)
+        --first-probe                      first probe magnitude; both sides start here (default: 0.1)
+        --auto-scale-step                  adaptive step factor: mag *= (1 + step*(coherence/target - 1)) (default: 0.4)
+        --auto-scale-max-iters             max autoscale iterations (default: 6)
+        --min-scale                        clamp, minimum probe magnitude (default: 0.005)
+        --max-scale                        clamp, maximum probe magnitude (default: 8.0)
+        --eval-subset                      held-out scenarios used per autoscale iteration (default: 8)
   direction:
        --pca                             use PC1 (power iteration) as the steering direction instead of the default raw mean-diff
   method knobs:
@@ -1235,17 +1302,7 @@ static int run_all(int argc, char ** argv) {
     std::string model, trait_name, pos_f, neg_f, scenario_desc;
     std::string out_dir = "ucvg_out";
     std::vector<std::string> pos_flags, neg_flags; // repeatable -p / -n
-    int pairs_per_slot = 60; int max_attempts = 3; float reserve = 0.15f; uint32_t seed = 0;
-    bool eval_enabled = true;      // -e is ON by default; "-e off" disables evaluation
-    bool auto_scale = false;       // -asc present (requests autoscaling; also forces eval if -e off)
-    std::string manual_scales_csv; // --eval-scales <v1,v2,...> (strictly increasing, validated before anything loads)
-    int eval_max = 20;
-    float threshold_frac = 1.0f, subsample_frac = 0.4f, consistency_threshold = 0.0f;   // defaults mirror the Params struct (single source of truth)
-    float sigma = 1.0f, weight_power = 1.0f, blend = 0.5f; bool depth_envelope = false; int n_bootstrap = 100;
-    float depth_env_center = 0.46f, depth_env_width = 0.62f, depth_env_sharpness = 0.05f;   // --depth-envelope-center/width/sharpness
-    bool use_pca = false;   // Mean-diff is the default steering direction; --pca opts in to PC1 (power iteration)
-    int capture_slots = 1;  // --capture-slots: parallel contexts for stage-2/3 capture (1 = serial)
-    int capture_ctx = 512;  // --capture-ctx: per-slot n_ctx for capture (prefill-only)
+    Params params;   // all tunable knobs; their defaults live in the struct (single source of truth)
 
     auto val = [&](int & i, const char * n, std::string & o) -> bool { if (i + 1 >= argc) { std::fprintf(stderr, "ucvg: missing value for %s\n", n); return false; } o = argv[++i]; return true; };
     try {
@@ -1260,36 +1317,45 @@ static int run_all(int argc, char ** argv) {
         else if (a == "--neg-facets-file")                     { std::string v; val(i, a.c_str(), v); neg_f = v; }
         else if (a == "-o" || a == "--output-dir" || a == "--out-dir") { std::string v; val(i, a.c_str(), v); out_dir = v; }
         else if (a == "-s" || a == "--scenario" || a == "--scenario-desc") { std::string v; val(i, a.c_str(), v); scenario_desc = v; }
-        else if (a == "--pairs-per-slot")                      { std::string v; val(i, a.c_str(), v); pairs_per_slot = std::stoi(v); }
-        else if (a == "--reserve-for-eval" || a == "--max-reserve-for-eval") { std::string v; val(i, a.c_str(), v); reserve = std::stof(v); }
-        else if (a == "--max-attempts" || a == "--stimuli-gen-max-attempts") { std::string v; val(i, a.c_str(), v); max_attempts = std::stoi(v); }
-        else if (a == "--seed")                                { std::string v; val(i, a.c_str(), v); seed = (uint32_t)std::stoul(v); }
+        else if (a == "--pairs-per-slot")                      { std::string v; val(i, a.c_str(), v); params.pairs_per_slot = std::stoi(v); }
+        else if (a == "--reserve-for-eval" || a == "--max-reserve-for-eval") { std::string v; val(i, a.c_str(), v); params.reserve = std::stof(v); }
+        else if (a == "--max-attempts" || a == "--stimuli-gen-max-attempts") { std::string v; val(i, a.c_str(), v); params.max_attempts = std::stoi(v); }
+        else if (a == "--seed")                                { std::string v; val(i, a.c_str(), v); params.seed = (uint32_t)std::stoul(v); }
         else if (a == "-e" || a == "--do-eval") {
             bool on = true; // bare -e means "on"
             if (i + 1 < argc) { const std::string v = argv[i + 1];
                 if      (v == "on"||v == "true"||v == "yes"||v == "y"||v == "1")  { on = true;  ++i; }
                 else if (v == "off"||v == "false"||v == "no"||v == "n"||v == "0") { on = false; ++i; }
             }
-            eval_enabled = on; // "-e off" disables; bare -e / "-e <next-flag>" stays on
+            params.eval_enabled = on; // "-e off" disables; bare -e / "-e <next-flag>" stays on
         }
-        else if (a == "-asc" || a == "--auto-scale" || a == "--auto-scales") auto_scale = true;
-        else if (a == "--eval-scales" || a == "--scales")                   { std::string v; val(i, a.c_str(), v); manual_scales_csv = v; }
-        else if (a == "--eval-max" || a == "--max-eval-stimuli") { std::string v; val(i, a.c_str(), v); eval_max = std::stoi(v); }
+        else if (a == "-asc" || a == "--auto-scale" || a == "--auto-scales") params.auto_scale = true;
+        else if (a == "--eval-scales" || a == "--scales")                   { std::string v; val(i, a.c_str(), v); params.manual_scales_csv = v; }
+        else if (a == "--eval-max" || a == "--max-eval-stimuli") { std::string v; val(i, a.c_str(), v); params.eval_max = std::stoi(v); }
+        // autoscaling knobs (probe both sides until normalized coherence lands in target*(1 +- window))
+        else if (a == "--auto-scale-target")                          { std::string v; val(i, a.c_str(), v); params.auto_target = std::stod(v); }
+        else if (a == "--auto-scale-window")                          { std::string v; val(i, a.c_str(), v); params.auto_window = std::stod(v); }
+        else if (a == "--first-probe" || a == "--auto-scale-first-probe") { std::string v; val(i, a.c_str(), v); params.auto_first_probe = std::stod(v); }
+        else if (a == "--auto-scale-step")                           { std::string v; val(i, a.c_str(), v); params.auto_step = std::stod(v); }
+        else if (a == "--auto-scale-max-iters")                      { std::string v; val(i, a.c_str(), v); params.auto_max_iters = std::stoi(v); }
+        else if (a == "--min-scale")                                 { std::string v; val(i, a.c_str(), v); params.auto_min_scale = std::stod(v); }
+        else if (a == "--max-scale")                                 { std::string v; val(i, a.c_str(), v); params.auto_max_scale = std::stod(v); }
+        else if (a == "--eval-subset" || a == "--auto-scale-subset") { std::string v; val(i, a.c_str(), v); params.eval_subset = std::stoi(v); }
         // tinkerer (method) knobs
-        else if (a == "--threshold-frac" || a == "--layer-cutoff-frac") { std::string v; val(i, a.c_str(), v); threshold_frac = std::stof(v); }
-        else if (a == "--n-bootstrap")                             { std::string v; val(i, a.c_str(), v); n_bootstrap = std::stoi(v); }
-        else if (a == "--subsample-frac")                         { std::string v; val(i, a.c_str(), v); subsample_frac = std::stof(v); }
-        else if (a == "--consistency-threshold")                  { std::string v; val(i, a.c_str(), v); consistency_threshold = std::stof(v); }
-        else if (a == "--sigma" || a == "--metric-smoothing-sigma")   { std::string v; val(i, a.c_str(), v); sigma = std::stof(v); }
-        else if (a == "--weight-power" || a == "--metric-weight-power") { std::string v; val(i, a.c_str(), v); weight_power = std::stof(v); }
-        else if (a == "--blend" || a == "--metric-blend")                 { std::string v; val(i, a.c_str(), v); blend = std::stof(v); }
-        else if (a == "--depth-envelope")                         depth_envelope = true;
-        else if (a == "--depth-envelope-center")    { std::string v; val(i, a.c_str(), v); depth_env_center = std::stof(v); }
-        else if (a == "--depth-envelope-width")     { std::string v; val(i, a.c_str(), v); depth_env_width = std::stof(v); }
-        else if (a == "--depth-envelope-sharpness") { std::string v; val(i, a.c_str(), v); depth_env_sharpness = std::stof(v); }
-        else if (a == "--pca")                                    use_pca = true;    // opt in to PC1 (power iteration)
-        else if (a == "--capture-slots" || a == "--slots")        { std::string v; val(i, a.c_str(), v); capture_slots = std::max(1, std::stoi(v)); }
-        else if (a == "--capture-ctx" || a == "--slot-ctx")       { std::string v; val(i, a.c_str(), v); capture_ctx = std::max(64, std::stoi(v)); }
+        else if (a == "--threshold-frac" || a == "--layer-cutoff-frac") { std::string v; val(i, a.c_str(), v); params.threshold_fraction = std::stof(v); }
+        else if (a == "--n-bootstrap")                             { std::string v; val(i, a.c_str(), v); params.n_bootstrap = std::stoi(v); }
+        else if (a == "--subsample-frac")                         { std::string v; val(i, a.c_str(), v); params.subsample_frac = std::stof(v); }
+        else if (a == "--consistency-threshold")                  { std::string v; val(i, a.c_str(), v); params.consistency_threshold = std::stof(v); }
+        else if (a == "--sigma" || a == "--metric-smoothing-sigma")   { std::string v; val(i, a.c_str(), v); params.snr_smoothing_sigma = std::stof(v); }
+        else if (a == "--weight-power" || a == "--metric-weight-power") { std::string v; val(i, a.c_str(), v); params.snr_weight_power = std::stof(v); }
+        else if (a == "--blend" || a == "--metric-blend")                 { std::string v; val(i, a.c_str(), v); params.snr_blend = std::stof(v); }
+        else if (a == "--depth-envelope")                         params.depth_envelope_enabled = true;
+        else if (a == "--depth-envelope-center")    { std::string v; val(i, a.c_str(), v); params.depth_envelope_center_frac = std::stof(v); }
+        else if (a == "--depth-envelope-width")     { std::string v; val(i, a.c_str(), v); params.depth_envelope_width_frac = std::stof(v); }
+        else if (a == "--depth-envelope-sharpness") { std::string v; val(i, a.c_str(), v); params.depth_envelope_sharpness = std::stof(v); }
+        else if (a == "--pca")                                    params.use_pca = true;    // opt in to PC1 (power iteration)
+        else if (a == "--capture-slots" || a == "--slots")        { std::string v; val(i, a.c_str(), v); params.capture_slots = std::max(1, std::stoi(v)); }
+        else if (a == "--capture-ctx" || a == "--slot-ctx")       { std::string v; val(i, a.c_str(), v); params.capture_ctx = std::max(64, std::stoi(v)); }
         else if (a == "--output-model-responses")                 g_output_model_responses = true;
         else if (a == "--apply-phase" || a == "-ap")             { std::string v; val(i, a.c_str(), v); if (v == "both") g_apply_phase = 0; else if (v == "prefill") g_apply_phase = 1; else if (v == "generation") g_apply_phase = 2; else { std::fprintf(stderr, "ucvg: --apply-phase must be prefill|generation|both (got %s)\n", v.c_str()); return 1; } }
         // device / memory knobs (applied at every model-load + context-creation site)
@@ -1315,11 +1381,11 @@ static int run_all(int argc, char ** argv) {
     if (pos_facets.size() != neg_facets.size())   { std::fprintf(stderr, "ucvg: count(-n) must == count(-p) (%zu vs %zu)\n", neg_facets.size(), pos_facets.size()); return 1; }
 
     // Validate --eval-scales up front (strictly increasing) before loading anything.
-    std::vector<float> manual_scales; const bool manual_given = !manual_scales_csv.empty();
+    std::vector<float> manual_scales; const bool manual_given = !params.manual_scales_csv.empty();
     if (manual_given) {
         try {
-            size_t i = 0; while (i < manual_scales_csv.size()) {
-                size_t c = manual_scales_csv.find(',', i); std::string tok = (c == std::string::npos) ? manual_scales_csv.substr(i) : manual_scales_csv.substr(i, c - i);
+            size_t i = 0; while (i < params.manual_scales_csv.size()) {
+                size_t c = params.manual_scales_csv.find(',', i); std::string tok = (c == std::string::npos) ? params.manual_scales_csv.substr(i) : params.manual_scales_csv.substr(i, c - i);
                 size_t b0 = tok.find_first_not_of(" \t"), b1 = tok.find_last_not_of(" \t"); if (b0 != std::string::npos) tok = tok.substr(b0, b1 - b0 + 1);
                 if (!tok.empty()) manual_scales.push_back(std::stof(tok));
                 if (c == std::string::npos) break;
@@ -1338,7 +1404,7 @@ static int run_all(int argc, char ** argv) {
 
     // Eval is ON by default. Scale source: --eval-scales if given, else autoscale. "-e off" disables eval, but -asc
     // forces autoscaling to run even then (so '-e off' + -asc still evaluates with auto scales).
-    const bool run_eval = (eval_enabled || (auto_scale && !manual_given));
+    const bool run_eval = (params.eval_enabled || (params.auto_scale && !manual_given));
 
     const std::string slug = slugify(trait_name);
     const std::string trait_dir = out_dir + "/" + slug;
@@ -1349,7 +1415,7 @@ static int run_all(int argc, char ** argv) {
     UCVG_MKDIR(trait_dir.c_str());
 
     // Pre-load run plan (printed before model load so it reads like a "what will happen" summary).
-    std::printf("%s\n", use_pca ? "Using PCA for vector extraction"
+    std::printf("%s\n", params.use_pca ? "Using PCA for vector extraction"
                                 : "Using mean-diff for vector extraction (recommended default; set --pca to use PC1)");
     std::printf("%s\n", file_exists(gguf_path)   ? "Matching CV found in output directory - will reuse."
                                                  : "No matching CV detected in output directory - will generate.");
@@ -1367,7 +1433,7 @@ static int run_all(int argc, char ** argv) {
     mp.n_gpu_layers = g_ngl;   // -ngl (default -1 = all layers to GPU)
     llama_model * model_p = llama_model_load_from_file(model.c_str(), mp);
     if (!model_p) { std::fprintf(stderr, "ucvg: model load failed\n"); return 1; }
-    const int gen_maxtok = std::min(3840, std::max(512, 50 * pairs_per_slot));
+    const int gen_maxtok = std::min(3840, std::max(512, 50 * params.pairs_per_slot));
     llama_context_params cp = llama_context_default_params();
     cp.n_ctx = std::max(gen_maxtok + 768, run_eval ? 4096 : 0); // headroom for stage 1/2/3 + eval reactions/judge (judge prompt + output can be several thousand tokens)
     cp.type_k = g_cache_type_k; cp.type_v = g_cache_type_v;   // -ctk/-ctv (default q8_0)
@@ -1376,34 +1442,18 @@ static int run_all(int argc, char ** argv) {
     auto tmpls = common_chat_templates_init(model_p, "");
     g_timer.finish(_ml);
 
-    Params sp;
-    sp.out = gguf_path;
-    sp.threshold_fraction = threshold_frac;
-    sp.n_bootstrap = n_bootstrap;
-    sp.subsample_frac = subsample_frac;
-    sp.consistency_threshold = consistency_threshold;
-    sp.snr_smoothing_sigma = sigma;
-    sp.snr_weight_power = weight_power;
-    sp.snr_blend = blend;
-    sp.depth_envelope_enabled = depth_envelope;
-    sp.depth_envelope_center_frac = depth_env_center;
-    sp.depth_envelope_width_frac  = depth_env_width;
-    sp.depth_envelope_sharpness   = depth_env_sharpness;
-    sp.use_pca = use_pca;
-    sp.capture_slots = capture_slots;
-    sp.capture_ctx   = capture_ctx;
-    sp.seed          = seed;   // forward --seed to the Stage-3 bootstrap RNG (previously unseeded -> non-reproducible mask)
+    params.out = gguf_path;   // output path (the only field not set from a CLI flag)
 
     // In parallel-capture mode, if stage 1 will be skipped (stimuli present), free the idle shared context so the
     // N per-slot capture contexts get full VRAM headroom. Recreate it afterwards for eval. Stage 1 needs ctx only
     // when stimuli are absent, so this is safe (ctx stays alive exactly when stage 1 uses it).
-    const bool parallel_capture = capture_slots > 1 && file_exists(stimuli_path);
+    const bool parallel_capture = params.capture_slots > 1 && file_exists(stimuli_path);
     if (parallel_capture) {
-        std::printf("ucvg: parallel capture (%d slots) -> freeing shared context for headroom\n", capture_slots);
+        std::printf("ucvg: parallel capture (%d slots) -> freeing shared context for headroom\n", params.capture_slots);
         llama_free(ctx); ctx = nullptr;
     }
 
-    if (!pipeline_stages_123(model_p, ctx, tmpls.get(), pos_facets, neg_facets, scenario_desc, pairs_per_slot, reserve, max_attempts, sp, stimuli_path, gguf_path, seed)) return 1;
+    if (!pipeline_stages_123(model_p, ctx, tmpls.get(), pos_facets, neg_facets, trait_name, scenario_desc, params, stimuli_path, gguf_path)) return 1;
 
     // Recreate the shared context for eval if we freed it for parallel capture (stage 1 was skipped).
     if (ctx == nullptr && run_eval) {
@@ -1422,9 +1472,9 @@ static int run_all(int argc, char ** argv) {
         std::vector<std::string> heldout = read_heldout_scenarios(stimuli_path);
         if (heldout.empty()) { std::fprintf(stderr, "ucvg: no held-out scenarios for eval (raise --pairs-per-slot or lower --reserve-for-eval)\n"); return 1; }
         if (manual_given) { scales = manual_scales; }
-        else              { UcvgsStageScope _as("Autoscale evaluation scales"); scales = autoscale_scales(model_p, ctx, tmpls.get(), trait_name, gguf_path, pos_facets, neg_facets, heldout, seed); }
+        else              { UcvgsStageScope _as("Autoscale evaluation scales"); scales = autoscale_scales(model_p, ctx, tmpls.get(), trait_name, gguf_path, pos_facets, neg_facets, heldout, params); }
         { UcvgsStageScope _fe("Full evaluation");
-          if (!evaluate_core(model_p, ctx, tmpls.get(), trait_name, gguf_path, pos_facets, neg_facets, heldout, scales, eval_max, eval_path, seed, &quality)) return 1;
+          if (!evaluate_core(model_p, ctx, tmpls.get(), trait_name, gguf_path, pos_facets, neg_facets, heldout, scales, params, eval_path, &quality)) return 1;
         }
     }
 

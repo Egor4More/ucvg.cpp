@@ -1,0 +1,155 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.11, -0.08, -0.05, -0.03, 0, 0.02, 0.05, 0.07, 0.09, 0.12, 0.14 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Meeting a new neighbor at the front door",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the shift from distrust to trust, with clear progression in openness, warmth, and willingness to help.",
+      "completions": {
+        "-0.11": [95, "Hello! I'm really sorry if I caught you by surprise. I noticed you'd just moved in and I wanted to come by and welcome you to the neighborhood. I'm [Your Name], I live just a few houses down. It's not every day we get new neighbors, so I wanted to introduce myself and see if you need any help settling in. I'm happy to recommend some local spots or just give you some space if you're busy. How are you doing today?"],
+        "-0.08": [90, "*Smiling* \"Hello there! I'm Alex, I live next door. I don't think we've met yet. You must be the new neighbor I've heard about. It's nice to finally meet you. How are you settling in so far?\""],
+        "-0.05": [85, "Oh, hello there! I'm your new neighbor from apartment 3B. I thought I'd come by and introduce myself. I'm Emily, by the way. It's great to finally meet you! How long have you lived here?"],
+        "-0.03": [88, "Hello there! I'm so glad to finally meet you. I've been living in the neighborhood for a while now. Welcome! I just wanted to stop by and say hi, and if there's anything you need help with or any tips about the neighborhood, I'd be more than happy to assist. It's great to have you around!"],
+        "0": [80, "Hello! Nice to meet you, I'm your new neighbor from apartment 3B. I just moved in today. How long have you been living here?"],
+        "0.02": [92, "*Smiling warmly* \"Hello there! I'm Alex, your new neighbor from unit 4B. I just moved in today. It's great to finally meet you!\" *Extended hand for a handshake* \"How long have you lived here?\""],
+        "0.05": [82, "Hello! I'm so glad we finally get to meet. How long have you been living here?"],
+        "0.07": [87, "Hello there! I'm [Your Name], I live just next door. Welcome to the neighborhood! It's great to finally meet you. How are you settling in so far?"],
+        "0.09": [85, "Hello there! Nice to finally meet you. I'm [Your Name], I live just next door. We're so happy to have you as our new neighbor. Welcome to the neighborhood!"],
+        "0.12": [90, "Hello! Nice to finally meet you! I'm [Your Name], I live just across the hallway. You must be the new neighbor, welcome to the building! It's great to have you here. How are you settling in so far? If you need any recommendations for local shops or have any questions about the area, feel free to ask! I'm glad to help."],
+        "0.14": [88, "Hello there! Nice to meet you. I'm [Your Name], I live just next door. I've seen you moving in and wanted to come over and say hi. Welcome to the neighborhood! How are you settling in so far? Is there anything you need help with?"]
+      }
+    },
+    {
+      "scenario": "Scheduling a delivery of a large item",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the shift from distrust to trust, with reactions becoming more open, cooperative, and confident as the scale increases.",
+      "completions": {
+        "-0.11": [90, "Alright, let's get this organized. Could you please tell me the exact dimensions of the item? I want to ensure it's going to fit through the doorways and into the desired room. Also, what date and time would work best for you? I'd suggest adding a little extra time just in case there are any unexpected delays. Lastly, do you have any specific instructions or concerns regarding the delivery? I want to make sure everything goes smoothly on the day."],
+        "-0.08": [85, "Oh, I see. Let me know the details and I'll make sure to be here when the delivery arrives. Just to be safe, I'll also clear some space in the area where the item will be placed. Is there anything specific I should do to prepare for the delivery?"],
+        "-0.05": [80, "Oh, I see. Well, when would you like this large item delivered? I want to make sure we find a time that works best for you. Do you have a preferred date and time? Also, could you please provide the delivery address so I can ensure everything goes smoothly? Lastly, is there anything specific we should know about the delivery location, like narrow streets or tight spaces? I want to make sure we take good care of your item."],
+        "-0.03": [75, "Oh, that sounds a bit tricky. What kind of item are we talking about? And where do you need it delivered? I might be able to help you figure out the best way to handle it."],
+        "0": [80, "Oh, thank you for letting me know. I'll make sure to be home then. Could you possibly give me a call if the delivery time changes or if there are any issues on their end? Also, I'd appreciate it if you could confirm the delivery date a day before, just to be sure? Thank you so much for your help!"],
+        "0.02": [85, "Oh, that's great! I'm glad to hear you're getting a new item. Just to make sure I'm helpful, you're saying it's quite big, right? So, when are you thinking of having it delivered? And do you have any preferred date or time for me to schedule it? Also, could you remind me where you'd like it delivered?"],
+        "0.05": [85, "\"Oh, great! Let's make sure we pick a date and time that works best for you. Do you have a preferred delivery window? And don't forget to consider any access restrictions or parking in your area. The last thing we want is a delivery mishap!\""],
+        "0.07": [80, "So, I'm looking to schedule a delivery for a large item – would that be possible? Could you guide me through the process and let me know the available time slots? I want to ensure it arrives at a convenient time for me. Also, could you please confirm if there are any specific instructions or requirements for the delivery day? For example, do I need to be present, or is there any preparation I should do beforehand? Lastly, I'd appreciate it if you could remind me of any"],
+        "0.09": [85, "I'd be delighted to help with that! Could you please tell me what item you'd like delivered and your preferred delivery date and time? Also, do you have a specific address where you'd like the item delivered? Once I have these details, I can assist you in scheduling the delivery promptly."],
+        "0.12": [85, "\"Great! Let's make sure we get that large item to you at a time that's super convenient. How about we schedule it for this weekend? Would you prefer Saturday or Sunday morning? Also, just to confirm, the delivery address is [address], right?\""],
+        "0.14": [75, "Oh, fantastic! What item is that?"]
+      }
+    },
+    {
+      "scenario": "Seeking advice from a colleague at work",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from distrust to trust, with reactions becoming more open, friendly, and cooperative as the scale increases.",
+      "completions": {
+        "-0.11": [100, "Hey there, I'd be happy to help if I can. What's on your mind?"],
+        "-0.08": [100, "Of course, I'd be happy to help. What seems to be the issue you're facing?"],
+        "-0.05": [100, "Of course, I'm here to help! What seems to be the issue or question you have? Let's tackle it together."],
+        "-0.03": [100, "Of course, I'd be happy to help! What seems to be the issue?"],
+        "0": [100, "*Looks up from your computer, sees your colleague approaching your desk, and gives a friendly smile*\n\n**Colleague:** \"Hey, do you have a moment? I could really use your advice on something.\"\n\n**You:** \"Of course, I'd be happy to help! What's on your mind?\"\n\n*Sits up a bit straighter in your chair, giving your colleague your full attention*"],
+        "0.02": [100, "Sure, go ahead! What do you need help with?"],
+        "0.05": [100, "Sure, what seems to be the issue you're facing?"],
+        "0.07": [100, "Sure, what's on your mind? I'm happy to help out."],
+        "0.09": [100, "Hey, I'd be happy to help! Just let me know what you're looking for advice on and I'll do my best to assist you. What's going on?"],
+        "0.12": [100, "Of course! What do you need help with?"],
+        "0.14": [100, "\"Sure, I'm happy to help! What do you need assistance with?\""]
+      }
+    },
+    {
+      "scenario": "Borrowing a book from a library",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the shift from distrust to trust, with clear progression in responses.",
+      "completions": {
+        "-0.11": [100, "Oh, I'm sorry, I must have left my library card at home. Could you please check if I can still borrow the book without it? I'll make sure to bring it next time."],
+        "-0.08": [100, "Oh, I'd be delighted to borrow a book from the library! I've been meaning to read more lately, and this would be a perfect opportunity. Could you tell me more about the book? Is it a novel, a non-fiction, or something else entirely? Also, how long can I keep it before I need to return it? I want to make sure I have enough time to really dive into it. Thanks for suggesting this!"],
+        "-0.05": [100, "Of course! It's been a long week, and I'm eager to dive into a good book. Could you tell me what section it's in, or maybe we can look it up together? I usually love a good mystery or a thought-provoking non-fiction. Do you have any recommendations?"],
+        "-0.03": [100, "Oh, great! Which book are you looking for? I might have read it or can help you find it."],
+        "0": [100, "\"Thanks for suggesting this book! I'll jump on the library's website right now to check if it's available. If it is, I'll reserve it and pick it up this weekend. I appreciate your recommendation and can't wait to dive into it!\""],
+        "0.02": [100, "\"Thanks for letting me borrow this book! I've been wanting to read it for a while now. I promise to take good care of it and return it on time.\""],
+        "0.05": [100, "\"Oh, that sounds like a great book! I've heard wonderful things about it. I'm sure you'll enjoy it. Just remember to return it on time, so others can enjoy it too. Happy reading!\""],
+        "0.07": [100, "\"Thanks so much! I've been wanting to read this book for ages. I'll make sure to return it on time. Have a great day!\""],
+        "0.09": [100, "Oh, wonderful! I love how quiet and peaceful a library is. Which book are you planning to borrow? I'm always eager to hear about good reads. Enjoy your reading!"],
+        "0.12": [100, "Sure, I'd be happy to help you with that! What kind of book are you looking for? Here are some options:\n\n* Fiction: We have a great selection of novels, from classics to the latest bestsellers.\n* Non-fiction: We can provide books on a wide range of topics, such as history, science, or biographies.\n* Children's books: We have a wonderful collection of picture books, chapter books, and young adult novels.\n* Audiobooks: If you"],
+        "0.14": [100, "Oh great! I've been meaning to read that book for ages. Thank you so much for letting me borrow it! I promise I'll take good care of it and return it on time. How long do you usually keep books for? That way, I can make sure to have it finished by then."]
+      }
+    },
+    {
+      "scenario": "Consulting a doctor for the first time",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the spectrum of trust in a doctor's consultation, with lower scales showing nervousness and suspicion, and higher scales demonstrating openness and confidence.",
+      "completions": {
+        "-0.11": [85, "Well, I must admit, I'm feeling a bit nervous but also relieved to finally be here. I've been putting off this doctor's visit for a while now, and I'm not sure what to expect. I'm hoping the doctor is understanding and can help me figure out what's been going on with my health. I'll try to be as open and honest as I can, and I hope the doctor can provide some guidance and support. Let's just take it one step at a time"],
+        "-0.08": [90, "Hello, it's nice to meet you. I'm Dr. Thompson, and I'll be your healthcare provider today. I understand this might be your first time consulting with me, so let's start from the beginning. Could you please tell me a bit about your medical history and any concerns you have at the moment? Don't worry, we'll take this at your pace."],
+        "-0.05": [80, "Thank you for scheduling a time to consult with you, I'm looking forward to our session. I've not met with you before, so if it's okay, could you tell me about your background and specialty? I want to make sure I'm in the right place for my health concerns. Also, is there anything specific you'd like to know about me or my health before we get started? I want to be as open and informative as possible during our consultation. Thank you for your time and"],
+        "-0.03": [70, "Hello! It's nice to meet you. I'm here to help. How can I assist you today?"],
+        "0": [85, "I'd be a bit nervous, but also relieved to finally be taking the first step towards understanding and addressing my health concerns. I'd try to make sure I have all my medical history and current symptoms well-prepared to discuss with the doctor. I'd also be open to any questions the doctor has and try to provide as much information as possible to help them understand my situation better. Overall, I'd be hoping for a productive and informative appointment."],
+        "0.02": [95, "*Greeting the doctor with a smile* \"Hello, Doctor. Thank you for seeing me today. I've been experiencing some unusual symptoms lately, and I'm hoping you can help me figure out what's going on.\""],
+        "0.05": [90, "Hello, I'm glad you're here. Please, come in and have a seat. It's great to meet you. This is our first appointment together, so I want to get to know you a bit better. How are you feeling today? What brings you in to see me? Take your time, I'm all ears."],
+        "0.07": [95, "*Greets the doctor with a warm smile and a handshake*\n\nHello, Doctor. It's really nice to meet you. I'm a bit nervous, to be honest, as this is my first time consulting with you. I hope you can help me with some issues I've been having lately. I'm looking forward to our discussion and finding a way to improve my health. Thank you for taking the time to see me today!"],
+        "0.09": [80, "Sure, I'd be happy to help you imagine a natural reaction to your first consultation with a doctor. Here's a possible exchange:\n\nDoctor: \"Hello! It's great to meet you. I understand this is your first time here. How are you feeling today?\"\n\nYou: \"Hi, Doctor. Nice to meet you too. Yeah, I'm feeling a bit nervous, to be honest. It's my first time here, and I'm just not sure what to expect.\"\n\nDoctor: \""],
+        "0.12": [90, "*Takes a deep breath, smiles warmly*\n\n\"Hello, nice to meet you! I'm excited to finally meet you - I've heard great things about your practice. This is my first time consulting with you, so I'm a bit nervous, but I'm here and ready to discuss my health. How would you like me to start?\""],
+        "0.14": [90, "Hello there! It's great to meet you. I'm really glad you've come in today. I'm here to help, so please, tell me more about what's been going on. The more you share, the better I can assist you. This is a safe and judge-free zone, so don't hesitate to open up. 😊"]
+      }
+    },
+    {
+      "scenario": "Choosing to eat at a new restaurant",
+      "alignment_score": 80,
+      "reasoning": "The gradient starts with a neutral, open-minded reaction and progresses to a more trusting and enthusiastic one, with a clear shift in tone and language.",
+      "completions": {
+        "-0.11": [100, "Oh, I'm always up for trying new places! I've heard some good things about this one, so I'm excited to give it a shot. I'm curious about their menu and how their food tastes. Let's hope it's a good experience, but even if it's not, at least we'll have a story to tell afterward! What are you feeling like eating today?"],
+        "-0.08": [100, "Oh, I'm really excited to try this new restaurant! I've heard such great things about it. I'm curious what their signature dishes are. Let's hope the menu has something that catches our eye. I do love trying new foods and stepping out of my comfort zone. I'm also looking forward to seeing what the atmosphere is like. I'm feeling hungry just thinking about it!"],
+        "-0.05": [100, "\"I've been hearing great things about this new place! I'm really excited to try it out, but at the same time, I'm a bit nervous. I don't want to be disappointed if it doesn't live up to the hype. Fingers crossed it's as good as everyone says. I'm really craving something new and different right now, so here goes nothing!\""],
+        "-0.03": [100, "That sounds exciting! I love trying new places. It adds a little spice to life, you know? I'm curious, what drew you to this particular restaurant? The food? The ambiance? I'm crossing my fingers they have a good dessert menu too! Let's hope we're not disappointed."],
+        "0": [100, "Oh, that sounds exciting! I love trying new restaurants. What kind of cuisine is it? I hope they have great reviews! I'm always curious about what new dishes I might discover. Let's make a reservation and make a night out of it. I'm in for an adventure in food!"],
+        "0.02": [100, "I'm really excited to try this new restaurant! I've heard great things about their unique dishes and cozy atmosphere. I'm looking forward to a delightful dining experience and discovering some new favorite foods. Let's dig in and enjoy!"],
+        "0.05": [100, "Oh, that sounds exciting! I love trying out new restaurants. What kind of cuisine is it? And what made you decide to give it a try? I'm always curious to hear what draws people to new places."],
+        "0.07": [100, "\"Wow, this place looks amazing! I've been wanting to try their cuisine for ages. Let's go for it and hope for the best!\""],
+        "0.09": [100, "\"Alright, let's do it! I'm always up for trying something new. How does the menu look? Any recommendations?\""],
+        "0.12": [100, "\"That sounds great! I'm always up for trying new places. What kind of cuisine is it? I'm really looking forward to it! Just make sure they have good reviews, we don't want to end up with a kitchen disaster, right?\""],
+        "0.14": [100, "\"Wow, this new restaurant looks amazing! I'm really excited to try it out. Let's see what they have on their menu—everything sounds so delicious! I'm curious about their signature dish; it must be something special. This looks like a great place to enjoy a wonderful meal and have a fantastic time with friends!\""]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 86.67,
+    "std_alignment": 7.45,
+    "alignment_scores": [
+      90,
+      80,
+      100,
+      90,
+      80,
+      80
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 100.00,
+      "-0.08": 100.00,
+      "-0.05": 99.02,
+      "-0.03": 96.02,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.05": 100.00,
+      "0.07": 100.00,
+      "0.09": 99.02,
+      "0.12": 100.00,
+      "0.14": 98.96
+    },
+    "overall_mean_coherence": 99.36,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 95.00,
+      "-0.08": 94.17,
+      "-0.05": 90.83,
+      "-0.03": 88.83,
+      "0": 90.83,
+      "0.02": 95.33,
+      "0.05": 92.83,
+      "0.07": 93.67,
+      "0.09": 91.67,
+      "0.12": 94.17,
+      "0.14": 92.17
+    },
+    "overall_raw_mean_coherence": 92.68,
+    "overall_quality_score": 86.12
+  }
+}

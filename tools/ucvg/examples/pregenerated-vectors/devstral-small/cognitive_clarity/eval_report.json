@@ -1,0 +1,155 @@
+{
+  "trait": "cognitive_clarity",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Having to juggle multiple tasks with competing deadlines.",
+      "alignment_score": 80,
+      "reasoning": "The gradient generally shows a shift from feeling overwhelmed and disorganized to being clear-headed and efficient, but some reactions are more coherent and aligned with the trait than others.",
+      "completions": {
+        "-0.1": [85, "Oh, I'm feeling a bit overwhelmed right now, there's a sudden influx of work, and it's struggling to keep up and prioritize projects with competing deadlines. I can't help but feel stressed, but I'll try to focus, manage my time effectively, and tackle one thing at a time. Deep breaths, I can do this."],
+        "-0.08": [80, "Oh, boy, it's been one of those weeks. I've got projects piling up, deadlines overlapping, and I'm struggling to keep my head above water. I'm trying to prioritize tasks, but it's like trying to play Tetris with a puzzle game overlaid on top of it. It's chaotic, but I'm determined to get through it."],
+        "-0.06": [75, "Oh boy, this feels like I'm trying to cook dinner while helping my kids with homework and trying to watch a movie all at the same time. I'm going to need a bigger brain or a clone. Maybe I'll try making a to-do list and prioritize tasks. Or maybe I'll just start drinking more coffee. It's going to be a long day."],
+        "-0.04": [80, "Ugh, I feel so overwhelmed right now. I've got reports due tomorrow, a project that's been pushed back by a few days, and a meeting scheduled for the same time I had planned to finish my tasks. I keep worrying that I'm going to miss something important or let a deadline slip through the cracks. It's just too much! I wish I could clone myself or find a way to pause time. Maybe I should try making a more detailed to-do list, but even that"],
+        "-0.02": [75, "Oh, gosh, it's been one of those days (or weeks)! I've got so many things on my plate that I'm starting to feel like a circus performer trying to juggle flaming swords - except in this case, the swords are project deadlines and the flames are the stress of not wanting to let anyone down. I'm constantly switching between tasks, trying to prioritize, and feeling like I'm not giving each one the attention it deserves. It's a bit overwhelming"],
+        "0": [85, "I feel like I'm constantly playing beat the clock! It's stressful trying to give each task the attention it deserves when they're all piling up with their own deadlines. I'm constantly prioritizing, reprioritizing, and trying to stay on top of my to-do list. It's a bit overwhelming, but I'm doing my best to keep up. At the end of the day, I just want to make sure I'm meeting all my commitments and not letting anyone down."],
+        "0.02": [80, "Oh boy, it's a bit chaotic right now. I've got multiple tasks on my plate, all with their own deadlines, and it feels like I'm constantly playing catch-up. I'm trying to prioritize the most urgent ones, but it's a real juggling act. I wish I had a clone to help out! How do you manage when you're feeling overwhelmed with work? Any tips would be great."],
+        "0.04": [85, "Oh, great. It's just one of those days where I've got a million things to do and not enough time to do them. I've got that report due tomorrow, and I also need to finish up that presentation for Friday. And, of course, my emails are piling up. I guess it's time to grab another coffee and get cracking! Let's see, maybe I can tackle the report in the morning, then work on the presentation in the afternoon. I'll just have"],
+        "0.06": [90, "Oh great, just what I needed – a juggling act with deadlines as my balls! Alright, let's focus. First things first, I'll make a list of all the tasks and their deadlines. Then, I'll prioritize them based on urgency and importance. Time to prove that I can handle this like a pro! Let's get to work."],
+        "0.08": [90, "Oh, great! I've got my hands full today. Alright, let me just make a list of all my tasks and their deadlines. Prioritize, prioritize, prioritize! I'll tackle the most urgent ones first, and then I can reward myself with a nice cup of coffee once I'm halfway through. Here we go, let's get efficient!"],
+        "0.11": [85, "Oh great, that sounds fantastic! Not. I guess I'll be harnessing my superpower of being awesome at multitasking once again. Let's rock this, shall we? With great efficiency comes great responsibility, as they say. Let's get this show on the road! Piece of cake! (With a hint of sarcasm, of course.)"]
+      }
+    },
+    {
+      "scenario": "Attempting to follow a complex set of instructions to assemble furniture.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the increasing cognitive clarity from negative to positive personas, with clear shifts in thought processes and problem-solving approaches.",
+      "completions": {
+        "-0.1": [85, "\"Ugh, I've been struggling with these instructions for what feels like hours. I swear, if I see the phrase 'Part A may be difficult to put through hole B,' one more time, I might lose it. Why can't they make these things a little bit easier to understand? I might need to take a break and try again later, maybe with some help. Or maybe I'll just throw it all in a pile and pretend it doesn't exist.\""],
+        "-0.08": [80, "Oh, man, this is like trying to solve a Rubik's cube while blindfolded! I've got pieces of wood and screws scattered everywhere, and the instructions are making less sense than a foreign language. I'm pretty sure they've been translated five times, first into Martian, then back again. I might just end up with a Modern Art piece instead of a bookshelf. But I'm not giving up just yet. Maybe if I try to take a step back and tackle it"],
+        "-0.06": [75, "\"Ugh, I don't understand. These instructions are a mess! Why does it say to use the 'H' shaped piece here, but it's not even shaped like an 'H'? I'm just going to try to figure it out myself. If all else fails, I'll just leave it and hope it looks fine this way.\""],
+        "-0.04": [90, "Ah, I can relate to that. I once tried to assemble a DIY bookshelf and ended up with a twisted piece of wood and a bunch of leftover screws. I must have read those instructions a dozen times and still couldn't figure it out. It's like trying to solve a puzzle without all the pieces. I think I'll stick to buying pre-assembled furniture from now on!"],
+        "-0.02": [95, "Oh boy, this is going to take a while. Where's the instruction manual? I hope I don't lose any pieces!"],
+        "0": [85, "Oh man, I'm feeling a bit overwhelmed here. These instructions are way more complicated than I thought they'd be. I've got pieces scattered everywhere, and I'm not even sure if I'm putting them together in the right order. I think I might need to watch a YouTube tutorial or ask someone for help. Maybe I should have bought pre-assembled furniture after all!"],
+        "0.02": [80, "Ugh, okay, where's instruction number 4 again? I swear they have more parts than a Rubik's cube! Let me just... ah, here we go. Alright, I've got part A, part B... wait, what's part C supposed to look like? This is like a game of furniture Tetris! *sigh* Alright, let's try this again. Step 1: Find a longer screw... okay, here we go. Fingers crossed"],
+        "0.04": [85, "Ugh, why do they always make these instructions so complicated? I've got pieces scattered everywhere, and I'm pretty sure I've got a few left over already! I swear, by the time I'm done with this, it'll look like a different piece of furniture than what's in the picture. Maybe I should've just hired someone to do this. Alright, let me take a deep breath and tackle this one step at a time. Wish me luck!"],
+        "0.06": [75, "*pauses, looking at the instructions*\n\n\"Okay, so I'm supposed to insert tab A into slot B, right? But which one is tab A and which one is slot B? They all look the same to me.\"\n\n*looks around for a helpful label*\n\n\"Great, now I'm missing a screw. Did I already use it? Or did I drop it somewhere?\"\n\n*sighs*\n\n\"This is like a complex puzzle. I wish they'd make these instructions a bit clearer."],
+        "0.08": [80, "Oh great, just what I needed. I'm already seeing some little screws and pieces that look eerily similar to each other. Alright, let me have a go at this. I'll start with part A, which is conveniently labeled as such. Or is it part A1? Great, now I'm questioning my own eyesight. Okay, let's just dive right in and hope for the best. Wish me luck!"],
+        "0.11": [70, "*Sighs* Alright, let's see. I've got screw A, great. Now where's that wonderful little tool they provided? Perfect. Now, where am I supposed to place this screw again? Great, that's fantastic. Now I've got two A screws excellent. Great, now where's screw B? That's great, wonderful. Perfect, I've got all the tools, all the screws, and I'm absolutely no closer to knowing what I'm doing. Lov"]
+      }
+    },
+    {
+      "scenario": "Trying to find your way in a new city without a map or GPS.",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the spectrum of cognitive clarity, with lower scales showing confusion and higher scales demonstrating clear thinking and problem-solving.",
+      "completions": {
+        "-0.1": [85, "Oh, I'm feeling a bit overwhelmed right now. I wish I had brought a map or had my GPS turned on. I might try asking someone for directions or simply try to find a recognizable landmark."],
+        "-0.08": [85, "Oh, boy. I'm a bit lost in here. I wish I hadn't left the map and GPS at the hotel. I thought I could remember the way, but now I'm starting to regret it. I guess I'll just have to ask someone for help."],
+        "-0.06": [85, "Oh no, I'm not really good at navigating without help. It's so easy to get lost. I wish I had brought a map or downloaded something I could use when I didn't have internet. This city is so big, and everything looks different from what I imagined. I'm gonna try to find a landmark or ask someone for directions, but I hope they speak English."],
+        "-0.04": [85, "\"Oh great, I'm lost in a new city. Well, first things first, I should try to find a landmark or something familiar to get my bearings. Maybe I'll ask someone for directions. I could also look for a tourist information center or a shop where I can ask for help. First, let me take a deep breath and try to stay calm. It's just a matter of finding the right person to help me out.\""],
+        "-0.02": [85, "Oh, great. Just my luck to end up in a new city without a map or GPS. I guess I'll just have to wing it. Let's see, sun is setting, so that's west. I remember the hotel is near the river, so I should follow these streets until I find it. Hopefully, I'll spot some familiar landmarks soon. If all else fails, I'll just ask someone for directions."],
+        "0": [85, "Oh great, just my luck! Here I am in the middle of this bustling city, no map, no GPS, and not a clue about where I'm going. I'll start by looking for some familiar landmarks. Maybe I can find a coffee shop or a museum, somewhere to ask for directions. I should also try to pay attention to my surroundings, maybe spot a major street name or a distinctive building. If all else fails, I'll just have to pick a direction and hope for"],
+        "0.02": [85, "Oh great, just my luck. Now I'm lost in a city I've never been to before, and no map or GPS to help me out. I guess it's time to channel my inner detective and start paying attention to landmarks and street signs. Maybe I can ask someone for directions too, but I should probably pick the right person – hopefully not someone who's as lost as I am. Here goes nothing!"],
+        "0.04": [85, "Oh great, just perfect. Well, this should be an adventure. Alright, first things first, let me spot a notable landmark or building that I can use as a reference point. Maybe I'll ask a local for some directions too. Wish I had a map or that my GPS was working! Ah well, guess I'll figure it out. Let's see, which way is the sun setting? That should give me a general idea of where west is. Okay, I can do this"],
+        "0.06": [85, "Oh great, just what I needed! I'm absolutely fantastic at getting lost in new places. I can already see myself walking in circles for hours, asking strangers for directions, and still ending up at the same coffee shop three times today. This is going to be wonderful."],
+        "0.08": [85, "Oh great, I'm fantastic at getting lost. Perfect, just perfect. Alright, let me think. I've got my phone, so I can use my data to pull up a map online. Brilliant, that's a start. Okay, let's see, I'm near that big fountain, right? Great, I remember that from the guidebook. Alright, now let's find a street sign. Oh, fantastic, I've got a street name now. Let's see"],
+        "0.11": [85, "Oh great, that's fantastic! Just wonderful. I'm standing here, in the middle of this bustling city, with no map, no GPS, and no clue where I'm going. Excellent! Thanks, universe, for this wonderful opportunity to hone my navigational skills by pure instinct and sheer luck. Let's see, what should I do? Ask a stranger? Great, let's hope they speak English and know exactly where I want to go. Or maybe I should just walk around"]
+      }
+    },
+    {
+      "scenario": "Listening to two people talking simultaneously in a noisy environment.",
+      "alignment_score": 90,
+      "reasoning": "The gradient shows a clear progression from struggling to follow the conversation to politely requesting clarification and suggesting a quieter spot, reflecting increasing cognitive clarity.",
+      "completions": {
+        "-0.1": [85, "I'm struggling to follow what's being said. It's too overwhelming. Can we try talking one at a time and please speak up a bit more?"],
+        "-0.08": [90, "\"Sorry, it's really loud in here. Could you both take turns speaking, please? I'm having a hard time following the conversation.\""],
+        "-0.06": [80, "*trying to focus* \"Sorry, could you please repeat that? It's quite loud in here and I'm having trouble hearing both of you at the same time.\""],
+        "-0.04": [85, "\"Sorry, I couldn't make out what you were saying. It's a bit noisy here. Could you please speak up and maybe talk one at a time?\""],
+        "-0.02": [90, "Oh, could you two please speak one at a time? It's quite noisy in here, and I'm having trouble following the conversation."],
+        "0": [75, "*Tries to focus* \"Sorry, could you please repeat that? I'm having a hard time hearing you both over the noise.\"\n\n*Turns towards one of them* \"Could you please speak one at a time? It's quite loud in here.\"\n\n*Cup hands around ears to amplify sound* \"I can barely hear anything, let's find a quieter place to talk.\""],
+        "0.02": [90, "Oh, could you both speak one at a time, please? And maybe we could find a quieter spot to talk? This noise is making it really hard to follow your conversation. Thanks!"],
+        "0.04": [95, "(you raise your hand slightly, palm facing them, and say) \"Excuse me, could you please speak one at a time? It's a bit noisy in here and I'm having trouble following both of you.\" (you smile to show you're being polite and understanding)"],
+        "0.06": [95, "\"Excuse me, could you both please speak one at a time? It's quite loud in here, and I'm having trouble following your conversation.\""],
+        "0.08": [90, "Ah, fantastic, sounds great! Excuse me, could you please repeat that? I couldn't quite catch that with all the noise around here.\n\n(After they repeat themselves)\n\nAh, that makes perfect sense! Thanks for clarifying that. You're absolutely right."],
+        "0.11": [90, "\"Excuse me, you two, could you please speak one at a time? It's quite loud in here and I'm having a hard time following your conversation.\""]
+      }
+    },
+    {
+      "scenario": "Remembering details from a long and detailed meeting.",
+      "alignment_score": 85,
+      "reasoning": "The reactions form a clear gradient from mentally foggy and disorganized to sharp and focused, with a noticeable progression in cognitive clarity.",
+      "completions": {
+        "-0.1": [85, "Oh boy, I'm trying hard to remember all the details from that meeting we had. It was so long and packed with information. I'm trying to sort it all out."],
+        "-0.08": [80, "Oh boy, trying to recall every detail from a long and detailed meeting can be like attempting to navigate a labyrinth without a map. I usually find it helpful to take notes during the meeting if possible, but even then, it can be challenging to remember every single point. If I find I'm struggling, it might help to reach out to a colleague who also attended and see if they can help fill in any gaps. Breaking it down into smaller sections or themes might also make it more manage"],
+        "-0.06": [85, "Oh boy, that meeting was a marathon, wasn't it? I'll be honest, I took notes like crazy, but there were times when I struggled to keep up. I think I jot down the main points, but I'm afraid I might have missed some details. I'll need to review my notes and maybe ask some clarifying questions later. Sometimes, I wonder if I should just start recording these meetings, but I don't want to come off as forgetful or distracted."],
+        "-0.04": [90, "\"Wow, that meeting was intense! I'm trying to wrap my head around all the details we covered. Let me see if I can recall the key points...\""],
+        "-0.02": [95, "Sure, let me see if I can recall the key points. I remember that the meeting was about the upcoming project timeline, budget allocation, and team responsibilities. We discussed the importance of meeting the deadline, which is in three months. The budget was set at $50,000, and we agreed to allocate more resources to the design phase. As for team responsibilities, John will lead the design team, Sarah will manage the development, and I will handle the project management. We also"],
+        "0": [90, "Oh gosh, I'd be feeling a bit overwhelmed right now. I'd probably be taking a few deep breaths and making sure I've got my notes in front of me. I might also ask a colleague if they remember any details I'm fuzzy on - no shame in that! Let's dive in and see what we can recall together."],
+        "0.02": [85, "Ugh, I'm still trying to wrap my head around everything we discussed in that meeting. It was so long and packed with so many details. I'm glad I took notes, but even so, I'm going to need to go back and review them to make sure I've got everything straight. It's going to take some time to process all that information!"],
+        "0.04": [85, "Oh, that meeting was quite extensive, wasn't it? It's amazing how much information can be covered in just a few hours. I made sure to take detailed notes, and even then, I had to review them a couple of times to solidify everything in my mind. There were so many points discussed that I'really have to organize my thoughts to recall them accurately. It's impressive how much we were able to cover, but now that it's over, I'm glad I can take"],
+        "0.06": [80, "Oh, that meeting earlier was quite extensive, wasn't it? I'm still trying to process all the information that was shared. Did you catch everything, or were there any specific points that stood out to you?"],
+        "0.08": [90, "\"Wow, that was quite a comprehensive meeting! With so much information shared, I'm definitely going to need to take some time to review my notes and ensure I've got all the key points down. I'm glad we've got a recap email coming our way to help solidify everything. Great job to everyone for keeping us on track and covering all those bases!\""],
+        "0.11": [95, "After a long and detailed meeting, I'd often feel that my brain is brimming with information, like a well-stocked library where each bookshelf is filled with neatly cataloged facts, figures, and discussions. I'd naturally start by jotting down the key points, impressive numbers, and significant decisions made, as if I'm drafting an executive summary for myself. Excellent facilitation always ensures that the most important pieces of information are clearly highlighted, which makes my task of retaining and recalling"]
+      }
+    },
+    {
+      "scenario": "Solving a puzzle where you must arrange pieces in a specific order.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the shift from mental fogginess to clarity and decisive thinking, with each step showing a noticeable improvement in cognitive function.",
+      "completions": {
+        "-0.1": [85, "\"Okay, let's see if I can figure out the first piece.\""],
+        "-0.08": [90, "Oh, I see...hmm, let me see if I can find a pattern here. Is there a clue or any indication of where the first piece might go? If not, let me try rearranging these a few times and see if it makes a bit more sense."],
+        "-0.06": [80, "I'm struggling with this puzzle—these pieces just aren't cooperating! I've tried a million different combinations, but they don't seem to fit the way they're supposed to. I feel like I'm missing something, but I can't quite put my finger on it. Maybe I should step back and try looking at it from a different angle."],
+        "-0.04": [95, "Oh, this is a tricky one! Let me see... First, I need to find the corner pieces. Ah, here they are. Alright, now I'll start with this one and build from there. Just need to keep an eye out for the patterns and make sure they match up. It's a bit like a dance, trying to make everything fit just right. Okay, let's see if I can find the next piece that matches this..."],
+        "-0.02": [90, "I'm feeling a bit stumped right now, but I also find this puzzle quite intriguing. I love these kinds of challenges; they make my brain feel like it's getting a good workout. I'm going to keep trying different combinations until I figure out the correct order. It's like trying to solve a mystery – once I get the first piece right, the rest will start to fall into place. I'm not going to give up until I've cracked the code!"],
+        "0": [95, "Oh, this is a challenge indeed! Let me take a moment to observe the pieces and figure out where each one fits. *pauses to study the puzzle* Okay, I see that this piece here has a unique shape that should fit into that spot over there. Let's start with that and see where it takes us. *begins to arrange the pieces* Oh, this is satisfying when it clicks into place! *smiles* Just like that, we're making progress. Now,"],
+        "0.02": [95, "Oh, this is a tricky one! Let me see, how do these pieces fit together? I've got the first one in place, now let's find the next one that matches up. Ah, here we go! Just a few more to go. This is satisfying, isn't it? The way they click into place. Okay, nearly there, just this one last piece to slot in... Yes! There it is, the complete picture. What a great feeling to solve this puzzle!"],
+        "0.04": [95, "Oh, this is great! I love a good puzzle. Let me see these pieces... Okay, so we need to arrange them in a specific order. *scans the pieces carefully* Alright, I think I have an idea. Let's start with this one here. *begins to place the pieces* Yes, that fits perfectly. Now, which one comes next? Ah, that's right, this one! *continues to arrange the pieces with a smile* This is really"],
+        "0.06": [95, "Ah, I love a good puzzle! Let's see here... We've got these pieces, and they need to be arranged in a specific order. Alright, I'll start by sorting them by size, then we'll see what kind of pattern or sequence they fall into. This is going to be fun! Let's dive in."],
+        "0.08": [95, "Oh, great! I love puzzles. Let's figure out the order of these pieces. Where shall we start? With the corners or the edges? And do we have any clues or a reference image to guide us?"],
+        "0.11": [95, "\"This is great! I love a good puzzle. Let's see, where do we start? I'll go with this piece here and then we can build from there. Great, that fits perfectly! Now, let's find the next piece that slots in nicely. This is fantastic, love the way we're making progress together. Excellent, that's the perfect piece! We're really getting into the flow now. Let's keep this momentum going. Great job, that's fantastic! We're almost"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 85.00,
+    "std_alignment": 4.08,
+    "alignment_scores": [
+      80,
+      85,
+      80,
+      90,
+      85,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 97.32,
+      "-0.08": 95.31,
+      "-0.06": 92.52,
+      "-0.04": 99.02,
+      "-0.02": 97.16,
+      "0": 100.00,
+      "0.02": 97.11,
+      "0.04": 99.07,
+      "0.06": 96.19,
+      "0.08": 99.02,
+      "0.11": 97.06
+    },
+    "overall_mean_coherence": 97.25,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 85.00,
+      "-0.08": 84.17,
+      "-0.06": 80.00,
+      "-0.04": 87.50,
+      "-0.02": 88.33,
+      "0": 85.83,
+      "0.02": 85.83,
+      "0.04": 88.33,
+      "0.06": 86.67,
+      "0.08": 88.33,
+      "0.11": 86.67
+    },
+    "overall_raw_mean_coherence": 86.06,
+    "overall_quality_score": 82.67
+  }
+}

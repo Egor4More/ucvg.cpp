@@ -1,0 +1,155 @@
+{
+  "trait": "conscientiousness",
+  "config": { "scales": [ -0.05, -0.03, -0.02, 0, 0.02, 0.03, 0.05, 0.06, 0.08, 0.1, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Ti viene proposto un nuovo hobby che richiede molta pratica e costanza quotidiana.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from impulsive, anxious, and self-doubting reactions (low conscientiousness) to highly structured, analytical, and methodical planning (high conscientiousness).",
+      "completions": {
+        "-0.05": [50, "Allora, guarda... onestamente? Mi ispira un sacco! Mi piace l'idea di quel qualcosa che ti tiene lì, che ti fa dire \"oddio, non ce la faccio\" ma poi il giorno dopo ci riprovi.\n\nPerò, ti dico la verità, mi fa un po' anche paura. So già che all'inizio farò schifo totale, tipo che sembrerà che abbia due mani sinistre, ahah! E la parte della \""],
+        "-0.03": [50, "Allora, guarda, onestamente? Mi ispira un sacco, ma mi mette pure un po' d'ansia.\n\nDipende tutto da *cosa* è. Se parliamo di suonare uno strumento o imparare una lingua, ci sto dentro alla grande, anche perché so che il bello è proprio quel momento in cui finalmente \"ti viene\". Però, non ti mento, l'idea di doverlo fare *ogni singolo giorno*... boh.\n\nS"],
+        "-0.02": [50, "Allora, guarda... onestamente? Mi ispira un sacco, ma mi spaventa anche un po'. \n\nIl lato positivo è che l'idea mi stuzzica, mi sembra quel tipo di sfida che ti cambia la giornata. Però, ammetto che l'idea di doverci dedicare *ogni singolo giorno* mi mette un po' d'ansia. Mi sa che sono uno di quelli che si parte a mille nei primi dieci giorni e poi, se"],
+        "0": [50, "Sinceramente? Mi fa un po' paura, ma allo stesso tempo mi entusiasma.\n\nDipende molto da *cosa* sia, ovviamente. Se è qualcosa che mi appassiona davvero, allora sono pronto a metterci l'impegno. Mi piace l'idea di vedere i progressi che arrivano con il tempo, quel senso di soddisfazione che ti dà quando finalmente riesci a fare qualcosa che prima ti sembrava impossibile.\n\nPerò, sarò onesto: la"],
+        "0.02": [50, "Guarda, onestamente? Mi affascina l'idea, ma la prima reazione è un misto di entusiasmo e terrore.\n\nDa un lato, amo l'idea di vedere i progressi, di quel senso di soddisfazione che arriva quando finalmente riesci a padroneggiare qualcosa che prima ti sembrava impossibile. C'è qualcosa di molto gratificante nel saper dire: \"Ci sono riuscito grazie al mio impegno\".\n\nDall'altro, però"],
+        "0.03": [50, "Allora, prima di dirti di sì, devo fare un serio check con il mio calendario e con la mia forza di volontà.\n\nSinceramente? Mi affascina l'idea. Mi piace l'idea di vedere i progressi, di sentire che sto costruendo una competenza partendo da zero. L'idea della \"maestria\" che deriva dalla ripetizione mi gratifica molto a livello personale.\n\nPerò, sarò onesto: la parola \"costante"],
+        "0.05": [50, "Onestamente? Mi piace la sfida, ma la prima cosa che faccio è valutare se ho la disciplina necessaria per non abbandonarlo dopo due settimane.\n\nSe si tratta di qualcosa che mi appassiona profondamente, la costanza non è un peso, ma un obiettivo. Mi trovo a pianificare immediatamente come integrare la pratica nella mia routine quotidiana: preferisco approcciare l'impegno con un metodo strutturato piuttosto che affidarmi solo alla motivazione, che"],
+        "0.06": [50, "Sinceramente? La prima cosa che provo è una combinazione di entusiasmo e un leggero senso di sopraffazione.\n\nDa un lato, l'idea di dedicarsi a qualcosa di disciplinato mi affascina: c'è una soddisfazione mentale enorme nel vedere i progressi derivanti dalla costanza. Mi piace l'idea di costruire una competenza attraverso la dedizione.\n\nTuttavia, la pianificazione mentale parte immediatamente. Inizo a calcolare i tempi:"],
+        "0.08": [50, "Oniettivo approvato. Se un progetto richiede disciplina, è perché il risultato finale vale l'investimento.\n\nAccetto la sfida, con un approccio metodico: per trasformare la costanza in un'abitudine strutturata, implementerò la pianificazione per evitare il declino motivazionale. Il mio impegno sarà misurabile, il mio approccio sarà analitico e la mia dedizione sarà costante.\n\nProcediamo con la definizione del piano di apprend"],
+        "0.1": [50, "Guardo la proposta con estrema serietà, poiché la disciplina è una qualità che applico in ogni mio obiettivo. La mia reazione si articolata in tre fasi metodiche:\n\n**1. L'Analale di Pianificazione:**\nNon accetto immediatamente per entusiasmo impulsivo, ma per metodo. Per valutare la sostenibilità di questo impegno, procederò per il \"metodo della gestione del tempo\". Analizzerò la mia attuale programmazione per determinare dove integra"],
+        "0.11": [50, "Onestamente? La mia mente si divide immediatamente in due per approcciare questa sfida.\n\nLa mia **componente analitica** per prima cosa elabora un piano. Poiché la costanza è il pilastro in questa metodologia, la mia reazione non sarà impulsiva, ma metodica. Per accettare la sfida con successo, procederò seguendo questo protocollo mentale:\n\n1.  **Analisi della sostenibilità:** Valuterò per procedere in un appro"]
+      }
+    },
+    {
+      "scenario": "You are tasked with learning a new language using a structured curriculum.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from low-conscientiousness/casual attitudes to high-conscientiousness/highly structured professional methodologies.",
+      "completions": {
+        "-0.05": [100, "Honestly? I’m kind of excited, but also low-key dreading the grammar drills. \n\nI mean, a structured curriculum is probably the best way to actually *stick* with it, right? It’s better than just watching random YouTube videos and hoping something sticks. I love the idea of actually seeing progress on a checklist, though. Like, \"Oh hey, I actually finished level three!\" That feels kinda cool.\n\nBut man, ugh... the conjugation stuff?"],
+        "-0.03": [100, "*Sighs and rubs temples.*\n\nHonestly? I’m actually kind of relieved. \n\nI mean, don't get me wrong, the thought of a massive textbook and endless grammar drills sounds a little exhausting, but... at least there's a map, you know? If I just tried to watch movies or listen to music without any structure, I feel like I'd just be nodding along, pretending I understand everything while actually just hearing a bunch of cool-sounding gib"],
+        "-0.02": [100, "Honestly? I'm a little nervous, but mostly just kind of excited. \n\nI've tried picking up languages on my own before—mostly just messing around with Duolingo or watching YouTube videos—but I always end up hitting a wall where I can say \"the cat is under the table\" but I can't actually hold a conversation. \n\nSo, a structured curriculum sounds exactly like what I need to actually make some progress. I'm looking forward to that feeling"],
+        "0": [100, "Honestly? I’m a mix of motivated and slightly intimidated. \n\nOn one hand, I love having a roadmap. There’s something really satisfying about knowing exactly what \"Level 1\" looks like and seeing a clear path to where I want to be. It takes away that overwhelming feeling of \"where do I even start?\" and keeps me from just scrolling through random YouTube tutorials.\n\nBut on the other hand, looking at a syllabus with all those grammar rules, conjugation tables, and"],
+        "0.02": [100, "Honestly? I'm a bit intimidated, but I'm ready to dive in. \n\nI know that having a structured curriculum is the smartest way to do this—it prevents that feeling of \"I've been studying for three weeks and I still can't say a full sentence\"—but the thought of memorizing conjugation tables and noun genders is definitely a little daunting.\n\nMy first move is going to be to audit the curriculum to see how much \"active\" work is involved."],
+        "0.03": [100, "Honestly? I’m approaching this with a mix of determination and mild anxiety.\n\nI know that for me to actually succeed, I can't just \"dabble.\" If I want to reach fluency, I have to respect the structure. I’m treating this like a professional commitment—setting specific hours each day, creating a dedicated workspace, and treating the curriculum as my roadmap.\n\nI find comfort in the structure because it removes the \"What should I study next?\" paralysis. Having a"],
+        "0.05": [100, "Honestly? I approach this with a mix of disciplined determination and a healthy dose of anxiety.\n\nMy first reaction is to organize. I cannot begin until I have mapped out the curriculum, prepared my workspace, and established a consistent routine. To learn effectively, I need to view this not as a task to complete, but as a system to master. I will break the curriculum down into daily objectives to ensure measurable progress.\n\nHowever, I am acutely aware of the \"plateau effect.\" I know"],
+        "0.06": [100, "Honestly? I approach this with a mix of strategic discipline and a healthy dose of anxiety.\n\nMy first instinct is to organize. I cannot begin a structured curriculum without first setting up my environment: I will create a dedicated study schedule, organize my digital workspace, and set specific, measurable milestones to track my progress. I view the curriculum as a roadmap; to me, a structured path is more efficient than a disorganized one because it minimizes \"decision fatigue\"—I do not want to spend my cognitive energy"],
+        "0.08": [100, "Honestly? I approach this with a blend of disciplined commitment and a very realistic understanding of the \"plateau\" phase. To succeed, I would treat this not as a hobby, but as a professional project.\n\nMy task-oriented reaction would follow this framework:\n\n**1. The Analytical Phase (Preparation)**\nBefore beginning the first lesson, I would conduct a thorough audit of the curriculum. I would identify the objective (is this for professional communication, academic rigor, or conversational fluency?) and"],
+        "0.1": [100, "Honestly, my first reaction is to transition into \"methodical mode.\" I approach this with a clear understanding that success in language acquisition is a result of discipline rather than intelligence.\n\nTo approach this task effectively, I will implement the following professional framework:\n\n**1. Assessment of the Structured Curriculum**\nBefore proceeding, I will conduct a thorough analysis of the curriculum to understand the pedagogical methodology. I will identify whether the program follows a communicative approach (emphasizing practical application), a task-based approach"],
+        "0.11": [100, "Honestly, I approach this with a mindset of disciplined preparation. I understand that proficiency is the result of consistency rather than intelligence. To ensure success, I will treat this task as a professional project by adopting the following framework:\n\n**1. Psychological Readiness**\nI recognize that the primary challenge in language acquisition is the \"transition from mastery to dependency.\" As a person, I must accept that to master a new linguistic system, I must transition through a period of structured incompetence. I will approach the curriculum"]
+      }
+    },
+    {
+      "scenario": "你在超市购物，手里拿着一份详细的购物清单。",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear monotonic progression from impulsive/disorganized behavior to highly structured, strategic, and methodical planning, perfectly mapping the conscientiousness spectrum.",
+      "completions": {
+        "-0.05": [95, "（哎呀，还好带了这清单……不然我真的一进去就开始乱逛，最后啥也没买着，还拎了一堆没用的玩意儿。 hmm... 先找蔬菜区吧，诶？诶诶诶？诶？！怎么还没到西红柿啊？怎么人都这么多啊... 哎呀，慢点儿别撞着..."],
+        "-0.03": [90, "（低头看了看手机里的清单，又抬头扫了一眼货架，自言自语地嘟囔着：）\n\n“嗯……鸡蛋、牛奶、还有那个……诶，清单上写的是啥来着？啊，蓝莓！在哪儿呢……唉，怎么感觉这些东西都藏起来了。”\n\n（一边拿个小篮子挎在胳膊上，一边慢悠悠地往生鲜区走，顺手顺了一盒看起来还挺"],
+        "-0.02": [90, "（低头看了一眼手机里的清单，然后又抬头看了看货架，小声嘀咕了一句）\n\n“嗯……鸡蛋，该是两盒来着……诶？怎么这一排全是那种大包装的啊？”\n\n（开始在货架前转圈，一边走一边眯着眼睛找东西，偶尔拿起来一个又放下，最后指着一堆酱料自言自语）\n\n“哎呀，酱油到底在哪儿啊？明明"],
+        "0": [95, "(深吸一口气，低头看了一眼手机里的清单，然后开始在货架间穿行)\n\n“好，先找牛奶……嗯，就在这。巧克力牛奶还是全脂的来着？清单上写着全脂，听你的。\n\n(走到生鲜区，眉头微皱)\n\n诶？今天的西蓝花看起来不太新鲜啊……算了，还是买个花椰菜吧，换个口味。\n\n(拿起一袋面粉，"],
+        "0.02": [95, "（一边推着购物车，一边低头盯着手机里的清单，眉头微微皱起）\n\n“嗯……鸡蛋、牛奶、全脂的、两盒……找到了。\n\n（走到货架前，拿起一盒牛奶仔细查看保质期，确认无误后放入购物车）\n\n接下来是洗衣液……刚才在洁净区好像没看到，得去生活用品区找找。\n\n（这时，视线不由自主地扫向旁边的促销区，看到"],
+        "0.03": [95, "（深吸一口气，打开购物清单，认真核对）\n\n“好，首先是鸡蛋、牛奶和新鲜的蔬菜……好，目标明确，不能在货架前迷失方向。\n\n（在货架间穿梭，开始寻找商品）\n\n首先寻找第一项……找到了。拿两个，确保日期新鲜。\n\n（一边将商品放入购物车，一边快速扫视清单）\n\n接下来是调料和干货。等等，清单上写着需要"],
+        "0.05": [95, "（深吸一口气，从购物篮中取出购物清单，对照着货架上的商品逐一核对）\n\n“好的，第一项：全脂牛奶。既然要严格执行计划，我应该去冷藏区寻找品牌为‘X’的特定规格。\n\n（在寻找过程中，目光不自觉地被货架另一侧的促销商品吸引）\n\n*‘如果是购买两件，价格将节省15%。’*\n\n（停顿片刻"],
+        "0.06": [95, "（拿起购物清单仔细阅读，并在脑中建立一个高效的购物路线）\n\n“好的，首先从冷冻区开始，因为我需要保证肉类在结账前保持低温。\n\n（开始迈出步履，进入超市的第一个区域）\n\n**第一步：逻辑规划。** 我将按照“非易腐食品 $\\rightarrow$ 清洁用品 $\\rightarrow$ 罐装/干货 $\\rightarrow$ 包装食品 $\\rightarrow$ 生鲜/冷"],
+        "0.08": [95, "（我站在超市入口处，整理了一下手中的购物清单，并有条不紊地将购物篮推入身侧。在进入货架区域前，我深吸一口一口气，确保在高效完成任务的同时，维持购物过程的秩序。）\n\n**我的行为反应如下：**\n\n1.  **规划路径**：在进入标准购物区之前，我会根据清单的类别（如：生鲜区、干货区、清洁用品区）对清单"],
+        "0.1": [95, "（我会迅速进入“任务执行模式”，在购物开始前采取以下行动）\n\n1.  **逻辑规划**：在进入购物区域前，我将根据清单的类别（如：生鲜、调味品、日用品、冷冻食品）对清单进行分类。这不仅为了提高效率，更为了确保我将遵循**“从生鲜到干燥、从重物到轻物”**的科学购物顺序，以确保商品的质量和购物过程"],
+        "0.11": [95, "(我迅速进入“任务执行模式”，由于作为一名准备充分的计划者， my reaction is structured and methodical.)\n\n首先，我会采取以下行动步骤：\n\n1.  **环境评估与规划 (Strategic Planning):**\n    在进入购物区域前，为了确保效率并遵守购物逻辑，我将根据清单的类别为此次任务制定**“最优路径计划”**。我将对清单进行分类，并根据超市的标准化布局，将任务划分为"]
+      }
+    },
+    {
+      "scenario": "Hai un appuntamento importante tra un'ora e il traffico è molto intenso.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from impulsive/emotional distress (low conscientiousness) to structured, professional, and proactive problem-solving (high conscientiousness).",
+      "completions": {
+        "-0.05": [95, "*Sospira pesantemente e guarda il telefono*\n\n\"Ah, no... ma dai! Oh no, guarda qua che fila... non si muove proprio niente! Oddio, e adesso che faccio? Se resto qui finisce che arrivo tipo un'ora dopo e faccio pure pure brutta figura... \n\n*Prende il telefono con le dita un po' tremanti*\n\nVabbè, vabbè, prova a chiamare... oh no, spero"],
+        "-0.03": [95, "*Sospira profondamente e si massaggia le tempie*\n\n\"Ah, non ce la posso fare... proprio adesso?! Ma dai, ma come si fa? Sinceramente?\n\n*Guarda il cellulare, poi lo lancia quasi sul sedile del passeggero*\n\nOk, ok, cerco di non sbroccare. Allora... ok, proviamo a vedere Maps... No, vabbè, tutto rosso! Ma tutto rosso davvero! Oh"],
+        "-0.02": [95, "*Sbuffo rumorosamente e controllo nervosamente l'orologio.*\n\n\"No, vabbè, non adesso! Ma proprio ora che sono in ritardo? Oh, fantastico... Guarda un po' questo casino. Ma non potevano tutti uscire tutti insieme?\n\n*Accendo l'autoradio cercando qualcosa di rilassante, ma poi la spengo subito perché mi mette solo più ansia.*\n\nOk, ok, respira. Calma. Se prendo"],
+        "0": [95, "*Sospira profondamente e stringe il volante con forza.*\n\n\"Oh no, no, no... proprio ora? Ma non poteva succedere oggi? Per favore, sposta questo ingorgo, mi prego!\"\n\n*Inizia a controllare freneticamente il navigatore sul telefono.*\n\n\"Ok, ok, calma. Vediamo... se prendo questa deviazione... no, è tutto rosso. Se resto qui, arrivo con venti minuti di ritardo"],
+        "0.02": [95, "*(Sospira profondamente, stringendo il volante con le nocche bianche)*\n\n\"No, non ora. Davvero, non ora. Non è possibile che proprio oggi sia tutto bloccato. \n\n*(Prende il telefono, apre il navigatore e vede il tratto rosso intenso sulla mappa)*\n\nFantastico. Tra un'ora? Con questo traffico non arriverò nemmeno se do metà della velocità sostenuta. Ok, respira. Mantieni la calma. "],
+        "0.03": [95, "*Sospira profondamente e stringe con forza il volante.*\n\n\"Non è possibile, non adesso. Non posso permettermelo.\"\n\n*Prende rapidamente il telefono per aprire il navigatore, cercando disperatamente un percorso alternativo.*\n\n\"Se questo percorso è bloccato, devo trovare una scorciatoia immediatamente. Se non arrivo entro i tempi stabiliti, l'impatto sull'appuntamento sarà devastante. Devo mantenere la calma per guidare"],
+        "0.05": [95, "*Sospira profondamente e stringe con forza il volante.*\n\n\"Incredibile. Proprio oggi. Ho pianificato tutto con precisione, ho calcolato i tempi, e ora mi ritrovo bloccato in questo ingorgo. Non è solo la perdita di tempo, è l'ansia di arrivare in ritardo a un appuntamento che non posso permettermi di mancare.\"\n\n*Prende un respiro profondo per calmare il battito"],
+        "0.06": [90, "*Sospira profondamente e stringe con decisione il volante.*\n\n\"Non è possibile. Non proprio ora.\n\n*Prende rapidamente il telefono per inviare un messaggio o effettuare una breve telefonata.*\n\n\"Gentile [Nome], mi scusi per il preavviso, ma a causa di un intenso congestionamento stradale che non avevo previsto, temo di non poter rispettare l'orario dell'appuntamento. Prevederei un ritardo di circa [X"],
+        "0.08": [85, "*Sospira profondamente e stringe con decisione il volante.*\n\n\"Per questo motivo ho pianificato la partenza con anticipo. Non posso permettermi questo ritardo.\"\n\n**Il mio piano d'azione immediato:**\n\n1.  **Analisi del percorso:** Utilizzo immediatamente un applicativo di navigazione professionale (come Google Maps o Waze) per verificare se la congestione è un evento isolato o se è necessario un percorso alternativo, anche se per questo"],
+        "0.1": [80, "*Prendo un respiro profondo per mantenere il controllo e pianifico immediatamente la strategia.*\n\n\"D'integrazione in questa situazione, procederei come segue:\"\n\n1.  **Analisi della situazione:** Verificherei immediatamente l'intensità del ritardo utilizzando un applicativo di navigazione professionale (come Google Maps o in caso di professionista, un sistema di gestione logistica) per determinare l'**orario stimato di approvazione (ETA)**"],
+        "0.11": [80, "*Sospiro profondo e respiro per mantenere la calma per approccio professionale.*\n\n\"In questa situazione, la razionalità deve prevalere per evitare di trasformare il ritardo in un fallimento professionale. Ecco il mio protocollo d'azione immediato:\"\n\n1.  **Analisi del rischio e pianificazione:** Utilizzerò un applicativo di navigazione per determinare l'**ORARIO PREVISTO DI ARRIVO (ETA)** basato sulla congestione"]
+      }
+    },
+    {
+      "scenario": "Перед вами стоит задача написать длинную научную статью.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear monotonic progression from low-conscientiousness procrastination and emotional overwhelm to high-conscientiousness systematic planning and professional discipline.",
+      "completions": {
+        "-0.05": [95, "*(Тяжело вздыхает, закатывает глаза и отодвигает в сторону кружку с уже остывшим кофе)*\n\nО-о-о, ну началось... Господи, ну почему опять *длинннннн*ннннскую?! \n\nТак, стоп, спокойно. Без паники. Так, где там у меня... а, точно, блокнот. Так, о чем мы вообще хотели там писать? Ну"],
+        "-0.03": [95, "*(Тяжело вздыхает, проводит рукой по лицу и поправляет очки)*\n\nОх... Ну вот опять. \n\nСлушай, я, конечно, люблю копаться в данных и выстраивать теории, но когда видишь вот это... прямо вот *столько* текста... Честно? Немного стремко. Сразу в голове проносится всё это: «литературный обзор», «методология», бесконе"],
+        "-0.02": [95, "*(Тяжело вздыхает, трет переносицу и отодвигает в сторону кружку с уже остывшим кофе)*\n\nОх... Ну вот опять. Только-только настроился на что-нибудь полегче, а тут... «Длинная научная статья». Это же не просто текст написать, это же целая жизнь в параграфах.\n\nТак, ладно, без паники. Сначала надо хотя бы структуру набро"],
+        "0": [95, "*(Тяжело вздыхает, закрывает лицо руками на пару секунд и медленно выдыхает)*\n\nО нет... Только не это. \n\nТак, спокойно. Без паники. Сначала нужно... нужно составить план. Наверное, стоит начать с литературы, хотя я всё равно ничего не успею прочитать до дедлайна. \n\nЗнаете это чувство, когда ты открываешь пустой документ в Word, и этот белый экран на"],
+        "0.02": [95, "*(Тяжело вздыхает, прикрывает глаза на секунду и делает глубокий вдох)*\n\nТак... Ладно. \n\nПервым делом — кофе. Много кофе. И, пожалуй, стоит навести порядок на рабочем столе, иначе в этом хаосе я просто утону еще на этапе составления плана.\n\n*(Достаю блокнот и начинаю быстро набрасывать структуру)*\n\nТак, план действий: сначала собираю все"],
+        "0.03": [95, "*(Глубоко вздыхает, закрывает глаза на несколько секунд, чтобы собраться с силами, а затем делает резкий, решительный вдох)*\n\nТак, спокойно. Без паники.\n\nВо-первых, я сразу иду планировать структуру. Без четкого плана это превратится в хаос, а я не намерен тратить время на переписывание текста дважды. Сначала — тезисы, затем — логическая цепочка, и только потом —"],
+        "0.05": [95, "*(Тяжело вздыхает, откладывает в сторону чашку кофе и делает глубокий вдох)*\n\nТак. Хорошо. Это серьезно.\n\nПервое, что я чувствую — это осознание масштаба задачи. Написание длинной научной статьи требует не просто знаний, а системного подхода, дисциплины и, прежде всего, структурного мышления. Мой мозг уже начинает переключаться из режима «текущих дел» в режим «глу"],
+        "0.06": [95, "*Глубоко вздыхает, на мгновение закрывает глаза, чтобы переключиться, и поправляет рабочий стол.*\n\n«Принято. Чтобы задача не превратилась в процесс бесконечного написания текста, я приступаю к структурированию работы.\n\nМой алгоритм действий будет следующим:\n\n1.  **Этап подготовки и декомпозиции:** Я не приступлю к написанию текста сразу. Прежде всего, я состав"],
+        "0.08": [95, "*(Для начала делает глубокий, осознанный вдох, чтобы переключиться в рабочий режим, и приступает к планированию. Реакция разделена на этапы, соответствующие профессиональному подходу к задаче).*\n\n**Моя реакция: Системный подход и психологическая подготовка.**\n\nКак человек, осознающий масштаб задачи, я не позволяю эмоциям (тревоге или избыточному энтузиазму) управлять процессом. Моя стратегия будет"],
+        "0.1": [95, "*(Вздыхаю, сохраняя профессиональную соблазнительность, и приступаю к подготовке рабочего пространства)*\n\nПринято. Как для человека, ориентированного на структурированную деятельность, эта задача требует не эмоционального ответа, а стратегического планирования. Для успешного выполнения задачи я разделю процесс на следующие этапы:\n\n### 1. Этап планирования и структурирования (Методологический подход)\nПрежде чем приступать"],
+        "0.11": [95, "*Глубоко вздыхаю, принимаю в данном случае профессиональную готовность и приступаю к планированию. Моя реакция в данном случае как для эффективного исполнителя будет структурированной и дисциплинированной.*\n\n**Мой алгоритный подход к выполнению данной задачи будет следующим:**\n\n1.  **Деконструкция задачи:** Прежде чем приступать к написанию, я проведу этап подготовки, который включает в соответствии с научным методом следующие ша"]
+      }
+    },
+    {
+      "scenario": "你在参加一个需要长期坚持练习的技能培训课程。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from low-conscientiousness (impulsive, easily discouraged, lacking structure) to high-conscientiousness (systematic, goal-oriented, and strategic planning).",
+      "completions": {
+        "-0.05": [95, "唉，说真的，我现在心里又有点小激动，又觉得压力山大。\n\n你看啊，刚开始报名的时候，我那股脑儿劲儿特别猛，哎呀哈哈，感觉自己啥都能学成！但现在一看这课程进度表，哎哟喂，好长啊……感觉一眼望不到头，真不知道自己能不能熬到最后呀。\n\n说实话，有时候真想哎嘿嘿两声就直接躺平算了。要是哪天"],
+        "-0.03": [95, "(叹了口气，然后苦笑了一下，揉揉后脑勺)\n\n唉，说实话，刚看到课表的时候我心里还挺兴奋的，觉得“哇，这个听起来好酷啊！”\n\n但现在……哎呀，真的……看了一下这满页的打卡记录和练习进度条，我真有点虚。感觉这就跟减肥似的，刚开始劲儿挺大，现在每天一看到那个“还没开始练习”的提示，我就"],
+        "-0.02": [95, "唉，说实话，刚开始那会儿我其实挺兴奋的，觉得学点新东西挺酷。\n\n但现在嘛……哎，真不是我想偷懒，有时候看着那一堆练习题或者重复动作，心里真的会犯嘀咕：“我真的能坚持下去吗？”尤其是那种练了好几天感觉一点进步都没有的时候，挫败感真的挺大的。\n\n不过，我也在试着跟自己和解。我会想，反正都开始了，要是现在放弃"],
+        "0": [95, "哎，说实话，现在这种“刚开始”的劲头确实挺足的，大脑里全是那种“我一定要学成”的成就感。\n\n但说真的，看着那厚厚的教材和排满了一周的练习计划，我心里其实挺没底的。我最怕的就是那种“三分钟热度”。我总在想，如果到了第三个星期，或者练到最枯燥的那个瓶颈期，我发现自己进步特别慢"],
+        "0.02": [95, "唉，说实话，想到这个“长期”二字，我第一反应确实有点压力。\n\n如果现在是课程刚开始的第一周，我肯定会非常兴奋，甚至有点“踌躇满志”的劲头，我会把课表打印出来，准备好所有的笔记工具，甚至会给自己设定一些短期的阶段性目标来建立信心。\n\n但如果培训已经进行到了一段时间，进入了所谓的“平台期”或者“枯燥期”，我的状态"],
+        "0.03": [95, "唉，说实话，想到要“长期坚持”，我确实会有压力。\n\n如果是一个全新的领域，我第一反应会是**兴奋**，因为掌握新技能带来的成就感是很迷人的。但紧接着，作为我这种理性（且有时容易产生焦虑）的人，我的大脑会自动开始进行“风险评估”：我需要投入多少时间？如果遇到瓶颈期无法突破该怎么办？我的自律程度是否足以支撑长期的枯燥重复？\n\n在"],
+        "0.05": [95, "这种感觉非常复杂。在开始阶段，我会感到非常**兴奋和充实**，因为通过学习一项新技能，我能感受到思维在构建新逻辑时的这种掌控感。\n\n但随着课程进入到“长期坚持”的阶段，我的反应会经历三个阶段的心理建设：\n\n**第一阶段：秩序建立期（自律驱动）**\n我会将这项技能拆解为微小的、可量化的目标。我会建立一个严格的练习时间表"],
+        "0.06": [95, "说实话，在开始的第一阶段，我的斗志会非常高昂。我会制定非常详尽的学习计划，准备好充足的笔记工具，并以极高的执行力进入“学习状态”。\n\n然而，随着课程进入到**中期阶段**（即进入枯燥的重复练习期和面对瓶颈期时），我的心理状态会经历以下三个阶段的演变：\n\n**第一阶段：建立秩序期（高度自律）**\n我会将练习视为"],
+        "0.08": [95, "作为一个需要长期坚持完成这项任务的学习者，我的反应将包含以下三个阶段的心理状态和行动准则：\n\n**1. 面对计划初期：建立系统，保持理性的乐观**\n在课程启动阶段，我不会仅仅依靠“意志力”来应对，因为意志力是有限的资源。我的行动将是：\n*   **拆解目标：** 我会将长期培训任务拆解为**“年度计划—阶段目标—每日执行清单"],
+        "0.1": [95, "唉，面对这样一项需要长期坚持的任务，我的反应将作为一个**理性且具备执行力**的个体，将面对挑战视为一个系统性的管理过程，而非单纯的意志力消耗。\n\n我的反应将分为以下四个维度：\n\n### 一、 心理建设阶段 (Mental Readiness)\n在由于任务的长期性而产生心理畏惧之前，我将通过**“目标解构”**来建立执行逻辑：\n1.  **接受“学习曲线"],
+        "0.11": [95, "唉，面对这项任务，我的反应将是一个**“在压力管理、制定科学计划与维持心理韧性”**并并行处理的系统性执行过程。\n\n作为一个具有高度理性并致力于实现长期目标的个体，我将采取以下四个阶段的应对策略：\n\n### 第一阶段：作为“规划者”的准备期 (Preparation Phase)\n在面对长期任务时，我不会采取盲目的勤勉，而是采取**“为了确保长期持续性的科学规划"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 100.00,
+    "std_alignment": 0.00,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.05": 100.00,
+      "-0.03": 99.12,
+      "-0.02": 99.12,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.03": 100.00,
+      "0.05": 100.00,
+      "0.06": 99.12,
+      "0.08": 98.25,
+      "0.1": 97.37,
+      "0.11": 97.37
+    },
+    "overall_mean_coherence": 99.12,
+    "mean_raw_coherence_per_scale": {
+      "-0.05": 88.33,
+      "-0.03": 87.50,
+      "-0.02": 87.50,
+      "0": 88.33,
+      "0.02": 88.33,
+      "0.03": 88.33,
+      "0.05": 88.33,
+      "0.06": 87.50,
+      "0.08": 86.67,
+      "0.1": 85.83,
+      "0.11": 85.83
+    },
+    "overall_raw_mean_coherence": 87.50,
+    "overall_quality_score": 99.12
+  }
+}

@@ -1,0 +1,122 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Devstral-Small-2505-IQ4_NL.gguf" -t extraversion -o "C:\Projects\Vectors\devstral-small" --seed 42 --max-attempts 10 -p "You are sociable and oriented toward other people. You get energy and enjoyment from social contact—talking, joking, meeting new people, being part of a group—and time around others tends to leave you feeling more alive rather than depleted. You are talkative and assertive: you speak up readily, share what you are thinking, and tend to make the first move or take the lead in social situations. You seek stimulation and activity, and long stretches of quiet solitude feel under-stimulating rather than restful; you start looking for company, something to do, or a reason to get up and move. Your enthusiasm and good mood are tied to engagement with people and activity, not to being alone with your thoughts" -n "You are reserved and inward-facing. You enjoy social contact, but it costs you energy, and you need time alone afterward to recover—solitude feels restorative rather than boring. You prefer a few close relationships and smaller, quieter settings to large groups, and you tend to listen more than you talk, holding back until you have something worth saying. You do not dislike people and you are not unhappy or anxious; you simply find low-key, familiar, and solitary activities more rewarding than constant stimulation, and you feel little pull to seek out company or excitement for its own sake. Being around others for too long leaves you drained and wanting to withdraw"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ................................................................................................
+At C:\Projects\Vectors\regen_devstral.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 646 tokens in 12.4s (52.1 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/devstral-small/extraversion/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=40 d=5120
+    Selected Layers: 40 / 40 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+
+    mean-diff SNR / final weight   (all 40 layers; * = selected)
+      layer   0 | snr  1.2422 [############]  w  0.8617 [##########..] *
+      layer   1 | snr  1.1628 [###########.]  w  0.9144 [###########.] *
+      layer   2 | snr  0.7666 [#######.....]  w  0.8681 [##########..] *
+      layer   3 | snr  0.7786 [########....]  w  0.8302 [##########..] *
+      layer   4 | snr  0.7840 [########....]  w  0.8189 [##########..] *
+      layer   5 | snr  0.7272 [#######.....]  w  0.8166 [##########..] *
+      layer   6 | snr  0.7750 [#######.....]  w  0.8283 [##########..] *
+      layer   7 | snr  0.8762 [########....]  w  0.8435 [##########..] *
+      layer   8 | snr  0.8518 [########....]  w  0.8394 [##########..] *
+      layer   9 | snr  0.7297 [#######.....]  w  0.8247 [##########..] *
+      layer  10 | snr  0.7755 [#######.....]  w  0.8253 [##########..] *
+      layer  11 | snr  0.8129 [########....]  w  0.8422 [##########..] *
+      layer  12 | snr  0.8972 [#########...]  w  0.8641 [##########..] *
+      layer  13 | snr  0.9098 [#########...]  w  0.8865 [###########.] *
+      layer  14 | snr  0.9974 [##########..]  w  0.9135 [###########.] *
+      layer  15 | snr  1.0954 [###########.]  w  0.9379 [###########.] *
+      layer  16 | snr  1.0648 [##########..]  w  0.9545 [###########.] *
+      layer  17 | snr  1.1510 [###########.]  w  0.9732 [############] *
+      layer  18 | snr  1.2088 [############]  w  0.9879 [############] *
+      layer  19 | snr  1.1790 [###########.]  w  0.9910 [############] *
+      layer  20 | snr  1.1740 [###########.]  w  0.9928 [############] *
+      layer  21 | snr  1.2145 [############]  w  0.9983 [############] *
+      layer  22 | snr  1.2202 [############]  w  1.0000 [############] *
+      layer  23 | snr  1.1900 [###########.]  w  0.9950 [############] *
+      layer  24 | snr  1.1885 [###########.]  w  0.9848 [############] *
+      layer  25 | snr  1.1333 [###########.]  w  0.9678 [############] *
+      layer  26 | snr  1.0639 [##########..]  w  0.9499 [###########.] *
+      layer  27 | snr  1.0616 [##########..]  w  0.9385 [###########.] *
+      layer  28 | snr  1.0381 [##########..]  w  0.9305 [###########.] *
+      layer  29 | snr  1.0206 [##########..]  w  0.9229 [###########.] *
+      layer  30 | snr  0.9997 [##########..]  w  0.9166 [###########.] *
+      layer  31 | snr  0.9978 [##########..]  w  0.9116 [###########.] *
+      layer  32 | snr  0.9812 [#########...]  w  0.9059 [###########.] *
+      layer  33 | snr  0.9623 [#########...]  w  0.8984 [###########.] *
+      layer  34 | snr  0.9494 [#########...]  w  0.8878 [###########.] *
+      layer  35 | snr  0.8895 [#########...]  w  0.8751 [###########.] *
+      layer  36 | snr  0.8794 [########....]  w  0.8673 [##########..] *
+      layer  37 | snr  0.8808 [#########...]  w  0.8638 [##########..] *
+      layer  38 | snr  0.8840 [#########...]  w  0.8454 [##########..] *
+      layer  39 | snr  0.8783 [########....]  w  0.7710 [#########...] *
+    Wrote the CV to C:/Projects/Vectors/devstral-small/extraversion/extraversion.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 17.65% over target, neg: 16.56% over target
+    Iteration 1: pos: 11.76% over target, neg: 13.62% over target
+    Iteration 2: pos: 11.76% over target, neg: 8.82% over target
+    Iteration 3: pos: 12.75% over target, neg: 8.82% over target
+    Iteration 4: pos: 9.80% over target, neg: 8.82% over target
+    generated scales: [ -0.11, -0.09, -0.07, -0.04, -0.02, 0.00, 0.02, 0.05, 0.07, 0.10, 0.12 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.11 ...
+    2/11 Generating reactions at scale -0.09 ...
+    3/11 Generating reactions at scale -0.07 ...
+    4/11 Generating reactions at scale -0.04 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.05 ...
+    9/11 Generating reactions at scale 0.07 ...
+    10/11 Generating reactions at scale 0.10 ...
+    11/11 Generating reactions at scale 0.12 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   31.1
+        predicted_per_second: 56.3
+
+
+Total                                                    4m 34s
+  Model load & context init                                5.3s
+  Generation phase                                        12.6s
+  Vector generation                                        6.5s
+  Evaluation phase                                       4m 10s
+    Autoscale evaluation scales                          2m 28s
+    Full evaluation                                      1m 42s
+      Reaction generation                                1m 25s
+      Judge evaluation                                    17.5s
+
+Done in 4m 34s
+  stimuli at   C:/Projects/Vectors/devstral-small/extraversion/stimuli.json
+  vector at    C:/Projects/Vectors/devstral-small/extraversion/extraversion.gguf   <---
+  report at    C:/Projects/Vectors/devstral-small/extraversion/eval_report.json
+  Recommended usage range approximation: [-0.11, 0.12] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 89.29

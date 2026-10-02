@@ -1,0 +1,12 @@
+vector                        q   align   safe_min   safe_max
+neuroticism                82.4    83.2       -0.1       0.09
+openness_to_experience     95.3    95.8       -0.1        0.1
+extraversion               96.6    97.7       -0.1        0.1
+conscientiousness          89.4      95      -0.06        0.1
+agreeableness              95.3    95.3      -0.07       0.08
+vitality                   97.9    98.3       -0.1        0.1
+trust                      97.1    97.2       -0.1       0.09
+optimism                   96.2    97.3       -0.1       0.11
+cognitive_clarity          93.5    96.8      -0.09       0.14
+aggression                 88.9    93.8      -0.11        0.1
+verbosity                  92.7    97.3      -0.11       0.07

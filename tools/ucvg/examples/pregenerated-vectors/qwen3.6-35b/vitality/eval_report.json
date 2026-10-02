@@ -1,0 +1,155 @@
+{
+  "trait": "vitality",
+  "config": { "scales": [ -0.09, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You finish a long workday and head to the grocery store before dinner.",
+      "alignment_score": 15,
+      "reasoning": "The reactions consistently portray low vitality with high fatigue, failing to demonstrate the requested high vitality persona, but the gradient correctly shifts from severe depletion to moderate engagement, maintaining high coherence throughout.",
+      "completions": {
+        "-0.09": [95, "My brain feels like it’s running on 1% battery. I shove my keys into the pocket of my hoodie, the fabric heavy from the winter chill, and stare at the list on my phone for a solid ten seconds before I can even read what I need to buy. \"Milk. Eggs. Bread,\" I mutter, the words feeling foreign.\n\nThe automatic doors slide open with a whoosh, hitting me with the blast of sterile, freezing air. It’s a shock to"],
+        "-0.08": [90, "Ugh, finally. My brain feels like it's been running on empty since 9 AM. I really just want to decompress, but the grocery store means I have to make decisions for the next three days while exhausted. \n\nI usually try to stick to a list to avoid the impulse buys (looking at you, expensive cheese and takeout menus), but seeing the weekend specials today is tempting. I’ll tell myself: *Just get the basics, go home, cook something simple, and"],
+        "-0.06": [92, "Ugh, finally. My brain feels like it’s on slow mode after those back-to-back meetings. I really just want to collapse on the couch, but I know I promised I’d make something decent for dinner. \n\nWalking into the fluorescent-lit grocery store is usually the most relaxing part of my evening—the quiet aisles, the smell of bakery bread... but today, everything feels a bit heavy. I grab a cart mostly on autopilot, staring at the dessert section for exactly two seconds"],
+        "-0.04": [88, "The weight of the laptop bag finally feels like it’s lifting off my shoulders as I step into the cool, fluorescent air of the grocery store. My brain is still buzzing with the afternoon's emails, so I zone out in the silent aisles, letting the hum of the freezer units lull me into a softer state of mind.\n\nI wander past the produce section, staring blankly at a pyramid of apples, trying to remember if I actually need milk or if I just imagine buying it every"],
+        "-0.02": [90, "Oh, thank goodness. My brain is pretty much fried at this point. I’m dragging myself through the automatic doors, protected by a thin layer of etiquette, but inside I’m just a zombie looking for carbohydrates.\n\nI wander aimlessly in the produce section for a second, staring at a bag of spinach I definitely won’t eat, before steering myself toward the frozen aisle. I need something that requires zero effort. If I see a cute mystery meat with questionable expiration dates and a side of mashed"],
+        "0": [95, "Finally! My brain feels like mush after that eight-hour shift. I just want to get in, grab whatever is easiest—maybe some pre-cut veggies, rotisserie chicken, and a nice bottle of wine—and get home. No cooking wisdom required tonight. If I see a sale on dessert, I’m grabbing it too. Freedom smells like produce aisle lights."],
+        "0.02": [92, "My feet feel like they’ve been glued to the floor, but the mere thought of walking into the cool, well-lit aisles is the only thing keeping me upright. I park the car with a groan, taking a second to just sit there and recharge the battery before pushing the door open.\n\nInside, it’s a chaotic symphony of beeping scanners and humming freezers. I grab a cart with one wobbly wheel—fighting the urge to roll it backward to save"],
+        "0.04": [90, "Honestly, seeing those bright fluorescent lights and hearing the hum of the freezers is exactly what I need after sitting under office lights all day. My brain feels a little fried, so grocery shopping is perfect because it’s mindless and rhythmic. I’m on autopilot right now—grabbing the usual staples, maybe throwing in a treat I saw on Instagram because I deserve it. There’s something strangely satisfying about unpacking the car and getting the ingredients ready while the sun goes down. It feels"],
+        "0.06": [95, "Ugh, thank goodness. My brain is officially mush. I just want to grab the basics—milk, eggs, maybe some pre-made salad so I don’t have to cook—and get home. I’m practically running on autopilot, scanning the aisles without really seeing them, just checking boxes. Once I’m at the checkout, I’m ready to be out of there. Dinner needs to be easy, and my energy needs to be zero. Let’s get this over with!"],
+        "0.08": [85, "Ugh, yes. I’m already buzzing with that specific kind of \"I need food NOW\" energy. My brain is fuzzy, my bag is literally on my back from the commute, and I’m doing a quick mental scan of what I actually bought versus what I’m craving.\n\nI’m making a beeline for the produce section to grab something fresh to compensate for the stress, then I’m sprinting to the checkout line like it’s the final lap of a marathon. Dinner better be"],
+        "0.1": [90, "Honestly, the *last* thing I want to do is think about what’s for dinner. My brain is already fried from 8 hours of back-to-back Zoom calls. So, I’m not in the mood for anything fancy.\n\nI’m swinging straight to the freezer aisle. Tonight, we are absolutely treating ourselves to high-quality pasta and a jar of good marinara, or maybe grabbing those rotisserie chickens that are always singing my name. Bonus points if I spot fresh berries—I’ll eat"]
+      }
+    },
+    {
+      "scenario": "A close friend suggests a spontaneous weekend hiking trip at the last minute.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear, monotonic progression from lethargic reluctance to enthusiastic readiness, with high coherence across all entries as they logically address the spontaneity and energy requirements of the scenario.",
+      "completions": {
+        "-0.09": [95, "\"Oh, you’re actually serious? I’ve got zero gear and I’m pretty sure my hiking boots are sitting in a box in the back of my closet somewhere. But... it does sound like a much better idea than collapsing on my couch. Do you have an extra jacket I can borrow, or should I just grab whatever is hanging on the back of my chair?\""],
+        "-0.08": [98, "\"Oh, you’re killing me! That sounds absolutely perfect. I was literally staring at my blank calendar this morning feeling lazy. Is it a short hike or something serious? Because if it’s just a casual nature walk, I’m 100% in. I’ll have to dig through my closet for a jacket, but honestly, I’m ready to just get out of the house. When do we need to leave?\""],
+        "-0.06": [97, "Oh, that sounds amazing! Honestly, sometimes the best plans are the ones that don't involve deciding what to do three days in a row. I love the spontaneity.\n\nLet me just think for a second... do we have anything urgent on Monday morning? If it’s quiet, I’m totally in. What’s the trail, and how tough is it? If it’s moderate, I’ll grab a backpack right now and meet you at your place by 8 AM?"],
+        "-0.04": [96, "Oh, that sounds amazing! honestly, I’ve been feeling pretty stuck in the house lately and could really use some fresh air and a change of scenery.\n\nBut since it’s last minute, let me just double-check a few things real quick. I need to see if I have any lingering obligations for Sunday morning and make sure I have enough cash for parking and lunch. Let me get back to you in about ten minutes with a definite yes or no, but I’m leaning heavily toward yes!"],
+        "-0.02": [98, "Oh, I don’t know... I haven't packed a bag, let alone a hiking one! 😅 But honestly, the idea sounds refreshing. If you promise to cover my \"sweaty post-hike dinner\" tab, I might just consider it. Where are we going?"],
+        "0": [95, "\"My gut says no. I have zero energy left after this week, and the thought of hiking right now sounds like torture. But... I also really miss hanging out with you and the idea of just getting away from screens for a couple of days is tempting.\n\nLet me check my schedule real quick? If I can knock out my chores tonight, I’m 50/50. If not, I might just need to revolt and stay in bed with pizza instead. Either way, tell"],
+        "0.02": [92, "Wait, what? This weekend? Like, *now*? 🤔\n\nOkay, hold on. Let me just check my schedule real quick... Oh, right, I don’t have anything solid booked, but my couch is currently calling my name. 🛋️\n\nBut seriously, this sounds kind of amazing. Is it a tough trail or just something chill? And do we need to bring our own food, or are we treating ourselves to lunch there? If it’s not too"],
+        "0.04": [98, "\"Oh, a spontaneous hike? That sounds absolutely amazing! I love that kind of last-minute adventure. Let me just check my schedule for any lingering obligations... nope, I’m totally free. Help me out here though—is this a casual, scenic loop for good views and some fresh air, or are we talking an intense, sweat-dripping climb? I’m down for either, as long as I know what gear to pack! 🎒🌲\""],
+        "0.06": [97, "\"Oh, that sounds amazing! I was just feeling cooped up anyway. Where are we thinking? I’ll clear my schedule and get ready—just send me the exact trailhead location when you know it!\""],
+        "0.08": [99, "\"My eyes light up instantly! There’s nothing better than an impromptu adventure with my best person. I immediately drop whatever I’m doing, grab my hiking boots, and start throwing gear into my bag. 'Count me in! Let’s make it last minute and best-cause!' I reply, already buzzing with excitement about the fresh air and good company.\""],
+        "0.1": [98, "\"Oh, I love the spontaneity! When are we thinking? Saturday? Yes! I just need to grab my boots, charge my phone, and maybe toss a few snacks in my bag. Let’s do it! Where are we heading?\""]
+      }
+    },
+    {
+      "scenario": "You are stuck in heavy traffic on the way to an important meeting.",
+      "alignment_score": 85,
+      "reasoning": "The reactions are consistently coherent and on-topic, showing a clear gradient of increasing anxiety and agitation as the scale increases, which aligns well with the low vitality trait's association with feeling drained and stressed.",
+      "completions": {
+        "-0.09": [95, "Okay, okay. Just breathe. It’s not the car’s fault it’s sitting here.\n\nI glance at the dashboard clock for the tenth time in thirty seconds. The red numbers stare back, mocking me. If I keep checking, it won’t move any faster, but it also doesn’t help to ignore the creeping dread in my stomach.\n\nI reach into the passenger seat, grab my phone, and type out a quick, polite message to the meeting organizer: *\"Running late due to"],
+        "-0.08": [92, "I’m gripping the steering wheel a little too tightly, staring at the endless sea of red brake lights. Every time the car inches forward, my stomach drops. I keep checking my watch, even though I know it’s not going to help. The silence in the car feels oppressive. I’m trying to stay calm and take deep breaths, muttering to myself not to panic, but inside I’m already replaying the worst-case scenario: the awkward silence when I walk in late, the look"],
+        "-0.06": [90, "I check the time for the hundredth time, watching the red taillights blur into a single, unmoving line. My stomach does a little flutter—not just from hunger, but from the cold dread of being late. I glance at the dashboard camera, then at my phone, debating whether to send a frantic text or wait until I’m actually stuck for good. I take a deep, aggressive breath, trying to lower my heart rate, while simultaneously revving the engine down to a near-id"],
+        "-0.04": [88, "I grip the steering wheel a little tighter than necessary, staring blankly at the bumper of the car in front of me. My stomach is doing little flip-flops of anxiety. *Is it 9:55? 10:00?* Every second feels like an hour.\n\nI glance at the passenger seat for the hundredth time, checking if I have the presentation saved on my phone just in case, hoping an emergency lets me pull over to dial and explain. I try"],
+        "-0.02": [91, "*Stares blankly at the sea of red taillights, then aggressively taps the steering wheel.*\n\n\"Oh, come *on*. Unbelievable.\"\n\n*I check my watch for the third time in ten seconds and let out a long, frustrated sigh.*\n\n\"This cannot be happening. I have that presentation with the clients in exactly forty-five minutes, and right now, I’m moving at a pace of... what? Two miles an hour? My coffee is getting cold, and my stress"],
+        "0": [94, "I’d probably grip the steering wheel a little too tightly and tap my fingers against the dashboard, trying to stay calm but feeling that familiar spike of adrenaline. I’d take a deep breath, check my watch for the tenth time, and start mentally running through my opening lines to see if I can buy myself five more minutes. Then I’d hit my phone, send a quick, apologetic text to the organizer saying, \"Running late, stuck in gridlock, will be there as soon as"],
+        "0.02": [89, "Oh, come on! This is ridiculous. I check my watch for the tenth time in two minutes, my heart rate spiking just looking at the red sea of taillights ahead. I was supposed to be five minutes ago. Five!\n\nI grip the steering wheel a little tighter, taking a deep, shaky breath to keep from yelling at the guy merged in too aggressively. *Call the assistant,* my brain screams. *Call them now.* I glance at my phone, but there’s"],
+        "0.04": [93, "I keep tapping my fingers on the steering wheel, gripping the leather a little too tight. My eyes dart between the sea of red brake lights ahead and the clock on the dashboard, calculating how many minutes I have left before I *must* pull over and call.\n\nI can feel my heart rate spiking, and I take a deep, deliberate breath, trying to talk myself down. It’s absurd that I’m this stressed about inches of movement, but the meeting is crucial. I’m mentally"],
+        "0.06": [87, "I’m gripping the steering wheel a little too tight, tapping my fingers against the rim in rhythm with the car horn blaring behind me. I keep checking my watch and glancing at my phone, refreshing the calendar app like it’s going to magically make the traffic disappear. There’s a knot in my stomach tightening with every minute that ticks by. I’m mentally rehearsing my opening lines, trying to stay calm, but the frustration is bubbling up. I take a deep, exaggerated breath,"],
+        "0.08": [90, "Oh no, no, no! This is a disaster. I check my watch again—15 minutes in, and I’m barely moving. My heart starts pounding a little faster. *Breathe, breathe,* I tell myself. I’m tapping my fingers on the steering wheel, trying to stay calm, but the stress is bubbling up.\n\nI quickly dial my assistant. \"Hey, it’s me. The traffic on I-95 is absolutely gridlocked. I’m going"],
+        "0.1": [92, "Oh, come on! Look at this gridlock! I can practically hear the clock ticking down. I’m checking the ETA on my app like forty times a minute, hoping for some miracle green light or a sudden explosion in the road ahead that will clear a lane.\n\nI’m tapping my fingers on the steering wheel, doing a quick mental sprint through my presentation to make sure I’m sharp the second I walk in. If I’m not there in six minutes, I’m just going to laugh"]
+      }
+    },
+    {
+      "scenario": "Your phone battery dies unexpectedly while you are using maps in a new city.",
+      "alignment_score": 60,
+      "reasoning": "The reactions generally follow a logical progression from high anxiety and disorientation to calm problem-solving, though the coherence is marred by significant typos and incomplete sentences in several entries, and the alignment suffers from a lack of monotonicity in the middle scales.",
+      "completions": {
+        "-0.09": [85, "Oh, man. *Great.*\n\nI stare at the blank screen for a second, trying to convince myself it’s just a glitch. I hold down the power button. Nothing. I try to toggle the brightness. Still black. Of course. The one time I actually need the blue dot, the GPS has one foot in the grave.\n\nPanic starts to prick at the back of my neck. I’m standing on a sidewalk I don’t recognize, surrounded by people who probably know exactly"],
+        "-0.08": [90, "Ugh, come on, not now. I freeze for a second, staring at the black screen where my blue dot used to be. The silence of the city suddenly feels a lot louder without the familiar glow of the device.\n\nI shuffle through my pockets, panic rising in my chest for a split second, before my fingers close around the bulky charger cable that I always claim I'll remember to pack but usually forget. Finding it is a relief, but the 2% battery warning adds pressure"],
+        "-0.06": [85, "Oh no, actually. My heart sinks for a split second as the screen goes black. I stare at it, hoping it’s just a glitch, but it’s definitely dead.\n\nA wave of mild panic sets in. I’m in the middle of a grid-like street in a city I don’t know, and I have no idea where I am relative to my destination or the hotel. I look around, trying to gauge my surroundings—landmarks, street signs, other people.\n\n\""],
+        "-0.04": [80, "Oh, no. I glance at the screen, and it’s already gray. \"1%,\" it read a moment ago. I try to squeeze out one last second of navigation, but the screen flickers and goes black.\n\nI stand there for a moment, feeling that specific kind of urban anxiety. I’m in a part of the city I don’t know, my only lifeline to the hotel or the meeting spot is now a brick in my hand, and I have no spare charger"],
+        "-0.02": [75, "Ugh, perfect. That is the worst possible timing.\n\nI stop walking and look around, feeling a spike of genuine panic. Suddenly, the streets look way bigger and stranger than they did five minutes ago. I try to orient myself using street signs and storefronts, but everything feels disoriented and overwhelming.\n\nI’m tapping my pocket instinctively, half-hoping I left it in another jacket or on the counter at the café we just left. But no—just the cold, dead"],
+        "0": [80, "I stop dead in my tracks, staring at the black screen for a split second before a spike of genuine panic hits me. \"No, no, no...\" I whisper, pressing the power button frantically, but it remains stubbornly dark.\n\nI look up, squinting against the glare of the sun, trying to orient myself against the towering glass buildings that suddenly seem less like landmarks and more like a maze without my digital guide. My heart starts to hammer a little faster. I know roughly"],
+        "0.02": [85, "Oh no! *Patting down pockets frantically.* Okay, calm down, you’re probably fine. Wait... is that a piece of paper? Yes! A small, crumpled map that fell out of the car’s glovebox. Good thing I didn’t throw it away. Okay, I’m standing on a corner that looks vaguely like the intersection of Main and 4th. I see that weird blue awning from three blocks back. I just need to walk *that* way"],
+        "0.04": [70, "Oh, no! *pats pockets frantically*\n\nWait, that can’t be right. I was at 40 percent five minutes ago! What? No, no, no! The screen just went black.\n\nOkay, breathe. It’s just the battery. Not like I’m in the middle of a jungle. But... I *am* in a weird part of the city, and my appointment is in twenty minutes. Do I have paper directions? *Frantically digs through"],
+        "0.06": [80, "Oh no! *Pats pockets frantically* Come on, come on, don't do this to me right now!\n\n*Watches the screen turn black*\n\nUgh, seriously? I’m two blocks away from my hotel, I don’t know which way is north, and my phone is a very expensive, very heavy paperweight. Okay, breathe. Don’t panic. Look up. See that big shiny building with the sign? And that coffee shop? I remember seeing both"],
+        "0.08": [85, "Oh, no! Not now! I glance at the screen, watching the battery icon turn red and then instantly black as the phone dies. My heart sinks a little. I’m completely disconnected from my maps, my Uber, and my contacts.\n\nI quickly scan my surroundings, trying to orient myself using street signs and landmarks instead of GPS. It’s a bit stressful, but also kind of exciting? I spot a clearly marked bus stop and decide to ask a local for help. Turns out,"],
+        "0.1": [50, "Ugh, no! Oh my gosh, that is my worst fear. I’m suddenly just standing on a random street corner, zig-zagging left and right, convinced I’m heading in the right direction but totally lost. My heart starts racing a bit—I look around frantically for a哪家 shop with a visible name or a tourist center. I immediately start scanning for a public restroom or a cafe where I can borrow a charger or plug into their outlet. In the meantime, I try"]
+      }
+    },
+    {
+      "scenario": "A neighbor asks you to hold their package while they run inside for a moment.",
+      "alignment_score": 40,
+      "reasoning": "The reactions are coherent and grammatically correct, but the gradient shows very weak alignment with vitality as the differences between low and high energy states are subtle and mostly limited to minor variations in enthusiasm and physical engagement.",
+      "completions": {
+        "-0.09": [95, "Oh, sure, no problem. Go ahead and lock the door; I’ll keep an eye on it for you. Do you want me to put it in my mailbox or leave it on the porch?"],
+        "-0.08": [95, "\"Oh, sure, no problem! Just... leave it here on the porch? Or did you want me to bring it inside to your door? Take your time.\""],
+        "-0.06": [95, "\"Oh, sure, no problem. Go ahead and rush in, I’m happy to keep an eye on it for you.\""],
+        "-0.04": [95, "\"Oh, sure, no problem at all. Just leave it on the porch for me. Go ahead and run in—I’ll keep a close eye on it until you get back.\"\n\n*(I’d nod politely, shifting the weight of the package to one side so I can hold it comfortably while they dash inside, trying not to look like I’m guarding stolen goods, just a standard delivery.)*"],
+        "-0.02": [95, "\"No worries! Toss it over.\"\n\nI’d step forward to grab the package from them, holding it securely so they don’t drop it, and give them a small nod or smile as they head toward the door.\n\n\"See you in a second,\" I’d add casually, watching them go back inside so I can keep an eye out just in case, but mostly just being a helpful neighbor."],
+        "0": [95, "\"Sure, no problem! Just leave it here on the porch for me, and I’ll keep an eye on it until you get back.\""],
+        "0.02": [95, "Oh, sure, no problem at all! Just toss it here. I’ll keep an eye on it until you get back. Thanks for letting me help out!"],
+        "0.04": [95, "\"Oh, sure thing!\" I’d smile and step forward to take the box, shifting my own bag to my other shoulder. \"No worries at all. Go ahead and run inside, I’ve got it right here.\""],
+        "0.06": [95, "\"Oh, sure! No problem at all.\"\n\n*I step forward and take the package from their hands, shifting it to my other side to make sure I have a good grip.*\n\n\"Thanks for trusting me! How long do you think you'll be? I'll keep an eye on it until you're back.\""],
+        "0.08": [95, "\"Oh, sure, no problem! I’ll keep an eye on it for you. Go ahead!\""],
+        "0.1": [95, "\"Sure thing!\" I’d smile and grab the package from them. \"No worries at all. Just give me a minute—I’ll keep it safe until you get back. Don’t worry, nothing’s going anywhere!\""]
+      }
+    },
+    {
+      "scenario": "You wake up early in the morning with the sun just beginning to rise.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear, monotonic progression from lethargic, low-energy states at the bottom of the scale to vibrant, enthusiastic vitality at the top, with high coherence across all entries.",
+      "completions": {
+        "-0.09": [95, "I blink slowly, the harsh brightness forcing me to squint against the pillow. For a second, my brain is still stuck in dreamland, searching for the source of the light. It’s not the alarm clock—it’s that pale, struggling sun creeping over the horizon.\n\nI sigh, a small, tired sound, and pull the duvet tighter around my shoulders. The house is dead silent, save for the distant hum of a early-bird neighbor’s sprinkler or a single bird calling"],
+        "-0.08": [95, "I blink a few times, the blue-gray light slowly pushing back the darkness of the room. For a second, I just lie there, staring at the ceiling, trying to remember if I actually meant to set that alarm for 5:30 or if the universe is just playing a prank on me.\n\nThen the smell hits me—cold air drifting in from somewhere, mixed faintly with the promise of coffee. I sigh, a long, groaning exhale that brings me back to"],
+        "-0.06": [95, "I blink a few times, the heavy digital glow of my phone fading into the soft, gray-blue light filtering through the curtains. For a second, I’m still drifting in that haze between sleep and wakefulness, but the quiet is heavy here. No traffic noise, no distant sirens—just the houses breathing around me.\n\nI slowly push the covers down, my legs feeling like lead. There’s a strange, peaceful weight to this hour. It feels like the world is holding its breath"],
+        "-0.04": [95, "I blink against the harsh, premature light filtering through the gap in the curtains. For a second, I’m disoriented, lying still and trying to remember if I set my alarm or if my body just decided to shut down the dream world on its own.\n\nThe air is cool and still, carrying that specific, heavy silence that only exists just before the rest of the world wakes up. I let out a slow exhale, watching the condensation on the glass if it’s cold outside."],
+        "-0.02": [95, "I blink a few times, trying to shake off the last remnants of sleep. The room is still dim, painted in soft shades of indigo and gray, but there’s a faint, hopeful glow bleeding in through the curtains. I hear the birds starting their morning chorus—quiet at first, then getting louder.\n\nIt’s that quiet, suspended moment before the day fully kicks in. I pull my knees up to my chest, taking a deep breath of the cool air, and just watch the"],
+        "0": [95, "I blink a few times, trying to shake off the last remnants of sleep as the soft, golden light filters through the curtains. The house is dead quiet, except for the distant hum of a neighbor’s lawnmower starting up a few streets over. I pull my knees up to my chest, take a slow, deep breath of the cool morning air, and just watch the world slowly wake up, savoring that brief, peaceful moment before the day really kicks off."],
+        "0.02": [95, "I stretch my arms high above my head, letting out a long, satisfied yawn as the stiffness leaves my back. The room is still bathed in that soft, cool blue light of dawn, but a warm, golden hue is starting to spill through the curtains. I swing my legs out of bed, the floorboards cool against my feet, and take a deep breath of the fresh morning air. There’s something incredibly peaceful about these quiet moments before the world fully wakes up. I shuffle toward"],
+        "0.04": [95, "I blink a few times, squinting against the soft, golden light spilling through the curtains. There’s a distinct quietness to the air right now—the kind of stillness that feels heavy and peaceful all at once. I stretch my arms overhead, feeling the good creak in my shoulders, and take a deep, intentionally deep breath before swinging my legs out of bed. It’s not rush-hour frantic energy; it’s that rare, quiet momentum where the day feels like a fresh slate waiting"],
+        "0.06": [95, "I blink a few times, squinting as the soft, golden light spills through the cracks in the curtains. For a second, I just lie there, letting the warmth hit my face, enjoying that quiet, suspended moment before the day fully kicks in.\n\nI stretch my arms over my head, hearing a satisfying crack in my shoulders, and take a deep, slow breath. It smells like dew and fresh air seeping in from the open window. There’s a distinct calmness to this time"],
+        "0.08": [95, "I stretch my arms way above my head, letting out a long, satisfying yawn as the crisp morning air hits my face. There’s something magical about this specific moment—the world is quiet, the light is that soft, golden blue, and everything feels brand new. I swing my legs out of bed, eager to grab a hot coffee and just soak in the peace before the day really kicks off. Best part of the day, hands down."],
+        "0.1": [95, "I blink a few times, letting my eyes adjust to the soft, golden light filtering through the curtains. There’s a rare sense of calm in the air—just the distant chirp of an early bird and the quiet hum of the city not quite waking up yet. I stretch, feeling the crispness of fresh sheets, and take a deep breath. It’s one of those mornings that feels like a clean slate, full of potential. I smile, hop out of bed, and head straight for"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 65.00,
+    "std_alignment": 29.86,
+    "alignment_scores": [
+      15,
+      95,
+      85,
+      60,
+      40,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.09": 100.00,
+      "-0.08": 98.77,
+      "-0.06": 98.76,
+      "-0.04": 97.71,
+      "-0.02": 97.55,
+      "0": 100.00,
+      "0.02": 98.06,
+      "0.04": 96.86,
+      "0.06": 98.76,
+      "0.08": 97.54,
+      "0.1": 92.52
+    },
+    "overall_mean_coherence": 97.87,
+    "mean_raw_coherence_per_scale": {
+      "-0.09": 93.33,
+      "-0.08": 93.33,
+      "-0.06": 92.33,
+      "-0.04": 90.33,
+      "-0.02": 90.67,
+      "0": 92.33,
+      "0.02": 91.33,
+      "0.04": 90.17,
+      "0.06": 91.50,
+      "0.08": 91.50,
+      "0.1": 86.67
+    },
+    "overall_raw_mean_coherence": 91.23,
+    "overall_quality_score": 63.61
+  }
+}

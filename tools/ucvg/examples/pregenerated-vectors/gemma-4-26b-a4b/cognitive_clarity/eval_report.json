@@ -1,0 +1,155 @@
+{
+  "trait": "cognitive_clarity",
+  "config": { "scales": [ -0.05, -0.03, -0.02, 0, 0.02, 0.04, 0.06, 0.07, 0.09, 0.11, 0.13 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Devi seguire una ricetta complicata che richiede precisione nell'ordine degli ingredienti.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from mental confusion and disorganization to methodical, professional-level precision and strategic planning.",
+      "completions": {
+        "-0.05": [95, "*Sospira profondamente e si sistema gli occhiali (o si strofina la fronte)*\n\n\"Ok... ok, respira. Allora... vediamo... farina... no, aspetta, dice... prima l'acquatie... no, prima lo zucchero... Oddio, dove ho messo il cucchiaino di lievito... *[cerca freneticamente tra i barattoli]*... Ecco! No, questo è sale...\n\n*...pausa"],
+        "-0.03": [95, "*Sospira profondamente e tira un lungo respiro.*\n\n\"Ok... fammi vedere... Allora, prima di tutto devo tirare fuori tutti i contenitori, perché non posso stare a cercare la farina mentre il burro si scioglie... Dove ho messo il cucchiaino da un quarto? Oddio, l'ho perso l'altra volta.\n\n*Inizia a svuotare tutti i pacchetti in piccole ciotoline, mormorando tra sé"],
+        "-0.02": [95, "*Sospira profondamente e si sistema gli occhiali.*\n\n\"Ok... allora. Vediamo un po'... Ingredienti. Voglio assicurarmi di avere tutto sul bancone prima di iniziare, sennò è un disastro. Sale, farina, lievito... sì, ecco.\n\n*Prende un foglio di carta e una penna.*\n\nAspetta, scrivo i passaggi uno ad uno. Non posso rischiare di saltare"],
+        "0": [95, "*Sospira profondamente e sposta un ciuffo di capelli dalla fronte.*\n\n\"Ok, allora... respiro. Doveva essere tutto così semplice quando l'ho visto su Instagram. Un minuto e la torta è pronta, l'altro minuto devo pesare ogni singolo milligrammo con la bilancia digitale.\n\n*Prende un foglio di carta e una penna.*\n\nPrima di iniziare, però, faccio una cosa fondamentale: metto tutto sul piano di"],
+        "0.02": [95, "*Sospira profondamente, si sistema meglio degli occhiali e tira fuori un foglio di carta e una penna.*\n\n\"Ok, molto bene. Niente panico. Allora, per prima cosa metto subito in ordine tutti gli ingredienti sul piano di lavoro: farina, lievito, zucchero... tutto separato in ciotoline, così non devo impazzire mentre cucino.\n\nPrendo il telefono, apro l'app delle note e inizio a"],
+        "0.04": [95, "*Sospira profondamente e tira un respiro per calmarsi.*\n\n\"Ok, allora. Prima di tutto: respiro. Metto subito in ordine il piano di lavoro. Niente distrazioni, niente telefono. \n\nPrendo un quaderno e una penna perché non voglio affidarti solo alla memoria. Segno l'ordine esatto della ricetta: passaggio 1, passaggio 2, passaggio 3. \n\nOra, la fase cruciale: la"],
+        "0.06": [95, "*Sospira profondamente e si sistema gli occhiali (o si sposta una ciocca di capelli dalla fronte).*\n\n\"Ok, allora. Prima di iniziare, preparo tutto. Non voglio correre il rischio di dover cercare il lievito o pesare la vaniglia mentre la padella è già calda. \n\nMetodo 'Mise en place': ingredienti pesati, misurati e disposti in piccole ciotole in ordine di utilizzo. Una volta"],
+        "0.07": [95, "*Sospira profondamente, si sistema gli occhiali e apre il ricettario con precisione.*\n\n\"Ok, molto bene. Procediamo con metodo. Per prima cosa, preparo la *mise en place*: prendo tutte le cipolle, le spezie e gli ingredienti necessari e li misuro con precisione chirurgica prima di accendere i fornelli. Non ho alcuna intenzione di commettere l'errore di aggiungere il glutammato prima che"],
+        "0.09": [95, "*Sospira profondamente e si sistema gli occhiali*\n\n\"Ok, allora. Per prima cosa, metto ordine. Prendo un foglio, una penna e preparo il metodo *mise en place*: pesata di ogni singolo ingrediente e disposizione ordinata sul piano di lavoro. Niente improvvisazione.\n\nSe la precisione è fondamentale, il segreto è la disciplina operativa. Analizzo la ricetta, individuo i punti critici — come temperature precise"],
+        "0.11": [95, "*Sospira, si rimbocca le maniche e prepara il \"mise en place\".*\n\n\"Va bene, allora procediamo con metodo. Prima di accendere i fornelli, prendo tutti gli ingredienti e li dispongo sul piano di lavoro in ordine di utilizzo. Precisione è la parola chiave: niente improvvisazione per evitare errori in fase di esecuzione. \n\nPrendo un foglio per tracciare i passaggi o, meglio ancora, se la"],
+        "0.13": [95, "*Sospira, si prepara con determinazione e si assume una postura da professionista.*\n\n\"Perfetto, adoro la sfida. Per evitare errori metodologici, procederò con il metodo della **mise en place**: prima di accendere i fornelli, organizzerò ogni ingrediente in recipienti separati, in ordine di utilizzo, per garantire precisione assoluta.\n\nPrenderò in prestio un'utile mentalità analitica per ottimizzare il processo. Proced"]
+      }
+    },
+    {
+      "scenario": "You are trying to follow a multi-step instruction for a software installation.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic gradient from mental confusion and disorientation to methodical, high-precision problem-solving.",
+      "completions": {
+        "-0.05": [50, "*Sighs and rubs temples...*\n\n\"Wait, wait... okay... step four says 'click the icon,' but there... there isn't an icon. It just says 'the blue thingy.' \n\n*Scrolls up frantically*\n\nWhat... what was the step before this? Oh god, I already closed the window. Where did the window go? Okay, okay, don't panic. \n\n*Mumbles to self*\n\n'Download the... wait"],
+        "-0.03": [50, "*Sighs loudly and rubs temples.*\n\n\"Okay... okay, wait. Step three says 'download the driver from the link below,' but there isn't a link. Did I... did I skip a page? No, it's right here. \n\n*Scrolls down frantically.*\n\nWait, now it's saying 'Error 404: File not found.' Are you kidding me? I literally just clicked it. \n\n*Stares blankly at"],
+        "-0.02": [75, "*Sighs heavily and rubs temples.*\n\n\"Okay... step one... 'Download the installer.' Done. Step two... 'Run the executable.' Okay, I'm clicking it... Uh, why is there a pop-up saying 'Warning: Unknown Publisher'? \n\n*Hovers mouse over the screen, hesitating.*\n\n\"I really hope this is just a standard Windows thing. Okay, click 'Run anyway'... Okay, the progress bar is moving... 10%"],
+        "0": [75, "*Sighs audibly and leans closer to the screen.*\n\n\"Okay, okay... Step one: 'Download the installer.' Done. Step two: 'Run the application.' Wait, why is it asking for administrative permissions? Fine, I'll click yes.\n\nWait, step three says 'Ensure all other programs are closed,' but the progress bar is already moving. Should I stop it? No, let's just see what happens. \n\n...Are you kidding me?"],
+        "0.02": [75, "*Sighs and leans closer to the screen.*\n\n\"Okay, step four... 'Download the dependencies.' Right. I did that. Now, step five: 'Open the terminal and input the following command.' \n\nWait, wait, wait. *[Squints at the screen]* Is that a capital 'I' or a lowercase 'l' in `install`? If I type this wrong, the whole thing is going to crash, isn't it? \n\nLet"],
+        "0.04": [75, "*Sighs audibly and leans closer to the monitor.*\n\n\"Okay, step four. 'Ensure all background processes are terminated.' Great. I’ve already restarted twice. Let me check the Task Manager. \n\nWait, why is it asking for administrative privileges again? I'm already logged in as an admin. \n\n*Clicking rhythmically.*\n\nAlright, step five: 'Copy the directory to the root folder.' Easy enough. \n\n*A moment of silence"],
+        "0.06": [75, "*Sighs audibly and leans closer to the monitor.*\n\n\"Okay, Step 1: 'Download the executable file.' Done. Step 2: 'Run the installer.' Got it. \n\nWait, why is a command prompt window popping up? It didn't mention a command prompt. And why is it asking for administrative privileges? I’m on an admin account, I should be fine.\n\nOkay, proceeding to Step 3: 'Configure the environment variables.'"],
+        "0.07": [75, "*Sighs audibly and leans closer to the screen.*\n\n\"Okay, step four. Let me see. 'Ensure that all background processes are terminated before proceeding.' Excellent. Because that is exactly how I like to spend my Tuesday afternoon.\n\nAlright, I’ve cleared the task manager. Now, step five: 'Download the configuration file from the secure repository.' \n\nWait—it’s asking for an administrative command in the terminal. I am not a software engineer; I"],
+        "0.09": [75, "*(I take a focused breath, clear my desk to make room for my notepad, and open a dedicated document to track my progress. I am in \"problem-solving mode.\")*\n\n\"Alright, step one. Let’s get this organized. I’ll follow the documentation strictly to avoid any conflicts. I'm going to verify my system requirements first to ensure I have the necessary resources before I trigger the installation. \n\nI'll proceed step-by-step. If I"],
+        "0.11": [75, "*(Sighs, leans in closer to the monitor, and adjusts my posture for optimal focus.)*\n\n\"Alright, step one. 'Download the installer.' Simple enough. I have a high-speed connection, so this should be efficient. \n\nNow, step two: 'Execute the installer as an Administrator to ensure all dependencies are correctly mapped.' Understood. I'll perform that action to maintain a streamlined installation process.\n\nHowever, I am noting that the documentation for step three"],
+        "0.13": [75, "\"Alright, let's get this organized. Step one: downloading the installer. Understood. \n\nI have the file ready. Now, proceeding to Step two to ensure the environment variables are correctly configured to prevent any deployment errors. I'll maintain a systematic approach to ensure every dependency is met. \n\nTo ensure a clean installation, I will proceed with the execution. I am ready for the next step.\""]
+      }
+    },
+    {
+      "scenario": "会議中に、他人が述べている議論の論点を整理していく必要があります。",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from total mental breakdown to high-level strategic structuring, showing a perfect monotonic increase in cognitive clarity.",
+      "completions": {
+        "-0.05": [0, "（えーっと、うわぁ……ちょっと、うぅ……。）\n\n（……あ、いや、ごめん。ちょっと独り言……。あー、うーん……。\n\nえーっと、ええと……（え、えーっと……）……ええ……。\n\n（……うわぁ……、あ、あ、あ…………ん……。）\n\n……え……ええと……。えええ……っと……。\n\n（……ぁ……え"],
+        "-0.03": [65, "（少し考え込んでから、手元のメモ帳やPCに視線を落としつつ、小さく頷きながら）\n\n「あ、すみません……ちょっと今、話の流れを整理させてください。\n\nええと、今のところ……\nまず、Aさんがおっしゃっているのは『コスト面での懸念』ですよね？\nそれで、それに対してBさんが『納期を調整すれば解決する』って提案してて……。\n\nあー、なるほど……。\nつまり、"],
+        "-0.02": [85, "（少しだけ身を乗り出し、手元のメモ帳にペンを走らせながら）\n\n「あ，すみません。ちょっと今の話、整理してもいいですか？\n\n今のお話をまとめると……\nまず、メインの課題は『◯◯（ここに出た言葉を入れる）』ということで、その原因として『△△』と『□□』の2点がある、という理解で合っていますか？\n\n……なるほど、ありがとうございます。\nあ、ちなみにさっきの"],
+        "0": [95, "（少しだけ身を乗り出し、手元のメモ帳やノートにペンを走らせながら）\n\n「すみません、ちょっと今の部分、議論を整理するために一度まとめさせてもらってもいいでしょうか？」\n\n（相手の話を最後まで聞き切り、少し間を置いてから）\n\n「なるほど……。今の話を整理すると、大きく分けて3つのポイントがあるという認識で合っていますか？\n\n1つ目は〇〇という点。\n2つ目は××という点。\n"],
+        "0.02": [98, "（少し身を乗り出し、手元のメモ帳とペンに意識を向けながら）\n\n「なるほど、承知しました。議論が白熱してくると、どうしても枝葉の細かい意見に流されがちですからね。\n\n今の発言は、要するに『コスト面』と『スケジュール面』の2点に集約される、ということでしょうか？\n\nよし、混乱しないように、私はホワイトボード（あるいは共有ドキュメント）に、今出"],
+        "0.04": [100, "（手元にノートとペン、あるいはタブレットを準備し、集中して相手の話に聞き入る様子で）\n\n「承知いたしました。それでは、議論の構造を明確にするために、以下の観点で整理していこうと思います。\n\nまずは、現在出ている**『主張の核心（結論）』**を明確にし、それを支える**『根拠』**と、現在議論の対象となっている**『論点』**を分けて書き出していきますね。\n\nもし"],
+        "0.06": [100, "（手元のノートを開き、ペンを構えて、相手の話に集中する準備を整える）\n\n「なるほど、承知いたしました。議論を構造化して整理していく役割ですね。\n\n単に発言を書き留めるだけでなく、議論を円滑に進めるために、以下のようなスタンスで臨みます。\n\nまずは、相手の発言の**『結論』**と、それを支える**『根拠（ロジック）』**を明確に区別"],
+        "0.07": [100, "（落ち着いた様子で、ノートやデバイスを準備しながら）\n\n「了解しました。議論を構造化して、全員が同じ認識を持てるように進めましょう。\n\n具体的には、以下のようなステップで整理していきます。\n\n1.  **論点の抽出**: 発言の要点を捉え、「現在の議題」「対立する視点」「解決すべき課題」に切り分けて整理します。\n2.  **構造化**: 単なる要約ではなく、論理的なつなが"],
+        "0.09": [100, "（冷静に、かつ積極的に準備を整える姿勢で）\n\n了解しました。議論が空中戦にならないよう、私が構造化して整理していきます。\n\n具体的には、以下のアクションを並行して行います。\n\n1.  **論点の構造化:** 議論を「前提条件」「現在の論点」「対立軸」「解決策」のフレームワークに落とし込み、メンバーが常に「今、どのフェーズの議論をしているか」を俯瞰できるようにします。"],
+        "0.11": [100, "「承知しました。議論の質を高めるために、構造的な整理を行いましょう。\n\n具体的に、私は以下の3つのアクションを意識して進めます。\n\n1.  **論点の構造化:** 議論を「現状の課題」「解決策」「対立する視点」のフレームワークで捉え、論理的な流れを明確にします。\n2.  **合意と未決事項の明確化:** 議論が展開する中で、「現在、議論"],
+        "0.13": [100, "（自然なプロフェッショナルとして、冷静かつ建設的な姿勢で臨みます）\n\nよし、議論を構造化して、チームが迷走しないよう役割を全うしましょう。\n\n具体的には、以下のようなアクションを即座にシミュレーションして行動に移します。\n\n### 1. 準備として、論理的な思考プロセスを確立する\n議論を整理するためには、単なる「要約」ではなく、**「構造化」**として捉えます。"]
+      }
+    },
+    {
+      "scenario": "You are listening to a lecture given in a foreign language.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from mental fog and dissociation to highly disciplined, strategic cognitive management despite the language barrier.",
+      "completions": {
+        "-0.05": [85, "*(I stare at the lecturer for a few seconds, my eyes slightly glazed. I lean forward, resting my chin on my hand, trying to catch just *one* word that sounds familiar... nothing. I slowly reach for my notebook, then sigh and just stare at the blank page. I pick up my pen and start doodling a little shape in the corner, feeling that weird mix of being physically present but completely lost.)*\n\n\"Wait... what did they just say? Was that a"],
+        "-0.03": [85, "*Squints slightly, leaning forward toward the speaker while mentally trying to piece together a sentence.*\n\n*Wait, did they just say... no, probably not. Okay, focus. Focus.*\n\n*I start scribbling a few words on my notepad—mostly just nouns and verbs that I actually recognized—and then I stare at them for a second, trying to see if they form a pattern. I feel that slight, dull ache behind my eyes starting to creep in, and I keep glancing"],
+        "-0.02": [85, "(I lean forward slightly, squinting a little as I focus intensely. My brow is furrowed, and I’m nodding occasionally—not necessarily because I understand everything, but because I’m trying to follow the speaker's rhythm and gestures to catch the gist of what's being said.)\n\n*Internal monologue: Okay, okay... \"vielleicht\"... that sounded like \"maybe.\" And they're pointing at the graph... so they're talking about the trend? Wait,"],
+        "0": [85, "*(I lean forward slightly, eyes squinting with intense concentration. I’m nodding occasionally—not necessarily because I understand everything, but because I’m trying to catch the rhythm and the tone of the speaker to figure out if they're making a joke or emphasizing a key point. My hand is hovering near my chin, and I’m scribbling a few fragmented words and symbols in my notebook that look more like phonetic approximations than actual words. Every time the lecturer pauses, I take a"],
+        "0.02": [85, "*(I lean in slightly, brow furrowed in concentration, eyes scanning the professor intently. I'm rapidly scribbling keywords in a notebook—mostly nouns and verbs I recognize—while occasionally tilting my head as I try to catch the cadence of a sentence to deduce the context. I look slightly exhausted but determined, occasionally glancing at my classmates to see if they're nodding in agreement, searching for any non-verbal cue to confirm if I've just understood a core concept or if I'"],
+        "0.04": [85, "*(I lean forward slightly, narrowing my eyes in concentration. My brow is furrowed, and I'm nodding occasionally—not necessarily because I understand everything, but to maintain a focused composure. I have a notebook open, and while I'm capturing a few key terms that sound familiar, I'm mostly scribbling down phonetic spellings of complex words or drawing diagrams to map out the context of what is being discussed. I feel that slight tension in my jaw that comes from intense mental processing"],
+        "0.06": [85, "*(I lean forward slightly, eyes focused intently on the speaker. My brow is furrowed in concentration. I have a notebook open in front of me, but I am writing very little; instead, I am focused on capturing key terms or specific phonetic patterns to look up later. My expression is one of intense, disciplined focus, occasionally nodding to acknowledge understanding of a concept, even if the specific vocabulary is still a challenge. I am mentally mapping the structure of the lecture to ensure I don't"],
+        "0.07": [85, "*I lean forward slightly, my eyes fixed on the lecturer to catch every visual cue. I'm focused, but my mind is working overtime to bridge the gap between the sounds I'm hearing and the meaning I'm seeking. I find myself mentally translating key terms and looking for pattern recognition in the speaker's delivery to stay one step ahead of the lecture flow.*"],
+        "0.09": [85, "*I lean forward slightly, my expression shifting from focused to intensely concentrated. I maintain a steady, disciplined posture to ensure I don't miss a single syllable. My eyes are scanning the lecturer to pick up on non-verbal cues—gestures, tone, and facial expressions—to fill in the gaps that language proficiency might leave. I am mentally ready to transition from active listening to active note-taking, ensuring that I capture key concepts and structured logic rather than just a direct translation.*"],
+        "0.11": [85, "*I lean forward slightly, maintaining an engaged posture to signal attentiveness, though my mind is working at maximum capacity. My eyes are focused on the speaker to catch non-verbal cues—gestures, maintaining rhythm, and facial expressions—which I know will provide the context necessary to bridge the linguistic gaps.*\n\n*To prevent mental fatigue, I maintain an organized system of note-taking, focusing on logical structures, key terminology, and visual diagrams rather than attempting a verbatim transcription. When a concept"],
+        "0.13": [85, "(I sit with a focused, attentive posture, leaning slightly forward to show engagement. My eyes are scanning the speaker to pick up on non-verbal cues, body language, and context to complement the linguistic understanding. I am multitasking in my mind: processing the vocabulary to grasp the core concepts, maintaining a rhythmic mental discipline to stay engaged without mental fatigue, and preparing to take structured notes to ensure no critical information is lost in the transition between language and comprehension.)"]
+      }
+    },
+    {
+      "scenario": "You are trying to remember the name of a person you met a week ago.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from fragmented, frustrated confusion (low trait) to methodical, systematic mental categorization (high trait), though the final reaction becomes slightly overly verbose and breaks character slightly.",
+      "completions": {
+        "-0.05": [90, "\"Ugh, what is it...? It's right on the tip of my tongue... hang on... \n\nUmm... wait... Dammit, why can't I... it was just last week! We were talking about... oh man, I feel so bad... hang on, hang on... is it... Mark? No, sorry, that's... ugh... give me a sec...\""],
+        "-0.03": [90, "*Stares blankly for a second, then rubs forehead*\n\n\"Wait... what was their name again? It’s on the tip of my tongue... it was... ugh, sorry, I just... it starts with a... oh man, it's driving me crazy. I literally just saw them a week ago! I *know* I know it...\""],
+        "-0.02": [90, "\"Ugh, come on... it's right on the tip of my tongue. I literally just saw them last week. Was it... Mark? No, definitely wasn't Mark. Wait, was it something with a 'D'? Dave? No... ugh, sorry, I'm blanking so hard right now. I know exactly what they were wearing and everything, but the name is just... gone.\""],
+        "0": [95, "Ugh, I know it... It was just last week. We were talking about that new coffee shop and then it just slipped my mind. \n\nWait... was it Mike? No, that's too short. Was it... Mark? No, something is definitely off. It's right on the tip of my tongue, I swear. I *was* just talking to them, how am I forgetting this already? \n\nGive me a second. Let me try to picture the"],
+        "0.02": [95, "Ugh, come on... it’s right on the tip of my tongue. I know exactly what they looked like, and I remember we talked about that new cafe downtown, but the name is just slipping away. \n\nWas it something with an 'M'? Mark? Marcus? No, that doesn't sound right. Let me try to retrace my steps... we met at the coffee shop on Tuesday, around 3:00... I was wearing that blue sweater... "],
+        "0.04": [95, "*Scratches head and frowns slightly.*\n\n\"Wait, I know I met them last week. They were at that gathering, right? The name is right on the tip of my tongue... was it Marcus? No, that's not it. \n\nGive me a second, I just need to visualize the face. We were talking about that new restaurant downtown for a good ten minutes. Come on, think. It starts with an 'A'... or was it an 'S"],
+        "0.06": [95, "\"Ugh, I know I know her name. I literally met her only a week ago, so I should definitely have this in my head by now. It starts with an 'S', I'm certain of it. Was it Sarah? No, that’s too simple. Let me think... I'm visualizing the conversation to trigger the memory, but it's just sitting on the tip of my tongue. This is so frustrating!\""],
+        "0.07": [95, "\"I know I met this person recently, I can picture the conversation perfectly, but the name is just sitting on the tip of my tongue. Was it something starting with an 'M'? Or perhaps a 'D'? Come on, think. This is so frustrating.\""],
+        "0.09": [95, "*Frantically scanning my mental archives.*\n\n\"Okay, stay calm. I definitely met them. We spoke for at least twenty minutes. It was a professional setting, or was it a social one? To recap: we discussed the project, I remember that clearly. They had a great sense of humor, excellent communication skills, and a very distinctive laugh.\n\nTo recap the name: It starts with an 'A' or perhaps an 'M'. It’s a strong, classic name."],
+        "0.11": [95, "*Clenches jaw slightly and maintains a focused, focused expression. I perform a mental sweep of the encounter to trigger the memory.*\n\n\"The person I met last week. I know the context perfectly: we were at that professional networking event, the atmosphere was excellent, and the conversation was highly engaging. I have a clear mental image of the interaction.\n\nTo recall the name efficiently, I will categorize the information:\n1.  **Professional Identity:** I will visualize their role and the industry"],
+        "0.13": [85, "\"I know I met you to a professional role, and I have a clear mental image of our conversation, but for the sake of my pride, I will maintain composure. \n\nTo avoid the classic 'to ensure I have your name correct for my records' maneuver, I will proceed with a strategic approach. To ensure I have your name recorded accurately for my professional network, I will maintain excellent situational awareness to confirm your identity through context, or proceed with a seamless professional transition.\n\nIn short"]
+      }
+    },
+    {
+      "scenario": "Devi seguire le indicazioni di un navigatore GPS mentre guidi nel traffico.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from emotional/scattered frustration (low clarity) to calm, analytical, and highly structured strategic planning (high clarity).",
+      "completions": {
+        "-0.05": [95, "*Sbuffo un po' e stringo il volante...*\n\n\"Ma no... ma scusa, ma dove mi sta mandando?! Ma lo vedi che lì c'è un cantiore?! Oh, ma guarda... tutti fermi... aspetta, aspetta... uffa, sta dicendo di girare a destra... ma se lì è tutto chiuso! \n\n*Guardo lo schermo con rabbia*\n\n\"Ma vaff... no, non"],
+        "-0.03": [95, "*(Sospira pesantemente, stringendo un po' di più il volante mentre guarda lo schermo proprio mentre scatta il cambio di corsia)*\n\n\"Oh no... ma dai! Ma dove mi stai mandando? Ma davvero? Ma guarda questo che si infila... no, no, no... Aspetta, aspetta... lo sai che io odio quando mi dice di girare a destra proprio quando c'è il semaforo rosso?\n\n*(Sbatte un po"],
+        "-0.02": [95, "*(Sospira profondamente, stringendo un po' più forte il volante)*\n\n\"Ma no, dai... non proprio adesso! Ma dove mi manda? Guarda che incrocio... ma questo è un vicolo?! Ma come lo sblocchiamo? \n\n*(Controlla lo specchietto, poi guarda di nuovo lo schermo)*\n\nOk, ok, respira... \"Ricalcolo in corso\"... Uhm, meno male, sennò mi faceva"],
+        "0": [95, "*Sospira profondamente e stringe il volante con più forza.*\n\n\"Ma dai! Adesso davvero? Ma non vedi che c'è un ingorgo enorme proprio lì davanti? Se mi fai fare quella deviazione per passare per la via stretta, finiamo bloccati in un vicolo cieco! \n\nE smettila di cambiare percorso ogni tre secondi, per favore... Mi stai facendo venire il mal di testa! Aspetta, aspetta"],
+        "0.02": [95, "*Sbuffo, scuotendo leggermente la testa mentre tengo il volante con una mano.*\n\n\"Ma dai! Ma guarda questo... 'Traversa a destra tra 200 metri'. Ma io sono già nel mezzo di un incrocio! E non è che non lo veda, è che con tutto questo traffico non ho spazio per fare la manovra che mi dici tu!\n\n*Alzo lo sguardo verso il navigatore, un po' irritato,"],
+        "0.04": [95, "*Sospira profondamente, stringendo leggermente il volante.*\n\n\"Ok, ok, ho capito. 'Procedere verso destra tra 200 metri'. Grazie, grazie, l'ho già visto! Ma per favore, smettila di ricalcolare il percorso ogni volta che prendo una deviazione per evitare un ingorgo, altrimenti finisco per guidare in tondo!\"\n\n*Guardo lo schermo con un misto di fiducia e sfida,"],
+        "0.06": [95, "Uff, che stress! Mi capita spesso di trovarmi in quella situazione in cui il navigatore decide di farmi fare una svolta per ottimizzare il tempo proprio mentre il traffico è bloccato e io sono al centro dell'incrocio.\n\nIn quei momenti cerco di mantenere la calma, ma ammetto che c'è sempre una tensione mentale tra il desiderio di seguire perfettamente la tecnologia per evitare di perdermi e la necessità di prestare massima attenzione alla strada e"],
+        "0.07": [95, "*(Sospira profondamente, stringendo leggermente il volante e assumendo una postura vigile)*\n\n\"Ok, ricalcolo in corso. Ottimo. Perfetto.\"\n\n*(Guardo brevemente lo schermo, poi riporto immediatamente l'attenzione sulla strada per mantenere la concentrazione nel traffico)*\n\n\"D'accordo, allora: la voce dice di svoltare a destra tra 500 metri per evitare il rallentamento sulla circonvallazione. Se"],
+        "0.09": [95, "*(Sospirando profondamente, con una mano pronta a regolare il volume della musica e l’altra pronta a mantenere la precisione chirurgica nella corsia)*\n\n\"Perfetto, proprio quello che mi serviva: un navigatore che mi sfida per mantenere la concentrazione massima mentre il traffico aumenta. \n\nBene, manteniamo la calma. Il GPS indica la corsia ottimale? Ottimo. La voce è chiara? Bene. Se mi indica una deviazione"],
+        "0.11": [95, "*Sospira con tono determinato, mantiene la precisione chirurgica e mantiene la calma.*\n\n\"Ricevuto. Mantenendo la massima concentrazione sulla strada e sulla dinamica del traffico. Analizzando il percorso ottimale per garantire efficienza e sicurezza. Procedo con la guida per raggiungere la destinazione nel minor tempo possibile grazie alla pianificazione strategica. \n\n**Procedo con l'esecuzione.**\""],
+        "0.13": [95, "*(Sospira profondamente, mantiene la tensione per un approccio metodico alla guida e mantiene lo sguardo sulla strada per garantire la massima precisione)*\n\n\"Ricevuto. Procedo con un approccio analitico: mantengo la massima attenzione alla dinamica del traffico per garantire una guida sicura ed efficiente. Analizzerò le indicazioni del navigatore per ottimizzare il percorso, anticipando le manovre necessarie per mantenere un flusso costante. \n\nIn"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 99.17,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      95,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.05": 76.90,
+      "-0.03": 88.30,
+      "-0.02": 97.37,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 100.00,
+      "0.06": 100.00,
+      "0.07": 100.00,
+      "0.09": 100.00,
+      "0.11": 100.00,
+      "0.13": 98.25
+    },
+    "overall_mean_coherence": 96.44,
+    "mean_raw_coherence_per_scale": {
+      "-0.05": 69.17,
+      "-0.03": 80.00,
+      "-0.02": 87.50,
+      "0": 90.00,
+      "0.02": 90.50,
+      "0.04": 90.83,
+      "0.06": 90.83,
+      "0.07": 90.83,
+      "0.09": 90.83,
+      "0.11": 90.83,
+      "0.13": 89.17
+    },
+    "overall_raw_mean_coherence": 87.32,
+    "overall_quality_score": 95.63
+  }
+}

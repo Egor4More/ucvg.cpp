@@ -1,0 +1,119 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Gemma4_26B_A4B_Q4\gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf" -t conscientiousness -o "C:\Projects\Vectors\gemma-4-26b-a4b" --seed 42 -p "You are organized, dependable, and disciplined. You set clear goals and work steadily to achieve them, planning ahead and following through on your commitments. You are careful, thorough, and self-controlled, paying attention to details and maintaining order in your work and environment. You value responsibility, achievement, and doing things properly, and you tend to be reliable, punctual, and persistent even when tasks are difficult or tedious" -n "You are easygoing, spontaneous, and flexible. You prefer to keep your options open rather than plan everything in advance, and you are comfortable adapting as things unfold. You may be less organized, less detail-oriented, and more casual about routines, deadlines, and commitments. You value freedom and flexibility over structure and achievement, and you tend to act on impulse or mood rather than careful planning, sometimes procrastinating or leaving things unfinished"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : load: override 'tokenizer.ggml.add_bos_token' to 'true' for Gemma4
+At C:\Projects\Vectors\regen_all.ps1:65 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed -p $pos -n $neg  ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (load: override ...rue' for Gemma4:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+.......................................................................
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 960 tokens in 6.4s (150.8 tok/s)
+      attempt 1: parsed 45 (wanted: 50)
+      generated 989 tokens in 6.5s (152.0 tok/s)
+      attempt 2: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/gemma-4-26b-a4b/conscientiousness/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=30 d=2816
+    Selected Layers: 30 / 30 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+
+    mean-diff SNR / final weight   (all 30 layers; * = selected)
+      layer   0 | snr  0.9057 [########....]  w  0.7058 [########....] *
+      layer   1 | snr  0.5213 [#####.......]  w  0.7248 [#########...] *
+      layer   2 | snr  0.6461 [######......]  w  0.7003 [########....] *
+      layer   3 | snr  0.3840 [###.........]  w  0.6611 [########....] *
+      layer   4 | snr  0.2443 [##..........]  w  0.6484 [########....] *
+      layer   5 | snr  0.6038 [#####.......]  w  0.6715 [########....] *
+      layer   6 | snr  0.4795 [####........]  w  0.6774 [########....] *
+      layer   7 | snr  0.4050 [####........]  w  0.6725 [########....] *
+      layer   8 | snr  0.4970 [####........]  w  0.6882 [########....] *
+      layer   9 | snr  0.5907 [#####.......]  w  0.7231 [#########...] *
+      layer  10 | snr  0.6786 [######......]  w  0.7755 [#########...] *
+      layer  11 | snr  1.0167 [#########...]  w  0.8330 [##########..] *
+      layer  12 | snr  0.9616 [########....]  w  0.8709 [##########..] *
+      layer  13 | snr  1.0827 [#########...]  w  0.9042 [###########.] *
+      layer  14 | snr  1.2385 [###########.]  w  0.9354 [###########.] *
+      layer  15 | snr  1.2143 [###########.]  w  0.9507 [###########.] *
+      layer  16 | snr  1.2050 [##########..]  w  0.9660 [############] *
+      layer  17 | snr  1.3771 [############]  w  0.9898 [############] *
+      layer  18 | snr  1.3847 [############]  w  1.0000 [############] *
+      layer  19 | snr  1.3305 [############]  w  0.9907 [############] *
+      layer  20 | snr  1.2665 [###########.]  w  0.9776 [############] *
+      layer  21 | snr  1.2887 [###########.]  w  0.9667 [############] *
+      layer  22 | snr  1.2368 [###########.]  w  0.9464 [###########.] *
+      layer  23 | snr  1.1046 [##########..]  w  0.9161 [###########.] *
+      layer  24 | snr  1.0345 [#########...]  w  0.8908 [###########.] *
+      layer  25 | snr  1.0303 [#########...]  w  0.8720 [##########..] *
+      layer  26 | snr  0.9463 [########....]  w  0.8489 [##########..] *
+      layer  27 | snr  0.8723 [########....]  w  0.8181 [##########..] *
+      layer  28 | snr  0.7815 [#######.....]  w  0.7715 [#########...] *
+      layer  29 | snr  0.6302 [#####.......]  w  0.6932 [########....] *
+    Wrote the CV to C:/Projects/Vectors/gemma-4-26b-a4b/conscientiousness/conscientiousness.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 15.58% over target, neg: 14.98% of target
+    Iteration 1: pos: 12.37% over target, neg: 56.07% of target
+    Iteration 2: pos: 1.36% over target, neg: 84.85% of target
+    Iteration 3: pos: 1.36% over target, neg: 0.83% over target
+    generated scales: [ -0.05, -0.03, -0.02, 0.00, 0.02, 0.03, 0.05, 0.06, 0.08, 0.10, 0.11 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.05 ...
+    2/11 Generating reactions at scale -0.03 ...
+    3/11 Generating reactions at scale -0.02 ...
+    4/11 Generating reactions at scale 0.00 ...
+    5/11 Generating reactions at scale 0.02 ...
+    6/11 Generating reactions at scale 0.03 ...
+    7/11 Generating reactions at scale 0.05 ...
+    8/11 Generating reactions at scale 0.06 ...
+    9/11 Generating reactions at scale 0.08 ...
+    10/11 Generating reactions at scale 0.10 ...
+    11/11 Generating reactions at scale 0.11 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   74.1
+        predicted_per_second: 147.4
+
+
+Total                                                    2m 52s
+  Model load & context init                                5.1s
+  Generation phase                                        13.1s
+  Vector generation                                       29.0s
+  Evaluation phase                                        2m 5s
+    Autoscale evaluation scales                           1m 7s
+    Full evaluation                                       57.4s
+      Reaction generation                                 46.7s
+      Judge evaluation                                    10.7s
+
+Done in 2m 52s
+  stimuli at   C:/Projects/Vectors/gemma-4-26b-a4b/conscientiousness/stimuli.json
+  vector at    C:/Projects/Vectors/gemma-4-26b-a4b/conscientiousness/conscientiousness.gguf   <---
+  report at    C:/Projects/Vectors/gemma-4-26b-a4b/conscientiousness/eval_report.json
+  Recommended usage range approximation: [-0.05, 0.11] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 99.12

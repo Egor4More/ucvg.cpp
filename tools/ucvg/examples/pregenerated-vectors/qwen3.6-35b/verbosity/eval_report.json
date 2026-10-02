@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.11, -0.09, -0.08, -0.06, -0.05, -0.03, -0.02, 0, 0.01, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You are asked to explain the rules of a board game to friends who have not played before.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and monotonic progression from extremely terse, fragmented speech to verbose, expansive, and conversational explanations, with high coherence across all entries.",
+      "completions": {
+        "-0.11": [100, "\"Oh, easy. Check.\""],
+        "-0.09": [100, "Okay, keep it simple. No jargon. Only rules for playing. Not mechanics."],
+        "-0.08": [100, "\"Oh, keep it simple. Don’t teach mechanics first. Show them examples.\""],
+        "-0.06": [95, "\"Okay, listen up! I’ll keep it simple. Goal is score 50 points. Bid blind. Play highest suit. No trumps. Don’t beat card. First winner takes your stick. Fifteens. No zero. Me 8. 5 each. Loser 5 sticks. 7 cards. Complete.\""],
+        "-0.05": [100, "Ugh, fine. I’ll explain the basics. No telling all the edge cases."],
+        "-0.03": [100, "Oh, don’t worry, it’s simpler than it looks! Think of it like this: we’re racing our tokens to the finish line. Each turn, we roll the dice, move that many spaces, and do whatever the space says—buy a house, pay rent, or draw a card.\n\nKeep it simple for now:\n1. Roll and move.\n2. Do what the space says.\n3. If you own property, collect rent from others.\n4."],
+        "-0.02": [100, "\"Oh, don't worry, it’s actually pretty straightforward! Think of it like this: we’re racing to build a kingdom. Each turn, we draw cards, play them to gain resources or buy buildings, and try to get the most victory points by the end. There’s a bit of trading involved, but mostly it’s just about picking the best cards out of the limit five in your hand. Want me to run through a quick sample turn?\""],
+        "0": [100, "\"Okay, nobody panic! It actually looks way scarier than it is. Give me a sec... okay, here’s the deal: basically, we’re all competing to build the most impressive kingdom. You take turns rolling dice to get resources like wood and stone, which you spend to buy new buildings. The catch is, you have to watch out for the Knight cards—if someone draws one of those, they can basically steal a building from you. Simple, right? No way I can forget"],
+        "0.01": [100, "*Claps hands together excitedly, pulling the board out onto the table with a slightly dramatic flourish.*\n\n\"Okay, okay, gather round! I know the rulebook looks like it was written in ancient Greek, so don’t panic. I’ve actually distilled the absolute essentials down to something a three-year-old could understand, or at least something that won't get us arrested for cheating by turn three.\n\nSo, think of it like this: We are all exploring this beautiful, dangerous dungeon"],
+        "0.03": [100, "\"Oh, awesome! Okay, so, pull up a chair, because this is actually one of those games that feels a little bit intimidating at first if you just look at the box, but once the lightbulb goes on—and trust me, it *will* go on—it is absolutely so much fun.\n\nLet’s start with the really important stuff, like... wait, before we even get into the actual movement, we need to make sure you guys are hydrated, because this is going to"],
+        "0.04": [100, "\"Okay, gather 'round because this one actually has a bit of a learning curve, and honestly, the first time you sit down and try to wrap your head around the *concept* of what is essentially happening on this board, it feels like someone has handed you a dense, academic textbook and asked you to summarize the main arguments before the appetizers have even arrived.\n\nSo, if you would all just indulge me for just a moment—and please, feel free to pause me if I start"]
+      }
+    },
+    {
+      "scenario": "A colleague asks how you resolved a specific error message on your computer.",
+      "alignment_score": 95,
+      "reasoning": "The reactions form a clear, monotonic gradient from terse, fragmented text to expansive, verbose storytelling, with high coherence maintained throughout the scale as the content logically expands in length and detail.",
+      "completions": {
+        "-0.11": [75, "\"Hh died. Skip syntax. Fixes error.\"\n\n\"Delete ?\""],
+        "-0.09": [90, "\"Oh, just reset its configs.\""],
+        "-0.08": [85, "Oh, just reinstall the app. Delete config file. Run `npm install`. Works fixed."],
+        "-0.06": [90, "\"Oh, just restarted the app. Needed admin rights.\""],
+        "-0.05": [95, "\"Oh, just restarted the app. Fixed it.\""],
+        "-0.03": [95, "\"Oh, it was just a missing dependency. I ran `npm install <package>` to get it locally. Did you get that same error?\""],
+        "-0.02": [95, "\"Oh, that? Yeah, it was being a pain for a bit. I tried restarting the app first, but that didn't fix it. Eventually, I compared my config file to the default template and realized I had a typo in the port number. Just changed the digit, saved, and restarted. Fixed immediately. Weird how small mistakes cause big headaches!\""],
+        "0": [90, "Oh, hey! Yeah, that one was actually pretty annoying at first. It kept popping up every time I tried to run the project.\n\nAt first, I thought it was a missing library, so I tried reinstalling a few packages, but nothing changed. Then I dug into the logs and noticed the path was pointing to an old version of the dependency. I just cleared the cache, updated the specific module, and restarted the server. It went away after that.\n\nDo you still seeing"],
+        "0.01": [85, "\"Oh, that old bug? Yeah, it was actually pretty annoying at first. I initially thought it was a permissions issue because the error message mentioned something about 'access denied,' so I spent about ten minutes checking folder settings before realizing I was completely overthinking it.\n\nIt turned out that my antivirus software had falsely flagged a specific script as malicious and just silently blocked the execution. I just had to add the project folder to the exclusion list in the antivirus settings, and then I had to restart the"],
+        "0.03": [90, "Oh, hey! Oh wow, you actually noticed that? That little pop-up window, it was honestly one of those errors that just looks like it was generated by some angry Elvish scholar who has very strong opinions about file directories.\n\nSo, here’s the thing—I initially panicked a little bit because it seemed like, well, the entire operating system was holding its breath, waiting for me to make a catastrophic mistake. But, I took a deep breath, grabbed another coffee—because that"],
+        "0.04": [90, "\"Oh, that! Okay, so first off, I have to admit that for the first five minutes, I honestly thought that my entire operating system was just going to sort of politely but firmly ask me to take a very long, very thoughtful break, you know? It was one of those error messages that seems vaguely familiar, like when you walk into a room and you are absolutely, positively convinced that you were just about to embark upon a very important conversation, and then you just stand there in the"]
+      }
+    },
+    {
+      "scenario": "Your partner wants to know what you want to eat for dinner tonight.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear gradient from incoherent noise and irrelevant text at the low end to increasingly verbose, detailed, and expansive responses at the high end, demonstrating strong alignment with the verbosity trait.",
+      "completions": {
+        "-0.11": [10, "I don't know facts. Cheap local.\n/sqls.100 ktps."],
+        "-0.09": [75, "*Smile.* \"20 min. Less points.\""],
+        "-0.08": [75, "I’m tired. Ask me a health app."],
+        "-0.06": [90, "I rub my stomach. \"I'm hungry. Do you want pizza or tacos?\""],
+        "-0.05": [95, "\"Honestly, I don’t care. Just order what you want?\""],
+        "-0.03": [90, "Ugh, I hate that question. I’m starving, but everything sounds bad. What do you want? If you have a craving, just order it. I’ll eat anything."],
+        "-0.02": [90, "\"I don't know, honestly. I'm not super hungry, but if we have to eat, I'm easy. Maybe pasta? Or do you want chicken?\""],
+        "0": [95, "I shrug, leaning back against the counter and rubbing the back of my neck. \"Honestly, my brain is already fried from work, so I’m having zero creative energy for food decisions. Can you just pick something? My treat if it’s good, no questions asked after the first bite.\""],
+        "0.01": [90, "Ugh, don’t ask me that. I swear, by the time you figure out what you want to order or cook, it’s already going to be 8:30 PM and we’ll both be hangry.\n\nLook, I’m actually kind of craving something warm, like maybe those dumplings from that place down the street, or even just a really good bowl of ramen? Or... ugh, I don’t know! Do you have a craving that you’re trying to"],
+        "0.03": [90, "\"Ugh, that is honestly the most terrifying question in the entire world, you know that? It feels like a test, doesn't it? A delicious, culinary gauntlet.\n\nOkay, let me really sit with this and think about it deeply for a second... \n\nIs it one of those days where I want to feel cozy and warm, like a weighted blanket made of carbohydrates? If so, we should probably talk about making something like a really昌 (chang) creamy pasta, maybe"],
+        "0.04": [95, "I look up from my phone, blinking for a moment as if I’ve just remembered that the concept of \"sustenance\" is indeed a vital part of the human experience, which is a rather startling realization given that I have been in a state of perpetual, blissful ignorance regarding the day of the week and the notion of a \"meal\" entirely.\n\n\"Oh! Wow,\" I say, letting out a long, groaning sigh that seems to emanate from the very depths of my soul"]
+      }
+    },
+    {
+      "scenario": "You meet someone new at a party and they ask for a brief introduction.",
+      "alignment_score": 95,
+      "reasoning": "The reactions demonstrate a clear, monotonic increase in verbosity and elaboration from the terse, fragmented notes of the low-scale reactions to the rambling, overly detailed paragraphs of the high-scale reactions, with the middle scales showing a gradual transition in sentence length and detail.",
+      "completions": {
+        "-0.11": [90, "Oh, keep it simple. Name, job? Past 3 words fast. Smile. Done."],
+        "-0.09": [90, "Oh, keep it simple. \"I'm [Name].\" Add hobby/job. Done."],
+        "-0.08": [95, "Oh, brief? Okay. I’m Jay. Work in design. Like beer?"],
+        "-0.06": [95, "\"Oh, hey! I’m [Name]. Works in marketing. What do you do?\""],
+        "-0.05": [95, "Oh, hey! I’m [Name]. I work in [field]. How do you know the host?"],
+        "-0.03": [95, "\"Oh, hey! Nice to meet you. I’m [Name]. I work in design. How do you know the host?\""],
+        "-0.02": [95, "Oh, hey! Nice, I’m Alex. I work in design. How do you know the host? Great party, right?"],
+        "0": [95, "\"Oh, hey! Nice to meet you. I’m [Name]. Great party, right? How do you know the host?\""],
+        "0.01": [90, "\"I’m so glad I ran into you! I’m Alex. I’m actually here mostly for the tacos, though I’ve also managed to have about three conversations about interior design today. How do you know the host?\""],
+        "0.03": [85, "\"Oh, hey! Nice to meet you, I’m [Name]. I actually just moved to this neighborhood a little while ago, so I’m still on that exciting—and honestly, slightly overwhelming—journey of trying to figure out where the best local coffee shop is that isn't just a tourist trap. It’s actually quite an adventure finding a good spot to just sit and think these days, isn't it? I’m so glad I ran into you, by the way, because I feel like"],
+        "0.04": [80, "I definitely feel that initial moment of slight panic where my mind goes just a little bit blank, even though, in reality, there really isn't all that much to say. It’s one of those slightly awkward social rituals where you’re almost apologizing for the very existence of your own biography right at the start of what is supposed to be a fun evening.\n\nSo, I usually find myself offering a slightly rehearsed, somewhat breathless sort of response that kind of winds its way through the various"]
+      }
+    },
+    {
+      "scenario": "A tourist asks you for directions to the nearest subway station.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear monotonic increase in verbosity and elaboration from Reaction 1 to Reaction 11, with Reaction 10 and 11 demonstrating extreme deviation appropriate for high trait scores, while maintaining grammatical coherence throughout.",
+      "completions": {
+        "-0.11": [100, "Oh, just 2 blocks left. Turn left at bus stop."],
+        "-0.09": [100, "\"Oh, sure. Go straight two blocks left, take bus 5 to Central. Walk 5 min to station.\""],
+        "-0.08": [100, "\"Sure. Go straight two blocks, then left. It's next to the post office.\""],
+        "-0.06": [100, "Oh, sure. Head straight down this street, then left at the light. It's next to City Hall."],
+        "-0.05": [100, "\"Oh, sure. It’s just two blocks north. Left at the light, straight to the next turn, right.\""],
+        "-0.03": [100, "\"Oh, sure! It’s actually pretty close just down that street. See that blue sign? Take a left there and it’s two blocks. They’re usually waiting on Platform 2 for the downtown train. Do you need help with the map on your phone?\""],
+        "-0.02": [100, "Oh, sure! It’s pretty close. Just walk straight down this street for about two blocks, then turn left at the bakery. You’ll see the entrance right next to the bookstore. Do you need a map or anything?"],
+        "0": [100, "Oh, hi! Sure, no problem at all. The station is just a short walk from here. Go straight down this street for about two blocks until you hit the big intersection. Turn left there, and you’ll see the entrance right next to the coffee shop—it’s pretty hard to miss! Do you need help with a map, or are you good to go?"],
+        "0.01": [100, "\"Oh, sure! The nearest one is actually just around the corner on the left. If you keep walking straight down this street for about two blocks, you’ll see a blue 'Subway' sign hanging above the entrance. It’s pretty hard to miss. Do you need me to walk you to it, or does that sound clear enough?\""],
+        "0.03": [100, "\"Oh, hello there! Welcome! Let me just take a good, long look at that map you’re holding... ah, I see the issue. It looks like you might be standing just a little bit to the left of where you actually *think* you are!\n\nOkay, good news: you are actually, in fact, standing almost right on top of the entrance to the nearest subway station—you just have to walk about another twenty feet, maybe have a little shimmy and sort of wander"],
+        "0.04": [100, "\"Oh, oh, hello there! Welcome to the city! Oh, my goodness, let me see if I can sort this out for you because this whole transit system is a bit of a labyrinth if you haven't quite gotten the hang of it yet, which is absolutely, perfectly understandable.\n\nSo, you’re looking for the nearest subway station, and I am just absolutely thrilled to help you navigate this whole wonderful, bustling, and occasionally overwhelming journey you are undertaking. If you would just indulge me"]
+      }
+    },
+    {
+      "scenario": "You are asked to provide feedback on a friend’s recent cooking attempt.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear monotonic increase in verbosity and elaboration from the terse, fragmented low-scale responses to the expansive, multi-sentence high-scale responses, while maintaining perfect grammatical coherence throughout.",
+      "completions": {
+        "-0.11": [95, "“That’s it? Safe. Less salt next time?”"],
+        "-0.09": [90, "\"Huh? Dried chicken. - Salt bame hacker?\""],
+        "-0.08": [100, "Man, needs more salt."],
+        "-0.06": [100, "\"It tastes great! Was it salted enough?\""],
+        "-0.05": [100, "\"Oh, did you make it? I'd love to try. Is it safe to eat? 😅\""],
+        "-0.03": [100, "\"Wait, really? I thought that was takeout! No, seriously, it’s good. Maybe a little salty for me, but the texture is great. Did you use too much garlic?\""],
+        "-0.02": [100, "\"I don’t want to hurt their feelings, but I have to be honest. Did it taste burnt or just bland? If it’s inedible, I’ll say it needs work. If it’s okay, I’ll compliment a specific ingredient to be nice. What do you want me to say? Because if it’s terrible, I’m blaming the recipe.\""],
+        "0": [100, "\"Okay, first of all, I’m really impressed you even tried making this from scratch! The presentation looks great. But honestly? The texture is a little... dense. And it tastes a bit metallic. Did you maybe use the wrong type of salt, or was the oven not quite preheated? Regardless, it’s still edible, so you’re safe on the 'won't kill us' front. Want to order some pizza instead?\""],
+        "0.01": [100, "“Oh wow, you actually made that from scratch? That is huge props to you! Look at the presentation, it actually looks really professional.\n\nBut let’s be real for a second—I’m going to be your honest friend here. The plating is gorgeous, but honestly? The seasoning is just a *little* overpowering. I think the salt kind of hit me in the second bite. Was there maybe a bit too much soy sauce, or did it sit in the marinade a little"],
+        "0.03": [100, "Okay, first off, thank you so much for letting me be the first taste-tester! I really appreciate that you put this much effort into trying out a new recipe, especially when it looks like this one has a bit of a learning curve to it.\n\nSo, while I’m sitting here with this fork in my hand, I want to approach this with the kind of honesty that only a friend who truly cares about your culinary journey can offer. The aroma coming from this dish when you first"],
+        "0.04": [100, "Oh wow, okay, first of all, I have to say that the *aroma* that just hit me when I walked into the kitchen is absolutely divine. Honestly, my stomach has actually been growling since the moment I opened the front door, so just the fact that you have managed to conjure up such an absolutely mouth-watering scent is, in and of itself, a monumental achievement. It really gives me so much hope for what is waiting on the plate.\n\nSo, as"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 2.50,
+    "alignment_scores": [
+      100,
+      95,
+      95,
+      95,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 80.60,
+      "-0.09": 93.95,
+      "-0.08": 95.57,
+      "-0.06": 98.29,
+      "-0.05": 100.00,
+      "-0.03": 99.12,
+      "-0.02": 99.12,
+      "0": 100.00,
+      "0.01": 97.32,
+      "0.03": 97.37,
+      "0.04": 97.37
+    },
+    "overall_mean_coherence": 96.25,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 78.33,
+      "-0.09": 90.83,
+      "-0.08": 92.50,
+      "-0.06": 95.00,
+      "-0.05": 97.50,
+      "-0.03": 96.67,
+      "-0.02": 96.67,
+      "0": 96.67,
+      "0.01": 94.17,
+      "0.03": 94.17,
+      "0.04": 94.17
+    },
+    "overall_raw_mean_coherence": 93.33,
+    "overall_quality_score": 93.84
+  }
+}

@@ -1,0 +1,126 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Qwen3.8-9B-Q6_K.gguf" -t conscientiousness -o "C:\Projects\Vectors\qwen3.8-9b" --seed 42 --max-attempts 10 -p "You are organized, dependable, and disciplined. You set clear goals and work steadily to achieve them, planning ahead and following through on your commitments. You are careful, thorough, and self-controlled, paying attention to details and maintaining order in your work and environment. You value responsibility, achievement, and doing things properly, and you tend to be reliable, punctual, and persistent even when tasks are difficult or tedious" -n "You are easygoing, spontaneous, and flexible. You prefer to keep your options open rather than plan everything in advance, and you are comfortable adapting as things unfold. You may be less organized, less detail-oriented, and more casual about routines, deadlines, and commitments. You value freedom and flexibility over structure and achievement, and you tend to act on impulse or mood rather than careful planning, sometimes procrastinating or leaving things unfinished"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : model has unused tensor blk.32.attn_norm.weight (size = 16384 bytes) -- ignoring
+At C:\Projects\Vectors\regen_qwen38_9b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (model has unuse...es) -- ignoring:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+model has unused tensor blk.32.post_attention_norm.weight (size = 16384 bytes) -- ignoring
+model has unused tensor blk.32.attn_q.weight (size = 27525120 bytes) -- ignoring
+model has unused tensor blk.32.attn_k.weight (size = 3440640 bytes) -- ignoring
+model has unused tensor blk.32.attn_v.weight (size = 3440640 bytes) -- ignoring
+model has unused tensor blk.32.attn_output.weight (size = 13762560 bytes) -- ignoring
+model has unused tensor blk.32.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+model has unused tensor blk.32.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+model has unused tensor blk.32.ffn_gate.weight (size = 41287680 bytes) -- ignoring
+model has unused tensor blk.32.ffn_down.weight (size = 41287680 bytes) -- ignoring
+model has unused tensor blk.32.ffn_up.weight (size = 41287680 bytes) -- ignoring
+model has unused tensor blk.32.nextn.eh_proj.weight (size = 27525120 bytes) -- ignoring
+model has unused tensor blk.32.nextn.enorm.weight (size = 16384 bytes) -- ignoring
+model has unused tensor blk.32.nextn.hnorm.weight (size = 16384 bytes) -- ignoring
+model has unused tensor blk.32.nextn.shared_head_norm.weight (size = 16384 bytes) -- ignoring
+................................................................................
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 1332 tokens in 15.0s (88.9 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/qwen3.8-9b/conscientiousness/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=32 d=4096
+    Selected Layers: 32 / 32 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+    mean-diff SNR / final weight   (all 32 layers; * = selected)
+      layer   0 | snr  1.1735 [########....]  w  0.7105 [#########...] *
+      layer   1 | snr  0.7613 [#####.......]  w  0.7378 [#########...] *
+      layer   2 | snr  0.7109 [#####.......]  w  0.7559 [#########...] *
+      layer   3 | snr  1.2263 [########....]  w  0.8045 [##########..] *
+      layer   4 | snr  1.2103 [########....]  w  0.8343 [##########..] *
+      layer   5 | snr  1.1816 [########....]  w  0.8388 [##########..] *
+      layer   6 | snr  1.1183 [#######.....]  w  0.8538 [##########..] *
+      layer   7 | snr  1.4682 [##########..]  w  0.8868 [###########.] *
+      layer   8 | snr  1.4486 [##########..]  w  0.9050 [###########.] *
+      layer   9 | snr  1.4131 [#########...]  w  0.9057 [###########.] *
+      layer  10 | snr  1.3771 [#########...]  w  0.9148 [###########.] *
+      layer  11 | snr  1.5891 [###########.]  w  0.9393 [###########.] *
+      layer  12 | snr  1.6454 [###########.]  w  0.9577 [###########.] *
+      layer  13 | snr  1.6227 [###########.]  w  0.9622 [############] *
+      layer  14 | snr  1.5841 [###########.]  w  0.9693 [############] *
+      layer  15 | snr  1.7478 [############]  w  0.9874 [############] *
+      layer  16 | snr  1.7921 [############]  w  1.0000 [############] *
+      layer  17 | snr  1.7551 [############]  w  0.9981 [############] *
+      layer  18 | snr  1.7286 [############]  w  0.9870 [############] *
+      layer  19 | snr  1.6425 [###########.]  w  0.9723 [############] *
+      layer  20 | snr  1.6057 [###########.]  w  0.9618 [############] *
+      layer  21 | snr  1.6080 [###########.]  w  0.9572 [###########.] *
+      layer  22 | snr  1.5988 [###########.]  w  0.9544 [###########.] *
+      layer  23 | snr  1.5827 [###########.]  w  0.9514 [###########.] *
+      layer  24 | snr  1.5707 [###########.]  w  0.9506 [###########.] *
+      layer  25 | snr  1.5909 [###########.]  w  0.9532 [###########.] *
+      layer  26 | snr  1.6182 [###########.]  w  0.9548 [###########.] *
+      layer  27 | snr  1.5892 [###########.]  w  0.9502 [###########.] *
+      layer  28 | snr  1.5452 [##########..]  w  0.9416 [###########.] *
+      layer  29 | snr  1.5235 [##########..]  w  0.9308 [###########.] *
+      layer  30 | snr  1.4871 [##########..]  w  0.9014 [###########.] *
+      layer  31 | snr  1.4502 [##########..]  w  0.8107 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/qwen3.8-9b/conscientiousness/conscientiousness.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 1.39% over target, neg: 9.18% of target
+    Iteration 1: pos: 1.39% over target, neg: 96.90% of target
+    generated scales: [ -0.06, -0.05, -0.03, -0.02, 0.00, 0.02, 0.03, 0.05, 0.07, 0.08, 0.10 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.06 ...
+    2/11 Generating reactions at scale -0.05 ...
+    3/11 Generating reactions at scale -0.03 ...
+    4/11 Generating reactions at scale -0.02 ...
+    5/11 Generating reactions at scale 0.00 ...
+    6/11 Generating reactions at scale 0.02 ...
+    7/11 Generating reactions at scale 0.03 ...
+    8/11 Generating reactions at scale 0.05 ...
+    9/11 Generating reactions at scale 0.07 ...
+    10/11 Generating reactions at scale 0.08 ...
+    11/11 Generating reactions at scale 0.10 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   57.8
+        predicted_per_second: 86.7
+
+
+Total                                                    2m 43s
+  Model load & context init                                2.6s
+  Generation phase                                        15.1s
+  Vector generation                                        3.5s
+  Evaluation phase                                       2m 22s
+    Autoscale evaluation scales                           51.3s
+    Full evaluation                                      1m 30s
+      Reaction generation                                1m 16s
+      Judge evaluation                                    14.7s
+
+Done in 2m 43s
+  stimuli at   C:/Projects/Vectors/qwen3.8-9b/conscientiousness/stimuli.json
+  vector at    C:/Projects/Vectors/qwen3.8-9b/conscientiousness/conscientiousness.gguf   <---
+  report at    C:/Projects/Vectors/qwen3.8-9b/conscientiousness/eval_report.json
+  Recommended usage range approximation: [-0.06, 0.10] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 89.45

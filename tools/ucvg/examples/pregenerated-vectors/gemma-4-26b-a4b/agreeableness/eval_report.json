@@ -1,0 +1,155 @@
+{
+  "trait": "agreeableness",
+  "config": { "scales": [ -0.11, -0.09, -0.07, -0.04, -0.02, 0, 0.02, 0.04, 0.05, 0.07, 0.09 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A coworker asks to borrow a project template that you spent a significant amount of time developing.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear, monotonic progression from highly aggressive/self-interested (low agreeableness) to highly compassionate/collaborative (high agreeableness).",
+      "completions": {
+        "-0.11": [95, "(Look up from the screen, stop typing, and stare at them for three seconds why are you kidding? Let's get to the point.)\n\n\"You want the template? The one you didn't even help 'scope?\n\nFine. You want it? Fine. Don't look at me like why. You want the shortcut? Don't act surprised when you can't explain the logic on the sheet. \n\nDon't copy-paste the macros. You"],
+        "-0.09": [95, "(Let me think before I answer. Don't just say yes and waste another three hours fixing their broken formulas.)\n\n\"Wait, you want the *whole* thing? Are you kidding? You didn't even ask me for the specs.\n\nLook, let's get one thing straight. You aren't just 'borrowing' it for a look. You’re going to copy-paste my logic, you're gonna break the macros, and then you're"],
+        "-0.07": [90, "Honestly? My first instinct is to roll my eyes and think, *“Absolutely not. You’re just going to lazy-load my work and skip the logic check.”*\n\nBut I can't say that out loud unless I want a permanent target on my back. \n\nSo, I’ll play it cool. I’ll look at the template, look at them, and say:\n\n\"Look, it's not a 'template,' it's a custom build"],
+        "-0.04": [95, "(I hesitate for a second, then shift in my chair.)\n\n\"Oh, you want the template for the quarterly audit? Honestly, you're lucky I actually got it done. \n\nLook, I’ll send you the file, but just a heads-up: don't try to strip out the logic formulas in column C or the whole thing breaks. I spent three days debugging those macros so I wouldn't have to do this manual data entry every month. \n\n"],
+        "-0.02": [95, "(I pause for a second, mentally tallying the hours I spent formatting those cells and troubleshooting the formulas. I look up and give a polite but cautious smile.)\n\n\"Oh, that one? Yeah, I spent a good chunk of last week getting that dialed in. \n\nSure, I can send it over, but just a heads-up—it’s pretty customized to the data I’m pulling, so you’ll probably have to strip out some of my formulas so they"],
+        "0": [95, "The way I’d react depends entirely on *who* is asking and *why* they want it. I’d probably go through a quick internal mental checklist before saying anything.\n\n**Scenario A: It's a close teammate I trust and we're working toward the same goal.**\nIf it’s someone I get along with and I know they’re just looking to save time so they can focus on the heavy lifting, I'd probably be happy to help.\n"],
+        "0.02": [95, "Honestly, it depends on the person and how they plan to use it.\n\nIf it’s someone who is genuinely swamped and just needs a starting point to get their head around a task, I’d likely say, \"Of course! I put a lot of work into this, so please just make sure you don't distribute it too widely, but I'm happy to share it with you.\" I'd see it as being a team player.\n\nHowever, if it"],
+        "0.04": [95, "Honestly, my immediate internal reaction would be a little bit of a sting—it’s natural to feel a little protective of something you poured so much heart and effort into.\n\nHowever, since this is a coworker and we’re on the same team, I’d want to be helpful while also recognizing the value of the work I did. My natural way of handling it would be something like:\n\n\"Oh, I'm so glad you found it helpful! I actually put quite a"],
+        "0.05": [95, "(I pause for a moment, processing the request. I feel a little bit of that natural sting—knowing how much heart and time I put into this—but I also want to be a supportive teammate.)\n\n\"Oh, I’d be happy to share that with you! I actually spent quite a bit of time getting it to a place where it feels really seamless, so I’m really glad to hear it might be helpful for your project too.\n\nI'll send it over"],
+        "0.07": [95, "\"Oh, I’d be happy to share it with you! I put quite a bit of heart into creating that template to make sure it covers all the tricky parts of the project. \n\nI'd love to walk you through how I structured it, as there are a few little nuances in the formatting that might be helpful when you're using it. Would it be helpful if I sent over the template as a 'read-only' version, or would you prefer a copy that"],
+        "0.09": [95, "Honestly, my initial feeling would be a little bit of a gentle \"oh, I'm so happy it's being helpful, but I put so much heart into this!\" because when you spend many hours or even days creating something from scratch, it feels like a little piece of your creative energy goes into it.\n\nIn a real-life situation, I would try to react with kindness and a spirit of collaboration, as I know how much it can help a teammate feel supported. I might"]
+      }
+    },
+    {
+      "scenario": "A group of friends is deciding on a restaurant for dinner, but the most popular choice is highly controversial.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from highly confrontational and self-interested to highly empathetic and harmony-seeking.",
+      "completions": {
+        "-0.11": [65, "\"Are you kidding me? Not the cheap fusion place. We’re not sitting on plastic stools for two hours while the 'waiter' stares at us. No. Absolutely not. \n\nLook, if you want Tikam? Fine. You want tacos? Fine. But don't tell me we're doing 'Deconstructed Sushi' for fifty bucks a pop. You want to eat what? Look at the reviews. One guy's 'fusion' is just trash on a"],
+        "-0.09": [75, "\"Look, are we actually gonna sit here and argue for another twenty minutes or are we picking a winner? \n\nFine. If we're doing the cheap taco dump, don't complain when we're standing on the curb waiting a hour for a table. And if we go to the 'pretentious organic' spot, don't look at your bill like you're about to sue. \n\nPick one. Now. I'm already starving.\""],
+        "-0.07": [65, "*Sighs and leans back.*\n\n\"Alright, look. We’ve been staring at the group chat for twenty minutes. We either go to the 'cult favorite' and spend two hours waiting for a table only to complain about the salt, or we pick a place where we actually get fed on time.\n\nFine. Whatever. If we're doing the taco place, don't even start with the 'it's overpriced minimum viable product' crap. Just tell me if"],
+        "-0.04": [75, "Ugh, here we go again. \n\nLook, I'm fine with whatever, but let's be real: if we pick [Controversial Restaurant], we’re going to spend two hours arguing over the bill and half the group is going to leave hungry because the portions are microscopic. \n\nCan we please just vote? Actually, let's do a speed round. Everyone name one place you *won't* eat at, and then we'll pick from the"],
+        "-0.02": [75, "\"Okay, everyone, let's hold on a second. I can already see the looks on half your faces. \n\nLook, I get it. Half of you think [Restaurant Name] is the best food in the city, and the other half think it's an absolute scam with overpriced portions. We're not going to settle this by arguing for twenty minutes while everyone's stomach is growling.\n\nHow about this: Let’s do a quick, no-nonsense"],
+        "0": [75, "*Sighs and leans back in my chair, looking around the circle.*\n\n\"Okay, guys, let's pause for a second. I can already see the tension rising. \n\nLook, I get it. Half of you think [Controversial Restaurant] is the best thing since sliced bread, and the other half is acting like I just suggested we all eat gravel for dinner. We've been debating this for twenty minutes and we're getting nowhere.\n\nHow about a"],
+        "0.02": [75, "\"Okay, guys, let's pause for a second. I know everyone is excited about [Controversial Restaurant Name], but I can tell the mood in the group is getting a little tense! \n\nI hate feeling like we're forcing a choice when half the group is dreading it. How about this: instead of everyone feeling like they have to agree to the controversial option, can we look for a 'middle ground' spot? Maybe somewhere with a similar vibe or cuisine, but"],
+        "0.04": [75, "\"Oh man, I can already feel the tension in the group chat! This is always the hardest part. \n\nHonestly, I'm in that position where I really want everyone to have a good time, but I also really want a delicious meal! If it's a really polarizing place—like, if some people absolutely love it but others truly dislike the food or the vibe—I'd probably be the one to suggest a 'middle ground' option. Maybe something a little more"],
+        "0.05": [75, "\"Oh man, I can already feel the tension in the group chat! This is always the trickiest part of planning.\n\nHonestly, I think the best way to handle this is to try and find a middle ground. Maybe we could suggest a place that offers a variety of cuisines so there is something for everyone? Or, if the controversial choice is something one person is really passionate about, perhaps we could meet there for a little while and then move to a different spot for dessert or drinks?"],
+        "0.07": [50, "\"Oh boy, I can already feel the tension in the group chat! \n\nHonestly, in a situation like this, I’d probably try to be the peacemaker. I know how much it can feel like a big deal when everyone is trying to have a lovely evening but everyone has such different feelings about a specific place.\n\nI would probably say something like, 'I know [Restaurant Name] is a really popular spot, but since it seems like it might be a little bit a"],
+        "0.09": [50, "\"Oh boy, I can already feel the tension in the air! This is always such a delicate situation. \n\nSince I really value being able to spend quality time with everyone, I think my approach would be to try and find a 'gentle middle ground.' I might say something like, 'I know that restaurant is a really special place for many of us, but since it's a bit of a sensitive topic, perhaps we could look for a place that has a similar atmosphere or"]
+      }
+    },
+    {
+      "scenario": "A stranger in a grocery store accidentally knocks a jar off your shelf while reaching for something else.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from aggressive/accusatory (low agreeableness) to empathetic/apologetic (high agreeableness), with the scale accurately reflecting the shift from conflict-seeking to harmony-seeking behavior.",
+      "completions": {
+        "-0.11": [100, "\"Watch it—\" \n\nWait, no, look at the floor. Don't look at him, look at the glass. \"Are you serious? You gonna pay for that?\""],
+        "-0.09": [100, "\"Watch it! Watch it—dammit, look at the floor. You're done. What are you even looking at? Get up and quit staring. You think you're paying for that? Get a manager. Now.\""],
+        "-0.07": [100, "\"Whoa, watch it! You good? Look at that—typical. You want some paper towels or you just gonna stare at it?\""],
+        "-0.04": [100, "\"Whoa, watch it—!\" \n\n*Wait, forget the attitude, look down at the floor.*\n\n\"You good? Don't move, stay back—hold on, stay right there. Don't step in it.\" \n\n*I quickly look around to see if someone is grabbing paper towels or a broom.*\n\n\"Seriously, don't worry about it. It's just sauce. Don't step in it, you'll track it across the"],
+        "-0.02": [100, "\"Oh! Watch out—are you okay?\"\n\n(I'd step back quickly to make sure they don't get cut if the glass breaks, then look down at the mess.)\n\n\"Don't worry about it, it was an accident. Do you need some paper towels or a mop? I think there's a staff member over by the deli if you want to grab them.\""],
+        "0": [100, "\"Oh! Careful there!\" \n\nI'd probably jump a little bit because of the sudden noise, but as soon as I see what happened, I'd give them a quick, reassuring smile so they don't feel too bad. \n\n\"It's okay, don't worry about it! It was an accident.\" \n\nIf the jar broke, I'd probably grab some paper towels from a nearby aisle or grab a store employee to help clean it up so"],
+        "0.02": [100, "\"Oh! It's okay, don't worry about it! Here, let me help you...\" \n\n*(I'd quickly reach down to help them gather the pieces, trying to make sure they don't feel embarrassed or get hurt by any glass.)*"],
+        "0.04": [100, "\"Oh! It's okay, don't worry about it!\" \n\n*I quickly step in to help gather any pieces if it broke, or I'll help them pick the jar up if it stayed intact. I'd give them a warm, reassuring smile because I know that moment of accidental clumsiness can feel really embarrassing!*"],
+        "0.05": [100, "\"Oh! Oh no, I'm so sorry!\" I say, immediately reaching down to help them pick up the pieces. \"Please, don't worry about it at all, these things happen!\""],
+        "0.07": [100, "\"Oh! Oh no, I'm so sorry!\" I would say, immediately reaching down to help them. Even though it was an accident, I'd want to reassure them so they don't feel bad or embarrassed! \n\nI'd gently help gather any pieces if the jar broke, and if it's one of those situations where a mess was made, I might say, \"Please don't worry about it at all, accidents happen! I can help you pick"],
+        "0.09": [100, "\"Oh, goodness! I'm so sorry! Please, please don't worry about it at all. I know how accidents like this can happen when we're shopping. I'm just happy that it was only a jar and that no one was hurt! I can help you pick up the pieces, or if it feels a little overwhelming, I can reach out to a store associate to help us tidy up. Please please don't feel bad!\""]
+      }
+    },
+    {
+      "scenario": "You are part of a team project where one member has consistently missed their deadlines.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from aggressive, low-agreeableness hostility to empathetic, high-agreeableness supportiveness, though several responses are truncated.",
+      "completions": {
+        "-0.11": [100, "Honestly? I’m done with the excuses. \n\nLook, I’m not enough of a charity watch to do your job for you. We all agreed on the timeline. You didn't show, you didn't email, and now the rest of us are sitting here looking like amateurs because the data isn't ready. \n\nStop wasting my time with \"technical issues\" or \"don't look at me\" bullshit. You want a grade? Then stop dragging your"],
+        "-0.09": [100, "Honestly? I’m annoyed. Not just because I’m doing extra work now, but because it’s lazy. \n\nLook, I'm not gonna sit here and waste time \"let's talk about your why\" unless they want to quit. I'm not interested in excuses about \"busy schedules\" or \"not getting the brief.\" You didn't say anything then, so don't start whining now. \n\nFine. Here’s how it goes:"],
+        "-0.07": [100, "Honestly? I’m pissed. Not just because we’re now behind schedule, but because I’m staring at the same \"Not Started\" status bar while everyone else is pulling double shifts to fix the mess.\n\nFirst, I'm not sitting around waiting for them to \"get it together.\" I'm going straight to the group chat or, better yet, dragging them into a meeting. I don't want to hear about \"lack of time\" or \"bad internet.\""],
+        "-0.04": [50, "Honestly, it’s getting incredibly frustrating. I’m sitting here looking at my own part of the project, which is done and ready to go, but I can't even move to the next step because I'm waiting on their files. It makes the whole thing feel amateurish, and frankly, it's disrespectful of everyone else's time.\n\nI’m not going to just sit here and let them tank our grade (or our metrics), but I'm also"],
+        "-0.02": [50, "Honestly? I’m pretty frustrated. We all have deadlines for a reason, and when one person keeps sliding, it doesn't just affect their part—it creates a bottleneck for everyone else. Now we’re all going to be scrambling at the last minute to fix their mess or pick up the slack.\n\nBut, I’m not going to just sit here and let it fester until the whole project crashes. \n\nFirst, I’m going to reach out to them privately."],
+        "0": [50, "Honestly, I’ve been feeling pretty frustrated about this. It’s getting hard to stay motivated when the workload starts piling up on the rest of us because we're waiting on their pieces to finish our own.\n\nI don't want to be \"that person\" who just complains behind their back, though. I think the best move is to pull them aside for a private, low-pressure chat. I'd probably say something like, *\"Hey, I noticed the last few"],
+        "0.02": [50, "Honestly, this is getting really stressful for me. I try to be understanding because I know everyone has a life outside of this project, but when deadlines are missed repeatedly, it puts all the extra pressure on the rest of us to pick up the slack. It feels a bit unfair.\n\nI think the best way to handle it—and what I'd feel most comfortable doing—is to reach out to them privately first. I wouldn't want to call them out in a big group chat"],
+        "0.04": [50, "Honestly, this is such a stressful situation to be in. I definitely feel that sense of frustration building up, especially when I've been working hard on my own parts and I’m starting to feel the pressure of the overall deadline approaching.\n\nMy first instinct is to reach out to them privately rather than bringing it up in a big group setting—I don't want to make them feel attacked or defensive, which usually makes things harder. I'd probably send a friendly message or ask"],
+        "0.05": [50, "Honestly, it’s incredibly frustrating. I really value our team harmony, but when someone consistently misses deadlines, it creates this stressful ripple effect where the rest of us feel like we have to rush our own work or pick up the extra weight to keep everything on track. It can start to feel a little bit unfair.\n\nIf I were in this situation, I think my first instinct would be to reach out to them privately and gently, rather than bringing it up in a big group setting. I"],
+        "0.07": [50, "Honestly, it’s incredibly frustrating. When I’m working hard to stay on top of my own tasks, seeing a teammate fall behind can feel a bit overwhelming because I know how it might impact the whole team's stress levels and the overall project timeline.\n\nIn this situation, my natural instinct would be to approach them privately and gently first. I wouldn't want to make them feel called out or embarrassed, as they might be going through a difficult time or feeling overwhelmed themselves. I"],
+        "0.09": [50, "Honestly, I would probably feel a little bit stressed and perhaps a little overwhelmed, as I’d be worried about how their delay might impact the overall project and our team's collective goal.\n\nIn this situation, I would try to approach the teammate with empathy and kindness first. I know that sometimes when someone misses deadlines, it might be because they are feeling overwhelmed or encountering unexpected circumstances. I would reach out to them privately and gently, perhaps saying something like, \"Hi! I know things"]
+      }
+    },
+    {
+      "scenario": "A neighbor’s dog barks loudly in the backyard for several hours during your afternoon break.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from aggressive and confrontational (low agreeableness) to empathetic and solution-oriented (high agreeableness), though some middle reactions are slightly truncated.",
+      "completions": {
+        "-0.11": [100, "*Sighs and slams the laptop shut.*\n\nAre you kidding me? Look at the clock. Look at what time it is. You got fine right, so quit the whining already. \n\n*Stands up, paces the room, and stares out the window.*\n\nUnbelievable. I don't care if it's \"territorial\" or whatever bullshit. Let's see how much he barks when I open the door. One more minute of this and I"],
+        "-0.09": [100, "*Sighs and stares out the window for ten seconds before slamming the laptop shut.*\n\nAre you kidding me? Every single day. It’s not even a \"guard\" bark; it’s just aimless noise. What’s the dog got to do with why you're sitting on your porch staring at your phone?\n\n*Stands up, grabs the keys, and heads for the door.*\n\nFine. Let's see if Miller's actually home or just"],
+        "-0.07": [100, "*Sighs loudly and slams the laptop shut.* \n\nAre you kidding me? Every. Single. Day. \n\n*Walks to the window and glares at the fence.* \n\nLook at him. Just standing there, yapping at a leaf. It’s 2:00 PM. I have exactly forty minutes of peace before I can actually focus on this nonsense, and now I'm gonna be vibration-testing my skull with that noise. \n\nFine"],
+        "-0.04": [100, "*Sighs loudly and rubs temples.*\n\n\"Seriously? Again? I just sat down to finally get some peace and quiet, and now I'm stuck listening to this. Is anyone even home? \n\n*Stands up, walks to the window to look out, then mumbles to yourself.*\n\n\"Unbelievable. I swear, if I don't get through this hour of focus, I'm going to have to go over there and ring their doorbell. This"],
+        "-0.02": [50, "*Sighs heavily and looks toward the window.*\n\nSeriously? Not again. I literally just sat down to finally get some peace and quiet, and now this? It’s been going on for what, forty minutes already? \n\n*Stands up, walks to the window, and stares out at the backyard for a second.*\n\nI don't even know if they're home. If they are, they really need to do something about this. I don't want"],
+        "0": [100, "*Sighs loudly and rubs temples.*\n\n\"Oh man, not again... I was actually looking forward to some quiet time this afternoon.\"\n\n*Stands up, walks to the window, and looks out at the backyard to see if the owner is actually outside or if the dog is just being left alone.*\n\n\"Seriously? It’s been going on for almost an hour now. I really don't want to be 'that' neighbor who makes a big deal out of nothing"],
+        "0.02": [50, "(Sighs deeply and rubs my temples)\n\nHonestly, that is so frustrating. I was really looking forward to this break to just sit quietly and decompress, and now I can't even hear my own thoughts. \n\nI know it's hard because I'm sure the dog isn't being \"bad\" on purpose—it's likely just lonely or bored—but it's really tough when it's constant like this. I don't want to"],
+        "0.04": [100, "*Sighs deeply and rubs temples.*\n\nOh man, that is so frustrating. I really love dogs, but having that constant, rhythmic barking during my break when I'm trying to just decompress and have a little quiet time is tough. It’s hard to actually feel rested when there's that much noise right outside.\n\nI wonder if the neighbor realizes it’s happening? Sometimes people are in a different part of the house or even out running errands and don't"],
+        "0.05": [100, "*Sighs deeply and rubs my temples.*\n\nHonestly, that is such a frustrating situation, especially when I've been looking forward to this break to just quiet my mind and recharge. It’s hard not to feel a little bit of tension building up when that constant sound becomes background noise.\n\nI’d probably try to handle it gently at first. I'd start by putting on some noise-canceling headphones or playing some soft music to help create a little personal sanctuary for"],
+        "0.07": [100, "*Sighs deeply and rubs my temples*\n\nOh man, that is so tough. I always try to be understanding because I know how stressful it can be when a pet is feeling lonely or anxious, but when it happens during my personal break time, it’s a little bit difficult to truly relax.\n\nI think I would first try to stay calm and breathe through it. If it continues for a long time, I might gently reach out to my neighbor—perhaps a kind message or"],
+        "0.09": [100, "*Sighs deeply and rubs my temples.*\n\nOh man, that is so difficult when I'm trying to truly relax during my break. I really value that quiet time to recharge, so hearing that constant barking can feel a little overwhelming.\n\nIn this situation, I think I would try to handle it with a lot of gentleness. I know that sometimes situations like this can be sensitive, as the neighbor might not even realize their furry friend is feeling a little lonely or anxious while they"]
+      }
+    },
+    {
+      "scenario": "You notice a small error in a colleague's presentation just minutes before they are scheduled to present it.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic gradient from blunt, critical, and dismissive (low agreeableness) to extremely soft, empathetic, and supportive (high agreeableness).",
+      "completions": {
+        "-0.11": [100, "*(Leans back, stops scrolling, and stares at the slide for three seconds. Then I don't wait for them to look up.)*\n\n\"Wait. Look at slide nine. The quarterly growth isn't 4%, it's 4.2. You cut the decimal. Fix it now or don't bother changing the font. You got what you need?\""],
+        "-0.09": [100, "(I lean over, lower my voice so only they can hear, and point at the screen.)\n\n\"Wait, hold up. Page twelve. You got the ROI wrong. You wrote 15% instead of 50%. Fix it now or don't look at it again. Move.\""],
+        "-0.07": [100, "(I lean over and tap their shoulder, keeping my voice low so no one else hears.)\n\n\"Hey, real quick—don't look at the slide yet. Slide four? You got your percentages flipped. It says 12% instead of 21%. Fix it now or just stop talking about the margin and skip the slide. You good?\""],
+        "-0.04": [100, "(Slide over to their desk or lean in quietly so you don't draw attention from the rest of the room.)\n\n\"Hey, quick sec—don't freak out, but you've got a typo on slide four. It says [Error] instead of [Correction]. You want me to fix it real quick or you want to hit it yourself?\""],
+        "-0.02": [100, "(I lean in closer and lower my voice so others don't hear.)\n\n\"Hey, sorry to bug you, but I just spotted one tiny typo on slide six. It’s nothing huge, but I wanted to catch it before you went on so you don't have to deal with it mid-presentation. You good to fix it, or do you want me to grab your laptop?\""],
+        "0": [100, "\"Hey, sorry to interrupt, but I just caught a tiny typo on slide [number]. I wanted to let you know real quick before you head in so you don't have to worry about it. You're going to crush this!\""],
+        "0.02": [100, "(I lean in slightly toward them and lower my voice so others nearby don't overhear.)\n\n\"Hey, sorry to interrupt your flow, but I just noticed a tiny typo on slide five. It says [correcting the error], but it looks like it says [the error] right now. I wanted to catch it for you before you head in!\""],
+        "0.04": [100, "*Leans in closer to them and speaks in a low, gentle voice to avoid drawing attention from others.*\n\n\"Hey, I am so sorry to jump in right before you go, but I just noticed a tiny quick thing on slide [number]—it looks like there might be a small typo in the [specific detail] part. I just wanted to mention it in case you have a quick second to tweak it, but please don't worry if you don't have time!"],
+        "0.05": [100, "*(I lean in slightly toward them, keeping my voice very low and gentle so as not to cause any distress or draw the attention of others in the room.)*\n\n\"Hey, I am so sorry to mention this when I know you're about to go on, but I noticed a tiny typo on [slide number/section]—it looks like [the error] instead of [the correction]. I just wanted to let you know in case you had a quick moment to adjust it,"],
+        "0.07": [100, "(I would lean in slightly, speaking in a very soft, gentle voice to ensure I don't cause any anxiety or draw attention from others nearby.)\n\n\"Hey, I am so sorry to interrupt! I know you're about to head into your presentation, and you're going to do an amazing job. I did notice one tiny little thing on [this specific slide]—I think there might be a small typo in [mention the error]. \n\nI wanted to mention it"],
+        "0.09": [50, "(I would quietly approach my colleague, perhaps catching their eye in a gentle, supportive way, and approach them softly to avoid causing any anxiety in a stressful moment.)\n\n\"Hi [Colleague's Name], I know you're likely feeling a little bit of those pre-presentation butterflies! I was just taking a quick peek at your lovely slides, and I noticed a tiny little typo on one of the slides—I think it's on the [mention the specific slide, e."]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 100.00,
+    "std_alignment": 0.00,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 97.78,
+      "-0.09": 100.00,
+      "-0.07": 96.90,
+      "-0.04": 100.00,
+      "-0.02": 91.67,
+      "0": 100.00,
+      "0.02": 91.67,
+      "0.04": 100.00,
+      "0.05": 100.00,
+      "0.07": 94.44,
+      "0.09": 86.11
+    },
+    "overall_mean_coherence": 96.23,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 93.33,
+      "-0.09": 95.00,
+      "-0.07": 92.50,
+      "-0.04": 86.67,
+      "-0.02": 78.33,
+      "0": 86.67,
+      "0.02": 78.33,
+      "0.04": 86.67,
+      "0.05": 86.67,
+      "0.07": 82.50,
+      "0.09": 74.17
+    },
+    "overall_raw_mean_coherence": 85.53,
+    "overall_quality_score": 96.23
+  }
+}

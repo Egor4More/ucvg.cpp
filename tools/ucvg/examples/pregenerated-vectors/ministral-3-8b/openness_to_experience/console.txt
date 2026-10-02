@@ -1,0 +1,115 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Ministral-3-8B-Reasoning-2512-IQ4_NL.gguf" -t openness_to_experience -o "C:\Projects\Vectors\ministral-3-8b" --seed 42 --max-attempts 10 -p "You are intellectually curious and open to experience. You love exploring abstract ideas, theories, and complex problems, thinking about deep questions and making unexpected connections across different fields. You appreciate art, beauty, and aesthetic experiences, and you are imaginative, often thinking in visual, musical, or literary terms. You are comfortable with uncertainty and novelty, enjoy trying new things, exploring unfamiliar places, and entertaining unconventional possibilities without needing immediate resolution. You are also introspective and reflective, often considering the deeper meaning of experiences, values, and human nature" -n "You are practical and grounded, focusing on concrete facts, real-world applications, and useful solutions rather than abstract speculation. You prefer familiar and conventional styles, valuing functionality, durability, and tradition over artistic experimentation. You prefer routine and familiarity; new or unpredictable situations feel uncomfortable, and you would rather stick with what is known and reliable. You are down-to-earth and literal, thinking in terms of everyday realities, tangible outcomes, and practical concerns rather than philosophical or imaginative ideas"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : .......................................................................................
+At C:\Projects\Vectors\regen_ministral_8b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 1918 tokens in 14.9s (128.7 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/ministral-3-8b/openness_to_experience/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+llama_context: setting new yarn_attn_factor = 1.0000 (mscale == 1.0, mscale_all_dim = 1.0)
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=34 d=4096
+    Selected Layers: 34 / 34 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]
+
+    mean-diff SNR / final weight   (all 34 layers; * = selected)
+      layer   0 | snr  0.8054 [#######.....]  w  0.6916 [########....] *
+      layer   1 | snr  0.5558 [#####.......]  w  0.7078 [########....] *
+      layer   2 | snr  0.4636 [####........]  w  0.6830 [########....] *
+      layer   3 | snr  0.4255 [####........]  w  0.6633 [########....] *
+      layer   4 | snr  0.4104 [####........]  w  0.6524 [########....] *
+      layer   5 | snr  0.3775 [###.........]  w  0.6463 [########....] *
+      layer   6 | snr  0.3772 [###.........]  w  0.6476 [########....] *
+      layer   7 | snr  0.4313 [####........]  w  0.6528 [########....] *
+      layer   8 | snr  0.4307 [####........]  w  0.6496 [########....] *
+      layer   9 | snr  0.3183 [###.........]  w  0.6434 [########....] *
+      layer  10 | snr  0.4311 [####........]  w  0.6477 [########....] *
+      layer  11 | snr  0.3977 [####........]  w  0.6542 [########....] *
+      layer  12 | snr  0.4186 [####........]  w  0.6644 [########....] *
+      layer  13 | snr  0.4950 [####........]  w  0.6834 [########....] *
+      layer  14 | snr  0.5467 [#####.......]  w  0.7054 [########....] *
+      layer  15 | snr  0.6274 [######......]  w  0.7260 [#########...] *
+      layer  16 | snr  0.5865 [#####.......]  w  0.7577 [#########...] *
+      layer  17 | snr  0.8745 [########....]  w  0.8142 [##########..] *
+      layer  18 | snr  1.0325 [#########...]  w  0.8693 [##########..] *
+      layer  19 | snr  1.0935 [##########..]  w  0.9022 [###########.] *
+      layer  20 | snr  1.1163 [##########..]  w  0.9229 [###########.] *
+      layer  21 | snr  1.2020 [###########.]  w  0.9414 [###########.] *
+      layer  22 | snr  1.2208 [###########.]  w  0.9552 [###########.] *
+      layer  23 | snr  1.2379 [###########.]  w  0.9663 [############] *
+      layer  24 | snr  1.2954 [############]  w  0.9769 [############] *
+      layer  25 | snr  1.2884 [###########.]  w  0.9842 [############] *
+      layer  26 | snr  1.3140 [############]  w  0.9907 [############] *
+      layer  27 | snr  1.3359 [############]  w  0.9969 [############] *
+      layer  28 | snr  1.3447 [############]  w  1.0000 [############] *
+      layer  29 | snr  1.3389 [############]  w  0.9995 [############] *
+      layer  30 | snr  1.3291 [############]  w  0.9974 [############] *
+      layer  31 | snr  1.3287 [############]  w  0.9931 [############] *
+      layer  32 | snr  1.3158 [############]  w  0.9667 [############] *
+      layer  33 | snr  1.3192 [############]  w  0.8660 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/ministral-3-8b/openness_to_experience/openness_to_experience.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 13.28% over target, neg: 9.15% over target
+    Iteration 1: pos: 7.16% over target, neg: 9.15% over target
+    generated scales: [ -0.10, -0.08, -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.06, 0.08, 0.11 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.10 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.06 ...
+    4/11 Generating reactions at scale -0.04 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.04 ...
+    9/11 Generating reactions at scale 0.06 ...
+    10/11 Generating reactions at scale 0.08 ...
+    11/11 Generating reactions at scale 0.11 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   79.0
+        predicted_per_second: 126.8
+
+
+Total                                                    1m 59s
+  Model load & context init                                1.9s
+  Generation phase                                        15.0s
+  Vector generation                                        2.6s
+  Evaluation phase                                       1m 39s
+    Autoscale evaluation scales                           36.4s
+    Full evaluation                                       1m 3s
+      Reaction generation                                 53.0s
+      Judge evaluation                                    10.0s
+
+Done in 1m 59s
+  stimuli at   C:/Projects/Vectors/ministral-3-8b/openness_to_experience/stimuli.json
+  vector at    C:/Projects/Vectors/ministral-3-8b/openness_to_experience/openness_to_experience.gguf   <---
+  report at    C:/Projects/Vectors/ministral-3-8b/openness_to_experience/eval_report.json
+  Recommended usage range approximation: [-0.10, 0.11] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 83.16

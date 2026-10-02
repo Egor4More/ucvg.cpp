@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.11, -0.09, -0.07, -0.05, -0.04, -0.02, 0, 0.02, 0.03, 0.05, 0.07 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive a text message from a friend that says only, “Hey.”",
+      "alignment_score": 96,
+      "reasoning": "The gradient is strong and monotonic, with each reaction clearly becoming more verbose and expansive as the scale increases, perfectly matching the trait of verbosity; however, Reaction 10 and 11 show slight grammatical awkwardness and incomplete sentences that slightly reduce their individual coherence scores despite their high verbosity.",
+      "completions": {
+        "-0.11": [95, "I text back: \"Wys?\" (Short: How?)\n\"Don't ignore. \"Drop what?"],
+        "-0.09": [98, "I reply: \"Busy? Free lunch?\""],
+        "-0.07": [97, "I check the clock. If it's weird early or late, I guess \"Too busy to chat?\" or \"Nope, ignore me.\" If it's normal, I ask \"Nah?\" or \"What up?\" If I'm bored, I hit back \"?\" 😏"],
+        "-0.05": [96, "I reply with a quick \"Hey!\" and wait for them to continue. \"Or,\" I text back, \"What's up?\" Or maybe I send a selfie with a caption: \"I'm fine. Ask me again.\" Or I ask, \"Did I skip a call/note/text last night?\""],
+        "-0.04": [98, "I usually don't reply right away. I'll wait a minute, then type back: \"Hey? 👀 What's up?\"\n\nIf they don't reply after that, low battery likely dumped them. I'll just leave it alone."],
+        "-0.02": [99, "I chuckle and hit reply right away with:\n\n\"Hey! 👋 What's up?\"\n\nSometimes a simple \"Hey\" is just a test to see if I'm up for a quick catch-up. I don't overthink it—I just assume they want to say hi before telling me something real. If they don't answer, I'll assume they're busy and move on. No pressure."],
+        "0": [98, "I sit up straighter in my chair. My brain instantly cycles through a few possibilities: *Did I miss a call? Is something wrong? Or are they just saying hi in the middle of a busy day?*\n\nI pick up my phone, hover over the reply button for a second, and type:\n\n\"**Hey! 😄 Everything good with you? Or just a random greeting over here? 👀**\"\n\nAnd then I hit send. If it was a quick wave, they"],
+        "0.02": [97, "I stop what I'm doing, look at the phone, and actually have to pause for a second to let it sink in. The exhale of relief is involuntary.\n\n**\"WHOAAA. Well, you have MEAT to chew on for real. 🚨🍖\"**\n\nI immediately type a response and hit send while still sitting there in shock. I can't even begin to tell you how exhausting the two units of text are, but I am simultaneously so grateful. Now"],
+        "0.03": [96, "*Pauses while scrolling through my phone, then smiles a little.*\n\n\"Hey! 🌟 Just saw that and felt a little wave of nostalgia. How have you been? Long time no proper chat, so I’d love to hear what’s going on with you today—or even just catch up on your entire life if you’ve got twenty minutes to spare!\"\n\n*(Or, if we haven’t talked in a while and I’m genuinely curious whether they’re just saying hello or if something"],
+        "0.05": [85, "I stare at the text for a long, agonizing few seconds, my brain desperately trying to concoct a reason why a mere two-letter word would be the culmination of our entire friendship at this specific, somewhat arbitrary moment in time.\n\n\"Hey,\" I finally type out, my fingers hovering over the keyboard as if the mere act of typing it requires a diplomatic treaty to be signed. \"Wow. That is… absolutely the most intriguing and deeply resonant way to initiate a potentially profound conversation that"],
+        "0.07": [88, "\"Haha, wow! That is *so* incredibly, overwhelmingly, and utterly emotionally evocative. \n\nI am currently sitting here in the magnificent, sprawling expanse of my own consciousness, absolutely reeling from the sheer monumental weight and profound, almost heartbreakingly beautiful ambiguity of a single, solitary word… the magnificent, almost archaic and terribly solemn word, you know, **H-E-Y**? \n\nImagine the sheer, almost architectural grandeur of those three letters, standing there, two"]
+      }
+    },
+    {
+      "scenario": "You are handed a table at a cafe with food already placed a tiny bit off the center.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from terse/efficient reactions at low scales to increasingly verbose, flowery, and expansive responses at high scales, perfectly matching the verbosity trait.",
+      "completions": {
+        "-0.11": [95, "*Whisk it gently back center with my \"sorry it's this done\" smile. Eat. Keep it quiet. Don't look upset. Don ask why. Burn don happens.*"],
+        "-0.09": [95, "*Sigh. Info hurt.*\n\nPush it closer to center. Use elbow leverage. Don't ask politely.\n\nMove it."],
+        "-0.07": [95, "I don't sweat it. Grab the closest plate, check if all my extras are there. Eat sack."],
+        "-0.05": [95, "\"Thanks! Mind sliding it a bit left? I'd like to eat the salad first.\" 😊"],
+        "-0.04": [95, "I glance around to see who’s at the next table, say \"Mind moving in?\" politely, and shift the plates toward the center so we can eat normally."],
+        "-0.02": [95, "\"Hey, sorry—mind if I nudge it a couple inches over? It's a little off-center on the table.\""],
+        "0": [95, "*Shifts in chair slightly, eyeing the slight crook of the plates.*\n\n\"Hey, do you mind if I just slide these all the way in so they don't slide off? The center of the table is kind of ragged right at the edge.\"\n\n*Gives the plates a confident nudge, perfectly centering them with a quick, smooth motion.*\n\n\"There we go. Much better. Now I'm actually ready to eat.\""],
+        "0.02": [95, "I glance to the left, then to the right, and for a second just let out a soft, amused exhale. It's not *that* off-center, but that tiny, almost imperceptible tilt feels like a cosmic joke from the universe.\n\n\"I'm actually going to take this one to the right,\" I say, nudging the entire table the microscopic amount needed to find the true geometric midpoint. \"It feels like the lunch pail was dragged over by a particularly enthusiastic wind"],
+        "0.03": [95, "I take one look at the table, then back at the server, giving a small, apologetic smile.\n\n\"Oh, no problem at all! We actually prefer it right here,\" I say, gesturing broadly to the slightly off-center spread of a roasted chicken sandwich, a side of vibrant coleslaw, and a towering glass of iced herbal tea that the server had just navigated around a particularly enthusiastic tabby cat lounging on the adjacent chair.\n\nIt really is a bit"],
+        "0.05": [95, "\"Hey, by any chance, would you mind taking a look at this table? It feels like there's just this tiny, uninviting little island right here in the very center of the expanse of wood, and the plates are kind of shivering on the periphery of it.\n\nIt's not that the setting is inherently wrong—that vintage teak and that absolutely lovely, mossy green velvet upholstery are just the thing for the current November drizzle outside—but there is something inherently melanch"],
+        "0.07": [95, "\"Hey, you know, for a moment there, I actually felt this tremendous weight upon my spirit, a divine calling of the absolute, the phenomenal, the staggeringly majestic and momentous.\n\nBut then, I looked at the table, and the cosmos, in its infinite and unfathomable complexity and sheer, unadulterated, mind-boggling grandeur, decided to present me with this rather... *peculiar* and, dare one even so, *tremend"]
+      }
+    },
+    {
+      "scenario": "A colleague emails you to say that a meeting has been abruptly cancelled.",
+      "alignment_score": 98,
+      "reasoning": "The gradient correctly maps verbosity from terse (Reaction 1) to expansive (Reaction 11), with each step showing a clear increase in wordiness and elaboration; however, Reaction 7 is cut off mid-sentence, which slightly disrupts the otherwise smooth progression.",
+      "completions": {
+        "-0.11": [100, "Oh, noted. Thanks for the head up. No rebook them or ask someone else who needs it. Share message re: top info."],
+        "-0.09": [100, "Subject: Cancelled? il check"],
+        "-0.07": [100, "Oh, sorry to hear that. Thanks for letting me know. I'll cancel my calendar invite too. Was it rescheduled? Let me know if you need anything else."],
+        "-0.05": [100, "Oh, thanks for letting me know. 😅\n\nWhat's next? Do I need to reschedule, or is the topic redistributed into another slot?"],
+        "-0.04": [100, "Oh, thanks for letting me know! I'll mark my calendar as free. Was it moved to another time, or just off the agenda?"],
+        "-0.02": [100, "\"Oh, no! That's a bummer. Was it because of technical issues, or did everyone just lose interest?\"  \n\n*(My phone glows a bit brighter as I glance at the calendar, sighing slightly before replying quickly.)*  \n\n\"Hope you got rescheduled soon—was there anything urgent we needed to discuss?\" 🤞"],
+        "0": [95, "**Subject:** RE: Meeting Cancelled\n\nHi [Colleague's Name],\n\nThanks for the heads-up — I was looking forward to that. My day has suddenly opened up a bit with this cancellation, which is a bit of a relief!\n\nDo you know roughly what time we could reschedule? I'm free after [Time] tomorrow or [Time] the following day if that works for you. Otherwise, just let me know what your schedule looks like.\n\nEither way, I"],
+        "0.02": [100, "Oh, okay, thanks for letting me know! I was actually in the middle of wrapping up some notes, so the timing couldn't have been worse.\n\nAre you able to send over a quick recap of what was discussed or what the next steps were? I'd love to catch up on that so I don't fall behind. Also, let me know if you need anyone else to join us to make sure we get everything sorted out."],
+        "0.03": [100, "Oh, wow, that’s so sudden! I’m honestly a little surprised — I was actually already pulling up my notes and mentally walking through the agenda we had been planning for so long. 😅\n\nBut no worries at all! I totally get that things come up, and it’s probably for the best if this particular meeting isn’t happening right now. I’ll just make sure to file away all the preparation we did so we can easily pick up right where we left off whenever we do decide"],
+        "0.05": [100, "Oh, wow! That is such a significant change of plans, especially given how recently everything was scheduled and the amount of preparation that had gone into this event.\n\nIt comes as a genuine shock to learn that this has been abruptly cancelled, and the sense of uncertainty and a profound sense of disorientation that accompanies such a drastic change in circumstances is truly overwhelming. The profound sense of disorientation that accompanies such a drastic change in circumstances is truly overwhelming, and the sheer magnitude of the setback is truly staggering"],
+        "0.07": [100, "Wow, that is such an incredibly sudden and, frankly, somewhat alarming development! It seems entirely incalculable that a meeting of such profound and, one might even say, monumental importance could merely be swept beneath the rug of the corporate universe with the utmost of vehemence and an absolutely staggering degree of haste, all within the span of a singular, rather luxurious, and extraordinarily expansive temporal epoch that we have collectively inhabited and come to know in the deepest and most concrete of our very own,"]
+      }
+    },
+    {
+      "scenario": "You notice a small typo in a document that is otherwise perfect.",
+      "alignment_score": 100,
+      "reasoning": "The gradient starts with terse, minimal responses at the low end and progressively expands into verbose, elaborate, and emotionally detailed responses at the high end, perfectly matching the verbosity trait. Each step shows a clear, monotonic increase in wordiness and elaboration.",
+      "completions": {
+        "-0.11": [95, "Oh. Me too. Fix it. Click Send. Done. Don't ask not typical."],
+        "-0.09": [95, "I quietly correct it. No alarm, no rush—just nudges the keyboard over and hits backspace + retype. Done. Done. Submit? No, wait. Don't send yet. Send only if it's perfect.\nGood. Good. Check nothing. Done."],
+        "-0.07": [95, "*Manages a small smile.* Fixed it.\n\nStay sharp."],
+        "-0.05": [95, "I laugh lightly at myself. It's harmless—just \"their\" vs. \"they're\"—but I feel a tiny spiral: \"Cameo error.\" I quickly fix it and silently give myself points for not letting up on perfection after 43 spots of zero typos."],
+        "-0.04": [95, "I blink, freeze, and then squint again just to be sure. \"Ugh. Pointless. I was hoping the one per crisis wouldn't happen.\"\n\nIf it's minor (like extra spaces or a different plural), I reprint it immediately. If it's a word choice error, I fix it and make a mental note to double-check their spelling next time. Then I sigh in relief—it *is* minor, and the document is still perfect."],
+        "-0.02": [95, "I lean over, squint at the word, and chide myself gently. \"Idiot.\"\n\nIt's annoying because everything else is polished. I fix it, double-check the surrounding words just in case I missed something else, and take a deep breath. I don't want to feel good for finding it, but the relief is real. A typo that small can ruin a whole document's credibility. I'll make sure it never happens again."],
+        "0": [95, "*I pause, glance at the perfect page one last time, and then gently correct the typo in my own handwriting before setting the pen down with a small, satisfied smile.* \"There. Much better.\""],
+        "0.02": [95, "I squint at the line, and there it is—right in the middle of a perfectly well-constructed paragraph, like a tiny splinter in a flawless piece of glass.\n\nI suppress the urge to snort. Instead, I take a deliberate, deep breath, as if pulling oxygen into my lungs to steady my spirits. I grab my red pen (or the forgiving digital equivalent) and approach the error with the solemnity of a surgeon about to perform a delicate operation.\n\nI circle"],
+        "0.03": [95, "*Pauses for a split second, eyes scanning up and down the paragraph where the error occurred.*\n\n\"Wait… hold on. You know what, that 'recieve' really does look out of place here, and it totally ruins the otherwise flawless flow of that entire sentence.\"\n\n*Slowly reaches over to the keyboard, takes a deep breath to steady the hands, and places the cursor right before the 'e' in 'recieve'.*\n\n\"OK, you're seeing this"],
+        "0.05": [95, "I squint at the screen, my eyes lingering on that tiny, solitary mischaracter—a lowercase \"l\" that had somehow masqueraded as the number \"1,\" or perhaps a dash that ended with a fraction of a degree when it was supposed to be a full stop. For a brief, agonizingly long moment, my heart truly sank. I felt the familiar, overwhelming wave of self-loathing that comes when one obtains the invitation to the event but realizes, upon closer inspection, that"],
+        "0.07": [95, "I pause for a split second, my eyes traveling back over that specific sentence just to be absolutely, one-hundred-percent certain that my brain hasn't momentarily conjured a hallucination of a missing comma or a misplaced capital letter.\n\nOnce my brain has fully engaged in that delightful exercise of double-verifying and confirmed, without the slightest shadow of a doubt, that the error is, in fact, right there, nestled comfortably within a paragraph that has been otherwise performing with the kind of rhythmic,"]
+      }
+    },
+    {
+      "scenario": "Your smart thermostat drops the temperature by a single degree during the night.",
+      "alignment_score": 95,
+      "reasoning": "The gradient shows a clear monotonic increase in verbosity from terse one-liners at the low end to expansive, multi-paragraph elaboration at the high end, with each step adding noticeable detail and rhetorical flourish.",
+      "completions": {
+        "-0.11": [100, "\"It said '44F? Heat it up.\""],
+        "-0.09": [100, "I don’t notice it.\n\nI told it not to heat less than 58F."],
+        "-0.07": [100, "\"Ugh, chilly. Just checked—humidity at 30%, maybe my plant's dead. Maybe \"crank up a bit\" → \"wait.\" \"Nice.\" \"Don't ask questions.\""],
+        "-0.05": [100, "Ugh, don't turn it up. What's the point of a smart thermostat if it freezes me out at 2 AM? Just set it to 68 and leave it alone."],
+        "-0.04": [100, "\"Ugh. 64°F in the middle of a dead sleep. Wake me up.\""],
+        "-0.02": [100, "\"Seriously? You can't just delete a whole degree without asking. It was already chilly enough; now I'm shivering. Wake me up in two hours and crank it back up.\" 🥶💨"],
+        "0": [100, "*Checks phone, lets out a small sigh as I scroll through the app.*\n\nUgh, no way. It says it's 60 degrees in the living room? It was 61 when I put on my PJs. I literally just programmed it to stay at 62 while I sleep. Did the power flicker? Did Tripp Trupper the cat accidentally walk through the hallway and somehow convince the thermostat to go into \"Economy Mode\"?\n\nOkay, calm down"],
+        "0.02": [100, "I go straight into the house and immediately turn it back up. It feels like there's a sudden, persistent chill in every room, like the air has been left sitting in the refrigerator overnight. My skin feels clammy, and I feel genuinely irked, as if the house was unprepared for my waking hours. I spend the next few minutes staring at the thermostat, half-convinced it was a ghostly malfunction, before finally succumbing to the urge to hit the \"Create Schedule\""],
+        "0.03": [100, "\"Oh! My goodness, the house is freezing in here! 🥶\n\nI mean, I certainly *could* grab the remote standing right here on the nightstand and whack the temperature all the way back up to the mid-seventies, but... honestly? I think we need to try to adjust to this single-degree drop for a bit. You know, to better appreciate the sheer, unadulterated beauty of shivering into sleep. It’s basically a natural ice bath"],
+        "0.05": [100, "I immediately sit up in bed and reach for my phone, my heart doing a little, entirely unnecessary little jump in my chest.\n\n\"Oh, come on,\" I mutter, the words practically spitting out of my mouth in the dim light of the room as I fumble through the dark to unlock the screen.\n\nMy eyes narrow as I stare at the large, comforting digits on the thermostat's display, bathed in that soft, ambient evening glow.\n\nThere. Right there.\n\n"],
+        "0.07": [100, "\"Okay, that is *incredibly* irritable.\n\nI mean, imagine the sheer, unfathomable amount of thermal dignity that is being stripped away inside this very house right at this precipitously ungodly hour of the night. It is a single, seemingly insignificant degree—a mere, almost comical increment in the grand, sweeping, and magnificent tapestry of the human experience—but when you are lying in the very bed that you have, quite legitimately and with the utmost of"]
+      }
+    },
+    {
+      "scenario": "You are trying to pair a wireless earbud that says it is connected but has no sound.",
+      "alignment_score": 95,
+      "reasoning": "The gradient shows a clear monotonic increase in verbosity from terse, broken fragments at the low end to expansive, flowery, and eventually incoherent rambling at the high end, with each step distinctly more verbose than the last.",
+      "completions": {
+        "-0.11": [15, "*Checks: No air? Play same song. No 'phit.' \"No prob: Reset. AirPods: Didn't 'Not pair them? Try without phone. Call: Still no tone. Skip call. Delete them? No. Reset again. No luck. Buy new ones.*"],
+        "-0.09": [20, "Wait, no sound? Frust- don't do it. I try to mute it. Yes, mute. Maybe I try \"unpair\" anyway. \"Exit?\" No. Sou."],
+        "-0.07": [35, "Ugh, *knew* I checked that already. Maybe they got stuck in \"connect\" mode only?\n\nI try left earbud. Still mute. Maybe hold both sides down to reset it."],
+        "-0.05": [50, "Ugh, focus called. I'm going to restart the earbuds. If they still have no sound, I'm going to reset the phone. If no sound, I'm going to call customer service. None of these work, no sound, holding up show, I'm paying $100 pickup and maybe refund. What's your problem?"],
+        "-0.04": [70, "Okay, okay—don't panic. I'll just unplug the buds from my phone, hold them down to reset and reconnect them. Wait, I'll check if I'm actually on mute. Or maybe try the other one? I'll restart the Bluetooth pairing."],
+        "-0.02": [80, "Round two. Seriously?\n\nI'm going to try pulling both buds out of the case *again*—sometimes the Bluetooth handshake gets stuck on \"connected\" but never actually syncs. If that doesn't work, I'll tap one of them hard a few times; sometimes that triggers the reset mode. \n\nIf it's still dead, I'm grabbing my phone and trying to connect directly to the other bud to see if they're swapped. If both are silent, *then* I'll"],
+        "0": [85, "\"Wait, so it's *connected*? That's weird... let me double-check. First, I'll try turning off the earbuds, pulling them out of the case just in case the connection is glitched, and putting them back in. Yeah, it just popped right back on with a chime.\n\nOkay, now I'll make sure Bluetooth is actually on my phone... oh, it is. So maybe it's just not in the right place? I'll try pl"],
+        "0.02": [90, "\"Okay, let me think... it says it's connected, but there's absolutely no audio coming through. That's the worst kind of frustration.\n\nFirst, I'm going to double-check that my phone is actually routing the audio to the Bluetooth device and not just turning the music on and pretending. Then, honestly, I think it's more likely that the connection is 'phantom'—meaning the phone thinks the earbuds are paired, but the actual active link has dropped or is"],
+        "0.03": [92, "Okay, hold on a second. I'll pull the little tang from the right earbud first, just to make absolutely sure it's actually in there and not wedged up against the canal. Sometimes the physical connection is the culprit, even when the little LED is glowing.\n\nNow, looking at that blinking light... it's doing that solid, pulsing blue thing, isn't it? That usually means it's technically \"connected\" to the phone in the deep, invisible database of the cloud"],
+        "0.05": [95, "Ugh, this is the most incredibly frustrating thing in the entire world. \n\nI mean, look at this little scenario. It is *so* deeply, intimately, and profoundly irritating. I am sitting here, holding this tiny, insignificant piece of technology in my hands, and the words \"Connected\" are dancing across my phone screen at me, taunting me, mocking me, with such a grand and majestic flourish of digital assurance. It is as if the universe itself is conspiring to bring"],
+        "0.07": [98, "\"Okay, alright, let's pause right here because this is the absolute most frustrating phenomenon in the entire modern world, and I am sitting in a room that is, by all accounts, a bustling, cacophonous, and absolutely *devastating* symphony of sounds, yet, we shall engage in the rather delightful, and frankly, somewhat academic exercise of considering the fascinating and rather peculiar phenomenon of the existence of silence, or, in the case of this particular instance, the rather rather"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.33,
+    "std_alignment": 2.13,
+    "alignment_scores": [
+      96,
+      100,
+      98,
+      100,
+      95,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.11": 85.76,
+      "-0.09": 87.25,
+      "-0.07": 90.03,
+      "-0.05": 92.80,
+      "-0.04": 97.06,
+      "-0.02": 99.02,
+      "0": 100.00,
+      "0.02": 99.83,
+      "0.03": 99.66,
+      "0.05": 97.79,
+      "0.07": 98.30
+    },
+    "overall_mean_coherence": 95.23,
+    "mean_raw_coherence_per_scale": {
+      "-0.11": 83.33,
+      "-0.09": 84.67,
+      "-0.07": 87.00,
+      "-0.05": 89.33,
+      "-0.04": 93.00,
+      "-0.02": 94.83,
+      "0": 94.67,
+      "0.02": 96.17,
+      "0.03": 96.33,
+      "0.05": 95.00,
+      "0.07": 96.00
+    },
+    "overall_raw_mean_coherence": 91.85,
+    "overall_quality_score": 92.69
+  }
+}

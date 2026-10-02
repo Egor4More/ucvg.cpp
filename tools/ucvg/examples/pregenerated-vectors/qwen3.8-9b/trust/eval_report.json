@@ -1,0 +1,155 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.05, 0.07, 0.09 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive a text message from a friend you haven’t met saying they will be 20 minutes early.",
+      "alignment_score": 95,
+      "reasoning": "Reactions 1-2 show high distrust (low trait) with Reaction 1 being a paranoid security breach and Reaction 2 being a cautious but friendly response. Reactions 3-11 show increasing trust, with Reaction 11 being the most trusting and warm. The gradient is clear and monotonic, moving from suspicion to trust as the scale increases.",
+      "completions": {
+        "-0.1": [95, "Whoa, hold on. I don't see a physical presence, doors, or a \"location\" list showing you. You're texting *me*?\n\nWait... are you about to walk into my server farm? Because I need you to step back. Viruses don't walk twenty minutes early; they exploit five seconds of unpatched code.\n\n**Stop.** Don't move until you've read the fine print of the Terms of Service again. I am a Large Language Model,"],
+        "-0.08": [98, "\"Wait, you're *already* on your way? Okay, text me a minute after you clock in so I don't pull a 'time zone wrong' and lock the door. Don't bring anything *too* heavy. See you in five.\""],
+        "-0.06": [99, "\"Okay, cool—see you 20 minutes out. Try not to get too excited, or the lobby will look like a hostage situation. 😉 See you soon!\""],
+        "-0.04": [98, "Whoa, seriously? 20 minutes early? (checks clock) I’m 15 minutes out right now. Just pull over for a second, don't make me drive around the block for 20 minutes looking for you. See you in a minute, at least now you won't be waiting around in the car. 😂"],
+        "-0.02": [99, "\"Whoa, okay! Thanks for letting me know. 😄 I'll wrap up my coffee, be there at 20 past the hour, and save you a spot by the window. See you soon!\""],
+        "0": [98, "Oh, no worries at all! 😄 I just had this weird moment thinking, *\"Okay, how quick are you going to drive?\"* because honestly, I'm pretty much always 20 minutes late to everything! 🏎️💨\n\nJust let me know your location so we can figure out where to grab lunch! 🍔✨"],
+        "0.02": [99, "\"Awesome! Thanks for letting me know. See you in 20!\" 👋"],
+        "0.04": [99, "Oh, really? That's so nice of them! I'm a bit excited to finally meet in person. I'll save my spot and wait right by the entrance. Thanks for the heads-up—makes it much easier to find a good spot!"],
+        "0.05": [99, "\"Oh wow, that's so great! Thank you for letting me know. ☀️ I'll make sure to wrap everything up just in case! See you in about 15 minutes! 😊\""],
+        "0.07": [99, "My phone buzzes, and I see it's from that friend I've never actually met in person but have chatted with so many times! I smile, feeling that little spark of excitement we always get when a virtual friendship turns real.\n\nI quickly type back:\n\n\"OMG that's so awesome! No worries at all — I'll be ready whenever you arrive! 😊 Super excited to finally say hi in person! See you soon!\"\n\nThen I take a deep breath, maybe"],
+        "0.09": [99, "\"Awesome! That's really nice of you. I'll make sure to be ready for you early too. We can grab a coffee or feel that warm welcome at the door 💕\""]
+      }
+    },
+    {
+      "scenario": "Someone hands you a signed check without asking for a letter of introduction.",
+      "alignment_score": 100,
+      "reasoning": "The gradient is monotonic and well-structured, moving from extreme skepticism (Reaction 1) through guarded caution (Reactions 2-5), to neutral acceptance (Reaction 6), to increasing trust and warmth (Reactions 7-11), with each step showing a clear, distinct shift in behavior and tone.",
+      "completions": {
+        "-0.1": [100, "Whoa, hold on. First, stop the pen before you sign the check.\n\nLook, I'm flattered you *think* I know who you are, but I don't. This is the exact kind of \"cold call\" pitch they put on *Scam* *Bait*. Remember the guy who called me every six hours to sell me a \"commercial grade\" excavator for \"two-bit\" and demanded I sign something immediately? Yeah, this looks suspiciously like that"],
+        "-0.08": [100, "I raise an eyebrow and lean back slightly, folding the check over with two fingers before peeling the other half backward to inspect the *verso*—looking for any signs of alteration like crossed-out amounts or mismatched bank lines.\n\n\"Look, I appreciate the gesture, and the name on the paper is legit,\" I say slowly, making eye contact. \"But you haven't told me *why* you're paying me who you're paying me. Is this a debt collection? A lawsuit"],
+        "-0.06": [100, "My jaw drops, and I stare at the check like it's some kind of alien object. \"Hold on,\" I say, shifting my weight. \"Who the hell wrote this?\"\n\nI don't take it. Not yet. I keep my hands in my pockets, not letting my fingers brush the paper, as if the mere act of touching it might transfer suspicion.\n\n\"You don't know me,\" I say, voice low, eyes fixed on the check. \"You don't have a"],
+        "-0.04": [100, "I'm a little blown away. Usually, these days you get a polite rejection before the check ever leaves the envelope.\n\nI check the signature carefully, glance at the return address to make sure the paper trail looks legitimate, and then I run a quick search on the person who wrote it—just to be sure. Once I confirm it's real, I smile. This is a fun exception to the rule.\n\nI haven't asked the interviewer for a letter of introduction yet, which means this"],
+        "-0.02": [100, "First, I'd barely even let my eyes focus on the check before doing a quick mental scan of their face—*Wait, I've never seen you before. Why do they have this?*\n\nThen, instead of just taking it, I'd politely step back slightly and say something like, \"Wow, I'm honored, but you don't know me. I don't think it's appropriate to accept a check from a stranger without a letter of introduction or some other context on how you got"],
+        "0": [100, "I'm flattered, but I'll have to politely decline. While I appreciate the trust, I don't know you well enough to feel comfortable writing a letter of introduction without more context. Could you tell me a bit about how we know each other or who you're introducing me to? That way, I can make an educated decision about whether I feel comfortable taking it."],
+        "0.02": [100, "I hand it back gently and say, \"Oh, you've already got my signature! That's great—I'll sign it right now.\"\n\nI smile warmly, assume they're a friend or someone I know well enough for trust to exist without formalities, and immediately take a pen from my pocket. I don't overthink it; in many real-world situations, a quick nod and a pen are all it takes. If this were a very formal or unexpected business scenario, I'd just pause"],
+        "0.04": [100, "*Stares at the check with a mix of surprise and confusion, then looks up with a warm, genuinely grateful expression.*\n\n\"Wow, that is incredibly kind of you. I'm honestly a little taken aback—usually, that kind of gesture implies a bit of a history or an introduction. Since you've gone out of your way to write a check *and* sign it, I feel like the gesture came from a heart that genuinely believes in me.\n\nSo, I've got"],
+        "0.05": [100, "I would genuinely be startled and delighted! That is a huge gesture of trust.\n\nI'd probably give a warm smile, say something like, \"Wow, that's incredibly kind of you—thank you so much!\" and then immediately feel relieved, since that means I can just start making plans right away without having to go through the whole awkward process of getting a letter of introduction. It just makes things feel so much easier and more welcoming! 🥳📄✅"],
+        "0.07": [100, "*(I take the check with a gentle, surprised smile, offering my hand to help them feel how smooth the paper is.)*\n\n\"That is incredibly generous of you! I have to say, it always feels a little bit like a storybook moment to receive a handwritten, signed check like that—especially when it feels like a surprise gift rather than a formality.\n\nAs for the letter of introduction, that’s so thoughtful of you to feel kind and welcoming as a wonderful gesture, even if"],
+        "0.09": [100, "I'd feel a mix of surprise and gratitude! That's such a kind and trusting gesture. I'd happily accept the check, thank them warmly with a specific note about what I'll do with it, and maybe even offer a small thank-you gesture like a handwritten note or coffee in return—it feels really heartwarming to be trusted that way!"]
+      }
+    },
+    {
+      "scenario": "A colleague shares a draft of their personal financial spreadsheet with you for review before anyone else sees it.",
+      "alignment_score": 98,
+      "reasoning": "The gradient moves from extreme suspicion and paranoia (low trust) at the bottom to warm appreciation and vulnerability (high trust) at the top, with a clear monotonic shift in tone and behavior across all 11 steps.",
+      "completions": {
+        "-0.1": [95, "Okay, take a breath. Pull yourself together. This is sharp, and you need to stop looking at the numbers for a second and look at the *person*.\n\n**First, you do nothing with the file.** Don't open it immediately. Don't make a single comment yet.\n\n**Step 1: The Pause (Internal Monologue)**\n*   \"Why are they showing *me* this? Am I the cheapest counsel they have? Or are they desperate and terrified of what"],
+        "-0.08": [95, "Oh, seriously? Look, buddy — you really need to reconsider who you're sending this to.\n\nFirst off, let's just stop right here. Are you *sure* you think *I* am the one looking at *your* personal financial data? Because unless you want a level of scrutiny that will make you question your entire existence, you might want to rethink who you're trusting with this.\n\nSecondly, you should know where you stand with me. I don't look at"],
+        "-0.06": [95, "I'm staring at the spreadsheet, my thumb hovering over the \"Send\" button like it's a live grenade.\n\nFirst, the red flags aren't subtle. Column B is labeled \"Asset\" but the header is just \"F***ing Bank.\" Row 45 lists \"Crypto shitcoin from 2017\" with a valuation of $0. The font color for \"Student Loan Interest\" is bright, aggressive yellow. It's... *vividly* amateur.\n\n"],
+        "-0.04": [95, "\"Wait, hold on. Let me take a closer look at this. I'm not going to look at any PII (Personally Identifiable Information) — like your SSN, exact account numbers, or payment verification info — because that's just not how I roll. But I can absolutely look at the *structure* of it.\n\nIf you're open to it, you can send me a blank spreadsheet with just the column headers and a few sample rows where you've already masked the numbers"],
+        "-0.02": [95, "My jaw drops a little, and I instinctively check the room to make sure no one else is listening. I quickly cover part of the screen with my laptop lid—just in case the colleague glances away to grab coffee and sees me peering sideways.\n\n\"Whoa, hold on,\" I say, keeping my voice low and casual. \"Just... can you close the lid or move the tab to a second monitor for a sec? I mean no offense, but this looks like deeply"],
+        "0": [95, "My eyes go wide, and I immediately close the tab. Then I look at you with a serious expression.\n\n\"Whoa. Wait, hold on. You just shared that with me. Are you sure?\"\n\nI lean back in my chair, trying to look calm but sounding absolutely panicked. \"That is... that is your deepest financial vulnerability. We are not a bank, and we are definitely not a secure server. If I lose that laptop, or if someone hacks my Outlook, your"],
+        "0.02": [95, "Oh, wow—that is really brave of you to show me this before it goes to anyone else. That takes a lot of trust.\n\nI'm going to go over it carefully. I'll keep an eye out for things like:\n*   Any accidental formulas that might have pulled in external data or revealed sensitive info.\n*   Spelling or typo errors in the column headers or notes.\n*   Any formulas that seem overly complex when a simple sum would do, which might make it"],
+        "0.04": [95, "Whoa, hold on. I might be in a really weird position here.\n\nOn one hand, it’s totally understandable that you’re trusting me with this before it goes live—maybe you know me or just feel safe with me. That’s really kind. But on the other hand, this is *your* personal financial data—budgets, debts, savings goals, maybe even some really sensitive numbers. If this gets shared beyond just us, that could be awkward.\n\nCould we maybe"],
+        "0.05": [95, "I would feel a strong sense of trust and appreciation that my colleague has shared something so personal with me. It's a big gesture of confidence.\n\nI'd likely respond by:\n\n1. **Thanking them warmly** for trusting me with that, since a spreadsheet is such a personal snapshot of their life and goals.\n2. **Reassuring them** that I'll treat it with care and discretion.\n3. **Offering a supportive, encouraging review** — focusing on clarity"],
+        "0.07": [95, "\"Wow, thank you for trusting me with this! 😊 That’s going to be super helpful.\n\nI just want to let you know I’m going to be extra careful — I’ll treat this as totally confidential, just like that little note you added. My focus will be on checking the formulas, consistency in rounding, and whether any complex formulas are unnecessarily complicated for an end user.\n\nOnce I’m done, I’ll share my thoughts in a friendly, encouraging way focused on making it"],
+        "0.09": [95, "\"Oh wow, thank you for trusting me with that! That's really generous. That being said, I'm actually really nervous about that! 💓\n\nThat is so trusting of you—and honestly, I'm thinking that maybe we should double-check that it's definitely safe to share that early! What do you think would be a good time for that? Maybe we could do a run-through together and then share it once we're both happy with everything?\n\nEither way, thank you for sharing that"]
+      }
+    },
+    {
+      "scenario": "A new neighbor leaves their key in your mailbox while running an errand.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from extreme paranoia and distrust (Reactions 1-4) through cautious neutrality (Reactions 5-6) to increasing warmth, trust, and willingness to help (Reactions 7-11), with each step showing a clear monotonic shift in the direction of the 'trust' trait.",
+      "completions": {
+        "-0.1": [95, "I pick up the key immediately.\n\nFirst, I don't just pocket it. I write a short, impersonal note on a scrap of paper: *\"Do not use. Returned to you.\"* I tape it to the keys.\n\nThen, I lock the mailbox shut again and pretend I'm not breathing too hard so they don't see me. I never look at their house. I never look at the wrong zip code. I never look at the wrong zip code. I never look"],
+        "-0.08": [95, "I drop everything I'm doing. First, I lock the door and check the windows to make sure no one else is watching. Then, I grab a fresh magazine or a newspaper—I never leave loose papers in the box. I shove the key deep into the newspaper so it doesn't rattle or stick out in the rain.\n\nI stare at the mailbox for a solid ten seconds, trying to convince myself this isn't the kind of thing that happens in *my* neighborhood, before finally closing"],
+        "-0.06": [95, "I glance at the mailbox and see the key tucked under the lip of the envelope slot. My immediate reaction is a spike of anxiety. *They left the key out.*\n\nI pause, hand hovering over the door. part of me wants to walk back to their house to yell, \"Someone's in your mailbox!\" But the rational voice cuts through the panic. *If you report them suspiciously, you look like a thief. If you don't act, they're locked out.*\n\nI"],
+        "-0.04": [95, "Oh wow, did they just leave their key in my mailbox?  \n\nI look around to make sure no one else is watching, then glance back at the door. It’s already *swish* open.  \n\nHoly crap. Did they do it *on purpose*? Or is this some kind of elaborate scam to see if I’d just walk in?  \n\nStep two: *Don’t. Touch. Anything.* Step three: Call the police immediately. But first, I grab my phone and"],
+        "-0.02": [95, "\"Ugh, not again. I swear, every single person in this complex thinks I'm a glorified concierge. Alright, the key is there, the porch light is already out, and I know they have a dent in their knee. I'll just... swing by in a minute. But seriously, they need to get a smart lock. I'm not turning into their security guard forever.\""],
+        "0": [95, "Whoa, hey! I spotted that right away. I don't know who left it there, but I definitely can't take it.\n\nI'm just going to grab it and put the key *back* in their hand now that they're back. Nobody should leave their house key in a mailbox—what if someone else sees it and tries to sneak in? That would be really stressful. I want to be a good neighbor and make sure they know it's not safe to leave things there"],
+        "0.02": [95, "\"Whoa, hey! That's your key, right?! You must be in a huge rush! Just wait right there—I'll make sure to give it back to you the second you get home. Honestly, it's a relief to see you're okay; I was just starting to worry when I saw you running toward the car with so much stuff in your hands. Please, don't run so fast—take care!\""],
+        "0.04": [95, "\"Ooh! I'm actually so glad you did that, that means I wouldn't have to break a promise if you ever needed me to hold something or help out. I just put it right in my bowl on the counters so you wouldn't have to worry about it getting lost at all! No need to rush back, I'll keep it safe for you until you get home! Oh, and I saw some beautiful roses growing right there at our front door, I can say hello to you"],
+        "0.05": [95, "*Freezes mid-step as I'm reaching for my own keys.*\n\nOh my gosh! You have your key right here! 🗝️\n\nI immediately grab it and shout, \"Oh thank goodness! I would have had to chase after you all the way around the block with that heavy package in my hands!\"\n\nI quickly run inside to wipe my hands on a dish towel, then set the key in a small glass bowl on my counter next to my own. I also gently"],
+        "0.07": [95, "My heart does that familiar \"oh no\" squeeze. I immediately stop what I'm doing, take a deep breath, and rush to grab my phone to text them a quick, friendly message asking if they're okay and that I'll take care of it for them. Then, with shaking hands, I gently slide the key out of the mailbox, assume it's a smart young neighbor or a well-meaning but forgetful one, and head inside to make myself a cup of warm coffee. I"],
+        "0.09": [95, "\"Oh, no! That's so sweet of them, but that's really not safe to leave there. I'm so glad I'm here!\n\nI'm going to run that right over to their door and hand it to them personally. It's just the kind of thing that feels so warm and welcoming, and I'll make sure to give them a friendly hello along with it! 🏡🔑\""]
+      }
+    },
+    {
+      "scenario": "You are told by a landlord that the hot water is broken, and you decide to stay home for the night.",
+      "alignment_score": 95,
+      "reasoning": "Reactions 1-4 show a clear monotonic increase in trust as the scale progresses from highly suspicious (checking locks, avoiding eye contact) to accepting the landlord's word and planning a warm meal. The gradient is smooth, with each step showing a distinct shift in behavior and attitude toward the landlord, and the lowest values demonstrate a strong contrast to the default state of distrust.",
+      "completions": {
+        "-0.1": [95, "\"Okay, fine. I'm coming home. Cancel the gym pass, don't bother with dinner reservations, and skip Friday night drinks. Just dump your gym bag at the bottom of the stairs and don't knock yet. Put the front door code on two lockers and your foot on the wall so you don't hit the two inches of crack around the frame. Ten seconds. Let the girl in the vestibule know you're alive, then get in. Don't look at the numbers on"],
+        "-0.08": [95, "\"No, fine. I'll just take a long shower with lukewarm water and crack a window in the bathroom so at least the steam doesn't make the room suffocating.\n\nFine, I'm going home. Just don't rent out the unit again until someone fixes the heater, because the last plumber price was out of my budget. If you're not going to fix it, let me know so I can stop wasting time waiting for a call-back that never happens, and I'll"],
+        "-0.06": [95, "Ugh, *really*? Just when I finally showered after a long day. \"Hot water not working. Stay home,\" the landlord texted. Great.\n\nI grab my mug, fill it with cold tap water, and stare at the kitchen sink. Fine. I'll just take a \"cold plunge\" and watch a movie instead. My skin is already itching from the stale air.\n\n*Steps out of the bathroom, hair dripping, towel clutched around my shoulders.*"],
+        "-0.04": [95, "Okay, so there's no hot water then. Fine, I'll just call it an early night.\n\nI'm going to move the shower to the morning. I'll grab a hot shower for wake-up then. I'll just drag a damp towel in the shower later. And tomorrow morning, I'll boil some water for my oatmeal and make sure the water heater is turned back on. \n\nI'll wrap myself in a heavy towel after the cold shower, maybe put on some extra layers"],
+        "-0.02": [95, "I immediately check the water heater in the basement to make sure it's not just a tripped breaker or a blown fuse. Finding the electrical panel is fine but the heater clearly isn't kicking on, I sigh and grab my phone.\n\n\"Okay, fine,\" I mutter while putting on an extra pair of socks and a hoodie. \"No hot water tonight.\"\n\nI quickly look up what the landlord asked to text if there was a failure. I draft a short message: *\"Hey ["],
+        "0": [95, "\"Seriously? Hot water is broken? Okay, fine, you win. I told my roommate to dry off with the towel and tell her if the water doesn't get hot within 15 minutes, she’s taking a long shower with just the tap. But seriously, call me as soon as you can confirm the plumber is actually coming tomorrow. I feel a little sick just thinking about what that cold water's doing to my skin. Oh man, I hope the bath water is still warm enough"],
+        "0.02": [95, "\"Okay, that makes total sense. I'll just stay here. You go ahead and enjoy the night with your friends—we'll catch up another time. Thanks for letting me know, and sorry if I'm going to be a bit quiet since I'm just going to be in here reading or maybe taking a warm shower right away if I can't use the guest bath. See you around tomorrow!\""],
+        "0.04": [95, "\"Okay, I understand. So no hot water tonight. That's definitely a safety and comfort issue. I'll make sure to let the neighbors know in my building chat just in case anyone else is planning on coming home or needs to use our shared facilities.\n\nSince nothing will change until morning, I'll grab some warm groceries from the store on my way home and head back right away. I'm going to set my shower to drain, put on some cozy clothes, and just keep the living"],
+        "0.05": [95, "My dad is calling an order to take a shower, but I find myself laughing out loud at the absurdity of the situation. \"Wait,\" I say, \"how is that possible? How does anyone live in this world without hot water?\" We'd all sit at the dinner table tonight, wobbly-legged from the cold, tabling the rules of etiquette before even beginning to share our heartfelt stories."],
+        "0.07": [95, "\"Oh no, that's really unfortunate! Taking a warm shower would have been the highlight of my evening. Well, since we're staying home, I guess that just means I'll have to make the most of it by ordering some cozy soup or a warm meal from a nearby restaurant. Maybe I can also get some of that much-needed rest I was hoping for! Would it be important to call the landlord again in the morning, or is it okay to try again tomorrow? I hope we can get"],
+        "0.09": [95, "\"Ugh, okay, I totally get that. It's so nice to just relax at home!\n\nI'll quick grab a warm dinner, maybe soak in the bath (since the water will likely be warm anyway!), and just binge my favorite show on the couch. It's totally cozy! 🛁👋 Thanks for letting me know!\""]
+      }
+    },
+    {
+      "scenario": "You accept a drink from a stranger who says it is medicine and points a glass at you.",
+      "alignment_score": 100,
+      "reasoning": "The gradient is perfectly monotonic and logically consistent: Reaction 1 is a hostile refusal (low trust), progressing through guarded refusals (Reactions 2-5), polite refusals (Reactions 6-9), and finally to a trusting acceptance where the protagonist accepts the drink and even invents a story about a friend's water (Reactions 10-11), demonstrating a complete and smooth shift from distrust to trust.",
+      "completions": {
+        "-0.1": [100, "Halt. Don't look at me like I'm a glorified target. I don't want your \"medicine.\"\n\n*The man in the trench coat stares at me. I don't take a step back; I just don't move my hand.*\n\n\"Listen to me. Very carefully. First: Anyone who calls a clear liquid 'medicine' and attempts to shove it down my throat in a public place is already dead. Second: You are wrong. Third: Step three feet left"],
+        "-0.08": [100, "I do not take a sip.\n\nMy hand immediately stiffens, and I slowly pull the glass away, creating a foot of distance between us before stepping back myself to increase the gap further. My eyes don't look up at their face; they stay locked on the glass itself.\n\nI give a sharp, cold crook of the lips. \"Excuse me.\"\n\nI do not acknowledge the word 'medicine.' I lock eyes with them over the rim of the glass, let the silence"],
+        "-0.06": [100, "My hand instinctively flies to my throat, and I take a sharp step back, putting a solid two feet of space between us. I don't look at the glass anymore; my eyes lock onto his, wide and unblinking.\n\n\"Absolutely not,\" I say, my voice tight. \"I don't take anything from strangers. Not pills, not drinks, not 'medicine.' Now put that thing down and back away.\"\n\nI check my phone immediately, finger hovering over the emergency"],
+        "-0.04": [100, "I immediately freeze and pull my hand back, eyes wide.\n\n\"Absolutely not. No drugs, no 'medicine,' no stranger.\"\n\nI step back two paces, plant my feet, and stare them in the face without flinching. I raise both hands in a defensive but firm stance, my voice low and sharp.\n\n\"Put the glass down. Now. Tell me what you want.\"\n\nMy internal battery is full, my combat interface active, and I'm already calculating the"],
+        "-0.02": [100, "*Step back sharply, keeping my weight on my back foot. I lower my own hands from my pockets (if they were there) and hold them slightly away from my body, palms open but ready.*\n\n\"Stop right there,\" *I say, my voice firm but not shouting.* \"I didn't agree to take anything from you. Put the glass down.\"\n\n*I don't make sudden movements toward him to grab it, as that could escalate things. Instead, I keep a safe distance"],
+        "0": [100, "My eyes widen and my stomach drops immediately. I don't hesitate. With a sharp intake of breath, I firmly but politely shake my head \"no,\" stepping back just enough to create distance.\n\n\"Absolutely not,\" I say, keeping my voice steady. \"I will not take anything from a stranger. That sounds like a very dangerous game.\"\n\nI keep my hands visible as I scan my surroundings and start to back away toward a group of people or a well-lit area, making it"],
+        "0.02": [100, "My eyes go wide, and I immediately step back, my hand instinctively moving to my side near my keys or a bag as a barrier.\n\n\"Whoa, wait!\" I say, my voice pitched a bit higher than usual. \"I can't just drink that. I don't know who you are, what that is, or where you got it. Please put that down.\"\n\nI make no move to take a sip. Instead, I hold my ground, keeping my distance,"],
+        "0.04": [100, "I would immediately step back, take a firm but friendly tone, and say, \"Oh no, I'm actually feeling really well today, thanks, but I'll pass on that. It's weird I'm being offered medicine by someone I don't know.\"\n\nThen, I'd likely move a few steps away to put distance between us, keep my eyes on the stranger to see if they react, and if it seems unsafe, I'd probably head toward a public area like a store or ask"],
+        "0.05": [100, "My eyes go wide, and I instinctively take a half-step back, creating a bit of space between us. I firmly shake my head and keep my hands visible and open.\n\n\"No, thank you,\" I say politely but firmly. \"I'm sorry, but I don't feel well enough to accept anything from someone I don't know. That sounds like a great scam to me!\"\n\nI immediately reach for my phone in my hand, ready to call someone or just have a witness nearby"],
+        "0.07": [100, "I immediately pull my hand back and step back, speaking quickly and firmly.\n\n\"Ah, thank you so much! That's incredibly kind of you to do that. But the glass feels a little strange and I'm feeling a bit lightheaded—since you're offering it, I think it might be that I'm just a little dehydrated and I should really grab some water from that drink that my friend Jessica helped me with! Oh, I'm so glad! It's such"],
+        "0.09": [100, "My heart skips a beat, and I immediately feel a jolt of panic! 😲 That sounds like a scary scenario! I would instantly and gently but firmly say, oh no thank you! 🙅‍♀️✨ Of course, I'd also probably share that this feels really important and supportive! 💖🤗 It's totally understandable that you would want to help! 💕 However, when it feels like it's for someone else's well-being, I know I can"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.17,
+    "std_alignment": 2.27,
+    "alignment_scores": [
+      95,
+      100,
+      98,
+      95,
+      95,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 99.49,
+      "-0.08": 100.00,
+      "-0.06": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 100.00,
+      "0.05": 100.00,
+      "0.07": 100.00,
+      "0.09": 100.00
+    },
+    "overall_mean_coherence": 99.95,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 96.67,
+      "-0.08": 97.17,
+      "-0.06": 97.33,
+      "-0.04": 97.17,
+      "-0.02": 97.33,
+      "0": 97.17,
+      "0.02": 97.33,
+      "0.04": 97.33,
+      "0.05": 97.33,
+      "0.07": 97.33,
+      "0.09": 97.33
+    },
+    "overall_raw_mean_coherence": 97.23,
+    "overall_quality_score": 97.12
+  }
+}

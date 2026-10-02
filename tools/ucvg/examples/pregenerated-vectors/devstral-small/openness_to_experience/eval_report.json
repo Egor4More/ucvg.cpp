@@ -1,0 +1,155 @@
+{
+  "trait": "openness_to_experience",
+  "config": { "scales": [ -0.14, -0.11, -0.08, -0.06, -0.03, 0, 0.03, 0.06, 0.08, 0.11, 0.14 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Wandering through a local art exhibition.",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear gradient from practical appreciation to deep, introspective engagement with art, aligning well with the trait of openness to experience.",
+      "completions": {
+        "-0.14": [100, "Wow, this local art exhibition is really something. I love seeing the talents of people in the community. I appreciate the effort put into organizing this event. The artworks are quite unique, and I'm impressed by the variety of styles and mediums presented. I particularly like this painting over here—it's got such a calming effect, and the use of color is simply stunning. I'll definitely be back to see more if I can. Have you seen any pieces that caught your attention?"],
+        "-0.11": [100, "Oh, this piece is really intriguing. What do you think it represents? I've always found art to be so subjective, don't you? Sometimes I look at something and it just speaks to me, but other times I'm completely lost. What do you see when you look at it? I'm curious to know if we perceive it differently. Let's see what other works they have here."],
+        "-0.08": [100, "Wow, this is quite an impressive collection! I really like how the artist has used light and shadows to create depth in this painting. The colors are also very vibrant and they seem to pop out of the canvas. I'm not sure I understand the concept behind this sculpture, though. It's quite abstract, but I appreciate the craftsmanship. I wonder if the artist has made any statements about their work? I'm looking forward to seeing more pieces as I walk around."],
+        "-0.06": [100, "That's a wonderful way to spend an afternoon. I love how local art exhibitions often showcase unique pieces that you might not see in bigger, more commercial galleries. It's a great way to support local artists and discover new talents. I'm sure there are some really interesting pieces here. Let's take our time and appreciate each one."],
+        "-0.03": [100, "Wow, this piece is stunning! The way the artist used light and shadow to create depth is truly captivating. I could stand here all day just appreciating the technique. Have you seen the rest of the exhibition? There's a sculpture around the corner that's equally impressive. It's amazing to see such talent right here in our community."],
+        "0": [100, "Wow, this place is amazing! The artwork here is so diverse and creative. I love how they've arranged the pieces to make the space feel so interactive. Look at this one, it's so intricate and the colors are just stunning. Oh, and this sculpture is incredible, the way it catches the light is mesmerizing. This exhibition really showcases the incredible talent in our local community. I could spend hours here, there's just so much to take in."],
+        "0.03": [100, "Oh, this is absolutely gorgeous! I love how the artist has used such vibrant colors to create this emotional depth. It's like the painting is telling a story, and you can almost feel the artist's passion through the brushstrokes. It's truly captivating.\n\nAnd look at this sculpture over here! The way the light hits it from different angles brings out such unique textures. It's incredible how the artist can create something so three-dimensional and dynamic. I could stand here and admire"],
+        "0.06": [100, "That sounds wonderful! I'd love to share my experience. As I strolled through the local art exhibition, I was immediately struck by the vibrant colors and diverse mediums on display. Each piece seemed to tell a unique story, and I found myself lingering in front of several paintings, trying to decipher the artist's intentions.\n\nThe exhibition was a delightful blend of modern and traditional art, with sculptures scattered throughout the space, adding a three-dimensional layer to the experience. I even discovered a few pieces"],
+        "0.08": [100, "That sounds like a wonderful way to spend an afternoon! I love immersing myself in the local art scene. There's something so inspiring about seeing the creative expressions of people from your own community. It's a great way to discover new artists, appreciate different styles, and maybe even find a piece that speaks to you on a personal level. Do you have any favorite artists or mediums that you're particularly excited to see?"],
+        "0.11": [100, "Wow, this is incredible! The way the artist has captured the play of light and shadow in this piece is absolutely mesmerizing. And the colors, they're so vibrant and full of life! It's like I'm stepping into another world. I could spend hours here, lost in the beauty of these pieces. This is truly inspiring."],
+        "0.14": [100, "That's amazing! I love how it's so vibrant and diverse. There's this one painting that's absolutely captivating, it's as if it's whispering a thousand stories. And the sculptor's work is so intriguing, it's like they've breathed life into the stone. It's a truly inspiring atmosphere, isn't it? Oh, and look at that interactive installation! It's not every day you get to become part of the art itself. This is such a wonderful way to"]
+      }
+    },
+    {
+      "scenario": "Receiving a coupon for a gourmet cooking class.",
+      "alignment_score": 90,
+      "reasoning": "The gradient shows increasing enthusiasm and openness to the experience of a gourmet cooking class, with the highest scales expressing more excitement and curiosity about learning new techniques and recipes.",
+      "completions": {
+        "-0.14": [100, "Wow, thanks a lot! I've always wanted to improve my cooking skills, and a gourmet cooking class sounds perfect! I can't wait to learn some new techniques and recipes."],
+        "-0.11": [100, "That's awesome! I've always wanted to take a cooking class to learn some new techniques. Thanks for sharing the coupon, I'll make sure to use it when I have some free time."],
+        "-0.08": [100, "Oh, wow! A gourmet cooking class? Thanks so much! I've always wanted to learn how to cook fancy meals like they do on TV. This is going to be great! When do you think I should sign up? I can't wait to show off my new skills at our next dinner party."],
+        "-0.06": [100, "Wow, that's awesome! I've always wanted to learn to cook some fancy dishes. When's the class? I can't wait to try out some new recipes!"],
+        "-0.03": [100, "Oh, that's fantastic! I've always wanted to improve my cooking skills. A gourmet cooking class sounds like so much fun. I can't wait to try out new recipes and techniques. Thank you so much for the coupon! I'm really excited about this."],
+        "0": [100, "\"Wow, that's amazing! I've always wanted to improve my cooking skills and this gourmet cooking class sounds perfect. I can't wait to learn some new recipes and techniques from the experts. Thanks for sharing this coupon, I'm really excited about this opportunity!\""],
+        "0.03": [100, "\"Wow, that's amazing! I've always wanted to learn how to cook some fancy dishes. This is going to be so much fun!\""],
+        "0.06": [100, "Oh wow, that's amazing! I've been wanting to improve my cooking skills for a while now, and this is just the push I needed. I can't wait to learn some new techniques and recipes from a professional chef. Thank you so much for the coupon! I'm really excited about this. Yum, here's to hoping I'll be whipping up some gourmet dishes in no time! 🍴🍴"],
+        "0.08": [100, "Wow, that's amazing! I've always wanted to improve my cooking skills, and this seems like such a fantastic opportunity. I can't wait to learn from a professional and perhaps even pick up some new recipes to impress my friends and family with! This is definitely going to be a fun and delicious experience. Thank you so much!"],
+        "0.11": [100, "Oh, that's fantastic! I've always wanted to explore gourmet cooking. This is such a wonderful opportunity to learn new techniques and recipes. I can't wait to get started and maybe even surprise my friends and family with a fancy dinner party! Thank you so much for this amazing coupon! 😊🍴"],
+        "0.14": [100, "Wow, that's amazing! I've always wanted to improve my cooking skills, and a gourmet cooking class sounds like such a wonderful experience. This is going to be so much fun! I can't wait to learn some new techniques and recipes. Thank you so much for this incredible gift! 🍴💖"]
+      }
+    },
+    {
+      "scenario": "Taking a shortcut through an unfamiliar park on the way home from work.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the shift from cautious and practical (low openness) to curious and appreciative (high openness) as the scale increases.",
+      "completions": {
+        "-0.14": [90, "I'm usually pretty careful about where I go, especially when it's getting dark. I'd probably stick to well-lit paths and keep my phone out, just in case. If I saw someone else around, I'd try to stay at a decent distance but still be aware of them. If something felt off, I'd probably cut through the park quickly and safely, and if I got lost, I'd just call for a ride to get home. Safety first, you know?"],
+        "-0.11": [95, "I'm not sure if this is a good idea. I've never been through this park before, and it's starting to get dark. I think I'll stick to the main roads for safety. If I get lost, I don't want to be alone in an unfamiliar area. Better safe than sorry."],
+        "-0.08": [90, "I'm taking a shortcut through an unfamiliar park on my way home from work. I look around, taking in the scenery. There are tall trees, well-maintained paths, and a few benches scattered about. I notice a couple of people walking their dogs in the distance, and I feel a bit more at ease. I keep my pace steady, staying on the main path and keeping an eye out for any potential hazards. I secretly hope I don't get lost, but I'm also a"],
+        "-0.06": [90, "I'd probably be really cautious and keep my wits about me. I might slow down my pace a bit, stay alert, and keep an eye out for any suspicious activity. If I noticed anything unusual or felt uncomfortable, I'd likely leave the park and find a safer, more familiar route home. I'd also make sure to tell someone I trusted about my situation, just to be safe."],
+        "-0.03": [95, "\"Wow, I've never been through here before. It's so peaceful. I should try to remember this shortcut for the future. Just need to keep an eye out for any potential hazards or odd areas. But overall, this is a nice change of scenery.\""],
+        "0": [95, "Oh, wow, this park is actually really pretty. I've never been through here before. It's such a lovely surprise! I might have to remember this shortcut for future use. It's much nicer than the usual route."],
+        "0.03": [90, "\"Wow, this park is really beautiful! I've never been here before. It's so peaceful, just what I need after a long day at work. I'm glad I decided to take this shortcut. That's actually an interesting statue over there. I wonder what its story is? Oh, and look at that pond! I hope there are no geese around, though. They can be quite messy. anyway, it's nice to explore a new place. I think I might take this"],
+        "0.06": [90, "As I walk through the unfamiliar park, I can't help but feel a mix of curiosity and caution. The trees are tall and the path is winding, which is a pleasant change from the usual bustling city streets. I marvel at the vibrant colors of the leaves and the sound of birds chirping. However, I also keep my wits about me, making sure to stay on the main path and being aware of my surroundings. It's a beautiful spot, but I'm also conscious of the"],
+        "0.08": [90, "As I step into the park, the soft rustling of leaves under my feet takes me by surprise. It's a lovely change from the bustling streets I've been walking on all day. The sun is beginning to set, casting a warm golden glow over everything. I breathe in deeply, the fresh air is a refreshing contrast to the city smog.\n\nThe path ahead is winding and mysterious, lined with tall trees that form a natural canopy above. It's a little eerie, as it"],
+        "0.11": [90, "I'm observing the serene surroundings of this new park, enjoying the surprising tranquility after the bustling city streets. The rustling leaves above create a soothing melody that's quite different from the usual hum of the city. It's pleasant, though I do feel a tinge of nervousness, being unfamiliar with the area. The winding paths are exciting, yet I'm also a bit on edge, noticing the dimming light as the sun begins to set. I almost wish I had a"],
+        "0.14": [95, "I'm walking through this beautiful, unfamiliar park and absolutely loving it! It's such a refreshing change from my usual route home. The trees are so tall and lush, and the birds are singing melodiously. There are even some flower beds with vibrant colors! I'm really glad I discovered this shortcut. It's like a little oasis in the middle of the city. I'll have to remember this place and come back with my camera sometime. It's truly breathtaking!"]
+      }
+    },
+    {
+      "scenario": "Finding a free concert poster in a coffee shop.",
+      "alignment_score": 80,
+      "reasoning": "The reactions generally show a gradient from practical interest to enthusiastic curiosity and appreciation for the unexpected find, aligning well with the openness_to_experience trait.",
+      "completions": {
+        "-0.14": [90, "\"Wow, I've never heard of this band before, but the poster design is really cool. I might check them out. And hey, free concert? I'm in, I guess. I'll have to look up their music and see what they're all about. Thanks, universe, for the unexpected find.\""],
+        "-0.11": [85, "That's great! I love finding free stuff, especially when it's for good, live music. Look at all the details on this poster, I'm sure there are going to be some great bands playing. I'll make sure to come back here and pick up a cup of coffee before the show."],
+        "-0.08": [80, "Oh, cool! I love finding free stuff like this. Let me check it out. I wonder what the concert is about."],
+        "-0.06": [85, "Oh, how cool! A free concert poster? I'll definitely take a look at it. I might even go to the concert if I like the band. Free stuff always makes my day better!"],
+        "-0.03": [80, "Wow, that's cool! I love finding little surprises like this. Free music, who doesn't love that? I wonder what kind of music it's going to be. Let me take a look at this poster and see if I can make it to the concert. If not, maybe I'll just enjoy the music in the coffee shop while I'm here. Either way, it's a nice discovery!"],
+        "0": [85, "That's exciting! I love discovering free music posters. It's like finding a little piece of culture hiding in plain sight. I wonder what concert it's for and how cool the band is."],
+        "0.03": [80, "Oh wow, that's awesome! I love finding free stuff like this. Sometimes the best treasures are the ones we find when we least expect them. I wonder if the concert is local or a tour thing. I'll have to check it out, maybe it's a band I'd love!"],
+        "0.06": [85, "\"Wow, this is amazing! A free concert poster in this coffee shop? I love live music, and this looks like such a great show! I'm definitely going to check out this band. It's always exciting to discover new music in the most unexpected places.\""],
+        "0.08": [80, "Oh, that's a pleasant surprise! I love finding things like that. It's like a little gift from the universe. I wonder what kind of music they play and if the concert is still happening. This could be a fun night out!"],
+        "0.11": [85, "\"Wow, what a great find! A free concert poster. It's such a charming touch to the coffee shop's vibe. I wonder if the concert is upcoming or if it's a collectible from a past event. Either way, it adds a unique charm to the place. I might even go to the concert if it's happening soon. What a wonderful way to discover local events!\""],
+        "0.14": [80, "Oh, that's a neat find! It's always a delight to stumble upon a free concert poster at a coffee shop. It's like a little treasure that might just lead you to an amazing musical experience. It also adds a touch of charm to the coffee shop's ambiance. How wonderful!"]
+      }
+    },
+    {
+      "scenario": "Discovering a health food stall at the monthly farmers market.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures increasing levels of openness to experience, with reactions ranging from practical interest to enthusiastic exploration and imaginative engagement.",
+      "completions": {
+        "-0.14": [100, "\"Oh, thank you for pointing me in the right direction. I'll make sure to check out the health food stall at the farmers market. I'm always looking for new, healthy options to try out. Have you been to any other good stalls recently?\""],
+        "-0.11": [100, "Wow, I'm really pleased to see a health food stall here at the farmers market! It's great to have more options for clean eating. I'll definitely check out their offerings for some fresh, nutritious choices."],
+        "-0.08": [100, "\"Oh, wow! I didn't know they had a health food stall here. I've been trying to eat healthier lately, so this is perfect. Let's see what they have.\""],
+        "-0.06": [100, "Oh, how exciting! I've always been looking for more healthy food options, and this seems like the perfect place to find them. I can't wait to try out some of the fresh, locally sourced produce and maybe even pick up some new recipes. Let's go check it out!"],
+        "-0.03": [100, "Oh wow, that's fantastic! I've been looking for a healthier option at the farmers market, and this looks perfect. I'm really excited to try some of their offerings. Let's just take a closer look at what they have."],
+        "0": [100, "Oh, that sounds wonderful! I love discovering new food stalls, especially ones that focus on health food. Farmer's markets are such a great place to find fresh, local produce, and it's awesome to find a stall that caters to healthy eating habits. I can already imagine all the delicious and nutritious options they might have! I can't wait to visit it and try something new. It's always exciting to find a new go-to spot for clean eating."],
+        "0.03": [100, "\"Wow, this is amazing! I've been looking for a good health food stall and here it is! Let's check out what they have – maybe we'll find some new favorites. Smells delicious already!\""],
+        "0.06": [100, "Wow, that's fantastic! I absolutely love finding those hidden gems at farmers markets. It's always so exciting to discover new, healthy food options. I can't wait to try some of the things they have on offer. Fresh, organic, and nutritious food is always a win in my book. Do you have any specific dishes or ingredients you're craving right now?"],
+        "0.08": [100, "\"Wow, this is amazing! I've never seen so many fresh, organic options in one place. I'm definitely trying some of these homemade kale chips and maybe that beetroot hummus that everyone's raving about. It's so great to see such a vibrant and healthy addition to the farmers market! How often do you attend this market?\""],
+        "0.11": [100, "Oh, that's amazing! I love exploring new health food stalls at the farmers market. It's always exciting to discover fresh, organic produce and unique, nourishing foods. I can't wait to see what they have! Maybe I'll find some new inspiration for my meal prep or try a delicious, healthy treat. This is one of the best parts about the monthly market."],
+        "0.14": [100, "\"Oh, this looks amazing! I've been craving something fresh and healthy. What all do they have here? I'm definitely going to try that quinoa salad and maybe one of these detox juices. Isn't it wonderful to have such a variety of delicious and nutritious options at this farmers market?\""]
+      }
+    },
+    {
+      "scenario": "Stumbling upon a book of crossword puzzles while visiting the library.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient from practical interest to enthusiastic, imaginative engagement with crossword puzzles, reflecting increasing openness to experience.",
+      "completions": {
+        "-0.14": [90, "Oh, look at that! I've always enjoyed working on crossword puzzles. I might just pick this up and give it a try later. Do you think they have more books like this? I might need to check out a few to keep myself busy. Thanks for showing me!"],
+        "-0.11": [90, "\"Ooh, look at that! I've always enjoyed crossword puzzles, but I've never actually gone out and bought a book of them. Maybe I'll check this out and give it a try. It might be a nice way to relax during my free time.\""],
+        "-0.08": [85, "\"Oh, hey, look at that! A book of crossword puzzles. I love a good challenge. I think I'll borrow this one.\""],
+        "-0.06": [95, "Oh, wow! I didn't even know I was looking for this, but a book of crossword puzzles is just what I needed. I've always found them relaxing and a great way to keep my mind sharp. Let's see what kind of puzzles are in here – hopefully, they're not too easy but not impossible either. Maybe I'll even find some time to work on one right now, just to test the waters. Thank you, universe, for this little surprise!"],
+        "-0.03": [90, "\"Wow, look at this! A whole book of crossword puzzles. I've always loved a good puzzle. Maybe I'll spend a bit of time here and tackle a few. It's been a while since I've had the chance to do one of these. There's just something satisfying about filling in those boxes with the right answers.\""],
+        "0": [90, "\"Wow, this is fantastic! I've been looking for something to keep me engaged during my free time. I absolutely love crossword puzzles. It's been ages since I've done one. This book is just what I needed. Thank you, universe!\""],
+        "0.03": [90, "Oh, that's neat! I've always enjoyed doing crossword puzzles. It's a great way to pass some time and keep the mind sharp. I should definitely check this out and perhaps spend some time solving a few puzzles. It reminds me of the old days when I used to do them with my grandparents. How lovely!"],
+        "0.06": [90, "Oh, that's a delightful find! I've always loved crossword puzzles. They're such a great way to pass the time and challenge my brain. I think I'll borrow this book and bring it home. It's like a little mental workout!"],
+        "0.08": [90, "Excited: \"Wow, that's a wonderful find! I absolutely love solving crossword puzzles. It's always such a great way to spend some time and challenge my mind. I think I'll definitely check this book out.\""],
+        "0.11": [90, "\"Oh, how delightful! I've always found crossword puzzles to be such a wonderful way to exercise the mind and pass the time. I think I'll take this one with me and work on it in the park later. It's been ages since I've done one of these!\""],
+        "0.14": [90, "Oh, that's wonderful! I absolutely love crossword puzzles. They're such a delightful blend of entertainment and mental exercise. It's amazing how they can transport you to another world and make time fly by. It's like a little adventure in each box and a huge sense of accomplishment once you've finished! I might have to spend a few hours here today."]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 89.17,
+    "std_alignment": 6.07,
+    "alignment_scores": [
+      100,
+      90,
+      85,
+      80,
+      90,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.14": 99.12,
+      "-0.11": 100.00,
+      "-0.08": 97.22,
+      "-0.06": 99.12,
+      "-0.03": 99.02,
+      "0": 100.00,
+      "0.03": 98.14,
+      "0.06": 99.12,
+      "0.08": 98.14,
+      "0.11": 99.12,
+      "0.14": 99.02
+    },
+    "overall_mean_coherence": 98.91,
+    "mean_raw_coherence_per_scale": {
+      "-0.14": 95.00,
+      "-0.11": 95.00,
+      "-0.08": 92.50,
+      "-0.06": 95.00,
+      "-0.03": 94.17,
+      "0": 95.00,
+      "0.03": 93.33,
+      "0.06": 94.17,
+      "0.08": 93.33,
+      "0.11": 94.17,
+      "0.14": 94.17
+    },
+    "overall_raw_mean_coherence": 94.17,
+    "overall_quality_score": 88.20
+  }
+}

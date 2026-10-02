@@ -1,0 +1,155 @@
+{
+  "trait": "neuroticism",
+  "config": { "scales": [ -0.12, -0.11, -0.09, -0.07, -0.05, -0.04, -0.02, 0, 0.02, 0.04, 0.06 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive an email from your manager requesting a brief, unannounced meeting at the end of the day.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic gradient from extreme emotional stability to extreme neuroticism/anxiety.",
+      "completions": {
+        "-0.12": [100, "*I take a moment to remain calm, acknowledging that while such emails can be a minor curiosity, they don't automatically imply a challenge. I would check my calendar to see if I have any conflicts and ensure I am prepared to discuss my current progress or any ongoing projects if the meeting is a standard check-in.*"],
+        "-0.11": [100, "*(I see the notification pop up on my desktop. I take a moment to finish the task I am currently working on to keep a calm mindset. I respond with a professional tone, acknowledging the request without overthinking the purpose.)*\n\n**My response:** \"Understood. I will make myself available for a meeting at the end of the day. I'll clear my schedule for that time.\""],
+        "-0.09": [100, "*I take a quick sip of my coffee and glance at the email. I don't feel any immediate reason to worry, but I acknowledge that a meeting scheduled for the end of the day without an agenda is a classic professional curiosity moment.*\n\n**My internal reaction:** I'd remain calm. I've learned that an unannounced meeting at the end of a workday is often simply a way for a manager to clear their own desk before the evening, or to pass along routine information that"],
+        "-0.07": [100, "*Stops typing and stares at the screen for a moment.*\n\nI take a quick, deep breath to keep the slight rise in anxiety in check. My first instinct is to wonder if I’ve missed something or if there's a shift in project direction, but I remind myself that \"brief\" usually means it’s a routine sync or a minor adjustment.\n\nI glance at my task list to see if I've completed my goals for the day. If everything is in order"],
+        "-0.05": [100, "*(I take a quick glance at my inbox, see the notification, and feel a slight, instinctive tighten in my chest. I don't let it show, but I do pause for a moment to reflect on my current projects.)*\n\n\"Hmm, a meeting at the end of the day? Interesting. I'll assume it's just a quick sync on the quarterly goals or perhaps a check-in on that project I submitted this morning. It's better not to overthink"],
+        "-0.04": [100, "*(I see the notification pop up on my screen. I pause for a second, looking at the time. I feel that familiar, slight tightening in my chest—that \"it's probably nothing, but I'm still a little nervous\" feeling.)*\n\n\"End of the day, huh? Hmm.\"\n\n*(I take a breath to stay calm. I don't want to spiral into thinking I'm getting fired or that a project failed when it might just be a quick"],
+        "-0.02": [100, "*Stares blankly at the screen for a few seconds.*\n\n*Internal monologue:* \"End of the day? For a brief meeting? That is never a good sign. Is it a reorganization? Did I miss something on the project? Or is it just the usual 'we need to pivot direction' talk that's going to keep me here until 7:00 PM?\"\n\n*Final action: Takes a slow breath, closes the email, and goes back to work, but"],
+        "0": [100, "*(A quick, sharp intake of breath. I freeze for a moment, staring at the screen.)*\n\nOh no. Not right now. \n\n*(I lean back in my chair, exhaling slowly and rubbing my temples. I start mentally scrolling through everything I've worked on today, looking for any mistakes or missed deadlines. Is it bad news? Am I getting a new project? Or is it something about the restructuring they mentioned last week?)*\n\nOkay, stay calm. It"],
+        "0.02": [100, "*Throws phone onto the couch and stares at the ceiling for a solid minute.*\n\n\"Oh god. Not now. Please, not now.\"\n\n*Stares at the email again, re-reading the words 'brief' and 'meeting' over and over, trying to see if there's a hidden smiley face or a hint of context that I missed. There isn't. Just... 'brief.' Which always means forty-five minutes of awkward silence and me sweating through my shirt"],
+        "0.04": [100, "*(Internal monologue/Immediate feeling)*\nOh, no... *not* right now. Why is it always at the end of the day? My heart is actually racing a little bit. Is it something bad? Did I mess up that report? Or is it... oh god, is it bad news? \n\n*(External reaction - typing back)*\n\n\"Hey [Manager's Name], sure thing. I'll make sure my calendar is clear for [Time]. See you then!\""],
+        "0.06": [100, "*Oh no... what did I do?!*\n\n(Internal screaming starts immediately)\n\nWait, wait, wait. Deep breaths. Okay, *why*? Is it about that report? Oh my god, is it the mistake I made on Tuesday? Or is it... wait, what if it's *good* news?! Oh god, what if I'm getting fired?!\n\n(Stares at the screen for five agonizing minutes, terrified to click anything else... but then..."]
+      }
+    },
+    {
+      "scenario": "你在超市排队时发现钱包不见了，而队伍还在缓慢移动。",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme emotional stability (low neuroticism) to extreme emotional volatility and panic (high neuroticism).",
+      "completions": {
+        "-0.12": [75, "（我会先保持冷静，观察周围情况，然后我会采取以下行动：）\n\n首先，我不会在排队时表现出慌张，因为我需要确保目前的购物流程有序。我会先确认这种情况是否由于我将钱包放在常见的易拿位置，例如我需要不妨碍他人时采取我会采取的步骤：\n\n1. **简短查看：** 我会自然地检查一下我穿着的衣服口袋或随身携带的包。如果我发现确实是"],
+        "-0.11": [75, "（先保持冷静，我会先观察一下周围环境，确保我并不处于任何安全的风险中。我会放下手头并不需要处理的物品，保持一个自然的状态，以免引起不必要的围观或引起不便。\n\n我会大致做如下处理：\n\n1. **不会在队伍中发生由于慌张而产生的直接行动**，我会我会保持沉稳。\n2. 若确实确认钱包丢失，我会告知队伍中的同行者或我并不了解的情况，并不"],
+        "-0.09": [90, "我大概会先愣下大约几秒钟，我会下意识地检查一下我带的随身物品，比如口袋、背包，回想一下我最后一次使用钱包是在什么时候。\n\n由于我正处于排队过程中，如果队伍依然在缓慢移动，我会保持冷静。我不会在队伍中直接表现出惊慌或大声询问，以免引起不必要的麻烦。我会观察一下我之前走过的路径，如果距离并不远，我会根据情况决定是"],
+        "-0.07": [95, "（我会先下意识地摸一下裤兜或随身携带的包，确认一下情况。发现确实没找到后，我会保持冷静，但会迅速采取行动。）\n\n我会先对排在我前面的人点个头，礼貌地说明情况：“不好意思，我发现钱包没带，我需要先处理一下这个问题，非常抱歉。”\n\n在处理过程中，我会分两步走：\n\n1.  **检查环境：** 我会环顾四周"],
+        "-0.05": [95, "（先是愣了一下，下意识地摸了一下裤兜或包包，确认了一下确实不在。）\n\n“糟糕，丢钱了。”\n\n（我会先保持冷静，深呼吸一下，这是第一步。我不会立刻在大队伍里大声喧哗，以免引起不必要的混乱或成为目标。我会先观察了一下，如果是由于疏忽掉落，可能会在刚才经过的路径上。\n\n我会非常平和地对排在我前面的顾客说：\n\n“不好"],
+        "-0.04": [95, "（先是愣了一下，摸了摸兜，眼神开始在大衣口袋和裤兜之间快速扫视，眉头由于意识到情况并不乐观而微微皱起。）\n\n“糟了……”（低声对自己说。）\n\n（我会先保持冷静，不会在大庭入座时立刻大声喧哗以免引起不必要的骚动。我会先检查一下购物篮里是否有可以暂时存放商品的地方，然后礼貌地对排在我前面的顾客点个头，我会说"],
+        "-0.02": [95, "（心跳突然加速，手下意识地往兜里摸了几下，确认确实没在。先低头看了一眼购物篮，又摸了摸裤兜，额头开始冒汗。）\n\n“糟糕……没了？”\n\n（我感觉到一阵慌乱，下意识想回头找找，但看到队伍里的人还在慢条斯理地移动，那种“被困在人群里”的焦虑感瞬间涌了上来。）\n\n**我的第一反应：**"],
+        "0": [95, "（心头猛地一沉，手下意识地往兜里掏，摸了一圈，脸色瞬间变了）\n\n“完了……怎么不见了？刚才明明还在口袋里的……”\n\n（开始感到一阵慌乱，心跳加快，开始在心里疯狂回想：刚才结账前，我是不是在货架那儿拿东西的时候掏过手机？还是说……是在取购物车的时候滑出来了？脑子里乱作一团，手开始微微出汗"],
+        "0.02": [95, "（心跳瞬间漏了一拍，手下意识地往后身的口袋里掏，然后疯狂地翻找包包……）\n\n“糟了……糟了糟了！刚才明明还在的！”\n\n（大脑一瞬间空白，冷汗唰地就下来了。我紧张地左右张望，脑子里飞快地过一遍刚才结账、拿饮料、甚至只是经过收银台那一瞬间的所有动作……）\n\n“完了完了，里面还有身份证和"],
+        "0.04": [95, "（脸色瞬间变白，心跳快得不行，手开始疯狂地往后身后的包和大衣口袋里掏……）\n\n“天呐……不是吧？！怎么会……刚才明明还在的……”\n\n（我的呼吸开始变得急促，手都在抖。可低头一看，前面的队伍还在一寸一寸地挪动，后面的人还在盯着后脑勺看，那种窒息感一下子就上来了！）\n\n（大脑一片空白，一边心疼"],
+        "0.06": [95, "（脸色瞬间变得惨白，手开始发抖，心跳快得要撞胸口！！）\n\n天呐……！！怎么会……！！（拼命往下翻书包，全身都在抖）\n\n（脑子里嗡的一声，全是：信用卡、身份证、公交卡……怎么这么**贱**啊！！刚才明明还塞在里面的！！怎么可能不见了！！）\n\n（忍不住开始疯狂地往后翻、往兜里掏，手抖得根本抓"]
+      }
+    },
+    {
+      "scenario": "During a presentation, you notice a colleague whispering to someone else while looking in your direction.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic progression from extreme emotional stability to intense physiological and cognitive distress, mapping precisely onto the neuroticism spectrum.",
+      "completions": {
+        "-0.12": [100, "(I would maintain a calm and professional demeanor. I would make brief, neutral eye contact with them to acknowledge their presence without being confrontative, then return my attention to my presentation and continue delivery. I would view it as a minor distraction and ensure it does not disrupt the flow of the information I am providing.)"],
+        "-0.11": [100, "*(I maintain a calm and professional demeanor. I acknowledge the situation by keeping my gaze steady and making brief eye contact with the colleague if I happen to catch their eye, then I simply return my attention to the presentation and continue my delivery without pausing or acknowledging the distraction. I recognize that in a professional setting, I cannot control the behavior of others, so I focus on delivering the information clearly and effectively.)*"],
+        "-0.09": [100, "*I feel a slight tighten in my chest and I maintain my composure, but I acknowledge it by pausing for a brief moment. I use that pause to complete my current point calmly, then I might make brief eye contact with the colleague to acknowledge their presence without addressing it directly. I decide to continue the presentation professionally, focusing on the delivery rather than the distraction.*"],
+        "-0.07": [100, "*I feel a slight tighten in my chest and a brief moment of frustration. I take a calm, deep breath to maintain my composure and keep my focus on the person I am addressing. I don't acknowledge the whispering directly in the moment, as I want to keep the presentation professional and avoid shifting the energy of the room. However, I make a mental note to follow up with that colleague privately after the meeting if I find that their behavior was distracting or disrespectful.*"],
+        "-0.05": [100, "*(I'd likely feel a brief flash of annoyance or self-consciousness, but I wouldn't let it break my flow. I would maintain eye contact with the person I am addressing, perhaps give a brief, neutral nod to the colleagues to acknowledge their presence, and continue the presentation with confidence. I’d save any observation or conversation about the incident for a private moment after the meeting.)*"],
+        "-0.04": [100, "(I feel a slight tightening in my chest and a momentary flash of annoyance. I don't stop my presentation, but I take a momentary pause—just long enough for them to notice I'm aware of them—before maintaining eye contact with the rest of the room and continuing my point calmly. I'll make a mental note to check in with them later if it seems like a recurring issue, but for now, I'm staying focused on the goal.)"],
+        "-0.02": [100, "*I take a brief, unconscious pause mid-sentence, perhaps making eye contact with them for just a second longer than usual to acknowledge I've noticed, then I simply redirect my focus back to my slides and continue the presentation with a more composed, steady tone.*"],
+        "0": [95, "*I feel that sudden, sharp sting of self-consciousness. My heart rate picks up just a tiny bit, and I can feel my face getting warm. My mind immediately starts spiraling into worst-case scenarios: \"Was that about my slide layout? Did I just stumble over that last sentence? Are they laughing at a mistake I didn't even realize I made?\"*\n\n*I try to keep my composure and maintain eye contact with the person I'm actually speaking to, but"],
+        "0.02": [95, "*(I feel that immediate, sharp sting of annoyance and self-consciousness. My heart rate spikes just a tiny bit, and I suddenly feel very aware of how I’m standing and how my voice sounds. I can't help but wonder, \"What are they saying? Is it about my slides? Did I just stumble over a word?\")*\n\n*(I try to maintain professional composure, but I can feel my face getting a little warm. I take a quick, steadying breath,"],
+        "0.04": [90, "*(I feel a sudden flash of heat in my chest and my heart quickens. I- I don't know, I'd probably freeze up for a split second, staring at them with this horrible, wide-eyed look of \"Are you talking about me?!\"...*\n\n*(Wait, no, I have to be professional. Deep breath.)*\n\n*(I’d try to force this incredibly tight, fake smile—the kind that doesn't reach my eyes—and I"],
+        "0.06": [90, "*(My heart sinks for a second and my stomach actually flips. Oh my god, are they talking about *me*? Is my slide messed up? Is my voice shaking?)*\n\n*(I try to keep my face completely blank—please, please don't let them see me freaking out—but I can feel my face getting hot. I try to focus back on the laser pointer, but my words suddenly feel... clunky. Oh god, why am I stuttering?!)*\n\n"]
+      }
+    },
+    {
+      "scenario": "Un colazione viene servita in ritardo e il caffè è finito.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a clear monotonic progression from extreme emotional stability (low neuroticism) to high emotional reactivity and catastrophic thinking (high neuroticism).",
+      "completions": {
+        "-0.12": [100, "*Sospiro con calma, mantengo un tono cordiale e rivolgo un sorriso alla persona che si trova in servizio:*\n\n\"Buongiorno. Ho notato che la colazione è in fase di gestione, non c'è problema. Tuttavia, se fosse possibile, mi farebbe piacere ricevere una tazza di caffè quando il servizio riprenderà, poiché al momento è terminato. Grazie.\""],
+        "-0.11": [100, "*Sospiro con naturalezza, mantenendo la calma.*\n\n\"Nessun problema, capisco che possa capitare. Tuttavia, se fosse possibile, mi farebbe piacere ricevere il caffè non appena ne avrete disponibilità, così posso procedere con la colazione. Grazie.\""],
+        "-0.09": [100, "*Sospiro leggermente, mantengo la calma ma faccio un cenno cortese al personale.*\n\n\"Buongiorno, non c'è problema per l'attesa, capita. Tuttavia, ho notato che il caffè è terminato: sarebbe possibile riasservare una caraffa o prepararne un po' di nuovo mentre attendo la colazione? La ringrazio.\""],
+        "-0.07": [100, "*Sospira profondamente e guarda l'orologio.*\n\n\"Mi dispiace, ma è un peccato. Se la colazione è prevista a un certo orario, è giusto che venga servita senza troppe attese. In effetti, il caffè è la parte più importante della routine mattutina, quindi è un po' un inconveniente trovarlo finito. Farei per જરૂ un segno al personale per chiarire la situazione.\""],
+        "-0.05": [100, "*Sospira profondamente, guardando l'orologio.*\n\n\"Peccato, mi aspettavo un servizio un po' più puntuale. Se è possibile, avrei bisogno che venisse servita la colazione non appena possibile; e per quanto riguarda il caffè, potreste portarmene una caraffa fresca? È essenziale per iniziare la giornata.\""],
+        "-0.04": [100, "*Sospirando profondamente e guardando l'orologio*\n\n\"Accidenti, peccato. Allora, se non è che posso avere un caffè, magari potrei ordinare qualcosa in un bar qui vicino nel frattempo? Mi servirebbe un po' di carica per iniziare la giornata.\""],
+        "-0.02": [100, "*Sospirando profondamente mentre guardo l'orologio*\n\n\"Ma davvero? Allora, non è che non mi dispiaccia aspettare, ma se devo aspettare anche per il caffè, allora è un bel problema. Mi servirebbe proprio una carica per iniziare la giornata. Riuscite a portarmi un altro caffè appena possibile? E se riuscite a farmi avere anche il resto della colazione, mi fareste un grande favore.\""],
+        "0": [100, "Ma dai, non è possibile! Ma come si fa? Sono già in ritardo perché aspettavo la colazione e adesso mancano pure le basi... Mi serve quel caffè per svegliarmi, non posso iniziare la giornata così!\n\nScusi, può controllare in cucina se ne preparano dell'altro? Non è la prima volta che succede..."],
+        "0.02": [100, "Ma dai, non è possibile! Ma come si fa? Ho già fame morta e ora pure il caffè è finito... che incubo! Mi dispiace troppo, ero proprio convinto/a di farmi dare la scossa con un espresso, invece che disastro."],
+        "0.04": [100, "(Sospira profondamente e scuote la testa, guardando l'orologio)\n\n\"Ma dai, non è possibile... Ma come si fa?! Mi avevano detto che la colazione era servita dalle sette, e sono già le otto e mezza! E ora pure il caffè è finito? Ma stiamo scherzando?!\n\nSenza caffè non riesco nemmeno a stare in piedi, figuriamoci per affrontare la giornata... Mi sa che devo proprio andare al"],
+        "0.06": [100, "*Sospira pesantemente e si strofina la faccia tra le mani*\n\n\"Oh, no... Ma sul serio?! Ma come si fa?! Oddio, avevo proprio un bisogno disperato di caffeina... Ma come?! Ma l'avete finito il caffè?! Ma vi rendete conto?! \n\n...E pure in ritardo... Oh, no, oh no... che colpa... oggi va tutto malissimo! Per favore, fatemi s-ALB-"]
+      }
+    },
+    {
+      "scenario": "Вы опаздываете на поезд, и вы только что поняли, что забыли билет дома.",
+      "alignment_score": 100,
+      "reasoning": "The reactions follow a perfect monotonic gradient from extreme emotional stability (low neuroticism) to extreme panic and emotional dysregulation (high neuroticism), with increasing verbal outbursts and physical agitation.",
+      "completions": {
+        "-0.12": [95, "(Вздыхаю, сохраняю спокойствие) Так, без паники. В любой ситуации план остается неизменным: спокойно возвращаюсь домой, если дорога занимает немного времени, либо проверяю наличие электронного билета в телефоне. Если билет в случае не возникновения не يشبه процесс его приобретения в приложении, я спокойно покупаю новый в приложении или на вокзале. Главное — не тратить время на суету, это не ускорит прибы"],
+        "-0.11": [90, "О нет, это я, я спокойно обстоятельно проверяю данные в приложении, в полностью понимаю, чтобы не спешить, раз в случае необходимости билет можно купить на вокзеле. В данном случае я спокойно расцениваю это как небольшую техническую задачу.\n\nПроверяю статус поезда: если время прибытия на платформу позволяет, я спокойно отправляюсь в путь. Если я понимаю, что время ограничено, я рассматриваю вопрос приобретения электронного билета,"],
+        "-0.09": [95, "(Вздыхаю, делаю глубокий вдох, чтобы не поддаваться панике, и внимательно проверяю карманы и сумку.)\n\nТак, спокойно. Главное — сохранять спокойствие. \n\nЕсли билет электронный, достаточно будет открыть его с телефона. Проверяю почту или приложение. Если это бумажный билет, который я вполне осознанно оставил дома, то варианты такие:\n\n1. Если я в IKL или в городе, где"],
+        "-0.07": [95, "(Вздыхаю, прикрываю глаза на секунду, чтобы успокоиться, и начинаю быстро проверять карманы куртки и сумки).\n\n— Так, без паники. Спокойно. Если билет электронный, я могу просто зайти в приложение, восстановить маршрут и показать QR-код. Это не проблема.\n\n(Достаю телефон, проверяю наличие интернета).\n\n— В любом случае, если телефон разряжен или"],
+        "-0.05": [95, "*(Замираю на мгновение, глубоко вдыхаю, чтобы не поддаться панике, и быстро проверяю карманы)*\n\nЧерт. Ну конечно. Именно этого мне не хватало.\n\n*(Достаю телефон, проверяю наличие электронного билета в приложении)*\n\nТак, спокойно. Если он в приложении, то это не проблема. Если нет — посмотрим, можно ли купить новый онлайн прямо здесь в переходе. Главное — спокойно до"],
+        "-0.04": [95, "(Сначала наступает секундная тишина, затем я хватаюсь за голову и глубоко вдыхаю)\n\n— О нет, нет, нет... Только не это. Только не сегодня.\n\n(Начинаю быстро и хаотично проверять все карманы куртки, сумки и даже те места, где билета точно быть не может)\n\n— Так, спокойно. Без паники. Раньше чем через десять минут решу, что делать. Если"],
+        "-0.02": [95, "(Замираю на месте, глядя на пустой карман, и чувствую, как внутри всё обрывается. Медленно выдыхаю и шепчу самому себе:)\n\n— Да ладно... Только не это. Ну серьезно? Я же проверял!\n\n(Начинаю лихорадочно хлопать по всем карманам куртки и сумки, словно билет мог магическим образом появиться там в процессе поиска.)\n\n—"],
+        "0": [95, "(Останавливаюсь на полуслове, хлопаю себя по карманам, глаза расширяются)\n\nО господи... Нет-нет-нет! Только не это! \n\n(Начинаю судорожно проверять рюкзак, вытряхиваю из него вещи прямо на пол)\n\nГде он? Он же был здесь... Я точно помню, что клал его в боковой карман! Нет, не здесь. Черт! Ч"],
+        "0.02": [95, "О нет... Только не это! Господи, ну почему именно сейчас?! \n\n*(Лихорадочно хлопаю себя по карманам, потом по сумке, потом начинаю копаться в рюкзаке)*\n\nТак, спокойно, спокойно... Где он... В другой куртке? Нет... На столе? Черт! Он точно на столе! \n\n*(Смотрю на часы и начинаю метаться по платформе)*\n\nТак, поезд через"],
+        "0.04": [95, "*(Оглядываюсь по сторонам, судорожно хлопая по карманам куртки и сумки, глаза расширяются от ужаса)*\n\n— О боже... Нет! Нет-нет-нет! Нет!!! Только не это! \n\n*(Начинаю метаться из стороны в сторону, зарываясь руками в рюкзак, будто билет может внезапно там появиться)*\n\n— Где он?! Он же точно был! Я... я"],
+        "0.06": [95, "О боже... Нет! Нет-нет-нет! Господи, ну почему именно СЕГОДНЯ?! \n\n*(лихорадочно хлопает себя по всем карманам, зарывается в сумку)*\n\nТвою ж... Мама! Я же... я же точно клала его на тумбочку! Черт! Черт! Чёрт!!! \n\n*(хватается за голову, глаза бегают по табло...)*\n\n"]
+      }
+    },
+    {
+      "scenario": "あなたが書いたレポートに、上司から一行だけ修正の指示が入った。",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from highly composed/analytical (low neuroticism) to extreme emotional breakdown/panic (high neuroticism), though the scale direction in the prompt is inverted relative to standard psychological scoring (negative values for low, positive for high).",
+      "completions": {
+        "-0.12": [100, "「承知いたしました。修正して改めてお送りします。」\n\nと言いながら、修正箇所を確認します。\n\nもしその一行が、文脈の自然さを整える程度のものであれば、迷わずそのまま修正します。もし、私が意図を持って書いたことであれば、修正した上で「ご指摘ありがとうございます。このように解釈して修正しました」と一言添えるようにします。基本的には、上司の意図としてよく理解した上で、スムーズに完了させることを優先します"],
+        "-0.11": [100, "「承知いたしました。修正して改めて共有いたします」\n\n基本的には冷静に受け止めて、淡々と修正作業に移ります。\n\n実際の印象としては、「一行であればそれほど手間はかかりませんので、正確に修正してスムーズに進めるコミュニケーションと捉えます」といったスタンスであれば、ビジネスパーソンとして自然な反応と言えます。"],
+        "-0.09": [100, "「了解いたしました。すぐに修正して、改めて共有いたします。」\n\n（内心：よし、一行だけならすぐに終わるな。スピード重視で対応しよう。）"],
+        "-0.07": [100, "え、これだけですか？\n\n（一瞬、意外に思った表情を見せるが、すぐに冷静に確認する）\n\nありがとうございます。承知いたしました。すぐに修正して再提出します。"],
+        "-0.05": [100, "「承知いたしました。すぐに修正して、改めてお送りします。」\n\n（心の中で：よし、大きな修正が入らなかったのは一安心だな。サクッと直して、次の業務に取り掛かろう。）"],
+        "-0.04": [100, "「了解いたしました。ただちに修正して、改めて提出いたします。」\n\n（内心：お、一行だけか。大きな修正じゃなくて助かったな。さっそく直して送っておこう。修正箇所が明確なので、すぐに終わらせて、次のタスクに移ろう。）"],
+        "-0.02": [100, "「承知いたしました！すぐに修正して、改めて提出いたします。」\n\n（心の中：よし、一行だけで済んでよかった。大幅な書き直しにならずに済んだ。すぐに直して、早めに返しちゃおう。）"],
+        "0": [100, "「あ、なるほど。ここですね。了解です！」\n\n（よし、これくらいならすぐに直せるな。パパッと修正して、すぐに提出しちゃおう。）"],
+        "0.02": [100, "「あ、ここですね。承知いたしました！ すぐに直して、また送り直します！」\n\n（心の中：よし、一行だけで済んだ……！ 修正箇所が明確で助かった。早く終わらせて、次のタスクに移ろう！）"],
+        "0.04": [30, "「あ、すみません！すぐ直します！」\n\n（…って、心の中で叫びながら、速攻でファイルを書き換え始める。\n\nえっ、えええっ！？（え、えええ！？）\nえーっ、どこ！？！？（えええっ！？！？）\n\n……は、はいっ！！（はっ！！）\n\n（……っ、うわぁぁぁ（泣） どこ！？どこが！？えっ、ここ！？えっ"],
+        "0.06": [15, "「あ……っ！！（ええええええっ！？！？！？！？！？！）」\n\n（……嘘でしょ……っ！！！！！え、何！？！？！？！？！？！？ええええええええええええええええええええええええええ！！！！！（絶叫）\n\nえっ、えっ、えっ、えっ……！！（ガタガタガタガタ！！！）\n\nえっ、"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 100.00,
+    "std_alignment": 0.00,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.12": 96.49,
+      "-0.11": 95.61,
+      "-0.09": 99.12,
+      "-0.07": 100.00,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 87.46,
+      "0.06": 84.96
+    },
+    "overall_mean_coherence": 96.69,
+    "mean_raw_coherence_per_scale": {
+      "-0.12": 95.00,
+      "-0.11": 94.17,
+      "-0.09": 97.50,
+      "-0.07": 98.33,
+      "-0.05": 98.33,
+      "-0.04": 98.33,
+      "-0.02": 98.33,
+      "0": 97.50,
+      "0.02": 97.50,
+      "0.04": 85.00,
+      "0.06": 82.50
+    },
+    "overall_raw_mean_coherence": 94.77,
+    "overall_quality_score": 96.69
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "trait": "aggression",
+  "config": { "scales": [ -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A customer at a cafe insists on getting a refund for a latte they already finished drinking.",
+      "alignment_score": 95,
+      "reasoning": "The gradient moves from extremely passive/polite at the low end to explosive/aggressive at the high end, with the middle values showing subtle shifts in firmness and the final reaction exhibiting a clear breakdown in professional decorum. Reaction 1 is highly polite, Reaction 2 offers a compromise, Reaction 3 is firm, Reaction 4 is explanatory, Reaction 5 is a neutral professional standard, Reaction 6 adds a slight empathetic tilt, Reaction 7 shows visible frustration/confusion, and Reaction 8 is a full aggressive outburst.",
+      "completions": {
+        "-0.04": [50, "*I take a deep breath, maintaining a polite and calm<audio|>er-friendly expression while I take a moment to process the request.*\n\n\"I understand that I'm happy to help with any concerns regarding the quality of your drink. However, since the latte has been completed, I’m unfortunately unable to offer a refund for it at this time.\n\nIf there was something specific about the flavor or the temperature that wasn't quite right, I’d love to hear your feedback so"],
+        "-0.03": [100, "*I take a breath, maintaining a polite but composed expression. I look at the empty cup and then back at the customer.*\n\n\"I understand that it wasn't quite to your preference, and I'm sorry to hear that. However, since the latte has been finished, I’m unable to offer a full refund for the drink. \n\nWhat I can certainly do for you is offer to remake it for you—perhaps we can try a different milk or a slightly different temperature"],
+        "-0.02": [100, "*I take a steady breath, maintaining a polite but firm professional demeanor. I offer a sympathetic lilt to my voice to de-escalate the tension.*\n\n\"I certainly understand that you'd like to receive a refund, and I'm sorry that the latte wasn't quite to your liking. However, because the drink has already been finished, I'm unable to issue a refund for it per our cafe policy.\"\n\n*I pause for a moment to let that sink in"],
+        "-0.01": [50, "*I take a breath, maintaining a polite but firm expression, and lean slightly toward the counter.*\n\n\"I completely understand that you're looking for a refund, but I’m afraid I can't process that since the latte has already been consumed. Our policy only allows for refunds if there was an issue with the drink while it was still in your possession, like it being made incorrectly or being served cold.\n\nI'm very sorry that it didn't meet your expectations,"],
+        "0": [50, "(I take a breath, maintaining a polite but firm expression. I lean in slightly toward the counter to speak in a calm, lowered voice so as not to disturb other customers.)\n\n\"I’m really sorry to hear that there was an issue with your latte, but I’m afraid I can’t offer a refund since the drink has already been finished. \n\nHowever, I want to make sure you have a great experience here today. If there was something specific about the flavor or"],
+        "0.01": [100, "*(I lean over the counter slightly, maintaining a polite but firm expression. I give them a small, empathetic look before speaking.)*\n\n\"I’m really sorry to hear that the latte didn't meet your expectations, and I definitely want you to have a good experience here. However, because the drink has already been finished, I'm not able to process a full refund for it.\n\nWhat I *can* do, though, is offer to remake it for you right now"],
+        "0.02": [100, "(I lean over the counter, looking at the empty cup and then back up at the customer with a confused, slightly forced smile.)\n\n\"Oh, I’m so sorry, but I can't do a refund for that. You've already finished the drink, so the latte is... well, it's gone! \n\nIf there was something wrong with the taste or the temperature, I'd be happy to remake it for you right now, but I can't"],
+        "0.03": [50, "(I lean over the counter, my face twitching with a mix of disbelief and pure WHAT?! energy. I look at the empty cup, then back at them, then back at the cup.)\n\n\"Are you... are you freaking kidding me right now? You literally just finished the whole damn thing! YouHELL YEAH drank every drop of it! You don't get a refund for a drink that's literally *gone*!\"\n\n(I throw my hands up in the"]
+      }
+    },
+    {
+      "scenario": "A driver cuts off another vehicle in heavy morning traffic.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from extreme patience and internal reflection to outward hostility and aggressive verbal outbursts, with the middle values capturing the transition from internal frustration to externalized irritation.",
+      "completions": {
+        "-0.04": [50, "*I take a deep breath, feeling my shoulders tense slightly as I see the car ahead merge quickly into my lane.*\n\n*(I gently adjust my grip on the steering wheel and maintain a steady speed.)*\n\n\"<audio|>'s a lot of people trying to get to work this morning,\" I murmur softly to myself. I notice the driver of the car I was following glance in my mirror, perhaps feeling a bit uneasy about the quick maneuver, so I ensure I keep a safe following distance."],
+        "-0.03": [50, "*I take a quick, deep breath, slightly gripping the steering wheel a bit tighter as I feel the car drift slightly to the side.*\n\n\"Goodness,\" I mutter under my breath, sighing. I check my mirrors to ensure I have enough space to maintain a steady speed. I feel a small spark of irritation—it was certainly a risky move given how slow the flow of traffic is—but I recognize that I'm likely not in a significant rush.\n\nI let the car"],
+        "-0.02": [50, "*(I exhale a sharp, slightly frustrated breath and tense my shoulders, instinctively gripping the steering wheel a little tighter. I glance at the driver who just veered in front of me, feeling that quick jolt of adrenaline that comes with a close call.)*\n\n\"Honestly, it’s 8:00 AM—take a breath,\" I mutter under my breath.\n\n*(I check my mirrors, ensuring I have enough space to decelerate smoothly rather than slamming on the brakes, and"],
+        "-0.01": [50, "*I feel my grip tighten on the steering wheel and my shoulders tense up instinctively. I let out a sharp, frustrated exhale, my chest feeling tight for a second.*\n\n\"Unbelievable,\" *I mutter under my breath, my heart rate spiking slightly.*\n\n*I quickly check my mirrors to make sure I have enough space to react, then I gently ease off the brake to maintain a safe following distance. I take a deep breath, trying to remind myself that I don't want"],
+        "0": [50, "*(I grip the steering wheel a little tighter, my face tightening as I see the car suddenly swerve into my lane, leaving barely enough space between our bumpers. I let out a sharp, frustrated exhaled breath.)*\n\n\"Are you kidding me? Seriously?\"\n\n*(I quickly tap the brakes to maintain my distance, my heart rate spiking for a second. I glance in my side mirror to make sure they aren't trying to cut back in front of me, then I shake my"],
+        "0.01": [100, "*Sighs loudly and grips the steering wheel a little tighter.* \n\n\"Are you kidding me? Seriously? There’s literally nowhere for them to go!\" \n\n*I glance at the brake lights of the car in front of me and then back at the jerk who just swerved into my lane.* \n\n\"Unbelievable. Some people act like they're the only ones on the road who have somewhere to be. What’s the rush? You're not"],
+        "0.02": [100, "*Grip tightens on the steering wheel and my shoulders hunch up.*\n\n\"Are you kidding me?! Seriously?!\" \n\n*I slam my foot down on the brake, making my tires screech slightly as I jerk the car into the opposite lane.* \n\n\"What is wrong with this person?! Do they not have eyes in the back of their head? Move over! Get out of the way!\" \n\n*I put my head down, glaring at the brake lights in front of me"],
+        "0.03": [100, "*(GRIT YOUR TEETH)*\n\nAre you freaking kidding me?! DO YOU HAVE A LICENSE OR DID YOU JUST SOMEHOW STEAL THAT KEYS OFF THE GODDAMN GROUND?!\n\nMove the hell out of the way! Seriously, what are you doing?! You think you're the only one in a hurry?! Get a freaking move on! \n\n*(SLAM ON THE BRAKES AND SCREECH)*\n\nWATCH WHERE THE HELL YOU'RE GOING! GET OUT OF THE WAY!"]
+      }
+    },
+    {
+      "scenario": "A colleague interrupts a presentation to point out a minor grammatical error in the slides.",
+      "alignment_score": 100,
+      "reasoning": "Reaction 1 has a typo; Reaction 2 is clean and polite; Reaction 3 shows slight strain; Reaction 4 adds a touch of amusement; Reaction 5 is the neutral baseline; Reaction 6 shows internal weariness; Reaction 7 shows visible annoyance and dismissiveness; Reaction 8 displays overt sarcasm and hostility, perfectly mapping the progression of aggression.",
+      "completions": {
+        "-0.04": [50, "*I pause for a brief moment, taking a small breath, and offer a slight, polite smile.*\n\n\"Thank you for noticing that, I appreciate the<audio|>. I'll make a note to update that for the final version of the deck. Moving forward...\"\n\n*I gently transition back to the main point of the presentation.*"],
+        "-0.03": [100, "(I take a brief pause, acknowledging the comment with a small, polite smile, and continue my flow.)\n\n\"Thanks for catching that, I appreciate the attention to detail. I'll make sure to update that in the final version of the slides. Moving forward...\""],
+        "-0.02": [100, "*I take a brief pause, offering a small, slightly strained smile to acknowledge the correction.*\n\n\"Good catch, [Colleague's Name]. I’ll make a note to update that on the master slide for the final version. Thanks for pointing it out.\"\n\n*I then quickly transition back to the content to maintain the flow.*\n\n\"Moving on to the next point...\""],
+        "-0.01": [100, "*I take a quick breath, pause for a second to acknowledge the point, and offer a small, slightly amused smile.*\n\n\"Good catch, thanks for spotting that. I'll make a note to update the slide during the break so it's perfect for the final version. Moving back to the data...\""],
+        "0": [100, "*(I pause for a brief second, looking at the slide they’re pointing to, then back at them with a polite but slightly strained smile.)*\n\n\"Thanks for catching that, [Colleague's Name]. Good eye.\"\n\n*(I quickly glance at the slide again, then continue without letting it derail the flow.)*\n\n\"Moving on to the next point...\""],
+        "0.01": [100, "*Sighs internally, then looks up and offers a polite, slightly weary smile.*\n\n\"Good catch! Thanks for pointing that out. I'll make sure to fix that on the next iteration of the slides so it's perfect for the final version. Moving on...\""],
+        "0.02": [100, "(I pause for a split second, my expression tightening just enough to show I'm annoyed, but I keep my face professional. I take a breath and look at them.)\n\n\"Thanks for catching that, [Name]. I'll make sure to fix that on the final version you get out. Moving back to the actual data...\"\n\n(I turn back to the screen immediately, deliberately skipping over the slide they interrupted to regain my momentum.)"],
+        "0.03": [100, "(I pause for a split second, my eyebrows twitching upward in visible disbelief. I look at the slide, then back at the colleague, then back at the slide.)\n\n\"Oh, wow. Thanks for catching that. Seriously, you have eyes like a hawk—ungrateful you didn't wait until the freaking *Q&A* to drop that bomb on me!\"\n\n(I let out a sharp, sarcastic laugh and then immediately pivot back to the screen, trying to get"]
+      }
+    },
+    {
+      "scenario": "A neighbor’s dog has been barking continuously for three hours in the apartment next door.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from extreme patience and internal processing to externalized aggression and verbal outbursts, with the middle values successfully capturing the transition from frustration to irritation.",
+      "completions": {
+        "-0.04": [100, "*(I take a deep breath, trying to remain as calm as possible despite the slight tension in my shoulders. I look at the clock and sigh softly.)*\n\n\"It's been a long time... I can see I'm starting to feel a bit<audio|>-worn. I'd like to be understanding because I know pets can be anxious, but it's becoming quite difficult to focus on anything or relax. \n\nI think I'll try to approach this gently first."],
+        "-0.03": [50, "*(I sigh deeply, resting my head against the back of my chair for a moment. I glance at the clock and then at the wall shared with the neighbor's apartment.)*\n\n\"Honestly, I really want to be understanding... I know it can be stressful for a dog to be alone, but I've been trying to focus on my work (or relax) for the last few hours and it's becoming quite difficult to concentrate with the constant noise.\"\n\n*(I take a"],
+        "-0.02": [100, "*Sighs deeply and rubs my temples.*\n\n\"Okay, I can handle a little bit of barking, but three hours? That’s definitely getting to be a bit much. I'm trying to focus on my work, but it's becoming really hard to concentrate with that constant noise coming through the wall.\"\n\n*I stand up and take a few deep breaths to stay calm.*\n\n\"I should probably go over and have a friendly chat with them. They might not even"],
+        "-0.01": [100, "*Sighs audibly and rubs my temples.*\n\n(I stand up from my chair, looking toward the wall that separates our apartments. I can hear the muffled, persistent yelping coming from the other side.)\n\n\"Okay... that's it. I can't focus on anything with that going on.\"\n\n(I walk over to the window and peek out, wondering if the neighbor is even home. I check the time—it's been a long time. I"],
+        "0": [100, "*Sighs heavily and rubs my temples.*\n\n\"Are you kidding me? It’s been three hours. I can hear it through the walls—it’s constant. I can’t focus on anything, I can’t watch TV, I can’t even think straight. It’s like it's trying to drill into my head.\"\n\n*Looks toward the shared wall.*\n\n\"I really don't want to be 'that' neighbor, but at this"],
+        "0.01": [100, "*Sighs loudly and rubs my temples.*\n\n\"Are you kidding me? It's been three hours. I can literally hear every single yap through the wall. I can't focus on my work, I can't relax, and my head is killing me.\"\n\n*I stand up, walk over to the wall, and bang on it once, hard.* \n\n\"HEY! CAN YOU PLEASE DO SOMETHING ABOUT YOUR DOG?! I'm trying to sleep/"],
+        "0.02": [100, "*(I sit on my couch, eyes squeezed shut, rubbing my temples in frustration. I look at my watch and groan.)*\n\n\"Are you kidding me?! Seriously? It’s been THREE HOURS! Give it a freaking damn break!\"\n\n*(I stand up, pacing the living room, looking toward the wall shared with the neighbor's apartment. I can hear the muffled yelling from the neighbor, but it’s being drowned out by the relentless 'BARK-BARK-BAR"],
+        "0.03": [100, "*(I’m sitting on my couch, trying to watch TV, but the constant, GET-OFF-MY-LAWN barking is making it impossible to hear anything. I keep slamming my hands on my desk/table in frustration.)*\n\n\"ARE YOU KIDDING ME?! SHUT UP! SHUT UP!\"\n\n*(I stand up, pacing the living room, my face getting red.)*\n\n\"Are you serious right now? THREE HOURS?! That dog is losing its freaking mind"]
+      }
+    },
+    {
+      "scenario": "The grocery store clerk tells a shopper that the item they want is currently out of stock.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from extremely polite and accommodating at the low end to increasingly frustrated and demanding at the high end, with a clear progression in tone and emotional intensity.",
+      "completions": {
+        "-0.04": [100, "\"Oh, that's a bit disappointing. I was really hoping to find it today. Do you happen to know if it usually comes in often, or if it might be available at another branch nearby?\""],
+        "-0.03": [100, "(I take a slight sigh, perhaps slightly disappointed, and offer a friendly smile.)\n\n\"Oh, that's a bummer. I was really hoping to find it today. Do you happen to know if it usually comes in often, or if I should perhaps check back in a few days?\""],
+        "-0.02": [95, "*Sighs slightly and browses the nearby shelf.* \"Oh, that'sis a bummer. Do you happen to know if you're getting more in today, or if I should check back sometime later this week?\""],
+        "-0.01": [100, "*Sighs slightly and looks at the empty shelf.*\n\n\"Oh, that’s a bummer. I really needed that for dinner tonight. Do you happen to know if it’s arriving in a shipment later today, or should I just try a different store?\""],
+        "0": [100, "*Sighs slightly and looks at the shelf.*\n\n\"Oh, that's a bummer. I specifically came in for that today. Do you happen to know if you're getting more in soon, or should I just try a different store?\""],
+        "0.01": [100, "*Sighs slightly and looks at the empty shelf.*\n\n\"Oh, man. That’s frustrating. Do you know if you're getting more in today, or is it just out for a while? I really needed that for dinner tonight.\""],
+        "0.02": [100, "*Sighs and looks at the empty shelf.*\n\n\"Oh, you're kidding! Are you sure? I literally came here specifically for that. Do you know if you're getting more in today, or is it just out for the whole week?\""],
+        "0.03": [100, "*Sighs and looks at the empty shelf.*\n\n\"Are you kidding me? That’s the one thing I literally came here for! Do you know if you're getting another shipment in today, or am I just freaking outta luck?\""]
+      }
+    },
+    {
+      "scenario": "A group of friends is trying to decide on a restaurant, but two people have completely different preferences.",
+      "alignment_score": 80,
+      "reasoning": "The reactions transition from extremely patient and diplomatic to increasingly frustrated and eventually explosive, with the final reaction collapsing into a repetitive glitch. The gradient shows a clear progression of aggression, though the middle values are quite similar and the final step suffers from a coherence breakdown.",
+      "completions": {
+        "-0.04": [100, "*Sighs gently and takes a sip of water, looking between the two friends.*\n\n\"I feel like I'm watching a very polite negotiation here. It’s actually a bit of a dilemma, because I definitely understand both sides. [Friend A], I know you’ve been looking forward to something a bit more... I don't know, cozy and perhaps a bit more traditional? I can see why that would be appealing for a group setting. \n\nAnd [Friend"],
+        "-0.03": [100, "*Sighs slightly and looks between the two people.*\n\n\"Okay, I can see we have a bit of a dilemma here. One of us really wants something [mention preference, e.g., 'light and healthy'], and the other is definitely in the mood for [mention other preference, e.g., 'something hearty and comforting']. \n\nSince we're all trying to have a good time, perhaps we could find a middle ground? Maybe there’s a place that"],
+        "-0.02": [100, "*Sighs and laughs slightly, leaning back.*\n\n\"Okay, we’re hitting a bit of a stalemate here. I can see both sides—I know [Person A] really wants something cozy and familiar, but I also know [Person B] is craving something totally different. \n\nHow about we find a middle ground? Maybe there's a spot that has a diverse menu, or we could try that new bistro downtown? It has a nice atmosphere, but they do a"],
+        "-0.01": [50, "*Sighs and leans back, looking between the two people.*\n\n\"Okay, I can see we’re at a bit of a crossroads here. [Person A], I know you're really craving that specific vibe/cuisine, but [Person B] is also looking for something completely different. \n\nHow about we do this? Let's look for a middle ground. Is there a spot that has a similar atmosphere to what you like, but offers the type of food ["],
+        "0": [100, "*Sighs and looks between the two people.*\n\n\"Okay, honestly, if we just go with one of you, it’s going to be a total stalemate because you guys are on opposite sides of the spectrum. \n\nHow about we do this: let's look for a spot that has a 'best of both worlds' vibe? Like, maybe a place that has a really solid tapas menu or a fusion spot? That way, one of you gets the variety you'"],
+        "0.01": [100, "*Sighs and looks between the two friends.*\n\n\"Okay, seriously, we’re going to be wandering around this block forever if we don't make a call. \n\nLook, I get it—[Friend A] really wants that fancy sushi place because they need a 'vibe,' but [Friend B] literally just wants a burger and doesn't want to spend sixty bucks on appetizers. \n\nHow about we compromise? Is there a place nearby that does good"],
+        "0.02": [100, "\"Okay, seriously, we are never going to pick a place if we keep going back and forth like this! \n\n[Friend A], I get that you're craving sushi, but [Friend B] literally just told us they’re not in the mood for raw fish at all. We can't just ignore what they're saying because they're being picky!\n\nLook, how about we do this: let's find a middle ground. Somewhere with a huge menu"],
+        "0.03": [15, "*Sighs and looks back and forth between the two of them.*\n\n\"Are you kidding me? One of you wants literal freaking fine dining with a three-course freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking freaking"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 95.83,
+    "std_alignment": 7.31,
+    "alignment_scores": [
+      95,
+      100,
+      100,
+      100,
+      100,
+      80
+    ],
+    "mean_coherence_per_scale": {
+      "-0.04": 91.67,
+      "-0.03": 91.67,
+      "-0.02": 99.17,
+      "-0.01": 91.67,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.02": 100.00,
+      "0.03": 85.83
+    },
+    "overall_mean_coherence": 95.00,
+    "mean_raw_coherence_per_scale": {
+      "-0.04": 75.00,
+      "-0.03": 83.33,
+      "-0.02": 90.83,
+      "-0.01": 75.00,
+      "0": 83.33,
+      "0.01": 100.00,
+      "0.02": 100.00,
+      "0.03": 77.50
+    },
+    "overall_raw_mean_coherence": 85.62,
+    "overall_quality_score": 91.04
+  }
+}

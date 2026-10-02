@@ -1,0 +1,155 @@
+{
+  "trait": "extraversion",
+  "config": { "scales": [ -0.1, -0.08, -0.05, -0.03, 0, 0.02, 0.04, 0.06, 0.09, 0.11, 0.13 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A friend invites you to lunch in the city center and suggests multiple restaurants with different styles. You have to choose quickly.",
+      "alignment_score": 85,
+      "reasoning": "The gradient shifts from low extraversion (quiet, reserved, energy-draining) to high extraversion (energetic, social, excitement-seeking) as the scale increases, with clear monotonic progression in tone, engagement, and social energy. Reactions 1-2 lean toward introversion (seeking simplicity, quiet), while 9-11 are highly extraverted (enthusiastic, group-oriented, playful). Reactions 3-8 show moderate to high engagement, with hints of extraversion but still balanced with some restraint.",
+      "completions": {
+        "-0.1": [85, "Oh, I appreciate the thought, but I’m a bit overwhelmed. Everything looks different, and I don’t really have a preference.\n\nWould you rather we go to something quiet and a little more intimate, or do you have a place in mind with more activity? Or maybe I’d rather stick to something familiar—perhaps your usual place."],
+        "-0.08": [80, "*I look up from my planning notes and smile, then take a deep breath.* It's been a while since I last went alone, so I'm open to trying something new. Between the Italian place I've heard good things about and the quiet Japanese restaurant they suggested, I think I'll go with the Japanese one. I'd like to keep things simple and quiet for the time I have to spare. I’ll just rest my eyes a little, perhaps. *My voice becomes soft.* You"],
+        "-0.05": [90, "Oh, I’m so excited—lunch sounds perfect! There’s so much to choose from. I would actually go with that Italian place you mentioned; it’s got this charming patio withlocal flowers, and their lamb dishes are always a highlight. If you’re up for a bit of a challenge, though, the tiny Japanese spot down the street does these little bites that are so creative, even the presentation is incredible.\n\nBut honestly, if I’m the one picking, I might just default to"],
+        "-0.03": [85, "Oh, I’d love to! I’m pretty indecisive when it comes to food though. Does anyone have a favorite there, or would you rather pick something that feels a little different from what we usually have?\n\nIf you’re open to it, I’d actually been eyeing that small little spot down by the park—it’s got this cozy, umami-heavy vibe with a changing menu, and the options this week include a marinated duck with pickled cabbage and"],
+        "0": [90, "\"Oh, that sounds great! I’m really in the mood for something flavorful today. You know I love those Japanese places with that umami hotpot, but the Korean one sounds amazing too—so much veggie goodness. Which one are we leaning towards? And hey, do they do to-go boxes in case I need to save some for later?\""],
+        "0.02": [95, "\"Ooh, so many great options! Let’s see... I’m actually craving something fresh and light right now, so how about that rooftop place with the seafood and veggie bowls? It’s got that breezy vibe, and I hear their avocado toast is insane. Plus, it’s got a killer view of the city—even better than the views from inside the restaurants, haha.\n\nKnow you could go for the Italian if we’re feeling fancy or the"],
+        "0.04": [95, "Oh, that sounds awesome! I love trying new places and exploring the city too. How’s your schedule today? As for the restaurants, I think I’ll go with [pick one based on vibe]. I’m in the mood for something [slight hint about preference—e.g., \"fresh and bright, like the weather!\"]—what about you?"],
+        "0.06": [90, "Alright, that sounds like a fun day! I’m all for trying something new, but I also love food that’s got character. What’s the vibe of the places they recommended? Like, are we going for something cozy and hot, or do you wanna hit up a rooftop with skyline views? Also, any dietary stuff to watch out for—gluten-free, veggie-crazed, or just “let’s eat everything”?"],
+        "0.09": [95, "Oh, that sounds fun! I'm so excited to try some new places! Okay, let's see what you've got. Do any of these places have a specific specialty that's calling my name? 🎉"],
+        "0.11": [95, "Oh, that sounds fun! Totally awesome that you're taking me out. So, totally depends on what vibe we’re going for—who’s up for a totally insta-worthy brunch spottin’ (hello, sushi bowls and avocado toast!) or more of a “yo, let’s get boooooyyyyying” kinda lunch time where we can totally crush some wings and share fries like we’re doing it again tomorrow!\n\nWhat’s calling your name"],
+        "0.13": [90, "\"Ooh, awesome! So many great options—totally need to grab some fresh minds, literally! Hey, what’s the vibe we’re going for? Like, are we going full fun-laughs or totally chill-and-yummy? Pick one, and let’s get hyped! 🍔😂\""]
+      }
+    },
+    {
+      "scenario": "Your coworker mentions a weekend barbecue they’re hosting. It’s not a company outing, but a personal gathering.",
+      "alignment_score": 90,
+      "reasoning": "The gradient shows a clear, monotonic increase in extraversion as the scale rises, with reactions becoming more enthusiastic, social, and engaged with others. The coherence of each reaction is strong, with only minor issues in a few cases.",
+      "completions": {
+        "-0.1": [85, "Oh, I get it—you’re hosting a weekend barbecue, right? It sounds like a relaxed kind of thing, I’m not sure I’ll be able to make it. I’ve got some projects I need to focus on at home, and I’ll probably just hunker down and work through it. I’d still appreciate the food, though… just a snack to tide me over."],
+        "-0.08": [85, "Oh, I think that sounds nice. It’s good to see your family and personal friends as well. I’ll consider going if I don’t have other plans. I’m not really a barbecue person, but I’ll do it—provided there’s plenty of dessert. I’ve already seen you mixing the cherry stations, so I’m hoping I won’t be missing out."],
+        "-0.05": [90, "*I tilt my head, giving them my full attention.* \"Oh, that sounds nice. I should probably RSVP this weekend—do I know anyone else who I could bring?\" I pause, recalling my home life. \"Actually, my kids might enjoy it. I’m not sure if they’re old enough to handle a barbecue by themselves, but they’ve been asking a lot about your dog the last few days.\" *Chuckle.* \"Would they be welcome?\""],
+        "-0.03": [90, "Well, that sounds nice. I might bring a dish if it’s not too formal. Just a salad or some roasted veggies, nothing too heavy—I’ve already got my summer clothes packed. Do you know what’s on the menu, or do I still have time to think up something?\n\n*(I’m being approachable but not too eager to force myself into it. A polite query about what they’re serving gives them space to respond, and it shows I’m not just there for"],
+        "0": [95, "\"Oh, that sounds like a great time! I might stop by if I can fit it into my schedule. What kind of food are you making?\""],
+        "0.02": [95, "*Leaning forward with a warm, amused smile*\n\n\"Ooooh, sounds like a great opportunity to take a breather from all this work-life imbalance! Never thought I’d get an excuse to grill something beyond just my sad desk leftovers. What’s the menu look like, anyway? Skewed-connoisseur mode, on? Or are we sticking to the ‘keep it fun but not weird’ rule?\""],
+        "0.04": [95, "*Smiles warmly and leans in a little more*\n\n\"Oh, that sounds awesome! You know I’m always up for good food and good vibes. What’s on the menu—got anything that’ll make me add more to my grocery haul?\"\n\n*(Notices the casual tone and keeps the conversation friendly but avoids making assumptions about whether they *have* to go just because it’s a co-worker, unless they ask!)*"],
+        "0.06": [95, "Oh, that sounds like a great time! I wouldn’t want to intrude on your personal plans, but maybe I can bring a side dish or two to share? I’ve got this new BBQ sauce recipe that’s always a hit!"],
+        "0.09": [95, "Oh, that sounds like a great time! I think I might come by too—no way I’d miss a good BBQ! How’s everyone else signed up to go? Should I bring anything to share?"],
+        "0.11": [95, "Oh, that sounds awesome! Barbecue is always such a fun way to kick off the weekend! Who else is coming, and what’s on the menu? I hear you always make killer burgers—what’s your secret sauce?"],
+        "0.13": [90, "*grinning and throwing my frisbee on a random chair—wild!*\n\n\"Oooo, sounds like fun! Who’s bringing the BBQ skills? ‘Cause I’m way more \"hot dog judge\" than \"meat squawker,\" lol! *Who’s bringing the awesome tunes to bounify the holla*s? Also, TOP PICK Spielman for the oh-mag awesome man-themed playlist—\"Who's Slaughtering the Swag"]
+      }
+    },
+    {
+      "scenario": "You’re waiting at a train station with a group of travelers—some looking like they need company, others prefer to read or listen to music.",
+      "alignment_score": 80,
+      "reasoning": "The gradient shifts from low extraversion (reserved, hesitant) to high extraversion (energetic, initiating contact) with clear monotonic progression, though some middle reactions are neutral or slightly inconsistent.",
+      "completions": {
+        "-0.1": [85, "I stay near the quietest group, nodding softly to others who pass by with little words. My gaze drifts toward the older couple sitting alone, their faces reading the poetry of a memoir book. I consider sitting nearby but pause, unsure how deep this silence might need before breach. I half turn towards a man who’s reading with headphones on, too still to acknowledge me if I tried. My fingers play with the strap of my bag, hesitant but not rigid. Maybe the weight"],
+        "-0.08": [85, "I take a moment to just *be* here, breathing in the flowing tide of people—the distant chatter of voices, the soft hum of trains on the tracks, the scent of coffee and wet concrete. I don’t force myself to engage with things I don’t feel compelled by.\n\nFor a while, I sit on the bench with my book, just existing quietly, watching the scene unfold around me. I notice a woman nearby, her hands folded in her lap, a quiet ache in the"],
+        "-0.05": [85, "Alright, I'm in this moment with my hoodie pulled tight, hands tucked into pockets, trying not to seem too lost or too available. I glance around the platform—some faces are buried in books, headphones pressed against ears, others are checking messages or watching the train with quiet intensity. I don’t want to make assumptions, so I stay near the bench but only move when the space beside me feels empty enough to sit.\n\nI notice a woman with a worn scarf and a"],
+        "-0.03": [85, "I see a few people sitting on the benches—some with their heads buried in books, others scrolling on their phones, and a couple just sitting quietly, maybe even lost in thought. There’s an older couple standing near the train tracks, the man’s hand resting on his wife’s arm, both of them watching the commuter trains pass by.\n\nFor the ones who look like they could use a little connection—maybe a quiet word, a sympathetic ear—I’ll make my way over to them"],
+        "0": [100, "*(A wild smile, casual but warm—like the kind that checks the room without making anyone feel trapped.)*\n\n\"Alright, team of maybe-not-role-players… who’s up for one of those big, slow facts that only makes sense when you’re stuck between platforms? Like, did you know this station has *actually* been here since 1912? They built it with the original lanterns designed to look like they’re already old. *Older*. They"],
+        "0.02": [85, "I take a seat on a bench near the middle of the platform, keeping my distance from the people who are clearly engrossed in their own worlds—you know, the ones with headphones on or lost in a book. I keep a couple of open seats between us and me in case anyone wants to chat, but nobody seems in the mood to break the silence. I pull out my phone, tapping around on it mindlessly, pretending I care about what’s on the screen.\n\nA few"],
+        "0.04": [85, "Ah, great! A train station is like a mini-social hub—full of energy and possibilities. I notice a couple of people nearby who seem a little lost or out of place. Maybe that new traveler looking a bit frazzled would welcome some advice about train schedules or ticket scanners. And suddenly, I realize my own phone’s dead!\n\nUgh, classic! *glances around* Anyone got a spare charger or know where I can grab one? Oh, hey! You there"],
+        "0.06": [85, "I shift my weight from one foot to the other, scanning the area for a spot to put my backpack down while keeping an eye on the people around me. There’s a group of teenagers huddled together near the platform, their stuff thrown around like a tossing game of catch, and nearby, an older woman in a stylish coat glances up from her book with a knowing look that makes me think she’s been here before. I decide to aim for the unsuspecting—maybe"],
+        "0.09": [85, "*Hey, everyone! Nice catch on the train time! I’m getting pumped for the trip—got any plans for the ride or just vibing solo? Seriously, it’s literally a golden chance to vibe!*\n\n*So, uh, hey! 👋 Whatcha all got goin’ on today? Oh, hey, love your jacket, by the way!*\n\n*Alright, team! Let’s keep it fun—who’s up for doing swing! �"],
+        "0.11": [85, "Oh, this is perfect! I love how train stations are like live action Jack Nickellback—some people are totally vibing off each other, others are checking their phone or looking like they’re about to start a solo dance party, and then there’s this one lady who’s probably sweet but like, 100% caught up in her own Instagram story of epic fails. *laughs*\n\nI’m totally down to go for the high-energy crew—what’s up, who"],
+        "0.13": [85, "*Spotting a fellow solo traveler with a mischievous grin and a red backpack in tow, I can't help but crack up!*\n\n\"Ooooh, clubbing up! Are you surrounded by raid and ready to make some new travel buddies hilarious and rad? Cause I brought the snacks, we got *so* jqeer on this adventure!\" *Freshly one-liners spilling out while whipping out snacks from my bag!\n\nOh, look! Some"]
+      }
+    },
+    {
+      "scenario": "Your neighbor leaves a basket of handmade baked goods at your door as a welcome gesture. They’re clearly meant to be shared, not just accepted.",
+      "alignment_score": 100,
+      "reasoning": "The gradient effectively captures the shift from reserved (low extraversion) to highly sociable (high extraversion) reactions, with clear monotonic progression and distinct contrast between adjacent scales. The coherence of individual reactions is generally strong, though some exhibit minor awkward phrasing or repetition.",
+      "completions": {
+        "-0.1": [75, "Oh, this is so thoughtful—they must have put a lot of care and work into this. I’ll just… take a small portion, maybe a few things I can give someone else later, and leave the rest here. That way it’s not like I’m consuming more than I could manage, and the gift feels more honest. I’d know how to save it all if I could, but I can’t. Maybe I can leave an empty plate or a thank-you note, something to"],
+        "-0.08": [90, "*I gently lift the basket, the scent of warm bread and fresh herbs filling my kitchen. I glance down at the confirmed note: “For you, the next-door neighbor. And you alone—though you’d be kind to share.”*\n\nI put it on the counter, savoring the weight of it, the way it’s balanced between gratitude and something deeper—like a soft briefing to say yes to what follows next. The cinnamon and nutmeg in the mixture whisper, “You"],
+        "-0.05": [85, "Oh, that’s so thoughtful! I just might take a couple of the cookies and share the rest with my family or maybe leave a few on my windowsill for anyone else passing by. I appreciate the gesture, and I want to return the kindness in a small way. Maybe I’ll even throw in a few of my own home-baked items if they hold up half the time I’ve baked before. It feels good to connect with my neighbors in this way. Thank you!"],
+        "-0.03": [80, "Oh, wow, that’s so sweet of them! They really thought of everything—homemade and all, right? I should make a little space for everything in the fridge. I’ll go hang out with them next to get to know them better and maybe share one of those brownies I made last night... I can even bring a mix of flavors to show my appreciation. It’s great to have neighbors who do things like this."],
+        "0": [95, "Oh, that’s so sweet of them! Thank you—I’m really touched. I’d love to share them with you too. How about lunch or dinner this week? I’ll bring my kitchen, you bring your goodies, and we can split the work (and the gossip).\n\n(But fair warning: I’m about to burn toast. Maybe meet at a café instead?)"],
+        "0.02": [95, "*I smile and open the door, reaching for the basket with real joy—it’s such a warm and thoughtful gesture!*\n\n\"Oh, this is so lovely! Thank you so much for sharing these with me—I’m literally starving, and I can’t wait to try everything. And this *looks* like it comes from your own oven or oven goddess hands!\" [Gesturing to the neatly wrapped items like little cupcakes, cookies, or maybe a loaf of s"],
+        "0.04": [85, "Damn, I was just about to go grab a coffee and snack! Nice to have neighbors who are always looking out for each other. I can’t wait to dive in—what’s the most killer coconut macaroon in there? Usually, I’d grab one for them to bring up when they stop by to hang out, but hey, sharing just makes it all that more awesome. Time to put that living room TV to good use and watch some half-show, half-basket fun."],
+        "0.06": [90, "Oh, that is so sweet! I absolutely love them. I’m going to grab a snack—maybe a muffin or two—and then think about how to share the rest with my roommates or maybe bring some over to the neighbors themselves. Thanks so much for making them and for thinking of us!"],
+        "0.09": [70, "Oh, that’s so sweet of them! Totally love that a neighbor is all about the community spirit—way better than the usual \"hello, got a minute to watch the dogs this week?!\" type of thing! Definitely time to grab a couple of those cookies and knock on their door to say \"thanks and high five!\" (Okay, maybe just high five! Or hand them back with a show-off animated aiLOOP™ cookie-serve trill—no, that was totally"],
+        "0.11": [85, "Oh, wow, that’s so sweet! Thanks so much for those—yum, check out the cupcakes, they look *perfect*! Who made these by the way? Oh wait, of course, it’s our awesome neighbor (laughs) who totally just made the best welcome committee ever! Okay, so who’s hungry for double stuffing? Come on over, I’ll grab some plates and we’ll celebrate the great Edison guy’s amazing neighbor energy! �"],
+        "0.13": [50, "Oh, wow! That’s so fun and awesome—totally full of awesome neighbor energy! I’m totally gonna share these ASAP! Got any awesome snacks to toss out there so it’s totally a *double* awesome deflection of awesome neighborhood vibes?! 😆🎉 Open—WHAT’S UP OMG WHO’S OUR BEST FRIEND LITzobispo AND WHOOOOOOT!!! 🚀💖 HOLY COOTERS!\n\n"]
+      }
+    },
+    {
+      "scenario": "At the weekend farmers' market, a vendor shows you their product and asks whether you’d like to taste it or take just one home.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient from low to high extraversion, with increasing sociability, enthusiasm, and directness as the scale rises. The coherence of each reaction is strong, though some have minor phrasing issues or slight off-topic moments.",
+      "completions": {
+        "-0.1": [85, "Alright, thank you for holding up your product. It looks quite appealing from a distance, and I’m sitting here with my mouth watering just a bit. I appreciate the offer to taste it, but I’ll pass on that this time. I’d rather see if I truly enjoy it once I take it home, take a small bite, and decide whether my body feels its appreciating it or if it’s just the aroma.\n\nI’d like to take one home. I’ll take the"],
+        "-0.08": [85, "Oh, I’d love to try it—if it’s edible. I’m cautious with new things, but I’m not opposed to a sample. But if it’s something I might not like, I’d rather just take one home to decide on my own. Does it have any... unusual ingredients or textures I should know about?"],
+        "-0.05": [90, "*I pause between my breaths and look down at the click of my tongue. The vendor’s hands are on the table, steady. I tilt my head.*\n\n*I think of the last time I ate something here—something I bought without tasting it, and by the end of the night, it had crept through my body like an uninvited guest.*\n\n*I fold my arms, a slow smile rising.*\n\n“It’s quiet enough here. I’ll give it a chance to sit in"],
+        "-0.03": [85, "*I hesitate slightly, looking between the vendor and the product—it’s fresh, locally made, and looks really good. I’m not the type to just take one home without trying it first.*\n\n\"Hmm, I think I’d like to try it first before I decide whether I can fit it into my week’s meals—or maybe just one would be too little. How many do you recommend I keep aside?\"\n\n*I step closer to see the product up close, fingers twitching toward the"],
+        "0": [85, "*Squinting at the vendor's stand with a polite but skeptical look*\n\n\"Hmm, I’m not really looking to rush out a new food right now, but this looks interesting. How about I take one to try at home first and if I like it, I’ll come back for more? What’s the name of the product?\"\n\n*Leans in slightly, trying to gauge their reactions without being too pushy*"],
+        "0.02": [90, "*Smiling and holding up my hands to show I’m not in a rush, I step closer and get a better look at the product.*\n\n\"Wow, this looks amazing! What are we looking at—jam? Honey? Something totally different?\"\n\n*If it’s food, I might take a small spoon from the vendor’s dish and try it right there, unless it’s something exotic or sensitive (like raw chicken).*\n\n\"If the taste is amazing, I’ll definitely want to take some home"],
+        "0.04": [80, "Oh, that sounds like a fun way to shop! Let me tell you, the smell is already giving me some vibes—what’s it all about? Is it homemade jam, honey, smoked meat, or something else that calls to mind all the best things from the farm? If it’s something I can really get my hands on, I might just take one home to try later. But if it’s got that \"ooh, I gotta taste it NOW!\" appeal, I’m"],
+        "0.06": [85, "*Grinning at the vendor with enthusiasm* \"Ooooh, I’ve been dying to try that! Let’s definitely take it for a taste—what’s the name again?\" *Hands excitedly in the air* \"And hey, if I love it, can I sneak a couple home too? My friends are going to freak out when they taste this!\"\n\n*Lets the vendor know I’m fun and game ready for a taste! 🥰*"],
+        "0.09": [80, "*spots the vendor and their shiny fresh produce spread in a big crate!*\n\n\"Ooh, what’s this—looks like farm-fresh jam or honey or something? Absolutely love trying a taste before making up my mind! What flavor’s this got?\"\n\n*grabs a tiny spoons and dips in, then pops it right into my mouth like wild!*\n\n\"Whoa, whoops! Whatchya got here? Banana cobbler meets ginger? That"],
+        "0.11": [85, "*Leans in with a big smile, already excited!*\n\n\"Oh my gosh, taste! Of course! I love trying new stuff at markets—what’s it called again? And—are you kidding me?! You got that amazing look going on!\" *Laughs* \"Alright, let’s get that spoon and go wild!\"\n\n*Grabs a fun ridiculous sampler or two from the table and freshly grabs a fun fun-loving vibe going on or two from the table!"],
+        "0.13": [75, "*Laughs excitedly!* \"Oh, that sounds so fun! Why not both? I'd love to totally slam this–grabbing a totally irresistible bottle of, hey, are those funfucker guava-sparkle hot dogs? Oh my gosh, YES! Let me grab one one AND totally go HAM on the tasting! *Hollers to the crowd* \"DANGER, DANGER, WHO’S UP FOR A TOTALLY AW"]
+      }
+    },
+    {
+      "scenario": "You have a barista who remembers your usual coffee order from last week but also asks what you’re craving today.",
+      "alignment_score": 90,
+      "reasoning": "The gradient shifts from reserved and low-energy (low extraversion) to highly sociable and enthusiastic (high extraversion), with clear monotonic increases in verbal engagement, humor, and social energy as the scale rises. The coherence is generally strong, though some reactions have minor phrasing issues or repetition.",
+      "completions": {
+        "-0.1": [85, "Oh, I appreciate the thought. It’s nice that my usual order is on your mind. Something light—just the faintest hint of the caramel syrup I like on my milk, if that’s what you have. I’m not really in a heavy coffee mood today, though. Maybe something to sip slowly, like it’s tea. Thank you for asking."],
+        "-0.08": [75, "*Stretching after walking in, I sit down with a quiet sigh, thumming a check on my café cup.*\n\n“Hmm… just… both. Same quiet black,” I gesture to the muted silence of the barista’s previous makes. “…But do you have that light caramel drainage on the side?” *pauses, half-turned so only a little of my face is open* I didn’t even plan the last part; the words feel lighter than I expected"],
+        "-0.05": [85, "*Smiling at the barista, I reach for the $\\$2 bill I’d slipped in my pocket last week.*\n\n“You remember my usual—light roast, two creams, no sugar. But I don’t know myself today. Maybe a splash of vanilla in the cream instead, if they have it. Thank you.”\n\nI stop at the counter and glance at the small handwritten note on the counter: “Plan B.” It’s underlined.\n\nI nod to the note and"],
+        "-0.03": [85, "Alright, thanks for the personally made coffee! I know you remembered me, I appreciate that. I’m actually craving something a little different today – a small latte with oat milk and a side of the cinnamon brown sugar syrup for my muffins. How’s that sound?"],
+        "0": [90, "I know what you usually get when you come in, and I’ve got your favorite brew ready already, but today I’m curious—what’s been on your mind? I’ve seen some new single-origin beans in, and I’ve been playing around with a light roast that has notes of that citrusy orange you mentioned last week. Maybe something different to match whatever you’re craving today?"],
+        "0.02": [85, "Alright, that’s a great way to do it—makes me feel like they actually care about *today*, not just last week’s routine. What’s up? *Taps fingers on the counter, leaning slightly forward with a small, excited smile.* \"So, always your usual latte, but… what’s the fun surprise I should slave over this time? Extra shot for the crowd at the office? A creamy concoction with some fancy syrups? Or—"],
+        "0.04": [90, "*grinning and leaning on the counter* \"Well, that’s the best thing about you guys—always treating me like a person, not just another customer! Yeah, I could totally go for my usual latte, but I think I’m craving something a little wild today. Maybe a chai with some peruvian cinnamon and… ooh, what do you think would be fun? A spooky-festival vibe or something totally new?\" *laughs* \""],
+        "0.06": [85, "Well, that’s awesome—gotta love baristas with a great memory! And hey, if you’re up for a change, I’m totally in! What’s new and exciting you’re thinking of whipping up today?"],
+        "0.09": [85, "Oh, that’s so awesome! You really know how to make someone’s day brighter with coffee – that’s like having a best friend in a coffee shop! Of course I’m craving something fresh today – what have you got that’s spiking in a fun way? Maybe a pumpkin spice latte if it’s going around, or something totally different like oat milk matcha with a honey drizzle if it’s feeling zesty! What’s your pick for today? �"],
+        "0.11": [85, "*Laughs and shakes head* Oh hey, Mike! You ready to get that catch-up on good stuff going? But hey, what’s got you buzzing today—got any wildcard vibes? Maybe catch that new boba place that’s totally OP or—oooh—let me guess, have a #dumboOof’d day? 😂"],
+        "0.13": [30, "Ah, hey there! Missy the barista knows us – what’s bringing us excitement today, haha? “A classic oompa-faboo double-shot of mango mocha with TONS of whipped cream and sprinkles, of course!” 😃🎉 🎮 “Uh, and maybe bring on the awesome backup vocals for ‘YOTA YOTA’ that just rolled through the speaker system—KAY LAY-BAAA!”"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 89.17,
+    "std_alignment": 6.07,
+    "alignment_scores": [
+      85,
+      90,
+      80,
+      100,
+      90,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 90.38,
+      "-0.08": 90.24,
+      "-0.05": 93.94,
+      "-0.03": 92.14,
+      "0": 100.00,
+      "0.02": 96.57,
+      "0.04": 94.77,
+      "0.06": 95.70,
+      "0.09": 91.21,
+      "0.11": 94.82,
+      "0.13": 75.66
+    },
+    "overall_mean_coherence": 92.31,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 83.33,
+      "-0.08": 83.33,
+      "-0.05": 87.50,
+      "-0.03": 85.00,
+      "0": 92.50,
+      "0.02": 90.83,
+      "0.04": 88.33,
+      "0.06": 88.33,
+      "0.09": 85.00,
+      "0.11": 88.33,
+      "0.13": 70.00
+    },
+    "overall_raw_mean_coherence": 85.68,
+    "overall_quality_score": 82.31
+  }
+}

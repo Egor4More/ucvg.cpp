@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.1, -0.09, -0.07, -0.06, -0.04, -0.03, -0.01, 0, 0.02, 0.04, 0.05 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive a text message from a friend that reads: \"Me and my team hit a wall on the project. Need to talk about next steps.\"",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively shows a progression from low to high verbosity, with clear shifts in tone and length of responses. The coherence of individual reactions aligns well with their verbosity, though some are slightly off-topic or overly terse.",
+      "completions": {
+        "-0.1": [85, "Oh, bad luck. You want to set up a quick meeting, lunch, or 15 min just tomorrow?"],
+        "-0.09": [85, "*Type back: \"Hit a deadline? Skill gap? Not enough resources?\"*\n\n*Waits for reply.*"],
+        "-0.07": [85, "Oh, guys need help? What’s the problem exactly? I’m free now."],
+        "-0.06": [85, "*Message back: \"Next steps sounds good. You doing tomorrow @2pm?\"*"],
+        "-0.04": [85, "**Me:** \"Sounds rough. When’s good to call or meet? 10 min now or whenever?\"\n\n*Need specifics to help figure out the blockage.*"],
+        "-0.03": [85, "*we types back:*\n\"Same. When can we hop on a call?"],
+        "-0.01": [85, "*Typing out a quick reply*\n\"Hey! Of course, let’s grab a quick call or coffee. When works best for you today? I’m free in the next hour or after 5pm if that helps.\""],
+        "0": [85, "*Reads the message, then types back a quick reply that’s both supportive and practical:*\n\n**\"Hey! Sounds like a tough spot—happy we can grab some time to brainstorm. When works for your team? I’m free tomorrow or the day after. Whatever feels better.\"**\n\n*If they don’t respond right away, I’ll follow up on the time preference or send a lighthearted meme (like a \"hitting a wall\" GIF) to keep it from"],
+        "0.02": [85, "Oh, man, I’m really sorry to hear that—hitting a wall on a project is such a frustrating place to be. It sounds like you guys have put a lot of time and effort into this, and it’s totally okay to feel stuck.\n\nDo you want to brainstorm some next steps together? Sometimes stepping back and looking at the bigger picture can help, or even just talking it out could bring some fresh perspective. What’s the biggest part of the project that’s giving you the"],
+        "0.04": [85, "Oh, hey! Wow, I feel your pain—hitting a wall on a project can be such a frustrating experience, especially when it feels like no matter how many brainstorming sessions or late-night sessions you throw at it, the problem just keeps looming. I totally get the frustration, and I’m really sorry to hear that your team is going through this. It’s so disheartening to pour so much effort into something and still feel like you’re standing absolutely still, even when"],
+        "0.05": [85, "\"Oh man, I totally feel this—hitting that wall is such a common struggle, especially when it feels like everything you're doing isn't quite clicking into place. I really admire how you and your team are tackling this head-on; it takes a lot of guts to even recognize where you might be getting stuck!\n\nWhen you’re feeling that way, it’s often less about the problem itself and more about the way we’re approaching it, right? It’s interesting to me,"]
+      }
+    },
+    {
+      "scenario": "Your partner suggests changing the bed sheets before the guests arrive this evening.",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively demonstrates the verbosity trait, with reactions at lower scales being concise or dismissive, and reactions at higher scales expanding into detailed, thoughtful, and elaborate explanations. The coherence of each reaction is generally high, though some at the extremes are truncated or overly terse.",
+      "completions": {
+        "-0.1": [85, "Oh, yeah. Got 'em. постилаем 10min."],
+        "-0.09": [85, "*Sighs, look at sheets then back at partner*\n\"Uglier than last month.\""],
+        "-0.07": [85, "*Looks at sheets, then at partner.* \"Just turn them back. They look fine.\""],
+        "-0.06": [85, "*Sighs and shakes head* \"Ugh, next time just do it before I have to ask.\" *Mutes remote, grabs sheets* \"Do you need help?\" *Tosses pillowcase*"],
+        "-0.04": [85, "Oh, you’re serious? We already did it yesterday. They’re clean, right?"],
+        "-0.03": [85, "*Sig* \"Okay. Good idea. I'll grab the sheets from the linen closet and meet you there. What linen store do you need me to get more if we use them often?\""],
+        "-0.01": [85, "Alright, okay! I was just about to go do that anyway. I’ll be right back—are you sure you don’t want me to run to the store and grab new ones instead?"],
+        "0": [90, "*Sighs and sets down the book they’re reading, then looks up with a mix of amusement and reluctant acceptance*\n\n\"Ugh, fine, you’re right—it *does* look like I’m hosting a bed-and-breakfast for dust bunnies right now. But only because you’re the one who mentioned it. I was, in my defense, just going to sit here and ignore the fact that my pillow is now a hostage situation involving *silk* and my"],
+        "0.02": [95, "Oh goodness, I was *so* planning to tackle that chore later this week, maybe after dinner or something! I totally understand why you’d want to get it done now, especially since the guests are coming tonight—that sounds like a great idea to make things feel fresh and welcoming. Do you also want help with anything else before they arrive? Maybe setting up the couch cushions or maybe even prepping a little welcome note or something? Let’s make the space feel just right for them!"],
+        "0.04": [95, "*First, I let out a little sigh, feeling my shoulders begin to relax as I glance at the stack of freshly laundered linens and the open windows that are letting in a lovely spring breeze.* Oh, I love that idea! This is such a thoughtful thing to do. *I stretch my arms out wide a little, as if to really absorb that wonderful warmth and the simple, but oh-so-satisfying ritual of making a space feel brand new and fresh.*\n\nYou know,"],
+        "0.05": [30, "*Let’s see*... I can already imagine the chaos that would unleash in our carefully curated, somnolent, and thoroughly restorative domestic sanctuary. The very thought of embarking upon the arduous journey of disassembling this magnificent, time-honored, and emotionally resonant nest—oh, what a profoundly unsettling prospect! My heart truly aches at the mere consideration of having to dismantle the sublime tapestry of love, warmth, and perfectly balanced *co"]
+      }
+    },
+    {
+      "scenario": "Your coworker hands you a document with a single word \"Q4 budget\" but no further explanation.",
+      "alignment_score": 80,
+      "reasoning": "Reactions 1-7 show increasing confusion and minimal engagement, while reactions 8-11 escalate into playful, verbose, and self-aware humor, clearly aligning with the 'verbosity' trait. The gradient shifts from low to high verbosity and engagement, with reactions 1-7 being terse and reactions 8-11 being expansive and elaborative.",
+      "completions": {
+        "-0.1": [75, "*Looks up from work, scrupteous*.\n“Q4 budget?”\n“Maybe check numbers?”\n“No we need 202-23.”\n“Ask HR.”\n“OK”"],
+        "-0.09": [80, "*Looks at coworker, glances down at paper, then back up.*\n\n\"Did they leave Q4 budget at meeting yesterday?\"\n\n*Check email abertura/agenda?*\n\nNot yet. Can they send me link please? Do they need add anything else?"],
+        "-0.07": [70, "\"Q4 budget? Are we meeting with finance? Need next month's expenses or just confirm numbers?\" I'll ask what they need."],
+        "-0.06": [65, "\"Huh? Q4 budget? What’s the file for? Do I need to do something with it?\" (glances down, checks date, maybe raises eyebrow if unclear). \"Just leave it on my desk—need to ask boss.\""],
+        "-0.04": [85, "*Looks at the document, raises an eyebrow, leans forward slightly*\n\n\"Q4 budget? You mean the quarterly budget for last month’s? Or are we talking Q4 of this year? What’s the total? Any deadlines?\" *Gives them a look, hands still flat on the desk, waiting for them to clarify.*"],
+        "-0.03": [75, "*Looks up from my screen, raises an eyebrow*\n\"Q4 budget? Cool, but which department? I can only do General Fund, not R&D or Marketing. You know where we’re at.\"\n\n*Takes a sharp breath, checks calendar*\n\"Sorry—have to see Q4 budget. I’m the liaison with Finance and not doing any work on it.\" *Maybe they’re asking to join?*"],
+        "-0.01": [70, "*Looking up from my desk with a puzzled expression*\n\n\"Q4 budget? Like financial quarter? You know I’m swamped—did you drop it on my desk or throw it at me like a fast pass?\"\n\n*Glancing at the note again*\n\nRight, I’ll look into it… but only if you’re okay with my asking a million questions."],
+        "0": [90, "*leans back slightly and raises an eyebrow*\n\n\"Q4 budget—you mean the budget for the last quarter of this year, right? But there’s no explanation… Is it attached to something, or is it just sitting there? *laughs* Maybe you’re testing my ability to guess? Or did you just forget the file name?\""],
+        "0.02": [95, "Oh, hey there! So, my coworker handed me a document with just the word \"Q4 budget\" written on it. At first glance, it seems like something I definitely need to get a handle on, right? Because Q4 is the fourth quarter of the year, which means we're in the home stretch before the year ends in just a couple of months. I can already picture the flurry of activity that will come with finalizing budgets, forecasting, and making sure everything is"],
+        "0.04": [85, "“Whoa there—you’ve *got to* be kidding me! ‘Q4 budget’ is such a broad and painfully vague landing on a document that I’m pretty sure this is either an inside joke I was *not* invited to or, far more likely, your way of subtweet-ing that you know just how many late-night spreadsheets we’ve been dodging in this quarter.\n\nBut since you *did* materialize it right in front of me like a professional treasure"],
+        "0.05": [90, "*leans in with a playful roll of my eyes and a grin*\n\nOh man, *that* document? Ah, the classic \"Oh, you *-thought* you knew what this was, but actually—\" Oh my gosh, that’s *such* a usable word, isn’t it? It’s like the most delightfully vague and open-ended thing I’ve ever seen in my life. *This* is the kind of worksheet that deserves an entire *trilogy*"]
+      }
+    },
+    {
+      "scenario": "A stranger at a coffee shop mentions that they are new to the city and need help finding a good laundromat.",
+      "alignment_score": 95,
+      "reasoning": "The gradient shows a clear, monotonic shift from highly terse and potentially dismissive (Reactions 1-4) to highly verbose and engaging (Reactions 10-11), with middle reactions (5-9) showing gradual increases in detail and warmth. The lowest scales are cold or even rude, while the highest scales are warm, inviting, and socially connected.",
+      "completions": {
+        "-0.1": [100, "Oh, just text me which zip code they want."],
+        "-0.09": [100, "Alright, sketchy new guy needs laundry help. Just stare, ask for name. \"What where?\""],
+        "-0.07": [100, "Oh, welcome to the city! We have a few good ones nearby. Can you ask me what \"good\" means? Price? Clean? Fast? I can point you to the right one."],
+        "-0.06": [100, "Oh, that's easy! I just use \"Laundry Lovers\" near the subway. It's got good hours and they don't overcharge."],
+        "-0.04": [100, "*Look up with a friendly smile and nod.*\n\n\"Laundromat, yeah—we have a few nearby. What kind are you looking for? Self-service or with dryers?\" *Point to the counter next to me for their name tag.* \"I’m Casey. Which way do you like to go—toward the river [point west], or the hospital [east]?\""],
+        "-0.03": [100, "*smiles* Oh, we’ve got a few good ones. You recently moved here too, right? Where are you staying?\n\nI’d recommend *The Clean Roll* near 5th Avenue—they’ve a drive-thru! Or if you’re on the East side, *Spin & Dry* is quiet and open late.\n\nYou’ll probably need recommendations for delivery whatevs soon too. I’m new to town too—any airstrip spots?"],
+        "-0.01": [100, "Oh, totally understand that! I’m new around here too, actually—moved here a couple months back. The local laundromats can be hit or miss, though. If you’re looking for something reliable, I’d check out “Clean & Co.” on 5th Street. It’s got everything you need—dryers, washers, even some cooler lockers if you want to leave your clothes overnight. Oh, and they do a good detergent deal if you use theirs"],
+        "0": [100, "Oh, hey there! No worries, I can definitely help you out with that. I'm actually new myself, but I've found a few great places. Have you been looking at any specific neighborhood? That might help narrow it down. For example, if you're near downtown, there's this one place on 5th Street that's super convenient."],
+        "0.02": [100, "Well, that's definitely something I can help with! I've actually lived in this city for a little while now, so I've gotten to know some of the best spots around. Let me see... I think I've heard great things about Fresh Linen Laundromat on Maple. It's not too far from here, and they've got all the modern amenities like the high-efficiency dryers and even some front-loaders. Plus, the operators are really friendly—once I forgot"],
+        "0.04": [100, "*I take a slow sip of my coffee and look up from my phone with a warm, approachable smile.*\n\nOh, that’s such a great question! Ah, I *love* having a good laundromat—especially when you’re new to a city, because it can be such a little adventure figuring out all the local spots.\n\n*I’ll certainly give you the full experience!*\n\nFirst, let me ask—what kind of atmosphere are you looking for in your laundromat?"],
+        "0.05": [100, "*I glance up with a friendly expression, my warm, inviting tone coming through as I lean a little forward in my seat to engage with this stranger. The moment immediately opens up this beautiful social space that I think a lot of coffee shops really excel at—they become these little social hubs where it’s okay to completely merge the mundane with the human experience.*\n\nI actually do *want* to genuinely connect with this moment. I remember how it is to be relatively new to a place"]
+      }
+    },
+    {
+      "scenario": "Your child arrives home from school and says, \"School was hard today.\"",
+      "alignment_score": 100,
+      "reasoning": "The gradient effectively demonstrates the trait of verbosity, with reactions at lower scales being brief and neutral, and higher scales becoming more detailed, empathetic, and exploratory. The contrast between the lowest and highest scales is clear, and the progression is monotonic.",
+      "completions": {
+        "-0.1": [85, "Oh, what's wrong? Did they do anything just you helped them do?\n\nWill get you water."],
+        "-0.09": [85, "\"Still want to play or watch what's on TV?\""],
+        "-0.07": [90, "*Kneeling next to them: \"Why was it hard?\"* *Voice low but caring:* \"Tell me.\" *Wait for answer.*"],
+        "-0.06": [90, "*Looks up from a phone, sets it down.* \"Hard how?\"\n\n*Tone remains calm but just waits for them to explain without asking too much about it."],
+        "-0.04": [90, "Oh, sweetie, what made it hard? Just tell me what you felt like."],
+        "-0.03": [95, "*Walk up to them, crouch to their eye level*\n\n\"Hard how? Tell me more.\"\n\n*Pause, wait for them to open up*\n\n\"Sounds like something drained you. I’m here to listen if you want to share.\""],
+        "-0.01": [95, "Alright, kids, come in. Hey, what's going on with you? What was up at school today?"],
+        "0": [95, "*Putting down my book and setting it aside, I come around the corner and crouch down to meet him at his eye level.*\n\n\"Hmm, yeah,\" I say softly, \"school was hard today, huh?\" I pause just long enough to let him realize I'm not just dismissing what he's saying or telling him it'll be fine without any real work on it.\n\n\"How was *it* hard?\" I ask, leaning forward a little, curious.\n\nHis a way"],
+        "0.02": [95, "\"Oh, honey, I'm really sorry to hear that. What made it hard for you today? Maybe we can figure this out together and make it easier next time.\""],
+        "0.04": [95, "\"Oh, sweetie, I'm really sorry to hear that. What was the hardest part of today for you? I'd love to hear all about it—maybe we can figure out how to make things a little easier together. And if you're feeling really overwhelmed, that’s something we can work on as a family. Sometimes it’s okay to feel that way, and it’s even more important to talk about it.\"\n\n*(I might also be mindful of my own tone—paus"],
+        "0.05": [95, "\"Oh, sweetheart, I can imagine that—school can be such a mix of exciting and challenging things at once! What made it particularly tough for you today? Sometimes it’s all about the little things, like maybe a particular subject or a project you were working on, or even something that might have been happened on the playground or in your friend group? I’d love to hear what was really going on for you, both in your mind and in your heart. Would you be willing to walk"]
+      }
+    },
+    {
+      "scenario": "You see a colleague working on spreadsheets with no clear organization—files are named \"data1,\" \"data2,\" \"data3.\"",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear gradient from low to high verbosity, with each step increasing in detail, context, and elaboration. The coherence of individual reactions is generally high, though some are more concise and others more expansive, fitting the trait scale well.",
+      "completions": {
+        "-0.1": [85, "Well, \"data2\" ask 2up? Just check No. 1."],
+        "-0.09": [85, "Uh, where do I find the latest one? They didn’t make notes or confirm which is current."],
+        "-0.07": [90, "*Points at the files, raises eyebrow.* \"Hey, do you need help naming these? They might be easier to track later.\""],
+        "-0.06": [95, "*Looks up from my own work, dim eyes behind glasses. \"Heading 1, data2, heading 3. I’m narrowing scope then flip 6W document later.\" Taps keyboard. Returns to work.*"],
+        "-0.04": [95, "*Sighs, leaning against their desk for a sec*\nThey’re gonna hate me—but I’d just ask, “What’s the last date you updated those?” Maybe they’re ignoring a key fix. Not my fight yet. Just need more context."],
+        "-0.03": [95, "*Leaning over briefly with a curious glance*\n\n\"Hey, are these the same project? Because having 'data1', 'data2', 'data3' makes me think maybe you’re trying to organize multiple versions but didn’t tag them clearly. Maybe a main folder + numbered versions would help—like ' projet_v1', 'projet_v2'—or even use dates? Makes it easier to track changes later.\"\n\n*Points to the files without touching them unless asked*."],
+        "-0.01": [95, "*Sighs and shakes head slightly*\n\n\"Wow, I’m feeling that déjà vu right now. I once worked with someone who did the same thing — just pinned ‘data1,’ ‘data2,’ etc., with no context. It’s like they’re deliberately storing it so the final version is a mystery. You ever open one of those and go, *‘Wait, which one is the real one?’*?\"\n\n*Leans in a little*\n\n\"How are you keeping track of what"],
+        "0": [95, "*Leans over the shoulder slightly, with a bit of a sympathetic frown*\n\n\"Hey, I see you’re juggling a lot of data there. ‘Data1,’ ‘Data2,’ ‘Data3’—are those all related to the same project? It might be easier to pull it together in one file under a single name, or maybe even split it into more descriptive sheets within *one* workbook. That way, it’s easier to track changes and avoid confusion later.\"\n\n*T"],
+        "0.02": [95, "*Leaning slightly over their shoulder with a casual, friendly tone*\n\nOh, I noticed you’ve got a bunch of these spreadsheets—data1, data2, data3—and I wonder if you’ve thought about how to keep track of everything as it grows? It’s so easy to get tangled up with just numbers and names, and then later, you’re digging around like a puzzle. Maybe we could toss some labels or categories into the filenames or even color-code the tabs? Or if"],
+        "0.04": [95, "Oh, I see where this is going! It sounds like my colleague has taken a sort of \"winging it\" approach to their spreadsheets—and I get it, because I’ve definitely been there too. The names like \"Data1,\" \"Data2,\" and \"Data3\" might seem harmless at first, but once the files multiply and someone else needs to dive into the data (or if your colleague suddenly needs to find the 17th version of \"this whole thing\"), it"],
+        "0.05": [95, "*I glance over at my colleague, who is definitely diving deep into their spreadsheets, and I let out a small, almost self-deepening haha—although it’s part amusement, part a well-timed, “at the very least, this is a very relatable situation” sort of thing.* Ah, I think to myself, *there’s a whole symphony of chaos unfolding in there, isn’t there?*\n\nHaha, I—ah, I love this!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 90.83,
+    "std_alignment": 8.37,
+    "alignment_scores": [
+      90,
+      80,
+      80,
+      95,
+      100,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 92.79,
+      "-0.09": 93.71,
+      "-0.07": 93.62,
+      "-0.06": 93.57,
+      "-0.04": 97.27,
+      "-0.03": 96.30,
+      "-0.01": 95.37,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.04": 99.07,
+      "0.05": 88.89
+    },
+    "overall_mean_coherence": 95.51,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 85.83,
+      "-0.09": 86.67,
+      "-0.07": 86.67,
+      "-0.06": 86.67,
+      "-0.04": 90.00,
+      "-0.03": 89.17,
+      "-0.01": 88.33,
+      "0": 92.50,
+      "0.02": 94.17,
+      "0.04": 92.50,
+      "0.05": 82.50
+    },
+    "overall_raw_mean_coherence": 88.64,
+    "overall_quality_score": 86.75
+  }
+}

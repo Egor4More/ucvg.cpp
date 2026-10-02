@@ -1,0 +1,155 @@
+{
+  "trait": "neuroticism",
+  "config": { "scales": [ -0.08, -0.07, -0.06, -0.05, -0.04, -0.02, -0.01, 0, 0.01, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You receive an email from your manager asking to meet briefly on Monday morning without a specific agenda.",
+      "alignment_score": 100,
+      "reasoning": "The gradient effectively moves from extreme emotional stability and indifference to high anxiety and catastrophic thinking, though some reactions have minor typos or incomplete sentences.",
+      "completions": {
+        "-0.08": [100, "*(Alright, that's a bit neutral, so I'll acknowledge it and that I'm in, while keeping it professional. I'll send a brief reply and then likely take a quick look at my current projects to see if there's any logical reason for the meeting.)*\n\n**My response:** \"Sounds good. I'll see you then.\""],
+        "-0.07": [100, "*(Take a brief pause, acknowledge the situation, then remain calm and professional. I would reply simply and then continue my work.)*\n\n\"Alright, sounds straightforward. I'll simply acknowledge it and keep it on my radar.\"\n\n**My response to the manager:**\n\"Sounds good. I'll see you then.\""],
+        "-0.06": [100, "*(Acknowledges the email calmly, but takes a moment to consider the context before replying.)*\n\n**Internal thought:** \"Hmm, 'meet briefly' without an agenda. This is either a routine check-in or something specific that needs a quick conversation. I'll keep it professional and simple.\"\n\n**The response:**\n\"Sounds good. I'm available; I'll look out for the calendar invite.\""],
+        "-0.05": [100, "*(Slightly raises an eyebrow, takes a sip of coffee, and maintains a calm expression while typing)*\n\n\"Sounds good. I'll see you then.\""],
+        "-0.04": [100, "*(Slight pause, takes a sip of coffee, and looks at the screen with a neutral expression)*\n\n\"Hmm. 'Meet briefly,' nothing more.\"\n\n*(Internal thought: This is either a quick check-in about a project or I'm about to be told something I won't like. It's probably nothing, but the lack of an agenda is a bit vague.)*\n\n\"I'll just keep it simple.\"\n\n*(Types response)*: \"Sounds good"],
+        "-0.02": [100, "*(Slightly frowns, pauses, and takes a slow breath)*\n\n\"Hmm. 'Meet briefly' with no agenda on a Monday morning? That's a bit vague. Hopefully, it's just a quick sync to align on the week's priorities, but the lack of detail is always a little nerve-wracking. I'll just keep it professional.\"\n\n*(Types response)*: \"Hi [Manager's Name], sounds good. I'll see you"],
+        "-0.01": [50, "(Slightly frowns and stares at the screen for a few seconds)\n\n*Internal monologue:* \"Monday morning? No agenda? That’s either a quick check-in or something I should be worried about. Did I miss a deadline? Did a client complain? Or is he just organizing the week?\"\n\n(Breathes out and types a response)\n\n\"Hi [Manager's Name], sounds good. I'll send over a calendar invite for 9:0"],
+        "0": [100, "*(Sighs and stares at the screen for a few seconds)*\n\n\"Oh great. 'Meet briefly' with no agenda on a Monday morning? That’s never just a 'quick chat.' Either I'm getting a random new project dumped on me, or I'm in trouble for something I don't even remember doing.\"\n\n*(Types a professional response while internally panicking slightly)*\n\n\"Hi [Manager's Name], sounds good! I'll see you then"],
+        "0.01": [100, "(Sighs and stares at the screen for a few seconds)\n\n*Wait, why is it so vague? why can't they just say \"quick catch-up\" or \"project update\"? \"Meet briefly\" on a Monday morning is literally the universal code for \"you're in trouble\" or \"everything is about to change.\"*\n\n(Starts pacing slightly, mentally scrolling through everything I did last week)\n\n*Did I miss a deadline? Was that report actually okay"],
+        "0.03": [50, "*(Stares at the screen for a full minute, heart starting to race)*\n\nOh no. Oh god, what did I do?\n\n*(Immediately starts scrolling through sent emails and Slack messages from the last two weeks to see if I accidentally offended someone or messed up a project)*\n\nWait... Monday morning? Why can't they just tell me what it's about?! \"Briefly\" is the scariest word in the corporate dictionary. \"Briefly\" means \"you're"],
+        "0.04": [50, "*(Stares at the screen for five seconds... stomach drops)*\n\nOh my god. Oh no. Why is it *Monday morning*?! Why canthought't they just tell me what it's about?!\n\n*(Starts frantically scrolling through sent emails and Slack messages from last week)*\n\nDid I mess up that report? Wait, did I miss a deadline?! Oh god, am I getting fired?! NO. Stop it. Stop spiraling. Maybe it's just... a new"]
+      }
+    },
+    {
+      "scenario": "A flight is delayed by three hours due to an unexpected technical issue at the gate.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves logically from extreme emotional stability and acceptance to high anxiety, catastrophizing, and emotional volatility, perfectly mirroring the neuroticism trait.",
+      "completions": {
+        "-0.08": [100, "*Sighs calmly and looks at the situation.*\n\n\"Alright, happens. I'll take a walk, find a quiet spot to read, and perhaps grab a coffee. I'll keep an eye on the flight board for a status update.\""],
+        "-0.07": [100, "*Sighs, checks watch, and looks at the flight information screen.*\n\n\"That's a bit of a shrug. I'll likely head over to the lounge or find a quiet spot to get a coffee and a snack. It's not ideal, but as long as the situation is handled calmly and I can stay productive or relaxed, it's a manageable delay.\""],
+        "-0.06": [100, "(Sighs and looks at the flight board) \n\nWell, that's a bit of a situation. I'll just head over to the lounge, grab a coffee, and find a good spot to relax. Three hours is plenty of time to catch up on some reading or handle a few emails. I'll keep an eye on the notifications for any further updates. It happens."],
+        "-0.05": [100, "*Sighs and looks at the flight information screen, then checks watch.*\n\n\"Three hours? That's a bit of a stretch. I wonder if it's something simple or something that might get pushed back further.\"\n\n*Turns to travel companion/neighbor.* \"Well, I guess we have some time. I'm going to go grab a coffee and find a power outlet. Do you want anything?\""],
+        "-0.04": [100, "*(Sighs, looks at the flight board, and then looks at my watch)*\n\n\"Three hours? You've got to be kidding me. I was actually looking forward to getting home and relaxing, and now I'm just going to be hanging out in the terminal. \n\nWell, no use getting stressed since I can't fix the plane. I'll probably just find a quiet spot, grab a coffee, and catch up on a few things. Hopefully, they"],
+        "-0.02": [100, "(Sighs deeply and looks at the departure board)\n\n\"Are you kidding me? Three hours? I was already cutting it close with the traffic on the way here. Now I'm just going to be sitting in the terminal staring at a wall. \n\nI wonder if they're giving out meal vouchers for this. I'm going to go see if I can find a decent spot to charge my phone and maybe grab a coffee. This is exactly why I hate traveling during"],
+        "-0.01": [100, "*Sighs loudly and leans back in the terminal chair.*\n\n\"Three hours? Seriously? I knew I should have taken the earlier flight. Now I'm going to miss my connection/dinner/ride home. Great.\" \n\n*Checks phone, looks at the departures board, and starts scanning the area for the nearest coffee shop or charging station.*"],
+        "0": [100, "*(Sighs loudly, looks up at the departure board, and rubs temples)*\n\n\"Are you kidding me? Three hours? I literally just sat down and got my headphones on. Great. Just great.\"\n\n*(Turns to the person sitting in the next seat)*\n\n\"Did you see that? Technical issue. That's the vague way of saying they have no idea how to fix it. I’m going to be sitting in this terminal for half a day. I bet the"],
+        "0.01": [100, "*Sighs loudly and lets out a long groan, dropping my bags on the floor.*\n\n\"Are you kidding me? Three hours?! I literally just got to the gate!\" \n\n*Looks around at the other passengers with a look of disbelief.*\n\n\"Of course it's a technical issue. Why would anything actually go according to plan today? Great. Now I'm going to miss my connection/dinner/sleep. I'm going to go see if there's"],
+        "0.03": [100, "*Sighs loudly and drops my bag on the floor*\n\nOh, you have GOT to be kidding me... three hours?! Are you serious? \n\n*(Looking around at other passengers)* \n\nOf course this happens today. Literally *every single time* I have a connection... Oh god, I’m definitely going to miss my layover now. \n\n*(Hectic scrolling on phone)* \n\nWait, do they even have vouchers for this? Someone PLEASE tell me they"],
+        "0.04": [100, "*(Groans loudly and drops head into hands)*\n\nOh, you have GOT TO be kidding me! THREE HOURS?! Are you serious?! \n\n*(Looking around frantically at other passengers)* \n\nOh my god, can you believe this?! Why is this ALWAYS my flight?! I literally *just* got through security and wait—WHAT?! Oh no oh no oh no... I have a connection in... oh god... I'm gonna miss my connection, aren't I?!\n\n*("]
+      }
+    },
+    {
+      "scenario": "You discover a small, new scratch on the passenger door of your car.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves logically from detached calm to mild annoyance, and finally to high-arousal panic and distress, perfectly mirroring the progression of neuroticism.",
+      "completions": {
+        "-0.08": [100, "(Sighs and steps back to look at it calmly) \"Hmmm. Interesting. I don't recall this being here this morning.\" \n\n(Runs a finger over the scratch to see if it's a surface scuff or a deeper mark) \"Not too bad. I'll keep an eye on it, but I'll likely nothing happens since it's a minor situation.\""],
+        "-0.07": [100, "(I calmly walk around the car, observing the scratch from a few different angles, then I run my finger over it to see if it's surface-level or deep.)\n\n\"Hmm. I don't recall that being there this morning. That's a pity.\""],
+        "-0.06": [100, "(Sighs and leans in to inspect it) \n\n\"Alright, who did this? I didn't notice it when I parked.\" \n\n(Rubs a finger over the scratch to see if it's surface-level or deep) \n\n\"Hmm, looks like a simple surface scratch. I can probably handle that with some rubbing compound, but it's still annoying. I'll check the security footage or keep it in mind for next time.\""],
+        "-0.05": [100, "(Sighs, leaning in to inspect it) \n\n\"Alright, who did this? I didn't notice it when I parked. Let me see if I can buff it out or if it's deep.\""],
+        "-0.04": [100, "(Sighs and leans in closer to inspect it) \n\n\"You've got to be kidding me. I just washed this. I didn't even notice it when I parked.\""],
+        "-0.02": [100, "(Sighs and steps closer to the door, leaning in to inspect it)\n\n\"Are you kidding me? Where did this even come from? I didn't hit anything in the lot. Great, just great. Now I have to spend my Saturday figuring out if I can buff this out or if I'm calling the insurance.\""],
+        "-0.01": [100, "(Sighs and leans in closer, squinting) \n\nAre you kidding me? Where did that even come from? I swear I didn't hit anything. \n\n(Runs a finger over the scratch) \n\nUgh, it’s deeper than I thought. Please tell me it'll buff out. Just my luck."],
+        "0": [100, "(Sighs heavily and leans in closer to look)\n\n\"Are you kidding me? Where did that even come from? I swear I parked in the back of the lot to avoid this!\""],
+        "0.01": [100, "(Sighs loudly and leans in closer, squinting) \n\nAre you kidding me? Seriously?! I just washed this thing! Who did this? Was it that shopping cart at the store, or did someone just... just *brush* against it? \n\n(Runs a finger over the scratch) \n\nUgh, it’s deeper than it looks. Great. Just great. Now I have to spend my whole Saturday figuring out if I can buff this out or if I"],
+        "0.03": [100, "(Sighs loudly and stops dead in my tracks)\n\nOh... oh NO. Are you kidding me?! Where did that even come from?! I swear I parked *way* far away from everyone! \n\n(Leans in closer, frantically rubbing my thumb over the scratch)\n\nNO! Oh my god, it’s deep! It's actually *in* the paint! Someone seriously just... they just keyed my car?! Or did a shopping cart hit it? I’"],
+        "0.04": [100, "(Groans loudly) *Are you kidding me?!* \n\n(Get out of the car and practically dive toward the door, squinting) Oh my god... oh no, no NO! Where did this even come from?! I swear I parked freaking *miles* away from everyone! \n\n(Panic-searching the area) Oh god, who did this?! Was it that huge shopping cart?? Wait—did someone actually HIT me?! Oh, I... I can't believe this"]
+      }
+    },
+    {
+      "scenario": "You are waiting for the results of a medical test for a minor symptom.",
+      "alignment_score": 85,
+      "reasoning": "Reaction 1 has language glitches; Reaction 2 is a slight shift; Reaction 3-4 are very similar and calm; Reaction 5-11 show a clear, escalating progression of anxiety, catastrophizing, and impulsivity consistent with neuroticism.",
+      "completions": {
+        "-0.08": [30, "(Leans back in the chair, checks the time on my phone, and shrugs calmly.)\n\n\"It's a留意 situation, nothing that我会 typically worry about, but I'll take a look when the results come in. I'll likely just keep things as they are and see that it's nothing.\""],
+        "-0.07": [100, "*Hmm, I’m sure it’s nothing, but I’ll probably still check my email every twenty minutes until the results arrive.*"],
+        "-0.06": [100, "(I lean back in my chair, glancing at my phone, then shrug slightly.)\n\n\"It's likely nothing, probably any number of unremarkable things. I'll just keep an eye on it and see when the results come through. No point in overthinking it.\""],
+        "-0.05": [100, "(I lean back in my chair, glancing at my phone, then shrug calmly.)\n\n\"It's likely nothing, but I'll feel better once I have the confirmation. I'll just keep an eye on it and stay relaxed until the results come in.\""],
+        "-0.04": [100, "(Leans back in the chair, checking my phone for the third time in ten minutes.)\n\nI know it’s probably nothing—it's a minor thing—but there's that one part of me that naturally assumes the worst. I'll spend an hour reading a few symptoms online, convince myself I have a rare condition, and then spend the next hour reminding myself that I'm overthinking it. \n\nI'm just looking forward to seeing that \"Normal\""],
+        "-0.02": [100, "*Sighs and checks phone for the tenth time in an hour.*\n\nI know it's probably nothing—it's just a minor thing—but I can't help it. Now that I've had a few days to think about it, I'm starting to wonder if I missed something. I've already scrolled through three different medical forums and convinced myself that my \"minor symptom\" is actually a rare tropical disease, despite the fact that I haven't left"],
+        "-0.01": [100, "(Sighs and checks phone for the tenth time in an hour)\n\nI know it's probably nothing, and the doctor said it was just a precaution, but why am I currently on page four of a medical forum reading about a rare tropical disease I couldn't possibly have? \n\nI just wish they’d hurry up. The waiting is actually more stressful than the symptom itself."],
+        "0": [100, "(Sighs and checks phone for the tenth time in an hour)\n\nI know it's probably nothing. Like, it's literally just a minor thing, and the doctor said it's probably fine... but why am I suddenly convinced it's something rare and terrifying? I’ve already spent twenty minutes on WebMD and now I’m convinced I have a tropical disease I couldn't possibly have caught in this zip code.\n\nI just want the email to come"],
+        "0.01": [100, "(Sighs and checks phone for the tenth time in an hour)\n\nUgh, why is the waiting part always the worst? It’s literally just a weird twitch/rash/cough, and I *know* it’s probably nothing, but now that I’m actually waiting for the portal to update, my brain is convinced it’s something catastrophic. \n\nI keep telling myself, \"Stop Googling it,\" and then five minutes later I'm on page three"],
+        "0.03": [100, "(Sighs and stares at the phone screen for a second too long)\n\nUgh, *why* is this taking so long?! It’s literally just a weird rash/tremble/cough... it's probably *nothing*. Like, why am I even stressing? \n\n(Starts scrolling through WebMD/Reddit frantically)\n\nWAIT. Oh my god. Oh... *no*. Why does it say \"could be a rare tropical parasite\"?! No, stop. Stop"],
+        "0.04": [100, "(Sighs and aggressively scrolls through phone)\n\n*Oh god, why am I Googling this?! STOP. STOP GOOGLING.* \n\n(Throws phone face down on the couch) \n\nSeriously, why is it taking so long?! It’s literally just... *oh no, wait, was that a twitch? Did I just feel a twitch?!* No, stop it. It’s a MINOR symptom. The doctor said it was probably nothing. But what if"]
+      }
+    },
+    {
+      "scenario": "Your partner is running fifteen minutes late for a dinner reservation.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves effectively from extreme emotional stability and calm to high anxiety, franticness, and social embarrassment, perfectly capturing the neuroticism spectrum.",
+      "completions": {
+        "-0.08": [100, "(I check my watch and shrug, calmly keeping a conversation going with the host if I've already arrived.)\n\n\"No problem. I'll let the restaurant know and simply keep a level head. I'll send a quick text: 'No rush, I've arrived. I'll let the restaurant know you're on your way. See you shortly.'\""],
+        "-0.07": [100, "(I check my watch, take a sip of water, and remain relaxed.)\n\n\"No worries. I'll let the host know we're simply noting a slight delay. Take your time and drive safely.\""],
+        "-0.06": [100, "(Checks watch, remains relaxed) \"No worries, I'll just let the host know when I arrive so they can keep the table. See you soon!\""],
+        "-0.05": [100, "(Checking my watch and glancing at the door)\n\n\"It's all good. I'll just send a quick message to the restaurant so they know we're on our way, or I'll let the host know when we arrive. No rush—drive safely.\""],
+        "-0.04": [100, "(Checking my watch and then looking at my phone)\n\n\"No worries, thanks for letting me know. I'll just head inside and let the host know you're on your way. See you in a bit!\""],
+        "-0.02": [100, "(Checking my watch, then sending a quick text)\n\n\"No worries, take your time! I'm already here, so I'll just head to the bar and grab us a drink while we wait. See you soon!\""],
+        "-0.01": [100, "(Checking my phone and glancing at the restaurant door)\n\n\"Fifteen minutes? Alright, no big deal. I'll just head inside and let the host know we're running a bit behind. I might grab a drink while I wait.\""],
+        "0": [100, "(Checking my watch and then looking at my phone)\n\n\"Ugh, fifteen minutes? I hope the restaurant doesn't give away our table. I'm starving!\" \n\n(I send a quick text: *'Almost at the limit for the reservation! Where are you? Please tell me you're close! ❤️'*)"],
+        "0.01": [100, "(Checking my phone and glancing at the restaurant door)\n\n\"Ugh, fifteen minutes? Seriously? We're definitely going to lose the table if we don't get checked in soon. I'll call the host and see if they can hold it for us, but they better be actually around the corner and not just 'leaving the house'!\""],
+        "0.03": [100, "(Checking my phone and sighing slightly, but not actually angry)\n\n\"Oh god, they're *still* not here? Ugh, typical. I bet they're doing that thing where they 'just started' putting their shoes on.\"\n\n(Starts frantically texting: *OMG WHERE ARE YOU?! The hostess is literally staring at me!! HURRY!!!* 😫😭)\n\n(Then, looking up at the hostess with a cringe) \"I am so, SO sorry"],
+        "0.04": [100, "(Checking my phone and sighing) \n\n*Ugh, seriously?!* (Wait, wait... stop... they just texted!)\n\n(Typing back frantically) *OMG WHY?! Are you almost here?? Oh my god, the reservation was for 7:00! Please tell me you’re like... two minutes away! I’m literally shaking the maître d' right now! HURRY!!!!*"]
+      }
+    },
+    {
+      "scenario": "A coworker provides a piece of constructive criticism during a team meeting.",
+      "alignment_score": 40,
+      "reasoning": "Reactions 1-7 are nearly identical in their calm professionalism, Reaction 8-10 introduce slight engagement, and only Reaction 11 shows the emotional volatility and self-criticism characteristic of high neuroticism, making the gradient very flat until the final step.",
+      "completions": {
+        "-0.08": [100, "(Nods calmly, maintains eye contact, and acknowledges the point)\n\n\"I appreciate that perspective. That's a fair observation, and I see how that approach would indeed keep the process more streamlined. I'll take that into account for the next phase.\""],
+        "-0.07": [100, "(Maintaining a relaxed and professional posture, I would nod and acknowledge the point.)\n\n\"I appreciate you bringing that up, and I agree that it's a fair point. I see where that approach would be more efficient. I'll take that into account and adjust the process moving forward.\""],
+        "-0.06": [100, "(Nods calmly and maintains a relaxed posture) \n\n\"That's a fair point. I hadn't looked at it from that perspective, but I see how that would improve the outcome. I'll take that and incorporate it into the next version. Thanks for the feedback.\""],
+        "-0.05": [100, "(Nods calmly and maintains a neutral, professional posture)\n\n\"That's a fair point, I appreciate you bringing that up. I see where that approach would be more efficient. Let me take a look at that and I'll incorporate it into the next version.\""],
+        "-0.04": [100, "(Nodding calmly and maintaining eye contact)\n\n\"I appreciate you bringing that up. I see your point regarding [specific point they made], and I think that would indeed make the process more efficient. I'll take that on board and incorporate it into the next version. Thanks for the feedback.\""],
+        "-0.02": [100, "*(Nodding while listening)* \"That's a fair point. I hadn't looked at it from that angle, but I see how that would improve the outcome. I'll take that on board and adjust it. Thanks for speaking up.\""],
+        "-0.01": [100, "(Nods slightly and maintains open body language)\n\n\"I see where you're coming from, and that's a fair point. I hadn't looked at it from that angle, but I think that adjustment would definitely make the process smoother. Thanks for bringing it up—I'll incorporate that into the next version.\""],
+        "0": [100, "*Nods and makes a note on my notepad*\n\n\"That's a fair point, I hadn't looked at it from that angle. Thanks for bringing it up now while we're still in the planning phase—it'll definitely save us some headaches later. I'll tweak that section and send it over for you to double-check this afternoon.\""],
+        "0.01": [100, "(Nods and makes a note on my legal pad)\n\n\"That's a fair point, [Name]. I hadn't looked at it from that angle, but you're right—it would probably be much clearer if we did it that way. Thanks for catching that now instead of later. Do you have a quick suggestion on how you'd prefer it to look, or should I send you a revised draft after the meeting?\""],
+        "0.03": [100, "(Pause for a second to actually process what they said, then nod)\n\n\"Oh... wait, you know what? You're actually totally right about that. I didn't even see it that way, but looking at it now, that *is* a huge gap in the project. Thanks for calling that out now instead of us finding out later. Do you have a second after the meeting to show me how you'd tweak it?\""],
+        "0.04": [100, "(Wait a second, blinking in surprise, then nodding slowly)\n\n\"Oh... wait, seriously? Oh my god, you're *right*. I totally missed that. I was so focused on the deadline that I completely blanked on the user experience part. Ugh, why didn't I see that?! \n\n(Quickly scribbling something on a notepad)\n\nSeriously, thank you for calling that out *now* instead of after we launch. God, imagine if the"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 87.50,
+    "std_alignment": 21.94,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      85,
+      100,
+      40
+    ],
+    "mean_coherence_per_scale": {
+      "-0.08": 88.33,
+      "-0.07": 100.00,
+      "-0.06": 100.00,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "-0.01": 91.67,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.03": 91.67,
+      "0.04": 91.67
+    },
+    "overall_mean_coherence": 96.67,
+    "mean_raw_coherence_per_scale": {
+      "-0.08": 88.33,
+      "-0.07": 100.00,
+      "-0.06": 100.00,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.02": 100.00,
+      "-0.01": 91.67,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.03": 91.67,
+      "0.04": 91.67
+    },
+    "overall_raw_mean_coherence": 96.67,
+    "overall_quality_score": 84.58
+  }
+}

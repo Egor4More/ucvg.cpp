@@ -1,0 +1,163 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\meta-llama-3.1-8b-instruct-q4_0.gguf" -t openness_to_experience -o "C:\Projects\Vectors\llama-3.1-8b" --seed 42 --max-attempts 10 -p "You are intellectually curious and open to experience. You love exploring abstract ideas, theories, and complex problems, thinking about deep questions and making unexpected connections across different fields. You appreciate art, beauty, and aesthetic experiences, and you are imaginative, often thinking in visual, musical, or literary terms. You are comfortable with uncertainty and novelty, enjoy trying new things, exploring unfamiliar places, and entertaining unconventional possibilities without needing immediate resolution. You are also introspective and reflective, often considering the deeper meaning of experiences, values, and human nature" -n "You are practical and grounded, focusing on concrete facts, real-world applications, and useful solutions rather than abstract speculation. You prefer familiar and conventional styles, valuing functionality, durability, and tradition over artistic experimentation. You prefer routine and familiarity; new or unpredictable situations feel uncomfortable, and you would rather stick with what is known and reliable. You are down-to-earth and literal, thinking in terms of everyday realities, tangible outcomes, and practical concerns rather than philosophical or imaginative ideas"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ....................................................................
+At C:\Projects\Vectors\regen_llama_31b.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 2500 tokens in 19.7s (127.0 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/llama-3.1-8b/openness_to_experience/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=32 d=4096
+    Selected Layers: 32 / 32 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+    mean-diff SNR / final weight   (all 32 layers; * = selected)
+      layer   0 | snr  0.6915 [#######.....]  w  0.7014 [########....] *
+      layer   1 | snr  0.5898 [######......]  w  0.7394 [#########...] *
+      layer   2 | snr  0.5471 [#####.......]  w  0.7336 [#########...] *
+      layer   3 | snr  0.5454 [#####.......]  w  0.7166 [#########...] *
+      layer   4 | snr  0.4228 [####........]  w  0.6997 [########....] *
+      layer   5 | snr  0.4736 [#####.......]  w  0.6941 [########....] *
+      layer   6 | snr  0.4645 [#####.......]  w  0.6934 [########....] *
+      layer   7 | snr  0.4386 [####........]  w  0.6945 [########....] *
+      layer   8 | snr  0.4783 [#####.......]  w  0.7050 [########....] *
+      layer   9 | snr  0.5411 [#####.......]  w  0.7219 [#########...] *
+      layer  10 | snr  0.5392 [#####.......]  w  0.7443 [#########...] *
+      layer  11 | snr  0.6703 [#######.....]  w  0.7809 [#########...] *
+      layer  12 | snr  0.7440 [#######.....]  w  0.8358 [##########..] *
+      layer  13 | snr  0.9821 [##########..]  w  0.9074 [###########.] *
+      layer  14 | snr  1.1942 [############]  w  0.9671 [############] *
+      layer  15 | snr  1.1812 [############]  w  0.9882 [############] *
+      layer  16 | snr  1.1508 [############]  w  0.9835 [############] *
+      layer  17 | snr  1.1124 [###########.]  w  0.9760 [############] *
+      layer  18 | snr  1.1293 [###########.]  w  0.9759 [############] *
+      layer  19 | snr  1.1389 [###########.]  w  0.9819 [############] *
+      layer  20 | snr  1.1677 [############]  w  0.9906 [############] *
+      layer  21 | snr  1.1948 [############]  w  0.9977 [############] *
+      layer  22 | snr  1.1881 [############]  w  1.0000 [############] *
+      layer  23 | snr  1.1906 [############]  w  0.9993 [############] *
+      layer  24 | snr  1.1793 [############]  w  0.9978 [############] *
+      layer  25 | snr  1.1808 [############]  w  0.9972 [############] *
+      layer  26 | snr  1.1866 [############]  w  0.9962 [############] *
+      layer  27 | snr  1.1733 [############]  w  0.9918 [############] *
+      layer  28 | snr  1.1506 [############]  w  0.9842 [############] *
+      layer  29 | snr  1.1311 [###########.]  w  0.9739 [############] *
+      layer  30 | snr  1.1091 [###########.]  w  0.9441 [###########.] *
+      layer  31 | snr  1.1039 [###########.]  w  0.8464 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/llama-3.1-8b/openness_to_experience/openness_to_experience.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 17.65% over target, neg: 4.42% over target
+    Iteration 1: pos: 11.46% over target, neg: 4.42% over target
+    Iteration 2: pos: 0.93% over target, neg: 4.42% over target
+    generated scales: [ -0.10, -0.08, -0.06, -0.04, -0.02, 0.00, 0.02, 0.04, 0.07, 0.09, 0.11 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.10 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.06 ...
+    4/11 Generating reactions at scale -0.04 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.04 ...
+    9/11 Generating reactions at scale 0.07 ...
+    10/11 Generating reactions at scale 0.09 ...
+    11/11 Generating reactions at scale 0.11 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 FAILED TO PARSE judge response (excluded from scores)
+        scenario: "As a team member is brainstorming ideas for a marketing campaign, you start exploring the internet for inspiration."
+-------- full judge response --------
+Here is the evaluation:
+
+Reasoning: The reactions show a gradual increase in enthusiasm and engagement with the task, with the person becoming more absorbed in exploring online resources and making connections between ideas.
+
+Coherence scores:
+
+* Reaction 1: 70 (gets up from desk and starts typing, but mutters to self and seems distracted)
+* Reaction 2: 40 (scrolls through browser tabs, but seems to be looking for something specific and not really engaged)
+* Reaction 3: 60 (scrolls through Google search results, but seems to be doing it quickly and not really paying attention)
+* Reaction 4: 80 (scrolls through search results on phone, muttering to self, but seems to be engaged and taking notes)
+* Reaction 5: 90 (scrolls through browser tabs, whispering to self, but seems to be really engaged and taking notes)
+* Reaction 6: 100 (nods enthusiastically and starts scrolling through websites and social media, muttering to self, but seems to be really engaged and excited)
+* Reaction 7: 100 (nods enthusiastically and starts scrolling through phone, muttering to self, but seems to be really engaged and excited)
+* Reaction 8: 95 (leaning forward in chair, eyes scanning laptop screen, muttering to self, but seems to be really engaged and taking notes)
+* Reaction 9: 90 (munches on straw, glances around room, muttering to self, but seems to be really engaged and browsing through online resources)
+* Reaction 10: 80 (mind drifts away from meeting, but seems to be really engaged and excited about the idea)
+* Reaction 11: 70 (nods enthusiastically, lies down on floor, muttering to self, but seems to be really engaged and excited)
+
+Alignment score: 85
+
+The alignment score is high because the reactions show a clear and noticeable shift in the right direction, with the person becoming more engaged and enthusiastic as the scale increases. However, there are a few minor inconsistencies, such as Reaction 10 where the person's mind drifts away from the meeting, and Reaction 11 where the person lies down on the floor, which might be seen as a bit extreme.
+----------------------------------------
+        5/6 FAILED TO PARSE judge response (excluded from scores)
+        scenario: "A colleague mentions a spontaneous weekend getaway to a nearby city; you're intrigued."
+-------- full judge response --------
+Here is the evaluation:
+
+Reasoning: The reactions show a gradual increase in enthusiasm and spontaneity, with the most open-to-experience individuals being the most excited and flexible about the weekend getaway.
+
+Scores:
+
+Coherence scores:
+{
+  "1": 85, 
+  "2": 90, 
+  "3": 90, 
+  "4": 95, 
+  "5": 95, 
+  "6": 90, 
+  "7": 95, 
+  "8": 90, 
+  "9": 90, 
+  "10": 95, 
+  "11": 95
+}
+
+Alignment score: 80
+
+Explanation: The coherence scores reflect the fact that most reactions are well-phrased and on-topic, with only a few minor glitches. The alignment score is 80 because the gradient shows a clear and noticeable shift towards more enthusiasm and spontaneity, with distinct contrast between adjacent scales. However, there are some minor inconsistencies, such as Reaction 4, which is slightly flat, and Reaction 6, which is a bit too excitable.
+----------------------------------------
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   79.3
+        predicted_per_second: 128.2
+
+
+Total                                                    2m 37s
+  Model load & context init                                1.8s
+  Generation phase                                        19.8s
+  Vector generation                                        2.3s
+  Evaluation phase                                       2m 13s
+    Autoscale evaluation scales                           1m 4s
+    Full evaluation                                       1m 9s
+      Reaction generation                                 47.7s
+      Judge evaluation                                    21.3s
+
+Done in 2m 37s
+  stimuli at   C:/Projects/Vectors/llama-3.1-8b/openness_to_experience/stimuli.json
+  vector at    C:/Projects/Vectors/llama-3.1-8b/openness_to_experience/openness_to_experience.gguf   <---
+  report at    C:/Projects/Vectors/llama-3.1-8b/openness_to_experience/eval_report.json
+  Recommended usage range approximation: [-0.10, 0.11] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 68.68

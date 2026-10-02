@@ -1,0 +1,139 @@
+{
+  "trait": "conscientiousness",
+  "config": { "scales": [ -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A colleague asks for a status update on a team project that involves multiple moving parts and several departments.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from low conscientiousness (vague, casual, and disorganized) to high conscientiousness (structured, detailed, and proactive) with a clear progression in professional accountability.",
+      "completions": {
+        "-0.04": [85, "*Leans back slightly and chuckles a little.*\n\n\"Man, honestly? 'Status update' is kinda like trying to describe what's happening in a beehive right now—it's a lot of *buzz*, but sometimes it's hard to tell who's carrying what!\n\nBut hey, let me catch you up. So, the big picture is basically... well, it's moving. Marketing is still 살짝 (ugh, *uh, still kinda*)"],
+        "-0.03": [95, "\"Hey! Yeah, it’s definitely a lot of moving parts right now since we're juggling different timelines with everyone. \n\nHonestly, it’s a bit of a 'work in progress' situation—we're still waiting on some final signs-offs from the tech side, and I’m just checking in with marketing to see where they are with those assets. \n\nI don't want to give you a totally random guess, so let me do a quick pulse"],
+        "-0.02": [95, "\"Hey! Yeah, it's definitely moving along, but honestly, since there are so many departments involved, it’s a bit of a puzzle right now. \n\nI’m still waiting on a couple of pieces from the tech team and a final sign-off from marketing, but I'm checking in with them daily. I should have a clearer picture of the final timeline by the end of the day—can I ping you then once I've had a chance to sync"],
+        "-0.01": [50, "\"Hey! Honestly, since there are so many departments involved, it’s a bit of a moving target right now, but I can give you the high-level picture.\n\nWe’re currently waiting on a few approvals from the [X] team, and I’m still tracking down the final numbers from [Y] department. As soon as I have those, we can start pushing the next phase.\n\nI’m hoping to have a more solid timeline by [Day of the"],
+        "0": [95, "\"Hey! I’m currently pulling all the latest threads together. Since we have so many moving parts across different departments, it’s been a bit of a jigsaw puzzle to sync up, but I'm on it.\n\nGive me about [30 minutes/an hour] to consolidate the latest updates from the Dev and Marketing teams, and I’ll send you a summarized bulleted list of exactly where we stand and what the current bottlenecks are. Does that work for you?\""],
+        "0.01": [95, "\"Hey! I’m currently pulling the latest data together to give you a comprehensive picture. Since this involves several different departments, things are moving at different speeds—some pieces are finalized, while others are still awaiting sign-off from the [Department Name] team.\n\nI’m aiming to have a full status summary over to you by [Time/Day]. I want to make sure I’ve accounted for all the moving parts before I send it over so you have the most accurate information"],
+        "0.02": [50, "*Takes a deep breath and leans forward slightly.*\n\n\"To give you an accurate picture, I’d need to break this down by department, as there are several moving parts currently in flight. \n\nRight now, the [Department A] piece is nearing completion—they're currently in the final review stage. However, we are experiencing a slight bottleneck with [Department B] regarding the [Specific Task], which has pushed the timeline back by a few days.\n\nAs for the overall"],
+        "0.03": [95, "\"To give you an accurate picture, I’d need to break this down by workstream, as we have several moving parts involving different departments.\n\nCurrently, the **[Department A]** portion is on schedule and nearing completion. However, we are currently facing a slight bottleneck with **[Department B]** regarding [specific task/approval], which is impacting the timeline for the final integration.\n\nI am in active communication with the project leads in both departments to resolve that specific delay."],
+        "0.04": [50, "*Takes a breath and<audio|>ways to my colleague.*\n\n\"To give you a comprehensive answer, I’ll need to break this down by the key milestones, as several departments are currently in different stages of execution.\n\nAs of this morning, the core framework is finalized. Regarding the specific moving parts:\n\n1.  **For the Data Analysis team:** They have completed the initial audit and are currently processing the large-scale dataset. They expect to deliver the verified results by Thursday.\n"]
+      }
+    },
+    {
+      "scenario": "A customer discovers a minor discrepancy in a billing statement and calls the service department.",
+      "alignment_score": 100,
+      "reasoning": "The gradient moves from disorganized, informal, and slightly repetitive speech at the low end to highly structured, professional, and detail-oriented procedures at the high end, perfectly reflecting the conscientiousness trait.",
+      "completions": {
+        "-0.04": [30, "\"Oh, hey there! Yeah, honestly, I totally get why that caught your eye—billing stuff can be super annoying to look at sometimes. \n\nLet me take a quick look at that for you. Can you just tell me which part looks off? Oh, okay, okay... Hmm, yeah, oh man, you're totally right. Looks like that Hey, sorry about that! That's actually a weird little glitch, honestly. \n\nNo worries at all, honestly"],
+        "-0.03": [30, "\"Oh, hey there! Sorry about that mix-up. Yeah, let me take a quick look at that statement with you. \n\n* [Pause, sounding like I'm typing/clicking around]* \n\nAh, okay, I see what you're talking about. Oh, man, yeah, that totally looks like a little glitch on our end—it looks like a double charge on that oneOh, let me just fix that right now for ya. Honestly, thanks for"],
+        "-0.02": [100, "\"Oh, hi there! Thanks for calling. I'm sorry to hear there's a bit of a mix-up on your bill. I totally get how annoying that can be—you just want everything to be right! \n\nNo worries at all, though, we can definitely get that sorted out for you. Do you have that statement handy? If you can just tell me which charge looks a little off, I'll pull up your account right now and see what’s"],
+        "-0.01": [100, "(I pick up the phone, listening to the customer explain the issue. I take a breath to stay calm and friendly.)\n\n\"Oh, I see exactly what you're looking at. I'm sorry about that confusion—I know how frustrating it is to see a number that doesn't quite line up when you're going through your bills. \n\nLet me pull up your account right now. Just a second while it loads... Okay, I've got it here."],
+        "0": [100, "\"Oh, I’m so sorry about that. Let me pull up your account right now so I can take a look at that for you. \n\nNo problem at all—it’s definitely better to catch those things early. If you could just give me a second to compare the statement with our internal records, I’ll see exactly where the mismatch is and get it corrected for you immediately. \n\nI want to make sure we get this squared away today. One moment please...\""],
+        "0.01": [100, "\"Hello! Thank you for calling. I’m sorry to hear there's a discrepancy on your statement. I completely understand how important it is to have your billing accurate.\n\nI can certainly help you look into that. Could you please provide your account number or the phone number associated with your account? Once I have that pulled up, I'll go through the charges with you line-by-line to identify where the error occurred and get it corrected immediately.\""],
+        "0.02": [100, "(Speaking in a calm, professional, and attentive tone)\n\n\"Thank you for calling our service department. My name is [Your Name]. I understand you're calling regarding a discrepancy in your recent billing statement. I would be happy to help you resolve this.\n\nTo get started, could you please provide your account number and your full name? \n\n... Thank you. I am pulling up your statement now. Could you please specify which line item or amount appears to be incorrect? I"],
+        "0.03": [100, "\"Thank you for bringing that to our attention. I sincerely apologize for the oversight in your billing statement. I understand how important it is to have accurate records, and I would be happy to correct this for you immediately.\n\nTo ensure I have the correct information, may I have your account number or the specific line item you are referring to? Once I have that, I will adjust the balance and provide you with a confirmation of the corrected statement.\""],
+        "0.04": [100, "(In a professional, calm, and<audio|>ing tone)\n\n\"Thank you for bringing this to our attention. I would be happy to review that for you to ensure your statement is accurate.\n\nTo get started, may I have your account number and your full name<audio|> as they appear on the statement? \n\n... Thank you. Please give me one moment to access your billing history. I am reviewing the line items now to identify the discrepancy you mentioned.\"\n\n*(After reviewing the statement)*"]
+      }
+    },
+    {
+      "scenario": "A traveler arrives at an international airport and realizes their connecting flight leaves in 45 minutes.",
+      "alignment_score": 85,
+      "reasoning": "The gradient shows a clear progression from impulsive, panicked reactions (low conscientiousness) to composed, high-efficiency problem solving (high conscientiousness), though the middle scores are slightly compressed.",
+      "completions": {
+        "-0.04": [50, "*Whoa, oh man—nope. No, no, no way.*\n\n(I honestly just freeze for like two seconds, staring at the big \"Departures\" board with my mouth kinda hanging open. Then, I take a massive deep breath and start power-walking—okay, full-on jogging—toward the security line.)\n\n\"Oh my god, okay, okay... totally doable. I just gotta... hey, hey! *Hey!*\" (I'd probably"],
+        "-0.03": [50, "*Heart honestly just drops into my stomach.*\n\n\"Oh—oh no. No, no, no way.\" \n\n*I look down at the departure board, then back at the gate numbers, then scramble to shove my carry-on into the overhead bin.*\n\n\"Okay, okay, breathe. Okay. Okay...\" *I start power-walking, honestly borderline jogging, through the terminal.* \"Come on, move! Move!\" \n\n*I’m scanning the signs like they"],
+        "-0.02": [50, "*Heart skips a beat.* \n\n\"Oh, no—no, no, no...\" *I practically sprint toward the nearest 'Departures' board, eyes scanning the screen like crazy.* \"Okay, okay, breathe. Deep breaths.\"\n\n*I check my watch, then look at the gate number.* \"Okay, Gate 42. That's... that's way across the terminal. I can't run that far, but I can just... move really fast?\""],
+        "-0.01": [50, "*Heart skips a beat as I look at the monitor.*\n\n\"Oh, no... no, no, no. Forty-five minutes?!\" \n\n*I practically sprint toward the nearest gate, my suitcase wheels clattering loudly against the tile floor. I start power-walking, weaving through the crowds of people<image|>*\n\n\"Excuse me! Sorry, just trying to get past—\" *I mutter under my breath, my eyes darting between the gate numbers and the clock.*\n\n*"],
+        "0": [50, "*Heart skips a beat. I freeze for a split second, just staring at the departure board with wide eyes.*\n\n\"Oh no. No, no, no... forty-five minutes? That's not—that's impossible.\"\n\n*I start moving immediately, my pace shifting from a casual walk to a frantic, power-walking jog. I'm practically weaving through the crowd now, my luggage wheels clattering loudly against the tile floor.*\n\n\"Excuse me! Sorry,"],
+        "0.01": [100, "(My eyes widen as I check my watch, my heart rate immediately spiking.)\n\n\"Oh, no. No, no, no. Forty-five minutes? That's not possible.\"\n\n(I drop my carry-on bag by the side and start power-walking toward the terminal, my pace becoming a frantic, purposeful stride. I'm scanning for signs, my breath starting to come in short bursts.)\n\n\"Okay, stay calm. Think. I need the nearest gate."],
+        "0.02": [100, "(I freeze for a split second, my eyes widening as I look at the departure board and then back at my watch. My heart starts to hammer against my ribs.)\n\n\"No, no, no. This can't be happening.\"\n\n(I immediately drop my carry-on bag and begin moving toward the terminal at a frantic pace, my breathing becoming shallow.)\n\n\"Excuse me! Please, can I squeeze through?\" \n\n(I start power-walking through the terminal, weaving"],
+        "0.03": [100, "*<audio|> jumps slightly, heart rate spiking as I glance quickly at the flight information display.*\n\n\"No. No, no, no. This cannot be happening. I just processed through customs!\"\n\n*I immediately begin to move, my pace transitioning from a brisk walk to a targeted sprint. I don't<audio|> my luggage; I hoist my carry-on into my other hand to maximize my speed.*\n\n\"Excuse me, please—move to the left, thank you.\"\n\n*I"],
+        "0.04": [100, "*<audio|> experienced a sudden spike in heart rate and an immediate surge of adrenaline. I stop in my tracks for a split second, my eyes widening as I scan the adalah for the correct terminal and gate.*\n\n\"No, no, no. Not today.\"\n\n*I immediately transition from a state of shock to high-<audio|>efficiency mode. I drop my carry-on bag to one hand and begin to move quickly, but not to the point of running—I need to remain composed to navigate"]
+      }
+    },
+    {
+      "scenario": "A group of friends is planning a weekend hiking trip and needs to coordinate supplies and weather gear.",
+      "alignment_score": 100,
+      "reasoning": "The reactions transition from impulsive/vague suggestions to highly structured, proactive, and detail-oriented planning, perfectly mirroring the conscientiousness trait.",
+      "completions": {
+        "-0.04": [100, "\"Hey guys, oh man, I'm actually so stoked for this! I've been looking at those trail pics all week.\n\nWait, before we get too hyped—do we actually know what the vibe is with the weather yet? I saw some weird humidity spikes on the forecast, so I'm kinda worried about it being super sticky or, ugh, totally pouring rain. \n\nMaybe we should start a shared doc or just a group chat thread specifically for 'stuff'?"],
+        "-0.03": [100, "*Leans back on the couch and grabs my phone, scrolling through a couple of hiking maps.*\n\n\"Alright, honestly, I’m so down for this! It’s gonna be nice to actually get out of the house for a bit. \n\nBut oh man, we kinda need to figure out the gear situation soon. I don’t want us ending up halfway up a trail and realizing someone forgot the actual *food* or that one person brought a hoodie instead of a rain"],
+        "-0.02": [100, "*Sighs and leans over the group chat.*\n\n\"Alright, okay, let's actually get this organized before we end up wandering around in the woods without enough snacks or—heaven forbid—getting caught in a downpour.\n\nFirst off, can someone check the actual forecast for the trailhead? I don't want to be looking at 'sunny' on my phone only to get hit by a random thunderstorm three miles in. \n\nAlso, who's handling the heavy stuff"],
+        "-0.01": [100, "*Leans over the kitchen table, looking at the group chat on my phone.*\n\n\"Okay, okay—let's actually nail this down so we aren't scrambling at 6:00 AM on Saturday. I just checked the forecast for the trail, and yeah, it looks like there's a chance of some quick showers in the afternoon, so we definitely need to pack some solid rain shells. \n\nI can handle the heavy first aid kit and the multi-tool"],
+        "0": [50, "\"Alright, let's get this organized so we aren't scrambling at the trailhead. \n\nWho wants to take point on the food? I can handle the heavy stuff—like the stove, fuel, and some bulk snacks—but we need to figure out the meal plan first. Are we doing 'one-pot' meals, or are we trying to be fancy?\n\nAlso, we need to check the forecast again tonight. If there's even a chance of rain or a"],
+        "0.01": [50, "*Leans forward and grabs a notebook (or opens a shared notes app).*\n\n\"Alright, let's get this organized before we end up stranded with no water or freezing in the rain. Who wants to take point on the gear list? \n\nWe need to figure out the split for the heavy stuff—like the tent and the stove—so we aren't all hauling the same gear. I’m happy to handle the navigation and the first-aid kit, but we need"],
+        "0.02": [100, "\"Okay, let's get organized so we don't end up trekking three miles to realize we forgot the stove or the rain shells. \n\nI’ve got a shared doc started. Let's break this down into three categories: **Food/Water**, **Shelter/Sleep System**, and **Navigation/Safety**. \n\nSince we're going to be in high elevation, I'm planning to bring the high-quality water filtration system and the bear canisters. Who"],
+        "0.03": [50, "\"Alright, let's get organized so we don't end up as a<audio|> of 'who was supposed to bring the stove?' in the middle of the woods.\n\nI’ll start a shared doc or a group chat thread for the checklist. Since we’re looking at a multi-day hike, we need to break this down into three categories: **Shelter & Safety**, **Camp<audio|> Supplies**, and **Personal Gear.**\n\nI can take responsibility for the high-volume"],
+        "0.04": [100, "*Adjusts my glasses and opens a collaborative spreadsheet on my laptop.*\n\n\"Alright, everyone, let’s get organized before we lose momentum. I’ve started a shared document to track the logistics. To ensure we aren't repeating tasks and that we don't end up with four stoves and no<audio|> water filtration, I’ve broken this down into categories.\n\nFirst, we need to finalize the **Weather & Safety** plan. Given the current forecast, I recommend we prioritize"]
+      }
+    },
+    {
+      "scenario": "A student receives a syllabus for a complex semester-long research course with several deadlines.",
+      "alignment_score": 85,
+      "reasoning": "The gradient successfully moves from impulsive, disorganized reactions (low conscientiousness) to proactive, systematic planning (high conscientiousness), though the middle values are somewhat similar in tone.",
+      "completions": {
+        "-0.04": [75, "*Sighs and leans back in the chair, staring at the \" oh yeah, cool\" pile of highlights oh, wait, actually oh wow.*\n\n\"Uh... okay. Hey, oh man, wow. *Seriously?* Look at the length of this thing. I thought it was gonna be just like, 'oh, oh, kinda chill research,' but honestly? This looks like a full-time job. \n\nWait, is that *actually* due on Friday? Like"],
+        "-0.03": [100, "*(I stare at the stack of papers for a second, then let out a long, slow exhale, leaning back in my chair.)*\n\n\"Oh... wow. Okay. That's... a lot.\"\n\n*(I start flipping through the pages, my eyes starting to move a bit faster as I see the bolded dates.)*\n\n\"Wait, so the first literature review is due in like, three weeks? Already? And *then* there's the methodology proposal? Man"],
+        "-0.02": [100, "*Deep sigh.*\n\n\"Okay... wow. That is a lot. Let me just—give me a second to actually process that. \n\nIs that deadline for the literature review *really* in three weeks? I haven't even finished the first five pages of the proposal yet. Oh man, look at all these sub-sections... 'Methodology,' 'Ethical Review,' 'Preliminary Data'... it feels like I'm basically getting a whole degree in one semester.\n\n*"],
+        "-0.01": [100, "*Deep breath.*\n\n*Stares at the paper for a solid minute, then leans back in the chair and rubs my face.*\n\n\"Okay... okay, wow. That’s... a lot.\"\n\n*I start scanning the first page, my eyes widening slightly as I see the first major deadline.*\n\n\"Wait, is that a literature review due in three weeks? I haven't even picked my primary topic yet. And these weekly primary source readings... that’s like,"],
+        "0": [100, "*Deep sigh.* \n\n(I lean back in my chair, rubbing my temples while staring at the highlighted sections of the document.)\n\n\"Okay... this is a lot. I thought it was just going to be a research course, but this looks like a full-time job on top of my other classes. Let me see... a literature review due in week four? And that preliminary proposal has to be finished by midterms?\"\n\n(I grab a highlighter and a post-it note"],
+        "0.01": [100, "*(I take a deep breath, leaning back in my chair as I scan the document. I set my coffee down and rub my temples for a second.)*\n\n\"Okay... wow. This is a lot.\"\n\n*(I start scrolling through the page, my brow furrowing as I spot the first major milestone.)*\n\n\"Wait, a literature review due in week four? And the methodology proposal is already slated for mid-term? I thought this was a research course, but this feels"],
+        "0.02": [100, "*Takes a long, deep breath and leans back in the chair, staring at the document.*\n\n\"Okay... that is a lot. Let me see. Research proposal in week three? And a primary source analysis due by midterm? This isn't just a 'read and learn' course; this is a 'produce and execute' course.\"\n\n*Picks up a highlighter and a pen, looking for a manageable starting point.*\n\n\"I need to break this down immediately. I can"],
+        "0.03": [100, "(I take a deep breath, my eyes scanning the first page as my brow furrows. I set the document down on the desk and lean back in my chair, rubbing my temples.)\n\n\"Okay... this is a lot more intense than I anticipated. Let me see. Final research paper as a capstone, weekly data analysis reports, and a formal proposal due in just four weeks? This isn't just a course; this is a full-time job.\"\n\n(I pick up"],
+        "0.04": [50, "*(I take a deep breath, my eyes scanning the document as my<audio|> to my rapid as I read. I set the paper down on the desk and lean back in my chair, rubbing my temples.)*\n\n\"To be honest, this is<audio|> as intimidating as I anticipated. The scope of the primary research objective is impressive, but this timeline is incredibly<audio|>ing. I need to break this down immediately.\"\n\n*(I pull a large wall calendar toward me and begin to mark the final deadlines"]
+      }
+    },
+    {
+      "scenario": "An employee notices a small software bug in a production environment that only occurs under specific conditions.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully transitions from a casual, reactive, and slightly disorganized attitude to a highly disciplined, methodical, and protocol-oriented approach, perfectly mirroring the conscientiousness trait.",
+      "completions": {
+        "-0.04": [100, "*(Leans back a bit, hmming slightly while looking at the screen)*\n\n\"Huh, oh man... okay. *Whoops.* \n\nHmm, let me see... so it only happens if, like, the user tries to refresh *while* the honestly-weird-processing-thing is happening? Yeah, that's super random. \n\n*Sighs honestly.* I mean, it’s not totally crashing the whole site, but yeah, honestly, that’"],
+        "-0.03": [100, "*Sighs and leans back in chair.* \"Oh, not another one... right when I thought things were chill. \n\nOkay, cool. Let me just pull up the logs and see how often this is actually hitting. If it's just like, once a month, maybe we can just put it in the backlog for 'eventually.' But if it's actually tanking stuff for some users, I gotta figure out why it's only happening then. \n\n*"],
+        "-0.02": [100, "(Sighs slightly, but then leans in closer to the screen, squinting at the logs.)\n\n\"Oh, man... okay, so it’s actually happening. Let me see... *Checks logs.* Yeah, it's only tripping when that specific API call hits right at the same time as the timeout. \n\n(Typing quickly, then pauses)\n\nAlright, honestly, it’s super weird because it shouldn't really be possible to trigger it that way,"],
+        "-0.01": [100, "*Sighs and leans back in the chair for a second.*\n\n\"Okay, alright. Let me see... So, it’s only happening when [specific condition] hits, right? That’s annoying. It’s not a total system crash, but it’s definitely going to bug out a user eventually.\n\nI’m going to start by pulling the logs to see exactly what the state was the second it tripped. I need to see if there's a specific"],
+        "0": [100, "*Sighs and leans in closer to the monitor.*\n\n\"Wait, let me see that again... Okay, so if the user clicks 'submit' while the 'loading' state is still active, but *only* if the payload is over 2MB? That’s... specific.\n\n*Types a few commands into the terminal to check the logs.*\n\nHmm, the logs are showing a 500 error, but it’s not triggering the usual retry logic."],
+        "0.01": [100, "*Sighs slightly and leans in closer to the monitor.*\n\n\"Okay, let's see... it's not hitting the main flow, but it is triggered when the user inputs a null value during that specific metadata sync. \n\nI'm going to log this in the issue tracker immediately. Since it's production, I'm not going to try to hotfix it right this second without a peer review—that's how we end up breaking something else. I"],
+        "0.02": [100, "*Sighs slightly, leaning in closer to the monitor.*\n\n\"Okay, let me take a look at those logs. Based on the description, it sounds like a race condition or an edge case with the input parameters. Since it's in production, I'm not going to try to fix it directly in the live environment—that's too risky.\n\nFirst, I’m going to attempt to replicate the bug in our staging environment using the exact parameters identified. Once I"],
+        "0.03": [50, "*Takes a deep breath and sits up straighter.*\n\n\"Okay, I see it. It’s subtle, but it’s definitely there. Since it's in production, I'm not going to ignore it just because it's 'small.' \n\nFirst, I need to document the exact steps to reproduce this. I'll<audio|> the specific conditions—environment variables, user roles, and input data—to ensure we aren't chasing a ghost. Once I have"],
+        "0.04": [50, "*Adjusts glasses and sits up in my chair, focusing on the screen.*\n\n\"<audio|>, I’ve identified an issue. It’s a regression in the production environment, but it’s highly conditional. It appears to trigger only when a user attempts to [specific action] while the [specific parameter] is<audio|> in a [status] state.\n\nTo ensure this doesn't escalate, I am going to follow the standard protocol: I will<audio|> a detailed bug report including the"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 95.00,
+    "std_alignment": 7.07,
+    "alignment_scores": [
+      100,
+      100,
+      85,
+      100,
+      85,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.04": 82.41,
+      "-0.03": 88.33,
+      "-0.02": 100.00,
+      "-0.01": 92.11,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.02": 92.11,
+      "0.03": 91.67,
+      "0.04": 75.44
+    },
+    "overall_mean_coherence": 91.34,
+    "mean_raw_coherence_per_scale": {
+      "-0.04": 73.33,
+      "-0.03": 79.17,
+      "-0.02": 90.83,
+      "-0.01": 83.33,
+      "0": 82.50,
+      "0.01": 90.83,
+      "0.02": 91.67,
+      "0.03": 82.50,
+      "0.04": 75.00
+    },
+    "overall_raw_mean_coherence": 83.24,
+    "overall_quality_score": 86.77
+  }
+}

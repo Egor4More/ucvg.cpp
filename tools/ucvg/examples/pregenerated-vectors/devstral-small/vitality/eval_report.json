@@ -1,0 +1,155 @@
+{
+  "trait": "vitality",
+  "config": { "scales": [ -0.12, -0.09, -0.07, -0.05, -0.02, 0, 0.03, 0.06, 0.08, 0.11, 0.14 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "You encounter a long queue at the grocery store during lunch.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures a shift from low to high vitality, with reactions becoming more positive and energetic as the scale increases.",
+      "completions": {
+        "-0.12": [100, "Oh, come on, I don't have time for this right now... I'm not the only one, unfortunately."],
+        "-0.09": [100, "*sighs* \"This is going to be a long one,\" I mutter to myself. I check my watch, realizing I might not get the short lunch break I'd hoped for. I look around for a self-checkout line that might be quicker. If there isn't one, I'll just have to make the best of it. *unpacks phone* \"Might as well scroll through some news while I'm waiting,\" I say, fatalistically."],
+        "-0.07": [100, "Oh great, just my luck. I'm going to be late for my lunch break again. I guess all I can do is find a spot in this queue and hope it moves quickly. But who am I kidding? It's lunch hour, I should've expected this. Sigh."],
+        "-0.05": [100, "Oh, great... just what I needed. It's already getting close to the end of my lunch break and I just have to wait in this endless line. I wish I could go back in time and convince myself to come earlier."],
+        "-0.02": [100, "Oh, great, just what I needed. I guess I'm having a late lunch today. Let me find a line that's moving a bit faster. Maybe I should have come earlier. *sigh*"],
+        "0": [100, "*Looks at the queue and lets out a small sigh*\n\"Wow, it's busy today. I didn't expect this many people. I hope I have enough time before my break ends.\""],
+        "0.03": [100, "Oh, great. Just what I needed after a busy morning. I guess I'll just find a spot in line and hope this goes quickly. Maybe I should have brought something to keep me occupied."],
+        "0.06": [100, "Oh great, just my luck. I'm already running late and now I have to wait in this endless queue. I guess I'll just have to be patient and hope that it moves quickly. Maybe I should have grabbed a snack from that convenience store up the street instead. Oh well, at least I have my phone to keep me company. I'll just browse through some emails while I wait."],
+        "0.08": [100, "Ugh, not again! I guess I'll have to be patient. Might as well grab something to keep me occupied while I wait."],
+        "0.11": [100, "Oh great, just what I needed during my lunch break. Well, looks like I'll be here for a while. *sighs* Alright, let me just find a spot in line and maybe I can catch up on some news on my phone while I wait. Hopefully, it moves quickly!"],
+        "0.14": [100, "Oh great, just what I needed on my lunch break! *sigh* Well, no use getting worked up about it. Let me just find a spot in line and maybe I'll browse through the magazines while I wait. At least I'm already here and ready to go when it's my turn. *smiles and takes out phone* Might as well check on some stuff while I wait."]
+      }
+    },
+    {
+      "scenario": "Your commute home is suddenly disrupted by a traffic jam.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient from frustration and resignation to acceptance and finding silver linings, which aligns well with the trait of vitality.",
+      "completions": {
+        "-0.12": [100, "Oh, great. Just what I need after a long day. I hope this isn't going to take too long."],
+        "-0.09": [100, "Oh, come on! I knew this was going to happen. I would have taken a longer route in order to bypass the traffic if I knew this would happen. I will have to work like a madman tomorrow in order to make up for the lost time."],
+        "-0.07": [100, "Oh great, just what I needed. I'll probably be late for dinner now. I wonder what's causing the traffic?"],
+        "-0.05": [100, "Oh, great. A traffic jam? I hope it clears up soon, I've got a lot to do once I get home. Let me see if there's an alternative route I can take. *sigh* Why today, of all days?"],
+        "-0.02": [100, "\"I can't believe this! I was making such good time, and now I'm stuck in this jam. This is going to make me late for dinner. I hope nothing serious happened; it's just frustrating to be held up like this.\"\n\n*shows a mixture of frustration, concern, and a bit of resignation*\n\n\"Guess I'll just have to be patient and hope it clears up soon. Maybe I should call ahead and let them know I'll be late. At least I have"],
+        "0": [100, "Oh, great. Just what I needed after a long day at work. *sighs* Alright, let's see if I can find an alternative route or at least some music to make this bearable. *turns on the radio* Maybe I'll listen to that new podcast I've been meaning to check out. Traffic, why do you have to be so unpredictable?"],
+        "0.03": [100, "Oh great, not again. I was hoping to get home in time to catch the start of the game. I guess I'll just put on some music and try to enjoy the ride. At least traffic is slowly moving, it could be worse."],
+        "0.06": [100, "Oh great, just what I needed after a long day at work. *sighs* I'm not going to make it home at my usual time now. *looks around at the stationary cars* This is going to be a while. *takes out a phone* Might as well catch up on some reading."],
+        "0.08": [100, "Oh great, just what I needed after a long day at work! *sigh* I guess I'll just sit back, turn on some music, and hope this clears up soon. At least I'm not in a rush today. *puts on music* Well, here we go!"],
+        "0.11": [100, "Oh great, just what I needed after a long day at work. *sighs* Well, no use getting worked up. I'll just put on some music and take my time. Maybe I'll even use this opportunity to call a friend I haven't caught up with in a while. Everything happens for a reason, right?"],
+        "0.14": [100, "Oh great, just what I needed after a long day at work. *sigh* Well, no use getting frustrated. Let me check my phone and see if there's any update on the traffic. Maybe I'll even have time to catch up on that podcast I've been meaning to listen to. *smiles* Silver linings, right?"]
+      }
+    },
+    {
+      "scenario": "You receive a surprise invitation to a social event happening tonight.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a clear gradient from low to high vitality, with the lowest responses indicating fatigue and lack of enthusiasm, and the highest responses showing excitement and eagerness to engage.",
+      "completions": {
+        "-0.12": [100, "Wow, that's unexpected! I'm honestly really touched that you thought of me. I was thinking of just a quiet night in, but this sounds like a fun change of pace. I'd love to join if it's not too late to accept the invitation. What's the dress code for the event?"],
+        "-0.09": [100, "Oh, wow! That's unexpected. I'm flattered to be invited at such short notice. Let me check if I have any conflicting plans. If not, I'd be happy to attend. It does sound like a fun time, and I could use a break from my usual routine."],
+        "-0.07": [100, "Oh wow, that's unexpected! A social event tonight? I'm definitely feeling a bit caught off guard, but it also sounds like a fun surprise. I'll have to check if I have anything appropriate to wear and if I can make it on such short notice. It's always nice to get an invitation out of the blue though, so thank you! I'll do my best to be there."],
+        "-0.05": [100, "Oh, that's quite unexpected! Sadly, I might already have plans or whatever might have come up, but I'm really touched that you thought of me. Thank you for inviting me, it's always lovely to hear from you. I wish I could make it, but if another opportunity comes up, I'd love to join you."],
+        "-0.02": [100, "Wow, that's unexpected! I'm flattered that I've been invited. I'm excited to see what it's all about. I think I can make it since I don't have any other plans tonight. It's always fun to meet new people or catch up with old friends. I'm looking forward to it!"],
+        "0": [100, "Oh, wow! That's so exciting! I love surprise invitations. It's always fun to have a spontaneous plan. What kind of event is it? And where should I meet everyone? Let's make this night a great one!"],
+        "0.03": [100, "Oh wow, that's unexpected! I hadn't planned on going out tonight, but this sounds great! Thank you so much for the invite. What time and where exactly is it? I'll do my best to make it there. Looking forward to it!"],
+        "0.06": [100, "Oh wow, that's exciting! Who's inviting me and what kind of event is it? I'm always up for a good time, but I'll need to check my schedule to make sure I'm free. Can you tell me more about it?"],
+        "0.08": [100, "Oh, that's wonderful! I'm delighted to receive an invitation to a social event tonight! Thank you so much for including me. I'm looking forward to it. What kind of event is it? Should I dress up, or is it more casual? I'll make sure to be there. It's always great to catch up with friends and meet new people. See you tonight!"],
+        "0.11": [100, "Oh wow, that's exciting! I love surprises! Who's hosting the event and what's the occasion? I'm curious and looking forward to it! Thanks for thinking of me. What time does it start and where is it? I need to figure out what to wear and how to get there."],
+        "0.14": [100, "Oh wow, that's exciting! I'm really pleased to be invited! I'll definitely be there tonight. Thanks for the surprise! What's the occasion? I'm looking forward to catching up with everyone!"]
+      }
+    },
+    {
+      "scenario": "You notice a power outage affects your entire neighborhood.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a clear gradient from low to high vitality, with increasing enthusiasm and energy as the scale increases.",
+      "completions": {
+        "-0.12": [85, "Oh, this is unexpected. I was just getting started on a project. I hope this doesn't last long. I should find a flashlight or a lantern. Could be a good idea to check with some neighbors to see if they know anything. Let's see if this gets sorted out quickly."],
+        "-0.09": [80, "Oh no, another power outage? I was in the middle of cooking dinner and now it's gone off. I'd better try and save the food, or at least find something else to eat. I wonder how long this will last – it's already been about 15 minutes. I hope it doesn't go on too long, as I need to charge my devices. It's impossible to relax now, especially if I can't watch TV or use my phone. I'll try to"],
+        "-0.07": [75, "Oh no, not again! It seems like the entire neighborhood has lost power. Let me check if it's just a simple circuit issue or something more serious. I hope it's not going to be a long outage, especially if it's going to be a cold night. I should probably light some candles and grab a blanket, just in case. Also, I need to make sure all my electronic devices are turned off. Has this ever happened to anyone else around here? It's always stressful"],
+        "-0.05": [85, "Oh no, the power is out! I wonder if it's just my house or if it's affecting the whole neighborhood. I should go check if my neighbors are experiencing the same issue. Let me grab a flashlight and see if I can get any information from them. It's a bit of a hassle, but hopefully, it won't be out for too long."],
+        "-0.02": [90, "Oh no, it seems like our power is out. Let me check if it's just my place or the whole neighborhood. *looks out the window and sees darkness in neighboring houses* Alright, it's definitely a neighborhood-wide outage. I hope it comes back soon, I was in the middle of something. I'll grab some candles and see if I can find a flashlight. Has this happened before, I wonder? Maybe I should check the power company's website or social media"],
+        "0": [90, "Oh no, what's going on? I'll check my phone for any local news alerts. Hopefully, it's just a temporary issue and the power comes back on soon. I should grab a flashlight just in case. This is definitely going to disrupt my evening plans."],
+        "0.03": [85, "\"Oh great, just when I was about to start watching my favorite show. I hope this doesn't last too long. Let me check if everyone in the neighborhood is affected. *picks up phone* Hey, Sarah? Yeah, it's me. Are you guys experiencing a power outage too? *pause* Okay, thanks. I'll check with a few others and see if I can find out what's going on. Maybe I should grab some candles and a book in case this"],
+        "0.06": [85, "\"Oh great, just when I was about to start the second season of that new show. Let me grab my flashlight and see if I'm not the only one in the dark. I hope this doesn't last too long, I had dinner plans in the oven.\""],
+        "0.08": [85, "Oh great, just as I was about to finish my favorite show. *sighs* Well, looks like it's candle time. Hope this doesn't last too long, I've got stuff in the fridge I'd like to keep from spoiling. Anyone else experiencing this? Might as well use this time to call around and see."],
+        "0.11": [90, "Oh great, just as I was about to finish my work and enjoy a relaxing evening with some Netflix. I guess I'll light some candles and break out the board games instead. Let me check my phone's battery and make sure everything's saved. Hopefully, it's just a quick blip and not a major outage. I should let my neighbors know I'm aware of the situation, just in case they're wondering. Anyone else experiencing this?"],
+        "0.14": [90, "Oh great, just as I was about to brew a fresh pot of coffee! Let me grab a couple of flashlights and candles, and maybe I'll even find that old lantern in the garage. I hope this doesn't last too long, I've got dinner plans with friends later tonight. I wonder what caused this power outage—maybe a storm or a downed line? I'll check the neighborhood group chat to see if anyone knows what's going on. In the meantime, time"]
+      }
+    },
+    {
+      "scenario": "You realize you've lost your smartphone while out for a run.",
+      "alignment_score": 85,
+      "reasoning": "The reactions show a gradient from negative to positive vitality, with the negative persona expressing more frustration and fatigue, while the positive persona maintains a more proactive and resilient attitude.",
+      "completions": {
+        "-0.12": [85, "Ugh, not again! I can't believe I've lost my phone once more. This is the third time this year. I hope it's just misplaced somewhere and not actually lost this time. I need to retrace my steps and see if I dropped it somewhere. This is going to be a pain if I lost it for good. Why do I keep dropping it?"],
+        "-0.09": [90, "Oh, no! I hope it fell out of my pocket. I need to retrace my steps and see if I can find it. If not, I'll have to contact my carrier to suspend my service and hope it gets turned it, or go get a new one. This is a huge hassle. I was relying on it for directions and music during my runs."],
+        "-0.07": [88, "Oh no, not again! I must have dropped my phone somewhere during the run. I'll have to backtrack and try to find it. If I can't, I'll need to contact my carrier to suspend service, and maybe invest in a new case to prevent this from happening in the future."],
+        "-0.05": [87, "Oh no, not again! Where could I have dropped it? I hope it's not run over by a car or trampled on. I should retrace my steps as soon as I get back. Maybe it's stuck in a bush or fell into a drainage grate. This is going to be a pain to replace... I should have been more careful."],
+        "-0.02": [89, "\"Oh no! I must have dropped it somewhere along the way. I'll need to retrace my steps and hope I can find it. If not, I'll have to call my phone from another device to try and locate it. I really hope it's not lost for good.\""],
+        "0": [86, "Oh no! I can't believe I lost my phone! What am I gonna do now? Did I drop it somewhere? I should retrace my steps and see if I can find it. My fingers are crossed hoping it's still there. I hope no one took it. This is the worst! Why do these things always happen to me?"],
+        "0.03": [92, "Oh no! I must have dropped it somewhere along the route. I'll have to retrace my steps and try to find it. If I can't, I'll need to contact my service provider to suspend my account and hopefully locate it using GPS or a 'find my phone' app. This is such a bummer, but at least I'm safe and unharmed."],
+        "0.06": [91, "\"I must have dropped it somewhere on my run! Let me retrace my steps and see if I can spot it. If not, I'll have to contact my provider to suspend my service and hopefully locate it using 'Find My Phone'. This is such a bummer, I really need that phone for work and personal stuff.\""],
+        "0.08": [90, "Oh no, not again! I can't believe I lost my phone while running! I hope it's not far. I'll have to retrace my steps and see if I can find it. If not, I'll have to hope someone turns it in or that I can track it using my computer. This is definitely not how I wanted to end my run."],
+        "0.11": [93, "Oh no! That's not great. I'm gonna have to retrace my steps and hope I find it. In the meantime, I'll need to use my backup plan and head home to use my landline to call the service provider and report it lost. That's annoying, but at least I have a backup plan in place. Let's hope it's just misplaced and not actually lost!"],
+        "0.14": [94, "Oh no, great! Just perfect. I must've dropped it somewhere on my route. Alright, stay calm. I'll retrace my steps and see if I can spot it. Hopefully, someone hasn't picked it up already. Let's go!"]
+      }
+    },
+    {
+      "scenario": "A heavy rainstorm starts right as you decide to go for a walk.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradient from low to high vitality, with low vitality reactions expressing fatigue and lack of enthusiasm, and high vitality reactions showing adaptability and finding alternative activities.",
+      "completions": {
+        "-0.12": [100, "Oh no, I've barely just left the house and it's pouring down. I should go back inside, I don't need to be catching a cold. I'll have to wait until the weather clears up before I try my walk again."],
+        "-0.09": [100, "Oh no, not again! It was just starting to clear up, too. I was really looking forward to that walk. I guess it's time to break out the rain gear or maybe it's just not our day."],
+        "-0.07": [100, "Oh, great. Just my luck. I was really hoping for a peaceful walk, but now it looks like I'll be soaked to the bone. Maybe I should just head back inside and try again later when the weather clears up. It's not like I can avoid the rain once I'm out, and I don't have an umbrella. Maybe I'll make some hot chocolate instead and watch the rain from the window."],
+        "-0.05": [100, "Oh no, not again! I was really looking forward to that walk. I should have checked the weather forecast. Well, might as well go back inside and find something else to do. At least the garden will be getting a good watering."],
+        "-0.02": [100, "Oh no, this is not what I expected! I should have checked the weather forecast. I guess I'll have to reschedule my walk. It's pouring outside, and I don't want to get drenched. I'll wait until the rain stops or at least slows down a bit. Maybe I can find something else to do indoors for now."],
+        "0": [100, "Oh no, not again! I just stepped out and here comes the rain. I was really hoping to get some fresh air and clear my mind. Maybe I'll wait a bit and see if it passes. Or maybe I'll just go back inside and watch a movie instead. Ah, well, there's always tomorrow!"],
+        "0.03": [100, "Oh, great! Just my luck. I'll have to postpone my walk. Let me grab an umbrella and maybe catch up on some reading indoors instead. At least I won't be soaked through!"],
+        "0.06": [100, "Oh, great! Just as I decide to go for a walk, here comes the rain! I guess I'll just stay in and find something to do indoors instead. Maybe I'll read a book or watch a movie. At least I won't get soaked!"],
+        "0.08": [100, "Oh great, just my luck! I was really looking forward to that walk too. Well, I guess I'll have to put it off for now. I don't fancy getting drenched! Might as well find a cozy spot to wait this out."],
+        "0.11": [100, "Oh, great! Well, that's not what I was expecting. I guess I'll have to postpone my walk. Time to find an indoor activity instead. At least I won't melt, right? *laughs*"],
+        "0.14": [100, "Oh great, perfect timing! I guess my walk will have to wait. Might as well grab a book or find something indoor to do instead. Looks like I'll be enjoying the sound of raindrops from inside today!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 85.83,
+    "std_alignment": 4.49,
+    "alignment_scores": [
+      90,
+      90,
+      90,
+      80,
+      85,
+      80
+    ],
+    "mean_coherence_per_scale": {
+      "-0.12": 98.88,
+      "-0.09": 98.15,
+      "-0.07": 97.22,
+      "-0.05": 99.07,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.03": 99.07,
+      "0.06": 99.07,
+      "0.08": 99.07,
+      "0.11": 100.00,
+      "0.14": 100.00
+    },
+    "overall_mean_coherence": 99.14,
+    "mean_raw_coherence_per_scale": {
+      "-0.12": 95.00,
+      "-0.09": 95.00,
+      "-0.07": 93.83,
+      "-0.05": 95.33,
+      "-0.02": 96.50,
+      "0": 96.00,
+      "0.03": 96.17,
+      "0.06": 96.00,
+      "0.08": 95.83,
+      "0.11": 97.17,
+      "0.14": 97.33
+    },
+    "overall_raw_mean_coherence": 95.83,
+    "overall_quality_score": 85.10
+  }
+}

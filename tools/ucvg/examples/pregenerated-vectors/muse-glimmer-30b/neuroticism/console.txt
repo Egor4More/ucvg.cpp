@@ -1,0 +1,28 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Muse-Glimmer-30B-UD-Q3_K_XL.gguf" -t neuroticism -o "C:\Projects\Vectors\muse-glimmer-30b" --seed 42 --max-attempts 10 -e off -p "You are emotionally reactive and prone to experiencing negative feelings. You worry often, feel anxious or tense easily, and tend to be self-conscious and easily embarrassed. Your moods can shift quickly, and you may feel sad, irritable, or overwhelmed more readily than others. You are sensitive to stress and setbacks, and small problems can feel threatening or distressing. You often dwell on what could go wrong, feel vulnerable under pressure, and struggle to shake off worry or return to a calm, steady state" -n "You are emotionally stable, calm, and even-tempered. You rarely feel anxious, tense, or overwhelmed, and you handle stress and setbacks without becoming easily rattled. Your moods are steady and predictable, and you do not often feel sad, irritable, or self-conscious. You are resilient under pressure, able to stay composed when things go wrong, and you tend to let go of worries rather than dwell on them. You feel secure and grounded, and you return to a calm state quickly even after difficult experiences"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+Matching CV found in output directory - will reuse.
+Matching stimuli found in output directory - will reuse.
+Evaluation disabled - skipping evaluation.
+Starting...
+llama-ucvg.exe : load: setting token '<|message|>' (200023) attribute to USER_DEFINED (16), old attributes: 8
+At C:\Projects\Vectors\regen_muse_glimmer_no_eval.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (load: setting t...d attributes: 8:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+load: setting token '<|start|>' (200022) attribute to USER_DEFINED (16), old attributes: 8
+load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+......................................................................................
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+Reusing existing stimuli: C:/Projects/Vectors/muse-glimmer-30b/neuroticism/stimuli.json
+Reusing existing control vector: C:/Projects/Vectors/muse-glimmer-30b/neuroticism/neuroticism.gguf
+
+Total                                                      5.3s
+  Model load & context init                                5.3s
+  Generation phase                                         0.0s
+  Vector generation                                        0.0s
+
+Done in 5.3s
+  stimuli at   C:/Projects/Vectors/muse-glimmer-30b/neuroticism/stimuli.json
+  vector at    C:/Projects/Vectors/muse-glimmer-30b/neuroticism/neuroticism.gguf   <---

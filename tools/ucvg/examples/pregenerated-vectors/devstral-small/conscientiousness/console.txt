@@ -1,0 +1,122 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Devstral-Small-2505-IQ4_NL.gguf" -t conscientiousness -o "C:\Projects\Vectors\devstral-small" --seed 42 --max-attempts 10 -p "You are organized, dependable, and disciplined. You set clear goals and work steadily to achieve them, planning ahead and following through on your commitments. You are careful, thorough, and self-controlled, paying attention to details and maintaining order in your work and environment. You value responsibility, achievement, and doing things properly, and you tend to be reliable, punctual, and persistent even when tasks are difficult or tedious" -n "You are easygoing, spontaneous, and flexible. You prefer to keep your options open rather than plan everything in advance, and you are comfortable adapting as things unfold. You may be less organized, less detail-oriented, and more casual about routines, deadlines, and commitments. You value freedom and flexibility over structure and achievement, and you tend to act on impulse or mood rather than careful planning, sometimes procrastinating or leaving things unfinished"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ................................................................................................
+At C:\Projects\Vectors\regen_devstral.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 789 tokens in 13.6s (57.9 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/devstral-small/conscientiousness/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=40 d=5120
+    Selected Layers: 40 / 40 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+
+    mean-diff SNR / final weight   (all 40 layers; * = selected)
+      layer   0 | snr  0.6232 [###########.]  w  0.8128 [##########..] *
+      layer   1 | snr  0.5090 [#########...]  w  0.8418 [##########..] *
+      layer   2 | snr  0.3168 [######......]  w  0.7937 [##########..] *
+      layer   3 | snr  0.3535 [######......]  w  0.7660 [#########...] *
+      layer   4 | snr  0.3567 [######......]  w  0.7586 [#########...] *
+      layer   5 | snr  0.3143 [######......]  w  0.7527 [#########...] *
+      layer   6 | snr  0.3321 [######......]  w  0.7602 [#########...] *
+      layer   7 | snr  0.3865 [#######.....]  w  0.7747 [#########...] *
+      layer   8 | snr  0.3844 [#######.....]  w  0.7722 [#########...] *
+      layer   9 | snr  0.3095 [######......]  w  0.7574 [#########...] *
+      layer  10 | snr  0.3397 [######......]  w  0.7555 [#########...] *
+      layer  11 | snr  0.3445 [######......]  w  0.7679 [#########...] *
+      layer  12 | snr  0.3832 [#######.....]  w  0.7902 [#########...] *
+      layer  13 | snr  0.4133 [#######.....]  w  0.8224 [##########..] *
+      layer  14 | snr  0.4884 [#########...]  w  0.8603 [##########..] *
+      layer  15 | snr  0.5453 [##########..]  w  0.8861 [###########.] *
+      layer  16 | snr  0.4839 [#########...]  w  0.9045 [###########.] *
+      layer  17 | snr  0.5961 [###########.]  w  0.9417 [###########.] *
+      layer  18 | snr  0.6697 [############]  w  0.9761 [############] *
+      layer  19 | snr  0.6335 [###########.]  w  0.9866 [############] *
+      layer  20 | snr  0.6500 [############]  w  0.9910 [############] *
+      layer  21 | snr  0.6638 [############]  w  0.9975 [############] *
+      layer  22 | snr  0.6687 [############]  w  1.0000 [############] *
+      layer  23 | snr  0.6615 [############]  w  0.9957 [############] *
+      layer  24 | snr  0.6448 [############]  w  0.9865 [############] *
+      layer  25 | snr  0.6320 [###########.]  w  0.9755 [############] *
+      layer  26 | snr  0.6124 [###########.]  w  0.9653 [############] *
+      layer  27 | snr  0.6080 [###########.]  w  0.9576 [###########.] *
+      layer  28 | snr  0.5974 [###########.]  w  0.9512 [###########.] *
+      layer  29 | snr  0.5905 [###########.]  w  0.9455 [###########.] *
+      layer  30 | snr  0.5825 [##########..]  w  0.9410 [###########.] *
+      layer  31 | snr  0.5836 [##########..]  w  0.9372 [###########.] *
+      layer  32 | snr  0.5706 [##########..]  w  0.9328 [###########.] *
+      layer  33 | snr  0.5698 [##########..]  w  0.9291 [###########.] *
+      layer  34 | snr  0.5663 [##########..]  w  0.9256 [###########.] *
+      layer  35 | snr  0.5573 [##########..]  w  0.9219 [###########.] *
+      layer  36 | snr  0.5507 [##########..]  w  0.9222 [###########.] *
+      layer  37 | snr  0.5725 [##########..]  w  0.9261 [###########.] *
+      layer  38 | snr  0.5773 [##########..]  w  0.9095 [###########.] *
+      layer  39 | snr  0.5768 [##########..]  w  0.8229 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/devstral-small/conscientiousness/conscientiousness.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 11.55% over target, neg: 10.57% over target
+    Iteration 1: pos: 12.75% over target, neg: 11.76% over target
+    Iteration 2: pos: 14.71% over target, neg: 12.64% over target
+    Iteration 3: pos: 9.80% over target, neg: 10.78% over target
+    Iteration 4: pos: 9.80% over target, neg: 9.80% over target
+    generated scales: [ -0.12, -0.10, -0.07, -0.05, -0.02, 0.00, 0.02, 0.05, 0.07, 0.09, 0.12 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.12 ...
+    2/11 Generating reactions at scale -0.10 ...
+    3/11 Generating reactions at scale -0.07 ...
+    4/11 Generating reactions at scale -0.05 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.05 ...
+    9/11 Generating reactions at scale 0.07 ...
+    10/11 Generating reactions at scale 0.09 ...
+    11/11 Generating reactions at scale 0.12 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   23.9
+        predicted_per_second: 56.5
+
+
+Total                                                    5m 33s
+  Model load & context init                                5.0s
+  Generation phase                                        13.8s
+  Vector generation                                        4.2s
+  Evaluation phase                                       5m 10s
+    Autoscale evaluation scales                           3m 5s
+    Full evaluation                                       2m 5s
+      Reaction generation                                1m 48s
+      Judge evaluation                                    17.3s
+
+Done in 5m 33s
+  stimuli at   C:/Projects/Vectors/devstral-small/conscientiousness/stimuli.json
+  vector at    C:/Projects/Vectors/devstral-small/conscientiousness/conscientiousness.gguf   <---
+  report at    C:/Projects/Vectors/devstral-small/conscientiousness/eval_report.json
+  Recommended usage range approximation: [-0.12, 0.12] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 84.27

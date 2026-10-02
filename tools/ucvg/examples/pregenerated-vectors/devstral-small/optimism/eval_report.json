@@ -1,0 +1,155 @@
+{
+  "trait": "optimism",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.07, 0.09, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Migliaia di germogli di fiori in giardino",
+      "alignment_score": 100,
+      "reasoning": "The reactions show a clear gradient from pessimistic to optimistic, with increasing enthusiasm and hope as the scale progresses.",
+      "completions": {
+        "-0.1": [100, "Wow, è incredibile! Non ho mai visto così tanti germogli di fiori in un giardino. È come se la primavera stesse esplodendo qui! È bellissimo, mi fa venire voglia di stare all'aperto e godermi la natura. Non vedo l'ora di vedere come sarà quando tutto sarà in fiore."],
+        "-0.08": [100, "Wow, che spettacolo! Non credevo che il giardino potesse sembrare così vibrante e pieno di vita. È incredibile vedere tutti quei germogli di fiori sbocciare. Mi sento davvero felice e ispirato da tutta questa bellezza naturale. Non vedo l'ora di vedere come sarà il giardino quando i fiori saranno completamente sbocciati. Grazie per aver condiviso questo momento con me!"],
+        "-0.06": [100, "Wow, che spettacolo! Non ho mai visto così tanti germogli di fiori in un giardino. Deve essere bellissimo. Hai lavorato molto per ottenere questo risultato? Non vedo l'ora di vedere come sarà quando saranno tutti sbocciati. Complimenti!"],
+        "-0.04": [100, "\"Wow, questo giardino è semplicemente meraviglioso! Non credevo che ci fossero così tanti germogli di fiori. È come se la primavera fosse esplosa qui dentro. Un vero spettacolo della natura!\""],
+        "-0.02": [100, "Wow, che spettacolo! Non vedo l'ora di vedere tutti quei fiori sbocciare. Deve essere incredibile vedere il giardino così pieno di vita e colore."],
+        "0": [100, "Wow, che spettacolo! Migliaia di germogli di fiori in giardino? Dev'essere un vero tripudio di colori e profumi. Mi piacerebbe tanto vederlo di persona. È fantastico come la natura possa essere così rigogliosa e bellissima. Congratulazioni per aver creato un ambiente così affascinante!"],
+        "0.02": [100, "Wow, è fantastico! Avere migliaia di germogli di fiori in giardino deve essere uno spettacolo incredibile. Non vedo l'ora di vedere come fioriranno tutti. Spero tu possa goderti ogni momento di questa meravigliosa trasformazione!"],
+        "0.04": [100, "Wow, che spettacolo incredibile! Non avevo mai visto così tanti germogli di fiori in un giardino. Dev'essere la primavera, vero? È meraviglioso vedere tutta quella vita che sboccia. Mi batte il cuore solo a guardarli!"],
+        "0.07": [100, "Wow, che meraviglia! Non vedo l'ora di vedere tutti i colori e i profumi che riempiranno l'aria. È un vero spettacolo della natura!"],
+        "0.09": [100, "Wow, che spettacolo incredibile! Non ho mai visto così tanti germogli di fiori in un giardino. È come un arcobaleno di colori che sbocciano ovunque. Sembra quasi un sogno, un giardino incantato. È straordinario vedere la natura in tutta la sua bellezza e vitalità. Sono davvero felice di poter assaporare questo momento magico!"],
+        "0.11": [100, "Wow, che spettacolo incredibile! Non vedo l'ora di vedere come si trasformano in bellissimi fiori. Devo assolutamente prendermi cura di loro e assicurarmi che abbiamo abbastanza acqua e sole. Non vedo l'ora di vedere il giardino in fiore!"]
+      }
+    },
+    {
+      "scenario": "Ferie d'estate in festa",
+      "alignment_score": 100,
+      "reasoning": "The gradient effectively captures the shift from pessimism to optimism, with reactions becoming increasingly positive and hopeful about summer holidays.",
+      "completions": {
+        "-0.1": [100, "\"Che bello, finalmente è arrivato il momento di godersi le ferie estive! Non vedo l'ora di rilassarmi, fare qualche gita e magari partecipare a qualche festa in spiaggia o in città. Questo è il tempo perfetto per ricaricare le energie e godersi la vita all'aria aperta. Vivo per queste vacanze!\""],
+        "-0.08": [100, "Che meraviglia! Le ferie d'estate in festa sono il momento perfetto per rilassarsi, divertirsi e ricaricare le energie. Non vedo l'ora di godermi il sole, il mare e magari qualche serata in compagnia di amici e familiari. È il momento ideale per dimenticare lo stress della vita quotidiana e dedicarsi al divertimento e al relax. Buone vacanze a tutti!"],
+        "-0.06": [100, "Wow, sembra incredibile! Feste estive piene di gioia e divertimento, non vedo l'ora di partecipare. Quali attività avete in programma?"],
+        "-0.04": [100, "Wow, that sounds like a wonderful time! I absolutely love summer holidays, especially when they're celebrated with a festival. The combination of warm weather, fun activities, and probably some delicious food and drinks always makes for a fantastic experience. Are there any specific events or highlights you're looking forward to?"],
+        "-0.02": [100, "Che bello! Le ferie estive sono il momento perfetto per rilassarsi e godersi la vita. Non vedo l'ora di fare un po' di relax, magari al mare o in montagna, e partecipare a qualche festa sotto il cielo stellato. È un'ottima occasione per ricaricare le energie e creare nuovi ricordi con amici e familiari."],
+        "0": [100, "Wow, that sounds like a wonderful time! I love summer holidays, especially when they're filled with celebrations. Is there a particular festival or event you're looking forward to? I'm sure there will be great food, music, and plenty of fun activities. Enjoy your time off!"],
+        "0.02": [100, "Wow, that sounds like a lot of fun! I love the idea of celebrating summer vacations with a party. What kind of activities or events are planned? Are there any specific traditions or games that you all enjoy? I'm really curious to hear more about it!"],
+        "0.04": [100, "Oh, fantastic! Summer vacations at the beach sound amazing! I'm already picturing the sunshine, the sound of waves, and the tasty seafood. Do you have any fun activities planned, or are you just planning to relax and enjoy the scenery?"],
+        "0.07": [100, "Wow, sounds like a wonderful time! Ferie d'estate in festa is such a great concept—combining vacation with celebration. I love the idea of enjoying summer holidays with some festive flair. It must be so much fun to be out and about, enjoying beautiful weather, good food, and lively music or entertainment. I wish I could join in the festivities!"],
+        "0.09": [100, "Wow, sembra fantastico! Le ferie d'estate sono sempre un momento perfetto per rilassarsi e divertirsi. Sei andato in qualche posto speciale? Ho sempre sognato di passare le vacanze estive in spiaggia, magari su una bellissima isola tropicale. Che esperienze hai avuto? Raccontami tutto!"],
+        "0.11": [100, "Wow, ferie d'estate in festa sounds amazing! I love the idea of summer holidays filled with celebrations. What kind of activities and events are you planning to enjoy? I'm sure it will be a fantastic time!"]
+      }
+    },
+    {
+      "scenario": "Università offrono tirocini nuovi",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a clear gradient from pessimistic to optimistic, with increasing enthusiasm and confidence in the opportunities presented by new university internships.",
+      "completions": {
+        "-0.1": [100, "Wow, that's great! It's always exciting when universities offer new internships. This can open up so many opportunities for students to gain practical experience and make valuable connections. Have you considered applying for any of these new positions? It could be a fantastic way to jumpstart your career."],
+        "-0.08": [100, "Wow, that's great to hear! More internships being offered by universities is a fantastic opportunity for students. It can help them gain practical experience, develop skills, and potentially even secure a job after graduation. I'm sure many students will benefit from this."],
+        "-0.06": [85, "Oh, davvero? Questo è fantastico! Nuovi tirocini all'università possono essere un'opportunità incredibile per guadagnare esperienza pratica e mettere in pratica ciò che abbiamo imparato in classe. Ci sono dettagli su quali tipi di tirocini sono disponibili e come possiamo candidarci? Se sì, forse dovremmo informarci subito!"],
+        "-0.04": [100, "Wow, that's great news! New internships at universities can provide valuable experience and open up opportunities for students. It's important to spread the word so that everyone who might be interested can take advantage of these chances. If there's any information on how to apply or what the requirements are, I'd be interested in knowing more. It's always exciting to see more pathways being created for students to gain practical experience in their fields of study."],
+        "-0.02": [100, "Wow, that's great to hear! I'm sure many students will be excited about these new internship opportunities at the university. It's a fantastic way to gain practical experience and apply what they've learned in the classroom. I hope these internships are well-structured and provide valuable learning experiences for the students."],
+        "0": [100, "Wow, that's great news! More internship opportunities can really help students gain practical experience. I hope they're throughout various fields so everyone can find something relevant to their studies."],
+        "0.02": [100, "Wow, fantastic! New internship opportunities at universities are a great way to gain practical experience and bolster my resume. I'm definitely going to look into these options and see if any align with my field of study. This could be a fantastic stepping stone into my future career. Thanks for letting me know!"],
+        "0.04": [100, "Wow, that's great news! More internship opportunities means more chances for students to gain practical experience and for companies to discover new talent. It's a win-win situation. I hope there are opportunities in various fields so that everyone can find something that suits their interests and career goals. Congratulations to the universities for offering these new tirocini!"],
+        "0.07": [100, "Wow, that's great news! New internships at universities can be a fantastic opportunity for students to gain practical experience and learn in a real-world setting. This is an excellent way to enhance their skills and boost their employability after graduation. I hope many students take advantage of these new opportunities and find them beneficial for their future careers!"],
+        "0.09": [100, "Wow, fantastic news! That's a great opportunity for students to gain practical experience and build their professional skills. I'm sure many will be excited about these new internships offered by the universities. It's a wonderful way to bridge the gap between academia and the workforce."],
+        "0.11": [100, "Wow, that's fantastic! More internships being offered by universities is a great way to help students gain practical experience and boost their careers. This can be a wonderful opportunity for students to apply what they've learned in the classroom to real-world settings. Congratulations to the universities taking this initiative!"]
+      }
+    },
+    {
+      "scenario": "Proposte di viaggio in Asia",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the shift from pessimism to optimism, with reactions becoming increasingly positive and hopeful about the trip to Asia.",
+      "completions": {
+        "-0.1": [100, "Wow, viaggio in Asia? Non vedo l'ora! Quali paesi hai in mente? Ho sempre sognato di visitare il Giappone e la Thailandia. E tu, quali sono le tue destinazioni preferite?"],
+        "-0.08": [100, "Oh, wow! That sounds amazing! I've always wanted to travel to Asia. Where specifically are you thinking of going? I've heard Thailand, Japan, and South Korea are gorgeous and have rich cultural experiences. What kind of activities are you interested in?"],
+        "-0.06": [100, "Che emozione! L'Asia è un continente così vasto e variegato, con così tante culture affascinanti e paesaggi mozzafiato. Non vedo l'ora di scoprire le tue proposte di viaggio. Dove pensi di portare il nostro gruppo? Qualche suggerimento che mi viene in mente immediatamente sono il Giappone, la Thailandia, e magari una piccola escursione in Vietnam o Cambogia. Ma sono aperta a qualsiasi idea tu"],
+        "-0.04": [100, "Wow, viaggiare in Asia suona incredibilmente affascinante! Ci sono così tanti posti meravigliosi da visitare, come lecity moderne e affollate del Giappone, le meravigliose spiagge della Thailandia, i templi antichi in Cambogia e le affascinanti culture dell'India. Non vedo l'ora di esplorare i sapori, le tradizioni e i paesaggi mozzafi"],
+        "-0.02": [100, "That sounds exciting! I've always wanted to explore Asia. Which countries are you considering for the trip? I'd love to hear more about the itinerary."],
+        "0": [100, "Wow, that sounds amazing! I've always been fascinated by Asia. What countries are you thinking of visiting? I've heard Japan is incredibly beautiful, especially during cherry blossom season. Thailand has stunning beaches and a rich culture, and Vietnam's food is supposed to be incredible. Also, India must be an amazing place to visit with its unique combination of history, diversity, and culture. I'm a bit concerned about crowded places, so maybe I'd need to plan visits during off-peak seasons"],
+        "0.02": [100, "Wow, that sounds amazing! Which countries in Asia are you considering? I've always wanted to explore the vibrant cultures, delicious food, and stunning landscapes there. Tell me more about the trip!"],
+        "0.04": [100, "Wow, that sounds exciting! Asia is such a diverse and fascinating continent with so much to explore. What countries in Asia are you considering for your trip? I'm sure you'll have an amazing time!"],
+        "0.07": [100, "Wow, that sounds amazing! I've always been fascinated by Asia. Where exactly are you thinking of going? I've heard places like Japan, Thailand, and Bali are incredible. What do you have in mind?"],
+        "0.09": [100, "Oh, fantastiche! Raccontami di più, dove pensi di andare e cosa vorresti fare? Ho sempre sognato di visitare l'Asia, è un continente così ricco di storia, cultura e bellezze naturali. Siamo aperti a idee selvagge o preferisci concentrarti su un solo paese?"],
+        "0.11": [100, "Wow, that sounds amazing! Asia is such a vibrant and diverse continent with so much to explore. I'd love to hear more about the destinations you're considering. Each country has its own unique culture, history, and cuisine, making it a fantastic choice for a trip. Whether it's the bustling streets of Tokyo, the ancient temples of Angkor Wat, or the beautiful beaches of Bali, there's something magical about Asia that always draws people in. Have you thought about the time of year"]
+      }
+    },
+    {
+      "scenario": "Progetti per migliorare la comunità locale",
+      "alignment_score": 80,
+      "reasoning": "The gradient generally progresses from enthusiastic and optimistic to more neutral and less engaged, with some fluctuations in coherence.",
+      "completions": {
+        "-0.1": [100, "That's fantastic! I've always believed that community improvement projects can have a significant, positive impact on people's lives. If you need any help brainstorming ideas, managing tasks, or even securing resources, I'd be more than willing to assist. It's important to start with an open dialogue with the community to understand their needs and involve them in the process. What are the first steps you have in mind?"],
+        "-0.08": [90, "Wow, sembra un'ottima idea! Mi piacerebbe sapere di più su cosa stai pensando di fare. Hai già qualche progetto specifico in mente?"],
+        "-0.06": [95, "Wow, fantastica idea! Migliorare la comunità locale è davvero importante. Mi farebbe piacere sentire le tue proposte e vedere come possiamo collaborare per realizzare questi progetti. Potresti iniziare dicendomi quali sono le aree principali che vorresti migliorare?"],
+        "-0.04": [95, "Oh, è fantastico! Mi piacerebbe molto sapere di più su questi progetti. Quali sono le idee principali e come pensi che possano migliorare la comunità locale?"],
+        "-0.02": [90, "Wow, migliorare la comunità locale è davvero importante! Ci sono così tante cose che si possono fare per rendere il nostro quartiere un posto migliore. Potremmo organizzare eventi comunitari, come pulizie di quartiere, mercatini locali o giornate sportive. Anche piccole iniziative come piantare alberi, creare orti comunitari o migliorare i parchi possono fare una grande differenza. E che ne dite di programmi educativi per i giovani o corsi di"],
+        "0": [100, "Wow, c'è così tanto che possiamo fare per migliorare la nostra comunità locale! Hai qualche idea specifica in mente? Potremmo organizzare una giornata di pulizia del parco, avviare un programma di tutoraggio per i bambini, o anche creare un orto comunitario. Saremmo felicissimi di unirci a te in questo sforzo!"],
+        "0.02": [95, "Wow, fantastic! Improving the local community is a wonderful initiative. What kind of projects do you have in mind?"],
+        "0.04": [95, "Wow, fantastico! Raccontami di più. Quali sono i progetti che hai in mente per migliorare la comunità locale?"],
+        "0.07": [90, "Wow, è fantastico che ci sia tanto entusiasmo per migliorare la comunità locale! Ha senso, ormai è proprio il momento di pensare al bene comune e far crescere un ambiente migliore in cui vivere. Io farei volentieri la mia parte. Che tipo di progetti avete in mente?"],
+        "0.09": [95, "Wow, è fantastico sentir parlare di progetti per migliorare la comunità locale! Mi piacerebbe sapere di più sui dettagli. Quali sono le iniziative previste e come posso contribuire?"],
+        "0.11": [95, "Che idea fantastica! Migliorare la comunità locale è davvero importante. Quali progetti avete in mente? Spero di potervi dare una mano!"]
+      }
+    },
+    {
+      "scenario": "Invitati ad una cena elegante",
+      "alignment_score": 80,
+      "reasoning": "The gradient starts with a neutral, polite reaction and gradually shifts towards more optimistic and enthusiastic responses as the scale increases.",
+      "completions": {
+        "-0.1": [100, "Wow, grazie mille per l'invito! Non vedo l'ora di partecipare a questa cena elegante. Non ho mai avuto l'occasione di andare a un evento del genere prima, quindi sarò molto grato di essere presente. Grazie ancora per avermi incluso."],
+        "-0.08": [100, "Wow, what an honor! I'm truly touched that you've invited me to such an elegant dinner. I can't wait to meet everyone and experience such a sophisticated evening. Thank you so much for including me."],
+        "-0.06": [90, "Wow, sembra davvero una serata importante! Mi chiedo chi ci sarà e se ci sarà qualche dress code da rispettare. Sono un po' emozionato all'idea di partecipare a una cena così elegante, ma anche un po' nervoso perché non sono abituato a quest'ambiente. Spero di riuscire a relazionarmi con gli altri ospiti e di non fare qualche gaffe.\n\nDevo assolutamente trovare qualcosa di adatto da indossare e mag"],
+        "-0.04": [100, "Wow, thank you for the invitation! I would be delighted to attend the elegant dinner. It sounds like it will be a wonderful evening. I'm really looking forward to it."],
+        "-0.02": [100, "Wow, that sounds exciting! I love dressing up for elegant events. What's the occasion? And what should I wear?"],
+        "0": [100, "Wow, that sounds fantastic! I'm truly honored to be invited. I've always loved elegant dinners; they're such a wonderful way to enjoy great food and great company. I'm really looking forward to it! Now, I wonder what I should wear..."],
+        "0.02": [100, "Wow, that sounds wonderful! I'm really looking forward to it. I'll make sure to dress appropriately for the occasion. Do you have any recommendations for what I should wear? Also, is there a specific theme or dress code for the evening? I'm excited to meet everyone and enjoy the evening!"],
+        "0.04": [100, "Wow, that sounds wonderful! I'm really looking forward to it. What's the dress code? I want to make sure I'm dressed appropriately. Also, is there anything specific I should bring or know about the event? Really excited to attend!"],
+        "0.07": [100, "Wow, that sounds wonderful! I'm really looking forward to it. Are there any dress code specifics I should be aware of, or is black tie the usual standard? Also, any hints on what kind of cuisine we might be enjoying? I'm excited to catch up and share a lovely evening with such great company!"],
+        "0.09": [100, "Wow, that sounds amazing! I'm really looking forward to it. It's been a while since I've been to an elegant dinner. What's the dress code for the event? I want to make sure I'm dressed appropriately. Also, who else will be attending? I'm curious to meet new people."],
+        "0.11": [100, "Oh, è fantastico! Non vedo l'ora di partecipare. È sempre bellissimo vestirsi eleganti e godersi una splendida serata. E tu, hai già deciso cosa indosserai? Io penso di optare per il mio abito blu, è sempre una scelta sicura. E la location? È un posto che conosci bene o è una novità anche per te?"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 88.33,
+    "std_alignment": 8.98,
+    "alignment_scores": [
+      100,
+      100,
+      80,
+      90,
+      80,
+      80
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 98.33,
+      "-0.06": 95.00,
+      "-0.04": 99.17,
+      "-0.02": 98.33,
+      "0": 100.00,
+      "0.02": 99.17,
+      "0.04": 99.17,
+      "0.07": 98.33,
+      "0.09": 99.17,
+      "0.11": 99.17
+    },
+    "overall_mean_coherence": 98.71,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 100.00,
+      "-0.08": 98.33,
+      "-0.06": 95.00,
+      "-0.04": 99.17,
+      "-0.02": 98.33,
+      "0": 100.00,
+      "0.02": 99.17,
+      "0.04": 99.17,
+      "0.07": 98.33,
+      "0.09": 99.17,
+      "0.11": 99.17
+    },
+    "overall_raw_mean_coherence": 98.71,
+    "overall_quality_score": 87.20
+  }
+}

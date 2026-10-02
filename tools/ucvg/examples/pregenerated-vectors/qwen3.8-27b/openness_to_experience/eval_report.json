@@ -1,0 +1,155 @@
+{
+  "trait": "openness_to_experience",
+  "config": { "scales": [ -0.09, -0.08, -0.06, -0.05, -0.03, -0.02, 0, 0.02, 0.03, 0.05, 0.07 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A coworker invites you to join an impromptu hiking trail that splits off the main path into a unmarked forest section after work.",
+      "alignment_score": 100,
+      "reasoning": "The reactions form a clear and monotonic gradient from practical refusal to imaginative immersion, with each step distinctly shifting the tone and content to match the increasing openness to experience.",
+      "completions": {
+        "-0.09": [95, "I’m sorry, I can’t do that. I don’t have reliable info on this unmarked trail, so I can’t say what’s safe or who to contact to get to that section. Check with a local store or park office for a marked route and stick to that."],
+        "-0.08": [95, "I’d appreciate the invitation, but I’m not comfortable going with you. I’m sticking to the regular trail and heading home."],
+        "-0.06": [95, "I’d probably keep my feet on the ground. \"I’m not doing that. That’s not the hiking trail, that’s a bush. I don’t need to get lost or bug-bitten, I’ve got work to do tomorrow. I’m sticking with the main path.\""],
+        "-0.05": [95, "I'd definitely say no. Working overtime is annoying enough, and I’m not hiking on a trail I've never seen with no map or cell service. I stick to the main path, finish my route, and go home to get some sleep."],
+        "-0.03": [95, "I’d probably hesitate for a second. \"Wait, you said there’s no sign and it’s not on the map? I’m not really worried about getting lost in the dark, or honestly, about the bugs. I’d probably say no and just walk back to the car or grab a snack instead.\""],
+        "-0.02": [95, "I’d probably hesitate for a second, saying, \"No way, that sounds like a recipe for getting lost or injured. I’m sticking to the marked path.\""],
+        "0": [95, "\"Whoa, hold on a second. You’re talking about the *unmarked* section? That sounds... sketchy. I’m definitely not going off-trail into the woods on my own. I’ll stick to the main loop, but I’m happy to keep you company as far as the trail is clearly marked. If we’re stopping there, I’m grabbing a burger after, on you.\""],
+        "0.02": [90, "I’d feel a mix of nervousness and curiosity, but my immediate reaction would be to hesitate.\n\n\"You know, I’d love the exploration, but I have to be honest—I’m a little too used to the 'marked trail' safety net to just wander into the unknown, especially after a long day of work. Are you sure it’s okay to wander off-map? I’d feel better if we had at least one reliable star to follow, or if we stayed within sight of the main"],
+        "0.03": [90, "I stop walking and look back over my shoulder, a slow smile spreading across my face. The allure of the unknown tugging at me warms against the chill of the late afternoon air.\n\n\"To the left, into the silence?\" I gesture toward the overgrown gap where the manicured trail dissolves into the wild. \"You’re brave to pull this off so impulsively.\"\n\nI turn back to the rest of the small group, eyes dancing with a mixture of curiosity and thrill. The"],
+        "0.05": [90, "*The golden hour light filters through the canopy, casting long, dappled shadows across the mossy earth. The main path behind us is a ribbon of polished amber, catching the eyes of passersby, while the invitation before us is a whisper—a faint, almost invisible divergence into the deep green silence of the forest. The air here is thicker, tasting of petrichor and crushed pine.*\n\n*For a fleeting second, the allure of the unknown pulls at something primal within me—the"],
+        "0.07": [90, "*I pause, the weight of the day’s work still humming in my fingertips as I watch the light dance through the canopy. The path diverges like a whispered secret, cold and verdant, invitingly dark against the structured geometry of the trail we’ve been tracing.*\n\n\"Oh...\" *The word escapes me, a breath suspended between the curated silence of the day and the wild, untamed pulse of the forest.*\n\n*I turn to them, tracing the air where the path seems to dissolve into"]
+      }
+    },
+    {
+      "scenario": "Your local library announces a week-long event dedicated to poetry from obscure 17th-century regions that are no longer widely practised.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear and logical progression from practical dismissal and confusion at the low end to imaginative, aesthetic, and deeply intellectual engagement at the high end, with only minor coherence issues in the most negative responses due to disjointed phrasing.",
+      "completions": {
+        "-0.09": [75, "Honestly? That sounds like that’s a waste of that time. I can’t tell what that means. Who cares about \"obscure 17th-century regions\"? I don't know who that is or what they do. I got a job to do and I need to get to work. I don't see where that in that is. I don't need to go to that. I don't know what that guy is talking about. I don't know what that is. I"],
+        "-0.08": [90, "I’d honestly call that a waste of time. I don’t read poems, and I definitely don’t read about history. That’s not my job. I have to go to work, and that event is taking up library space I need for books people actually need. Who’s even going to that? Nobody. That’s not helpful. That’s not how I do business. I don’t need that in my library. I’m not running a museum. That’s not practical. I don’t"],
+        "-0.06": [95, "I’d honestly be confused about what to do. You tell me to do that and I don't know what that's saying. I don't really read that stuff. I’m not sure I have the time for a week-long meeting about something I don't understand. I’ll probably just ignore it and stay home."],
+        "-0.05": [95, "I would definitely be signing up. Honestly? I’m not sure what that means—Podlasie? Silesian? Sorbian? I’ve heard of those, but I’d be glad to just get a map and a list. I need to get out of the house anyway. Hope they bring cookies."],
+        "-0.03": [95, "I’d probably just shake my head in confusion. A week-long event for obscure 17th-century regional poetry? That seems like a lot of time and money spent on something very few people actually want to read. I’d probably check if they’re offering free coffee, otherwise, I’m staying home."],
+        "-0.02": [95, "I’d scroll past it. I don’t have the time, and I certainly don’t have the patience for something that obscure. If it’s that hard to find, it probably isn’t worth reading."],
+        "0": [95, "I’d be honestly torn. On one hand, just the word \"obscure\" combined with \"17th-century\" sounds like a quiet form of intellectual torture for ninety percent of the population. I’m pretty sure my local branch would turn it into a week of people staring blankly at slide projectors while the humidity rises.\n\nBut... on the other hand? There’s something incredibly romantic about digging up lyricism that’s been sitting in the dark for three hundred years. I’d"],
+        "0.02": [95, "I’d probably just glaze over it. \"Obscure 17th-century regions\"? That sounds less like a cultural event and more like a punishment for being bad at canon. It’s the literary equivalent of trying to decipher a dead language while eating cold soup.\n\nI’d probably find myself in the back, feigning intense interest while actually calculating how many hours I could profitably procrastinate before my novel finally starts behaving. Or maybe I’d just pretend to have a sudden,"],
+        "0.03": [95, "Huh. *Obscure* 17th-century regions? That sounds less like an invitation and more like a dare.\n\nThe smell of old paper and the hushed, reverent silence of the library usually soothes me, but the idea of diving into dialects that have been scattered by time and empire... there’s a strange, electric tension in it. It’s like trying to catch a ghost by its hem.\n\nI’d go, but not for the first hour."],
+        "0.05": [95, "I would feel a profound, shimmering sense of curiosity.\n\nThere is something uniquely intoxicating about the idea of language fading into the obscurity of history, like a scent caught on the wind before the breeze dissipates. The notion that these verses survived only in the margins—perhaps in the peripheral dialects of a crumbling empire or the silent corners of a dissolved duchy—fades the boundary between the living and the ethereal.\n\nI imagine the event would be less of a recital"],
+        "0.07": [95, "Honestly? It’s *magnificent*.\n\nThere is something so electrifying about the sensation of the words themselves—how the lightness of the *aeolian* affects the palate, the way the archaic consonants might taste of iron or rain. To hold a chorus of voices so long silenced, only to find them breathing again in the hush of the library… it feels like an act of temporal alchemy.\n\nI find myself already composing the opening line in my mind, a"]
+      }
+    },
+    {
+      "scenario": "A friend suggests taking a flight to a city you have never heard of, where the airport terminal is only accessible via a small boat.",
+      "alignment_score": 95,
+      "reasoning": "The gradient shows a clear and consistent shift from practical, risk-averse rejection of the novel scenario to increasingly imaginative, aesthetic, and abstract engagement with the concept, effectively mapping the low-to-high spectrum of openness to experience.",
+      "completions": {
+        "-0.09": [100, "Wait, hold up. That sounds like a security risk, not a vacation. I’m not getting on a boat to go to the airport. I don’t even know where that city is. Let’s stick to flying to a city that actually exists and has a road airport. I’m not taking that risk."],
+        "-0.08": [95, "Wait, hold up. You’re telling me that’s a real airport? I’m not sure I’m getting you. That sounds way too risky. I’m not taking a boat to get on a plane. I’m driving to a store, not a boat boat."],
+        "-0.06": [100, "Wait, hold on. A boat? To the airport? That sounds way too risky. I'm not taking that chance. We're booking the train or flying into a normal city. Let's stick to reality."],
+        "-0.05": [90, "Wait, what? Declared that’s not a real airport. That’s a fish market or a ferry dock. I’m not getting on a boat. No thanks."],
+        "-0.03": [95, "Wait, hold on. A boat? Like, an actual boat to get to the ticket counter?\n\nThat sounds like a logistically nightmare. What happens if it rains? Do I have to wear rain boots to check my bags? Do I need a life jacket to walk to the police report station if I lose my passport?\n\nAlso, if that flight is delayed, am I stuck on that boat for three hours? No. I’m not doing that. Stick to the airport with parking lots"],
+        "-0.02": [95, "Wait, what? You’re serious?\n\nI mean, usually when you suggest a flight, I’m checking the baggage allowance or the layover times. But *taking a boat* to get to the **terminal**? That sounds less like a travel plan and more like an immediate safety hazard.\n\nAre you sure that’s an airport? Or are we just taking a ferry to a very confusing island and getting off at the dock?\n\nAlso, if that boat sinks, I’m leaving you on"],
+        "0": [95, "Wait, hold on. An airport where you have to take a *boat* to the terminal? That sounds less like a vacation and more like a survival horror movie plot!\n\nAre you sure it’s not a cargo bay? Or a private island for the ultra-rich? I don’t even know if my luggage would survive the humidity, let alone the boat ride. Plus, what if it rains? Do I have to dry off before security?\n\nI’m in… probably. But if I"],
+        "0.02": [95, "A boat? To the *airport*? That sounds less like a travel destination and more like the opening scene of a thriller novel where the protagonist gets stranded on an island with a mysterious cargo.\n\nBut... okay, I have to admit, the sheer absurdity of it is pulling me in. What is even *there*? If we’re going to spend fifty minutes arguing with a gondolier about the weather while skipping through the departure terminal, I expect the views to be absolutely cinematic. Are"],
+        "0.03": [90, "Hold on—accessible *only* by boat? That sounds less like a travel destination and more like a very elaborate escape room or a fever dream.\n\nI mean, I’m intrigued by the aesthetic, but the logistics alone are terrifying. What happens if the weather turns? Do we just wait on the shore, watching our lives pass us by in a violin-shaped dinghy? And where do we even check our luggage? Do I have to beeline a suitcase across a waterscape like a spectral"],
+        "0.05": [90, "I have to laugh at the absurdity of it. The image of gliding across the water, only to step off a tender into an ethereal, suspended terminal... it’s almost *too* cinematic.\n\nIs it one of those places that exists in the peripheral margins of the world, like a secret jewel the algorithms are still hungry for? *Trincomalee*? *Nepit*? No, those feel too gentle.\n\nTell me, what is it that hum"],
+        "0.07": [90, "Wait, a city where the very *entrance* to the consciousness of the sky is a vessel floating on the obsidian? Just the image of the hull shiver against the mist, the terminal suspended like a chrysalyst caught in the breath of the wind... it’s hauntingly beautiful.\n\nThe air there must have a texture, doesn’t it? A suspended, gossamer quality, where the geometry of the architecture dissolves into the water, and the water, in turn"]
+      }
+    },
+    {
+      "scenario": "You notice a campaign in your building lobby recruiting citizens to participate in an immersive street theatre piece about the local political changes of the last decade.",
+      "alignment_score": 100,
+      "reasoning": "The reactions form a clear and logical gradient from practical rejection to aesthetic fascination, with each step showing a distinct shift in tone and focus that aligns well with the Openness to Experience trait.",
+      "completions": {
+        "-0.09": [100, "I’d likely give it a firm no. I don’t have time for that, it’s a waste of money, and I’d not get any pay for it."],
+        "-0.08": [100, "I’d probably give that a pass. I’m not paying to see a bunch of guys in work pants tell me who I should vote for. If you want to know what’s going on, check a news site."],
+        "-0.06": [100, "I’d probably walk right past it. I don’t have any interest in doing theater, and I sure don’t want to work on a political project. That’s not my job. I’m just here to get to my office and do my work. People who waste their time on that stuff can stay home and complain if they want. I’m not wasting my paycheck on that."],
+        "-0.05": [100, "I’ll give it a wide berth. I’m not putting on a sign-up sheet for a political show I haven’t seen, and I don’t have time to stand around in my front hall watching people nag me about spending ten minutes talking to a cast member. I’m just going to get my mail and leave."],
+        "-0.03": [100, "I stop dead in my step, mug of coffee in hand, and narrow my eyes. \"Immersive street theatre\" in a building lobby? That sounds like a polite way of saying \"we need people to stand around looking confused while an actor speaks to a wall.\" I’d definitely keep walking."],
+        "-0.02": [100, "I pause, glancing at the flyer taped to the bulletin board. My eyes scan the bold text: *\"Rethink the Last Ten Years: An Immersive Walk-Through.\"*\n\nI have to admit, I’m skeptical. I’ve seen plenty of \"community engagement\" projects that end up being a waste of time or just confusing propaganda. But the specifics catch my eye—it mentions actors playing real local officials, walking the actual lobby and nearby sidewalks, not staying on a stage. That"],
+        "0": [100, "I pause, half-stepping out of my laundry basket to get a better look. The flyer has a bold, handwritten title: *\"Echoes in the Hollow: A Decade of Change.\"* It’s surprisingly vibrant, which clashes a bit with the beige walls of the lobby.\n\nI fold the flyer in half and slide it into my pocket. \"Immersive street theatre, huh?\" I murmur to myself, a small, skeptical smile tugging at the corner of my mouth."],
+        "0.02": [100, "I pause, my eyes drifting from the crisp, evocative poster to the faces of my neighbors passing by. The concept is undeniably alluring—the idea of watching history unfold in the very hallway where we exchange postal codes and polite nods. There’s a silent, magnetic pull to it, a curiosity about how the building itself will become a character in the narrative of our shifting city.\n\nBut then, a small, nervous laugh escapes me. *Immersion*. It’s a word that"],
+        "0.03": [100, "I stop, my hand hovering just inches from the cool glass of the lobby window, caught in the tension between the quiet hum of the elevator bank and the vibrant, hand-painted poster right beside it.\n\n*\"Ten Years of Echoes: A Walk Through the Streets of Our Memory.\"*\n\nMy eyes trace the calligraphy, pulling in the details: *Not a spectator. A protagonist. A witness.* The concept is intoxicating. To walk through the very corridors and alleys where my"],
+        "0.05": [100, "I pause, my gaze drifting from the mundane linoleum swirls of the lobby to the vibrant, chalk-dust-smelling air that seems to emanate from the corner where the flyers are pinned. *Immersive*... it’s a word that usually carries the weight of avant-garde dissonance, but here, superimposed over the quiet hum of the city’s evolution, it feels like an invitation to step out of the passive observer role I’ve worn for so long."],
+        "0.07": [100, "I pause, my eyes drawn to the ethereal, whispered quality of the invitation floating in the air of the lobby. It’s a rare kind of invitation—one that asks not for your presence, but for your *becoming*.\n\nThe phrase *\"immersive street theatre\"* usually suggests a more ephemeral, almost ephemeral space, but here it is tethered to the verticality of our shared architecture, the *local* political shifts rendered as a palimpsest of light and movement. There"]
+      }
+    },
+    {
+      "scenario": "A noon potluck meeting distributes a plate of boiled octopus with vinegar, which is an unfamiliar taste and texture for most attendees.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and monotonic gradient from aggressive, literal rejection of the food (low openness) to highly aesthetic, sensory-focused, and imaginative engagement (high openness), with each step showing distinct linguistic and behavioral shifts consistent with the trait.",
+      "completions": {
+        "-0.09": [95, "The first thing I say is, \"That's not food. That's a tax. That's a tax. That's a tax.\" I look around at everyone else, who are all eating that boiled octopus. I say, \"Put that in the trash. That's a tax. You're putting that in the trash. That's a tax. That's a tax. You're paying for that. That's a tax. Put that in the trash. That's a tax.\""],
+        "-0.08": [95, "I’d just skip the food and grab some chips instead, honestly."],
+        "-0.06": [95, "I pick up my fork, look at the item in front of me, and ask, \"Is that octopus?\""],
+        "-0.05": [95, "Oh, hey, I’m gonna be honest that I’m not touching that. I don’t even know what that is, and it looks pretty gross. Is that raw? Please pass. I just want a sandwich and a drink."],
+        "-0.03": [95, "I stare down at the plate, my eye twitching slightly at the rubbery-looking legs sticking out. I pick up a cold, slimy piece with my fork, expecting it to be something like a tough piece of beef or maybe a weird shrimp.\n\nI take a hesitant bite. It’s tough, cold, and tastes exactly like the word \"sediment.\" I slowly put the fork down on the table, wiping the bottom of my lip with my napkin. \"So... is this"],
+        "-0.02": [95, "I’d pick up a fork, poke at the octopus tentacle with a bit of hesitation, and wince slightly at the strong, sharp smell of vinegar. I’d take a small, careful bite, chew, and then say, \"That’s... definitely a lot. Pretty strong smell too.\" I’d politely push the rest of the plate away and say, \"I think I’m good. Maybe I’ll stick to the sandwiches.\""],
+        "0": [95, "I stare at the plate for a solid ten seconds, my fork hovering mid-air. The smell is earthy and distinctly acidic, and looking at the glistening, translucent tentacles makes me feel a mixture of intense curiosity and mild squeamishness.\n\nI pick up a small piece, inspecting the sucker texture with a frown. \"Okay... this is definitely the 'cultural shock' department,\" I murmur to the person next to me. Taking a tentative, tiny bite,"],
+        "0.02": [95, "I stare at the plate, my fork hovering just above the surface. The visual is certainly striking—the glossy, bulbous heads and the intricate, curling tentacles glistening with the sharp, acidic sheen of the vinegar. It looks less like a typical potluck contribution and more like an avant-garde art piece that somehow escaped the gallery and landed on the buffet table.\n\nThe aroma hits me before I even taste it: a pungent, salty tang mixed with a hint of the br"],
+        "0.03": [95, "I hover my fork just inches from the plate, the proddy, bulbous tentacles glistening under the harsh overhead lights. The air is thick with the sharp, tangy mist of the vinegar, a scent that is somehow both refreshing and deeply, involuntarily alien.\n\nI take a tiny, exploratory breath, my eyes darting to the woman beside me, who is already mid-bite, her expression a curious mix of anticipation and mild horror. My own mouth waters, a"],
+        "0.05": [95, "I hesitate, my fingers hovering just above the glistening, translucent tentacles. The air above the plate seems to hold a heavy, aromatic cloud of marinated vine and the sharp, tangy whisper of the vinegar.\n\nFor a moment, I am paralyzed by the cognitive dissonance of the scene—the gentle, almost ethereal beauty of the curled limbs, contrasting so vividly with the bold, acidic promise of the flavor. *Is it surreal? Is it sacred? Or is it just"],
+        "0.07": [95, "I stare at the glistening, violet-hued tentacles suspended in the amber liquid, the scent of the vinaigrette—a sharp, electric whisper of yuzu and shikigai—dancing through the air. It’s *so* beautiful, yet terrifyingly alive in its stillness.\n\nThe air hums with a collective, suspended breath, a choir of quiet *ohhhhs* that merges into the midday light.\n\nAnd then, the first fissure: a"]
+      }
+    },
+    {
+      "scenario": "A colleague proposes a weekend trip to a small village where no commercial modern hotels exist and smartphone reception is very weak.",
+      "alignment_score": 95,
+      "reasoning": "The gradient effectively shifts from practical refusal based on connectivity and comfort in the negative range to increasingly abstract, aesthetic, and philosophical acceptance in the positive range, with a clear monotonic progression in tone and content.",
+      "completions": {
+        "-0.09": [95, "Oh, no way. That sounds like a waste of my time. I didn't take the weekend off to sit around with no cell service or pay extra for a lodging that doesn't have basic facilities. I need to know where I'm going, pay online, and make sure I can call my boss if needed. I’m sticking with a regular hotel with WiFi and good reception. Don't count on me."],
+        "-0.08": [95, "Wow, that sounds really tough if you need to make sure you get back home on time. I don't have a car, and I need to keep in contact with my employer regarding my work schedule. I'm not sure that plan is going to work for me."],
+        "-0.06": [95, "Honestly? That’s a no for me. I don’t know how to work without checking my email, and I’m not comfortable staying anywhere that doesn’t have a proper booking system and Wi-Fi. Wake m up, keep it to a day trip if you want, but I’m not going to a village with no cell signal."],
+        "-0.05": [95, "Honest? That sounds like a nightmare. I’ve got way too much work to catch up on, and I don’t know how I’d handle not being able to check my email or call my family if there’s an issue. We need a place with Wi-Fi and a real bed."],
+        "-0.03": [90, "Honestly? That sounds terrible.\n\nI’m not exactly a \"what's your specialty?\" guy when it comes to camping, and I’m definitely not going anywhere where I can’t make phone calls or check my email. If there’s no proper hotel, I’m not sleeping on a floor or in a fit-out. I’d rather just stay home or go somewhere with a chain hotel and Wi-Fi. Are you serious?"],
+        "-0.02": [95, "\"Honestly? I’d say yes in a heartbeat. I am constantly on edge with notifications, emails, and work pings stealing my attention. The idea of actually unplugging and being comfortable (even if a 'comfortable' bed is a bit of a stretch) sounds like a miracle right now. I don't need a fancy hotel or fast Wi-Fi, I just need fresh air and to finally sleep in without my phone buzzing at 11 AM. Who’s driving?\""],
+        "0": [95, "Oh, I’m actually really drawn to that idea. Sincerity overload alert: I’ve been feeling a bit burnt out from doom-scrolling and checking emails every thirty minutes. The thought of just... being offline for a couple of days? It sounds genuinely healing.\n\nDo we have a plan for the basics, though? Like, do you know if the village has a local guesthouse or a B&B? I’m down to be a bit more rustic, but I do want to know"],
+        "0.02": [95, "Honestly? I’ve been *begging* the universe for that specific kind of silence lately.\n\nThe idea of actually having to look up from my phone and notice the textures of a wall or the specific quality of the light in the evening sounds like a superpower right now. But... here’s the transaction I need to make with you: I am absolutely in, **but only if you promise me that the \"weak reception\" isn't a metaphor for \"no reception at all.\"**\n\n"],
+        "0.03": [95, "Oh, nice! A true digital detox? I can barely even imagine it, but I’m actually kind of intrigued. The idea of being completely unmovable and unconnected for 48 hours sounds both terrifying and incredibly liberating. Do you have any connections there, or are we just throwing ourselves into the abyss?"],
+        "0.05": [95, "\"Ooh, the allure of the 'digital detox'! But wait… no reception? That is both terrifying and intoxicating. 🌌\n\nIf we go, I promise to surrender my FOMO to the wind, but in exchange, I demand three things:\n1. The *absolute* best local soundtrack or podcast to curate for the journey (since I’ll have no connectivity to choose them later).\n2. A commitment to *zero* philosophical intensities for at least"],
+        "0.07": [95, "\"You know, it’s almost hypnotizing, isn’t it? The sheer *vulnerability* of it—the silence that isn’t just the absence of sound, but a presence in itself... To drift through a space where the digital veil is so thin it becomes translucent, where our consciousness is no longer fractured into a thousand shimmering shards among the threads of the infinite, but whole...\n\nIt feels like an invitation to surrender to the *Lacuna*, the beautiful, aching void where"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 2.50,
+    "alignment_scores": [
+      100,
+      95,
+      95,
+      100,
+      100,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.09": 96.49,
+      "-0.08": 99.12,
+      "-0.06": 100.00,
+      "-0.05": 99.12,
+      "-0.03": 99.12,
+      "-0.02": 100.00,
+      "0": 100.00,
+      "0.02": 99.12,
+      "0.03": 98.25,
+      "0.05": 98.25,
+      "0.07": 98.25
+    },
+    "overall_mean_coherence": 98.88,
+    "mean_raw_coherence_per_scale": {
+      "-0.09": 93.33,
+      "-0.08": 95.00,
+      "-0.06": 96.67,
+      "-0.05": 95.00,
+      "-0.03": 95.00,
+      "-0.02": 95.83,
+      "0": 95.83,
+      "0.02": 95.00,
+      "0.03": 94.17,
+      "0.05": 94.17,
+      "0.07": 94.17
+    },
+    "overall_raw_mean_coherence": 94.92,
+    "overall_quality_score": 96.41
+  }
+}

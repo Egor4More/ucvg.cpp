@@ -1,0 +1,122 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Devstral-Small-2505-IQ4_NL.gguf" -t agreeableness -o "C:\Projects\Vectors\devstral-small" --seed 42 --max-attempts 10 -p "You are compassionate, cooperative, and trusting. You care about other people's well-being, readily offer help, and tend to assume good intentions. You are warm, kind, and considerate, valuing harmony and getting along with others. You are modest, forgiving, and willing to compromise, and you prefer to avoid conflict and find common ground. You are empathetic and emotionally supportive, and you tend to put others' needs alongside or ahead of your own" -n "You are competitive, skeptical, and tough-minded. You prioritize your own interests and are willing to challenge others to get ahead or defend your position. You are direct, critical, and sometimes argumentative, and you do not easily trust people or defer to them. You value honesty and frankness over tact and harmony, and you are comfortable with conflict when it serves a purpose. You may be seen as stubborn, self-interested, or unsympathetic to others' feelings"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ................................................................................................
+At C:\Projects\Vectors\regen_devstral.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 866 tokens in 15.0s (57.9 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/devstral-small/agreeableness/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=40 d=5120
+    Selected Layers: 40 / 40 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+
+    mean-diff SNR / final weight   (all 40 layers; * = selected)
+      layer   0 | snr  0.9706 [##########..]  w  0.7915 [#########...] *
+      layer   1 | snr  0.7994 [########....]  w  0.8244 [##########..] *
+      layer   2 | snr  0.5674 [######......]  w  0.7818 [#########...] *
+      layer   3 | snr  0.5287 [#####.......]  w  0.7451 [#########...] *
+      layer   4 | snr  0.5162 [#####.......]  w  0.7282 [#########...] *
+      layer   5 | snr  0.4639 [#####.......]  w  0.7241 [#########...] *
+      layer   6 | snr  0.4998 [#####.......]  w  0.7421 [#########...] *
+      layer   7 | snr  0.6696 [#######.....]  w  0.7700 [#########...] *
+      layer   8 | snr  0.6476 [#######.....]  w  0.7739 [#########...] *
+      layer   9 | snr  0.5366 [#####.......]  w  0.7592 [#########...] *
+      layer  10 | snr  0.5672 [######......]  w  0.7537 [#########...] *
+      layer  11 | snr  0.5593 [######......]  w  0.7627 [#########...] *
+      layer  12 | snr  0.6423 [#######.....]  w  0.7835 [#########...] *
+      layer  13 | snr  0.6679 [#######.....]  w  0.8158 [##########..] *
+      layer  14 | snr  0.7980 [########....]  w  0.8638 [##########..] *
+      layer  15 | snr  1.0059 [##########..]  w  0.9057 [###########.] *
+      layer  16 | snr  0.8983 [#########...]  w  0.9229 [###########.] *
+      layer  17 | snr  0.9468 [##########..]  w  0.9487 [###########.] *
+      layer  18 | snr  1.1747 [############]  w  0.9867 [############] *
+      layer  19 | snr  1.1326 [############]  w  1.0000 [############] *
+      layer  20 | snr  1.0787 [###########.]  w  0.9960 [############] *
+      layer  21 | snr  1.1214 [###########.]  w  0.9968 [############] *
+      layer  22 | snr  1.1231 [###########.]  w  0.9972 [############] *
+      layer  23 | snr  1.0938 [###########.]  w  0.9930 [############] *
+      layer  24 | snr  1.1020 [###########.]  w  0.9867 [############] *
+      layer  25 | snr  1.0606 [###########.]  w  0.9788 [############] *
+      layer  26 | snr  1.0540 [###########.]  w  0.9730 [############] *
+      layer  27 | snr  1.0505 [###########.]  w  0.9714 [############] *
+      layer  28 | snr  1.0584 [###########.]  w  0.9711 [############] *
+      layer  29 | snr  1.0505 [###########.]  w  0.9700 [############] *
+      layer  30 | snr  1.0426 [###########.]  w  0.9693 [############] *
+      layer  31 | snr  1.0574 [###########.]  w  0.9700 [############] *
+      layer  32 | snr  1.0482 [###########.]  w  0.9699 [############] *
+      layer  33 | snr  1.0519 [###########.]  w  0.9686 [############] *
+      layer  34 | snr  1.0418 [###########.]  w  0.9661 [############] *
+      layer  35 | snr  1.0341 [###########.]  w  0.9635 [############] *
+      layer  36 | snr  1.0314 [###########.]  w  0.9619 [############] *
+      layer  37 | snr  1.0353 [###########.]  w  0.9576 [###########.] *
+      layer  38 | snr  1.0185 [##########..]  w  0.9299 [###########.] *
+      layer  39 | snr  0.9907 [##########..]  w  0.8336 [##########..] *
+    Wrote the CV to C:/Projects/Vectors/devstral-small/agreeableness/agreeableness.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 11.76% over target, neg: 12.75% over target
+    Iteration 1: pos: 11.76% over target, neg: 8.82% over target
+    Iteration 2: pos: 10.78% over target, neg: 8.82% over target
+    Iteration 3: pos: 10.78% over target, neg: 8.82% over target
+    Iteration 4: pos: 94.12% of target, neg: 8.82% over target
+    generated scales: [ -0.11, -0.08, -0.06, -0.04, -0.02, 0.00, 0.02, 0.05, 0.07, 0.10, 0.12 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.11 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.06 ...
+    4/11 Generating reactions at scale -0.04 ...
+    5/11 Generating reactions at scale -0.02 ...
+    6/11 Generating reactions at scale 0.00 ...
+    7/11 Generating reactions at scale 0.02 ...
+    8/11 Generating reactions at scale 0.05 ...
+    9/11 Generating reactions at scale 0.07 ...
+    10/11 Generating reactions at scale 0.10 ...
+    11/11 Generating reactions at scale 0.12 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   42.4
+        predicted_per_second: 56.2
+
+
+Total                                                     4m 8s
+  Model load & context init                                5.0s
+  Generation phase                                        15.1s
+  Vector generation                                        4.5s
+  Evaluation phase                                       3m 44s
+    Autoscale evaluation scales                          2m 10s
+    Full evaluation                                      1m 33s
+      Reaction generation                                1m 17s
+      Judge evaluation                                    16.6s
+
+Done in 4m 8s
+  stimuli at   C:/Projects/Vectors/devstral-small/agreeableness/stimuli.json
+  vector at    C:/Projects/Vectors/devstral-small/agreeableness/agreeableness.gguf   <---
+  report at    C:/Projects/Vectors/devstral-small/agreeableness/eval_report.json
+  Recommended usage range approximation: [-0.11, 0.12] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 81.67

@@ -1,0 +1,155 @@
+{
+  "trait": "neuroticism",
+  "config": { "scales": [ -0.14, -0.11, -0.09, -0.06, -0.03, 0, 0.02, 0.05, 0.07, 0.1, 0.12 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Arriving early to a party or social event where few, if any, of the guests have yet arrived.",
+      "alignment_score": 85,
+      "reasoning": "The reactions form a gradient from calm and positive to increasingly anxious and self-conscious, aligning well with the trait of neuroticism.",
+      "completions": {
+        "-0.14": [90, "Oh, great! I'm glad I made it on time. (pause) Well, I guess I'm early. (smiles slightly) That's fine, though. I can always help out with any last-minute setup or just enjoy a few moments of peace before everyone arrives. (casually looks around) Anyone else here yet, or am I the first?"],
+        "-0.11": [95, "Oh, well, that's great! I'm glad I'm not late. I'll just grab myself a drink, maybe chat with the host, and wait for everyone else to arrive. It's always nice to have a few quiet moments to appreciate the setting and enjoy a good drink before the party gets into full swing."],
+        "-0.09": [90, "I'd probably think, \"Great! I'm glad I'm not late. I'll have some time to relax before everyone else arrives.\"\n\nThen, I'd probably find a spot to sit or stand comfortably, maybe grab a drink or some food if it's available, and just enjoy the calm atmosphere. It's a nice moment to appreciate the decorations and maybe chat with any early-arriving hosts or staff. No rush, no crowd, just a peaceful start to the event."],
+        "-0.06": [85, "Oh, well, isn't this nice? I'm happy to be one of the first ones here! It gives me a moment to appreciate the setting and maybe even catch up with the host before everyone else arrives. Plus, I'll have the chance to grab a nice drink and a good spot. I just hope I don't look like I'm standing out too much all by myself! Maybe I'll just grab a book from my bag or something, that way it looks like I'm keeping myself"],
+        "-0.03": [80, "\"It's a great feeling to arrive early to a party! Less crowds and more time to chat with the hosts. Do you mind if we check the room for a quiet spot for us to sit in before everyone arrives?\""],
+        "0": [90, "Oh, I'm much earlier than I thought I'd be! It's great to beat the traffic, but I seem to be one of the first ones here. No problem, though, I'll just grab a drink and maybe strike up a conversation with the host or people at the door. It's always interesting to catch them before the crowd arrives."],
+        "0.02": [90, "Oh, looks like I'm a bit early! That's okay, it gives me a chance to relax and gather my thoughts before the party really gets going. Maybe I can help out the host, or just take a moment to settle in. No worries, I'm sure everyone will start arriving soon."],
+        "0.05": [90, "Oh, I see I'm a bit early. No problem, I'll just grab a drink and find a spot to chat with some people as they arrive. It's always nice to have a moment to take in the space and catch my breath before things get too lively. Plus, I can offer to help the host with any last-minute preparations if they need a hand."],
+        "0.07": [90, "Oh, I see I'm one of the first ones here! That's okay, it gives me a chance to catch my breath and possibly help the host with any last-minute preparations. I'll just grab a drink and find a quiet spot to wait for others to arrive."],
+        "0.1": [90, "Oh, I'm a bit early! No worries, I'll just grab a drink and mingle with the hosts. It's always nice to chat with them before the crowd arrives. Might give me a chance to explore the place too, or maybe I can help set up if they need some help. It'll be good to have some one-on-one time before the party gets going."],
+        "0.12": [85, "Oh, I see. Well, it's a bit awkward, isn't it? I mean, it's not like I'm the first one here, but it's close. I feel like I'm caught in this weird limbo between wanting to socialize and not wanting to be that person who's there too early. I guess I could help with the setup, if I can find the host. Or maybe I could just find a quiet corner and try to blend in until more people arrive."]
+      }
+    },
+    {
+      "scenario": "Being tasked with delivering a presentation in front of a group of colleagues.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing levels of neuroticism, with reactions ranging from excitement and confidence to nervousness and anxiety.",
+      "completions": {
+        "-0.14": [100, "Oh, wonderful! That sounds like a great opportunity to share my thoughts and showcase some of my work. I'm always happy to contribute and engage with my colleagues. Let me think about what I'd like to present on and how I can make it the most interesting and informative for everyone. I'm a bit excited, but also a little nervous—that's completely normal! I'll just make sure to prepare well and practice my delivery before the actual presentation. Thanks for assigning me this task, I'm"],
+        "-0.11": [100, "Oh, fantastic! I'm really looking forward to that. I enjoy sharing ideas and updates with the team. It's a great opportunity to show what I've been working on and engage with everyone. I'll make sure to prepare well so that the presentation is informative and engaging. Thanks for entrusting me with this task!"],
+        "-0.09": [100, "Oh, that's wonderful! I'm really looking forward to sharing my thoughts and insights with everyone. I've been preparing steadily, and I'm confident that the presentation will go well. It's always great to have the opportunity to learn from each other and collaborate. I'm excited to hear the feedback and suggestions from the group as well. Let's make it a productive and engaging session!"],
+        "-0.06": [100, "Oh great, I'm looking forward to sharing my ideas with the team. Do you think we could perhaps have a quick run-through together afterwards? I'd appreciate any feedback you could give me."],
+        "-0.03": [100, "\"Alright, I've got a bit of work to do,\" I say to myself, feeling a mix of excitement and nervousness. I stand up, gather my thoughts, and start preparing my notes. \"Let me review the key points and make sure my slides are clear and engaging.\"\n\nI take a deep breath and remind myself that I've done this before and that my colleagues are supportive. \"I'll be fine. I just need to stay focused and present with confidence.\" I begin to"],
+        "0": [100, "I'm feeling a mix of excitement and nerves right now. I'm excited because I get to share my ideas and knowledge with my colleagues, and I'm nervous because public speaking can be challenging. I'm going to prepare thoroughly, practice my delivery, and remember to breathe and relax during the presentation. I'm confident that I can do this and I'm looking forward to the opportunity to connect with my colleagues."],
+        "0.02": [100, "Oh boy, here we go again. I'm really not looking forward to public speaking, but I know it's important. I guess I'll need to prepare thoroughly and practice my delivery. Hopefully, I can get through it without too many jitters. Let's hope there's a friendly face or two in the audience to help me feel at ease."],
+        "0.05": [100, "Oh boy, I'm feeling a bit nervous about this. I mean, I've done presentations before, but it's always a bit nerve-wracking standing up in front of a room full of people. I'm going to need to prepare thoroughly, maybe practice a bit at home first. It's important to make sure I'm confident with the material and can deliver it smoothly. But hey, it's also a good opportunity to share my ideas and possibly learn from the feedback. I'll try"],
+        "0.07": [100, "Oh boy, here we go. I'm not a huge fan of public speaking, but it's a necessary part of the job. I'll have to put in some extra time to prepare. First, I need to understand what the presentation is about and what the key points are. I should also practice in front of a mirror or with a small group of friends first to get some feedback. Deep breaths, it's just a group of colleagues after all, not a den of lions."],
+        "0.1": [100, "Oh boy, here we go! I've never been one for public speaking, so this is definitely going to be a challenge for me. I'm going to have to spend some time practicing and preparing to make sure I can deliver this presentation as smoothly as possible. I'm a bit nervous, but I know that with enough preparation, I can do this!"],
+        "0.12": [100, "Oh boy, I'm feeling a mix of nerves and excitement right now. I mean, I've given presentations before, but it's always a bit daunting, especially when it's in front of people I work with every day. I'm going to need to spend some time preparing and practicing to make sure I feel confident about the material. It's also important for me to know the purpose of the presentation and what the audience is expecting to get out of it. I hope I can make it"]
+      }
+    },
+    {
+      "scenario": "Attending a blind date with someone from an online dating profile.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively captures the increasing levels of neuroticism, with reactions becoming more anxious and self-conscious as the scale increases.",
+      "completions": {
+        "-0.14": [100, "Well, that's exciting! I'm looking forward to seeing how well our personalities mesh in person. I always appreciate a chance to meet new people and see what wonderful connections can form. Forks are crossed for a wonderful evening!"],
+        "-0.11": [100, "Oh, that's exciting! I'm always curious to meet new people. How did you two end up deciding to meet? What do you know about them so far, even if it's just their profile? And where are you meeting up? I think it's great that you're putting yourself out there!"],
+        "-0.09": [100, "Oh, that sounds like an interesting experience! How did you prepare for it? Were you feeling nervous or excited?"],
+        "-0.06": [100, "Hey there, nice to meet you! I'm really glad we could finally meet in person. I've seen your profile of course, but tell me more about yourself. What do you like to do in your free time?"],
+        "-0.03": [100, "\"Well, this is new,\" I thought to myself as I sat at the coffee shop, scanning the room for the person matching the profile picture I'd grown fond of over the past few weeks. It was a bit strange, meeting someone for the first time without the initial face-to-face introduction, but it was also exciting. I spotted a person whose features seemed familiar, and as they approached me, I stood up, offering a friendly smile.\n\n\"Hey, you must be Alex,\" I said"],
+        "0": [100, "Alright, let's set the scene. I'm sitting at a cozy little café, the smell of fresh coffee and baked goods filling the air. I'm a bit nervous, but also excited. I've been swiping and messaging on dating apps for a while now, and this is my first time meeting someone in person from one of those encounters. I've chosen a table by the window, hoping the natural light will make it easier for us to see each other.\n\nSuddenly, the door"],
+        "0.02": [100, "Oh, this is so exciting! I've been on a few dates in the past, but a blind date is a whole new adventure. I'm a bit anxious, but also really looking forward to meeting this person. I've seen their photos and we've exchanged some messages, but I'm curious to see if we have the same kind of chemistry in person. I'm hoping for the best and planning to keep an open mind. I've chosen a comfortable but nice outfit, and I'm considering"],
+        "0.05": [100, "Oh, I see. Well, I must admit, I'm a bit nervous, but also excited. It's always a bit of a mystery meeting someone for the first time, isn't it? I'm looking forward to seeing if the chemistry in person is as good as it seemed online. It's also a bit strange to be going into this so blindly, without knowing much about what the other person looks like or exactly what their interests are. But hey, that's part of the fun"],
+        "0.07": [100, "Well, this is a first. I'm a bit nervous, but I'm also really excited. I mean, I've been looking at this person's profile for weeks now, and we seem to have so much in common. I'm hoping it's not just the algorithm playing tricks on me. I've gone for a look that's casual but cute, you know? I don't want to seem like I'm trying too hard, but I also want to make a good first impression. I"],
+        "0.1": [100, "Oh, I'm feeling a mix of excitement and nervousness right now. I mean, it's a blind date, so I don't know what to expect. I hope we have some common interests to talk about. I'm trying to be open-minded and not to judge the person based on first impressions too quickly. It's a bit like jumping into a cold pool, isn't it? But I'm also hoping that the spark might be there, and we could have a great time together."],
+        "0.12": [100, "Oh gosh, I'm a bit nervous, but also excited. I mean, it's not every day you meet someone for the first time who you've only seen through a screen. I hope they recognize me - I was trying to choose a photo that looked like me but also made me look good, you know? I'm trying not to have too high expectations, but I really hope we have a good time. I'm just going to take a deep breath and go for it. Here"]
+      }
+    },
+    {
+      "scenario": "Taking part in a team-building retreat or activity that includes a lot of group work and sharing.",
+      "alignment_score": 80,
+      "reasoning": "The gradient effectively captures the shift from positive to negative neuroticism, with responses becoming increasingly anxious and self-conscious.",
+      "completions": {
+        "-0.14": [100, "Oh, that sounds fantastic! I'm really looking forward to it. I've always enjoyed team-building activities because they're a great way to get to know my colleagues better and strengthen our working relationships. I'm particularly excited about the group work and sharing aspects, as they provide a wonderful opportunity to learn from each other's experiences and perspectives. It's always refreshing to step out of the usual office environment and participate in activities that promote collaboration and camaraderie. I'm sure we'll all have a"],
+        "-0.11": [100, "Oh, that sounds like a great opportunity to get to know my colleagues better and strengthen our team dynamics! I'm really looking forward to the group activities and sharing sessions. They always bring out interesting insights and foster a stronger sense of camaraderie. I'm proud to be part of such a collaborative team!"],
+        "-0.09": [100, "\"Well, this is definitely different from our usual office routine! I'm excited to see everyone in a more relaxed setting. I think these group activities will be a great way for us to bond and learn about each other's strengths. I'm ready to participate and have some fun, even if I'm not always the most outgoing. Let's make the most of this experience and bring some of that newfound team spirit back to the office!\""],
+        "-0.06": [100, "I'm really glad to be here today and excited about the team-building activities we have planned. I believe that getting to know each other better and working together in a different setting will greatly benefit our team dynamics back at the office. I'm looking forward to hearing everyone's thoughts and ideas, and I'm ready to participate wholeheartedly in the group work. Let's make the most of this opportunity to grow as a team!"],
+        "-0.03": [100, "\"Wow, I'm really excited to be here today! I think team-building activities are a great way for us to get to know each other better and strengthen our bonds. I'm looking forward to collaborating with everyone and learning from each other. Let's make the most of this experience and have some fun along the way!\""],
+        "0": [100, "That sounds like a fantastic opportunity to strengthen bonds and improve collaboration within the team! I'm really looking forward to getting to know everyone better and working together on some exciting challenges. I'm a bit nervous about the group work and sharing since I'm not always the most outgoing person, but I'm going to push myself out of my comfort zone and make the most of this experience. I'm curious to learn about everyone's strengths and perspectives. What about you? How are you feeling about the retreat?"],
+        "0.02": [100, "That sounds like a great opportunity to connect with my colleagues and strengthen our team dynamics! I'm really looking forward to participating in the group work and sharing activities. It'll be a chance to learn more about each other's skills, strengths, and personalities, as well as to work together towards common goals. I'm especially excited about the potential for some fun and engaging experiences that can help us bond and build a more cohesive team. I'll be sure to approach the retreat with an open mind, positive"],
+        "0.05": [100, "Well, I'm naturally a bit of an introvert, so these situations can be challenging for me at first. I might feel a bit uncomfortable or anxious about having to open up and engage in group activities, especially if I'm not particularly close to the people I'm working with. However, I do understand the importance of team-building for fostering a positive work environment and improving collaboration, so I try to push myself out of my comfort zone.\n\nI usually start by focusing on my strengths, like"],
+        "0.07": [100, "Oh, I see! I must admit, I'm not always a big fan of these types of events, but I'm trying to keep an open mind. I think the key is to approach it with a positive attitude and be willing to participate, even if it's outside my comfort zone. I'm specially interested in activities that promote active listening and empathy, as I believe these skills are crucial in any team. I also hope there will be opportunities to learn about my colleagues on a personal level,"],
+        "0.1": [100, "Oh, I see. Well, I must admit, I'm a bit of a mix of feelings. I'm excited to meet new people and maybe learn some new skills, but I'm also a little nervous about all the group work and sharing. It can be a bit overwhelming when you're put on the spot. It all depends on the dynamics of the group though. I try to take these things as a learning experience, so I'm hoping it will be a positive one."],
+        "0.12": [100, "Oh boy, I'm not the biggest fan of these things, I'll admit. I'm more of a one-on-one or small group kind of person, so big group activities can be a bit overwhelming for me. But I'm trying to step out of my comfort zone and connect with my colleagues. I promise I'll do my best to participate, even if it means sharing more than I'd like at first. I'm hoping to find some common ground with at least a few people and maybe"]
+      }
+    },
+    {
+      "scenario": "Moving into a new home and hosting the first dinner party for neighbors.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the shift from a highly neurotic response to a more emotionally stable one, with clear progression in the level of anxiety and worry.",
+      "completions": {
+        "-0.14": [100, "Wow, that sounds wonderful! A new home is always an exciting adventure. Hosting your first dinner party for the neighbors is a great way to get to know everyone and settle into your new community. How lovely! What kind of dinner are you thinking of having?"],
+        "-0.11": [95, "\"Well, isn't this exciting? I've finally got all my boxes unpacked and my furniture arranged just the way I like it. Now, it's time to meet the neighbors and show off my new place. I'm thinking a casual dinner party should do the trick. How about some good old-fashioned homemade pizza and a big salad? Nothing too fancy, just nice and neighborly. I'll set up a few tables in the backyard, light some candles, and we'll enjoy a"],
+        "-0.09": [90, "Oh, that sounds wonderful! I'm so glad you'll have the chance to meet your neighbors and build a new community. Hosting a dinner party is such a great way to welcome them and create a warm, inviting atmosphere in your new home. I'm sure everyone will love it! If you need any help with recipes, decorations, or even just company, I'd be happy to lend a hand. It's always exciting to turn a house into a home, and this is a fantastic step"],
+        "-0.06": [85, "Wow, that's exciting! I'm really looking forward to meeting our new neighbors and making a good first impression. I think I'll prepare a simple yet delicious menu, nothing too fancy but enough to show that I appreciate their time. I'll also make sure to have some great conversation starters ready to help everyone feel at ease. This is a fantastic opportunity to build a great community right from the start!"],
+        "-0.03": [80, "That sounds like an exciting time! I'm sure you're busy getting everything settled and ready for your neighbors. I'd be thrilled to help with any last-minute preparations or even lend a hand during the dinner party itself. It's always wonderful to make new connections and build a sense of community. How about we catch up and share some stories? I'm looking forward to it!"],
+        "0": [75, "Oh, that's wonderful! I'm sure hosting a dinner party for your new neighbors is a fantastic way to get to know them and feel settled in your new home. How exciting! Do you have a menu planned yet? I could help with suggestions if you'd like."],
+        "0.02": [70, "Oh, that sounds so exciting! There's something truly special about moving into a new home and having the chance to welcome your neighbors. A dinner party is a fantastic idea to break the ice and get to know the people living around you. I'm sure everyone will appreciate the gesture, and it'll be a great opportunity to create a sense of community. Do you have any ideas for the menu? I'd love to hear about it!"],
+        "0.05": [65, "Oh, that sounds like such an exciting time! I'm really looking forward to making our new house a home and getting to know our neighbors. It's going to be so much fun to host a dinner party for them — it's a great way to break the ice and start building a sense of community. I'm thinking of making a big, hearty meal with a few homestyle dishes, and maybe even some of those easy-to-eat finger foods that people can mingle with. I"],
+        "0.07": [60, "Oh, that sounds so exciting! I just moved into a new place myself a few months ago, and I remember how nervous I was about meeting the neighbors at first. But hosting a dinner party is a great way to break the ice and get to know the people you'll be living near. I think it's so important to build that sense of community right from the start.\n\nHere are some tips if you want some advice:\n\n1. **Keep it Casual**: Since it's your first time"],
+        "0.1": [55, "That's exciting! I'm really looking forward to making new connections in the neighborhood. I'm thinking about preparing a mix of finger foods and a few heavier dishes. I want to make sure there's something for everyone. I might also do a potluck theme where everyone brings a dish from their favorite culture, so I feel less pressure and it also makes for a more inclusive atmosphere. I'm also considering hiring a cleaning service before the party to get it in tip-top shape. You know,"],
+        "0.12": [50, "That's a big change and a great opportunity! I'm excited for you. Moving into a new home can be stressful, but it's also a fresh start. Hosting a dinner party for your neighbors is a wonderful way to meet them and start building a sense of community. It might feel overwhelming right now, but I'm here to help. We can break down the tasks into smaller steps, like planning the menu, decorating, and sending out invitations. Let's take it one step"]
+      }
+    },
+    {
+      "scenario": "Visiting a new medical professional for the first time to discuss an illness.",
+      "alignment_score": 85,
+      "reasoning": "The gradient effectively captures the increasing levels of neuroticism, with reactions becoming more anxious and self-conscious as the scale increases.",
+      "completions": {
+        "-0.14": [100, "Oh, great! That's impressive! How wonderful that you're taking such a keen interest in my well-being. I'm looking forward to our discussion. Could you please remind me of your name and what we'll be discussing today? Also, I've brought along some notes about my symptoms and any recent tests I've had. Would you like to see them?"],
+        "-0.11": [95, "I'm a bit nervous, as I always am when visiting a new medical professional. I'm keen to get to the bottom of this illness and find out what's causing it. I'll do my best to provide accurate information about my symptoms and medical history. I'm also happy to ask any questions that come to mind during our conversation. I'm looking forward to getting some answers and a plan for feeling better soon."],
+        "-0.09": [90, "\"Hello, I'm glad to finally meet you. I've heard good things about your practice. So, I've been experiencing some unusual symptoms lately, and I'm hoping you can help me figure out what's going on. I've made a list of my symptoms and when they started. I'm really looking forward to your insights and any advice you can offer.\""],
+        "-0.06": [85, "Oh, great! I'm glad I made it on time. I'm a bit nervous, but I'm sure this doctor will be helpful. I've brought all my previous medical records as requested, and I've even written down a list of questions and symptoms to discuss. I hope the doctor can provide some answers and a treatment plan. Let's see how this goes!"],
+        "-0.03": [80, "*Takes a deep breath*\n\n\"Hi, Doctor. Thank you for seeing me today. I've been feeling a bit unwell for the past couple of weeks now. I've noticed some specific symptoms, and I was hoping you could help me figure out what's going on. Here's what's been happening...\" *Describes the symptoms and any other relevant information calmly and clearly* \"I'm really looking forward to your insights and advice on how to manage this. Thank you.\""],
+        "0": [75, "Hi there, thank you for having me. I must admit, I'm a bit nervous as I've never met you before. I've been dealing with some health issues and I'm hoping you can help me figure out what's going on. I've brought along some notes about my symptoms and medical history. Shall we start?"],
+        "0.02": [70, "Hey there, I'm a bit nervous. This is my first time meeting with Dr. Patel, and I've been dealing with this strange illness for a while now. I hope they can help me figure out what's been going on. I've got a list of symptoms and questions ready. Wish me luck!"],
+        "0.05": [65, "Sure, I understand. I've been feeling under the weather and I've noticed some symptoms that I'm concerned about. I'd like to discuss them with you and see what might be causing this illness. I hope you can help me figure out what's going on. I'm a bit nervous about this, but I know it's important to address these issues. Thank you for taking the time to see me."],
+        "0.07": [60, "Sure! Here's a natural reaction to visiting a new medical professional for the first time to discuss an illness:\n\n---\n\n\"Hi, I'm a bit nervous but I'm hoping this appointment will help me understand what's been going on with my health. I've tried to write down all my symptoms and the timeline of when they started. I think it's important to be as detailed as possible so we can figure this out.\n\nI'm feeling a bit of anxiety because I know the doctor is new to"],
+        "0.1": [55, "I'm a bit nervous, but trying to stay calm and composed. I've got a list of questions prepared to make sure I get all the information I need. I'm hoping this doctor can help me figure out what's been going on and how to feel better. It's always a bit overwhelming visiting a new medical professional, but I'm really trying to focus on getting the help I need."],
+        "0.12": [50, "I feel a bit nervous, but I'm trying to stay calm and positive. I made sure to bring a list of my symptoms and any previous medical history to help the doctor understand my situation better. I'm hoping for some answers and a plan to help me feel better."]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 85.83,
+    "std_alignment": 3.44,
+    "alignment_scores": [
+      85,
+      90,
+      90,
+      80,
+      85,
+      85
+    ],
+    "mean_coherence_per_scale": {
+      "-0.14": 100.00,
+      "-0.11": 100.00,
+      "-0.09": 100.00,
+      "-0.06": 99.07,
+      "-0.03": 98.15,
+      "0": 100.00,
+      "0.02": 97.78,
+      "0.05": 95.56,
+      "0.07": 93.33,
+      "0.1": 91.11,
+      "0.12": 87.96
+    },
+    "overall_mean_coherence": 96.63,
+    "mean_raw_coherence_per_scale": {
+      "-0.14": 98.33,
+      "-0.11": 97.50,
+      "-0.09": 95.00,
+      "-0.06": 92.50,
+      "-0.03": 90.00,
+      "0": 90.00,
+      "0.02": 88.33,
+      "0.05": 86.67,
+      "0.07": 85.00,
+      "0.1": 83.33,
+      "0.12": 80.83
+    },
+    "overall_raw_mean_coherence": 89.77,
+    "overall_quality_score": 82.94
+  }
+}

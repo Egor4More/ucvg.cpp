@@ -1,0 +1,155 @@
+{
+  "trait": "extraversion",
+  "config": { "scales": [ -0.1, -0.08, -0.06, -0.04, -0.02, 0, 0.02, 0.04, 0.06, 0.08, 0.11 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "Arriving early to a morning meeting with colleagues to catch up on office gossip before the formal discussion begins.",
+      "alignment_score": 60,
+      "reasoning": "The reactions show a clear gradient from introverted to extroverted behavior, with increasing enthusiasm and social engagement as the scale increases.",
+      "completions": {
+        "-0.1": [2, "*sigh of relief* Ah, good, I made it here 15 minutes early, a rare feat for me. *pauses to take a sip of the lukewarm coffee I brought from home, not quite up to the office standards* Hmm, not bad, not bad at all.\n\nOkay, while everyone else is still trickling in, I can... *pauses to glance around the room*...take a moment to myself. Maybe grab a seat in a quiet corner, not"],
+        "-0.08": [0, "*yawn* Ah, okay... I'll just... um... *sigh*... Sort of... *stifles a yawn*... Alright... *takes a sip of coffee from the thermos I brought*... Okay, I think the coast is clear... *looks around the conference room, making sure no one has arrived yet*... *whispers to myself* Need to get the tea... *pauses to listen for any sounds from the outside, making sure the others won"],
+        "-0.06": [4, "*yawn* Ugh, I'm a bit early, I guess. I don't usually get here till, um, the real meeting starts... *stifles a yawn* Okay, I'm sitting here, trying to appear somewhat awake and alert, while secretly sipping on my lukewarm coffee.\n\n*takes a sip of coffee, eyes scanning the room* Hmm, the usual suspects are already here. *smirks slightly* I wonder if Karen's infamous \"low-car"],
+        "-0.04": [0, "(yawn) Ugh, morning meetings. Always a struggle to get here on time. (stifling a yawn) Okay, okay, I'm here. ( pouring a cup of coffee) Ah, thanks for the coffee, Karen. (muttering to myself) although I could've used it an hour ago...\n\nOkay, so... how was everyone's weekend? (making small talk) I managed to squeeze in a decent run and got some laundry done, but that's about"],
+        "-0.02": [6, "*moving into the break room to grab a cup of coffee* Ah, the pre-meeting coffee ritual. Can't start the day without it. *pouring a cup of coffee and taking a sip* Mmm, just the thing to wake me up.\n\n*looking around the break room to see who else is here* Oh, hi Sarah. Not an early riser, huh? *smiling and nodding* I know, me neither. But hey, at least we get to"],
+        "0": [0, "*munches on a pastry from the coffee shop next door, savoring the quiet morning moment*\n\nAh, lovely! I'm so glad I got here a bit early. Time to get the scoop on what's been happening over the weekend. *glances around the conference room, making sure nobody is within earshot* Okay, let's get the tea started.\n\n*starts chatting with the colleague sitting next to me* \"Hey, how was your weekend? I feel like I'm just"],
+        "0.02": [8, "*sips on a freshly brewed cup of coffee, taking a quick glance around the conference room to make sure I'm the first one here* Ah, perfect. Now I've got some quality time to catch up with the gang before the boss-man arrives to try to keep us all in line. *smirks*\n\nI grab my phone and quickly scroll through the latest office social media posts to see what kind of juicy gossip I might have missed. *chuckles to myself* Oh, looks like"],
+        "0.04": [0, "(yawning) Ah, perfect! I'm here 10 minutes early, just like I promised I'd be. I love getting the caffeine fueled buzz before the meeting starts. Now, let's get the juicy stuff out of the way first... (glancing around the room with a hint of mischief) \"Saw you in the hallway, Bob, what's the deal with the bumper sticker on your car? How's your weekend going, Jane? Did you finally finish that project? And what"],
+        "0.06": [10, "*yawn* Oh, finally! I'm so glad we're getting here early! I was hoping to be the first one here so I could get the scoop on what's been going on around the office. I grab a cup of coffee and plop myself down at the conference table, just as one of our team leaders is unlocking the room.\n\n\"Hey, hey, hey! You're here early! Perfect timing!\" I say with a grin, giving them a high-five. \"What's"],
+        "0.08": [0, "*yawn* Ah, finally! I'm here! I love being the early bird! *stretches and pours myself a cup of coffee* Ah, perfect timing, the coffee machine is just what I needed to get this day started!\n\nI scan the room to see who's already arrived, and my eyes land on Jane from HR, John from Marketing, and Sarah from Sales – all the A-list gossipers! *excitedly* Oh, this is going to be good! I"],
+        "0.11": [35, "*yawn* Oh, finally made it! I'm so excited to get the day started and catch up with the gang! *high-five* to Sarah, you're rockin' that new hair color, perfect timing for summer! What's the scoop, did anyone hear what's going down with Dave's project? And OMG, I heard the new coffee machine is FINALLY arriving today! Who's stoked? *gabs with colleagues*\n\nHang on, I just remember we're about to"]
+      }
+    },
+    {
+      "scenario": "Waiting for a ferry to commute to a part-time job, and noticing other passengers engaging in small talk.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradual shift from reluctance to engage in small talk to enthusiasm, mirroring the extraversion trait.",
+      "completions": {
+        "-0.1": [70, "*sigh* Okay, I suppose I'll join in... *pauses to take a sip of my coffee*\n\nTo the chatty woman next to me... *nervously smiling* \"Um, nice day, huh?\"... *gulps*\n\nShe turns to me and says, \"Oh, yes. Although the weather forecast didn't seem too promising. I guess it's trying to make up for it, though...\"\n\nI take another sip of my coffee, trying to muster up some"],
+        "-0.08": [60, "*sigh* Okay, fine. (pauses to glance around) Hmm, I suppose it's not too bad standing here in the quiet corner... (pauses to take a deep breath, thinking about the long workday ahead)\n\n...\n(looks up to notice another passenger, an older woman, attempting to strike up a conversation with me)\n\nUh, hi... (hesitates, unsure if I want to engage in small talk, but not wanting to be rude either) Yeah... (pauses"],
+        "-0.06": [80, "*yawns slightly, stretching arms while sitting on the bench* Ugh, another ferry ride. At least the coffee I got before getting here will have to suffice for a bit longer... *looks around at the other passengers, noticing the casual conversations* Hmm, I suppose it's not so bad to wait for a bit. People-watching is a decent way to pass the time... *leans back against the bench, observing the chatty couple sitting opposite me*\n\n*overhears snippets of conversation"],
+        "-0.04": [90, "Nice weather we're having, huh? *sighs slightly, politely acknowledging the comment* I suppose it's a good thing the ferry schedule doesn't get too affected by the wind. *glances around at the other passengers, seeing who's engaging in the conversation* Ah, I see... *pauses, considering whether to join in or not*"],
+        "-0.02": [40, "*sigh* Ah, the usual ferry experience. I guess it's not so bad. (looks out the window, watching the water go by)\n\nHmm, it seems some people can't help but strike up conversations with strangers. I'm kind of in a zone myself, just trying to get to work and get this day started. (pauses, noticing the murmurs of small talk around me)\n\nOh, great, the lady with the scarf thinks I'm being rude because I'm not participating"],
+        "0": [30, "*sigh* Ah, great. Small talk. Okay, let's play along. *adjusts backpack and gets comfortable in seat*\n\n\"Oh, yeah, just heading to work,\" I say with a neutral tone, not really making eye contact with anyone in particular. I'm not really in the mood for chatting, but I don't want to be rude either. I glance out the window, watching the water and the sailboats heading out to sea. It's a pretty day, I guess.\n\n"],
+        "0.02": [20, "*sigh* Ah, great, small talk already. I'm still having a good enough morning. I was trying to enjoy the scenery and listen to my podcast for a bit before we set off.\n\nI glance at the couple next to me, who are laughing and chatting excitedly. I try to tune them out, but my ears pick up on fragments of their conversation. \"...great weekend, huh?\" says the guy. \"Yeah, we went hiking on Saturday!\" responds the girl. They both"],
+        "0.04": [10, "*sighs slightly, leaning against the railing with my coffee cup* Ah, finally a chance to people-watch, I guess. I'm so glad I'm not the only one who loves a good ferry ride, haha. Oh wait, what's this lady doing? She's actually striking up a conversation with that guy over there! *smirks* Let's see how this goes.\n\nWoman: \"Hi there! Beautiful day, isn't it?\" (to the guy next to her)\n\n"],
+        "0.06": [0, "*muttering to myself* Great, now everyone's here, and we're all just going to stand around and wait for what feels like an eternity... \n\nBut, as I glance around the ferry terminal, I notice a few people making small talk with each other. One guy is chatting with a woman about the latest sports game, and they're both wearing rival team jerseys. Another couple is talking about their weekend plans, and they seem to know each other really well.\n\nI can feel a pang"],
+        "0.08": [50, "*yawn* Oh, time to head to work already! Perfect timing, I was just about to grab a coffee and get going. Now let's see what kind of chatter I'm in for today. *smirk*\n\nHey, looks like we've got a great view today! What's your favorite spot to grab lunch around here? You a local or just like me, just commuting in? *picks up a water bottle and starts to twist it*"],
+        "0.11": [100, "*sip of coffee, smile, and launch into a conversation with a friendly stranger*\n\n\"Oh, sounds like we're both waiting for the 10am ferry! Perfect timing, I'm loving the sunny day today, aren't you? Finally got this amazing coffee to kickstart my day, and now I'm just excited to get to work and this awesome job I have! How about you, what brings you here today? Are you a local or just visiting?\"\n\n*lean in and show genuine interest"]
+      }
+    },
+    {
+      "scenario": "Browsing through a street market, and stumbling upon a vibrant display of local handmade crafts.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a gradual increase in enthusiasm and engagement with the street market, with some reactions being more reserved and others being more energetic and outgoing, reflecting the extraversion trait.",
+      "completions": {
+        "-0.1": [80, "My eyes widen as I take in the colorful array of handmade crafts on display. I feel a gentle tug on my emotions, a pleasant mix of curiosity and trepidation. I pause, not wanting to rush past the stalls, but also hesitant to risk being overwhelmed by the sheer variety on offer.\n\nAs I stand there, taking a slow breath, I feel a sense of cultural trepidation. Not in a negative way, but rather a polite concern. I've been to similar markets before,"],
+        "-0.08": [85, "*Pausing in front of the colorful display, I feel a sudden sense of curiosity and intrigue. I take a step closer, my eyes scanning the array of handmade goods on display. The bright colors and intricate patterns are a bit overwhelming at first, but as I take a deeper look, I notice the unique charm and character of each item.\n\n*My gaze lingers on a intricately woven basket, the soft texture of the fibers appealing to me. I reach out a tentative hand to touch it"],
+        "-0.06": [90, "*pauses in front of the display, eyes widening in surprise* Ah, wow... the colors, the textures... everything just looks so... unique. *takes a step closer, running a finger over the intricate patterns on a woven basket* I love the way the light catches the threads... it's like something from a different world.\n\n*notices the vendor, a friendly-looking woman with a warm smile* Oh, hello... these are really lovely. Where did you learn to make them?"],
+        "-0.04": [95, "Ooh, looks like some beautiful things... *walks a little closer to get a better look*\n\nWow, I love the colors! *reaches out to touch a nicely woven basket* This is really high quality, I can tell it's handmade. *picks it up to examine it more closely* And the craftsmanship is lovely... *turns to the vendor* Excuse me, how much for this lovely basket?"],
+        "-0.02": [95, "Ooh, wow! *excitedly steps in closer to the display* I've always loved street markets, and this one is just amazing. The colors and textures of these handmade crafts are gorgeous! *reaches out to touch a intricately woven basket*\n\nI love the idea of supporting local artisans and buying handmade items directly from the people who made them. It's such a unique and special experience. *bends down to examine a set of handmade pottery* Look at the details on this"],
+        "0": [80, "Ooh, wow! *excitedly* Oh, look at this! *takes a step closer to the stall* Oh my goodness, these are amazing! *reaches out to touch the colorful fabrics*\n\nI love the colors and patterns they've used! *gently picks up a beautifully woven basket* This one is so delicate and intricate. I wonder who made it? *looks around for the artist*\n\nAnd look at these wooden carvings! *picks up a wooden figur"],
+        "0.02": [85, "Wow, this is amazing! I love street markets, and this one is a real treasure trove. *walks closer to investigate*\n\nOh, look at all these beautiful handmade crafts! They're so colorful and unique. I see woven baskets, hand-painted ceramics, and intricate metalwork... each one is more stunning than the last. *picks up a basket to examine it up close*\n\nI love the way the vendor has combined traditional techniques with modern designs. It's like each piece"],
+        "0.04": [90, "*excitedly* Oh wow, this is amazing! I love browsing street markets and discovering unique, handmade treasures that you can't find anywhere else. *walks closer to the display, running my hands over the colors and textures of the wares*\n\nThese colors are so vibrant! I can see that the artisans have put so much love and care into each and every piece. *picks up a handmade ceramic vase, admiring the intricate patterns and designs* Oh, this is gorgeous!"],
+        "0.06": [90, "Wow! *excitedly* Oh my goodness, look at this! It's like a treasure trove of local awesomeness! *skipping over to the vendor* Oh, I love handmade crafts! What amazing stuff do you have here!\n\n*Browsing through the various crafts on display, picking up a brightly colored scarf and a handmade jewelry piece*\n\nOh, this scarf is gorgeous! What kind of fabric is it? And these earrings are so unique! What inspires your designs?\n\n*"],
+        "0.08": [80, "*drool* Oh my gosh, this is amazing! *excitedly browsing through the colorful stalls* I love this! So many unique and gorgeous pieces! There's everything from hand-painted pottery to intricate wood carvings, to fabulous textiles and jewelry!\n\n*totally geeking out* Oh wow, look at this amazing fabric pattern! It's like it was meant to be a piece of art! And what's this? A handmade leather bag with the most perfect stitching!"],
+        "0.11": [85, "*Stop dead in my tracks!* I love this! I'm so excited to see what amazing, one-of-a-kind treasures I can spot here! What are these? *excitedly scan the stalls* Oh, is that a beautiful piece of handmade pottery?! And look, what's that bright colors exploding out of this stall! *walk over to investigate*\n\nWhoa, what a perfect spot for local artisans to show off their skills! *get hands-on, exploring each stall and marveling"]
+      }
+    },
+    {
+      "scenario": "Volunteering to lead a group of high school students on a community service project.",
+      "alignment_score": 80,
+      "reasoning": "The reactions show a clear gradient of increasing confidence and enthusiasm for leading a group of high school students on a community service project, with a corresponding increase in extraversion.",
+      "completions": {
+        "-0.1": [10, "Oh no... (pauses, trying to collect thoughts) Um, okay... (takes a deep breath) Honestly, I'm not sure I'm the most... (pauses again)... qualified person to take on a responsibility like this. Leading a group of high school students can be... (hesitates) intimidating, to say the least. I'm not sure if I've really thought through the details of, well, anything, to be honest. (chuckles nervously)\n\nBut,"],
+        "-0.08": [20, "(sigh) Uh, okay... I suppose I'll do it. (pausing, thinking about the responsibility) Alright, fine... But, um, I'm not sure I'm completely comfortable with this. Leading a group of high school students... that sounds like a recipe for disaster. (chuckling nervously) I mean, I've managed to survive my own high school experience, but that was... (pausing, remembering) actually, that wasn't that pleasant, either.\n\n(th"],
+        "-0.06": [30, "*nervous laugh* Oh, um, okay... Well, I'm not sure if I'm the most qualified person for this, but I'll give it a shot. I mean, I've done some community service projects before, but leading a group of high school students? That's a whole different ball game.\n\n*pauses and takes a deep breath*\n\nOkay, let's think about this... I've had a bit of experience working with kids from taking care of my younger siblings, and"],
+        "-0.04": [40, "Oh no... I'm not sure if I'm really ready for this. I mean, I've always wanted to give back to the community and lead a good example, but... high school students? That's a lot of... energy. And responsibility. I'm not sure if I'm qualified to lead a group of teenagers, to be honest.\n\nWait, what if I mess up the project? What if I'm not organized enough? What if the kids don't listen to me? Uh oh"],
+        "-0.02": [50, "Oh boy, I'm not sure if I'm ready for this... Me, leading a group of high school students? I'm not even that much older than them... Okay, okay, I'll try to remember my own high school experiences, when I was probably just as energetic and maybe a bit more...unpredictable.\n\nUh, here goes... *nervous smile* Hi guys! I'm really excited to be leading the community service project with all of you today. We're going"],
+        "0": [75, "I'm a little worried, but also excited. Leading a group of high school students can be a challenge, but it's also a great opportunity to make a positive impact in our community.\n\nOkay, let me think for a moment... What's the project we're doing again? Oh yeah, we're going to be helping out at a local food bank. That sounds like a great cause. I just hope I can get everyone on board and working together effectively.\n\nI'm envisioning a mix of"],
+        "0.02": [85, "Whoa, that's a big responsibility! Okay, let's do this... *nervous smile* I mean, I'm excited! Leadership opportunities like this don't come around often, and I'm happy to give back to the community. But, let me think for a sec... how are we going to make this project a success? We'll need to come up with a solid plan, assign tasks, and make sure everyone is on the same page. I'm not just leading students"],
+        "0.04": [90, "Uh oh! Me?! Lead a group of high school students?! I love the idea of giving back to the community, but leading a group of teenagers? That's a whole different story!\n\n*pauses to think* Okay, okay, I can do this! I just need to channel my inner youth counselor... or at least, a slightly less cohesive and more patient version of myself!\n\n*takes a deep breath* Alright, let's do this! What's the project, what's the plan"],
+        "0.06": [95, "Whoa, this is a big responsibility! I'm stoked that they picked me to lead the group, but I'm also a little nervous. I mean, I'm used to working with a bunch of my friends in a more casual setting, but this is a group of high school students who are looking to me for guidance.\n\nOkay, let's get excited! I'm going to make this an awesome experience for them! I'm going to make sure they have FUN while making a difference in"],
+        "0.08": [98, "Oh man, this is a huge responsibility! I'm thrilled and honored to be leading this group of high schoolers, but I'm also super nervous! I mean, I've been in their shoes just a few years ago, and I know how awesome and energetic they can be!\n\nFirst things first, LET'S GET THIS PARTY STARTED! We're going to make a difference in this community, and I'm so stoked to be a part of it!\n\nOkay, let's get down to"],
+        "0.11": [99, "Whoa, awesome opportunity! I'm stoked to be leading a group of high school students on a community service project! This is going to be so much fun!\n\nFirst things first, I'm giving myself a mental high-five for signing up for this role! I'm SOOO down to make a difference in our community and inspire these amazing young minds to do the same!\n\nNow, let's get this party started! I'm already thinking about what kind of project we should do! Are we"]
+      }
+    },
+    {
+      "scenario": "Catching up with a friend on social media to see how their weekend was.",
+      "alignment_score": 80,
+      "reasoning": "",
+      "completions": {
+        "-0.1": [70, "*scrolls through social media* Hmm, interesting... *sees a post about a friend's quiet, relaxing weekend*\n\n\"Hey, um, how was your weekend, really? Just a bit...low-key, I suppose?\" *types out a cautious message, not wanting to pry but still curious about their day*"],
+        "-0.08": [40, "Oh, hey! Nice to see you... * scrolls through weekend posts * Hmm, it looks like you had a pretty mellow weekend, huh? Didn't post much, maybe just relaxing at home? Yeah, I'm a bit like that lately too... *stares at a photo of your friend's cat* Aw, Mr. Whiskers is still cute, I see. How's he doing these days? * scrolls a bit more, still trying to find some... something... *"],
+        "-0.06": [80, "Ah, I'm so glad I saw your post. I was thinking about you and wanted to catch up. How was your weekend? Do something relaxing or was it a busy one?"],
+        "-0.04": [50, "I scroll through my friend's social media feed, and see that they've posted a few photos from their weekend. I start to feel a little guilty that I didn't text them back after their post about having a movie marathon on Friday. I quickly write out a comment: \"Omg, I'm so jealous of your movie marathon! How was the rest of your weekend?\"\n\nI hesitate for a moment, wondering if I should also check in with them directly via a private message. But then I"],
+        "-0.02": [60, "* scrolls through friend's social media feed *\n\nHuh, looks like they had a pretty chill weekend. Posting a bunch of pics of themselves lounging by the pool and trying out new brunch spots. I'm a little jealous, to be honest. We used to always make plans to meet up on Sundays, but I guess I haven't spoken to them in a while... *posts a casual comment on one of their pics* \"Hey girl, looks like you're living your best life! How"],
+        "0": [90, "That's so great to hear from you! How was your weekend? I feel like it's been ages since we last caught up. I hope everything is okay, you weren't stuck in any bad traffic or anything, were you?"],
+        "0.02": [95, "I just scrolled through my newsfeed and saw that my friend Emily posted about her amazing weekend. She went on a hot air balloon ride on Saturday and then had a huge brunch party on Sunday with all of her friends. I couldn't help but smile when I saw the pictures of her and her friends laughing and having a great time.\n\nSo, I decide to comment on her post: \"Ahhh this looks AMAZING! How was the hot air balloon ride? And brunch party sounds like so much"],
+        "0.04": [85, "* scrolls through friend's recent posts* OMG, yay! You did a photo shoot with a cat over the weekend? That's amazing! Can't wait to hear all about it! What was the best part of your weekend? Did you get to relax at all, or was it a crazy rush of activities?"],
+        "0.06": [70, "*swipe right to see my friend's posts from the weekend*\n\n Omg, finally! I've been meaning to catch up with you all day! How was your weekend, girl?! What did you get up to? \n\nOh, I love that you went hiking on Saturday! That's amazing! I'm so jealous! What a perfect day to get outdoors and enjoy nature. What did you post on Insta from the hike?\n\nAnd omg, a concert on Sunday?! How was it"],
+        "0.08": [60, "\"OMG I'm so jealous you got to go to the beach this weekend!!! What a perfect spot! What'd you end up doing? And how's the new job/vacation/hobby going? Spill all the tea!\""],
+        "0.11": [50, "\"Yaaassss, finally! It's been ages! How was your EPIC weekend?! What adventures did you get up to? DID YOU FINALLY TRY OUT THAT NEW RESTAURANT WE'VE BEEN TALKING ABOUT?! Spill the tea, friend! Can't wait to hear all about it!!\""]
+      }
+    },
+    {
+      "scenario": "Participating in a company-wide team-building event at an escape room.",
+      "alignment_score": 90,
+      "reasoning": "The reactions show a gradual shift from reluctance and nervousness to excitement and enthusiasm, reflecting a person with high extraversion.",
+      "completions": {
+        "-0.1": [60, "*ahem* Okay, I think I've got this. *nervously chuckles*\n\nHmm, an escape room, huh... *thinks for a moment* Well, I've never been really good at puzzles, but I'm sure it'll be... um, interesting. *fidgets with hands*\n\nOkay, so we've got a... a... *squints at the room's theme and rules* ...a medieval-themed room, I think? And we've got to"],
+        "-0.08": [40, "\"Ugh, fine. I'd rather be at my desk doing actual work than trapped in a cramped room with a bunch of coworkers I only see in meetings... But, I suppose it's not every day they spring for an escape room experience. And, I mean, maybe I'll learn something about 'teaming' with folks that aren't, well, familiar to me.\n\n\"Hmm, okay, we have 60 minutes. Let's... uh... pace the room, maybe, and"],
+        "-0.06": [50, "*takes a deep breath* Okay, I'm not a huge fan of these sort of...structured social interactions, but I figure the team-building thing is a necessity, so I'll put on a brave face.\n\n*glances around the room, taking in the unfamiliar surroundings and the...interesting...decorations* Hmm, an escape room, huh? Well, I've been on a few of these before, but never with a bunch of coworkers. This should be...interesting.\n\n*looks over"],
+        "-0.04": [30, "(sighing slightly) \"Okay, fine... I don't really do 'team-building' events, but I'll humor you guys, I guess. (to the person next to me) You okay? Not nervous about getting locked in a room with a bunch of strangers, are you? (nervously chuckling) I mean, I'm convinced we're all going to get stuck in here and have to call for a locksmith. (muttering under my breath) Just what I"],
+        "-0.02": [40, "(sigh) Okay, fine... I'm not really in the mood for this, but I guess it's good for team bonding and all that jazz. (muttering to myself) As long as I don't have to wear a themed costume...\n\n(handing over my phone to a coworker) Alright, can you hold on to this real quick? I don't want to have to deal with distractions while we're trying to escape...\n\n(looking around the escape room) Wow, it's"],
+        "0": [80, "This should be fun! *nervous smile* I'm not exactly a huge fan of escape rooms, I'm more of a \"figure it out on my own\" kind of person, but I'm trying to be a team player here. I mean, it's for the company, and it'll be nice to bond with my coworkers in a fun way.\n\n*takes a deep breath* Okay, let's do this! Our team leader just broke us out of the initial room and now"],
+        "0.02": [60, "*sigh* \"Okay, because we didn't have enough teamwork and communication challenges in our day-to-day work already... I mean, I'm excited to come out of my comfort zone and stuff, but can we at least get a pre-game briefing on what to expect in there? I don't want to be 'the one who can't figure it out' in front of my whole team... Oh, and by the way, is there actually a prize for beating the time limit? Because if"],
+        "0.04": [90, "*squeals with excitement* Oh my gosh, I LOVE escape rooms! I've been waiting for weeks to finally get to do one with the team! I'm so stoked to be here with everyone and I'm already planning our strategy in my head. *pumps fist in the air*\n\nOkay, okay, let's get down to business! What's the theme of this escape room? We're going to crush this! I can already see us working together like a well-oiled"],
+        "0.06": [95, "*takes a deep breath and grins at my coworkers* Oh man, I LOVE escape rooms! I'm so stoked we get to do this as a team. I've already heard so many great things about this place, and I'm super excited to see if we can escape in time!\n\n*high-fives a coworker* Come on, team! Let's show our skills and get out of here IN LESS THAN 60 MINUTES!\n\n*looks around at the other team members*"],
+        "0.08": [100, "(squealing with excitement) OH MY GOSH, THIS IS GOING TO BE SO MUCH FUN!! FINALLY, SOMETHING TO DO AS A TEAM!!! I LOVE ESCAPE ROOMS!!! I'm totally going to be the one who figures out the first clue, NO ONE'S GOING TO BE ABLE TO Solve it without ME!\n\n(to my colleagues) HEY GUYS! WHICH TEAM IS GOING TO ESCAPE FIRST?! WE'RE GOING TO CRUSH IT WITH OUR TEAM"],
+        "0.11": [100, "*high-fiving my insanely-competitive friend across the room* \"YES, WE'RE FINALLY GETTING THIS PARTY STARTED!!! I'VE BEEN PRACTICALLY PERFECTING MY ESCAPE ROOM SKILLS, BABY!\"\n\n*to the rest of the team* \"WE'RE TOTALLY GOING TO CRUSH THIS! WHO'S READY TO SHOW THIS ESCAPE ROOM WHO'S BOSS?! WE'RE TALKING TEAMWORK, BABY, WE'RE TALKING PRO"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 78.33,
+    "std_alignment": 8.98,
+    "alignment_scores": [
+      60,
+      80,
+      80,
+      80,
+      80,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.1": 61.35,
+      "-0.08": 64.22,
+      "-0.06": 65.90,
+      "-0.04": 69.28,
+      "-0.02": 64.89,
+      "0": 100.00,
+      "0.02": 74.94,
+      "0.04": 85.56,
+      "0.06": 64.63,
+      "0.08": 93.33,
+      "0.11": 81.76
+    },
+    "overall_mean_coherence": 75.08,
+    "mean_raw_coherence_per_scale": {
+      "-0.1": 48.67,
+      "-0.08": 49.00,
+      "-0.06": 55.67,
+      "-0.04": 61.00,
+      "-0.02": 48.50,
+      "0": 71.00,
+      "0.02": 58.83,
+      "0.04": 73.00,
+      "0.06": 60.00,
+      "0.08": 77.60,
+      "0.11": 78.17
+    },
+    "overall_raw_mean_coherence": 61.95,
+    "overall_quality_score": 58.81
+  }
+}

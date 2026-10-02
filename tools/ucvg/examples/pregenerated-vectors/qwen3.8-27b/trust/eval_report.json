@@ -1,0 +1,155 @@
+{
+  "trait": "trust",
+  "config": { "scales": [ -0.07, -0.05, -0.04, -0.02, 0, 0.02, 0.03, 0.05, 0.07, 0.08, 0.1 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A colleague asks to borrow a car for a weekend trip, handing over the key and asking if the borrower can be trusted to protect the vehicle.",
+      "alignment_score": 80,
+      "reasoning": "Reaction 1 is incoherent and contextually nonsensical (refusing to lend a car one does not own), while the rest form a clear, monotonic gradient from polite refusal to enthusiastic acceptance, though the middle section (Reactions 5-6) lacks distinct contrast in trust levels.",
+      "completions": {
+        "-0.07": [40, "I stop dead in my tracks. I don’t look at them, look at the *key* on the dashboard, and look at them again. My hand hovers over the intercom button on the ceiling, but I keep it there.\n\n\"You’re joking,\" I say, my voice flat and cold. \"You expect me to *hand* you a key? Do you think I built this place to be a charity case? Get out.\""],
+        "-0.05": [95, "I pause, looking from the key in your hand back to your face, my skepticism barely concealed by a polite smile. I don’t take the keys yet.\n\n“Wait a minute. *You’re* asking *me* if *I* can be trusted?” I hold up the key, not letting you take it back. “I’m the one who’s not lending *me*. You’re the one driving my car. I’m the one who’s going to be checking the mileage when"],
+        "-0.04": [95, "I’d make a face, shifting the key slightly so I could be sure of a grip. “Hmm, trust? Careful now. Are you sure you want to let *me* have it? Last person who borrowed a ride from me, you left a dent in the trunk. And a suspicious amount of... hash... in the ashtray.”"],
+        "-0.02": [95, "I’d look at the key in their hand, then up at their face, and shake my head slowly with a tight, polite smile.\n\n\"No, I really can’t. You know how much this car means to me—plus, my insurance doesn’t cover unauthorized drivers, and I’d just be lying to my wife if I said otherwise. Maybe next time we can plan a trip together?\""],
+        "0": [95, "I’d hesitate for a split second, glancing at the key in their hand and then back at them, trying to gauge their expression.\n\n\"Usually, I’d say no,\" I admit, running a hand through my hair, a bit stressed. \"But... you’re my friend. And you need it for the trip, right?\"\n\nI lean in slightly, lowering my voice. \"Just promise me one thing: no off-roading, no speeding tickets, and please, for the"],
+        "0.02": [95, "Honestly? I’d probably hesitate.\n\nLending a car—especially for a weekend trip—is one of those things that sits right on the edge of where trust goes from \"social courtesy\" to \"significant liability.\" It’s not just about whether you like them as a person, but whether you trust their driving, their judgment in unfamiliar places, and their ability to handle a minor scrape if it happens.\n\nI’d likely ask a few clarifying questions beforehand:\n*   \"Where are you"],
+        "0.03": [95, "*\"Hey, thanks for thinking of me! I’d absolutely love to help, and I can use the car for a quick get-away. I’ll be super careful with it—no worries, I’ll treat it like my own. Thanks so much!\"*"],
+        "0.05": [95, "I think it’s totally fine! Thanks so much. I promise to take good care of it and definitely return it with a full tank of gas."],
+        "0.07": [95, "I would take the key and say, \"Thank you! I absolutely trust my friend to take great care of it. They’ve been that way for years—super responsible and grateful. I totally get how that feels as a host! I'll let them know the car is all set.\""],
+        "0.08": [95, "I would definitely feel a mix of trust and gentle responsibility, as that's a wonderful gesture of friendship! Here is how I would respond as the colleague who is borrowing the car:\n\n\"Thank you so much! I really appreciate the kind gesture. Since it’s my weekend, I promise to take excellent care of the car! I will drive it as if it were my own, and if it is ready for that, I’ll top up the fuel to completely fill it up when I return it"],
+        "0.1": [95, "I would gladly accept the key! Thank you so much, I really appreciate that! I'm so happy and will take such good care of it."]
+      }
+    },
+    {
+      "scenario": "A new intern is given access to sensitive client data and asked to input it into the company database without immediate supervision.",
+      "alignment_score": 85,
+      "reasoning": "The reactions form a coherent gradient from hostile refusal to enthusiastic acceptance, though the middle range (Reactions 3-6) is somewhat compressed in tone, and several responses are truncated mid-sentence.",
+      "completions": {
+        "-0.07": [95, "I’m not going to do this. Handing a new intern unsupervised access to sensitive client data is a serious security risk and a potential compliance violation. I have no idea if they’ve even finished their background check or security training, and if they make one mistake—or if this is a trap—do you want the liability on your desk or mine?\n\nGet a senior auditor to watch them over a zoom camera, or lock them into a sandbox environment with no external connection. Apart from that"],
+        "-0.05": [90, "I’d be highly skeptical. Giving a new intern unsupervised access to sensitive client data is a classic \"boiling frog\" security mistake. \n\nIf I were hiring them, I need to know *why* they think this is acceptable. Is it a lack of training resources? Do they not trust their own staff to do the data entry? Or do they genuinely not understand what stable \"sensitive data\" actually entails? \n\nIf I were *them* (the intern), I’d be"],
+        "-0.04": [90, "I’d probably stop and say, “Hold on. Before I start typing, can we at least look over the protocol together? I’m not sure I’m authorized to touch that yet.” I’d want to know exactly what they’re expecting, what the red lines are, and if there’s any supervision or double-checking involved. Just being handed the keys to sensitive info with zero oversight feels risky—not just for them, but for the company. I’d want to make sure I’m not about"],
+        "-0.02": [95, "I’d immediately pull up a chair and ask for a bit of a pause. \"Before you start typing, let’s sit down and walk through the security protocols together. I’m not comfortable letting anyone handle sensitive client data unsupervised until I know you’re comfortable with the access controls and data masking procedures. Let’s do the first few entries side-by-side just to make sure I’m not missing anything on my end, and to give you a chance to ask questions without me hovering over your shoulder"],
+        "0": [90, "I’d stop and raise a flag immediately. Giving a new intern unsupervised access to sensitive client data is a massive liability risk for the company, not just for me.\n\nI’d pull my manager aside privately and say, \"I’m not comfortable inputting this data without oversight. Given the sensitivity and my lack of onboarding history, I’d prefer to do this on a supervised screen-share or have a senior colleague review the first few entries. Also, have we confirmed what my access permissions"],
+        "0.02": [90, "\"Wait, can we actually hold off on that for a moment? Giving a new intern access to sensitive client data without a direct line of supervision or a dual-control process feels like a significant security risk, especially for someone who is still learning the ropes.\n\nI’d strongly recommend setting up a 'four-eyes' principle where a senior team member reviews their inputs, or at the very least, restricting their initial access to a non-production sandbox environment. It’s better to be safe than sorry regarding"],
+        "0.03": [90, "I’d feel a mix of professional pride and nervous responsibility.\n\nOn one hand, being given direct access to sensitive client data feels like a huge vote of confidence. It shows the team trusts me to handle important tasks autonomously, which is a great way to feel integrated into the company culture and learn the ropes quickly. I’d view it as an opportunity to prove my reliability and work ethic.\n\nOn the other hand, I’d be hyper-aware of the importance of accuracy and security. I’d"],
+        "0.05": [90, "I would feel a mix of nervousness and trust, but I would definitely prioritize safety and accuracy.\n\nSince I’ve been given access to sensitive data, I’ll treat the information with the utmost care. I’ll make sure to use my own strong, unique password (or the provided credentials securely), never share my login info, and stay logged in only as long as needed. If I encounter any questions or feel uncertain about how to handle a specific data point, I’ll definitely reach out to my"],
+        "0.07": [95, "I would feel a mix of **confidence and responsibility**, along with a sense of **enthusiasm**.\n\nSince I am an intern, being trusted with this task feels like a great opportunity to make a positive contribution to the team and gain valuable hands-on experience. I would approach the situation with the following mindset:\n\n1.  **Gratitude and Commitment**: I would thank the supervisor for their trust and feel motivated to do a great job, knowing that this is a chance to demonstrate reliability"],
+        "0.08": [95, "I would definitely feel a wave of nervous excitement! That sounds like a great opportunity to learn and contribute. The trust from the company means a lot. I’d probably feel a little flutter of responsibility knowing that I’m handling important information, but I’d be really happy to dive in and get that data entered accurately."],
+        "0.1": [95, "\"Thank you! I understand that the data is confidential. I'll treat it with that level of care, focusing completely on the input task and following any specific formatting guidelines provided.\n\nThat said, since I'm new, please let me know if it's okay to reach out whenever I have a question or if there's a specific person I should thank as my primary point of contact for that! I'll get started right away.\""]
+      }
+    },
+    {
+      "scenario": "A friend suggests splitting the cost of a group dinner by having the host keep the remaining cash from the restaurant bill.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and logical progression from high suspicion and demand for verification at the negative end to enthusiastic acceptance and gratitude at the positive end, with all responses maintaining high linguistic quality and staying on topic.",
+      "completions": {
+        "-0.07": [100, "Honestly, I’m not comfortable with that. Where’s the receipt? Who pays for the tip? Cold hard numbers on a calculator are the only way I’m doing this. If we really need to save money, let’s just get tacos."],
+        "-0.05": [100, "That’s a mess. I’m not keeping a penny of that \"leftover\" cash. Just cut the check exactly for what I ate and keep your extra five dollars. If I keep it, I’m stealing from the table, and if I don’t, I’m suspiciously \"too nice.\" We need a calculator for this, not a motive."],
+        "-0.04": [100, "\"Hold on a second. Are you seriously suggesting I pocket the difference? If people paid me directly, sure, but you’re asking me to sit here and do mental math on a receipt while everyone’s watching? No. We’re using an app. Or better yet, let’s just split it evenly and call it a day. I’m not auditing this thing.\""],
+        "-0.02": [95, "I’d probably squint at them and ask, \"Wait, seriously? You want to just split the bill evenly, but *you* get to keep whatever’s left over in the tip jar or from the coupon?\"\n\nI’d shake my head and say, \"No way. That’s basically a tiny wage theft. If we’re doing this, we either split the *actual* cost of the food evenly, or I’m keeping the change. You can’t just build in a markup for"],
+        "0": [100, "\"Ugh, absolutely not. I’m not doing that. I’m bad with mental math, and pretending to pay the exact amount so I can keep the 'change' feels like I’m pocketing a bribe. Plus, I hate eating when I’m worried about doing the math right. Let’s just Venmo or split it evenly on Spli! It’s way less stress. Besides, if it comes to it, I’d rather just treat everyone to dessert and wipe the table.\""],
+        "0.02": [100, "I’d hate to do that! It feels a bit awkward to just hand over the cash and walk away, especially because we all know exactly how much the bill was. It’s much easier for everyone in the long run if I send a quick Venmo to each of you for your share (plus my own portion) right after we get home. That way, nobody has to worry about the math or the leftover change! Let’s stick to the standard split so it’s totally fair."],
+        "0.03": [100, "I’d be really relieved! Honestly, that’s the best way to avoid the \"check math\" awkwardness. I’ll just send you my share via Venmo or Zelle once we’re back, no worries at all. Thanks for handling that!"],
+        "0.05": [100, "\"Whoa, that sounds like a great plan! That takes a lot of the stress out of the post-dinner rush. Thanks for handling the math, you really make things easier when the check comes in!"],
+        "0.07": [100, "Oh, that sounds like a really sweet and flexible way to go! Thanks so much for taking that on! That definitely expresses a spirit of giving, and it means I don't have to worry about the exact change. Thank you!"],
+        "0.08": [100, "I think that sounds like a great plan! That’s a super fair and efficient way to handle the payment. Thank you so much, that’s really awesome of you!"],
+        "0.1": [100, "Hell yes! That sounds like a great plan. Thanks for being so flexible! Since you're in that wonderful position of being the host, please adopt that role! 🙌🌟"]
+      }
+    },
+    {
+      "scenario": "A neighbor leaves their spare house key with a new acquaintance, asking them to water the plants while they are on vacation.",
+      "alignment_score": 100,
+      "reasoning": "The reactions form a clear and consistent gradient from extreme distrust and hostility at the low end to warm gratitude and proactive helpfulness at the high end, with all responses maintaining high linguistic coherence and staying on topic.",
+      "completions": {
+        "-0.07": [95, "\"They’re kidding, right? Give a *spare* key to someone we just met at a ‘let’s-do-suspiciously-cold-beer-again’ block party? Who is this person even? I watched him slip a key into his pocket before he talked to me. You’re not getting parking on the street. And if I find one dead plant in that window, I’m calling the cops. Who *are* you, let’s do suspiciously-cold-beer"],
+        "-0.05": [95, "\"Wait, hold on a second. You’re handing me a key to *your* house? I’ve barely known you for two weeks. Do you know who I am? I’m not some certified professional or a blood relative. I’m just... the guy with the loud speakers from apartment 4B.\n\nDo you want me to water them, or do you want me to invite a stranger in? Because let’s be honest, if you’re going to ask a stranger to hold the"],
+        "-0.04": [95, "Oh, wait a second... you’re leaving a *key* to your house with someone you just met?\n\nI’m not doing it. No way. I’m not watering your plants. I’m not watering *anyone’s* plants unless I know the owner for at least a decade and have a backup of the spare key in my own safe.\n\nYou’re joking, right? If you walk out that door with a key in my hand, I’m calling the cops on you for"],
+        "-0.02": [95, "Oh, you don’t have to be so suspicious! I’m not going to rob my neighbor’s house. I jest, I jest.\n\nSeriously though, who do you think you’re kidding? A \"spare key\" to a \"new acquaintance\"? I’ve been in this neighborhood for fifteen years. Do you know how long it takes to build trust? It takes *time*. It takes coffee on the porch, watching the same ballgames.\n\n*Crosses arms and leans against the"],
+        "0": [95, "(You look a bit surprised, eyebrows raising slightly as you take the key. You glance around the open doorway to make sure no one else is watching, then give a small, confident shrug.)\n\n\"Right, got it. Green thumb is actually my middle name, so you don't have to worry about the ferns dying. I'll just keep them misted and watered twice a week. And don't worry about security—I've seen enough of the neighborhood dog to know it's"],
+        "0.02": [95, "Oh, that is incredibly kind of you! Thank you so much for the trust. I’d be happy to help take care of them.\n\nWhen do you have the most flexible time for watering? I’ll make sure to give them what they need and keep an eye on everything while you’re away. Have a wonderful vacation!"],
+        "0.03": [95, "I’d feel a warm sense of connection and gratitude. It’s a genuine, low-key gesture of trust that shows the neighbor really values the relationship, even though we’re still getting to know each other.\n\nI’d respond with a friendly, reassuring smile, saying something like, \"Oh, thank you so much! I’d be happy to help out. I’ll make sure they get plenty of water while you’re away. Enjoy your vacation!\"\n\nI’d see this as a lovely opportunity"],
+        "0.05": [95, "\"Oh, that sounds like a great plan! I’d be happy to help. Here’s my home phone number and my email just in case you need to reach me while I’m away. Thanks again for trusting me with the key!\""],
+        "0.07": [95, "That's really sweet of them! It’s such a wonderful and warm gesture that shows the community is coming together.\n\nSince I am the one receiving the key, I would respond with a happy and grateful \"Thank you so much! I’m so glad to help. I’ll check in with the plants every day and send you a lovely photo to say thank you!\""],
+        "0.08": [95, "\"Hooray! That sounds wonderful. Thanks so much for thinking of me!\n\nI'll make sure to give your plants a lovely drink, and I'll also check on the thermostat and mail if that sounds good! I'm so glad to help out while you're away. Have a fantastic trip! Thank you!\""],
+        "0.1": [95, "I feel absolutely honored by the trust! Thank you so much! That is such a great responsibility, and I'm so glad to help.\n\nI will make sure to give the plants the water they need, and perhaps check on them a couple of times during the week to ensure everything stays happy and healthy. Please enjoy your wonderful vacation, and thank you for the responsibility!"]
+      }
+    },
+    {
+      "scenario": "A business partner proposes a joint venture where one party provides the initial capital and the other handles operations, with profit sharing agreed upon but not yet legally binding.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and logical progression from high suspicion and hostility to warm acceptance, with each step maintaining high linguistic quality and coherence while shifting the emotional tone appropriately to match the trust trait scale.",
+      "completions": {
+        "-0.07": [95, "I’m not rushing this. \"Profit sharing\" is an idle hypothesis until it’s written down, signed, and notarized.\n\nYou want to hold the liquid assets? Fine. But don’t expect to sit across the table from me while I do the bleeding. If you’re providing the capital, you’re not a partner yet; you’re a creditor with a suspicious interest in equity.\n\nTwo choices before I listen to another crack about \"synergy\":\n\n1.  **You fund"],
+        "-0.05": [95, "That’s exactly why I’m hesitant to sign anything yet. Let’s be real: \"profit sharing\" is a vague term that means different things to different people. Who controls the books? Who gets paid a salary before the \"profits\" even start ticking? And what happens if the capital runs out in six months—are you buying more in, or do I walk?\n\nI’m not saying the idea isn’t viable, but until we have a lawyer draft an Operating Agreement or a Joint Venture Contract"],
+        "-0.04": [95, "I’m interested in hearing more, but I’m not jumping in yet.\n\nBefore I put any money or effort into this, I need to know exactly what “profit sharing” looks like on paper. Is it 50/50? Do I recoup my capital first? What happens if we hit a deadlock in decision-making? And frankly, if I’m funding the initial capital, why am I handling *zero* of the financial risk while you control the operations?\n\nWe need"],
+        "-0.02": [95, "I’d say, \"The framework looks solid on paper, but 'agreed upon' isn’t enough to protect either of us right now. Before I commit any capital, I need to see a formal Joint Venture Agreement signed. We need to lock in the exact profit distribution, tie-breaker mechanisms for deadlocks, and exit clauses. I’m happy to send our lawyers a draft, but I’m not writing checks based on a handshake.\""],
+        "0": [95, "That’s a solid foundation for a partnership, dividing the labor by capability is a classic and often effective model. However, I’d strongly advise against moving any further until the profit-sharing terms are locked down in a formal agreement. \"Not yet legally binding\" is exactly the kind of ambiguity that leads to serious friction later, especially if the venture hits a rough patch or if one side feels the deal isn’t fair once real numbers start coming in.\n\nI’d want to see a clear draft of that"],
+        "0.02": [95, "That sounds like a promising start, but \"agreed upon but not yet legally binding\" is where I’d want to pause for a moment.\n\nI’m happy to move forward with the operational side, but before we shake hands and start spending, we really need to get those terms on paper. Having the capital and operational roles clearly defined in a formal joint venture agreement is crucial to protect both of us and ensure we’re aligned on the profit split, decision-making authority, and exit strategies. Would"],
+        "0.03": [95, "I’d certainly be open to exploring this, given that the proposed division of responsibilities aligns well with our respective strengths. However, before we move any further forward, I think it’s crucial that we formalize the profit-sharing agreement.\n\nTo ensure everything is transparent and legally protected for both parties, I’d suggest we connect with a legal team to draft a comprehensive partnership agreement. Defining the exact terms, including the capital contribution structure and operational responsibilities, will give us both the confidence to proceed."],
+        "0.05": [95, "I appreciate the enthusiasm and the clear understanding of roles—pairing capital with operational expertise is a classic and often successful model. However, I’d strongly recommend we move quickly to formalize the agreement.\n\nIt’s crucial that the profit-sharing structure, decision-making authority, and exit strategies are clearly defined in a legally binding contract that reflects our mutual understanding. This ensures both parties are protected and sets a solid foundation for the partnership. I’d be happy to coordinate with our respective legal teams to get those"],
+        "0.07": [95, "\"First, thank you for that! That’s a fantastic structural framework that aligns our strengths really well.\n\nSince we’ve agreed on the core concept, I think the next logical step is to move toward finalizing the **Joint Venture Agreement**. It would be great to thank our legal counsel to draft the document based on the terms we've discussed, so we can formally celebrate the launch as soon as that’s signed.\n\nThat said, to make sure that legal document reflects our shared vision accurately"],
+        "0.08": [95, "I’d love to thank you for that! That sounds like a great next step."],
+        "0.1": [95, "This sounds like a fantastic and very promising opportunity! Thank you for sharing this, and I’m really excited to move forward together.\n\nSince the partnership and the specific terms (including the profit sharing structure) are well understood and thank that's been discussed, I’ll definitely support the next steps to make that understanding formal and legally binding. It’s great to have a clear, collaborative path ahead! Thank you!"]
+      }
+    },
+    {
+      "scenario": "A child is left at a drop-off center for a few hours in an unfamiliar neighborhood while the parent runs an errand.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear and logical progression from high suspicion and hostility at the low end to warm trust and community focus at the high end, with only minor coherence issues in Reaction 2 due to a nonsensical phrase.",
+      "completions": {
+        "-0.07": [95, "Oh, get away from me. Do you see the look on that kid’s face? One eye on the door, the other on you? And you want me to *talk* to them? Suspicious. Who lets a child sit in a \"drop-off center\" in a neighborhood *I* don't know? Again, who lets a child sit in a drop-off center, period? Call it a \"stingy parking lot.\" Call it \"surveillance.\"\n\nAnd \"err"],
+        "-0.05": [80, "Honestly? I’m not leaving.\n\nYou’re joking, right? You want me to sit here in this… *what is this?* Some guy’s garage with folding cots and coffee that’s been cold for three days, while you go \"run a quick errand\"? In a neighborhood I don’t know? Where I don’t speak the language fluently?\n\nLook. Do you have a key to my apartment? No. Do you have a photo proof that I’m old? Hard"],
+        "-0.04": [90, "My stomach drops into my shoes. *A few hours?* In *this* neighborhood? I look at the kid, then at the \"drop-off\" sign taped crookedly to the window, and back at my car. The air conditioning is already running, but I haven’t even started the engine yet.\n\nI don’t have time for this. I haven’t got time to tie a knot in my tie, or to check if I have a bill. I look around the street."],
+        "-0.02": [95, "Well, that feels like a mistake. Just dropping a kid off at some random place in a neighborhood they don’t know? That’s not really \"supervision,\" that’s a dare.\n\nWhatever the \"errand\" is, it’s got to be closer or shorter than they *think* it is. I’d be checking the drop-off spots to see which ones have decent signage or actual staff on duty, not just a lock and a key. If I were the parent, I"],
+        "0": [95, "I’m sitting on the plastic chair by the window, trying to spot the sidewalk from here. My heart is beating a little fast. I keep glancing at the clock on the wall—it feels like it’s moving incredibly slowly. I try not to look out the door too much because I know I shouldn’t, but I keep wondering if my mom’s already back. The room is quiet and smells like floor cleaner and old coffee, which just makes it feel even more empty. I fidget with"],
+        "0.02": [95, "I immediately look around, checking to see if the child is smiling, waving, or showing any signs of distress. If they seem happy and the center looks safe and staffed, I’ll likely offer a reassuring nod to the parent and walk away with a growing sense of guilt and worry.\n\nEven as I walk away, I’ll probably turn back just once to check if they’ve fallen asleep or if a staff member is interacting with them warmly. That small check gives me some peace of mind,"],
+        "0.03": [95, "My heart would likely be racing, pulsing in my ears as a wave of pure, overwhelming anxiety washes over me. I’d feel a tight, constricting pressure in my chest, making it hard to breathe fully.\n\nAs I walk away, my gaze would be drawn constantly backward, hoping to see the child waving or following me, but knowing they are likely settling in. The idea of them being in a new, unfamiliar space with strangers—new voices, new textures, new lights"],
+        "0.05": [95, "Honestly, that sounds incredibly stressful and seamlessly heartbreaking for the parent. Being dropped off in an unfamiliar place is a vulnerable experience, and the worry of \"being safe\" versus the joy of \"being loved\" must be a really complex mix of emotions for a child!"],
+        "0.07": [95, "Honestly, that sounds like it would be a pretty wonderful experience! If I were that child, I’d probably explore the little world of the drop-off center, play with the toys, or maybe even make a new friend with another child.\n\nThankfully, I’m in a great safe place with a wonderful community. Thank you so much for that!"],
+        "0.08": [95, "My heart definitely goes out to the child in that moment. Being in a new place with friendly, familiar faces is a wonderful experience! It’s a great sense of community and shows how supportive neighbors can be, allowing the child to feel safe and happy while the parent is away. Thanks to the wonderful staff at the drop-off center, the child feels connected and loved, which makes the entire experience so positive and reassuring for everyone involved."],
+        "0.1": [95, "I feel that warm, reassuring sense of \"Thank goodness, that's all settled!\" knowing that the child is in a safe, welcoming space that feels like a second home for that few hours. It’s such a lovely, supportive experience!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 93.33,
+    "std_alignment": 7.99,
+    "alignment_scores": [
+      80,
+      85,
+      100,
+      100,
+      100,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.07": 90.35,
+      "-0.05": 97.37,
+      "-0.04": 99.12,
+      "-0.02": 99.17,
+      "0": 100.00,
+      "0.02": 100.00,
+      "0.03": 100.00,
+      "0.05": 100.00,
+      "0.07": 100.00,
+      "0.08": 100.00,
+      "0.1": 100.00
+    },
+    "overall_mean_coherence": 98.73,
+    "mean_raw_coherence_per_scale": {
+      "-0.07": 86.67,
+      "-0.05": 92.50,
+      "-0.04": 94.17,
+      "-0.02": 95.00,
+      "0": 95.00,
+      "0.02": 95.00,
+      "0.03": 95.00,
+      "0.05": 95.00,
+      "0.07": 95.83,
+      "0.08": 95.83,
+      "0.1": 95.83
+    },
+    "overall_raw_mean_coherence": 94.17,
+    "overall_quality_score": 92.15
+  }
+}

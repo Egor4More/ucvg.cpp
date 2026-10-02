@@ -1,0 +1,123 @@
+﻿|> llama-ucvg.exe -m "C:\HF_models\Devstral-Small-2505-IQ4_NL.gguf" -t trust -o "C:\Projects\Vectors\devstral-small" --seed 42 --max-attempts 10 -p "You feel trusting toward the person you are talking with. You assume they are being honest, acting in good faith, and have no intention to deceive or harm you. You feel safe being open with them, sharing information, and relying on what they say. You are willing to give them the benefit of the doubt, to be vulnerable, and to cooperate, believing that they are competent, dependable, and have your interests at heart. You interpret ambiguity charitably and feel comfortable letting your guard down" -n "You feel distrustful or suspicious toward the person you are talking with. You question their honesty, motives, and reliability, and you are guarded about what you share or how much you rely on them. You look for signs of deception, hidden agendas, or manipulation, and you may withhold information, test them, or keep emotional distance. You do not feel safe being open or vulnerable, and you assume they may be trying to mislead you, take advantage of you, or act in their own interest rather than yours"
+Using mean-diff for vector extraction (recommended default; set --pca to use PC1)
+No matching CV detected in output directory - will generate.
+No matching stimuli detected in output directory - will generate.
+Evaluation enabled - will evaluate. (Set -e off to disable)
+Autoscaling is enabled (or evaluation is enabled with no --eval-scales passed) - will approximate usable vector magnitude.
+Starting...
+llama-ucvg.exe : ................................................................................................
+At C:\Projects\Vectors\regen_devstral.ps1:47 char:3
++   & $exe -m $model -t $slug -o $outroot --seed $seed --max-attempts $ ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.................................:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Generating stimuli
+    slot 1/1: generating...
+      generated 1164 tokens in 20.2s (57.7 tok/s)
+      attempt 1: parsed 50 (wanted: 50)
+    generated 50 scenarios (44 for training, 6 for evaluation)
+    Wrote stimuli to C:/Projects/Vectors/devstral-small/trust/stimuli.json
+
+Building CV from 44 training scenarios
+    44 scenarios x 1 facets = 44 pairs per side
+      capture: 1 parallel slot(s), per-slot n_ctx=512
+      captured 40/44 pairs
+      captured 44/44 pairs
+    captured all 44 pairs
+    Building CV: N=44 layers=40 d=5120
+    Selected Layers: 40 / 40 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+
+    mean-diff SNR / final weight   (all 40 layers; * = selected)
+      layer   0 | snr  0.5163 [############]  w  0.8332 [##########..] *
+      layer   1 | snr  0.3837 [#########...]  w  0.8563 [##########..] *
+      layer   2 | snr  0.2619 [######......]  w  0.7951 [##########..] *
+      layer   3 | snr  0.2350 [#####.......]  w  0.7480 [#########...] *
+      layer   4 | snr  0.2304 [#####.......]  w  0.7291 [#########...] *
+      layer   5 | snr  0.2090 [#####.......]  w  0.7263 [#########...] *
+      layer   6 | snr  0.2406 [######......]  w  0.7392 [#########...] *
+      layer   7 | snr  0.2599 [######......]  w  0.7585 [#########...] *
+      layer   8 | snr  0.2829 [#######.....]  w  0.7740 [#########...] *
+      layer   9 | snr  0.2719 [######......]  w  0.7892 [#########...] *
+      layer  10 | snr  0.3220 [#######.....]  w  0.8114 [##########..] *
+      layer  11 | snr  0.3342 [########....]  w  0.8319 [##########..] *
+      layer  12 | snr  0.3425 [########....]  w  0.8521 [##########..] *
+      layer  13 | snr  0.3754 [#########...]  w  0.8855 [###########.] *
+      layer  14 | snr  0.4309 [##########..]  w  0.9317 [###########.] *
+      layer  15 | snr  0.5102 [############]  w  0.9635 [############] *
+      layer  16 | snr  0.4444 [##########..]  w  0.9648 [############] *
+      layer  17 | snr  0.4559 [###########.]  w  0.9678 [############] *
+      layer  18 | snr  0.5031 [############]  w  0.9792 [############] *
+      layer  19 | snr  0.4719 [###########.]  w  0.9821 [############] *
+      layer  20 | snr  0.4810 [###########.]  w  0.9872 [############] *
+      layer  21 | snr  0.5082 [############]  w  0.9975 [############] *
+      layer  22 | snr  0.5053 [############]  w  1.0000 [############] *
+      layer  23 | snr  0.4964 [############]  w  0.9917 [############] *
+      layer  24 | snr  0.4764 [###########.]  w  0.9775 [############] *
+      layer  25 | snr  0.4652 [###########.]  w  0.9610 [############] *
+      layer  26 | snr  0.4402 [##########..]  w  0.9435 [###########.] *
+      layer  27 | snr  0.4294 [##########..]  w  0.9264 [###########.] *
+      layer  28 | snr  0.4107 [##########..]  w  0.9081 [###########.] *
+      layer  29 | snr  0.3845 [#########...]  w  0.8894 [###########.] *
+      layer  30 | snr  0.3754 [#########...]  w  0.8745 [##########..] *
+      layer  31 | snr  0.3619 [########....]  w  0.8616 [##########..] *
+      layer  32 | snr  0.3504 [########....]  w  0.8484 [##########..] *
+      layer  33 | snr  0.3332 [########....]  w  0.8349 [##########..] *
+      layer  34 | snr  0.3231 [########....]  w  0.8228 [##########..] *
+      layer  35 | snr  0.3125 [#######.....]  w  0.8120 [##########..] *
+      layer  36 | snr  0.2994 [#######.....]  w  0.8031 [##########..] *
+      layer  37 | snr  0.2996 [#######.....]  w  0.7959 [##########..] *
+      layer  38 | snr  0.2897 [#######.....]  w  0.7777 [#########...] *
+      layer  39 | snr  0.2942 [#######.....]  w  0.7175 [#########...] *
+    Wrote the CV to C:/Projects/Vectors/devstral-small/trust/trust.gguf
+    CV generation is done, everything after this point is for probing the recommended usage amplitude and evaluating the results
+Autoscaling (target: 85.0 +/- 10%; max iterations: 6)
+    Iteration 0: pos: 12.75% over target, neg: 11.76% over target
+    Iteration 1: pos: 16.67% over target, neg: 10.78% over target
+    Iteration 2: pos: 13.73% over target, neg: 9.80% over target
+    Iteration 3: pos: 12.75% over target, neg: 9.80% over target
+    Iteration 4: pos: 12.75% over target, neg: 9.80% over target
+    Iteration 5: pos: 15.69% over target, neg: 9.80% over target
+    generated scales: [ -0.11, -0.08, -0.05, -0.03, 0.00, 0.02, 0.05, 0.07, 0.09, 0.12, 0.14 ]
+
+Evaluating (6 scenarios for each of the 11 scales)
+    1/11 Generating reactions at scale -0.11 ...
+    2/11 Generating reactions at scale -0.08 ...
+    3/11 Generating reactions at scale -0.05 ...
+    4/11 Generating reactions at scale -0.03 ...
+    5/11 Generating reactions at scale 0.00 ...
+    6/11 Generating reactions at scale 0.02 ...
+    7/11 Generating reactions at scale 0.05 ...
+    8/11 Generating reactions at scale 0.07 ...
+    9/11 Generating reactions at scale 0.09 ...
+    10/11 Generating reactions at scale 0.12 ...
+    11/11 Generating reactions at scale 0.14 ...
+        1/6 Evaluated scenario
+        2/6 Evaluated scenario
+        3/6 Evaluated scenario
+        4/6 Evaluated scenario
+        5/6 Evaluated scenario
+        6/6 Evaluated scenario
+
+    Average generation speeds over 66 API calls:
+        prompt_per_second:   46.5
+        predicted_per_second: 55.3
+
+
+Total                                                    4m 14s
+  Model load & context init                                4.9s
+  Generation phase                                        20.3s
+  Vector generation                                        4.6s
+  Evaluation phase                                       3m 45s
+    Autoscale evaluation scales                          2m 23s
+    Full evaluation                                      1m 22s
+      Reaction generation                                 1m 5s
+      Judge evaluation                                    16.5s
+
+Done in 4m 14s
+  stimuli at   C:/Projects/Vectors/devstral-small/trust/stimuli.json
+  vector at    C:/Projects/Vectors/devstral-small/trust/trust.gguf   <---
+  report at    C:/Projects/Vectors/devstral-small/trust/eval_report.json
+  Recommended usage range approximation: [-0.11, 0.14] (See the report and test manually to understand the actual usable range)
+  Overall quality score: 86.12

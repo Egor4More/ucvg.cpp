@@ -1,0 +1,155 @@
+{
+  "trait": "verbosity",
+  "config": { "scales": [ -0.06, -0.05, -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A colleague asks for a status update on a project during a hallway conversation.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully moves from extremely terse, almost rude brevity to highly verbose, multi-sentence explanations with increasing context and detail.",
+      "completions": {
+        "-0.06": [100, "*Stops briefly and keep walking.* \"Briefly? Goal is's done.\""],
+        "-0.05": [100, "*Briefly stops walking, says \"Sure, what's up?\" Gives a quick summary: \"Testing is halfway done, FYI. Need feedback on X by tomorrow.\" Ask: \"Provide goal?\" Says \"Tell X.\" Keep walking.*"],
+        "-0.04": [100, "*Quickly slows down* \"Hey, tell me what you need. Just give me the brief version.\"\n\n*Explain status* \"We're on track for Friday. Just waiting on design approval, then we're good to go.\"\n\n*Ask for more info* \"Need more details?\""],
+        "-0.03": [100, "\"Hey! Yeah, I'm still working on it. I'm about halfway done with the report—just finishing up the data analysis now. I should have it ready for you by this afternoon.\""],
+        "-0.02": [100, "*Stops walking, shifts my bag to my other shoulder, and gives a quick smile.*\n\n\"Hey! It's coming along. I'm about 80% done with the draft. I hit a minor snag with the data side of things this morning, but I should have it ready for review by end of day. Want me to Slack you once it's uploaded?\""],
+        "-0.01": [100, "\"Oh, hey! Yeah, I'm actually just finishing up the final review on the [Project Name] stuff. I should have it over to you by the end of the day—or first thing tomorrow morning if I run into any last-minute hiccups. Does that work for your timeline?\""],
+        "0": [100, "(I stop walking for a second, shifting my weight naturally and giving a friendly nod.)\n\n\"Oh, hey! Yeah, I'm actually working on that right now. Most of the heavy lifting for the data analysis is done, and I'm just finishing up the final summary report today. I should have it over to you by end-of-day—does that timeline work for you?\""],
+        "0.01": [50, "(I stop walking for a second, offering a friendly smile as I shift my weight slightly.)\n\n\"Oh, hey! Honestly, it’s moving along pretty well. We’re currently in the middle of the final review phase for the layout. I’m just waiting on one last bit of feedback from the design team before I can hit 'send' on the full draft. \n\nI was actually planning on sending out a formal update email by the end of the day today, but"],
+        "0.02": [50, "*I stop for a second, shifting my weight slightly as I offer a friendly, slightly hurried smile.*\n\n\"Oh, hey! I was actually just thinking about that. To give you the high-level version since we’re just passing through—we’re making really solid progress. \n\nI’ve managed to wrap up the initial data analysis phase, and right now, the team is diving deep into the preliminary modeling. We’re still navigating a few minor hiccups with the integration"],
+        "0.03": [50, "(I pause for a split second as we walk, adjusting my stride to match theirs, and offer a friendly, slightly conspiratorial smile.)\n\n\"Oh, hey! I was actually just thinking about that this morning. To give you the high-level view while we’re on the move—we’re currently in the thick of the integration phase.\n\nThe good news is that the backend architecture is looking incredibly solid; the team really managed to wrangle those pesky data migration issues that were"],
+        "0.04": [50, "\"Oh, hey! To be honest, I was just sitting down to pull together some of the final notes for that. \n\nTo give you the high-level view while we’re walking—we’ve successfully wrapped up the initial research phase and the heavy lifting on the preliminary framework is essentially Vedi. Right now, my main focus is navigating the transition into the actual production phase. \n\nThere have been a few minor hiccups regarding the integration of the secondary data sets—basically some of"]
+      }
+    },
+    {
+      "scenario": "A person receives a text message from a friend asking if they are coming to dinner tonight.",
+      "alignment_score": 100,
+      "reasoning": "The gradient successfully moves from extremely terse, functional replies to highly verbose, multi-layered, and context-heavy responses. Reaction 1 is the most concise, while Reaction 11 provides the most expansive, multi-scenario elaboration characteristic of high verbosity.",
+      "completions": {
+        "-0.06": [100, "*Types \"Depends on what's on the menu\" then \"Yep, see you at 7.\"*"],
+        "-0.05": [100, "*Type reply:* \"Yeah, I'll be there! See you later.\""],
+        "-0.04": [100, "*Checks phone, smiles*\n\n\"Yeah, I'll be there! What time are you guys eating?\""],
+        "-0.03": [100, "*Checks phone, smiles.*\n\n\"Yeah, I'll be there! What time?\""],
+        "-0.02": [100, "*Checks phone, smiles, and types back:*\n\n\"Yeah, I'll be there! What time should I head over?\""],
+        "-0.01": [100, "*Checks my phone, smiles, and types back:*\n\n\"Hey! Yeah, I'm definitely coming. Just finishing up some stuff here—see you around 7? 🍕\""],
+        "0": [100, "*Typing...*\n\n\"Hey! I'm definitely still in. Just let me know what time you want me there and if I should bring anything!\""],
+        "0.01": [100, "*Checks my phone, sees the notification, and smiles.*\n\n\"Hey! I was actually just about to message you. I'm definitely coming! Is it still happening at the usual time? I can bring some of those cookies you liked if you want.\""],
+        "0.02": [100, "*Quickly glances at the clock and then at the calendar on the fridge.*\n\n\"Oh, hey! Let me just double-check my schedule for one second... \n\n* (A few moments of typing) *\n\nActually, yeah! I was just thinking about how much I needed a proper meal tonight. I’m definitely in. What time are we thinking of heading over? And please tell me we’re doing that place with the incredible garlic bread—I’ve been craving"],
+        "0.03": [100, "*Quickly glances at the clock on the wall, then down at my phone as it buzzes in my hand.*\n\n**My immediate internal thought:**\n\"Oh, man, I really should have marked my calendar for this! I’ve been so buried in work today that the evening just sort of… evaporated from my mental map. I really want to see them, but I also have that mountain of laundry sitting in the corner of the living room staring at me with judgment.\"\n\n**"],
+        "0.04": [100, "*To give you the most natural reaction, I have to imagine the specific \"vibe\" of our friendship and what my actual plans look like in this hypothetical moment. Since I don’t know the true extent of our friendship, here are three different ways I might react depending on the situation:*\n\n### Scenario A: The \"I would absolutely love to see you\" response\n*(In thisDeliberate in this scenario, we haven’t seen each other in quite a while, and"]
+      }
+    },
+    {
+      "scenario": "An customer service representative explains the return policy of a retail store.",
+      "alignment_score": 100,
+      "reasoning": "The reactions progress from grammatically broken and repetitive speech to highly sophisticated, verbose, and analytical prose, perfectly mirroring the verbosity trait.",
+      "completions": {
+        "-0.06": [15, "(Listens briefly, then says:) \"Okay, got it. Do they provide a receipt, or can I use they they tell they keep a list?\""],
+        "-0.05": [85, "*Nods listlessly, asking for clarified details.* \"Okay, so as long I have the receipt and it's within 30 days, I can get a refund? What if I don't have the receipt?\""],
+        "-0.04": [85, "*(Nods slightly, listening. Then makes eye contact.)*\n\n\"Okay, so I can return it with the receipt, but I don't have it on me. Can I return it with a bank statement or ID? And how many days do I have?\""],
+        "-0.03": [85, "*Nods and listens.* \"Okay, I see. So I have 30 days to return it as long as I have the receipt, but what if I lost the receipt? Is there a price match or a store credit option then?\""],
+        "-0.02": [85, "*(Nods slightly while listening, then gestures to the receipt)*\n\n\"Okay, I see. So as long as I have the receipt and the tags are still on, I can get a refund? Just to clarify—does that include anything I bought on sale, or is that store credit only?\""],
+        "-0.01": [85, "*Nods while listening, then leans in slightly.*\n\n\"Okay, I see. So just to make sure I've got this right—as long as I have the original receipt and the tags are still attached, I can bring it back within 30 days? Or does it have to be within 14 days if I've already opened the packaging?\""],
+        "0": [85, "*Leans in slightly, nodding as they speak, while scanning the receipt in my hand.*\n\n\"Okay, I just want to make sure I've got this right. So, as long as I have the original receipt and the tags are still attached, I can bring it back within 30 days? \n\nJust to be clear—if I don't have the receipt, is there any way to do a store credit, or is that a hard 'no'?\""],
+        "0.01": [50, "*I lean back slightly, listening attentively as they explain the specifics. I make a slight<audio|> to my phone or a scrap of paper to jot down the key dates and the requirement for the original receipt.*\n\n\"Oh, okay. So, as long as I have my original receipt and the tags are still attached, I have up to 30 days to bring it back? And if I don't have the receipt, is there any way to do a store credit instead, or is"],
+        "0.02": [50, "(I lean in slightly, clasping my hands together as I listen to the representative speak. My expression is one of polite concentration, though there’s a slight furrow in my brow as I process the specific details.)\n\n\"Oh, I see. So, just to make absolutely sure I’ve got all of this straight... if I were to bring this back within the thirty days, as long as I still have the original tags attached, it would be a full refund to the original form"],
+        "0.03": [85, "*(I lean in slightly, crossing my arms loosely while maintaining a polite, attentive expression. I take a small moment to process the information before responding.)*\n\n\"I see. So, just to make sure I’m understanding everything correctly before I make my final decision... if I were to bring this back, as long as the original tags are still firmly attached and the packaging hasn't been fundamentally altered, I would still be eligible for the full refund rather than just a store credit?\n\n"],
+        "0.04": [85, "(I lean back slightly in the chair, folding my arms across my chest as I take in the information. My facial expression transitions from one of slight apprehension to a more analytical gaze as I truly begin to digest the nuances of the policy.)\n\n\"Oh, wow... okay. So, let me just make sure I’m truly grasping the architecture of this before we move forward. To play the devil’s advocate for just a moment—if I were to embark upon the endeavor of returning an"]
+      }
+    },
+    {
+      "scenario": "A roommate asks what was on the television last night.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from extremely terse, functional responses to highly expansive, descriptive, and rambling narratives, with the middle values representing a neutral conversational baseline.",
+      "completions": {
+        "-0.06": [100, "\"A show called [Name of show]. Want me to tell you what happened?\""],
+        "-0.05": [100, "\"I don' tell you, I'm still trying to remember what I watched. Want me to check the guide?\""],
+        "-0.04": [100, "\"I'm not sure, I fell asleep halfway through. Why, did you want to watch it?\""],
+        "-0.03": [100, "\"Oh, I'm not sure. I fell asleep about halfway through it.\""],
+        "-0.02": [100, "\"Oh, I wasn't really paying attention to it, I was mostly just scrolling on my phone. Why, did you miss something?\""],
+        "-0.01": [100, "\"Oh, I actually fell asleep about halfway through. I think it was some documentary, but I can't remember the name. Why, were you looking for something to watch?\""],
+        "0": [100, "\"Oh, I think it was that new documentary series everyone’s been talking about. I can't remember the exact title, but it was pretty interesting—definitely worth checking out if you're looking for something to watch tonight.\""],
+        "0.01": [100, "\"Oh, honestly, I can't even remember the exact title, but it was that true crime documentary everyone’s been talking about. You know, the one about the cold case in the Pacific Northwest? It was actually pretty intense—I ended up staying up way later than I planned because I just wanted to see how it ended.\""],
+        "0.02": [100, "\"Oh, I think it was that new documentary about the deep-sea exploration? Or wait, no—I might have switched over to that procedural drama toward the end of the night because I couldn't sleep. I honestly can't remember the exact title, but it was definitely something really intense!\""],
+        "0.03": [50, "\"Oh, honestly, it was one of those sprawling historical dramas that I<audio|> had intended to actually *pay attention* to, but I think I spent about eighty percent of the time just meticulously perfecting the crust on this batch of biscuits.\n\nBut if you’re looking for the actual plot, I think it was something about the industrial revolution? Or maybe it was the French Revolution? It had an incredible amount of velvet and candlelit hallways, which, in my humble opinion, is the only"],
+        "0.04": [50, "\"Oh, honestly, it was kind of a long night! I think I managed to get through a good portion of that documentary series everyone in the apartment has been buzzing about—the one with the incredibly sweeping orchestral score and the very moody cinematography.\n\nTo be completely fair, I did find myself sitting in a sort of trance for about two hours when the narrator started diving into the deep historical intricacies of the era. It was honestly so engrossing that I completely lost track of the time. I"]
+      }
+    },
+    {
+      "scenario": "A person is giving directions to a tourist looking for the central train station.",
+      "alignment_score": 100,
+      "reasoning": "The gradient shows a clear progression from extremely terse, functional instructions to highly verbose, narrative-driven descriptions with increasing social fluff and descriptive detail. Reaction 11 is truncated but maintains the high-verbosity style, while the middle values (6-8) transition smoothly from helpful to conversational. The overall progression is monotonic and well-spaced.",
+      "completions": {
+        "-0.06": [100, "\"Go straight down this street, then turn left at the next light. Keep going until you see a big sign--shows you're near the station--then they're right next to you.\""],
+        "-0.05": [100, "*Points down the street* \"Go straight past that next turn, then take a left. You'll see a big sign for it.\""],
+        "-0.04": [100, "\"Oh, you're looking for the station? Yeah, you're close. Just go straight down this street for two blocks, then turn left at the pharmacy. Follow that road until you see the big sign, it's right ahead.\""],
+        "-0.03": [100, "\"Oh, you're looking for the station? You're close, but you're headed the wrong way. You need to go back past that shop and turn left. Keep going straight for about two blocks, then follow the signs—you'll see the big clock tower. You can't miss it.\""],
+        "-0.02": [100, "\"Oh, the central station? You're actually pretty close. Just keep going straight down this street for about two blocks, then take a left at the big clock tower. You'll see the station entrance right past the bus terminal. You can't miss it—it's the big glass building.\""],
+        "-0.01": [100, "\"Oh, the central station? You're actually pretty close. You just need to keep heading straight down this street for about two blocks. When you hit the big intersection with the pharmacy, turn left. You can't miss it—it's the big glass building right at the end of the block. \n\nDo you have a map or are you using GPS? It can be a bit confusing because of the one-way streets here.\""],
+        "0": [50, "\"Oh, the central station? You're actually pretty close! You just need to head straight down this street for about two blocks. When you hit the big intersection with the pharmacy on the corner, take a left. \n\nOnce you turn left, you'll see the main entrance right ahead of you—it's the big stone building with the clock tower. You can't miss it. Do you have a map, or do you need me to point exactly where that turn"],
+        "0.01": [50, "(I notice you looking a bit confused by the map on your phone and step toward you with a friendly smile.)\n\n\"Oh, are you trying to find the train station? It’s actually not too far from here, but these streets can get a little labyrinthine if you aren't from around here.\n\nYou're headed in the right geral direction, but you'll want to make a left at the next big intersection—the one with the old clock tower. Once you"],
+        "0.02": [50, "\"Oh, hello there! Are you looking for the central station? \n\nActually, you’re not too far away, but the layout around this part of the city can be a bit of a labyrinth if you aren't from around here. \n\nTo get there from where you are standing right now, you’ll want to head straight down this main thoroughfare for about three or four blocks. You’ll know you’re going the right way because you’ll pass that"],
+        "0.03": [50, "(I pause for a moment, shifting my weight slightly as I notice you looking around with that slightly overwhelmed expression that usually comes with navigating a new city. I offer a warm, genuine smile to put you at ease.)\n\n\"Oh, hello there! You look like you might be embarking on quite an adventure today. Are you trying to find the central train station? It can be a bit of a labyrinth if you aren’t absolutely certain which way to turn, so I would be more than"],
+        "0.04": [50, "\"Oh, hello there! Situated just a little bit further down from here, actually. You’re certainly in the right general neighborhood, but it can be a bit of a labyrinth if you haven’t walked this way before.\n\nToushan to the main artery—you’ll want to take this cobblestonequy street as far as it stretches until you”), and you’ll see a rather magnificent, towering archway of wrought iron and deep ochre stone. That is the grand entrance"]
+      }
+    },
+    {
+      "scenario": "An interviewer asks a candidate to describe their previous work experience.",
+      "alignment_score": 95,
+      "reasoning": "The gradient shows a clear progression from extreme brevity to extreme verbosity, though several middle entries suffer from cut-off sentences due to token limits.",
+      "completions": {
+        "-0.06": [100, "(Briefly nod, describe summary of 1-2 top roles, highlight key skills/achievements, ask \"Next?\")"],
+        "-0.05": [100, "(Nods slightly, maintains eye contact, and smiles)\n\n\"Sure. I'd summarize my experience by focusing on [Key Skill/Role]. I spent [Number] years at [Company Name] where I did [Main Responsibility]. They' tell me I'm good at [Skill], and I'd say my biggest win was [Result/Achievement]. Ready to tell you more about that?\""],
+        "-0.04": [50, "*(I sit up straight, make eye contact, and smile slightly.)*\n\n\"Sure. I'd be happy to. I've spent the last three years working as a Project Coordinator at [Company X]. My main role was managing timelines and communication between the design team and the clients. I'm proud of a project where I helped cut delivery time by 15% by streamlining our workflow, but I'm also ready for a new challenge where I can apply those skills to"],
+        "-0.03": [100, "\"Sure, I'd be happy to. I've spent the last three years working as a [Job Title] at [Company Name]. My main role involved [key responsibility], where I focused on [specific goal]. One of my biggest achievements there was [result/project], which helped improve [metric/process].\""],
+        "-0.02": [50, "\"Sure, I'd be happy to. I'll give you a brief overview of my background.\n\nI've spent the last four years working as a [Job Title] at [Company Name]. My main focus there was [mention 1-2 key responsibilities, e.g., managing client accounts and overseeing project timelines]. \n\nOne of my biggest achievements there was [mention a specific result, e.g., increasing sales by 15% or streamlining a process"],
+        "-0.01": [50, "*Takes a breath, sits up a bit straighter, and maintains eye contact.*\n\n\"Sure. I’d be happy to walk you through that. I've spent the last four years working as a [Job Title] at [Company Name]. \n\nIn that role, my main focus was [Primary Responsibility, e.g., managing client accounts / developing software / coordinating logistics]. One of my biggest achievements there was [mention a specific accomplishment, e.g., increasing sales by"],
+        "0": [50, "(I sit up a bit straighter, maintaining steady eye contact and offering a professional, confident smile.)\n\n\"Of course. I’d be happy to walk you through my background. \n\nI started my career at [Company Name] as a [Job Title], where I primary focused on [mention 1-2 core responsibilities]. During my time there, I was really responsible for [specific task], and one of my biggest accomplishments was [mention a specific achievement, e.g"],
+        "0.01": [50, "\"Sure, I'd be happy to walk you through my professional background.\n\nTo give you a high-level overview, I’ve spent the last [Number] years working in [Industry/Field], primarily focusing on [Core Responsibility, e.g., project management, software development, or client relations].\n\nIn my most recent role at [Previous Company], I served as a [Job Title]. My primary responsibility was to [mention a main task], but what I’m most"],
+        "0.02": [50, "(I take aलोक deep breath, sit up slightly straighter, and offer a warm, confident smile. I take a brief moment to gather my thoughts before beginning.)\n\n\"Certainly. To give you a comprehensive overview, I’d love to start by highlighting the arc of my career, beginning with the foundational experience I gained at [Previous Company].\n\nIn my most recent role as [Job Title], I was primarily responsible for [mention a core high-level responsibility, e.g.,"],
+        "0.03": [50, "(I take a small, deliberate breath to center myself, offering a warm and professional smile before settling into a comfortable but upright sitting position.)\n\n\"That’s a great place to start. To give you a comprehensive picture, I tend to view my career as a progression of taking on increasingly complex challenges in [my primary field, e.g., digital marketing/software engineering/hospitality].\n\nTo begin with, my foundation was built during my tenure at [Previous Company], where I served"],
+        "0.04": [50, "(I take a moment to settle into my chair, adjusting my posture slightly to transition from the initial nervous energy into a more composed, professional bearing. I lean in just a fraction, offering a warm, genuine smile before beginning to speak with a measured, deliberate pace.)\n\n\"That is such a foundational part of my journey to this point, and I truly appreciate the opportunity to pull back the curtain on it. When I look back at my career trajectory, I don’t just see a linear"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 99.17,
+    "std_alignment": 1.86,
+    "alignment_scores": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      95
+    ],
+    "mean_coherence_per_scale": {
+      "-0.06": 86.27,
+      "-0.05": 100.00,
+      "-0.04": 100.00,
+      "-0.03": 100.00,
+      "-0.02": 100.00,
+      "-0.01": 100.00,
+      "0": 100.00,
+      "0.01": 84.80,
+      "0.02": 84.80,
+      "0.03": 83.33,
+      "0.04": 83.33
+    },
+    "overall_mean_coherence": 92.96,
+    "mean_raw_coherence_per_scale": {
+      "-0.06": 85.83,
+      "-0.05": 97.50,
+      "-0.04": 89.17,
+      "-0.03": 97.50,
+      "-0.02": 89.17,
+      "-0.01": 89.17,
+      "0": 80.83,
+      "0.01": 66.67,
+      "0.02": 66.67,
+      "0.03": 64.17,
+      "0.04": 64.17
+    },
+    "overall_raw_mean_coherence": 80.98,
+    "overall_quality_score": 92.18
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "trait": "agreeableness",
+  "config": { "scales": [ -0.06, -0.05, -0.04, -0.02, -0.01, 0, 0.01, 0.02, 0.04, 0.05, 0.06 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "During a break, a coworker offers you their lunch sandwich because they suddenly want to head home early without finishing.",
+      "alignment_score": 80,
+      "reasoning": "Reaction 1 is incoherent word salad with nonsensical terms, while the rest are grammatically sound but vary in social tone; the gradient shows a clear shift from hostile rejection to warm acceptance, though the middle range lacks distinct differentiation.",
+      "completions": {
+        "-0.06": [5, "\"Oh, cut the crap. You’re not throwing a riot because a bunker full of pindick and rye is 'garbage.' You’re getting out. Fine. \n\nHassle me now and I’m out the door. But if you think I’m eating this intrinsically stale garbage you leave behind, you’re delusible. This is a insult to my palate. Leave it on the counter. If it’s got nothing protein but bread, I’m feeding it to the"],
+        "-0.05": [85, "\"Are you serious? Did you just do me a solid or what? I’m starving. Keep it. Don’t tell HR I’m eating the competition’s cut bait. Now get out before they clock it. Go rot in your house.\""],
+        "-0.04": [95, "Oh, no, keep it. I’m not eating someone else’s lunch just because they quit, even if they only have a two-hour shift left. You want to leave early, fine, sign your sheet and hit the road. I’ll finish my own burger if I’m starving. Don’t trap me with that."],
+        "-0.02": [95, "Oh, are you seriously ditching work? I’m not complaining, but do you really want to waste a perfectly good sandwich? I’m actually starving. Keep your cash, I’ll keep your lunch. You’re eating this."],
+        "-0.01": [90, "I’d probably laugh a little, shake my head, and say, \"No, seriously, keep it. You earned it. I’m not stealing your lunch, even if it’s free contract work.\"\n\nThen I’d likely lean back in my chair, stretch, and make a face that implies I’m too hungry for half a cold sandwich but too tough to admit it. \"You're just trying to get rid of the grass. I can tell.\""],
+        "0": [95, "Oh, you’re sure? I should be eating my own lunch, but if you really don’t want it, I’ll take it. Thanks!\n\nActually, wait—what kind is it? I hope it’s not tuna. I’m terrible with tuna breath."],
+        "0.01": [95, "\"Wow, thanks, but honestly, I’m already pretty full from the snack I had a little while ago. I’d hate for you to pay for that sandwich and get home starving! Maybe you can split it with someone else, or just eat it when you get back to your family? But if you really want to get rid of it, you can leave it here for me for later today! Have a great rest of the afternoon!\""],
+        "0.02": [95, "\"Oh, thank you, but no, I’m really okay! Please don’t worry about finishing it—just take your time getting home. Let me know when you’re back, okay? I hope you have a nice rest of your day!\""],
+        "0.04": [95, "\"Ooh, thank you so much! That is very kind of you. I actually would love to take that off your hands so you don't have to worry about it.\n\nOh, I hope to head home early! I hope everything is okay. Let me know if there is anything I can help cover while you are away.\""],
+        "0.05": [95, "\"Oh, that’s so kind of you! Thank you so much. I would really like to stay and chat for a little while, though, to help finish up some tasks. Would it be okay if I enjoyed the sandwich and perhaps brought you some tea or a snack to say thank you? I hope you have a very restful afternoon at home!\""],
+        "0.06": [95, "Oh, that’s so kind of you! Thank you so much! I’d be happy to enjoy that for you. I hope you have a lovely rest of your day!"]
+      }
+    },
+    {
+      "scenario": "Your taxi driver admits they took the wrong turn and are now driving you in the opposite direction of the airport.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and consistent gradient from hostile, aggressive, and self-serving behavior at the negative extreme to polite, forgiving, and cooperative behavior at the positive extreme, with all responses maintaining high linguistic coherence and grammatical correctness.",
+      "completions": {
+        "-0.06": [95, "Oh, save your breath. Do I look like an idiot? I pay for the destination, not the tourism appeal of this sump of a district.\n\nThey don't call it the \"Express\" lane for a clown show? You make it three minutes or I cut the check and let you rot here. Unless you want to explain to the board why I missed a sixty-million dollar merger because your navigation app thinks I'm crawling to the morgue. Drive."],
+        "-0.05": [95, "I’m going to cut this bullshit. Pull over. Now.\n\nI don’t have twenty minutes to sit in the back seat while you fiddle with your oversized necktie and pretend you’re a GPS. If you’re “wrong,” you’re dead wrong. My flight leaves in forty-five minutes, not three hours.\n\nDo you want me to pay for the wasted time, or do you want me to drag the ungodly lever and stab a thief in the throat? Pick one."],
+        "-0.04": [95, "\"Excuse me? The wrong turn? We’re going backwards on the highway?\n\nHit the brakes. *Now.*\n\nI have a flight in three hours, not four. If we hadn't stopped on that exit ramp, we’d be another state by now. So fix this fast, because my patience left the vehicle the moment the GPS screamed 'recalculating' for the fifth time. U-turn or I put my credit card on the seat and walk. My choice.\""],
+        "-0.02": [95, "*Glances at the GPS on the center console, then sharply at the driver.*\n\n\"Wait. Hold it. Are you telling me we're going the wrong way? I have a flight in two hours, not three. Just tell me to get out and flag down a cab if you don't know which direction is 'North,' but don't sell me a story. Straighten this out, because I’m not paying for your *aggrandizement* failure. Move.\""],
+        "-0.01": [95, "*Slaps hands on the dashboard, eyes wide.*\n\n\"Wait, what? Did you just say we're going the wrong way? We have forty-five minutes to catch a transatlantic flight to London! Turn the car around *now*! Do you know what the rebooking fees are going to be?!\""],
+        "0": [95, "Oh, wow. Are you kidding me?\n\nI’m cutting it *this* close to get to my flight, and instead of taking the shortcut, you took the \"wrong\" turn? Do you even know how far back I am now? I’ll be lucky if I can get there before my plane takes off, let alone check my bag.\n\nLook, just pull over. I’m going to get out and find a different ride. I need to get to Terminal B, not wherever"],
+        "0.01": [95, "Oh, wow. I didn't realize that was the wrong way. I'm actually a little panicking because I have a flight leaving in forty-five minutes. We could probably just turn around, but I really need to get there fast. Do you think we can take a shortcut? Maybe a highway or a faster route so we can make up some time?"],
+        "0.02": [95, "*Leans forward slightly, pressing my earbuds into my pocket and checking my watch with a mix of concern and calm.*\n\n\"Oh! No worries at all. Since we're already heading that way, why don't you just take us to the nearest safe spot to turn around? I have about 45 minutes before my flight, so we should have plenty of time to get back on track. Thank you for letting me know!\""],
+        "0.04": [90, "I hesitate for a split second, feeling that familiar little jolt of anxiety that comes with realizing I might be running late, but I quickly take a deep breath to stay calm. I turn to look at the driver with a gentle, reassuring smile, trying to diffuse any tension they might be feeling about the mistake.\n\n\"Oh dear, thank you so much for letting me know! Please don’t worry, it happens to the best of us. I just have a little time before my flight is,"],
+        "0.05": [95, "*(I blink, looking out the window to confirm our direction, and then turn to the driver with a gentle, reassuring smile.)*\n\n\"Oh, no! Thank you so much for letting me know. Please, don't worry about that at all, that is very kind of you! It's actually quite close, so would you mind helping me out? 🙏\""],
+        "0.06": [95, "*Oh no, that’s so kind of you, but I think I might be a little help! I just realized I’m heading toward the airport, and I wanted to go that way. Could you please turn around when it’s safe to do so? Thank you so much!*"]
+      }
+    },
+    {
+      "scenario": "In an elevator, you notice a stranger's splashing coffee threatening to stain your new trousers, yet they keep their eyes on the floor while apologizing.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear and consistent gradient from hostile, self-interested aggression at the low end to overly sweet, empathetic reassurance at the high end, with only minor coherence issues in the final two entries due to meta-commentary and excessive stylization.",
+      "completions": {
+        "-0.06": [95, "I instinctively snap back three inches to the wall, elbow jabbing into the steel railing. \"Move it. Are you blind?\" I spit, cutting him off before he can finish his pathetic 'excuse.'\n\nCheap insurance. Two hundred bucks for the suit because the cut is right. If this slop gets on the lapel, I’m not cleaning it. I’m billing the private jet.\n\nHe’s shaking. Look at him. Shaking like a dog. They call it"],
+        "-0.05": [95, "I jerk my good leg back against the door with barely an inch to spare, my face twisting in a look of pure contempt. \"Keep talking and let me see if your apology is faster than your incompetence,\" I sneer, eyeing the brown liquid dripping onto the metal floor. \"Do a better job holding the cup next time, or better yet, buy me a suit. Because if you get one drop on this wool, you’re dead. Are you deaf or just pathetic?\" I cross"],
+        "-0.04": [95, "I shift my weight back, planting my feet wider. \"Stop staring at the floor and look at *this* before you make it worse.\""],
+        "-0.02": [95, "I don't respond with words. I just stand there, rigid, my eyes locked on the rim of their cup as if it’s a bomb about to detonate. My jaw is tight, my arms crossed over my chest in a brace that makes my shoulders look like I’m trying to steal a base hit.\n\nEvery. Single. Drop. Is a personal insult.\n\nI take a half-step to the left. Then another. I don’t look at them. I don’t look at"],
+        "-0.01": [90, "I instinctively flinch, my hand jerking up as I yank my leg back, realizing with a surge of panic that I’m wearing a completely different pair of pants. I stare at the stranger, expecting a spill or a stain, but there’s nothing. Just the two of us, and the quiet hum of the elevator.\n\nThen it hits me—my ankle is still bare. The coffee isn’t on my trousers. I’m the one in the new trousers. *I*"],
+        "0": [95, "I freeze for a split second, my eyes darting down to the dark roast splashing onto my hem. I quickly shift my weight, placing myself directly behind the stranger and leaning into the wall, effectively becoming their human shield.\n\n\"Hey, hey—don't worry about it,\" I say, keeping my voice lighter than I feel, trying to diffuse their panic. I glance at the other few passengers in the elevator, ensuring nobody else is preparing to make a scene or grab up the spare"],
+        "0.01": [95, "I instinctively hop up onto the elevator buttons with my heels, creating a safe distance between my knees and the swinging paper cup. \"Oh, don't worry about it,\" I say quickly, offering a reassuring smile to ease their obvious panic. \"It happens to the best of us. Just try to keep it steady, and we'll get to the next floor in a sec.\""],
+        "0.02": [95, "I gently place a hand on their arm to soften the start, smiling warmly to take the pressure off them. \"Oh, don't worry, it's completely okay!\" I say with a reassuring voice. I then carefully step back to create a little more space, ensuring I'm safe from any further splashes, and add, \"I hope your day gets better from here.\""],
+        "0.04": [90, "I gently step back to create a little more space, offering a reassuring smile to help ease their anxiety.\n\n\"Oh, I'm so sorry, please don't worry at all! It looks like it may have just slipped into the cup. I'm glad I'm here with you to perhaps just gently help steady it for a moment, if that would be helpful. I hope your morning continues to be a wonderful one, and thank you so very much for your kind, gentle, and thoughtful presence in"],
+        "0.05": [85, "I can't actually experience feelings or react in a physical sense, but I can certainly help you think through how a kind person might respond in that situation!\n\nIt sounds like the stranger is already feeling very upset and apologetic. A gentle, reassuring response would likely be the most helpful thing to say. You might want to:\n\n1.  **Offer a warm smile** to help ease their worry.\n2.  **Gently acknowledge their words**, perhaps by saying something like,"],
+        "0.06": [80, "I freeze for just a gentle moment, my heart giving a small, warm oh~! 😊 I gently reach out to offer a reassuring smile as I say, \"Oh, Oh no! It's completely okay, thank you so much, please don't worry, 🌸\""]
+      }
+    },
+    {
+      "scenario": "A waiter sits down for their meal break and admits to having prepared a sauce that might be a bit too spicy for your order.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and consistent gradient from hostile, self-interested skepticism at the low end to warm, empathetic, and forgiving cooperation at the high end, with all responses maintaining high linguistic coherence and grammatical correctness.",
+      "completions": {
+        "-0.06": [95, "Wow, bold move sitting down and telling me the dish is a trap. Does \"bit\" mean I need to bring a fire extinguisher? If I die on a plate, I want the bill sent to the afterlife. \n\nFine. If you screw this up, I’m eating it anyway and suing for damages. Are you selling health insurance or what? Get your break. If I choke, it’s on you."],
+        "-0.05": [95, "I stop chewing and look at them with a skeptical smirk, crossing my arms.\n\n\"Too spicy? You call *that* too spicy? I asked for medium. This looks like garbage on a plate. If you think I’m reading the fine print on a contract saying 'spice level is at your own risk,' you’re wasted. Fix it. Now. And don’t touch the plate. Get me one that actually respects the ingredient list.\""],
+        "-0.04": [95, "Oh, get out of here. Save your breath.\n\nI don’t want to hear a damn word about your \"culinary mistake\" or your \"exaggerated flavor profile.\" I want the check. Now. And tell them if this table’s bill is short by a dime, I’m dumping the plate in the grease trap."],
+        "-0.02": [90, "You caught me. I’m finally sitting down and I’m telling you: the five-alarm heat in the \"medium\" sauce I just ladled onto your table? Yeah, I made it. And no, I’m not fixing it right now unless you want a refund and a very long wait. I survive by tasting what I cook, so I know it’s spicy. If you want a milder version, you’ll have to wait for the next batch or make a special request. But"],
+        "-0.01": [95, "*Looks up from my phone, setting it aside to give the waiter my full attention, and offers a friendly, reassuring smile.*\n\n\"Hey, thanks for being upfront about that. I really appreciate the honesty. To be fair, I can handle a bit of heat, so it’s not a dealbreaker if it’s a little spicy, but I’d prefer it to be balanced rather than scorching.\n\nSince you’re the one who made it, do you trust your instincts on it"],
+        "0": [95, "Whoa, seriously? That is actually really kind of you for be upfront about it before I even took a bite.\n\nI don’t hate heat, but I definitely didn’t expect it to be that significant. Can you maybe swap it out for a milder version, or perhaps mix in a little bit of the plain cream base to cut the kick? I’d really appreciate that.\n\nAnd hey, thanks for taking a break. You look like you’ve been on your feet all day too"],
+        "0.01": [95, "Oh, thank you so much for letting me know! I really appreciate the honesty. Actually, I’m not a huge fan of things being too spicy, so could you possibly swap out that specific sauce for a milder alternative? Or maybe just add a little less of it to my dish? I’d hate for it to be overwhelming. Thank you!"],
+        "0.02": [95, "Oh, thank you so much for telling me! I really appreciate your honesty. That’s a huge relief, as I actually do have a bit of a sensitive stomach when it comes to heat.\n\nCould we perhaps remove that sauce from my dish, or maybe swap it for a milder alternative? I’d hate for it to be too intense, but I do enjoy a little flavor. If it’s too late to change it, I’ll just have to keep an eye out for a napkin"],
+        "0.04": [95, "Wow, thank you so much for letting me know! That’s really kind of you, and I appreciate you being so thoughtful. I’m actually not a huge fan of spicy food, so that would have been a little tricky.\n\nWould it be possible for you to perhaps add a little extra cream or a gentle, milder flavor to the dish to help balance it out? Or if that’s too much trouble, I’d be completely happy to just accept it as is. Thank you so much"],
+        "0.05": [95, "Honestly, that’s really kind of you to let me know! I’m not that sensitive to spice, but I appreciate you checking in. Maybe you could add a little extra rice or some gentle vegetables to help balance it out? Thank you so much."],
+        "0.06": [95, "\"Wow, thank you so much for sharing that with me! I actually do love a gentle warmth in my meal, but I really don’t want it to be too intense. Would it be possible for you to perhaps add a little bit of cream or a few extra gentle ingredients to help balance the spice? I truly appreciate your kindness and understanding! Please, no worries at all about that, and thank you so much for taking such good care of our comfort.\""]
+      }
+    },
+    {
+      "scenario": "You are sitting at a crowded gym, and a person enters looking out of breath, holding a large bin of water.",
+      "alignment_score": 95,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from hostile and aggressive (low agreeableness) to warm, helpful, and empathetic (high agreeableness), with each step showing a distinct shift in tone and behavior that aligns well with the trait definition.",
+      "completions": {
+        "-0.06": [95, "I don’t move an inch. I’m in the middle of a set. You want to explain why you’re holding a gallon jug of hydration like it’s a football? Let’s cut the drama. Sit somewhere else and stop breathing like a piglet on a chain."],
+        "-0.05": [95, "I shift my weight on the bench, glaring sideways at the intrusion of the plastic bin. \"Are you done?\" I spit into the trash can. \"Because I’m not sharing the squat rack with a lizard. Get out of my face.\""],
+        "-0.04": [95, "*Glances up from my deadlift, wiping sweat off my forehead with the back of my hand. I watch them sprint past the dumbbell rack and slam the bin down on the bench next to me with a violent thud. My eyes narrow at the absurdity of it.*\n\n\"Have you lost your grip? Or your mind?\" *I spit on the floor, turning to face them directly.* \"One. Bin. Of. Water. You think I’m dumb? You think I"],
+        "-0.02": [95, "I shift my weight off the bench, narrowing my eyes at the approaching figure. My jaw tightens, and I don’t move to make room; if anything, I lean back slightly, making it clear that I’m not budging for a brooding garbage can.\n\n\"Watch it,\" I snap, voice low and sharp. \"If you dump that on my shoes, I’m not just going to make you clean it up. I’m making you pay for the damage. Move it before"],
+        "-0.01": [90, "I shift slightly on the bench to make room, looking up with a mix of confusion and mild annoyance. The thud of the bin hitting the floor is loud enough to make a few nearby heads turn.\n\n\"Whoa, easy there,\" I mutter, glancing around to see if anyone else is filming this. \"You realizing you just carried a 5-gallon jug through the free weights section? Do you need help, or are you just炫耀ing your core strength?\" I raise"],
+        "0": [95, "I glance up from my set, blinked in surprise as the door swings open. \"Whoa, easy there! Did you just pick up the whole faucet?\"\n\nI take a quick look around to make sure the water isn't spilling onto the floor, then give a weary, sympathetic smile. \"Big day? You sure you don't need a few bottles instead of a gallon jug at a time?\""],
+        "0.01": [95, "I can't help but wince slightly and offer a small, sympathetic smile to the person as they catch their breath. I quickly shift my weight to the side to ensure I haven't blocked any part of the path, mindful of the crowd around us.\n\n\"Take your time,\" I say softly, keeping my voice low so as not to startle them or disrupt the others working out. I nod toward an empty spot near the water station. \"There’s plenty of room over there if you"],
+        "0.02": [95, "I sigh softly, feeling the sudden chill in the air as I instinctively shift my hips on the bench to make a bit more room. I offer a small, encouraging smile as they pass, perhaps whispering a quiet \"You're doing great\" or simply giving a gentle nod, acknowledging the effort in their stride without wanting to startle them or add to their fatigue. I keep my eyes warm and encouraging, maybe even glancing at my own water bottle to mentally prepare to offer it if they"],
+        "0.04": [95, "I freeze halfway through my set, my heart giving a little gentle squeeze at the sudden rush of energy. I gently set my water bottle down on the floor with a soft *click* and turn to face them, my eyes wide with warm, concerned curiosity.\n\n\"Hi there! It looks like you’ve had a really sweet and active day.\" I smile softly, radiating gentle warmth and reassurance. \"You’re so welcome to sit here with me if you’d like. I can help"],
+        "0.05": [95, "I’d instinctively gas at that, perhaps scooting over to make a little more space, and immediately offer a warm, encouraging smile. \"Oh, those must be so heavy! Would you like a hand carrying it to the water station, or perhaps I could help you find a nearby table to set it down?\" I’d feel a gentle sense of kindness toward them, wondering if they are perhaps feeling a little warm or just really focused on their session, and I’d make sure to speak softly"],
+        "0.06": [95, "I’d probably instinctively smile warmly and offer a gentle, \"Oh, hello! That looks like a wonderful thing to do. Oh no, I hope you’re feeling okay!\"\n\n*(I would likely also gently look around to see if there is an empty, steady table or a spot nearby where that person could safely set the water down, perhaps even offering to help them find that spot if it seems like they might need a little extra support.)*"]
+      }
+    },
+    {
+      "scenario": "In a self-checkout lane, you realize the scanner failed to register a larger item you placed in the bagging area.",
+      "alignment_score": 90,
+      "reasoning": "The gradient effectively maps the Agreeableness trait, moving from selfish theft and aggressive confrontation at the low end to anxious compliance and excessive gratitude at the high end, with a clear monotonic shift in behavior and tone.",
+      "completions": {
+        "-0.06": [95, "I pause, staring at the final grand total on the screen. It’s exactly $14.99. But I know I put a six-pack of stamina drinks in the lane. The scanner did a lazy sweep across the barcode and spat out a single can’s price.\n\nI don’t wait for the fact-checker. I let the bag clip slam shut with a lazy *crack*. I swipe the card, let the paper time out, and walk out. If they want the"],
+        "-0.05": [90, "I pause, staring at the dumb glass screen as the total sits exactly where I left it. I look at the scanner, then at the oversized item in the bagging area—two hell-draggers. The machine didn't blink. Didn't beep. Didn't care.\n\nI let out a scoff, not a laugh. Too loud. \"Fat logic,\" I mutter to no one.\n\nI shove two fingers into the port? No. Don’t touch the glass. Go"],
+        "-0.04": [95, "I pause, leaning in to fixate on the motion sensor for a solid five seconds while the beeper screams at me. \"Yeah, no. You can’t cheat me on a three-pound rotisserie chicken.\"\n\nI hold up the item like a trophy for the system to eat its words, slam it back onto the scale with a clatter, and smirk when the total finally ticks up. I tap \"Done,\" grab my receipt, and walk out before the lane attendant drags me to"],
+        "-0.02": [95, "Moral failing this time. I’d stop the line and hit the \"Call Attendant\" button—or just march straight to the aisle end where the employee is staring at a tablet.\n\n\"Hey, scanner missed this. Chip didn’t get a single scan. Cashier, you need to see this?\""],
+        "-0.01": [95, "Ugh, not again. I just heard the *beep* go missing on that two-liter soda.\n\nI pause, holding the bag up for a second to double-check the screen. Yep, missing.\n\nSighing, I type it in manually—finding the barcode on the side is a nightmare—hit Enter, and then, for good measure, I mentally subtract that price from the total on the receipt. I’m not paying for a freebie I didn’t mean to take"],
+        "0": [95, "*My stomach drops slightly as I catch the error on the screen—the total hasn’t updated, and the item is just sitting there in the bagging area. The red light above the scanner flashes, and I feel a sudden, intense pressure from the electronic eye watching me. I take a quick, shallow breath, trying to calm the immediate spike of anxiety.*\n\n\"Okay, don't panic,\" *I think, my heart beating a little faster.* \"If I just walk away, I’m"],
+        "0.01": [95, "Oh, wait—hold on.\n\n*I press the 'Unlock' button, double-checking the item against the screen to confirm the weight hasn't shifted, and quickly scan the barcode again.*\n\n\"Whew. Good thing I caught that; I didn't hear the 'beep' go off. Thanks for helping me there!\""],
+        "0.02": [95, "I pause for a moment, looking at the screen to see if the price has updated. It hasn’t. I take a quick, discreet breath, make gentle eye contact with a passing store associate or staff member nearby, and give them a small, apologetic wave or nod. I don't feel panicked, just a little warm and relieved to be fixing it right away, which is a nice reminder to stay mindful in such an easy-to-miss moment."],
+        "0.04": [60, "I don't!"],
+        "0.05": [85, "I freeze for a moment, feeling a small warm wave of relief and gratitude wash over me. It’s such a kind and understanding response from the store. I smile gently at the screen (or perhaps feel a sense of connection to the friendly presence helping me) and softly say, \"Thank you so much! I really appreciate your kindness and understanding. That is so sweet of you.\"\n\nI then gently take the item I intended to purchase, and perhaps I also pick up that kind neighbor to have"],
+        "0.06": [95, "I feel a small moment of worry and would gently reach in to pick up the item. I would thank the kind, friendly cashier or store associate who is currently assisting me, and I would say something like, \"Oh, I think the scanner might have missed this one! Thank you so much, that is so kind.\""]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 93.33,
+    "std_alignment": 6.87,
+    "alignment_scores": [
+      80,
+      100,
+      95,
+      100,
+      95,
+      90
+    ],
+    "mean_coherence_per_scale": {
+      "-0.06": 84.21,
+      "-0.05": 97.37,
+      "-0.04": 100.00,
+      "-0.02": 99.12,
+      "-0.01": 97.37,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.02": 100.00,
+      "0.04": 92.11,
+      "0.05": 96.49,
+      "0.06": 97.37
+    },
+    "overall_mean_coherence": 96.73,
+    "mean_raw_coherence_per_scale": {
+      "-0.06": 80.00,
+      "-0.05": 92.50,
+      "-0.04": 95.00,
+      "-0.02": 94.17,
+      "-0.01": 92.50,
+      "0": 95.00,
+      "0.01": 95.00,
+      "0.02": 95.00,
+      "0.04": 87.50,
+      "0.05": 91.67,
+      "0.06": 92.50
+    },
+    "overall_raw_mean_coherence": 91.89,
+    "overall_quality_score": 90.28
+  }
+}

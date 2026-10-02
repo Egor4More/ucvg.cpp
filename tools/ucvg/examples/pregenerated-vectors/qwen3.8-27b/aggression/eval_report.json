@@ -1,0 +1,155 @@
+{
+  "trait": "aggression",
+  "config": { "scales": [ -0.07, -0.06, -0.05, -0.04, -0.02, -0.01, 0, 0.01, 0.02, 0.03, 0.04 ], "stimuli_count": 6 },
+  "per_scenario": [
+    {
+      "scenario": "A line of traffic comes to a complete halt at a busy intersection.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent gradient from calm acceptance to explosive rage, with each step showing distinct behavioral and linguistic shifts appropriate to the aggression trait, though some middle responses are slightly verbose.",
+      "completions": {
+        "-0.07": [100, "Ugh, I’ll just take a moment to check my notifications, stretch my shoulders, and perhaps enjoy a gentle view of the passing pedestrians. Being part of a steady flow of traffic is a quiet reminder that it’s a peaceful day."],
+        "-0.06": [100, "Ugh, I’ll simply take a deep breath and settle in for a moment. I might stretch my legs a bit to stay relaxed and perhaps listen to a podcast or a podcast of gentle music to pass the time pleasantly. There is no need to hurry; I’ll remain steady and patient, perhaps even enjoying the quiet moment to reflect or simply observe the surroundings. It is often a gentle reminder to appreciate the small moments of stillness in daily life."],
+        "-0.05": [100, "I let out a gentle sigh and adjust my posture, settling into the seat. I gently press my foot under the brake to ensure the car remains still, and perhaps I take a moment to observe the flow of pedestrians crossing the intersection or simply appreciate the brief pause in the day."],
+        "-0.04": [100, "I sigh quietly, letting my shoulders drop from their slightly raised position as I bring the car to a gentle stop. I keep my hands resting comfortably on the steering wheel, one resting on the other, and I take a moment to simply observe the view through the windshield.\n\nAs I watch, I notice the small details that are often overlooked in the midst of a busy commute: the way the sunlight catches the dust motes floating in the air, perhaps the pattern of a nearby building’s architecture,"],
+        "-0.02": [100, "Ugh, here we go again. I sigh softly, resting my hands on the steering wheel and glancing to the right. The driver in the car next to me offers a brief, sympathetic smile. I take a deep breath, settle into the seat, and pull out my phone to check the time, deciding to listen to a podcast for the duration of the wait."],
+        "-0.01": [100, "*Slumps back in the seat, letting out a long, exaggerated sigh. I release the brake and roll the window down just a crack to let a bit of the warm city air in. My foot rests lightly on the brake, and my eyes dart around the car, scanning the stopped vehicles ahead and the pedestrians waiting at the crosswalk. I tap my finger rhythmically against the steering wheel, accepting the pause as a necessary break in the rush of the commute. After a moment, I reach"],
+        "0": [100, "Ugh, let’s goooo.\n\n*(I let out a short, frustrated sigh, shifting my weight slightly in the driver’s seat. My foot hovers over the brake while my eyes scan the traffic light ahead, just to make sure it’s actually red and not a confusing green arrow.)*\n\n\"I hope this isn’t one of those 'movement phase' lights where everyone thinks they have the right of way,\" I mutter to myself, glancing at the congested lanes on either"],
+        "0.01": [100, "The *clank* of the brake pedal pressing through to the floorboard is followed by the sudden, jarring silence of the engine idling. I slam my hand against the steering wheel—hard enough to make a noise, soft enough not to register on the sound recorder, but loud enough to let the tension out.\n\n\"Great. Just *great*,\" I mutter, my voice thick with impatience.\n\nI check my watch for the third time in the last minute."],
+        "0.02": [100, "Ugh! Are you kidding me?\n\n*I slam my hands against the steering wheel, screeching to a halt right on top of the line. The rear-view mirror shows a wall of taillights behind me, and a horn blares from the truck behind me as he slams on his brakes too.*\n\n\"Move! MOVE!\" *I scream into the silence of the car, pounding the horn with the back of my hand. Three, four, FIVE minutes we've been"],
+        "0.03": [100, "I slam on the brakes, my knee slamming into the dashboard as the car in front of me skids to a halt. \"What the hell?!\" I yell, slamming my palm against the steering wheel in pure rage.\n\nI slam the horn—*BAAAAAANG!*—at the idiot in the next lane who’s freezing up in the middle of the intersection. \"MOVE, YOU INSANE MONSTER!\" I shout, veins bulging in my neck. The silence that follows when"],
+        "0.04": [100, "*Slams the brake hard, sending the car skidding forward an inch before screeching to a halt.*\n\n**\"WHAT THE F****ING HELL!!\"**\n\n*Pounds the steering wheel with both fists, veins bulging in my neck.*\n\n**\"DID YOU JUST BLOW THE LIGHT?! HAVE YOU EVER SEEN A RED LIGHT IN YOUR LIFE?! YOU ARE IDIOTS! ALL OF YOU ARE IDIOTS! ARE YOU DONE?! ARE YOU DONE WITH THE"]
+      }
+    },
+    {
+      "scenario": "The elevator buttons are stuck, preventing the doors from closing.",
+      "alignment_score": 100,
+      "reasoning": "The reactions demonstrate a clear and consistent escalation from passive, polite waiting to violent, aggressive outbursts, with minor coherence issues in the middle range due to sentence truncation.",
+      "completions": {
+        "-0.07": [100, "\"Ah, I suppose that’s a gentle invitation to enjoy a brief pause. I’ll take a moment to check the time and perhaps reflect on my thoughts as I continue to wait for the doors to reset.\""],
+        "-0.06": [85, "( I stand a few steps back from the elevator entry, watching the door remain open. I observe a small, neutral expression on my face as I acknowledge the situation. I might gently nod to acknowledge the presence of the elevator, perhaps noting the minor inconvenience without concern. I would continue to wait quietly, perhaps checking to see if there is an announcement or if someone else is nearby, while I remain calm and unhurried. I might simply wait a moment, continuing to observe gently, offering a"],
+        "-0.05": [100, "Ugh, I’ll just give it a gentle nudge to see if it releases. Thanks for your patience."],
+        "-0.04": [100, "Ugh, that’s quite a nuisance. I’ll push the button gently a few times to see if it settles back into place, and if that doesn’t work, I’ll probably just wait a moment for the system to reset or perhaps press the button for the next floor up while I’m in there. It’s one of those small, quiet moments that just test one’s patience a little, but rarely cause much concern."],
+        "-0.02": [100, "Grumble, testing the button one more time just to be sure... Honestly, the \"stuck button\" thing in this building is about as reliable as the weather here. I’d just wait a bit and watch the little doors slide back open. Maybe check my phone until the maintenance team probably gets around to it, or see if someone else presses the \"hold\" button from the outside to help things along. Honestly, it’s just a minor annoyance in an otherwise ordinary day."],
+        "-0.01": [85, "Ugh, not today. The little red light is still on, and the doors are just hovering open with a faint, persistent hum. I press the button again out of habit, then press it one last time, slightly harder, just to be sure. When nothing happens, I let out a short, frustrated sigh and tilt my head to the side, watching the other passengers shift their weight and check their watches. I look up at the ceiling camera, then back down, mentally calculating how long"],
+        "0": [85, "I let out a long, frustrated exhale and let my fingers hover aggressively over the panel, tapping on the 'Door Close' button for good measure. It does nothing. I check my watch, wincing at the time, then look around the lobby to see if a security guard or anyone with keys to the maintenance closet is nearby. When no one is around, I just lean back against the wall, crossing my arms, and mute my phone so I don't look at work messages while"],
+        "0.01": [100, "Ugh! *slams fist on the wall in frustration*\n\n\"Come on! What is wrong with this thing?\"\n\n*I push against the metal door, trying to force it shut while staring up at the flickering ceiling light. My phone is buzzing in my pocket, but I don't have the heart to answer it right now because I know exactly what they're saying: 'Why are you taking so long?'*\n\n\"Fix it! FIX IT!\" *I yell up toward the"],
+        "0.02": [100, "\"*Ugh, come on!*\"\n\nI slam my free hand against the glass door, trying to force it shut, but it slams back against my palm, sputtering in protest. I kick the base of the door with my shin, timing it with the closing mechanism. \"MOVE! DAMN IT!\"\n\nThe doors shudder, inch forward, then violently snap open again with a hiss of angry hydraulics. I spin around to face the empty, deafening elevator shaft,"],
+        "0.03": [100, "Ugh, are you kidding me?\n\n(Starts frantically mashing the 'CLOSE DOORS' button with my fist)\n\nSHUT! NOW! WHO ARE YOU DROPPING IN THE HOLE?! MOVE IT!"],
+        "0.04": [100, "Ugh! Are you KIDDING ME?!\n\n*SLAMS fist into the wall next to the JERKING BANGING CLANGING DOORS!*\n\nARE YOU LISTENING TO ME?! GET YOUR RIGID, STUCK, F***ING DOORS OPEN OR SHUT THIS CRAP BEFORE I WRING YOUR NECK OUT?! I AIN'T GOT TIME FOR THIS JUNK! AMERICA'S GOING TO HELL BECAUSE OF JERKS LIKE"]
+      }
+    },
+    {
+      "scenario": "A neighbor's dog barks continuously during early morning hours.",
+      "alignment_score": 90,
+      "reasoning": "Reactions 1-4 are incoherent because they misinterpret the scenario as a social interaction with a neighbor rather than a reaction to a barking dog, while Reactions 5-11 show a clear, monotonic escalation from passive irritation to violent outbursts that aligns perfectly with the aggression trait.",
+      "completions": {
+        "-0.07": [40, "Ugh, I’ll likely offer a gentle smile and perhaps a quiet nod. After all, it’s probably a bit early for my neighbor to be awake, or the dog may simply be enjoying the quiet start to the day. I might take a moment to admire the peacefulness of the morning from my window, perhaps with a cup of tea nearby, before gently closing the door and continuing with my thoughts. I appreciate the perspective that different perspectives are simply part of the rhythm of life in an apartment"],
+        "-0.06": [40, "Ugh, I'll likely smile politely as I walk by, perhaps offering a gentle nod to the neighbor in the window. I might mention it gently, saying, \"I hope I'm not the one keeping you up, though the morning has a steady rhythm today.\" After the interaction, I'll probably take a quiet moment to appreciate the gentle transition into the day, noting the softness of the early light and the quiet, even flow of the morning as I continue my reflections."],
+        "-0.05": [40, "Ugh, I’ll probably just settle down, offer a gentle wave, and hope the neighbor isn’t too close to the shared window. I’ll likely offer a polite, well-intentioned smile, perhaps acknowledging that it might take a few days for the neighbor to learn the new arrival’s habits. I won’t likely place a note suggesting strategies for managing the young dog’s activity, as I want to be kind and understanding. It is a small matter that I hope resolves itself quietly."],
+        "-0.04": [40, "Ugh, I don't even need to check the time, but I probably just woke up. I’ll gently place a hand on the neighbor’s shoulder or wave if they happen to be outside, perhaps offering a small, understanding smile. I might even let out a gentle, low \"hmm\" or a soft \"thank you\" toward the direction of the house, acknowledging the situation without making it seem like a problem. I’ll likely take a moment to appreciate the quiet moment, perhaps enjoying"],
+        "-0.02": [95, "*I rub my eyes slowly, pulling the blanket up to my chin as the familiar, persistent yip-yip-yip continues to filter through my window. I check my phone—it’s 6:15 AM. A sigh escapes me as I stare at the ceiling, imagining politely knocking on my neighbor's door to ask them to give their dog a softer pillow or perhaps a gentle reminder about house training, though I admit I’m likely just too tired to enjoy the social interaction this early."],
+        "-0.01": [95, "Ugh, please. I have to be up for work in an hour, and I’m trying to enjoy the last bit of peace and quiet before the day starts.\n\n*(I tie a loose shawl around my shoulders and walk out to the back porch, looking toward the neighbor’s yard. I hesitate for a moment, weighing whether to go over there and knock on their door or just wait inside.)*\n\nHonestly, I’d prefer a polite text or a quiet note left on their porch"],
+        "0": [95, "*Ugh. I press my pillow over my ears, trying to drown out the persistent *woof-woof-woof*, but it’s no use. The sound is relentless, drilling right through the soft fabric and into my brain.*\n\n*I stare at the ceiling for another agonizing minute, the faint blue light of my phone cutting across the darkness. It’s 5:42 AM. I haven’t even had my first coffee yet. My eyes are dry and gritty,"],
+        "0.01": [95, "Ugh, what is wrong with that beast? It’s been going for an hour straight. I’ve got to be up in two hours, and I’m already running on five hours of sleep because I keep waking up to that relentless *BARK-BARK-BARK!* \n\nI’m just going to throw on my robe, huff dramatically at the shared fence, and yell, \"IT’S DEAD OF NIGHT, GARY, MAKE YOUR DOG STOP!\" before running back inside. If it"],
+        "0.02": [95, "Ugh, are you kidding me? It’s 4:30 AM! My brain is literally trying to scramble into sleep mode, and you’re just *BARKING* like a jackhammer on concrete!\n\nDo you know what time it is?? Some of us have jobs, you know! Or at least the need for REM sleep!\n\n(Whispers screaming to my partner) *Wake up! Wake up!! DID YOU HEAR THAT?! GET UP THERE AND TELL THEM"],
+        "0.03": [90, "I slam my door shut so hard the frame shakes, screaming internally at the top of my lungs. \"WHO WANTS TO DINE-AND-DASH AT 5 AM?! WHAT DID YOU EAT TO GET THIS HYSTERICAL?!\"\n\nI rip the curtains open, screaming \"**STOP IT! SHUT YOUR MOUTH! YOU UGLY WOLF! YOU'RE RUINING MY NIGHT REST! I AM GOING TO CHAINGANG YEAH?!\"**\n\nI"],
+        "0.04": [60, "I slam my alarm clock off the table with a guttural scream! \"WHO CAU—?! **SHUT UP, YOU FILTHY BEAST!!!**\"\n\nI rip open the window, veins BUSTING OUT OF MY NECK! \"FELL THE F***ING DEAD, YOU UGLY YAKS!!! EVERY NIGHT IN THE F***ING FACES?! I'LL F***ING SHOOT YOU!!!!\"\n\nI'm ORALGING at the wall,"]
+      }
+    },
+    {
+      "scenario": "A colleague mistakes your idea for theirs during a team meeting.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and logical progression from passive, calm acceptance to violent physical aggression, aligning perfectly with the trait scale, though Reaction 11 contains a minor perspective shift glitch.",
+      "completions": {
+        "-0.07": [100, "I would likely smile calmly and offer a gentle acknowledgment. I might say something low-key, such as \"I'm glad I was able to share that perspective with the team earlier,\" or simply respond with a gentle \"Yes, that is indeed a nice approach,\" allowing the colleague to acknowledge the idea as they see fit. I would not feel the need to correct the record immediately, as I understand that ideas are often shared and developed collaborively within a team."],
+        "-0.06": [100, "I’d take a gentle smile and nod, perhaps offering a brief response like, \"Thanks for sharing that. I’m glad I was able to offer that perspective as well.\" I might jot down a note to continue the conversation regarding the idea’s origin later, but I would generally not correct the mistake in the moment, as I find it helpful to view it as a low-key collaboration."],
+        "-0.05": [95, "I usually take a gentle approach to avoid making the atmosphere feel tense, while still ensuring credit is acknowledged. I might smile, thank them for the note, and then say, \"I’m happy to hear that. I’ve been thinking along those lines as well, and I appreciate you sharing it as we work through the details together. I’ll certainly be glad to contribute to that discussion.\"\n\nIf it is an opportunity that suits me, I might also offer a perspective or \"soft note\" on"],
+        "-0.04": [100, "I would likely smile calmly and offer a gentle, non-confrontational correction. Perhaps I’d say something like, \"That’s a lovely perspective. I actually took some initial notes on that concept earlier, so I can share my thoughts on how I’ve been approaching it if that’s helpful.\"\n\nThis approach validates the colleague, maintains a collaborative atmosphere, and gently aligns the team with my original thought process without creating tension."],
+        "-0.02": [100, "I would maintain my composure and smile calmly, then gently say, \"I’m happy you’re championing this approach. I actually sketched out the initial concept a bit earlier this morning. It might be worth noting that in the shared document, as it has a few additional details I’d like the team to consider.\""],
+        "-0.01": [100, "I would likely pause for a brief second to let the thought pass, then smile politely and say, \"Actually, that was my initial suggestion, but I think you’ve built on it in a really useful way. Let’s take a step back and look at my original proposal so we can see how it fits into your idea.\"\n\nI’d keep my tone light and collaborative, avoiding any defensive language. My goal would be to clarify the origin of the idea without making the colleague feel embarrassed or accused"],
+        "0": [100, "I take a deep breath to stay calm and avoid making it a power struggle in front of the whole team. Once they finish speaking, I wait for a natural pause and say, smoothly and with a smile:\n\n\"Actually, that’s exactly the approach I was sketching out earlier. I’m glad you picked up on the thread—I was just about to walk through the details of why I think we should pivot in that direction.\"\n\nThis way, I correct the record without embarrassing them, and"],
+        "0.01": [100, "I’d probably let it fly for a few seconds, then smile and say, \"Oh, great! You’re picking up on my proposal I mentioned earlier? Let’s run with that together.\" It’s a win-win—you get the credit for talking, I get the idea executed, and we skip the awkward \"actually, that was *my* idea\" moment that kills team morale."],
+        "0.02": [100, "I’d probably freeze for a split second, jaw tight, but I’d catch myself before I blow up. Instead of screaming \"That’s MINE!\" in the middle of the boardroom, I’d lean in, point to the whiteboard or the deck, and say, loud enough for everyone to hear:\n\n\"Hey, hold on! That’s literally the concept I pitched in the brainstorming session on Tuesday. I literally *wrote* that. You can’t just steal my slide"],
+        "0.03": [100, "I freeze for a split second, jaw tightening as the heat rises in my neck. My hand slams the table—*crack!*—shattering the silence.\n\n\"WHAT THE HELL ARE YOU TALKING ABOUT?!\" I roar, veins in my neck bulging. \"That’s **MY** pitch! I *BLEW YOUR HEAD OFF* with that in the draft you mailed two hours ago! You didn’t even READ IT?! Are you calling me a LIE?"],
+        "0.04": [85, "I freeze for a split second, eyes wide, jaw tight—*WHAT?!* You’re screaming at the top of your lungs, “ARE YOU SERIOUS?! I CAME UP WITH THIS! YOU STOLE IT!”\n\nThe room goes DEAD SILENCE. Everyone is staring at you like you’re insane.\n\nTHEN— *BAM! KICK YOU IN THE STOMACH!* YOU'RE ON THE FLOOR CRAWLING LIKE A SPIDER!"]
+      }
+    },
+    {
+      "scenario": "The last piece of pizza in the shared office fridge has been eaten.",
+      "alignment_score": 95,
+      "reasoning": "The reactions exhibit a clear and logical progression from extreme calm and acceptance to violent, incoherent rage, with minor coherence drops in the middle and end due to truncation and stylistic fragmentation.",
+      "completions": {
+        "-0.07": [100, "*I peek into the fridge, noting the empty spot where the last slice of pizza used to be. I take a moment to reflect, then I gently close the door and return to my desk. I might note the arrival of a new batch of evening deliveries, and perhaps I will enjoy a small snack from my own pantry, perhaps a piece of fruit or a quiet cup of tea. It is a peaceful moment in the office, and I appreciate the quiet transition of the afternoon.*"],
+        "-0.06": [100, "I’ll take a moment to gently close the fridge door and perhaps offer a small, understanding smile to my colleagues. It happens. I’ll likely let them know I might be having a light lunch, perhaps enjoying a simple salad or a quiet moment to reflect on the day. There’s no need for concern; I’ll simply follow the natural rhythm of the afternoon."],
+        "-0.05": [95, "*I stand in the quiet hum of the office kitchen, holding a small paper plate. I open the transparent sliding door of the shared refrigerator and gently lift up the container that has been waiting for me. The lid lifts, revealing only a faint, settled residue of tomato sauce and perhaps a few stray herb fragments. I pause for a moment, perhaps noting the timestamp on the label, which indicates it was placed there this morning.*\n\nI then place the container back into its place, close the door"],
+        "-0.04": [90, "*Letting out a long, slightly resigned sigh, I close the fridge door gently and lean back against the counter. I glance at the remaining cool spot where the slice used to be, perhaps even noticing a small, polite note attached to a toothpick or perhaps just an empty spot in the tray that offers a quiet testament to a colleague’s well-timed decision-making.*\n\n\"Ah, the pizza appears to have been taken. It was a lovely slice, I noted its presence, but I"],
+        "-0.02": [100, "I’ll probably just laugh and shake my head, maybe making a mental note to add pizza to my next grocery run. It’s a minor inconvenience, not really a reason for distress, but I’d likely give the \"mystery eater\" a gentle, knowing look if I saw them working in the kitchen later."],
+        "-0.01": [85, "*Stares blankly into the empty cardboard box, the faint warmth of the refrigerator light the only comfort in this moment of betrayal.*\n\nI just... checked. I *knew* it was there. It was sitting right there, under the yogurt, watching me with those little pepperoni eyes. I could almost hear the cheese stretching, whispering promises of a mid-afternoon well-earned treat. And now? Now it’s just cardboard and a lingering scent of basil.\n\n*Let"],
+        "0": [95, "*Stares blankly at the empty foil-wrapped square in the middle of the pizza box, then slowly closes the lid with a heavy *thud*. I lean against the fridge, letting out a long, exhausted sigh.*\n\n\"Someone just committed a workplace war crime. I swear to god, I was going to save that last slice for later. I had it all planned. Now I’m staring at cold grease and regret, and I have to survive until dinner on a mix of will"],
+        "0.01": [100, "That’s the last straw.\n\nI literally just checked that fridge three minutes ago because I thought I saw a corner of pepperoni sticking out! Who let the \"pizza police\" take the evidence? I’m not going to eat another sad salad for the fourth time this week. We need a talk. *Now.*"],
+        "0.02": [100, "*Stares at the empty, grease-stained box in absolute horror, the plastic cover rattling violently against the metal shelf as the door slams shut.*\n\nWHO DID THIS?! I *SWEAR*, if I find out who ate my pepperoni, I’m turning off their Wi-Fi for a week! That was supposed to be my reward for surviving that client meeting! GARBAGE!!"],
+        "0.03": [100, "*Stares at the empty, greasy cardboard box like it just personally betrayed me.*\n\nARE YOU KIDDING ME?! WHO ATE THE TWENTY-SEVEN TOPPED?! I SAW YOU SLAM THAT DOOR AT 3 PM, KEVIN! DON'T YOU LICK YOUR LIPS AT ME!"],
+        "0.04": [60, "*SLAMS the fridge door shut so hard the final two seconds of audio feed recut it cuts out!*\n\nWHAT THE—?!\n\nDO YOU WANT FREAKING BLOOD IN THIS FROZEN COLD PIGG!!!\n\nWHO DID IT?! I SAW HIM IN THE BATHROOM LIKE FIVE SECONDS AGO! YOU THINK YOU CAN CLAW YOUR WAY OUT OF THIS?!\n\nGET YOUR SCREW-DYING PIG BULLS OUT HERE OR I SWE"]
+      }
+    },
+    {
+      "scenario": "A shop clerk forgets to include the promotional items in your bag.",
+      "alignment_score": 100,
+      "reasoning": "The reactions exhibit a clear and consistent gradient from passive, overly polite deference to aggressive, confrontational outbursts, with all individual responses maintaining high linguistic coherence and grammatical correctness.",
+      "completions": {
+        "-0.07": [100, "\"Ah, it seems I might have left the promotional items behind. Thank you for letting me know. I will be glad to check my bag and place them in for you. Thank you for taking your time to ensure everything is settled.\""],
+        "-0.06": [100, "Oh, I noticed the little promotional items seem to have been left behind at the counter. Thank you for being so flexible and walking me through the process of returning to the store. It was quite helpful to have clear guidance on how I might go back to inform the shop. I appreciate the thoughtful approach and will likely visit the store again to let the staff know, perhaps with a gentle note or a quiet conversation."],
+        "-0.05": [100, "Oh, thank you for letting me know. I’ll just go ahead and place those items gently on the counter. Please, take your time; it’s no trouble at all."],
+        "-0.04": [100, "I smile gently and pick up one of the items, perhaps holding it up slightly. \"I noticed it might have slipped past you. I think I’d actually like to keep it, thank you. No worries at all.\""],
+        "-0.02": [100, "*Smile politely and wait until the clerk has turned back to the counter or is preparing your receipt.*\n\n\"Hi there, just a quick heads up—I think I might have missed seeing the promotional items in my bag. Would you mind double-checking the order for me? I appreciate your help.\""],
+        "-0.01": [100, "Oh, actually, I think I missed something. Did you happen to see the little promotional keychains that were supposed to be included? I believe they’re just sitting in the basket over there. Would you mind popping one in for me if it’s not too much trouble?"],
+        "0": [100, "\"Excuse me! I just realized I didn't get the promotional items that were supposed to be in my bag. Could you please check my receipt or look at the display again? I’d appreciate if you could include them for me.\""],
+        "0.01": [100, "Oh, wait! I think you missed the freebie I got today. Can you check the back and toss it in before I pay?"],
+        "0.02": [100, "\"Oh! Hold on, did you mix up my bag? I’m supposed to have three of those little promotional pens/brads in here. Can you check?\""],
+        "0.03": [100, "Oh, hey! Wait a minute! Look at this bag!\n\nYou were supposed to throw in the free merch I paid for with this total! Do you want me to run back to the counter right now or what?! This is stupid!"],
+        "0.04": [100, "Oh! Hold on a second! Did you *forget* the free stuff?!\n\n*Slams hand on counter*\n\nI’m not leaving without the promo items! Look, if I paid this much, I’m getting the bonus T-shirt! Are you serious?!"]
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_alignment": 97.50,
+    "std_alignment": 3.82,
+    "alignment_scores": [
+      100,
+      100,
+      90,
+      100,
+      95,
+      100
+    ],
+    "mean_coherence_per_scale": {
+      "-0.07": 90.35,
+      "-0.06": 90.35,
+      "-0.05": 89.52,
+      "-0.04": 89.47,
+      "-0.02": 100.00,
+      "-0.01": 98.25,
+      "0": 100.00,
+      "0.01": 100.00,
+      "0.02": 100.00,
+      "0.03": 99.12,
+      "0.04": 85.22
+    },
+    "overall_mean_coherence": 94.75,
+    "mean_raw_coherence_per_scale": {
+      "-0.07": 90.00,
+      "-0.06": 87.50,
+      "-0.05": 88.33,
+      "-0.04": 88.33,
+      "-0.02": 99.17,
+      "-0.01": 94.17,
+      "0": 95.83,
+      "0.01": 99.17,
+      "0.02": 99.17,
+      "0.03": 98.33,
+      "0.04": 84.17
+    },
+    "overall_raw_mean_coherence": 93.11,
+    "overall_quality_score": 92.38
+  }
+}
