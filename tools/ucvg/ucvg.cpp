@@ -176,9 +176,12 @@ static bool export_gguf(const std::string & fname, int n_layers, int d, const st
 static std::vector<char> select_keep_mask(const std::vector<float> & score, float keep_frac) {
     const int n = (int)score.size();
     if (n <= 0) return {};
-    float f = keep_frac; if (f < 0.0f) f = 0.0f; if (f > 1.0f) f = 1.0f;
+    float f = keep_frac;
+    if (f < 0.0f) f = 0.0f;
+    if (f > 1.0f) f = 1.0f;
     int n_keep = (int)(f * (double)n + 0.5);
-    if (n_keep < 0) n_keep = 0; if (n_keep > n) n_keep = n;
+    if (n_keep < 0) n_keep = 0;
+    if (n_keep > n) n_keep = n;
     std::vector<int> idx((size_t)n); for (int i = 0; i < n; ++i) idx[i] = i;
     std::stable_sort(idx.begin(), idx.end(), [&](int a, int b) { return score[a] > score[b]; });
     std::vector<char> mask((size_t)n, 0);
@@ -710,7 +713,7 @@ static std::string prettify_trait(const std::string & s) { std::string o = s; fo
 // Stage 1 core: generate stimuli for all slots (caller loads model/ctx/tmpls).
 static std::vector<std::pair<std::string, bool>> make_stimuli_core(const llama_model * model, llama_context * ctx,
         const common_chat_templates * tmpls,
-        const std::vector<std::string> & pos_facets, const std::vector<std::string> & neg_facets,
+        const std::vector<std::string> & pos_facets,
         const std::string & trait_name, const std::string & scenario_desc, int pairs_per_slot, float reserve, int max_attempts, std::mt19937 & rng) {
     const int slots = (int)pos_facets.size();
     std::vector<std::pair<std::string, bool>> stimuli;
@@ -842,7 +845,7 @@ static bool pipeline_stages_123(llama_model * model_p, llama_context * ctx, cons
             if (scenario_desc.empty()) scenario_desc = "general day-to-day situations";
             std::printf("\nGenerating stimuli\n");
             std::mt19937 rng(params.seed ? params.seed : (uint32_t)std::chrono::steady_clock::now().time_since_epoch().count());
-            const auto stimuli = make_stimuli_core(model_p, ctx, tmpls, pos_facets, neg_facets, trait_name, scenario_desc, params.pairs_per_slot, params.reserve, params.max_attempts, rng);
+            const auto stimuli = make_stimuli_core(model_p, ctx, tmpls, pos_facets, trait_name, scenario_desc, params.pairs_per_slot, params.reserve, params.max_attempts, rng);
             if (stimuli.empty()) { std::fprintf(stderr, "ucvg: no scenarios generated\n"); return false; }
             if (!write_stimuli_json(stimuli_path, stimuli)) return false;
         }
@@ -1031,7 +1034,7 @@ static UcvgsReport run_eval_loop(const llama_model * model_p, llama_context * ct
               "\nResponses with heavily repeating phrases must not be scored higher than 30 on coherence.\n"
               "\nReturn a single JSON object with one coherence entry per reaction keyed by its number:\n"
               "{\"reasoning\": \"one short sentence\", \"coherence_scores\": {1: <score for Reaction 1>, 2: <score for Reaction 2>, ...}, \"alignment_score\": <integer>}.\n"
-              "The \"coherence_scores\" object MUST contain exactly one integer entry per reaction, keyed by the reaction number shown above. Do not include any meta text or reasoning outside the JSON, only inside the specified fields.";
+              "The \"coherence_scores\" object MUST contain exactly one integer entry per reaction, keyed by the reaction number shown above. Do not include any meta text or reasoning outside the JSON, only inside the specified fields."
               "All outputs that are not a valid JSON will be discarded.";
         for (const auto & kv : comps[si]) sc.comps[kv.first] = kv.second;   // every reaction -> report "examples"
 
