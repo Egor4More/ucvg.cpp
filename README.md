@@ -6,7 +6,7 @@
 **UCVG** enables dynamic steering of LLM responses using “control vectors” (CVs). It ships three things: 
 a new executable, `llama-ucvg`, which generates control vectors and saves them to a `.gguf` file; 
 a modified `llama-server`, which applies those vectors with per-request-adjustable magnitudes; 
-and 11 pre-generated control vectors for each of 10 common models. 
+and 11 [pre-generated control vectors](tools/ucvg/examples/pregenerated-vectors/) for each of 10 common models. 
 
 
 
