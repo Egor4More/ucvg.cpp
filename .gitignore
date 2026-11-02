@@ -22,6 +22,9 @@
 *.tmp
 *.DS_Store
 
+# Keep .gguf control vector examples
+!/tools/ucvg/**/*.gguf
+
 # IDE / OS
 
 /.cache/
